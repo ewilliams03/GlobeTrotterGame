@@ -1,0 +1,695 @@
+[
+  {
+    "day": 6,
+    "round": 2,
+    "country": "ht",
+    "statements": [
+      {
+        "text": "Haiti shares the Caribbean island of Hispaniola with the Dominican Republic.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Haiti"
+      },
+      {
+        "text": "French and Haitian Creole are the two official languages of Haiti.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Haiti"
+      },
+      {
+        "text": "Haiti is in the South Pacific Ocean, not far from Fiji.",
+        "fib": true,
+        "truth": "Haiti is in the Caribbean Sea, on the western side of the island of Hispaniola.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Haiti"
+      }
+    ]
+  },
+  {
+    "day": 7,
+    "round": 4,
+    "country": "ls",
+    "statements": [
+      {
+        "text": "Lesotho has long sandy beaches along the Indian Ocean.",
+        "fib": true,
+        "truth": "Lesotho is landlocked and completely surrounded by South Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lesotho"
+      },
+      {
+        "text": "Lesotho is a kingdom, and its capital city is Maseru.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lesotho"
+      },
+      {
+        "text": "Lesotho is a very mountainous country in southern Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lesotho"
+      }
+    ]
+  },
+  {
+    "day": 9,
+    "round": 1,
+    "country": "mw",
+    "statements": [
+      {
+        "text": "Lake Malawi, a huge lake, runs along most of Malawi's eastern border.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Malawi"
+      },
+      {
+        "text": "Malawi is an island nation in the Caribbean Sea.",
+        "fib": true,
+        "truth": "Malawi is a landlocked country in southeast Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Malawi"
+      },
+      {
+        "text": "Malawi is nicknamed \"the Warm Heart of Africa\" for its friendly people.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Malawi"
+      }
+    ]
+  },
+  {
+    "day": 10,
+    "round": 0,
+    "country": "gm",
+    "statements": [
+      {
+        "text": "The Gambia is the smallest country on mainland Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/The_Gambia"
+      },
+      {
+        "text": "The Gambia is surrounded by Senegal on every side except its Atlantic coast.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/The_Gambia"
+      },
+      {
+        "text": "Spanish is the official language of The Gambia.",
+        "fib": true,
+        "truth": "English is the official language of The Gambia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/The_Gambia"
+      }
+    ]
+  },
+  {
+    "day": 10,
+    "round": 3,
+    "country": "zw",
+    "statements": [
+      {
+        "text": "Zimbabwe has a long coastline on the Atlantic Ocean.",
+        "fib": true,
+        "truth": "Zimbabwe is landlocked and has no coastline at all.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Zimbabwe"
+      },
+      {
+        "text": "The famous Victoria Falls waterfall is shared by Zimbabwe and Zambia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Zimbabwe"
+      },
+      {
+        "text": "Harare is the capital and largest city of Zimbabwe.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Zimbabwe"
+      }
+    ]
+  },
+  {
+    "day": 11,
+    "round": 2,
+    "country": "dj",
+    "statements": [
+      {
+        "text": "Djibouti is a small country in the Horn of Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Djibouti"
+      },
+      {
+        "text": "Djibouti is landlocked, with no access to the sea.",
+        "fib": true,
+        "truth": "Djibouti has a coastline on the Red Sea and the Gulf of Aden.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Djibouti"
+      },
+      {
+        "text": "French and Arabic are the two official languages of Djibouti.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Djibouti"
+      }
+    ]
+  },
+  {
+    "day": 12,
+    "round": 1,
+    "country": "hn",
+    "statements": [
+      {
+        "text": "Most people in Honduras speak Portuguese.",
+        "fib": true,
+        "truth": "Spanish is the official language of Honduras, spoken by almost everyone.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honduras"
+      },
+      {
+        "text": "Honduras is in Central America and has a coastline on the Caribbean Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honduras"
+      },
+      {
+        "text": "The ancient Maya city of Copán is found in Honduras.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honduras"
+      }
+    ]
+  },
+  {
+    "day": 12,
+    "round": 4,
+    "country": "cd",
+    "statements": [
+      {
+        "text": "The DR Congo is named after the mighty Congo River, which flows through it.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo"
+      },
+      {
+        "text": "Kinshasa is the capital and largest city of the DR Congo.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo"
+      },
+      {
+        "text": "The DR Congo is a small island nation in the Indian Ocean.",
+        "fib": true,
+        "truth": "The DR Congo is a huge country in Central Africa, the second-largest in Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo"
+      }
+    ]
+  },
+  {
+    "day": 13,
+    "round": 3,
+    "country": "do",
+    "statements": [
+      {
+        "text": "The Dominican Republic shares the island of Hispaniola with Haiti.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dominican_Republic"
+      },
+      {
+        "text": "Most people in the Dominican Republic speak French.",
+        "fib": true,
+        "truth": "The Dominican Republic is mostly Spanish-speaking.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dominican_Republic"
+      },
+      {
+        "text": "Baseball is by far the most popular sport in the Dominican Republic.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dominican_Republic"
+      }
+    ]
+  },
+  {
+    "day": 14,
+    "round": 2,
+    "country": "bz",
+    "statements": [
+      {
+        "text": "Belize is an island nation in the Mediterranean Sea.",
+        "fib": true,
+        "truth": "Belize is in Central America, on the coast of the Caribbean Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Belize"
+      },
+      {
+        "text": "English is the official language of Belize.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Belize"
+      },
+      {
+        "text": "Belize is famous for its huge barrier reef in the Caribbean Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Belize"
+      }
+    ]
+  },
+  {
+    "day": 15,
+    "round": 1,
+    "country": "bw",
+    "statements": [
+      {
+        "text": "Botswana is home to the Okavango Delta, a vast inland river delta.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Botswana"
+      },
+      {
+        "text": "Botswana is a landlocked country in southern Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Botswana"
+      },
+      {
+        "text": "Nairobi is the capital of Botswana.",
+        "fib": true,
+        "truth": "Gaborone is the capital of Botswana; Nairobi is the capital of Kenya.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Botswana"
+      }
+    ]
+  },
+  {
+    "day": 15,
+    "round": 4,
+    "country": "mk",
+    "statements": [
+      {
+        "text": "Skopje is the capital and largest city of North Macedonia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/North_Macedonia"
+      },
+      {
+        "text": "North Macedonia is in Scandinavia, right next to Sweden.",
+        "fib": true,
+        "truth": "North Macedonia is a landlocked country in southeastern Europe, in the Balkans.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/North_Macedonia"
+      },
+      {
+        "text": "Lake Ohrid lies on North Macedonia's border with Albania.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/North_Macedonia"
+      }
+    ]
+  },
+  {
+    "day": 17,
+    "round": 0,
+    "country": "md",
+    "statements": [
+      {
+        "text": "Moldova has many sandy beaches on the Black Sea.",
+        "fib": true,
+        "truth": "Moldova is landlocked, sitting between Romania and Ukraine.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Moldova"
+      },
+      {
+        "text": "Moldova is well known for making and exporting wine.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Moldova"
+      },
+      {
+        "text": "Chișinău is the capital and largest city of Moldova.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Moldova"
+      }
+    ]
+  },
+  {
+    "day": 17,
+    "round": 3,
+    "country": "ad",
+    "statements": [
+      {
+        "text": "Andorra sits high in the Pyrenees mountains, between France and Spain.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Andorra"
+      },
+      {
+        "text": "Catalan is the official language of Andorra.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Andorra"
+      },
+      {
+        "text": "Andorra is one of the biggest countries in Europe.",
+        "fib": true,
+        "truth": "Andorra is a tiny microstate, one of the smallest countries in Europe.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Andorra"
+      }
+    ]
+  },
+  {
+    "day": 18,
+    "round": 2,
+    "country": "sk",
+    "statements": [
+      {
+        "text": "Slovakia is a landlocked country in Central Europe.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Slovakia"
+      },
+      {
+        "text": "Prague is the capital of Slovakia.",
+        "fib": true,
+        "truth": "Bratislava is the capital of Slovakia; Prague is the capital of the Czech Republic.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Slovakia"
+      },
+      {
+        "text": "The Tatra Mountains rise in the north of Slovakia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Slovakia"
+      }
+    ]
+  },
+  {
+    "day": 19,
+    "round": 3,
+    "country": "mu",
+    "statements": [
+      {
+        "text": "Mauritius is a landlocked country in central Africa.",
+        "fib": true,
+        "truth": "Mauritius is an island country in the Indian Ocean, east of Madagascar.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mauritius"
+      },
+      {
+        "text": "The dodo, a famous flightless bird, once lived only on Mauritius.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mauritius"
+      },
+      {
+        "text": "Port Louis is the capital and largest city of Mauritius.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mauritius"
+      }
+    ]
+  },
+  {
+    "day": 20,
+    "round": 4,
+    "country": "ni",
+    "statements": [
+      {
+        "text": "Nicaragua is the largest country in Central America by area.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nicaragua"
+      },
+      {
+        "text": "Spanish is the official language of Nicaragua.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nicaragua"
+      },
+      {
+        "text": "Nicaragua is located in Southeast Asia.",
+        "fib": true,
+        "truth": "Nicaragua is in Central America, between Honduras and Costa Rica.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nicaragua"
+      }
+    ]
+  },
+  {
+    "day": 21,
+    "round": 3,
+    "country": "gt",
+    "statements": [
+      {
+        "text": "Tikal, a famous ancient Maya site, is found in Guatemala.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Guatemala"
+      },
+      {
+        "text": "Guatemala has no coastline at all.",
+        "fib": true,
+        "truth": "Guatemala has coasts on both the Pacific Ocean and the Caribbean Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Guatemala"
+      },
+      {
+        "text": "Guatemala borders Mexico to the north and west.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Guatemala"
+      }
+    ]
+  },
+  {
+    "day": 23,
+    "round": 1,
+    "country": "sr",
+    "statements": [
+      {
+        "text": "Spanish is the official language of Suriname.",
+        "fib": true,
+        "truth": "Dutch is the official language of Suriname.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Suriname"
+      },
+      {
+        "text": "Suriname is on the northern coast of South America.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Suriname"
+      },
+      {
+        "text": "Most of Suriname is covered by thick rainforest.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Suriname"
+      }
+    ]
+  },
+  {
+    "day": 24,
+    "round": 1,
+    "country": "bh",
+    "statements": [
+      {
+        "text": "A long causeway connects Bahrain to Saudi Arabia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bahrain"
+      },
+      {
+        "text": "Arabic is the official language of Bahrain.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bahrain"
+      },
+      {
+        "text": "Bahrain is a landlocked country in Central Asia.",
+        "fib": true,
+        "truth": "Bahrain is an island country in the Persian Gulf.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bahrain"
+      }
+    ]
+  },
+  {
+    "day": 25,
+    "round": 0,
+    "country": "ws",
+    "statements": [
+      {
+        "text": "Rugby union is the national sport of Samoa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Samoa"
+      },
+      {
+        "text": "Samoa is a hot desert country in North Africa.",
+        "fib": true,
+        "truth": "Samoa is a group of tropical islands in the South Pacific Ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Samoa"
+      },
+      {
+        "text": "Apia is the capital and largest city of Samoa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Samoa"
+      }
+    ]
+  },
+  {
+    "day": 25,
+    "round": 4,
+    "country": "bs",
+    "statements": [
+      {
+        "text": "The Bahamas is a single large island in the Indian Ocean.",
+        "fib": true,
+        "truth": "The Bahamas is made up of hundreds of islands in the Atlantic Ocean, near Florida.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/The_Bahamas"
+      },
+      {
+        "text": "Nassau is the capital and largest city of The Bahamas.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/The_Bahamas"
+      },
+      {
+        "text": "English is the official language of The Bahamas.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/The_Bahamas"
+      }
+    ]
+  },
+  {
+    "day": 26,
+    "round": 3,
+    "country": "pw",
+    "statements": [
+      {
+        "text": "Palau is an island country in the western Pacific Ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Palau"
+      },
+      {
+        "text": "Palau is famous for its snowy mountain ski resorts.",
+        "fib": true,
+        "truth": "Palau has a hot, rainy tropical climate all year round.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Palau"
+      },
+      {
+        "text": "Scuba diving and snorkelling are popular with visitors to Palau.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Palau"
+      }
+    ]
+  },
+  {
+    "day": 27,
+    "round": 4,
+    "country": "gn",
+    "statements": [
+      {
+        "text": "Guinea is in West Africa and has a coastline on the Atlantic Ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Guinea"
+      },
+      {
+        "text": "French is one of the official languages of Guinea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Guinea"
+      },
+      {
+        "text": "Cairo is the capital of Guinea.",
+        "fib": true,
+        "truth": "Conakry is the capital of Guinea; Cairo is the capital of Egypt.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Guinea"
+      }
+    ]
+  },
+  {
+    "day": 28,
+    "round": 4,
+    "country": "pg",
+    "statements": [
+      {
+        "text": "Papua New Guinea is an island nation in the Caribbean Sea.",
+        "fib": true,
+        "truth": "Papua New Guinea is in Oceania, north of Australia, sharing New Guinea island with Indonesia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Papua_New_Guinea"
+      },
+      {
+        "text": "More than 800 languages are spoken in Papua New Guinea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Papua_New_Guinea"
+      },
+      {
+        "text": "Port Moresby is the capital of Papua New Guinea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Papua_New_Guinea"
+      }
+    ]
+  },
+  {
+    "day": 29,
+    "round": 3,
+    "country": "me",
+    "statements": [
+      {
+        "text": "The name Montenegro means \"Black Mountain\".",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Montenegro"
+      },
+      {
+        "text": "Montenegro is landlocked, with no coastline at all.",
+        "fib": true,
+        "truth": "Montenegro has a coastline along the Adriatic Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Montenegro"
+      },
+      {
+        "text": "Montenegro uses the euro as its currency.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Montenegro"
+      }
+    ]
+  },
+  {
+    "day": 30,
+    "round": 2,
+    "country": "bi",
+    "statements": [
+      {
+        "text": "Burundi is a small landlocked country in East Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Burundi"
+      },
+      {
+        "text": "Lake Tanganyika lies along Burundi's southwestern border.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Burundi"
+      },
+      {
+        "text": "Spanish and Portuguese are the official languages of Burundi.",
+        "fib": true,
+        "truth": "Kirundi, French, and English are the official languages of Burundi.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Burundi"
+      }
+    ]
+  },
+  {
+    "day": 31,
+    "round": 0,
+    "country": "ki",
+    "statements": [
+      {
+        "text": "Kiribati is a large landlocked country in Asia.",
+        "fib": true,
+        "truth": "Kiribati is a country of Pacific Ocean atolls and islands.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kiribati"
+      },
+      {
+        "text": "Kiribati's islands are spread across both sides of the equator.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kiribati"
+      },
+      {
+        "text": "More than half of Kiribati's people live on Tarawa, the capital.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kiribati"
+      }
+    ]
+  },
+  {
+    "day": 31,
+    "round": 4,
+    "country": "td",
+    "statements": [
+      {
+        "text": "Chad is a landlocked country in Central Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chad"
+      },
+      {
+        "text": "English and German are the official languages of Chad.",
+        "fib": true,
+        "truth": "French and Arabic are the official languages of Chad.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chad"
+      },
+      {
+        "text": "Chad takes its name from Lake Chad.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chad"
+      }
+    ]
+  },
+  {
+    "day": 32,
+    "round": 2,
+    "country": "al",
+    "statements": [
+      {
+        "text": "Albania has coastlines on the Adriatic and Ionian Seas.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Albania"
+      },
+      {
+        "text": "Albania's red flag shows a black double-headed eagle.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Albania"
+      },
+      {
+        "text": "Albania is in South Asia, next to India.",
+        "fib": true,
+        "truth": "Albania is in southeastern Europe, in the Balkans.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Albania"
+      }
+    ]
+  },
+  {
+    "day": 33,
+    "round": 3,
+    "country": "mh",
+    "statements": [
+      {
+        "text": "The Marshall Islands are in the Arctic Ocean, near Greenland.",
+        "fib": true,
+        "truth": "The Marshall Islands are in the North Pacific Ocean, in Micronesia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Marshall_Islands"
+      },
+      {
+        "text": "The Marshall Islands are made up mostly of coral atolls.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Marshall_Islands"
+      },
+      {
+        "text": "Majuro is the capital and largest city of the Marshall Islands.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Marshall_Islands"
+      }
+    ]
+  },
+  {
+    "day": 34,
+    "round": 3,
+    "country": "cv",
+    "statements": [
+      {
+        "text": "Cape Verde is a group of islands in the Atlantic Ocean, off West Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cape_Verde"
+      },
+      {
+        "text": "English is the official language of Cape Verde.",
+        "fib": true,
+        "truth": "Portuguese is the official language of Cape Verde.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cape_Verde"
+      },
+      {
+        "text": "Morna, a soulful style of song, is Cape Verde's national music.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cape_Verde"
+      }
+    ]
+  },
+  {
+    "day": 35,
+    "round": 1,
+    "country": "fm",
+    "statements": [
+      {
+        "text": "The Micronesian flag has four white stars, one for each of its states.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Federated_States_of_Micronesia"
+      },
+      {
+        "text": "English is the official language of the Federated States of Micronesia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Federated_States_of_Micronesia"
+      },
+      {
+        "text": "Micronesia is a landlocked country in Central Europe.",
+        "fib": true,
+        "truth": "Micronesia is an island nation in the western Pacific Ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Federated_States_of_Micronesia"
+      }
+    ]
+  }
+]

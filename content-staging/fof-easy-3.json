@@ -1,0 +1,695 @@
+[
+  {
+    "day": 6,
+    "round": 4,
+    "country": "zm",
+    "statements": [
+      {
+        "text": "Zambia's capital city is Lusaka.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Zambia"
+      },
+      {
+        "text": "Victoria Falls, one of the world's most famous waterfalls, sits on the border between Zambia and Zimbabwe.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Victoria_Falls"
+      },
+      {
+        "text": "Zambia has a long coastline on the Indian Ocean with sandy beaches.",
+        "fib": true,
+        "truth": "Zambia is a landlocked country in Southern Africa with no coastline.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Zambia"
+      }
+    ]
+  },
+  {
+    "day": 8,
+    "round": 4,
+    "country": "bf",
+    "statements": [
+      {
+        "text": "Burkina Faso is a coastal country in East Africa with beaches on the Indian Ocean.",
+        "fib": true,
+        "truth": "Burkina Faso is a landlocked country in West Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Burkina_Faso"
+      },
+      {
+        "text": "The capital and largest city of Burkina Faso is Ouagadougou.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Burkina_Faso"
+      },
+      {
+        "text": "Burkina Faso shares a border with Ghana to the south.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Burkina_Faso"
+      }
+    ]
+  },
+  {
+    "day": 9,
+    "round": 4,
+    "country": "om",
+    "statements": [
+      {
+        "text": "Oman is located on the Arabian Peninsula in West Asia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Oman"
+      },
+      {
+        "text": "Oman's capital city is Dubai.",
+        "fib": true,
+        "truth": "Oman's capital is Muscat. Dubai is a city in the United Arab Emirates.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Oman"
+      },
+      {
+        "text": "Arabic is the official language of Oman.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Oman"
+      }
+    ]
+  },
+  {
+    "day": 10,
+    "round": 2,
+    "country": "py",
+    "statements": [
+      {
+        "text": "Paraguay is a landlocked country in the middle of South America.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Paraguay"
+      },
+      {
+        "text": "Paraguay has two official languages: Spanish and Guaraní.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Paraguay"
+      },
+      {
+        "text": "Paraguay's capital city is Buenos Aires.",
+        "fib": true,
+        "truth": "Paraguay's capital is Asunción. Buenos Aires is the capital of Argentina.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Paraguay"
+      }
+    ]
+  },
+  {
+    "day": 11,
+    "round": 1,
+    "country": "lr",
+    "statements": [
+      {
+        "text": "Liberia is a country in South America, next to Brazil.",
+        "fib": true,
+        "truth": "Liberia is in West Africa, on the Atlantic coast.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Liberia"
+      },
+      {
+        "text": "Liberia's capital and largest city is Monrovia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Liberia"
+      },
+      {
+        "text": "English is the official language of Liberia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Liberia"
+      }
+    ]
+  },
+  {
+    "day": 11,
+    "round": 4,
+    "country": "ag",
+    "statements": [
+      {
+        "text": "Antigua and Barbuda is an island country in the Caribbean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda"
+      },
+      {
+        "text": "Antigua and Barbuda is an island nation in the Pacific Ocean, near Fiji.",
+        "fib": true,
+        "truth": "Antigua and Barbuda is in the Caribbean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda"
+      },
+      {
+        "text": "The country is named after its two main islands, Antigua and Barbuda.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda"
+      }
+    ]
+  },
+  {
+    "day": 12,
+    "round": 3,
+    "country": "tl",
+    "statements": [
+      {
+        "text": "Timor-Leste is a country in Southeast Asia that shares the island of Timor with Indonesia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/East_Timor"
+      },
+      {
+        "text": "Timor-Leste's two official languages are Portuguese and Tetum.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/East_Timor"
+      },
+      {
+        "text": "Timor-Leste is a landlocked country with no coastline.",
+        "fib": true,
+        "truth": "Timor-Leste is an island country covering the eastern half of the island of Timor.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/East_Timor"
+      }
+    ]
+  },
+  {
+    "day": 13,
+    "round": 2,
+    "country": "li",
+    "statements": [
+      {
+        "text": "Liechtenstein has sunny beaches along the Mediterranean Sea.",
+        "fib": true,
+        "truth": "Liechtenstein is a landlocked country in the Alps between Switzerland and Austria.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Liechtenstein"
+      },
+      {
+        "text": "The capital of Liechtenstein is Vaduz.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Liechtenstein"
+      },
+      {
+        "text": "German is the official language of Liechtenstein.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Liechtenstein"
+      }
+    ]
+  },
+  {
+    "day": 14,
+    "round": 0,
+    "country": "sc",
+    "statements": [
+      {
+        "text": "The capital of Seychelles is Victoria.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seychelles"
+      },
+      {
+        "text": "Seychelles is a group of islands in the Caribbean Sea.",
+        "fib": true,
+        "truth": "Seychelles is a group of islands in the Indian Ocean, east of Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seychelles"
+      },
+      {
+        "text": "Huge numbers of giant tortoises live on Aldabra, an atoll in Seychelles.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seychelles"
+      }
+    ]
+  },
+  {
+    "day": 15,
+    "round": 0,
+    "country": "bt",
+    "statements": [
+      {
+        "text": "Bhutan sits in the Himalayas, between China and India.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bhutan"
+      },
+      {
+        "text": "Bhutan's capital and largest city is Thimphu.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bhutan"
+      },
+      {
+        "text": "Ice hockey is Bhutan's national sport.",
+        "fib": true,
+        "truth": "Archery is the national sport of Bhutan.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Archery_in_Bhutan"
+      }
+    ]
+  },
+  {
+    "day": 15,
+    "round": 3,
+    "country": "mz",
+    "statements": [
+      {
+        "text": "The official language of Mozambique is French.",
+        "fib": true,
+        "truth": "Portuguese is the official language of Mozambique.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mozambique"
+      },
+      {
+        "text": "Mozambique is in Southeast Africa, with the Indian Ocean along its eastern coast.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mozambique"
+      },
+      {
+        "text": "Maputo is the capital and largest city of Mozambique.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mozambique"
+      }
+    ]
+  },
+  {
+    "day": 16,
+    "round": 3,
+    "country": "vc",
+    "statements": [
+      {
+        "text": "Saint Vincent and the Grenadines is an island country in the eastern Caribbean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
+      },
+      {
+        "text": "The capital of Saint Vincent and the Grenadines is Havana.",
+        "fib": true,
+        "truth": "The capital is Kingstown. Havana is the capital of Cuba.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
+      },
+      {
+        "text": "English is the official language of Saint Vincent and the Grenadines.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
+      }
+    ]
+  },
+  {
+    "day": 17,
+    "round": 2,
+    "country": "ga",
+    "statements": [
+      {
+        "text": "Gabon is on the Atlantic coast of Central Africa, and the equator runs through it.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Gabon"
+      },
+      {
+        "text": "Libreville is the capital and largest city of Gabon.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Gabon"
+      },
+      {
+        "text": "Spanish is the official language of Gabon.",
+        "fib": true,
+        "truth": "French is the official language of Gabon.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Gabon"
+      }
+    ]
+  },
+  {
+    "day": 18,
+    "round": 1,
+    "country": "cg",
+    "statements": [
+      {
+        "text": "English is the official language of the Republic of the Congo.",
+        "fib": true,
+        "truth": "French is the official language of the Republic of the Congo.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Republic_of_the_Congo"
+      },
+      {
+        "text": "The capital and largest city of the Republic of the Congo is Brazzaville.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Republic_of_the_Congo"
+      },
+      {
+        "text": "The Republic of the Congo is in Central Africa and lies on the equator.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Republic_of_the_Congo"
+      }
+    ]
+  },
+  {
+    "day": 19,
+    "round": 0,
+    "country": "bg",
+    "statements": [
+      {
+        "text": "Bulgaria is a country in Southeastern Europe, on the Balkan Peninsula.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bulgaria"
+      },
+      {
+        "text": "Bulgaria's capital city is Bucharest.",
+        "fib": true,
+        "truth": "Bulgaria's capital is Sofia. Bucharest is the capital of Romania.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bulgaria"
+      },
+      {
+        "text": "Bulgaria has a coastline on the Black Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bulgaria"
+      }
+    ]
+  },
+  {
+    "day": 20,
+    "round": 2,
+    "country": "ml",
+    "statements": [
+      {
+        "text": "Mali is a country in West Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mali"
+      },
+      {
+        "text": "The historic city of Timbuktu, once a famous centre of learning, is in Mali.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mali"
+      },
+      {
+        "text": "Mali is a chain of tropical islands in the Indian Ocean.",
+        "fib": true,
+        "truth": "Mali is a landlocked country in West Africa. The island nation is the Maldives.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mali"
+      }
+    ]
+  },
+  {
+    "day": 21,
+    "round": 1,
+    "country": "bn",
+    "statements": [
+      {
+        "text": "Brunei is located on the island of Madagascar.",
+        "fib": true,
+        "truth": "Brunei is on the northern coast of the island of Borneo in Southeast Asia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Brunei"
+      },
+      {
+        "text": "The capital of Brunei is Bandar Seri Begawan.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Brunei"
+      },
+      {
+        "text": "Malay is the official language of Brunei.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Brunei"
+      }
+    ]
+  },
+  {
+    "day": 22,
+    "round": 4,
+    "country": "kw",
+    "statements": [
+      {
+        "text": "Kuwait sits at the northern tip of the Persian Gulf in West Asia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kuwait"
+      },
+      {
+        "text": "Kuwait uses the euro as its currency.",
+        "fib": true,
+        "truth": "Kuwait's currency is the Kuwaiti dinar.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kuwait"
+      },
+      {
+        "text": "Kuwait's capital and largest city is Kuwait City.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kuwait"
+      }
+    ]
+  },
+  {
+    "day": 24,
+    "round": 0,
+    "country": "kg",
+    "statements": [
+      {
+        "text": "Kyrgyzstan is a landlocked country in Central Asia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kyrgyzstan"
+      },
+      {
+        "text": "Bishkek is the capital and largest city of Kyrgyzstan.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kyrgyzstan"
+      },
+      {
+        "text": "Kyrgyzstan is mostly flat lowland with hardly any mountains.",
+        "fib": true,
+        "truth": "Kyrgyzstan is very mountainous; the Tian Shan range covers over 80% of the country.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kyrgyzstan"
+      }
+    ]
+  },
+  {
+    "day": 24,
+    "round": 3,
+    "country": "fj",
+    "statements": [
+      {
+        "text": "Fiji is a group of islands in the Caribbean Sea.",
+        "fib": true,
+        "truth": "Fiji is an island country in the South Pacific Ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Fiji"
+      },
+      {
+        "text": "Suva is the capital of Fiji.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Fiji"
+      },
+      {
+        "text": "Rugby union is the most popular sport in Fiji.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Rugby_union_in_Fiji"
+      }
+    ]
+  },
+  {
+    "day": 25,
+    "round": 3,
+    "country": "lt",
+    "statements": [
+      {
+        "text": "Lithuania is one of the three Baltic states, on the Baltic Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lithuania"
+      },
+      {
+        "text": "Lithuania's capital city is Riga.",
+        "fib": true,
+        "truth": "Lithuania's capital is Vilnius. Riga is the capital of Latvia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lithuania"
+      },
+      {
+        "text": "Basketball is the most popular sport in Lithuania.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Basketball_in_Lithuania"
+      }
+    ]
+  },
+  {
+    "day": 26,
+    "round": 2,
+    "country": "cm",
+    "statements": [
+      {
+        "text": "Cameroon is a country in Central Africa with a coastline on the Atlantic Ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cameroon"
+      },
+      {
+        "text": "Cameroon has two official languages: French and English.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cameroon"
+      },
+      {
+        "text": "Cameroon's capital city is Lagos.",
+        "fib": true,
+        "truth": "Cameroon's capital is Yaoundé. Lagos is a city in Nigeria.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cameroon"
+      }
+    ]
+  },
+  {
+    "day": 27,
+    "round": 3,
+    "country": "to",
+    "statements": [
+      {
+        "text": "Tonga is a group of islands in the Atlantic Ocean.",
+        "fib": true,
+        "truth": "Tonga is an island country in Polynesia, in the South Pacific Ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tonga"
+      },
+      {
+        "text": "Tonga is a kingdom ruled by a monarch.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tonga"
+      },
+      {
+        "text": "Tonga's capital is Nukuʻalofa, on the island of Tongatapu.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tonga"
+      }
+    ]
+  },
+  {
+    "day": 28,
+    "round": 2,
+    "country": "km",
+    "statements": [
+      {
+        "text": "The Comoros is a country made up of islands in the Indian Ocean, between Africa and Madagascar.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Comoros"
+      },
+      {
+        "text": "The Comoros is a landlocked country in Central Africa.",
+        "fib": true,
+        "truth": "The Comoros is an island country in the Indian Ocean with no land borders.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Comoros"
+      },
+      {
+        "text": "Moroni is the capital and largest city of the Comoros.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Comoros"
+      }
+    ]
+  },
+  {
+    "day": 29,
+    "round": 2,
+    "country": "ci",
+    "statements": [
+      {
+        "text": "Ivory Coast is in West Africa, with a coastline on the Gulf of Guinea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ivory_Coast"
+      },
+      {
+        "text": "French is the official language of Ivory Coast.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ivory_Coast"
+      },
+      {
+        "text": "Ivory Coast exports very little cocoa.",
+        "fib": true,
+        "truth": "Ivory Coast is the world's largest exporter of cocoa beans.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ivory_Coast"
+      }
+    ]
+  },
+  {
+    "day": 30,
+    "round": 1,
+    "country": "vu",
+    "statements": [
+      {
+        "text": "Vanuatu is a chain of islands in the South Pacific Ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vanuatu"
+      },
+      {
+        "text": "Vanuatu's official languages are Spanish and Italian.",
+        "fib": true,
+        "truth": "Vanuatu's official languages are Bislama, English, and French.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vanuatu"
+      },
+      {
+        "text": "Port Vila is the capital of Vanuatu.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vanuatu"
+      }
+    ]
+  },
+  {
+    "day": 30,
+    "round": 4,
+    "country": "ba",
+    "statements": [
+      {
+        "text": "Bosnia and Herzegovina is a country in Scandinavia.",
+        "fib": true,
+        "truth": "Bosnia and Herzegovina is in Southeastern Europe, on the Balkan Peninsula.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina"
+      },
+      {
+        "text": "Sarajevo is the capital and largest city of Bosnia and Herzegovina.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina"
+      },
+      {
+        "text": "The famous Stari Most, or Old Bridge, crosses the Neretva River in the city of Mostar.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Stari_Most"
+      }
+    ]
+  },
+  {
+    "day": 31,
+    "round": 3,
+    "country": "si",
+    "statements": [
+      {
+        "text": "Slovenia shares borders with Italy, Austria, Hungary, and Croatia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Slovenia"
+      },
+      {
+        "text": "Slovenia has a short coastline on the Adriatic Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Slovenia"
+      },
+      {
+        "text": "Slovenia's capital city is Bratislava.",
+        "fib": true,
+        "truth": "Slovenia's capital is Ljubljana. Bratislava is the capital of Slovakia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Slovenia"
+      }
+    ]
+  },
+  {
+    "day": 32,
+    "round": 1,
+    "country": "tv",
+    "statements": [
+      {
+        "text": "Tuvalu is an island country in the Pacific Ocean, in Polynesia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tuvalu"
+      },
+      {
+        "text": "Tuvalu is one of the largest countries in the world by area.",
+        "fib": true,
+        "truth": "Tuvalu is the 4th smallest country in the world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tuvalu"
+      },
+      {
+        "text": "Funafuti is the capital of Tuvalu.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tuvalu"
+      }
+    ]
+  },
+  {
+    "day": 33,
+    "round": 2,
+    "country": "mv",
+    "statements": [
+      {
+        "text": "The Maldives is a chain of islands in the Caribbean Sea.",
+        "fib": true,
+        "truth": "The Maldives is an island country in the Indian Ocean, in South Asia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Maldives"
+      },
+      {
+        "text": "Malé is the capital of the Maldives.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Maldives"
+      },
+      {
+        "text": "The Maldives is the lowest-lying country in the world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Maldives"
+      }
+    ]
+  },
+  {
+    "day": 34,
+    "round": 1,
+    "country": "sb",
+    "statements": [
+      {
+        "text": "Solomon Islands is an island country in the South Pacific, northeast of Australia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Solomon_Islands"
+      },
+      {
+        "text": "The capital, Honiara, is on Guadalcanal, the country's largest island.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Solomon_Islands"
+      },
+      {
+        "text": "French is the official language of Solomon Islands.",
+        "fib": true,
+        "truth": "English is the official language of Solomon Islands.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Solomon_Islands"
+      }
+    ]
+  },
+  {
+    "day": 35,
+    "round": 0,
+    "country": "lv",
+    "statements": [
+      {
+        "text": "Riga is the capital and largest city of Latvia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Latvia"
+      },
+      {
+        "text": "Latvia is in Southern Europe, on the Mediterranean Sea.",
+        "fib": true,
+        "truth": "Latvia is in Northern Europe, on the eastern shore of the Baltic Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Latvia"
+      },
+      {
+        "text": "Latvian is the official language of Latvia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Latvia"
+      }
+    ]
+  },
+  {
+    "day": 35,
+    "round": 3,
+    "country": "sv",
+    "statements": [
+      {
+        "text": "The official language of El Salvador is Portuguese.",
+        "fib": true,
+        "truth": "Spanish is the official language of El Salvador.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/El_Salvador"
+      },
+      {
+        "text": "San Salvador is the capital of El Salvador.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/El_Salvador"
+      },
+      {
+        "text": "El Salvador lies on the Pacific coast of Central America, bordering Guatemala and Honduras.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/El_Salvador"
+      }
+    ]
+  }
+]
