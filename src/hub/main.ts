@@ -265,3 +265,61 @@ function angularDistance([l1, p1]: [number, number], [l2, p2]: [number, number])
   const c = Math.sin(p1 * r) * Math.sin(p2 * r) + Math.cos(p1 * r) * Math.cos(p2 * r) * Math.cos((l1 - l2) * r);
   return Math.acos(Math.max(-1, Math.min(1, c))) / r;
 }
+
+/* ---------- Recommendations form: posts to this site's own /api/feedback, which emails it on ---------- */
+(() => {
+  const form = document.getElementById('ideas-form') as HTMLFormElement | null;
+  if (!form) return;
+  const status = document.getElementById('ideas-status')!;
+  const send = document.getElementById('ideas-send') as HTMLButtonElement;
+  const message = document.getElementById('ideas-message') as HTMLTextAreaElement;
+  const email = document.getElementById('ideas-email') as HTMLInputElement;
+  const opened = performance.now();
+  const say = (text: string, kind: '' | 'ok' | 'error' = '') => {
+    status.textContent = text;
+    status.classList.toggle('is-ok', kind === 'ok');
+    status.classList.toggle('is-error', kind === 'error');
+  };
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const text = message.value.trim();
+    if (text.length < 5) {
+      say('Please write a little more first.', 'error');
+      message.focus();
+      return;
+    }
+    if (email.value && !email.checkValidity()) {
+      say('That email address looks off. You can also leave it blank.', 'error');
+      email.focus();
+      return;
+    }
+    const data = new FormData(form);
+    send.disabled = true;
+    say('Sending…');
+    try {
+      const res = await fetch('/api/feedback', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify({
+          game: data.get('game'),
+          message: text,
+          email: email.value.trim(),
+          website: data.get('website'),
+          elapsed: Math.round(performance.now() - opened),
+        }),
+      });
+      const body = (await res.json().catch(() => ({}))) as { error?: string };
+      if (!res.ok) throw new Error(body.error || 'send failed');
+      form.reset();
+      haptic.success();
+      say('Thank you! Your recommendation is on its way.', 'ok');
+    } catch (err) {
+      haptic.error();
+      const msg = err instanceof Error && err.message !== 'send failed' && !/fetch/i.test(err.message) ? err.message : "Couldn't send right now. Please try again in a bit.";
+      say(msg, 'error');
+    } finally {
+      send.disabled = false;
+    }
+  });
+})();

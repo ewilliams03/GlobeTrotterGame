@@ -368,3 +368,51 @@ a.route-link:active {
   .report-list { grid-template-columns: 1fr; }
   .report-list li:nth-last-child(2) { border-bottom: 1px solid var(--line); }
 }
+
+/* ---------- Recommendations form ---------- */
+.ideas-section { margin-top: clamp(40px, 7vw, 80px); margin-bottom: clamp(32px, 6vw, 64px); }
+.ideas {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr);
+  gap: clamp(20px, 4vw, 48px);
+  padding: clamp(20px, 3.5vw, 36px);
+  border-radius: var(--r-lg);
+  background: var(--paper-2);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.ideas-intro { display: grid; align-content: start; gap: 10px; }
+.ideas-intro h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); letter-spacing: -0.04em; line-height: 1.05; }
+.ideas-intro p:last-child { color: var(--ink-2); max-width: 42ch; }
+.ideas-form { display: grid; gap: 14px; }
+.ideas-field { display: grid; gap: 6px; font-weight: 600; font-size: 0.92rem; }
+.ideas-field em { font-style: normal; font-weight: 500; color: var(--ink-3); }
+.ideas-field input,
+.ideas-field select,
+.ideas-field textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: var(--r-sm, 10px);
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1.5px var(--line);
+  color: var(--ink);
+  font: 500 1rem/1.4 var(--font-body); /* 16px+ stops iOS zooming into the field */
+}
+.ideas-field textarea { resize: vertical; min-height: 120px; }
+.ideas-field input:focus-visible,
+.ideas-field select:focus-visible,
+.ideas-field textarea:focus-visible { outline: none; box-shadow: inset 0 0 0 2px var(--ink); }
+.ideas-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.ideas-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+.ideas-status { font-weight: 600; color: var(--ink-2); }
+.ideas-status.is-ok { color: var(--text-1); }
+.ideas-status.is-error { color: var(--signal); }
+.ideas-note { font-size: 0.82rem; color: var(--ink-3); max-width: 60ch; }
+.ideas-note a { color: inherit; text-underline-offset: 2px; }
+@media (max-width: 760px) {
+  .ideas { grid-template-columns: 1fr; }
+}
+@media (forced-colors: active) {
+  .ideas-field input, .ideas-field select, .ideas-field textarea { border: 1px solid CanvasText; }
+}

@@ -153,6 +153,45 @@
         </ol>
       </section>
 
+      <section class="ideas-section wrap" id="recommendations" aria-labelledby="ideas-title">
+        <div class="ideas">
+        <div class="ideas-intro">
+          <p class="eyebrow">Recommendations</p>
+          <h2 id="ideas-title">Help shape the next trip</h2>
+          <p>Something too hard, a bug, an idea for a new game? Tell me. Every note is read by the person who makes this.</p>
+        </div>
+        <form class="ideas-form" id="ideas-form" novalidate>
+          <label class="ideas-field">
+            <span>Which part?</span>
+            <select name="game" id="ideas-game">
+              <option value="general">The site in general</option>
+              <option value="globe-links">Globe Links</option>
+              <option value="fact-or-fib">Fact or Fib</option>
+              <option value="rank-the-world">Rank the World</option>
+              <option value="mystery-passport">Mystery Passport</option>
+              <option value="outline-sketch">Outline Drop</option>
+              <option value="flag-forge">Flag Forge</option>
+            </select>
+          </label>
+          <label class="ideas-field">
+            <span>Your recommendation</span>
+            <textarea name="message" id="ideas-message" rows="5" maxlength="2000" required placeholder="What would make it better?"></textarea>
+          </label>
+          <label class="ideas-field">
+            <span>Email <em>(optional, only if you'd like a reply)</em></span>
+            <input type="email" name="email" id="ideas-email" maxlength="200" autocomplete="email" inputmode="email" />
+          </label>
+          <!-- Left empty by people; bots fill it in. -->
+          <label class="ideas-trap" aria-hidden="true">Website <input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+          <div class="ideas-actions">
+            <button type="submit" class="btn btn-primary" id="ideas-send">Send recommendation</button>
+            <p class="ideas-status" id="ideas-status" role="status" aria-live="polite"></p>
+          </div>
+          <p class="ideas-note">Please don't include personal details in your message. It's emailed straight to me and not stored on this site; if you're under 13, leave the email blank. <a href="/privacy#feedback">How feedback is handled</a>.</p>
+        </form>
+        </div>
+      </section>
+
     </main>
 
     <footer class="site-footer">
