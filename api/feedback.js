@@ -60,7 +60,7 @@ export async function POST(request) {
   if (!GAMES.has(game)) return reply(400, { error: 'Unknown game.' });
   if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return reply(400, { error: 'That email address looks off.' });
 
-  const key = process.env.RESEND_API_KEY;
+  const key = process.env.RESEND_API_KEY || process.env.resendapykey;
   const to = process.env.FEEDBACK_TO;
   if (!key || !to) return reply(503, { error: 'Feedback is not set up yet.' });
 
