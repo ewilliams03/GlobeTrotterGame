@@ -72,7 +72,7 @@ const SYMBOLS: { id: Symbol; label: string; coloured: boolean }[] = [
 ];
 const layoutOf = (id: Layout) => LAYOUTS.find((l) => l.id === id)!;
 const symbolOf = (id: Symbol) => SYMBOLS.find((s) => s.id === id)!;
-const FREE_HINTS = 2;
+const FREE_HINTS = 3;
 
 const flagUrls = import.meta.glob('/node_modules/flag-icons/flags/4x3/*.svg', {
   eager: true,

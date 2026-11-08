@@ -2,11 +2,11 @@
  "_note": "Each clue was checked against its source page on 7 Nov 2026. The first clue (nature) is free; the rest cost points.",
  "costs": {
   "nature": 0,
-  "food": 10,
-  "phrase": 10,
-  "currency": 15,
-  "landmark": 20,
-  "neighbour": 20
+  "food": 5,
+  "phrase": 5,
+  "currency": 10,
+  "landmark": 10,
+  "neighbour": 15
  },
  "days": [
   {

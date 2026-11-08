@@ -46,7 +46,7 @@ interface State {
 const ROUNDS = 4;
 const SIZE = 5;
 const MAX = ROUNDS * SIZE * 2;
-const FREE_HINTS = 2;
+const FREE_HINTS = 3;
 const STAT_ICON: Record<string, string> = { highest: 'mountain', lowest: 'south', area: 'area', neighbours: 'borders', coastline: 'coast', north: 'north', south: 'south' };
 const STAT_SHORT: Record<string, string> = { lowest: 'Lows   ', highest: 'Peaks  ', area: 'Area   ', neighbours: 'Borders', coastline: 'Coast  ', north: 'North  ', south: 'South  ' };
 

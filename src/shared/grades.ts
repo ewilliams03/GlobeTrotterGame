@@ -13,12 +13,12 @@ export const GAMES = [
 ] as const;
 export type GameId = (typeof GAMES)[number]['id'];
 
-// The familiar school scale.
+// A friendlier curve than school: these are hard puzzles, and a good day should feel like one.
 const SCALE: [number, string][] = [
-  [97, 'A+'], [93, 'A'], [90, 'A-'],
-  [87, 'B+'], [83, 'B'], [80, 'B-'],
-  [77, 'C+'], [73, 'C'], [70, 'C-'],
-  [67, 'D+'], [63, 'D'], [60, 'D-'],
+  [95, 'A+'], [88, 'A'], [83, 'A-'],
+  [78, 'B+'], [73, 'B'], [68, 'B-'],
+  [63, 'C+'], [58, 'C'], [53, 'C-'],
+  [48, 'D+'], [43, 'D'], [38, 'D-'],
   [0, 'F'],
 ];
 
@@ -97,7 +97,7 @@ export function showGrade(game: GameId, pct: number, key: string) {
   pctLine.textContent = `${p}% of a perfect game`;
   const scale = document.createElement('p');
   scale.className = 'grade-scale';
-  scale.textContent = 'A 90%+ · B 80%+ · C 70%+ · D 60%+ · F below 60%';
+  scale.textContent = 'A 83%+ · B 68%+ · C 53%+ · D 38%+';
   info.append(pctLine, scale);
   box.replaceChildren(letter, info);
 }

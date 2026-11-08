@@ -41,7 +41,7 @@ interface State {
 }
 
 const ROUNDS = 5;
-const FREE_HINTS = 2;
+const FREE_HINTS = 3;
 const POINTS: Record<Bet, [number, number]> = { sure: [2, -1], hunch: [1, 0] }; // [right, wrong]
 
 const flagUrls = import.meta.glob('/node_modules/flag-icons/flags/4x3/*.svg', {

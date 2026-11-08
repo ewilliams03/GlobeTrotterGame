@@ -38,7 +38,7 @@ interface State {
 
 const W = 600;
 const H = 440;
-const FREE_HINTS = 2;
+const FREE_HINTS = 3;
 const NS = 'http://www.w3.org/2000/svg';
 
 const flagUrls = import.meta.glob('/node_modules/flag-icons/flags/4x3/*.svg', {
@@ -228,9 +228,9 @@ function measureIn(s: Sketch, frame: MultiPolygon, loops: Pt[][]): { overlap: nu
     ctx.fill();
   }));
   const overlap = iou(target, drawn);
-  const base = iou(target, oval) * 0.9;
+  const base = iou(target, oval) * 0.75;
   // Generous curve: beating the oval clearly is worth a lot; a recognisable shape reaches the top grades.
-  const p = Math.max(0, Math.min(1, (overlap - base) / ((1 - base) * 0.62)));
+  const p = Math.max(0, Math.min(1, (overlap - base) / ((1 - base) * 0.5)));
   return { overlap, points: Math.round(p * 100), frame };
 }
 

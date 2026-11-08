@@ -48,8 +48,8 @@ interface Stats {
 const LEVELS = ['', 'Easy', 'Medium', 'Hard', 'Expert'];
 // Shapes, not coloured squares, so a shared result is clearly our own (easy ● medium ▲ hard ■ expert ◆).
 const SHARE_DOT = ['', '●', '▲', '■', '◆'];
-const MAX_MISTAKES = 4;
-const FREE_HINTS = 2;
+const MAX_MISTAKES = 5;
+const FREE_HINTS = 3;
 
 const flagUrls = import.meta.glob('/node_modules/flag-icons/flags/4x3/*.svg', {
   eager: true,
@@ -506,7 +506,7 @@ function renderResult() {
   }
   actions.hidden = true;
   box.hidden = false;
-  showGrade('globe-links', state.won ? Math.max(50, 100 - 12 * state.mistakes - 8 * state.hints.length) : state.solved.length * 12, todayKey);
+  showGrade('globe-links', state.won ? Math.max(70, 100 - 6 * state.mistakes - 4 * state.hints.length) : 15 + state.solved.length * 18, todayKey);
   const perfect = state.won && state.mistakes === 0;
   $('result-title').textContent = state.won ? (perfect ? 'Perfect trip.' : 'Trip complete.') : 'Out of tickets.';
   $('result-sub').textContent = state.won

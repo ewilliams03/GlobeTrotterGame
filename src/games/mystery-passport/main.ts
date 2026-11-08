@@ -43,9 +43,9 @@ interface State {
 }
 
 const START = 100;
-const MISS_COST = 10;
-const MAX_MISSES = 3;
-const FREE_HINTS = 2;
+const MISS_COST = 5;
+const MAX_MISSES = 4;
+const FREE_HINTS = 3;
 const ORDER: ClueType[] = ['nature', 'food', 'phrase', 'currency', 'landmark', 'neighbour'];
 const LABEL: Record<ClueType, string> = { nature: 'Nature', food: 'Food', phrase: 'Greeting', currency: 'Currency', landmark: 'Landmark', neighbour: 'Neighbour' };
 const ICON: Record<ClueType, string> = { nature: 'leaf', food: 'bowl', phrase: 'speech', currency: 'coin', landmark: 'columns', neighbour: 'compass' };
