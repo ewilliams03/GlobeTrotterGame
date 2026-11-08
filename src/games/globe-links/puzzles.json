@@ -31,8 +31,8 @@
         "countries": [
           "tr",
           "dz",
-          "az",
-          "mr"
+          "mn",
+          "tn"
         ],
         "fact": "The star and crescent became closely tied to the Ottoman Empire, which is why it appears on so many flags in the region today.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Star_and_crescent"
@@ -57,7 +57,7 @@
         "category": "stan",
         "difficulty": 1,
         "countries": [
-          "uz",
+          "af",
           "tm",
           "kg",
           "tj"
@@ -81,8 +81,8 @@
         "category": "equator",
         "difficulty": 3,
         "countries": [
-          "ug",
-          "ga",
+          "co",
+          "ke",
           "so",
           "id"
         ],
@@ -124,7 +124,7 @@
           "mn",
           "np",
           "et",
-          "la"
+          "lu"
         ],
         "fact": "Mongolia is the world's second-largest landlocked country, after Kazakhstan.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Landlocked_country"
@@ -175,7 +175,7 @@
         "countries": [
           "va",
           "mc",
-          "sm",
+          "mt",
           "li"
         ],
         "fact": "Vatican City is the smallest country in the world, at about 0.49 km² (0.19 sq mi).",
@@ -186,9 +186,9 @@
         "difficulty": 3,
         "countries": [
           "eg",
-          "al",
+          "bo",
           "pg",
-          "zm"
+          "ec"
         ],
         "fact": "Papua New Guinea's flag shows a bird-of-paradise. Most species of these birds live only on New Guinea and nearby islands.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea"
@@ -239,8 +239,8 @@
         "countries": [
           "tr",
           "tn",
-          "az",
-          "mr"
+          "dz",
+          "mn"
         ],
         "fact": "Türkiye's and Tunisia's flags look alike: a white crescent and star on red. Tunisia's sits inside a white circle.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Tunisia"
@@ -266,7 +266,7 @@
         "difficulty": 1,
         "countries": [
           "kz",
-          "uz",
+          "af",
           "pk",
           "tm"
         ],
@@ -304,7 +304,7 @@
           "kw",
           "qa",
           "bh",
-          "ye"
+          "va"
         ],
         "fact": "None of these countries has a river that flows all year round. Kuwait, Qatar and Bahrain get much of their drinking water by desalinating seawater.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Desalination"
@@ -331,8 +331,8 @@
         "countries": [
           "kg",
           "uy",
-          "rw",
-          "na"
+          "np",
+          "jp"
         ],
         "fact": "Kyrgyzstan's flag shows a sun with 40 rays, standing for the 40 tribes of its national epic.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan"
@@ -381,10 +381,10 @@
         "category": "landlocked",
         "difficulty": 2,
         "countries": [
-          "bt",
+          "af",
           "la",
-          "ml",
-          "py"
+          "et",
+          "hu"
         ],
         "fact": "Laos is the only landlocked country in Southeast Asia.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Laos"
@@ -394,7 +394,7 @@
         "difficulty": 3,
         "countries": [
           "mx",
-          "dm",
+          "ec",
           "eg",
           "pg"
         ],
@@ -446,8 +446,8 @@
         "difficulty": 3,
         "countries": [
           "tn",
-          "ly",
-          "uz",
+          "dz",
+          "mn",
           "km"
         ],
         "fact": "The four stars on Comoros's flag stand for the four main islands of the Comoros archipelago.",
@@ -458,9 +458,9 @@
         "difficulty": 4,
         "countries": [
           "pt",
-          "ht",
+          "va",
           "kr",
-          "do"
+          "qa"
         ],
         "fact": "Portugal's border with Spain was largely fixed by a treaty in 1297, making it one of the oldest borders in Europe.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Portugal%E2%80%93Spain_border"
@@ -525,7 +525,7 @@
         "category": "stan",
         "difficulty": 1,
         "countries": [
-          "tm",
+          "af",
           "kg",
           "tj",
           "uz"
@@ -551,7 +551,7 @@
         "countries": [
           "au",
           "ng",
-          "ci",
+          "bo",
           "vn"
         ],
         "fact": "Nigeria moved its capital from Lagos to Abuja, a planned city in the middle of the country, in 1991.",
@@ -602,8 +602,8 @@
         "difficulty": 3,
         "countries": [
           "sa",
-          "om",
-          "gt",
+          "ec",
+          "ir",
           "ao"
         ],
         "fact": "Angola's flag shows half a cogwheel crossed with a machete.",
@@ -641,7 +641,7 @@
         "category": "black-sea",
         "difficulty": 2,
         "countries": [
-          "ge",
+          "ua",
           "tr",
           "ru",
           "ro"
@@ -653,10 +653,10 @@
         "category": "tropic-capricorn",
         "difficulty": 3,
         "countries": [
-          "na",
+          "br",
           "mg",
           "za",
-          "py"
+          "ar"
         ],
         "fact": "The Tropic of Capricorn is the southernmost line where the Sun can be directly overhead, which happens at the December solstice.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn"
@@ -708,7 +708,7 @@
           "sa",
           "km",
           "jo",
-          "so"
+          "iq"
         ],
         "fact": "In Comoros, Arabic shares official status with Comorian and French.",
         "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_Arabic_is_an_official_language"
@@ -735,7 +735,7 @@
         "countries": [
           "af",
           "kz",
-          "kg",
+          "pk",
           "tj"
         ],
         "fact": "The name Afghanistan comes from \"Afghan\", a word first recorded in the 4th century AD that most likely meant \"people from a distant land\".",
@@ -757,9 +757,9 @@
         "category": "red-sea",
         "difficulty": 3,
         "countries": [
-          "ye",
+          "sa",
           "eg",
-          "dj",
+          "jo",
           "sd"
         ],
         "fact": "Egypt's Suez Canal connects the Red Sea to the Mediterranean, dividing Africa and Asia.",
@@ -797,7 +797,7 @@
         "category": "caspian",
         "difficulty": 2,
         "countries": [
-          "tm",
+          "kz",
           "az",
           "ir",
           "ru"
@@ -811,8 +811,8 @@
         "countries": [
           "cn",
           "mm",
-          "mr",
-          "ml"
+          "dz",
+          "eg"
         ],
         "fact": "In China, the Tropic of Cancer runs through the provinces of Yunnan, Guangxi and Guangdong.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
@@ -852,7 +852,7 @@
           "ch",
           "ci",
           "sn",
-          "bj"
+          "mg"
         ],
         "fact": "Côte d'Ivoire's official capital is Yamoussoukro, but Abidjan was the capital until 1983.",
         "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language"
@@ -873,7 +873,7 @@
         "category": "mekong",
         "difficulty": 4,
         "countries": [
-          "la",
+          "mm",
           "th",
           "vn",
           "kh"
@@ -901,7 +901,7 @@
         "category": "german-official",
         "difficulty": 2,
         "countries": [
-          "li",
+          "ch",
           "be",
           "de",
           "lu"
@@ -916,7 +916,7 @@
           "mn",
           "no",
           "pl",
-          "ee"
+          "cn"
         ],
         "fact": "Mongolia is sandwiched between two giant neighbours, with Russia to the north and China to the south.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Mongolia"
@@ -1006,7 +1006,7 @@
         "difficulty": 2,
         "countries": [
           "it",
-          "si",
+          "fr",
           "mc",
           "ch"
         ],
@@ -1018,7 +1018,7 @@
         "difficulty": 3,
         "countries": [
           "lk",
-          "dm",
+          "ph",
           "jm",
           "cv"
         ],
@@ -1069,8 +1069,8 @@
         "category": "red-sea",
         "difficulty": 3,
         "countries": [
-          "er",
-          "sd",
+          "eg",
+          "jo",
           "sa",
           "ye"
         ],
@@ -1110,7 +1110,7 @@
         "difficulty": 2,
         "countries": [
           "cu",
-          "gt",
+          "pa",
           "co",
           "bo"
         ],
@@ -1121,10 +1121,10 @@
         "category": "charles-head",
         "difficulty": 3,
         "countries": [
-          "bz",
+          "ca",
           "gb",
-          "ag",
-          "gd"
+          "nz",
+          "jm"
         ],
         "fact": "In every Commonwealth realm except the United Kingdom, the monarch is represented by a governor-general.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Commonwealth_realm"
@@ -1133,7 +1133,7 @@
         "category": "tropic-capricorn",
         "difficulty": 4,
         "countries": [
-          "mz",
+          "za",
           "mg",
           "br",
           "bw"
@@ -1161,7 +1161,7 @@
         "category": "landlocked",
         "difficulty": 2,
         "countries": [
-          "am",
+          "lu",
           "va",
           "et",
           "uz"
@@ -1185,7 +1185,7 @@
         "category": "prime-meridian",
         "difficulty": 4,
         "countries": [
-          "tg",
+          "fr",
           "gb",
           "dz",
           "gh"
@@ -1202,9 +1202,9 @@
         "difficulty": 1,
         "countries": [
           "mx",
-          "do",
+          "ar",
           "cr",
-          "sv"
+          "co"
         ],
         "fact": "Mexico has the largest population of native Spanish speakers, about 130 million people.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Spanish_language"
@@ -1213,9 +1213,9 @@
         "category": "baltic",
         "difficulty": 2,
         "countries": [
-          "lt",
-          "lv",
-          "ee",
+          "pl",
+          "ru",
+          "dk",
           "fi"
         ],
         "fact": "The Baltic Sea's drainage basin is roughly four times the size of the sea itself.",
@@ -1226,8 +1226,8 @@
         "difficulty": 3,
         "countries": [
           "ph",
-          "tt",
-          "bs",
+          "lk",
+          "mt",
           "mv"
         ],
         "fact": "The Maldives is the world's lowest-lying country, with an average ground level of about 1.5 metres above the sea.",
@@ -1237,7 +1237,7 @@
         "category": "mekong",
         "difficulty": 4,
         "countries": [
-          "la",
+          "th",
           "cn",
           "kh",
           "mm"
@@ -1266,7 +1266,7 @@
         "difficulty": 2,
         "countries": [
           "ua",
-          "by",
+          "ru",
           "ge",
           "kz"
         ],
@@ -1277,9 +1277,9 @@
         "category": "tropic-cancer",
         "difficulty": 3,
         "countries": [
-          "ly",
-          "om",
-          "bd",
+          "dz",
+          "sa",
+          "mm",
           "ae"
         ],
         "fact": "In the United Arab Emirates, the Tropic of Cancer crosses only the emirate of Abu Dhabi.",
@@ -1317,9 +1317,9 @@
         "category": "former-ussr",
         "difficulty": 2,
         "countries": [
-          "md",
-          "kg",
-          "tm",
+          "kz",
+          "ua",
+          "ru",
           "tj"
         ],
         "fact": "On 8 December 1991, the leaders of Russia, Belarus and Ukraine signed the Belovezha Accords, declaring that the Soviet Union no longer existed.",
@@ -1330,8 +1330,8 @@
         "difficulty": 3,
         "countries": [
           "id",
-          "ga",
-          "ki",
+          "co",
+          "ke",
           "ec"
         ],
         "fact": "In Ecuador, the equator passes about 24 km north of central Quito, near Ciudad Mitad del Mundo.",
@@ -1358,9 +1358,9 @@
         "difficulty": 1,
         "countries": [
           "az",
-          "uz",
+          "ua",
           "am",
-          "lt"
+          "kz"
         ],
         "fact": "Armenia and Azerbaijan, together with Georgia, form the South Caucasus, one of five subregions of the post-Soviet states.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Post-Soviet_states"
@@ -1369,10 +1369,10 @@
         "category": "mediterranean",
         "difficulty": 2,
         "countries": [
-          "al",
+          "mt",
           "lb",
           "sy",
-          "cy"
+          "eg"
         ],
         "fact": "The Mediterranean connects to the Atlantic Ocean through the narrow Strait of Gibraltar.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Strait_of_Gibraltar"
@@ -1382,8 +1382,8 @@
         "difficulty": 3,
         "countries": [
           "pe",
-          "gy",
-          "sr",
+          "ve",
+          "ar",
           "co"
         ],
         "fact": "Brazil borders every other country in South America except Ecuador and Chile.",
@@ -1409,7 +1409,7 @@
         "category": "borders-china",
         "difficulty": 1,
         "countries": [
-          "bt",
+          "mm",
           "np",
           "mn",
           "pk"
@@ -1433,7 +1433,7 @@
         "category": "southern-cross-flag",
         "difficulty": 3,
         "countries": [
-          "ws",
+          "nz",
           "pg",
           "au",
           "br"
@@ -1446,8 +1446,8 @@
         "difficulty": 4,
         "countries": [
           "eg",
-          "dj",
-          "sd",
+          "jo",
+          "sa",
           "er"
         ],
         "fact": "The Red Sea is about 2,250 km long but only about 355 km wide.",
@@ -1461,9 +1461,9 @@
         "category": "gcc",
         "difficulty": 1,
         "countries": [
-          "bh",
+          "ae",
           "qa",
-          "kw",
+          "sa",
           "om"
         ],
         "fact": "The Gulf Cooperation Council was established on 25 May 1981.",
@@ -1473,7 +1473,7 @@
         "category": "danube",
         "difficulty": 2,
         "countries": [
-          "bg",
+          "de",
           "hu",
           "hr",
           "ua"
@@ -1485,10 +1485,10 @@
         "category": "charles-head",
         "difficulty": 3,
         "countries": [
-          "sb",
+          "ca",
           "jm",
-          "bz",
-          "gd"
+          "au",
+          "gb"
         ],
         "fact": "The Commonwealth has 56 member countries, but only 15 of them have King Charles III as head of state.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Commonwealth_realm"
@@ -1537,10 +1537,10 @@
         "category": "tropic-cancer",
         "difficulty": 3,
         "countries": [
-          "ne",
-          "ml",
-          "mr",
-          "ly"
+          "mm",
+          "dz",
+          "eg",
+          "sa"
         ],
         "fact": "The climate along the Tropic of Cancer is generally hot and dry, apart from cooler highlands and coastal areas.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
@@ -1577,7 +1577,7 @@
         "category": "asean",
         "difficulty": 2,
         "countries": [
-          "bn",
+          "mm",
           "my",
           "sg",
           "tl"
@@ -1589,10 +1589,10 @@
         "category": "equator",
         "difficulty": 3,
         "countries": [
-          "ga",
-          "so",
+          "co",
+          "br",
           "ke",
-          "ug"
+          "ec"
         ],
         "fact": "The equator passes through Mount Kenya, the highest mountain in Kenya.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
@@ -1601,8 +1601,8 @@
         "category": "prime-meridian",
         "difficulty": 4,
         "countries": [
-          "tg",
-          "bf",
+          "es",
+          "fr",
           "gh",
           "dz"
         ],
@@ -1630,7 +1630,7 @@
         "difficulty": 2,
         "countries": [
           "ir",
-          "tm",
+          "ru",
           "kz",
           "az"
         ],
@@ -1642,9 +1642,9 @@
         "difficulty": 3,
         "countries": [
           "nr",
-          "mw",
-          "to",
-          "bb"
+          "za",
+          "ca",
+          "gh"
         ],
         "fact": "Nauru is the smallest member of the Commonwealth of Nations, by both area and population.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Nauru"
@@ -1670,7 +1670,7 @@
         "difficulty": 1,
         "countries": [
           "va",
-          "sm",
+          "mc",
           "mt",
           "ad"
         ],
@@ -1682,7 +1682,7 @@
         "difficulty": 2,
         "countries": [
           "iq",
-          "km",
+          "lb",
           "ma",
           "qa"
         ],
@@ -1695,7 +1695,7 @@
         "countries": [
           "ph",
           "id",
-          "bn",
+          "vn",
           "sg"
         ],
         "fact": "The Philippines is made up of about 7,641 islands in the western Pacific Ocean.",
@@ -1708,7 +1708,7 @@
           "cl",
           "mg",
           "za",
-          "na"
+          "br"
         ],
         "fact": "In Madagascar, the Tropic of Capricorn crosses the Toliara and Fianarantsoa provinces.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn"
@@ -1721,10 +1721,10 @@
         "category": "mediterranean",
         "difficulty": 1,
         "countries": [
-          "al",
+          "mt",
           "lb",
           "tn",
-          "me"
+          "es"
         ],
         "fact": "The countries around the Mediterranean are spread across three regions: southern Europe, West Asia and North Africa.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Mediterranean_Sea"
@@ -1733,10 +1733,10 @@
         "category": "landlocked",
         "difficulty": 2,
         "countries": [
-          "cf",
-          "rw",
+          "ch",
+          "hu",
           "np",
-          "bt"
+          "kz"
         ],
         "fact": "Kazakhstan is the world's largest landlocked country.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Landlocked_country"
@@ -1745,10 +1745,10 @@
         "category": "charles-head",
         "difficulty": 3,
         "countries": [
-          "tv",
-          "kn",
-          "lc",
-          "ag"
+          "gb",
+          "au",
+          "nz",
+          "jm"
         ],
         "fact": "Barbados used to be a Commonwealth realm too, but on 30 November 2021 it became a republic within the Commonwealth.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Barbados"
@@ -1774,9 +1774,9 @@
         "difficulty": 1,
         "countries": [
           "ht",
-          "vu",
-          "ci",
-          "bj"
+          "ch",
+          "ca",
+          "sn"
         ],
         "fact": "In Haiti, French is an official language alongside Haitian Creole.",
         "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language"
@@ -1785,10 +1785,10 @@
         "category": "baltic",
         "difficulty": 2,
         "countries": [
-          "lv",
+          "fi",
           "pl",
-          "ee",
-          "lt"
+          "ru",
+          "dk"
         ],
         "fact": "The Baltic Sea is an arm of the Atlantic Ocean, enclosed by nine countries.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Baltic_Sea"
@@ -1800,7 +1800,7 @@
           "ve",
           "pe",
           "bo",
-          "gy"
+          "uy"
         ],
         "fact": "Bolivia shares about 3,400 km of border with Brazil.",
         "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
@@ -1810,7 +1810,7 @@
         "difficulty": 4,
         "countries": [
           "er",
-          "ye",
+          "sa",
           "jo",
           "eg"
         ],
@@ -1825,7 +1825,7 @@
         "category": "arabic-official",
         "difficulty": 1,
         "countries": [
-          "kw",
+          "lb",
           "td",
           "iq",
           "sy"
@@ -1849,9 +1849,9 @@
         "category": "no-land-border",
         "difficulty": 3,
         "countries": [
-          "mu",
-          "pw",
-          "fm",
+          "jm",
+          "mg",
+          "ph",
           "mh"
         ],
         "fact": "The Marshall Islands are made up of 29 coral atolls and five main islands, plus more than a thousand tiny ones.",
@@ -1889,8 +1889,8 @@
         "category": "spanish",
         "difficulty": 2,
         "countries": [
-          "hn",
-          "ni",
+          "pe",
+          "cl",
           "pa",
           "gq"
         ],
@@ -1901,10 +1901,10 @@
         "category": "borders-russia",
         "difficulty": 3,
         "countries": [
-          "by",
-          "kp",
+          "fi",
+          "no",
           "mn",
-          "lv"
+          "kz"
         ],
         "fact": "Russia, the largest country in the world, shares land borders with fourteen countries.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Russia"
@@ -1913,10 +1913,10 @@
         "category": "tropic-cancer",
         "difficulty": 4,
         "countries": [
-          "bd",
+          "dz",
           "bs",
-          "ne",
-          "ly"
+          "eg",
+          "sa"
         ],
         "fact": "In the Bahamas, the Tropic of Cancer crosses the Exuma Islands and Long Island.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
@@ -1929,9 +1929,9 @@
         "category": "baltic",
         "difficulty": 1,
         "countries": [
-          "ee",
-          "lv",
-          "lt",
+          "ru",
+          "de",
+          "fi",
           "se"
         ],
         "fact": "The Baltic Sea is the world's largest brackish water basin, a mix of salt and fresh water.",
@@ -1942,7 +1942,7 @@
         "difficulty": 2,
         "countries": [
           "pt",
-          "cv",
+          "br",
           "st",
           "gw"
         ],
@@ -1955,7 +1955,7 @@
         "countries": [
           "id",
           "vn",
-          "la",
+          "mm",
           "ph"
         ],
         "fact": "ASEAN was founded on 8 August 1967 with the signing of the ASEAN Declaration.",
@@ -1981,10 +1981,10 @@
         "category": "nato",
         "difficulty": 1,
         "countries": [
-          "mk",
+          "nl",
           "tr",
           "pt",
-          "al"
+          "se"
         ],
         "fact": "NATO was founded on 4 April 1949 and has its headquarters in Brussels.",
         "sourceUrl": "https://en.wikipedia.org/wiki/NATO"
@@ -1994,9 +1994,9 @@
         "difficulty": 2,
         "countries": [
           "sn",
-          "bi",
+          "mg",
           "cf",
-          "tg"
+          "ch"
         ],
         "fact": "In the Central African Republic, French is an official language alongside Sango.",
         "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language"
@@ -2007,7 +2007,7 @@
         "countries": [
           "ki",
           "mv",
-          "ug",
+          "br",
           "co"
         ],
         "fact": "The equator crosses the territorial waters of the Maldives and Kiribati without touching any of their islands.",
@@ -2034,8 +2034,8 @@
         "difficulty": 1,
         "countries": [
           "pk",
-          "uz",
-          "tm",
+          "kz",
+          "af",
           "tj"
         ],
         "fact": "The name Pakistan was coined in 1933 by activist Choudhry Rahmat Ali, who built it as an acronym.",
@@ -2046,7 +2046,7 @@
         "difficulty": 2,
         "countries": [
           "ba",
-          "cy",
+          "hr",
           "tn",
           "ma"
         ],
@@ -2069,7 +2069,7 @@
         "category": "prime-meridian",
         "difficulty": 4,
         "countries": [
-          "ml",
+          "gb",
           "bf",
           "tg",
           "gh"
@@ -2097,7 +2097,7 @@
         "category": "eu",
         "difficulty": 2,
         "countries": [
-          "sk",
+          "cz",
           "hr",
           "ie",
           "hu"
@@ -2121,9 +2121,9 @@
         "category": "tropic-capricorn",
         "difficulty": 4,
         "countries": [
-          "py",
+          "au",
           "mz",
-          "na",
+          "za",
           "mg"
         ],
         "fact": "In Mozambique, the Tropic of Capricorn crosses the Gaza and Inhambane provinces.",
@@ -2149,7 +2149,7 @@
         "category": "former-yugoslavia",
         "difficulty": 2,
         "countries": [
-          "me",
+          "hr",
           "si",
           "mk",
           "rs"
@@ -2161,9 +2161,9 @@
         "category": "commonwealth",
         "difficulty": 3,
         "countries": [
-          "sl",
+          "tz",
           "ng",
-          "dm",
+          "au",
           "lk"
         ],
         "fact": "The Commonwealth of Nations currently has 56 member countries.",
@@ -2173,7 +2173,7 @@
         "category": "borders-brazil",
         "difficulty": 4,
         "countries": [
-          "sr",
+          "bo",
           "ar",
           "co",
           "ve"
@@ -2202,8 +2202,8 @@
         "difficulty": 2,
         "countries": [
           "gq",
-          "ao",
-          "cv",
+          "br",
+          "pt",
           "gw"
         ],
         "fact": "Equatorial Guinea has three official languages: Spanish, French and Portuguese.",
@@ -2213,10 +2213,10 @@
         "category": "borders-russia",
         "difficulty": 3,
         "countries": [
-          "ge",
-          "by",
+          "no",
+          "fi",
           "kz",
-          "az"
+          "cn"
         ],
         "fact": "The Kazakhstan–Russia border, about 7,600 km long, is the second-longest land border between two countries.",
         "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
@@ -2226,7 +2226,7 @@
         "difficulty": 4,
         "countries": [
           "it",
-          "si",
+          "at",
           "de",
           "mc"
         ],
@@ -2254,9 +2254,9 @@
         "difficulty": 2,
         "countries": [
           "ro",
-          "md",
-          "sk",
-          "bg"
+          "hu",
+          "hr",
+          "ua"
         ],
         "fact": "The Danube empties into the Black Sea through the Danube Delta in Romania and Ukraine.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Danube"
@@ -2265,10 +2265,10 @@
         "category": "no-land-border",
         "difficulty": 3,
         "countries": [
-          "fm",
+          "sg",
           "sc",
-          "mh",
-          "fj"
+          "jm",
+          "au"
         ],
         "fact": "Seychelles is made up of 115 islands in the Indian Ocean.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Seychelles"
@@ -2278,9 +2278,9 @@
         "difficulty": 4,
         "countries": [
           "cg",
-          "cd",
-          "so",
-          "ga"
+          "br",
+          "co",
+          "ke"
         ],
         "fact": "In the Republic of the Congo, the equator passes right through the town of Makoua.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
@@ -2293,7 +2293,7 @@
         "category": "alps",
         "difficulty": 1,
         "countries": [
-          "li",
+          "it",
           "si",
           "de",
           "mc"
@@ -2305,10 +2305,10 @@
         "category": "drive-left",
         "difficulty": 2,
         "countries": [
-          "mu",
-          "bb",
-          "sb",
-          "to"
+          "th",
+          "jm",
+          "in",
+          "gb"
         ],
         "fact": "Many countries that drive on the left were once part of the British Empire, but others, such as Japan, Thailand and Indonesia, were not.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
@@ -2318,7 +2318,7 @@
         "difficulty": 3,
         "countries": [
           "kp",
-          "ge",
+          "cn",
           "mn",
           "ua"
         ],
@@ -2357,10 +2357,10 @@
         "category": "french-official",
         "difficulty": 2,
         "countries": [
-          "gn",
+          "sn",
           "cm",
-          "cd",
-          "ga"
+          "ca",
+          "mc"
         ],
         "fact": "Cameroon has both French and English as official languages.",
         "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language"
@@ -2381,10 +2381,10 @@
         "category": "no-land-border",
         "difficulty": 4,
         "countries": [
-          "tt",
+          "au",
           "pw",
           "jm",
-          "ws"
+          "is"
         ],
         "fact": "The Republic of Palau is made up of about 340 islands in the western Pacific.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Palau"
@@ -2397,8 +2397,8 @@
         "category": "spanish",
         "difficulty": 1,
         "countries": [
-          "do",
-          "sv",
+          "cl",
+          "mx",
           "pa",
           "uy"
         ],
@@ -2409,10 +2409,10 @@
         "category": "arabic-official",
         "difficulty": 2,
         "countries": [
-          "bh",
+          "sy",
           "lb",
           "ae",
-          "om"
+          "eg"
         ],
         "fact": "Arabic is one of the six official languages of the United Nations.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Arabic"
@@ -2433,10 +2433,10 @@
         "category": "charles-head",
         "difficulty": 4,
         "countries": [
-          "bz",
-          "sb",
-          "tv",
-          "bs"
+          "jm",
+          "nz",
+          "au",
+          "ca"
         ],
         "fact": "The phrase \"Commonwealth realm\" is an informal description that is not used in any law.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Commonwealth_realm"
@@ -2451,7 +2451,7 @@
         "countries": [
           "gr",
           "mt",
-          "cy",
+          "hr",
           "hu"
         ],
         "fact": "The European Union has 27 member states, all party to its founding treaties.",
@@ -2461,10 +2461,10 @@
         "category": "asean",
         "difficulty": 2,
         "countries": [
-          "tl",
+          "th",
           "my",
           "kh",
-          "bn"
+          "sg"
         ],
         "fact": "Cambodia joined ASEAN on 30 April 1999, after a 1997 coup had delayed its entry.",
         "sourceUrl": "https://en.wikipedia.org/wiki/ASEAN"
@@ -2488,7 +2488,7 @@
           "mx",
           "in",
           "sa",
-          "mr"
+          "dz"
         ],
         "fact": "In India, the Tropic of Cancer crosses several states, including Gujarat, Rajasthan and West Bengal.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
@@ -2526,9 +2526,9 @@
         "difficulty": 3,
         "countries": [
           "ke",
-          "cg",
+          "id",
           "cd",
-          "mv"
+          "ec"
         ],
         "fact": "In DR Congo, the equator passes just 9 km south of the city of Butembo.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
@@ -2538,8 +2538,8 @@
         "difficulty": 4,
         "countries": [
           "hr",
-          "sk",
-          "rs",
+          "hu",
+          "at",
           "ro"
         ],
         "fact": "Today the Danube connects ten European countries, running through them or marking their borders.",
@@ -2553,7 +2553,7 @@
         "category": "former-ussr",
         "difficulty": 1,
         "countries": [
-          "am",
+          "ua",
           "uz",
           "by",
           "md"
@@ -2577,7 +2577,7 @@
         "category": "tropic-capricorn",
         "difficulty": 3,
         "countries": [
-          "py",
+          "mg",
           "cl",
           "au",
           "za"
@@ -2591,7 +2591,7 @@
         "countries": [
           "af",
           "np",
-          "bt",
+          "mm",
           "in"
         ],
         "fact": "Mount Everest, Earth's highest mountain, sits on the border between Nepal and China.",
@@ -2605,7 +2605,7 @@
         "category": "borders-china",
         "difficulty": 1,
         "countries": [
-          "kg",
+          "mn",
           "af",
           "pk",
           "np"
@@ -2618,7 +2618,7 @@
         "difficulty": 2,
         "countries": [
           "va",
-          "sm",
+          "at",
           "pt",
           "me"
         ],
@@ -2629,10 +2629,10 @@
         "category": "charles-head",
         "difficulty": 3,
         "countries": [
-          "kn",
-          "gd",
-          "vc",
-          "ag"
+          "nz",
+          "jm",
+          "au",
+          "ca"
         ],
         "fact": "As well as reigning over the 15 realms, King Charles III is Head of the Commonwealth, a ceremonial role.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Commonwealth_realm"
@@ -2642,7 +2642,7 @@
         "difficulty": 4,
         "countries": [
           "dz",
-          "ml",
+          "gh",
           "bf",
           "tg"
         ],
@@ -2658,7 +2658,7 @@
         "difficulty": 1,
         "countries": [
           "qa",
-          "bh",
+          "ae",
           "kw",
           "sa"
         ],
@@ -2669,10 +2669,10 @@
         "category": "french-official",
         "difficulty": 2,
         "countries": [
-          "km",
-          "dj",
+          "lu",
+          "mc",
           "mg",
-          "tg"
+          "sn"
         ],
         "fact": "In Madagascar, French is an official language alongside Malagasy.",
         "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language"
@@ -2681,8 +2681,8 @@
         "category": "borders-brazil",
         "difficulty": 3,
         "countries": [
-          "gy",
-          "sr",
+          "bo",
+          "ve",
           "ar",
           "uy"
         ],
@@ -2721,9 +2721,9 @@
         "category": "mediterranean",
         "difficulty": 2,
         "countries": [
-          "ba",
+          "fr",
           "sy",
-          "al",
+          "tr",
           "gr"
         ],
         "fact": "The Nile, the Rhône and the Po are the only rivers flowing into the Mediterranean with an average discharge of over 1,000 cubic metres per second.",
@@ -2733,8 +2733,8 @@
         "category": "drive-left",
         "difficulty": 3,
         "countries": [
-          "mw",
-          "dm",
+          "gb",
+          "ke",
           "lk",
           "tz"
         ],
@@ -2786,8 +2786,8 @@
         "difficulty": 3,
         "countries": [
           "jp",
-          "mh",
-          "fm",
+          "mt",
+          "ph",
           "ki"
         ],
         "fact": "Kiribati's atolls stretch into all four hemispheres: northern, southern, eastern and western.",
@@ -2797,7 +2797,7 @@
         "category": "tropic-cancer",
         "difficulty": 4,
         "countries": [
-          "bd",
+          "cn",
           "mx",
           "ae",
           "eg"
@@ -2813,7 +2813,7 @@
         "category": "mediterranean",
         "difficulty": 1,
         "countries": [
-          "ly",
+          "eg",
           "gr",
           "tn",
           "tr"
@@ -2825,9 +2825,9 @@
         "category": "commonwealth",
         "difficulty": 2,
         "countries": [
-          "sl",
+          "nz",
           "ng",
-          "gm",
+          "pk",
           "ga"
         ],
         "fact": "Gabon joined the Commonwealth of Nations in June 2022.",
@@ -2852,7 +2852,7 @@
           "lt",
           "mn",
           "cn",
-          "ee"
+          "ua"
         ],
         "fact": "Lithuania borders Russia through Kaliningrad Oblast, a Russian exclave on the Baltic Sea.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Kaliningrad_Oblast"
@@ -2865,10 +2865,10 @@
         "category": "french-official",
         "difficulty": 1,
         "countries": [
-          "cm",
+          "mc",
           "sc",
-          "vu",
-          "cf"
+          "sn",
+          "lu"
         ],
         "fact": "In Seychelles, French is an official language alongside English and Seychellois Creole.",
         "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language"
@@ -2889,7 +2889,7 @@
         "category": "mekong",
         "difficulty": 3,
         "countries": [
-          "la",
+          "kh",
           "mm",
           "vn",
           "th"
@@ -2917,10 +2917,10 @@
         "category": "drive-left",
         "difficulty": 1,
         "countries": [
-          "bb",
-          "mw",
-          "tt",
-          "nr"
+          "gb",
+          "in",
+          "jp",
+          "tz"
         ],
         "fact": "Right-hand traffic is used in 165 countries and territories, while 75 drive on the left.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
@@ -2929,8 +2929,8 @@
         "category": "baltic",
         "difficulty": 2,
         "countries": [
-          "lv",
-          "lt",
+          "dk",
+          "se",
           "ru",
           "fi"
         ],
@@ -2942,7 +2942,7 @@
         "difficulty": 3,
         "countries": [
           "cl",
-          "py",
+          "mg",
           "ar",
           "br"
         ],
@@ -2953,7 +2953,7 @@
         "category": "rhine",
         "difficulty": 4,
         "countries": [
-          "li",
+          "ch",
           "at",
           "fr",
           "nl"
