@@ -13,7 +13,7 @@ npm run preview    # serves dist/ with the production security headers
 
 ## How daily puzzles are served
 
-Each game's content bank lives in `src/games/<game>/`. At build time `scripts/banks.mjs` turns it into one small file per day (`/data/<game>/<n>.json`); a game page fetches only today's file, so the banks can grow without making any page heavier. Puzzles rotate by the player's local date and unlock at local midnight. Outline Sketch's maps are cut from Natural Earth 1:50m at build time.
+Each game's content bank lives in `src/games/<game>/`. At build time `scripts/banks.mjs` turns it into one small file per day (`/data/<game>/<n>.json`); a game page fetches only today's file, so the banks can grow without making any page heavier. Puzzles rotate by the player's local date and unlock at local midnight. Outline Drop's maps are cut from Natural Earth 1:50m at build time.
 
 ## Add Globe Links puzzles
 
@@ -38,7 +38,7 @@ Edit `src/games/rank-the-world/rank.json`. Each day has 4 rounds of 5 countries.
 
 Edit `src/games/mystery-passport/passport.json`. Each day has 3 countries; each country has a `continent` (for the hint) and exactly one clue of each type: nature (free), food, phrase, currency, landmark, neighbour, each with a source. Clues must never name the country; `npm run validate` checks this. Guesses accept any of the 194 countries in `src/data/world.ts`. There are 6 days so far.
 
-## Add Outline Sketch days
+## Add Outline Drop days
 
 Edit `src/games/outline-sketch/outline.json` (3 country codes per day, plus each code's numeric ISO id). Leave out countries with disputed or sensitive borders; the validator blocks the known ones.
 
@@ -56,7 +56,7 @@ Edit `src/games/flag-forge/flags.json`. Only use flags the builder can reproduce
 - [ ] Redirect the `*.vercel.app` address to your domain (Vercel → Domains) so Google sees one copy of the site.
 - [ ] Keep Vercel Web Analytics and Speed Insights **off**, or the "no tracking" promise stops being true.
 - [ ] Verify the domain in Google Search Console and submit `/sitemap.xml`.
-- [ ] Grow the Mystery Passport, Outline Sketch and Flag Forge banks (6 days each) so they don't repeat after a week.
+- [ ] Grow the Mystery Passport, Outline Drop and Flag Forge banks (6 days each) so they don't repeat after a week.
 
 ## Privacy and safety by design
 

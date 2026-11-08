@@ -24,8 +24,21 @@ document.querySelectorAll('a.route-link, .hero-actions .btn').forEach((el) =>
 );
 
 /* ---------- Today's report card (read from this browser only) ---------- */
+/** Departures board: each route says whether today's game is done. */
+function renderDepartures(results: ReturnType<typeof readToday>) {
+  for (const g of GAMES) {
+    const status = document.querySelector<HTMLElement>(`a[href="/games/${g.id}"] .route-status`);
+    const text = status?.querySelector('.route-status-text');
+    if (!status || !text) continue;
+    const done = Boolean(results[g.id]);
+    status.classList.toggle('is-done', done);
+    text.textContent = done ? 'Played today' : 'Not played today';
+  }
+}
+
 function renderReport() {
   const results = readToday();
+  renderDepartures(results);
   const list = document.getElementById('report-list');
   if (!list) return;
   list.replaceChildren(
@@ -166,18 +179,7 @@ function drawGlobe(svg: SVGSVGElement) {
 
   // Spin: slow idle rotation, drag with pointer capture, release with momentum.
   let velocity = reducedMotion() ? 0 : 0.06; // degrees per ms of longitude
-  let idleSpeed = velocity;
-  // Anything that moves for more than 5 seconds needs a way to pause it (WCAG 2.2.2).
-  const pauseBtn = document.getElementById('globe-pause');
-  if (reducedMotion()) pauseBtn?.remove();
-  pauseBtn?.addEventListener('click', () => {
-    const paused = pauseBtn.getAttribute('aria-pressed') !== 'true';
-    pauseBtn.setAttribute('aria-pressed', String(paused));
-    pauseBtn.textContent = paused ? 'Play globe' : 'Pause globe';
-    idleSpeed = paused ? 0 : 0.06;
-    if (paused) velocity = 0;
-    else wake();
-  });
+  const idleSpeed = velocity; // reduced-motion visitors get a still globe they can drag
   let dragging = false;
   let lastX = 0;
   let lastY = 0;

@@ -1,14 +1,14 @@
 import '../../shared/base';
 import '../../shared/game.css';
 import './os.css';
-import { geoMercator, geoPath, type GeoProjection } from 'd3-geo';
+import { geoMercator, geoNaturalEarth1, geoPath, geoCentroid, geoDistance, geoCircle, type GeoProjection } from 'd3-geo';
 import type { MultiPolygon } from 'geojson';
 import { COUNTRIES } from '../../data/countries';
 import { dayIndex, dayKey, msUntilTomorrow } from '../../shared/daily';
 import { load, save } from '../../shared/storage';
 import { shareText } from '../../shared/share';
 import { haptic } from '../../shared/haptics';
-import { reducedMotion } from '../../shared/geo';
+import { getLand, reducedMotion } from '../../shared/geo';
 import { arrive, miniGlobe } from '../../shared/travel';
 import { loadToday, showLoadError } from '../../shared/bank';
 import { showGrade } from '../../shared/grades';
@@ -16,17 +16,25 @@ import { addTestReset } from '../../shared/testing';
 import { watchDayChange, recordDay, readStats, focusQuietly, scrollToTop, showFromTop } from '../../shared/session';
 
 /* ---------- Types & data ---------- */
-interface Sketch {
+interface Option {
+  code: string;
+  shape: MultiPolygon | null; // null = the answer (use the round's own target)
+}
+interface Round {
   code: string;
   name: string;
   target: MultiPolygon;
+  options: Option[];
 }
-type Pt = [number, number];
+type LonLat = [number, number];
 interface Attempt {
-  loops: Pt[][]; // each closed loop the player drew (islands and separate parts are separate loops)
-  score: number | null;
-  overlap: number | null;
-  hinted: boolean;
+  picks: string[]; // codes tried in step 1, in order
+  pickScore: number | null; // set once step 1 is over
+  pin: LonLat | null; // where the player dropped the shape
+  placeScore: number | null; // set once locked in
+  km: number | null;
+  hintPick: boolean;
+  hintPlace: boolean;
 }
 interface State {
   attempts: Attempt[];
@@ -36,10 +44,12 @@ interface State {
   fp?: string;
 }
 
-const W = 600;
-const H = 440;
 const FREE_HINTS = 3;
 const NS = 'http://www.w3.org/2000/svg';
+const MAP_W = 640;
+const MAP_H = 330;
+const FULL_KM = 300; // within this, full placement points
+const ZERO_KM = 3000; // beyond this, none
 
 const flagUrls = import.meta.glob('/node_modules/flag-icons/flags/4x3/*.svg', {
   eager: true,
@@ -51,46 +61,59 @@ const flag = (code: string) => flagUrls[`/node_modules/flag-icons/flags/4x3/${co
 const today = dayIndex();
 const todayKey = dayKey(); // fixed before any await, so a slow load can't straddle midnight
 const puzzleNo = today + 1;
-const { countries: sketches } = await loadToday<{ countries: Sketch[] }>('outline-sketch').catch((e) => {
+const { countries: rounds } = await loadToday<{ countries: Round[] }>('outline-sketch').catch((e) => {
   showLoadError(document.getElementById('board'));
   throw e;
 });
-const ROUNDS = sketches.length;
+const ROUNDS = rounds.length;
 const MAX = ROUNDS * 100;
 const STATE_KEY = `outline-sketch:day:${todayKey}`;
-// v2: whiteboard mode. Progress saved by the old map version is discarded via the fingerprint.
-const FP = `wb:${sketches.map((s) => s.code).join()}`;
+// v3: pick-and-drop mode. Progress saved by older versions is discarded via the fingerprint.
+const FP = `drop:${rounds.map((r) => r.code).join()}`;
 const STATS_KEY = 'outline-sketch:stats';
 
-const blankAttempt = (): Attempt => ({ loops: [], score: null, overlap: null, hinted: false });
+const blank = (): Attempt => ({ picks: [], pickScore: null, pin: null, placeScore: null, km: null, hintPick: false, hintPlace: false });
 function sanitize(s: State | null): State {
-  const fresh: State = { attempts: sketches.map(blankAttempt), cursor: 0, done: false, counted: false, fp: FP };
-  if (s && s.fp !== FP) return fresh;
-  if (!s || !Array.isArray(s.attempts) || s.attempts.length !== ROUNDS) return fresh;
-  const isPt = (p: unknown) => Array.isArray(p) && p.length === 2 && p.every((n) => Number.isFinite(n));
-  const ok = s.attempts.every((a) => a && Array.isArray(a.loops) && a.loops.every((l) => Array.isArray(l) && l.every(isPt)));
+  const fresh: State = { attempts: rounds.map(blank), cursor: 0, done: false, counted: false, fp: FP };
+  if (!s || s.fp !== FP || !Array.isArray(s.attempts) || s.attempts.length !== ROUNDS) return fresh;
+  const ok = s.attempts.every(
+    (a, i) =>
+      a &&
+      Array.isArray(a.picks) &&
+      a.picks.every((c) => rounds[i].options.some((o) => o.code === c)) &&
+      (a.pin === null || (Array.isArray(a.pin) && a.pin.length === 2 && a.pin.every(Number.isFinite))),
+  );
   if (!ok) return fresh;
   s.cursor = Math.min(Math.max(0, s.cursor | 0), ROUNDS - 1);
   return s;
 }
 const state = sanitize(load<State | null>(STATE_KEY, null));
 const persist = () => save(STATE_KEY, state);
-const hintsUsed = () => state.attempts.filter((a) => a.hinted).length;
-const score = () => state.attempts.reduce((n, a) => n + (a.score ?? 0), 0);
-const scored = (a: Attempt) => a.score !== null;
+const hintsUsed = () => state.attempts.reduce((n, a) => n + Number(a.hintPick) + Number(a.hintPlace), 0);
+const roundScore = (a: Attempt) => (a.pickScore ?? 0) + (a.placeScore ?? 0);
+const score = () => state.attempts.reduce((n, a) => n + roundScore(a), 0);
+const finished = (a: Attempt) => a.placeScore !== null;
+const shapeFor = (r: Round, code: string) => (code === r.code ? r.target : r.options.find((o) => o.code === code)?.shape ?? r.target);
 
 /* ---------- Elements ---------- */
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
-const svg = document.getElementById('sketch') as unknown as SVGSVGElement;
 const card = $('card');
 const statusEl = $('status');
-const tip = $('tip');
-const undoBtn = $<HTMLButtonElement>('undo');
-const clearBtn = $<HTMLButtonElement>('clear');
-const submitBtn = $<HTMLButtonElement>('submit');
 const hintBtn = $<HTMLButtonElement>('hint');
+const optionsEl = $('options');
+const mapSvg = document.getElementById('map') as unknown as SVGSVGElement;
+const lockBtn = $<HTMLButtonElement>('lock');
 const mini = miniGlobe($('mini-globe'));
 let busy = false;
+type View = { x: number; y: number; w: number; h: number };
+const FULL_VIEW: View = { x: 0, y: 0, w: MAP_W, h: MAP_H };
+let view: View = FULL_VIEW; // zoomed in after the first tap so small countries are easy to place
+
+/** A view of `w` map units wide centred on (cx, cy), kept inside the map. */
+function viewAround(cx: number, cy: number, w: number): View {
+  const h = (w * MAP_H) / MAP_W;
+  return { x: Math.min(Math.max(0, cx - w / 2), MAP_W - w), y: Math.min(Math.max(0, cy - h / 2), MAP_H - h), w, h };
+}
 
 $('puzzle-meta').textContent = `No. ${puzzleNo} · ${new Intl.DateTimeFormat(undefined, {
   weekday: 'short',
@@ -98,194 +121,136 @@ $('puzzle-meta').textContent = `No. ${puzzleNo} · ${new Intl.DateTimeFormat(und
   month: 'short',
 }).format(new Date())}`;
 
-/* ---------- Geometry helpers ---------- */
-type Box = { x0: number; y0: number; x1: number; y1: number };
 const el = <K extends keyof SVGElementTagNameMap>(tag: K, attrs: Record<string, string>, parent?: Element) => {
   const n = document.createElementNS(NS, tag);
   for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
   parent?.appendChild(n);
   return n;
 };
-const loopPath = (pts: Pt[], closed = true) => pts.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join('') + (closed ? 'Z' : '');
-const polygonArea = (pts: Pt[]) => Math.abs(pts.reduce((a, p, i) => { const q = pts[(i + 1) % pts.length]; return a + p[0] * q[1] - q[0] * p[1]; }, 0) / 2);
 
-/** The real shape projected (Mercator, as on most maps) to fit inside a box with padding. */
-function targetProjection(s: Sketch, w: number, h: number, pad: number): GeoProjection {
-  return geoMercator().fitExtent([[pad, pad], [w - pad, h - pad]], s.target);
-}
-function targetBox(s: Sketch, w: number, h: number, pad: number): Box {
-  const [[x0, y0], [x1, y1]] = geoPath(targetProjection(s, w, h, pad)).bounds(s.target);
-  return { x0, y0, x1, y1 };
-}
-function loopsBox(loops: Pt[][]): Box {
-  const xs = loops.flat().map((p) => p[0]);
-  const ys = loops.flat().map((p) => p[1]);
-  return { x0: Math.min(...xs), y0: Math.min(...ys), x1: Math.max(...xs), y1: Math.max(...ys) };
-}
-/** Scale + move the drawing so its bounding box sits centred on `to`, keeping its own proportions. */
-function alignLoops(loops: Pt[][], to: Box): Pt[][] {
-  const from = loopsBox(loops);
-  const fw = Math.max(1, from.x1 - from.x0);
-  const fh = Math.max(1, from.y1 - from.y0);
-  const k = Math.min((to.x1 - to.x0) / fw, (to.y1 - to.y0) / fh);
-  const cx = (from.x0 + from.x1) / 2;
-  const cy = (from.y0 + from.y1) / 2;
-  const tx = (to.x0 + to.x1) / 2;
-  const ty = (to.y0 + to.y1) / 2;
-  return loops.map((l) => l.map(([x, y]) => [tx + (x - cx) * k, ty + (y - cy) * k] as Pt));
+/* ---------- The blank world map ---------- */
+// Natural Earth projection framed on the inhabited world (no Antarctica), shared by every round.
+const projection: GeoProjection = geoNaturalEarth1().fitExtent(
+  [[6, 6], [MAP_W - 6, MAP_H - 6]],
+  { type: 'MultiPoint', coordinates: [[-180, -56], [180, -56], [-180, 83], [180, 83], [0, -56], [0, 83]] },
+);
+const mapPath = geoPath(projection);
+const landD = mapPath(getLand()) ?? '';
+const sphereD = mapPath({ type: 'Sphere' }) ?? '';
+
+/** Projected outline of a country, plus its projected centre, for sliding it around the map. */
+function placed(r: Round) {
+  const c = geoCentroid(r.target) as LonLat;
+  return { d: mapPath(r.target) ?? '', centre: projection(c) ?? [0, 0], lonlat: c };
 }
 
-/* ---------- Scoring: compare shapes only (size and position don't matter) ---------- */
-const GRID = 64; // a coarse grid forgives wobbly lines
-function rasterise(draw: (ctx: CanvasRenderingContext2D) => void): Uint8Array {
-  const c = document.createElement('canvas');
-  c.width = GRID;
-  c.height = GRID;
-  const ctx = c.getContext('2d', { willReadFrequently: true })!;
-  ctx.fillStyle = '#fff';
-  draw(ctx);
-  const px = ctx.getImageData(0, 0, GRID, GRID).data;
-  const out = new Uint8Array(GRID * GRID);
-  for (let i = 0; i < out.length; i++) out[i] = px[i * 4 + 3] > 100 ? 1 : 0;
-  return out;
-}
-const iou = (a: Uint8Array, b: Uint8Array) => {
-  let both = 0;
-  let any = 0;
-  for (let i = 0; i < a.length; i++) {
-    both += a[i] & b[i];
-    any += a[i] | b[i];
-  }
-  return any ? both / any : 0;
-};
-
-/** Grow every filled cell by one in each direction, so a thin country (Chile, Norway) isn't lost to a 1px wobble. */
-function dilate(a: Uint8Array): Uint8Array {
-  const out = new Uint8Array(a.length);
-  for (let y = 0; y < GRID; y++)
-    for (let x = 0; x < GRID; x++) {
-      if (!a[y * GRID + x]) continue;
-      for (let dy = -1; dy <= 1; dy++)
-        for (let dx = -1; dx <= 1; dx++) {
-          const yy = y + dy;
-          const xx = x + dx;
-          if (yy >= 0 && yy < GRID && xx >= 0 && xx < GRID) out[yy * GRID + xx] = 1;
-        }
-    }
-  return out;
-}
-
-/**
- * Framings to compare against. Players usually draw the mainland and skip far-off islands
- * (Portugal without Madeira, Ecuador without Galápagos), so we also try fitting just the
- * largest part, and the parts that make up most of the land, and keep the best score.
- */
-function framings(s: Sketch): MultiPolygon[] {
-  const parts = s.target.coordinates
-    .map((poly) => ({ poly, area: geoPath().area({ type: 'Polygon', coordinates: poly }) }))
-    .sort((a, b) => b.area - a.area);
-  const out: MultiPolygon[] = [s.target];
-  if (parts.length > 1) {
-    out.push({ type: 'MultiPolygon', coordinates: [parts[0].poly] });
-    const total = parts.reduce((n, p) => n + p.area, 0);
-    let acc = 0;
-    const most: typeof parts = [];
-    for (const p of parts) {
-      if (acc >= total * 0.95) break;
-      most.push(p);
-      acc += p.area;
-    }
-    if (most.length > 1 && most.length < parts.length) out.push({ type: 'MultiPolygon', coordinates: most.map((p) => p.poly) });
-  }
-  return out;
-}
-
-function measureIn(s: Sketch, frame: MultiPolygon, loops: Pt[][]): { overlap: number; points: number; frame: MultiPolygon } {
-  const pad = 4;
-  const proj = geoMercator().fitExtent([[pad, pad], [GRID - pad, GRID - pad]], frame);
-  const [[x0, y0], [x1, y1]] = geoPath(proj).bounds(frame);
-  const box = { x0, y0, x1, y1 };
-  // The whole country is drawn in this framing; parts outside it simply fall off the grid.
-  const target = dilate(rasterise((ctx) => {
-    ctx.beginPath();
-    geoPath(proj, ctx)(s.target);
-    ctx.fill('evenodd');
-  }));
-  const aligned = alignLoops(loops, box);
-  const drawn = dilate(rasterise((ctx) => {
-    // Each loop is filled on its own, so separate loops add together (a union).
-    for (const l of aligned) {
-      ctx.beginPath();
-      l.forEach((p, i) => (i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])));
-      ctx.closePath();
-      ctx.fill();
-    }
-  }));
-  // Baseline: a plain oval filling the shape's box, i.e. the score of not really trying.
-  const oval = dilate(rasterise((ctx) => {
-    ctx.beginPath();
-    ctx.ellipse((x0 + x1) / 2, (y0 + y1) / 2, Math.max(0.5, (x1 - x0) / 2), Math.max(0.5, (y1 - y0) / 2), 0, 0, Math.PI * 2);
-    ctx.fill();
-  }));
-  const overlap = iou(target, drawn);
-  const base = iou(target, oval) * 0.75;
-  // Generous curve: beating the oval clearly is worth a lot; a recognisable shape reaches the top grades.
-  const p = Math.max(0, Math.min(1, (overlap - base) / ((1 - base) * 0.5)));
-  return { overlap, points: Math.round(p * 100), frame };
-}
-
-function measure(s: Sketch, loops: Pt[][]): { overlap: number; points: number; frame: MultiPolygon } {
-  return framings(s)
-    .map((f) => measureIn(s, f, loops))
-    .reduce((best, r) => (r.points > best.points || (r.points === best.points && r.overlap > best.overlap) ? r : best));
+/* ---------- Scoring ---------- */
+const kmBetween = (a: LonLat, b: LonLat) => geoDistance(a, b) * 6371;
+function placePoints(km: number) {
+  if (km <= FULL_KM) return 50;
+  return Math.round(50 * Math.max(0, 1 - (km - FULL_KM) / (ZERO_KM - FULL_KM)));
 }
 
 /* ---------- Rendering ---------- */
-function drawBoard(target: SVGSVGElement, s: Sketch, a: Attempt, opts: { reveal: boolean; animate?: boolean; w?: number; h?: number }) {
-  const w = opts.w ?? W;
-  const h = opts.h ?? H;
-  target.setAttribute('viewBox', `0 0 ${w} ${h}`);
-  target.replaceChildren();
-  if (opts.reveal) {
-    const pad = Math.round(w * 0.06);
-    const proj = targetProjection(s, w, h, pad);
-    el('path', { class: 'os-target' + (opts.animate ? ' is-revealing' : ''), d: geoPath(proj)(s.target) ?? '' }, target);
-    if (a.loops.length) {
-      // Lay the sketch over the part of the country it matched best (e.g. the mainland only).
-      const [[x0, y0], [x1, y1]] = geoPath(proj).bounds(measure(s, a.loops).frame);
-      for (const l of alignLoops(a.loops, { x0, y0, x1, y1 })) el('path', { class: 'os-stroke is-compare', d: loopPath(l) }, target);
+function thumb(shape: MultiPolygon, w = 150, h = 110): SVGSVGElement {
+  const s = el('svg', { viewBox: `0 0 ${w} ${h}`, 'aria-hidden': 'true' }) as SVGSVGElement;
+  const proj = geoMercator().fitExtent([[10, 10], [w - 10, h - 10]], shape);
+  el('path', { class: 'od-shape', d: geoPath(proj)(shape) ?? '' }, s);
+  return s;
+}
+
+function renderOptions() {
+  const i = state.cursor;
+  const r = rounds[i];
+  const a = state.attempts[i];
+  const over = a.pickScore !== null;
+  // A hint removes two wrong outlines (always the same two, so a reload doesn't reshuffle).
+  const hidden = a.hintPick ? r.options.filter((o) => o.code !== r.code).slice(0, 2).map((o) => o.code) : [];
+  optionsEl.replaceChildren(
+    ...r.options.map((o, k) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'od-option';
+      b.dataset.code = o.code;
+      const tried = a.picks.includes(o.code);
+      const right = o.code === r.code;
+      if (tried && !right) b.classList.add('is-wrong');
+      if (over && right) b.classList.add('is-right');
+      b.disabled = over || tried || hidden.includes(o.code);
+      if (hidden.includes(o.code)) b.classList.add('is-gone');
+      const label = document.createElement('span');
+      label.className = 'od-letter';
+      label.textContent = 'ABCD'[k];
+      b.append(thumb(shapeFor(r, o.code)), label);
+      b.setAttribute('aria-label', `Outline ${'ABCD'[k]}${tried && !right ? ', wrong' : ''}${over && right ? `, ${r.name}` : ''}`);
+      return b;
+    }),
+  );
+}
+
+function renderMap(animate = false) {
+  const i = state.cursor;
+  const r = rounds[i];
+  const a = state.attempts[i];
+  const p = placed(r);
+  if (finished(a)) {
+    // Frame the real country and the player's drop together.
+    const [[x0, y0], [x1, y1]] = mapPath.bounds(r.target);
+    const [px, py] = a.pin ? (projection(a.pin) ?? [x0, y0]) : [x0, y0];
+    const minX = Math.min(x0, px), maxX = Math.max(x1, px), minY = Math.min(y0, py), maxY = Math.max(y1, py);
+    const w = Math.min(MAP_W, Math.max(150, (maxX - minX) * 1.5, ((maxY - minY) * 1.5 * MAP_W) / MAP_H));
+    view = viewAround((minX + maxX) / 2, (minY + maxY) / 2, w);
+  }
+  mapSvg.setAttribute('viewBox', `${view.x.toFixed(1)} ${view.y.toFixed(1)} ${view.w.toFixed(1)} ${view.h.toFixed(1)}`);
+  $('zoom-out').hidden = finished(a) || view.w >= MAP_W;
+  mapSvg.replaceChildren();
+  el('path', { class: 'od-sea', d: sphereD }, mapSvg);
+  el('path', { class: 'od-land', d: landD }, mapSvg);
+  if (a.hintPlace && !finished(a)) {
+    // A dashed ring around the right region, nudged off-centre so it doesn't give the exact spot.
+    const seed = r.code.charCodeAt(0) * 31 + r.code.charCodeAt(1);
+    const centre: LonLat = [p.lonlat[0] + ((seed % 7) - 3) * 2.2, p.lonlat[1] + ((seed % 5) - 2) * 2.2];
+    el('path', { class: 'od-ring', d: mapPath(geoCircle().center(centre).radius(16)()) ?? '' }, mapSvg);
+  }
+  if (finished(a)) {
+    el('path', { class: 'od-truth' + (animate ? ' is-revealing' : ''), d: p.d }, mapSvg);
+    const [tx, ty] = p.centre;
+    el('circle', { class: 'od-truth-dot', cx: tx.toFixed(1), cy: ty.toFixed(1), r: (4 * view.w / MAP_W).toFixed(2) }, mapSvg);
+    if (a.pin) {
+      const [px, py] = projection(a.pin) ?? [0, 0];
+      el('line', { class: 'od-miss', x1: px.toFixed(1), y1: py.toFixed(1), x2: tx.toFixed(1), y2: ty.toFixed(1) }, mapSvg);
+      el('path', { class: 'od-guess is-compare', d: p.d, transform: `translate(${(px - tx).toFixed(1)} ${(py - ty).toFixed(1)})` }, mapSvg);
     }
     return;
   }
-  if (a.hinted) {
-    // Proportions guide: the country's bounding box, centred on the board.
-    const b = targetBox(s, w, h, 70);
-    el('rect', { class: 'os-guide', x: b.x0.toFixed(1), y: b.y0.toFixed(1), width: (b.x1 - b.x0).toFixed(1), height: (b.y1 - b.y0).toFixed(1), rx: '6' }, target);
-    const t = el('text', { class: 'os-guide-label', x: (b.x0 + 6).toFixed(1), y: (b.y0 - 8).toFixed(1) }, target);
-    t.textContent = 'Proportions';
+  if (a.pin) {
+    const [px, py] = projection(a.pin) ?? [0, 0];
+    const [cx, cy] = p.centre;
+    el('path', { class: 'od-guess', d: p.d, transform: `translate(${(px - cx).toFixed(1)} ${(py - cy).toFixed(1)})` }, mapSvg);
+    // Small countries vanish at world scale: a pin always marks the spot.
+    el('circle', { class: 'od-pin', cx: px.toFixed(1), cy: py.toFixed(1), r: (5 * view.w / MAP_W).toFixed(2) }, mapSvg);
   }
-  for (const l of a.loops) el('path', { class: 'os-stroke', d: loopPath(l) }, target);
 }
 
 function renderTrip() {
   $('trip').replaceChildren(
-    ...sketches.map((s, i) => {
+    ...rounds.map((r, i) => {
       const a = state.attempts[i];
       const li = document.createElement('li');
-      if (scored(a)) {
+      if (finished(a)) {
         li.className = 'is-done';
-        li.dataset.level = a.score! >= 70 ? '1' : a.score! >= 40 ? '3' : '4';
+        li.dataset.level = roundScore(a) >= 70 ? '1' : roundScore(a) >= 40 ? '3' : '4';
       }
       if (i === state.cursor && !state.done) li.classList.add('is-current');
       const stop = document.createElement('span');
       stop.className = 'stop';
       const img = document.createElement('img');
-      img.src = flag(s.code);
+      img.src = flag(r.code);
       img.alt = '';
       stop.append(img);
       const label = document.createElement('span');
       label.className = 'visually-hidden';
-      label.textContent = `Sketch ${i + 1}: ${s.name}${scored(a) ? `, ${a.score} points` : i === state.cursor ? ', current' : ''}`;
+      label.textContent = `Country ${i + 1}: ${r.name}${finished(a) ? `, ${roundScore(a)} points` : i === state.cursor ? ', current' : ''}`;
       li.append(stop, label);
       return li;
     }),
@@ -297,33 +262,31 @@ function renderHint() {
   $('hint-count').textContent = String(left);
   hintBtn.setAttribute('aria-label', `Use a hint. ${left} of ${FREE_HINTS} left.`);
   const a = state.attempts[state.cursor];
-  hintBtn.disabled = busy || state.done || scored(a) || a.hinted || left <= 0;
+  const stepOne = a.pickScore === null;
+  hintBtn.disabled = busy || state.done || finished(a) || left <= 0 || (stepOne ? a.hintPick : a.hintPlace);
 }
 
-function syncButtons() {
-  const a = state.attempts[state.cursor];
-  const has = a.loops.length > 0;
-  undoBtn.disabled = !has || busy;
-  clearBtn.disabled = !has || busy;
-  submitBtn.disabled = !has || busy;
-  tip.classList.toggle('is-hidden', has || scored(a));
-  $('loops').textContent = has && !scored(a) ? `${a.loops.length} ${a.loops.length === 1 ? 'loop' : 'loops'}` : '';
-}
-
-function renderCard(animateReveal = false) {
+function renderCard(animate = false) {
   const i = state.cursor;
-  const s = sketches[i];
+  const r = rounds[i];
   const a = state.attempts[i];
-  $('card-step').textContent = `Sketch ${i + 1} of ${ROUNDS}`;
-  $('card-title').textContent = `Draw ${s.name}`;
-  $<HTMLImageElement>('card-flag').src = flag(s.code);
+  const stepOne = a.pickScore === null;
+  $('card-step').textContent = `Country ${i + 1} of ${ROUNDS}`;
+  $('card-title').textContent = r.name;
+  $<HTMLImageElement>('card-flag').src = flag(r.code);
   $('score').textContent = String(score());
-  drawBoard(svg, s, a, { reveal: scored(a), animate: animateReveal });
-  $('draw-actions').hidden = scored(a);
-  $('after').hidden = !scored(a);
-  syncButtons();
-  if (scored(a)) renderAfter();
-  else if (!statusEl.textContent) statusEl.textContent = `Draw ${s.name}'s outline as a closed loop. Add more loops for islands or separate parts.`;
+  $('step-pick').hidden = !stepOne;
+  $('step-place').hidden = stepOne;
+  $('step-label').textContent = stepOne ? 'Step 1 of 2 · Pick the outline' : 'Step 2 of 2 · Drop it on the map';
+  if (stepOne) renderOptions();
+  else renderMap(animate);
+  $('od-actions').hidden = stepOne || finished(a);
+  lockBtn.disabled = !a.pin || busy;
+  $('after').hidden = !finished(a);
+  if (finished(a)) renderAfter();
+  else if (!statusEl.textContent) {
+    statusEl.textContent = stepOne ? `Which of these is the outline of ${r.name}?` : `Tap the map where ${r.name} is. Tap again to move it.`;
+  }
   renderHint();
   renderTrip();
   syncMini();
@@ -331,161 +294,138 @@ function renderCard(animateReveal = false) {
 
 function renderAfter() {
   const i = state.cursor;
+  const r = rounds[i];
   const a = state.attempts[i];
-  statusEl.textContent = a.loops.length
-    ? `The real shape of ${sketches[i].name} is in green, with your sketch (dashed) scaled to match. Shapes overlap by ${Math.round((a.overlap ?? 0) * 100)}%.`
-    : `Skipped. This is the real shape of ${sketches[i].name}.`;
+  const km = Math.round(a.km ?? 0);
+  statusEl.textContent =
+    km <= FULL_KM ? `Right on target: ${r.name} is in green, your drop is dashed.` : `Your drop was ${km.toLocaleString()} km from ${r.name} (in green).`;
   const v = $('verdict');
   const pts = document.createElement('span');
   pts.className = 'pts';
-  pts.dataset.level = a.score! >= 70 ? '1' : a.score! >= 40 ? '3' : '4';
-  pts.textContent = `+${a.score}`;
-  const sc = a.score!;
-  v.replaceChildren(document.createTextNode(sc >= 90 ? 'Cartographer grade.' : sc >= 70 ? 'Very close.' : sc >= 45 ? 'Recognisable.' : sc >= 20 ? 'Getting there.' : a.loops.length ? 'Abstract art.' : 'Skipped.'), pts);
-  $('next').textContent = i === ROUNDS - 1 ? 'See your results' : 'Next sketch';
+  const total = roundScore(a);
+  pts.dataset.level = total >= 70 ? '1' : total >= 40 ? '3' : '4';
+  pts.textContent = `+${total}`;
+  v.replaceChildren(document.createTextNode(total >= 90 ? 'Spot on.' : total >= 70 ? 'Nicely done.' : total >= 40 ? 'Not bad.' : 'Next one.'), pts);
+  $('next').textContent = i === ROUNDS - 1 ? 'See your results' : 'Next country';
 }
 
 function syncMini() {
-  const dots = sketches.flatMap((s, i) => {
+  const dots = rounds.flatMap((r, i) => {
     const a = state.attempts[i];
-    const c = COUNTRIES[s.code];
-    if (!c || (!scored(a) && i !== state.cursor)) return [];
-    return [{ lon: c.lon, lat: c.lat, level: scored(a) ? (a.score! >= 70 ? 1 : a.score! >= 40 ? 3 : 4) : 5 }];
+    const c = COUNTRIES[r.code];
+    if (!c || (!finished(a) && i !== state.cursor)) return [];
+    return [{ lon: c.lon, lat: c.lat, level: finished(a) ? (roundScore(a) >= 70 ? 1 : roundScore(a) >= 40 ? 3 : 4) : 5 }];
   });
   mini.setDots(dots);
-  const c = COUNTRIES[sketches[state.cursor].code];
+  const c = COUNTRIES[rounds[state.cursor].code];
   if (c && !state.done) mini.focus([c]);
 }
 
-/* ---------- Drawing (pointer events: mouse, touch and pen) ---------- */
-let live: { id: number; pts: Pt[]; path: SVGPathElement } | null = null;
-
-function toSvg(e: PointerEvent): Pt {
-  // The screen matrix accounts for letterboxing when the board is height-capped on short screens.
-  const m = svg.getScreenCTM();
-  if (m) {
-    const p = new DOMPoint(e.clientX, e.clientY).matrixTransform(m.inverse());
-    return [p.x, p.y];
-  }
-  const r = svg.getBoundingClientRect();
-  return [((e.clientX - r.left) / r.width) * W, ((e.clientY - r.top) / r.height) * H];
+function bump() {
+  const s = $('score');
+  s.textContent = String(score());
+  s.classList.remove('is-bump');
+  void s.offsetWidth;
+  s.classList.add('is-bump');
 }
 
-svg.addEventListener('pointerdown', (e) => {
-  const a = state.attempts[state.cursor];
-  if (live || busy || state.done || scored(a) || e.button !== 0) return;
-  e.preventDefault();
-  try {
-    svg.setPointerCapture(e.pointerId);
-  } catch {
-    /* capture is a nicety; drawing works without it */
-  }
-  const path = el('path', { class: 'os-stroke is-live', d: '' }, svg) as SVGPathElement;
-  live = { id: e.pointerId, pts: [toSvg(e)], path };
-  tip.classList.add('is-hidden');
-  haptic.select();
-});
-
-window.addEventListener('pointermove', (e) => {
-  if (!live || e.pointerId !== live.id) return;
-  const p = toSvg(e);
-  const last = live.pts[live.pts.length - 1];
-  if (Math.hypot(p[0] - last[0], p[1] - last[1]) < 2.5) return;
-  live.pts.push(p);
-  live.path.setAttribute('d', loopPath(live.pts, false));
-});
-
-function endStroke(e: PointerEvent) {
-  if (!live || e.pointerId !== live.id) return;
-  const { pts, path } = live;
-  live = null;
-  const a = state.attempts[state.cursor];
-  if (e.type === 'pointercancel' || state.done || scored(a)) {
-    // The system took the touch (a scroll or call) or the round ended mid-stroke: drop it quietly.
-    path.remove();
-    return;
-  }
-  const b = loopsBox([pts]);
-  // Bounding-box size, not signed area, so a figure-eight loop isn't mistaken for a tap.
-  if (pts.length < 6 || Math.hypot(b.x1 - b.x0, b.y1 - b.y0) < 18 || (polygonArea(pts) < 40 && Math.min(b.x1 - b.x0, b.y1 - b.y0) < 6)) {
-    // Too small to be a loop (a stray tap): ignore it, keep everything drawn so far.
-    path.remove();
-    statusEl.textContent = 'That was too small to count. Draw a closed loop.';
-    syncButtons();
-    return;
-  }
-  // Each valid loop is added; nothing is replaced.
-  a.loops.push(pts.map(([x, y]) => [Math.round(x), Math.round(y)] as Pt));
-  path.setAttribute('d', loopPath(a.loops[a.loops.length - 1]));
-  path.setAttribute('class', 'os-stroke');
-  persist();
-  statusEl.textContent = a.loops.length === 1 ? 'Nice. Add more loops for islands or separate parts, or check your sketch.' : `${a.loops.length} loops drawn. Check your sketch when you're ready.`;
-  syncButtons();
-}
-window.addEventListener('pointerup', endStroke);
-window.addEventListener('pointercancel', endStroke);
-
-/* ---------- Actions ---------- */
-function undo() {
-  const a = state.attempts[state.cursor];
-  if (busy || scored(a) || !a.loops.length) return;
-  haptic.tap();
-  a.loops.pop();
-  persist();
-  statusEl.textContent = a.loops.length ? 'Last loop removed.' : 'Board cleared. Draw the outline.';
-  renderCard();
-}
-
-function clearAll() {
-  const a = state.attempts[state.cursor];
-  if (busy || scored(a)) return;
-  haptic.tap();
-  a.loops = [];
-  persist();
-  statusEl.textContent = 'Board cleared. Draw the outline.';
-  renderCard();
-}
-
-function check() {
+/* ---------- Step 1: pick the outline ---------- */
+function pick(code: string) {
   const i = state.cursor;
+  const r = rounds[i];
   const a = state.attempts[i];
-  if (busy || !a.loops.length || scored(a)) return;
-  const m = measure(sketches[i], a.loops);
-  a.overlap = m.overlap;
-  a.score = m.points;
+  if (busy || a.pickScore !== null || a.picks.includes(code)) return;
+  a.picks.push(code);
+  if (code === r.code) {
+    a.pickScore = a.picks.length === 1 ? 50 : a.picks.length === 2 ? 25 : 10;
+    haptic.success();
+    statusEl.textContent = `Yes, that's ${r.name}. Now tap the map where it belongs.`;
+  } else if (a.picks.length >= 3) {
+    a.pickScore = 0;
+    haptic.error();
+    statusEl.textContent = `Not quite. That's ${r.name}'s outline highlighted. Now drop it on the map.`;
+  } else {
+    haptic.error();
+    statusEl.textContent = a.picks.length === 1 ? 'Not that one. Try again for 25 points.' : 'Not that one either. One more try.';
+  }
   persist();
-  if (a.score >= 60) haptic.success();
+  if (a.pickScore !== null) {
+    renderOptions();
+    bump();
+    busy = true;
+    // A short beat on the highlighted answer, then on to the map.
+    setTimeout(() => {
+      busy = false;
+      renderCard();
+      showFromTop(card);
+    }, reducedMotion() ? 0 : 900);
+  } else {
+    renderOptions();
+  }
+}
+
+optionsEl.addEventListener('click', (e) => {
+  const b = (e.target as HTMLElement).closest<HTMLButtonElement>('.od-option');
+  if (b?.dataset.code && !b.disabled) pick(b.dataset.code);
+});
+
+/* ---------- Step 2: drop it on the map ---------- */
+function toLonLat(e: PointerEvent): LonLat | null {
+  const m = mapSvg.getScreenCTM();
+  if (!m) return null;
+  const p = new DOMPoint(e.clientX, e.clientY).matrixTransform(m.inverse());
+  const ll = projection.invert?.([p.x, p.y]);
+  return ll && ll.every(Number.isFinite) ? (ll as LonLat) : null;
+}
+
+mapSvg.addEventListener('pointerup', (e) => {
+  const a = state.attempts[state.cursor];
+  if (busy || state.done || a.pickScore === null || finished(a) || e.button !== 0) return;
+  const ll = toLonLat(e);
+  if (!ll) return;
+  a.pin = [Math.round(ll[0] * 100) / 100, Math.round(ll[1] * 100) / 100];
+  persist();
+  if (view.w >= MAP_W) {
+    // First tap on the whole world: zoom in around it so the drop can be fine-tuned.
+    const [x, y] = projection(a.pin) ?? [MAP_W / 2, MAP_H / 2];
+    view = viewAround(x, y, MAP_W / 2.6);
+  }
+  haptic.select();
+  renderMap();
+  lockBtn.disabled = false;
+  statusEl.textContent = 'Happy with that? Lock it in, or tap again to move it.';
+});
+
+function lockIn() {
+  const i = state.cursor;
+  const r = rounds[i];
+  const a = state.attempts[i];
+  if (busy || !a.pin || finished(a)) return;
+  a.km = kmBetween(a.pin, geoCentroid(r.target) as LonLat);
+  a.placeScore = placePoints(a.km);
+  persist();
+  if (a.placeScore >= 35) haptic.success();
   else haptic.error();
   renderCard(true);
-  const scoreEl = $('score');
-  scoreEl.classList.remove('is-bump');
-  void scoreEl.offsetWidth;
-  scoreEl.classList.add('is-bump');
-  $('next').focus({ preventScroll: true });
-  showFromTop(card);
-}
-
-function skip() {
-  const i = state.cursor;
-  const a = state.attempts[i];
-  if (busy || scored(a)) return;
-  haptic.tap();
-  a.loops = [];
-  a.overlap = 0;
-  a.score = 0;
-  persist();
-  renderCard(true);
+  bump();
   $('next').focus({ preventScroll: true });
   showFromTop(card);
 }
 
 function useHint() {
   const a = state.attempts[state.cursor];
-  if (busy || state.done || scored(a) || a.hinted || hintsUsed() >= FREE_HINTS) return;
+  if (busy || state.done || finished(a) || hintsUsed() >= FREE_HINTS) return;
   haptic.tap();
-  a.hinted = true;
+  if (a.pickScore === null) {
+    if (a.hintPick) return;
+    a.hintPick = true;
+    statusEl.textContent = 'Two wrong outlines removed.';
+  } else {
+    if (a.hintPlace) return;
+    a.hintPlace = true;
+    statusEl.textContent = "It's somewhere inside the dashed ring.";
+  }
   persist();
-  statusEl.textContent = "The dashed box shows the country's proportions. Draw inside it.";
   renderCard();
 }
 
@@ -503,6 +443,7 @@ async function next() {
     card.classList.remove('is-leaving');
   }
   state.cursor += 1;
+  view = FULL_VIEW;
   persist();
   busy = false;
   statusEl.textContent = '';
@@ -535,7 +476,7 @@ function renderResult() {
   if (!state.done) return;
   showGrade('outline-sketch', (score() / MAX) * 100, todayKey);
   const s = score();
-  $('result-title').textContent = s >= 240 ? 'Master mapmaker.' : s >= 170 ? 'Steady hand.' : s >= 100 ? 'Good trip.' : 'Rough sketches.';
+  $('result-title').textContent = s >= 250 ? 'Master mapmaker.' : s >= 180 ? 'Sharp eyes.' : s >= 110 ? 'Good trip.' : 'Room to explore.';
   $('result-sub').textContent = `You scored ${s} out of ${MAX} across ${ROUNDS} countries.`;
   const st = readStats(STATS_KEY);
   const streak = st.lastDay >= today - 1 ? st.streak : 0;
@@ -557,19 +498,20 @@ function renderResult() {
     }),
   );
   $('recap-list').replaceChildren(
-    ...sketches.map((sk, i) => {
+    ...rounds.map((r, i) => {
       const a = state.attempts[i];
       const sec = document.createElement('section');
       sec.className = 'recap-sketch';
-      const map = el('svg', { width: '300', height: '220', 'aria-hidden': 'true' }) as SVGSVGElement;
-      drawBoard(map, sk, a, { reveal: true, w: 300, h: 220 });
       const body = document.createElement('div');
       const h = document.createElement('h3');
-      h.textContent = sk.name;
+      h.textContent = r.name;
       const strong = document.createElement('strong');
-      strong.textContent = `+${a.score ?? 0}`;
+      strong.textContent = `+${roundScore(a)}`;
+      const detail = document.createElement('p');
+      detail.className = 'od-recap-detail';
+      detail.textContent = `Outline +${a.pickScore ?? 0} · Map +${a.placeScore ?? 0}${a.km !== null ? ` (${Math.round(a.km).toLocaleString()} km off)` : ''}`;
       body.append(h, strong);
-      sec.append(map, body);
+      sec.append(thumb(r.target, 300, 180), body, detail);
       return sec;
     }),
   );
@@ -577,9 +519,9 @@ function renderResult() {
 }
 
 function shareString(): string {
-  const parts = sketches.map((s, i) => `${s.name} ${state.attempts[i].score ?? 0}`).join(' · ');
+  const parts = rounds.map((r, i) => `${r.name} ${roundScore(state.attempts[i])}`).join(' · ');
   const hints = hintsUsed() ? [`${hintsUsed()} ${hintsUsed() === 1 ? 'hint' : 'hints'} used`] : [];
-  return [`Outline Sketch No. ${puzzleNo} · ${score()}/${MAX}`, parts, ...hints, `${location.origin}/games/outline-sketch`].join('\n');
+  return [`Outline Drop No. ${puzzleNo} · ${score()}/${MAX}`, parts, ...hints, `${location.origin}/games/outline-sketch`].join('\n');
 }
 
 let countdownTimer = 0;
@@ -601,12 +543,14 @@ function render() {
 }
 
 /* ---------- Events ---------- */
-undoBtn.addEventListener('click', undo);
-clearBtn.addEventListener('click', clearAll);
-$('skip').addEventListener('click', skip);
-submitBtn.addEventListener('click', () => {
+$('zoom-out').addEventListener('click', () => {
   haptic.tap();
-  check();
+  view = FULL_VIEW;
+  renderMap();
+});
+lockBtn.addEventListener('click', () => {
+  haptic.tap();
+  lockIn();
 });
 hintBtn.addEventListener('click', useHint);
 $('next').addEventListener('click', () => void next());

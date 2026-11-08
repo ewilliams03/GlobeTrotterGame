@@ -1,102 +1,114 @@
 .os-head { grid-template-columns: auto minmax(0, 1fr) auto; }
 .os-head h2 { letter-spacing: -0.045em; }
 
-/* ---------- Whiteboard ---------- */
-.board-frame {
-  position: relative;
+.od-step {
   margin-top: 18px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+/* ---------- Step 1: four outline choices ---------- */
+.od-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.od-option {
+  appearance: none;
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 132px;
+  padding: 10px;
+  border: 0;
+  border-radius: var(--r-md);
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1.5px var(--line), var(--shadow-1);
+  color: var(--ink);
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 160ms var(--ease-out), box-shadow 160ms ease, opacity 200ms ease, background-color 160ms ease;
+}
+.od-option svg { width: 100%; height: auto; max-height: 150px; display: block; }
+.od-option:active:not(:disabled) { transform: scale(0.97); }
+@media (hover: hover) and (pointer: fine) {
+  .od-option:hover:not(:disabled) { box-shadow: inset 0 0 0 2px var(--ink-3), var(--shadow-1); }
+}
+.od-shape {
+  fill: var(--ink);
+  fill-opacity: 0.82;
+  stroke: var(--ink);
+  stroke-width: 1;
+  stroke-linejoin: round;
+}
+.od-letter {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--ink-3);
+}
+.od-option.is-wrong { opacity: 0.45; box-shadow: inset 0 0 0 2px var(--signal); cursor: default; }
+.od-option.is-wrong .od-shape { fill: var(--signal); stroke: var(--signal); }
+.od-option.is-right { box-shadow: inset 0 0 0 2.5px var(--route-1), var(--shadow-1); background: var(--paper-2); }
+.od-option.is-right .od-shape { fill: var(--route-1); stroke: var(--text-1); fill-opacity: 1; }
+.od-option.is-gone { opacity: 0.12; cursor: default; }
+.od-option:disabled { cursor: default; }
+
+/* ---------- Step 2: the blank world map ---------- */
+.od-frame {
+  position: relative;
+  margin-top: 12px;
   border-radius: var(--r-md);
   overflow: hidden;
-  background-color: var(--paper);
-  background-image: radial-gradient(circle at 1px 1px, color-mix(in oklch, var(--ink) 14%, transparent) 1.2px, transparent 1.6px);
-  background-size: 22px 22px;
   box-shadow: inset 0 0 0 1.5px var(--line), var(--shadow-1);
+  background: var(--paper);
 }
-.whiteboard {
+.od-map {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 68dvh;
-  margin-inline: auto;
-  touch-action: none;
+  touch-action: manipulation;
   cursor: crosshair;
   user-select: none;
   -webkit-user-select: none;
 }
-
-/* Strokes the player draws */
-.os-stroke {
-  fill: rgba(232, 98, 58, 0.14);
-  fill: color-mix(in oklch, var(--signal) 14%, transparent);
+.od-sea { fill: oklch(92% 0.03 230); }
+.od-land { fill: var(--paper-3); stroke: color-mix(in oklch, var(--ink) 18%, transparent); stroke-width: 0.5; }
+.od-guess {
+  fill: rgba(232, 98, 58, 0.35);
+  fill: color-mix(in oklch, var(--signal) 40%, transparent);
   stroke: var(--signal);
-  stroke-width: 3.5;
-  stroke-linecap: round;
+  stroke-width: 1.5;
   stroke-linejoin: round;
   pointer-events: none;
 }
-.os-stroke.is-live { fill: none; }
-/* On reveal the player's sketch is just a dashed line, so the real shape underneath stays clear. */
-.os-stroke.is-compare { fill: none; stroke-dasharray: 8 6; stroke-width: 3; }
-
-/* The real shape on reveal */
-.os-target {
-  fill: rgba(64, 170, 110, 0.5);
-  fill: color-mix(in oklch, var(--route-1) 55%, transparent);
+.od-guess.is-compare { fill: none; stroke-dasharray: 4 3; }
+.od-pin { fill: var(--signal); stroke: var(--paper); stroke-width: 2; pointer-events: none; }
+.od-truth {
+  fill: var(--route-1);
   stroke: var(--text-1);
-  stroke-width: 3;
+  stroke-width: 1.2;
   stroke-linejoin: round;
   pointer-events: none;
 }
-.os-target.is-revealing { animation: reveal 650ms var(--ease-out) both; }
-@keyframes reveal {
-  from { opacity: 0; transform: scale(0.96); }
-}
-.os-target { transform-box: fill-box; transform-origin: center; }
+.od-truth.is-revealing { animation: od-reveal 600ms var(--ease-out) both; transform-box: fill-box; transform-origin: center; }
+@keyframes od-reveal { from { opacity: 0; transform: scale(1.6); } }
+.od-truth-dot { fill: var(--text-1); stroke: var(--paper); stroke-width: 1.5; pointer-events: none; }
+.od-miss { stroke: var(--text-1); stroke-width: 1.5; stroke-dasharray: 3 3; pointer-events: none; }
+.od-ring { fill: none; stroke: var(--route-3); stroke-width: 2; stroke-dasharray: 6 5; pointer-events: none; }
 
-/* Hint: a dashed box with the country's proportions */
-.os-guide {
-  fill: none;
-  stroke: var(--route-3);
-  stroke-width: 2.5;
-  stroke-dasharray: 10 8;
-  pointer-events: none;
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .od-sea { fill: oklch(32% 0.04 240); }
 }
-.os-guide-label {
-  fill: var(--text-3);
-  font: 700 13px var(--font-mono);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  pointer-events: none;
-}
-
-.sketch-tip {
-  position: absolute;
-  left: 50%;
-  bottom: 14px;
-  transform: translateX(-50%);
-  padding: 6px 14px;
-  border-radius: 999px;
-  background: var(--ink);
-  color: var(--paper);
-  font-weight: 600;
-  font-size: 0.85rem;
-  pointer-events: none;
-  white-space: nowrap;
-  transition: opacity 200ms ease;
-}
-.sketch-tip.is-hidden { opacity: 0; }
-.loop-count {
-  position: absolute;
-  top: 12px;
-  right: 14px;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-  pointer-events: none;
-}
+:root[data-theme='dark'] .od-sea { fill: oklch(32% 0.04 240); }
 
 .os-actions {
   display: flex;
@@ -104,14 +116,12 @@
   justify-content: flex-end;
   gap: 10px;
 }
-.os-actions #skip { margin-right: auto; }
 .os-actions[hidden] { display: none; }
-.os-actions .btn-ghost { border-color: var(--line); }
 
 /* ---------- Recap ---------- */
 .recap-sketches {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
   gap: 14px;
 }
 .recap-sketch {
@@ -120,11 +130,31 @@
   background: var(--paper-2);
   box-shadow: inset 0 0 0 1px var(--line);
 }
-.recap-sketch svg { display: block; width: 100%; height: auto; background: var(--paper); }
-.recap-sketch div { padding: 12px 16px 14px; display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.recap-sketch > svg { display: block; width: 100%; height: auto; background: var(--paper); }
+.recap-sketch > div { padding: 12px 16px 4px; display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
 .recap-sketch h3 { font-size: 1.15rem; letter-spacing: -0.03em; }
 .recap-sketch strong { font-family: var(--font-mono); }
+.od-recap-detail { padding: 0 16px 14px; color: var(--ink-3); font-size: 0.88rem; }
 
-@media (max-width: 520px) {
-  .os-actions .btn { padding-inline: 14px; }
+@media (max-width: 400px) {
+  .od-grid { gap: 8px; }
+  .od-option { min-height: 112px; padding: 8px; }
 }
+
+/* Keep lines crisp when the map is zoomed in. */
+.od-map path, .od-map line, .od-map circle { vector-effect: non-scaling-stroke; }
+.od-zoom {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1px var(--line), var(--shadow-1);
+  color: var(--ink);
+  font: 600 0.85rem var(--font-body);
+  cursor: pointer;
+}
+.od-zoom[hidden] { display: none; }

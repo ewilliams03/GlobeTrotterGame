@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Outline Sketch · Draw countries from memory · Globetrotter Games</title>
-    <meta name="description" content="Draw three countries' outlines from memory on a whiteboard and see how close your shape is. A free daily geography game." />
-    <meta property="og:title" content="Outline Sketch · Globetrotter Games" />
-    <meta property="og:description" content="Draw countries' outlines from memory. A free daily geography game." />
+    <title>Outline Drop · Spot and place countries · Globetrotter Games</title>
+    <meta name="description" content="Pick each country's outline from four shapes, then drop it in the right place on a blank world map. A free daily geography game." />
+    <meta property="og:title" content="Outline Drop · Globetrotter Games" />
+    <meta property="og:description" content="Spot countries by their outline and place them on the map. A free daily geography game." />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#f8f5ee" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#151824" media="(prefers-color-scheme: dark)" />
@@ -40,7 +40,7 @@
       <div class="game-head">
         <div>
           <p class="eyebrow" id="puzzle-meta">Daily puzzle</p>
-          <h1>Outline Sketch</h1>
+          <h1>Outline Drop</h1>
         </div>
         <div class="mini-globe" id="mini-globe" aria-hidden="true"></div>
       </div>
@@ -49,9 +49,9 @@
         <details class="howto">
           <summary>How to play</summary>
           <div class="howto-body">
-            <p>Three countries today. Draw each country's outline on the whiteboard from memory. Size and position don't matter, only the shape.</p>
-            <p>Draw a closed loop for the mainland. Countries with islands or separate parts? Draw more loops; each one adds to your sketch. Use <strong>Undo</strong> to remove the last loop.</p>
-            <p>You score up to <strong>100</strong> per country for how closely your shape matches. Wobbly lines are fine. You get three free <strong>hints</strong> a day: a hint shows the country's proportions as a dashed guide box.</p>
+            <p>Three countries today, two steps each. First, <strong>pick the outline</strong>: four shapes, one is the country. Right first time is worth 50, second try 25.</p>
+            <p>Then <strong>drop it on the map</strong>: tap the blank world map where the country belongs. Tap again to move it, then lock it in. Within 300 km of the real spot is worth the full 50, and closer is always better.</p>
+            <p>You get three free <strong>hints</strong> a day: in step one a hint removes two wrong outlines; on the map it circles the right region.</p>
           </div>
         </details>
       </div>
@@ -69,31 +69,33 @@
           <header class="card-head os-head">
             <img id="card-flag" class="card-flag" width="72" height="54" alt="" />
             <div>
-              <p class="eyebrow" id="card-step">Sketch 1 of 3</p>
+              <p class="eyebrow" id="card-step">Country 1 of 3</p>
               <h2 id="card-title">Loading</h2>
             </div>
             <p class="score"><span>Score</span> <strong id="score">0</strong></p>
           </header>
-          <div class="board-frame" id="frame">
-            <svg id="sketch" class="whiteboard" width="600" height="440" viewBox="0 0 600 440" role="img" aria-label="Whiteboard. Draw the country's outline with your mouse or finger."></svg>
-            <p class="sketch-tip" id="tip">Draw the outline here</p>
-            <p class="loop-count" id="loops" aria-live="polite"></p>
+          <p class="od-step" id="step-label">Step 1 of 2 · Pick the outline</p>
+          <div class="od-options" id="step-pick">
+            <div class="od-grid" id="options" role="group" aria-label="Outline choices"></div>
+          </div>
+          <div class="od-place" id="step-place" hidden>
+            <div class="od-frame">
+              <svg id="map" class="od-map" viewBox="0 0 640 330" role="img" aria-label="Blank world map. Tap where the country is."></svg>
+              <button type="button" class="od-zoom" id="zoom-out" hidden>Whole map</button>
+            </div>
           </div>
           <p id="status" class="rtw-status" role="status" aria-live="polite"></p>
-          <div class="os-actions" id="draw-actions">
-            <button type="button" class="btn btn-ghost" id="skip">Skip (0 points)</button>
-            <button type="button" class="btn btn-ghost" id="undo" disabled>Undo</button>
-            <button type="button" class="btn btn-ghost" id="clear" disabled>Clear</button>
-            <button type="button" class="btn btn-primary" id="submit" disabled>Check my sketch</button>
+          <div class="os-actions" id="od-actions" hidden>
+            <button type="button" class="btn btn-primary" id="lock" disabled>Lock it in</button>
           </div>
           <div class="after" id="after" hidden>
             <div class="after-row">
               <p class="verdict" id="verdict"></p>
-              <button type="button" class="btn btn-primary" id="next">Next sketch</button>
+              <button type="button" class="btn btn-primary" id="next">Next country</button>
             </div>
           </div>
         </article>
-        <noscript><p class="noscript">Outline Sketch needs JavaScript to run. Nothing is tracked; it only runs the game in your browser.</p></noscript>
+        <noscript><p class="noscript">Outline Drop needs JavaScript to run. Nothing is tracked; it only runs the game in your browser.</p></noscript>
       </section>
 
       <section id="result" class="result" hidden aria-labelledby="result-title">

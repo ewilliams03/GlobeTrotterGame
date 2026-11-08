@@ -109,8 +109,8 @@ function buildOutlineDays(root) {
     return pts.length >= 3 ? [...pts, pts[0]] : null;
   }
 
-  outlineCache = cfg.days.map((codes) => ({
-    countries: codes.map((code) => {
+  // Main-body outline of one country, simplified. `detail` scales the simplification tolerance.
+  const shapeOf = (code, detail = 1) => {
       const f = all.find((x) => x.id === cfg.numeric[code]);
       if (!f) throw new Error(`outline-sketch: no shape for ${code}`);
       // Keep the main body: the largest polygon plus nearby ones of meaningful size (drops far-off territories).
@@ -126,12 +126,31 @@ function buildOutlineDays(root) {
       const clipBox = [view[0] - span * 0.6, Math.max(-85, view[1] - span * 0.35), view[2] + span * 0.6, Math.min(85, view[3] + span * 0.35)];
       const tol = span * 0.007;
       const minArea = (tol * 3) ** 2;
-      const target = {
+      return {
         type: 'MultiPolygon',
-        coordinates: main.map((x) => x.p.map((r) => simplify(r, tol * 0.5)).filter(Boolean)).filter((p) => p.length),
+        coordinates: main.map((x) => x.p.map((r) => simplify(r, tol * 0.5 * detail)).filter(Boolean)).filter((p) => p.length),
       };
-      // Whiteboard mode: only the country's own shape is needed (no surrounding map).
-      return { code, name: names[code], target };
+  };
+
+  // Decoy outlines come from the same pool of countries, picked by a fixed seed so every
+  // player sees the same four choices on a given day.
+  const pool = Object.keys(cfg.numeric);
+  const rand = (seed) => () => ((seed = (seed * 1103515245 + 12345) % 2147483648) / 2147483648);
+  outlineCache = cfg.days.map((codes, d) => ({
+    countries: codes.map((code, k) => {
+      const next = rand(d * 97 + k * 13 + 7);
+      const decoys = [];
+      while (decoys.length < 3) {
+        const c = pool[Math.floor(next() * pool.length)];
+        if (!codes.includes(c) && !decoys.includes(c)) decoys.push(c);
+      }
+      const options = [code, ...decoys].sort(() => next() - 0.5);
+      return {
+        code,
+        name: names[code],
+        target: shapeOf(code),
+        options: options.map((c) => ({ code: c, shape: c === code ? null : shapeOf(c, 2.5) })),
+      };
     }),
   }));
   return outlineCache;

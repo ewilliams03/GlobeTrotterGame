@@ -8,7 +8,7 @@ export const GAMES = [
   { id: 'fact-or-fib', name: 'Fact or Fib' },
   { id: 'rank-the-world', name: 'Rank the World' },
   { id: 'mystery-passport', name: 'Mystery Passport' },
-  { id: 'outline-sketch', name: 'Outline Sketch' },
+  { id: 'outline-sketch', name: 'Outline Drop' },
   { id: 'flag-forge', name: 'Flag Forge' },
 ] as const;
 export type GameId = (typeof GAMES)[number]['id'];
