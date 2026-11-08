@@ -52,7 +52,7 @@ Edit `src/games/flag-forge/flags.json`. Only use flags the builder can reproduce
 - [x] Fill in `[OPERATOR NAME]` and `[CONTACT EMAIL]` in `privacy.html` and `terms.html` (the build warns until you do).
 - [ ] Get a trademark check on "Globetrotter Games" and the six game names.
 - [x] Deploy to Vercel (static, no settings needed; `vercel.json` sets the security headers).
-- [x] In Vercel, add a Production environment variable `SITE_URL=https://yourdomain.com`. The build then adds the sitemap, canonical links and social preview tags.
+- [x] In Vercel, add a Production environment variable `SITE_URL=https://www.dailyworldquiz.com`. The build then adds the sitemap, canonical links and social preview tags.
 - [ ] Redirect the `*.vercel.app` address to your domain (Vercel → Domains) so Google sees one copy of the site.
 - [ ] Keep Vercel Web Analytics and Speed Insights **off**, or the "no tracking" promise stops being true.
 - [ ] Verify the domain in Google Search Console and submit `/sitemap.xml`.
