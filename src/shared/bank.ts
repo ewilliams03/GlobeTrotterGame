@@ -10,12 +10,13 @@ export async function loadToday<T>(game: string): Promise<T> {
   if (!size) throw new DayLoadError(`No puzzles for ${game}`);
   const index = dayIndex() % size;
   const url = `/data/${game}/${index}.json`;
+  // Same-origin credentials so Vercel's deployment protection cookie works on preview links.
   // A phone switching networks or a deploy in progress can drop one request: try a few times.
   let last: unknown;
   for (let attempt = 0; attempt < 3; attempt++) {
     if (attempt) await new Promise((r) => setTimeout(r, 600 * attempt));
     try {
-      const res = await fetch(url, { credentials: 'omit', cache: attempt ? 'reload' : 'default' });
+      const res = await fetch(url, { credentials: 'same-origin', cache: attempt ? 'reload' : 'default' });
       if (!res.ok) throw new DayLoadError(`HTTP ${res.status}`);
       return (await res.json()) as T;
     } catch (e) {
