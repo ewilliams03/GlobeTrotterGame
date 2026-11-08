@@ -1212,7 +1212,7 @@
           "countries": [
             "pk",
             "us",
-            "tr",
+            "uy",
             "ch",
             "au"
           ],
@@ -1247,9 +1247,9 @@
           "stat": "north",
           "countries": [
             "is",
-            "gb",
+            "cu",
             "mn",
-            "gr",
+            "ec",
             "ma"
           ],
           "fact": "Reykjavík is the world's northernmost capital of a sovereign country.",
@@ -1288,8 +1288,8 @@
           "countries": [
             "tz",
             "za",
-            "ch",
-            "no",
+            "mg",
+            "bw",
             "mn"
           ],
           "fact": "Tanzania's eight neighbours run from Kenya in the north to Mozambique in the south.",
@@ -1327,7 +1327,7 @@
           "stat": "area",
           "countries": [
             "sa",
-            "id",
+            "th",
             "et",
             "cl",
             "it"
@@ -1340,8 +1340,8 @@
           "countries": [
             "at",
             "it",
-            "kz",
-            "vn",
+            "cz",
+            "jp",
             "us"
           ],
           "fact": "Austria's eight neighbours include tiny Liechtenstein.",
@@ -1352,7 +1352,7 @@
           "countries": [
             "no",
             "ru",
-            "de",
+            "hu",
             "cn",
             "in"
           ],
@@ -1390,10 +1390,10 @@
         {
           "stat": "neighbours",
           "countries": [
-            "zm",
+            "hn",
             "pl",
             "bo",
-            "ng",
+            "ru",
             "kr"
           ],
           "fact": "South Korea's only land border is with North Korea.",
@@ -1419,9 +1419,9 @@
           "stat": "highest",
           "countries": [
             "cl",
-            "ca",
+            "uz",
             "at",
-            "no",
+            "fi",
             "is"
           ],
           "fact": "Ojos del Salado, on the Chile–Argentina border, is the highest volcano on Earth.",
@@ -1494,7 +1494,7 @@
         {
           "stat": "coastline",
           "countries": [
-            "ke",
+            "cn",
             "lr",
             "sg",
             "cd",
@@ -1509,7 +1509,7 @@
             "de",
             "bw",
             "cm",
-            "bo",
+            "ru",
             "li"
           ],
           "fact": "Liechtenstein sits between just two countries, Switzerland and Austria.",
@@ -1574,7 +1574,7 @@
         {
           "stat": "highest",
           "countries": [
-            "es",
+            "gh",
             "cv",
             "gt",
             "ne",
@@ -1626,7 +1626,7 @@
         {
           "stat": "coastline",
           "countries": [
-            "sb",
+            "pk",
             "mg",
             "se",
             "nz",
@@ -1640,7 +1640,7 @@
           "countries": [
             "my",
             "ar",
-            "rw",
+            "ru",
             "th",
             "is"
           ],
@@ -1663,10 +1663,10 @@
           "stat": "neighbours",
           "countries": [
             "cd",
-            "ve",
+            "iq",
             "au",
             "cr",
-            "zm"
+            "na"
           ],
           "fact": "DR Congo has nine neighbours, more than any other country in Africa.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
@@ -1681,7 +1681,7 @@
             "at",
             "no",
             "tl",
-            "bd",
+            "br",
             "by"
           ],
           "fact": "Timor-Leste's only land neighbour is Indonesia.",
@@ -1717,7 +1717,7 @@
             "ch",
             "pe",
             "ba",
-            "kh",
+            "ee",
             "cz"
           ],
           "fact": "Huascarán in Peru is the highest mountain in the tropics.",
@@ -1730,9 +1730,9 @@
         {
           "stat": "neighbours",
           "countries": [
-            "tz",
+            "br",
             "tm",
-            "ni",
+            "cn",
             "ht",
             "ua"
           ],
@@ -1783,10 +1783,10 @@
           "stat": "neighbours",
           "countries": [
             "gm",
-            "za",
+            "tr",
             "ug",
             "gh",
-            "si"
+            "cn"
           ],
           "fact": "The Gambia is bordered by Senegal on all sides except to the west, where it meets the Atlantic.",
           "sourceUrl": "https://en.wikipedia.org/wiki/The_Gambia"
@@ -1819,7 +1819,7 @@
           "stat": "highest",
           "countries": [
             "pk",
-            "hn",
+            "jo",
             "sk",
             "mv",
             "ir"
@@ -1886,7 +1886,7 @@
         {
           "stat": "highest",
           "countries": [
-            "al",
+            "ru",
             "iq",
             "mw",
             "uz",
@@ -1939,7 +1939,7 @@
           "stat": "highest",
           "countries": [
             "si",
-            "me",
+            "ie",
             "fj",
             "ke",
             "au"
@@ -1962,8 +1962,8 @@
         {
           "stat": "neighbours",
           "countries": [
-            "zw",
-            "td",
+            "ru",
+            "pl",
             "pt",
             "cg",
             "kp"
@@ -1990,7 +1990,7 @@
         {
           "stat": "highest",
           "countries": [
-            "kg",
+            "bo",
             "ss",
             "am",
             "id",
@@ -2042,7 +2042,7 @@
         {
           "stat": "coastline",
           "countries": [
-            "sa",
+            "ni",
             "pa",
             "pl",
             "gn",
@@ -2054,8 +2054,8 @@
         {
           "stat": "neighbours",
           "countries": [
-            "vn",
-            "cz",
+            "at",
+            "br",
             "sl",
             "is",
             "by"
@@ -2067,7 +2067,7 @@
           "stat": "highest",
           "countries": [
             "ke",
-            "vu",
+            "nz",
             "fi",
             "ne",
             "na"
@@ -2182,7 +2182,7 @@
         {
           "stat": "highest",
           "countries": [
-            "bd",
+            "ml",
             "ua",
             "lc",
             "es",
@@ -2212,9 +2212,9 @@
           "countries": [
             "bi",
             "sm",
-            "uy",
+            "cn",
             "ci",
-            "be"
+            "ne"
           ],
           "fact": "San Marino is completely surrounded by Italy.",
           "sourceUrl": "https://en.wikipedia.org/wiki/San_Marino"
@@ -2274,7 +2274,7 @@
         {
           "stat": "highest",
           "countries": [
-            "km",
+            "cr",
             "al",
             "tn",
             "ua",
@@ -2378,7 +2378,7 @@
         {
           "stat": "coastline",
           "countries": [
-            "sg",
+            "iq",
             "mu",
             "cr",
             "ba",
@@ -2406,7 +2406,7 @@
         {
           "stat": "highest",
           "countries": [
-            "cl",
+            "np",
             "ss",
             "tz",
             "et",
@@ -2431,7 +2431,7 @@
           "stat": "coastline",
           "countries": [
             "au",
-            "ve",
+            "bo",
             "gb",
             "co",
             "no"
@@ -2442,9 +2442,9 @@
         {
           "stat": "neighbours",
           "countries": [
-            "ar",
+            "td",
             "sz",
-            "kp",
+            "cn",
             "lt",
             "fj"
           ],
@@ -2458,7 +2458,7 @@
         {
           "stat": "highest",
           "countries": [
-            "us",
+            "pk",
             "ws",
             "bo",
             "al",
@@ -2496,8 +2496,8 @@
           "countries": [
             "cz",
             "uy",
-            "ht",
-            "lu",
+            "mg",
+            "cn",
             "ne"
           ],
           "fact": "Uruguay borders two countries: Argentina and Brazil.",
@@ -2512,7 +2512,7 @@
           "countries": [
             "lr",
             "va",
-            "az",
+            "mx",
             "my",
             "br"
           ],
@@ -2549,7 +2549,7 @@
             "td",
             "cn",
             "at",
-            "gm",
+            "jp",
             "np"
           ],
           "fact": "Nepal borders two countries: China and India.",
@@ -2564,7 +2564,7 @@
           "countries": [
             "ec",
             "cd",
-            "ci",
+            "mz",
             "be",
             "mu"
           ],
@@ -2587,7 +2587,7 @@
           "stat": "highest",
           "countries": [
             "hn",
-            "vu",
+            "tn",
             "se",
             "ls",
             "ru"
@@ -2614,7 +2614,7 @@
         {
           "stat": "highest",
           "countries": [
-            "dj",
+            "sn",
             "jo",
             "mg",
             "ca",
@@ -2626,8 +2626,8 @@
         {
           "stat": "neighbours",
           "countries": [
-            "kr",
-            "bt",
+            "tr",
+            "ru",
             "ug",
             "gh",
             "bb"
@@ -2681,7 +2681,7 @@
             "mt",
             "de",
             "gy",
-            "ro",
+            "cn",
             "ly"
           ],
           "fact": "Malta has no land borders with any other country.",
@@ -2743,8 +2743,8 @@
           "stat": "highest",
           "countries": [
             "mx",
-            "pk",
-            "lb",
+            "kh",
+            "np",
             "sv",
             "tj"
           ],
@@ -2770,7 +2770,7 @@
         {
           "stat": "coastline",
           "countries": [
-            "sg",
+            "mn",
             "sd",
             "cg",
             "ie",
@@ -2838,7 +2838,7 @@
             "es",
             "az",
             "dj",
-            "am"
+            "in"
           ],
           "fact": "Spain's highest point, Teide, is an active volcano on the island of Tenerife.",
           "sourceUrl": "https://en.wikipedia.org/wiki/Teide"
@@ -2848,7 +2848,7 @@
           "countries": [
             "is",
             "na",
-            "zw",
+            "bw",
             "fi",
             "pa"
           ],
@@ -2900,7 +2900,7 @@
           "countries": [
             "cr",
             "be",
-            "my",
+            "cn",
             "km",
             "ua"
           ],
@@ -2911,7 +2911,7 @@
           "stat": "highest",
           "countries": [
             "vu",
-            "hn",
+            "ml",
             "tz",
             "th",
             "bt"
@@ -2926,10 +2926,10 @@
         {
           "stat": "neighbours",
           "countries": [
-            "bw",
+            "ne",
             "bg",
             "mv",
-            "np",
+            "ru",
             "ve"
           ],
           "fact": "The Maldives has no land borders with any other country.",
@@ -2978,8 +2978,8 @@
         {
           "stat": "neighbours",
           "countries": [
-            "td",
-            "cz",
+            "cn",
+            "sd",
             "tt",
             "om",
             "ch"
@@ -3044,7 +3044,7 @@
           "countries": [
             "tl",
             "ml",
-            "pt",
+            "tn",
             "at",
             "pl"
           ],
@@ -3058,7 +3058,7 @@
             "do",
             "gw",
             "ar",
-            "tz"
+            "cn"
           ],
           "fact": "The Dominican Republic's coastline is about 1.5 times as long as Sudan's.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
@@ -3066,9 +3066,9 @@
         {
           "stat": "neighbours",
           "countries": [
-            "ss",
+            "br",
             "ua",
-            "kp",
+            "ru",
             "bd",
             "bj"
           ],
@@ -3094,8 +3094,8 @@
         {
           "stat": "highest",
           "countries": [
-            "do",
-            "gt",
+            "jm",
+            "ie",
             "cl",
             "ls",
             "ch"
@@ -3135,8 +3135,8 @@
           "stat": "south",
           "countries": [
             "cd",
-            "id",
-            "na",
+            "nz",
+            "au",
             "zw",
             "bw"
           ],
@@ -3146,7 +3146,7 @@
         {
           "stat": "neighbours",
           "countries": [
-            "kz",
+            "br",
             "rw",
             "ru",
             "cr",
@@ -3202,7 +3202,7 @@
             "br",
             "ph",
             "pg",
-            "fj"
+            "ar"
           ],
           "fact": "Brasília is farther south than Port Moresby.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
@@ -3278,7 +3278,7 @@
             "ne",
             "bo",
             "no",
-            "bn"
+            "cn"
           ],
           "fact": "Sri Lanka has no land borders with any other country.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
@@ -3316,7 +3316,7 @@
           "countries": [
             "lc",
             "qa",
-            "bg",
+            "mn",
             "ma",
             "cn"
           ],
@@ -3380,9 +3380,9 @@
           "countries": [
             "ch",
             "bs",
-            "ae",
+            "ne",
             "id",
-            "ht"
+            "cn"
           ],
           "fact": "The Bahamas has no land borders with any other country.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
@@ -3407,7 +3407,7 @@
           "stat": "south",
           "countries": [
             "na",
-            "ke",
+            "pt",
             "sg",
             "gt",
             "km"
@@ -3434,7 +3434,7 @@
             "dz",
             "lb",
             "ir",
-            "pl"
+            "gr"
           ],
           "fact": "Samoa's coastline is about 1.8 times as long as Lebanon's.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
@@ -3446,7 +3446,7 @@
         {
           "stat": "area",
           "countries": [
-            "et",
+            "bw",
             "se",
             "pa",
             "mr",
@@ -3510,7 +3510,7 @@
         {
           "stat": "area",
           "countries": [
-            "cr",
+            "jm",
             "ee",
             "vn",
             "kp",
@@ -3526,7 +3526,7 @@
             "bs",
             "cz",
             "bf",
-            "kz"
+            "cn"
           ],
           "fact": "Czechia borders four countries: Austria, Germany, Poland and Slovakia.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
@@ -3590,7 +3590,7 @@
             "fm",
             "ee",
             "ae",
-            "gy"
+            "gt"
           ],
           "fact": "Micronesia has a longer coastline than Ghana, with less than a hundredth of its land area, according to the CIA World Factbook.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
@@ -3627,9 +3627,9 @@
           "stat": "highest",
           "countries": [
             "rw",
-            "zw",
+            "dk",
             "om",
-            "gy",
+            "ba",
             "ne"
           ],
           "fact": "Mount Karisimbi in Rwanda rises 1,489 m higher than Jabal Shams, the top of Oman.",
@@ -3681,7 +3681,7 @@
             "gm",
             "py",
             "ug",
-            "mn",
+            "qa",
             "li"
           ],
           "fact": "Uganda's lowest point, at 621 m, is higher than Luxembourg's highest point, Kneiff (560 m).",
@@ -3742,7 +3742,7 @@
         {
           "stat": "highest",
           "countries": [
-            "ao",
+            "cu",
             "ye",
             "br",
             "ug",
@@ -3822,10 +3822,10 @@
         {
           "stat": "neighbours",
           "countries": [
-            "sd",
+            "tn",
             "tr",
             "au",
-            "id",
+            "ly",
             "lt"
           ],
           "fact": "Australia has no land border with any other country.",
@@ -3899,7 +3899,7 @@
           "stat": "coastline",
           "countries": [
             "is",
-            "sb",
+            "jp",
             "fm",
             "gy",
             "cr"
@@ -4199,7 +4199,7 @@
           "stat": "coastline",
           "countries": [
             "bt",
-            "gq",
+            "ru",
             "bs",
             "dj",
             "vu"
@@ -4238,7 +4238,7 @@
         {
           "stat": "highest",
           "countries": [
-            "ss",
+            "hr",
             "es",
             "ug",
             "tj",
@@ -4262,9 +4262,9 @@
         {
           "stat": "neighbours",
           "countries": [
-            "ga",
+            "br",
             "hu",
-            "bj",
+            "cn",
             "mn",
             "mm"
           ],
@@ -4293,7 +4293,7 @@
             "md",
             "gn",
             "si",
-            "om",
+            "at",
             "jp"
           ],
           "fact": "Japan has no land border with any other country.",
@@ -4331,8 +4331,8 @@
           "stat": "area",
           "countries": [
             "hn",
-            "az",
-            "ug",
+            "uy",
+            "lt",
             "ec",
             "pt"
           ],
@@ -4471,7 +4471,7 @@
           "stat": "coastline",
           "countries": [
             "hn",
-            "ie",
+            "is",
             "cf",
             "vu",
             "ae"
@@ -4564,7 +4564,7 @@
           "countries": [
             "it",
             "ye",
-            "lu",
+            "ru",
             "lt",
             "mg"
           ],
@@ -4606,7 +4606,7 @@
             "ci",
             "ml",
             "sv",
-            "tl"
+            "td"
           ],
           "fact": "Cerro El Pital in El Salvador rises 978 m higher than Mount Nimba, the top of Côte d'Ivoire.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
@@ -4614,7 +4614,7 @@
         {
           "stat": "neighbours",
           "countries": [
-            "co",
+            "cn",
             "id",
             "pw",
             "mz",
@@ -4718,8 +4718,8 @@
         {
           "stat": "neighbours",
           "countries": [
-            "us",
-            "sk",
+            "ru",
+            "tz",
             "ie",
             "iq",
             "ge"
@@ -4967,10 +4967,10 @@
           "stat": "neighbours",
           "countries": [
             "is",
-            "ie",
+            "sd",
             "ae",
             "am",
-            "gy"
+            "de"
           ],
           "fact": "Iceland has no land border with any other country.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
@@ -4994,7 +4994,7 @@
             "ug",
             "lu",
             "bb",
-            "mn"
+            "be"
           ],
           "fact": "Uganda's lowest point, at 621 m, is higher than Uruguay's highest point, Cerro Catedral (514 m).",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
@@ -5022,7 +5022,7 @@
             "kp",
             "cm",
             "ch",
-            "gr"
+            "by"
           ],
           "fact": "North Korea is bigger than Bosnia and Herzegovina and Switzerland combined.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
@@ -5042,7 +5042,7 @@
         {
           "stat": "lowest",
           "countries": [
-            "ss",
+            "jp",
             "jm",
             "am",
             "au",
@@ -5083,10 +5083,10 @@
           "stat": "neighbours",
           "countries": [
             "ao",
-            "cl",
+            "ph",
             "bz",
             "gn",
-            "mm"
+            "at"
           ],
           "fact": "Angola shares land borders with DR Congo, the Republic of the Congo, Namibia and Zambia.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
@@ -5146,11 +5146,11 @@
         {
           "stat": "neighbours",
           "countries": [
-            "cl",
+            "tz",
             "th",
             "gn",
             "mc",
-            "mm"
+            "br"
           ],
           "fact": "Monaco's only land neighbour is France.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
@@ -5226,10 +5226,10 @@
         {
           "stat": "neighbours",
           "countries": [
-            "co",
+            "rw",
             "tr",
             "jm",
-            "mc",
+            "ni",
             "bf"
           ],
           "fact": "Jamaica has no land border with any other country.",
@@ -5239,7 +5239,7 @@
           "stat": "lowest",
           "countries": [
             "bt",
-            "bo",
+            "jp",
             "ml",
             "sm",
             "cr"
@@ -5332,7 +5332,7 @@
           "countries": [
             "ie",
             "jo",
-            "ni",
+            "au",
             "md",
             "mw"
           ],
@@ -5343,7 +5343,7 @@
           "stat": "lowest",
           "countries": [
             "ly",
-            "bt",
+            "cz",
             "tj",
             "lb",
             "bo"
@@ -5395,10 +5395,10 @@
           "stat": "neighbours",
           "countries": [
             "sd",
-            "az",
+            "jm",
             "bd",
             "gt",
-            "ba"
+            "ru"
           ],
           "fact": "Guatemala shares land borders with Belize, El Salvador, Honduras and Mexico.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
@@ -5406,7 +5406,7 @@
         {
           "stat": "coastline",
           "countries": [
-            "tt",
+            "ht",
             "la",
             "fj",
             "dj",
@@ -5425,8 +5425,8 @@
             "na",
             "tr",
             "cm",
-            "pe",
-            "ml"
+            "ru",
+            "br"
           ],
           "fact": "Namibia shares land borders with Angola, Botswana, South Africa and Zambia.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
@@ -5449,7 +5449,7 @@
             "zw",
             "sn",
             "sm",
-            "tj",
+            "us",
             "cf"
           ],
           "fact": "The Central African Republic's lowest point, at 335 m, is higher than Estonia's highest point, Suur Munamägi (318 m).",
@@ -5527,7 +5527,7 @@
           "stat": "highest",
           "countries": [
             "iq",
-            "tm",
+            "sn",
             "se",
             "tj",
             "ec"
@@ -5666,8 +5666,8 @@
         {
           "stat": "neighbours",
           "countries": [
-            "py",
-            "sn",
+            "cm",
+            "br",
             "md",
             "bs",
             "kg"
@@ -5749,7 +5749,7 @@
             "na",
             "is",
             "kw",
-            "pe",
+            "tr",
             "mz"
           ],
           "fact": "Kuwait shares land borders with Iraq and Saudi Arabia.",
@@ -5758,7 +5758,7 @@
         {
           "stat": "highest",
           "countries": [
-            "la",
+            "af",
             "ga",
             "jm",
             "mw",
@@ -5786,9 +5786,9 @@
         {
           "stat": "neighbours",
           "countries": [
-            "uz",
+            "it",
             "gt",
-            "mw",
+            "zm",
             "vu",
             "tn"
           ],
@@ -5853,7 +5853,7 @@
             "na",
             "vn",
             "bs",
-            "mh",
+            "sg",
             "sr"
           ],
           "fact": "Nassau is farther north than Hanoi.",
@@ -5966,9 +5966,9 @@
         {
           "stat": "neighbours",
           "countries": [
-            "by",
+            "tr",
             "zw",
-            "py",
+            "it",
             "sb",
             "ad"
           ],
@@ -6010,7 +6010,7 @@
             "km",
             "bz",
             "cz",
-            "me"
+            "my"
           ],
           "fact": "Mount Karthala in the Comoros rises 758 m higher than Sněžka, the top of Czechia.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
@@ -6136,7 +6136,7 @@
           "countries": [
             "ni",
             "gt",
-            "mw",
+            "ml",
             "ru",
             "nr"
           ],
@@ -6163,7 +6163,7 @@
           "stat": "highest",
           "countries": [
             "be",
-            "kw",
+            "dk",
             "km",
             "kn",
             "ee"
@@ -6226,7 +6226,7 @@
         {
           "stat": "lowest",
           "countries": [
-            "va",
+            "py",
             "mw",
             "jp",
             "at",
@@ -6394,7 +6394,7 @@
         {
           "stat": "highest",
           "countries": [
-            "ph",
+            "tr",
             "bj",
             "au",
             "gy",
@@ -6424,7 +6424,7 @@
           "countries": [
             "hr",
             "th",
-            "si",
+            "ug",
             "tg",
             "bf"
           ],
@@ -6466,7 +6466,7 @@
             "tv",
             "bj",
             "at",
-            "cz"
+            "sk"
           ],
           "fact": "Malaysia is about 4 times the size of Austria.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
@@ -6475,9 +6475,9 @@
           "stat": "neighbours",
           "countries": [
             "dm",
-            "ir",
+            "sv",
             "zm",
-            "gy",
+            "za",
             "gr"
           ],
           "fact": "Dominica has no land border with any other country.",
@@ -6486,7 +6486,7 @@
         {
           "stat": "coastline",
           "countries": [
-            "tt",
+            "lt",
             "cm",
             "sc",
             "tn",
@@ -6553,7 +6553,7 @@
             "tv",
             "tn",
             "eg",
-            "au",
+            "np",
             "gr"
           ],
           "fact": "Tunisia's lowest point, Shatt al Gharsah, lies 17 m below sea level.",
@@ -6569,7 +6569,7 @@
             "cv",
             "jo",
             "ug",
-            "pw",
+            "pe",
             "cr"
           ],
           "fact": "Praia, the capital of Cape Verde, is farther north than San José.",
@@ -6644,7 +6644,7 @@
           "countries": [
             "la",
             "cd",
-            "sl",
+            "ir",
             "lc",
             "ba"
           ],

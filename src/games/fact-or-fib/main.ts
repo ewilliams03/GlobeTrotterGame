@@ -342,7 +342,9 @@ function renderResult() {
   recap.hidden = !state.done;
   $('board').hidden = state.done;
   if (!state.done) return;
-  showGrade('fact-or-fib', (Math.max(0, score()) / 10) * 100, todayKey);
+  // Spotting the fib matters most; confident bets add the rest. All five right on hunches is a B+.
+  const spotted = state.answers.filter((a) => a.correct).length / ROUNDS;
+  showGrade('fact-or-fib', 60 * spotted + 40 * (Math.max(0, score()) / (ROUNDS * 2)), todayKey);
 
   const s = score();
   const right = state.answers.filter((a) => a.correct).length;
