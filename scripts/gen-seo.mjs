@@ -29,7 +29,7 @@ if (site) {
     let tags = `<link rel="canonical" href="${url}" />\n    <meta property="og:url" content="${url}" />\n    <meta property="og:image" content="${site}/og-image.png" />\n    <meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta name="twitter:card" content="summary_large_image" />`;
     if (path === '/') {
       // JSON-LD is a data block, not executed script, so the strict CSP does not affect it.
-      const ld = { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Globetrotter Games', url: `${site}/`, description: 'Free daily geography games about countries, flags and cultures.' };
+      const ld = { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Globetrotter Games', alternateName: ['GlobetrotterGame', 'Globetrotter Game', 'Daily World Quiz', 'dailyworldquiz.com'], url: `${site}/`, description: 'Free daily geography games about countries, flags and cultures.' };
       tags += `\n    <script type="application/ld+json">${JSON.stringify(ld)}</script>`;
     }
     const html = readFileSync(file, 'utf8');
