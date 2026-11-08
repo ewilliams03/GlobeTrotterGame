@@ -9,9 +9,20 @@ export async function loadToday<T>(game: string): Promise<T> {
   const size = __BANK_SIZES__[game] ?? 0;
   if (!size) throw new DayLoadError(`No puzzles for ${game}`);
   const index = dayIndex() % size;
-  const res = await fetch(`/data/${game}/${index}.json`, { credentials: 'omit' });
-  if (!res.ok) throw new DayLoadError(`HTTP ${res.status}`);
-  return (await res.json()) as T;
+  const url = `/data/${game}/${index}.json`;
+  // A phone switching networks or a deploy in progress can drop one request: try a few times.
+  let last: unknown;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    if (attempt) await new Promise((r) => setTimeout(r, 600 * attempt));
+    try {
+      const res = await fetch(url, { credentials: 'omit', cache: attempt ? 'reload' : 'default' });
+      if (!res.ok) throw new DayLoadError(`HTTP ${res.status}`);
+      return (await res.json()) as T;
+    } catch (e) {
+      last = e;
+    }
+  }
+  throw last instanceof DayLoadError ? last : new DayLoadError(String(last));
 }
 
 /** Shown in place of the board if today's file can't be fetched (offline, for example). */
