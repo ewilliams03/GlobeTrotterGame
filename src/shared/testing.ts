@@ -3,7 +3,7 @@
 import { remove } from './storage';
 import { forgetResult, type GameId } from './grades';
 
-export const TEST_MODE = true;
+export const TEST_MODE = false;
 
 export function addTestReset(game: GameId, stateKey: string, todayKey: string) {
   if (!TEST_MODE) return;
