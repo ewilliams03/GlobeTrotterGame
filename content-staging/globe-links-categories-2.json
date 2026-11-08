@@ -1,0 +1,543 @@
+{
+  "_note": "New Globe Links categories (batch 2). Each list holds every sovereign state that fits, built from the Wikipedia page in 'source'. 'nearMisses' lists countries a player might reasonably think fit; content-staging/_scratch/gl2_validate.mjs keeps them off boards that use the category.",
+  "cur-franc": {
+    "label": "Currency is a franc",
+    "members": [
+      "bj",
+      "bf",
+      "bi",
+      "cm",
+      "cf",
+      "td",
+      "cg",
+      "cd",
+      "km",
+      "dj",
+      "gq",
+      "ga",
+      "gn",
+      "gw",
+      "ci",
+      "li",
+      "ml",
+      "ne",
+      "rw",
+      "sn",
+      "ch",
+      "tg"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Franc"
+  },
+  "cur-dinar": {
+    "label": "Currency is a dinar (or denar)",
+    "members": [
+      "dz",
+      "bh",
+      "iq",
+      "jo",
+      "kw",
+      "ly",
+      "mk",
+      "rs",
+      "tn"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Dinar"
+  },
+  "cur-peso": {
+    "label": "Currency is a peso",
+    "members": [
+      "ar",
+      "cl",
+      "co",
+      "cu",
+      "do",
+      "mx",
+      "ph",
+      "uy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Peso"
+  },
+  "cur-rupee": {
+    "label": "Currency is a rupee",
+    "members": [
+      "in",
+      "mu",
+      "np",
+      "pk",
+      "sc",
+      "lk"
+    ],
+    "nearMisses": [
+      "id",
+      "mv",
+      "bt"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Rupee"
+  },
+  "cur-crown": {
+    "label": "Currency's name means \"crown\"",
+    "members": [
+      "cz",
+      "dk",
+      "is",
+      "no",
+      "se"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Crown_(currency)"
+  },
+  "cur-rial": {
+    "label": "Currency is a rial or riyal",
+    "members": [
+      "ir",
+      "om",
+      "ye",
+      "qa",
+      "sa"
+    ],
+    "nearMisses": [
+      "kh",
+      "br"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Rial"
+  },
+  "cur-shilling": {
+    "label": "Currency is a shilling",
+    "members": [
+      "ke",
+      "so",
+      "tz",
+      "ug"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Shilling"
+  },
+  "cur-pound": {
+    "label": "Currency is a pound",
+    "members": [
+      "eg",
+      "lb",
+      "ss",
+      "sd",
+      "sy",
+      "gb"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Pound_(currency)"
+  },
+  "caricom": {
+    "label": "CARICOM member",
+    "members": [
+      "ag",
+      "bs",
+      "bb",
+      "bz",
+      "dm",
+      "gd",
+      "gy",
+      "ht",
+      "jm",
+      "kn",
+      "lc",
+      "vc",
+      "sr",
+      "tt"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Caribbean_Community"
+  },
+  "pif": {
+    "label": "Pacific Islands Forum member",
+    "members": [
+      "au",
+      "fj",
+      "ki",
+      "mh",
+      "fm",
+      "nr",
+      "nz",
+      "pw",
+      "pg",
+      "ws",
+      "sb",
+      "to",
+      "tv",
+      "vu"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Pacific_Islands_Forum"
+  },
+  "sadc": {
+    "label": "Southern African Development Community member",
+    "members": [
+      "ao",
+      "bw",
+      "km",
+      "cd",
+      "sz",
+      "ls",
+      "mg",
+      "mw",
+      "mu",
+      "mz",
+      "na",
+      "sc",
+      "za",
+      "tz",
+      "zm",
+      "zw"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Southern_African_Development_Community"
+  },
+  "eac": {
+    "label": "East African Community member",
+    "members": [
+      "bi",
+      "cd",
+      "ke",
+      "rw",
+      "so",
+      "ss",
+      "tz",
+      "ug"
+    ],
+    "source": "https://en.wikipedia.org/wiki/East_African_Community"
+  },
+  "visegrad": {
+    "label": "Visegrád Group member",
+    "members": [
+      "cz",
+      "hu",
+      "pl",
+      "sk"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Visegr%C3%A1d_Group"
+  },
+  "unsc-p5": {
+    "label": "Permanent member of the UN Security Council",
+    "members": [
+      "cn",
+      "fr",
+      "ru",
+      "gb",
+      "us"
+    ],
+    "source": "https://en.wikipedia.org/wiki/United_Nations_Security_Council"
+  },
+  "new7wonders": {
+    "label": "Home to one of the New 7 Wonders",
+    "members": [
+      "jo",
+      "it",
+      "mx",
+      "cn",
+      "pe",
+      "in",
+      "br"
+    ],
+    "nearMisses": [
+      "eg"
+    ],
+    "source": "https://en.wikipedia.org/wiki/New_7_Wonders_of_the_World"
+  },
+  "ancient-wonders": {
+    "label": "Site of one of the Seven Wonders of the Ancient World",
+    "members": [
+      "eg",
+      "gr",
+      "tr",
+      "iq"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World"
+  },
+  "name-kingdom": {
+    "label": "\"Kingdom\" in its official name",
+    "members": [
+      "bh",
+      "be",
+      "bt",
+      "kh",
+      "dk",
+      "sz",
+      "jo",
+      "ls",
+      "ma",
+      "nl",
+      "no",
+      "sa",
+      "es",
+      "se",
+      "th",
+      "to",
+      "gb"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_sovereign_states"
+  },
+  "name-democratic": {
+    "label": "\"Democratic\" in its official name",
+    "members": [
+      "dz",
+      "et",
+      "la",
+      "kp",
+      "st",
+      "lk",
+      "tl",
+      "cd"
+    ],
+    "nearMisses": [
+      "np"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_sovereign_states"
+  },
+  "name-united": {
+    "label": "\"United\" in its official name",
+    "members": [
+      "ae",
+      "gb",
+      "us",
+      "mx",
+      "tz"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_sovereign_states"
+  },
+  "name-peoples": {
+    "label": "\"People's\" in its official name",
+    "members": [
+      "dz",
+      "bd",
+      "cn",
+      "la",
+      "kp"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_sovereign_states"
+  },
+  "adriatic": {
+    "label": "Coastline on the Adriatic Sea",
+    "members": [
+      "al",
+      "ba",
+      "hr",
+      "it",
+      "me",
+      "si"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Adriatic_Sea"
+  },
+  "north-sea": {
+    "label": "Coastline on the North Sea",
+    "members": [
+      "gb",
+      "dk",
+      "no",
+      "de",
+      "nl",
+      "be",
+      "fr"
+    ],
+    "source": "https://en.wikipedia.org/wiki/North_Sea"
+  },
+  "niger-river": {
+    "label": "The Niger flows through or along it",
+    "members": [
+      "gn",
+      "ml",
+      "ne",
+      "bj",
+      "ng"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Niger_River"
+  },
+  "amazon-rainforest": {
+    "label": "Part of the Amazon rainforest lies in it",
+    "members": [
+      "br",
+      "pe",
+      "co",
+      "bo",
+      "ec",
+      "fr",
+      "gy",
+      "sr",
+      "ve"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Amazon_rainforest"
+  },
+  "limpopo": {
+    "label": "The Limpopo flows through or along it",
+    "members": [
+      "za",
+      "bw",
+      "zw",
+      "mz"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Limpopo_River"
+  },
+  "hosted-world-cup": {
+    "label": "Has hosted the men's FIFA World Cup",
+    "members": [
+      "uy",
+      "it",
+      "fr",
+      "br",
+      "ch",
+      "se",
+      "cl",
+      "gb",
+      "mx",
+      "de",
+      "ar",
+      "es",
+      "us",
+      "kr",
+      "jp",
+      "za",
+      "ru",
+      "qa",
+      "ca"
+    ],
+    "nearMisses": [
+      "ma",
+      "pt",
+      "py"
+    ],
+    "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup_hosts"
+  },
+  "borders-argentina": {
+    "label": "Borders Argentina",
+    "members": [
+      "bo",
+      "br",
+      "cl",
+      "py",
+      "uy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+  },
+  "borders-austria": {
+    "label": "Borders Austria",
+    "members": [
+      "ch",
+      "cz",
+      "de",
+      "hu",
+      "it",
+      "li",
+      "si",
+      "sk"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+  },
+  "borders-saudi-arabia": {
+    "label": "Borders Saudi Arabia",
+    "members": [
+      "ae",
+      "bh",
+      "iq",
+      "jo",
+      "kw",
+      "om",
+      "qa",
+      "ye"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+  },
+  "borders-turkey": {
+    "label": "Borders Türkiye",
+    "members": [
+      "am",
+      "az",
+      "bg",
+      "ge",
+      "gr",
+      "iq",
+      "ir",
+      "sy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+  },
+  "borders-iran": {
+    "label": "Borders Iran",
+    "members": [
+      "af",
+      "am",
+      "az",
+      "iq",
+      "pk",
+      "tm",
+      "tr"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+  },
+  "borders-dr-congo": {
+    "label": "Borders DR Congo",
+    "members": [
+      "ao",
+      "bi",
+      "cf",
+      "cg",
+      "rw",
+      "ss",
+      "tz",
+      "ug",
+      "zm"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+  },
+  "borders-tanzania": {
+    "label": "Borders Tanzania",
+    "members": [
+      "bi",
+      "cd",
+      "ke",
+      "mw",
+      "mz",
+      "rw",
+      "ug",
+      "zm"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+  },
+  "borders-kazakhstan": {
+    "label": "Borders Kazakhstan",
+    "members": [
+      "cn",
+      "kg",
+      "ru",
+      "tm",
+      "uz"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+  },
+  "borders-poland": {
+    "label": "Borders Poland",
+    "members": [
+      "by",
+      "cz",
+      "de",
+      "lt",
+      "ru",
+      "sk",
+      "ua"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+  },
+  "borders-italy": {
+    "label": "Borders Italy",
+    "members": [
+      "at",
+      "ch",
+      "fr",
+      "si",
+      "sm",
+      "va"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+  },
+  "borders-peru": {
+    "label": "Borders Peru",
+    "members": [
+      "bo",
+      "br",
+      "cl",
+      "co",
+      "ec"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+  }
+}

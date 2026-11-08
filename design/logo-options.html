@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Logo Options · Globetrotter Games</title>
+<style>
+  :root {
+    --paper: oklch(97.4% 0.012 85);
+    --paper-2: oklch(94.2% 0.017 85);
+    --ink: oklch(23% 0.035 265);
+    --ink-2: oklch(40% 0.03 265);
+    --ink-3: oklch(55% 0.022 265);
+    --line: oklch(87% 0.018 85);
+    --signal: oklch(63% 0.2 38);
+    --r1: oklch(70% 0.15 158);
+    --r2: oklch(63% 0.14 245);
+    --r3: oklch(80% 0.155 82);
+    --r4: oklch(58% 0.2 350);
+    --ocean: oklch(86% 0.06 230);
+    --land: oklch(72% 0.12 150);
+    --night: oklch(18.5% 0.022 265);
+    --night-2: oklch(24% 0.026 265);
+    --night-ink: oklch(95.5% 0.012 85);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 16px/1.5 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  header { max-width: 1180px; margin: 0 auto; padding: 48px 20px 24px; }
+  h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); letter-spacing: -0.04em; line-height: 1; margin: 0 0 12px; }
+  header p { color: var(--ink-2); max-width: 60ch; margin: 0; font-size: 1.08rem; }
+  .grid {
+    max-width: 1180px; margin: 0 auto; padding: 8px 20px 80px;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 18px;
+  }
+  .opt {
+    border-radius: 22px; background: var(--paper-2);
+    box-shadow: inset 0 0 0 1px var(--line); overflow: hidden;
+  }
+  .opt-top { display: grid; grid-template-columns: 1fr 1fr; }
+  .stage { display: grid; place-items: center; height: 170px; }
+  .stage.dark { background: var(--night); --ink: var(--night-ink); --paper: var(--night); --ocean: oklch(32% 0.05 245); --land: oklch(55% 0.11 150); }
+  .stage svg { width: 104px; height: 104px; }
+  .opt-body { padding: 16px 18px 18px; }
+  .opt-name { display: flex; align-items: baseline; gap: 10px; margin: 0 0 4px; font-size: 1.2rem; letter-spacing: -0.02em; }
+  .opt-name b { font: 700 0.8rem/1 ui-monospace, Menlo, monospace; color: var(--ink-3); }
+  .opt-body p { margin: 0 0 14px; color: var(--ink-2); font-size: 0.95rem; }
+  .lockup { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 14px; background: var(--paper); box-shadow: inset 0 0 0 1px var(--line); }
+  .lockup svg { width: 30px; height: 30px; flex: none; }
+  .lockup span { font-weight: 700; letter-spacing: -0.02em; font-size: 1.08rem; }
+  .lockup span i { font-style: normal; font-weight: 500; color: var(--ink-3); }
+  .icons { display: flex; align-items: center; gap: 14px; margin-top: 12px; color: var(--ink-3); font-size: 0.8rem; }
+  .app { width: 52px; height: 52px; border-radius: 13px; background: var(--night); display: grid; place-items: center; --ink: var(--night-ink); --paper: var(--night); --ocean: oklch(32% 0.05 245); --land: oklch(55% 0.11 150); }
+  .app svg { width: 38px; height: 38px; }
+  .fav32, .fav16 { display: grid; place-items: center; border-radius: 6px; background: var(--night); --ink: var(--night-ink); --paper: var(--night); --ocean: oklch(32% 0.05 245); --land: oklch(55% 0.11 150); }
+  .fav32 { width: 32px; height: 32px; } .fav32 svg { width: 26px; height: 26px; }
+  .fav16 { width: 16px; height: 16px; border-radius: 3px; } .fav16 svg { width: 14px; height: 14px; }
+  footer { max-width: 1180px; margin: 0 auto; padding: 0 20px 60px; color: var(--ink-3); }
+  @media (prefers-color-scheme: dark) {
+    body { background: var(--night); color: var(--night-ink); }
+    .opt { background: var(--night-2); box-shadow: inset 0 0 0 1px oklch(31% 0.026 265); }
+    .stage:not(.dark) { background: oklch(97.4% 0.012 85); }
+    .lockup { background: oklch(97.4% 0.012 85); color: oklch(23% 0.035 265); box-shadow: none; }
+    header p, .opt-body p { color: oklch(80% 0.016 85); }
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- 1 Flight Path -->
+    <symbol id="l1" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="17" fill="var(--ocean)" />
+      <path d="M14 13c4 1 6 4 5 7s-5 3-5 7 4 5 3 9M30 9c-2 4 1 6 4 7s5 4 4 8" fill="none" stroke="var(--land)" stroke-width="5" stroke-linecap="round" />
+      <circle cx="24" cy="24" r="17" fill="none" stroke="var(--ink)" stroke-width="2.6" />
+      <path d="M4 33C14 31 22 14 41 13" fill="none" stroke="var(--signal)" stroke-width="3.2" stroke-linecap="round" />
+      <circle cx="42" cy="13" r="4" fill="var(--signal)" stroke="var(--paper)" stroke-width="2" />
+    </symbol>
+    <!-- 2 Passport Stamp -->
+    <symbol id="l2" viewBox="0 0 48 48">
+      <g transform="rotate(-14 24 24)" fill="none" stroke="var(--signal)">
+        <circle cx="24" cy="24" r="21" stroke-width="2.4" stroke-dasharray="3.2 2.4" />
+        <circle cx="24" cy="24" r="15" stroke-width="2.4" />
+        <ellipse cx="24" cy="24" rx="6.5" ry="15" stroke-width="2" />
+        <path d="M9 24h30M11 17h26M11 31h26" stroke-width="2" />
+      </g>
+    </symbol>
+    <!-- 3 Paper Plane Orbit -->
+    <symbol id="l3" viewBox="0 0 48 48">
+      <circle cx="22" cy="26" r="12" fill="var(--r2)" />
+      <path d="M15 21c3 0 4 3 7 3s3 4 1 6M26 16c2 2 4 1 6 3" fill="none" stroke="var(--r1)" stroke-width="3.4" stroke-linecap="round" />
+      <ellipse cx="23" cy="25" rx="21" ry="8" transform="rotate(-22 23 25)" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-dasharray="3 3" />
+      <path d="M33 5l12 4-9 3-1 6-3-5-6-2z" fill="var(--signal)" stroke="var(--paper)" stroke-width="1.4" stroke-linejoin="round" />
+    </symbol>
+    <!-- 4 Globe Pin -->
+    <symbol id="l4" viewBox="0 0 48 48">
+      <path d="M24 46c-1.2 0-14-14-14-25a14 14 0 0 1 28 0c0 11-12.8 25-14 25z" fill="var(--signal)" />
+      <circle cx="24" cy="21" r="9" fill="var(--paper)" />
+      <g fill="none" stroke="var(--ink)" stroke-width="1.8">
+        <circle cx="24" cy="21" r="9" />
+        <ellipse cx="24" cy="21" rx="4" ry="9" />
+        <path d="M15 21h18" />
+      </g>
+    </symbol>
+    <!-- 5 Transit Bullet -->
+    <symbol id="l5" viewBox="0 0 48 48">
+      <rect x="3" y="3" width="42" height="42" rx="13" fill="var(--ink)" />
+      <path d="M3 30h11c4 0 5-12 10-12s6 12 10 12h11" fill="none" stroke="var(--signal)" stroke-width="4" />
+      <path d="M3 37h42" stroke="var(--r1)" stroke-width="4" />
+      <circle cx="24" cy="18" r="4.6" fill="var(--paper)" stroke="var(--signal)" stroke-width="2.6" />
+      <circle cx="13" cy="37" r="3.4" fill="var(--paper)" stroke="var(--r1)" stroke-width="2.4" />
+      <circle cx="35" cy="37" r="3.4" fill="var(--paper)" stroke="var(--r1)" stroke-width="2.4" />
+    </symbol>
+    <!-- 6 Desk Globe -->
+    <symbol id="l6" viewBox="0 0 48 48">
+      <g transform="rotate(-20 24 20)">
+        <circle cx="24" cy="20" r="13" fill="var(--ocean)" />
+        <path d="M17 12c3 2 2 5 5 6s2 5 0 7M28 9c-1 3 2 4 4 5s3 4 2 7" fill="none" stroke="var(--land)" stroke-width="4" stroke-linecap="round" />
+        <circle cx="24" cy="20" r="13" fill="none" stroke="var(--ink)" stroke-width="2.2" />
+        <path d="M9 20a15 15 0 0 0 30 0" fill="none" stroke="var(--signal)" stroke-width="3" stroke-linecap="round" />
+        <path d="M24 3v4M24 33v4" stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round" />
+      </g>
+      <path d="M24 38v4M15 44h18" stroke="var(--ink)" stroke-width="3" stroke-linecap="round" />
+    </symbol>
+    <!-- 7 Globe Balloon -->
+    <symbol id="l7" viewBox="0 0 48 48">
+      <path d="M24 3a15 15 0 0 0-15 15c0 7 6 12 11 16h8c5-4 11-9 11-16A15 15 0 0 0 24 3z" fill="var(--signal)" />
+      <path d="M24 3c-5 4-7 9-7 15s3 12 5 16M24 3c5 4 7 9 7 15s-3 12-5 16" fill="none" stroke="var(--paper)" stroke-width="2" />
+      <path d="M10 15h28" stroke="var(--paper)" stroke-width="2" />
+      <path d="M20 34l1 6M28 34l-1 6" stroke="var(--ink)" stroke-width="1.6" />
+      <rect x="19" y="39" width="10" height="7" rx="2" fill="var(--ink)" />
+    </symbol>
+    <!-- 8 Four Stops -->
+    <symbol id="l8" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="12" fill="var(--ink)" />
+      <ellipse cx="24" cy="24" rx="5" ry="12" fill="none" stroke="var(--paper)" stroke-width="1.6" opacity=".55" />
+      <path d="M12 24h24" stroke="var(--paper)" stroke-width="1.6" opacity=".55" />
+      <circle cx="24" cy="24" r="19.5" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-dasharray="2 3.2" />
+      <circle cx="24" cy="4.5" r="4" fill="var(--r1)" />
+      <circle cx="43.5" cy="24" r="4" fill="var(--r2)" />
+      <circle cx="24" cy="43.5" r="4" fill="var(--r3)" />
+      <circle cx="4.5" cy="24" r="4" fill="var(--r4)" />
+    </symbol>
+    <!-- 9 Globe G -->
+    <symbol id="l9" viewBox="0 0 48 48">
+      <circle cx="22" cy="19" r="14" fill="none" stroke="var(--ink)" stroke-width="4.5" />
+      <ellipse cx="22" cy="19" rx="5.5" ry="14" fill="none" stroke="var(--ink)" stroke-width="2" opacity=".45" />
+      <path d="M8 19h28" stroke="var(--ink)" stroke-width="2" opacity=".45" />
+      <path d="M36 17v14c0 9-8 14-16 13" fill="none" stroke="var(--signal)" stroke-width="4.5" stroke-linecap="round" />
+      <circle cx="17" cy="43.5" r="3.6" fill="var(--signal)" />
+    </symbol>
+    <!-- 10 Postage Stamp -->
+    <symbol id="l10" viewBox="0 0 48 48">
+      <g transform="rotate(6 24 24)">
+        <rect x="6" y="6" width="36" height="36" rx="2" fill="var(--paper)" stroke="var(--ink)" stroke-width="2" stroke-dasharray="2.2 2.2" />
+        <rect x="11" y="11" width="26" height="26" rx="2" fill="var(--signal)" />
+        <circle cx="24" cy="24" r="8.5" fill="var(--paper)" />
+        <path d="M19 21c2 0 3 2 5 2s2 3 1 4M26 17c1 1 3 1 4 3" fill="none" stroke="var(--signal)" stroke-width="2.4" stroke-linecap="round" />
+        <circle cx="24" cy="24" r="8.5" fill="none" stroke="var(--ink)" stroke-width="1.6" />
+      </g>
+    </symbol>
+    <!-- 11 Day & Night -->
+    <symbol id="l11" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="18" fill="var(--signal)" />
+      <path d="M24 6a18 18 0 0 1 0 36c-6-4-9-11-9-18s3-14 9-18z" fill="oklch(23% 0.035 265)" />
+      <circle cx="24" cy="24" r="18" fill="none" stroke="var(--ink)" stroke-width="2.4" />
+      <circle cx="31" cy="16" r="1.4" fill="oklch(97% 0.01 85)" />
+      <circle cx="35" cy="26" r="1" fill="oklch(97% 0.01 85)" />
+      <circle cx="29" cy="32" r="1.2" fill="oklch(97% 0.01 85)" />
+      <path d="M10 16c3 1 4 4 7 4" fill="none" stroke="oklch(97% 0.01 85)" stroke-width="2.2" stroke-linecap="round" opacity=".9" />
+    </symbol>
+    <!-- 12 Suitcase Sticker -->
+    <symbol id="l12" viewBox="0 0 48 48">
+      <path d="M18 12V8a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4" fill="none" stroke="var(--ink)" stroke-width="2.6" />
+      <rect x="5" y="12" width="38" height="30" rx="7" fill="var(--r3)" />
+      <path d="M15 12v30M33 12v30" stroke="var(--ink)" stroke-width="2.2" opacity=".35" />
+      <circle cx="24" cy="27" r="9" fill="var(--paper)" stroke="var(--signal)" stroke-width="2.6" />
+      <path d="M17.5 30c3-6 9-8 13-7" fill="none" stroke="var(--signal)" stroke-width="2.2" stroke-linecap="round" />
+      <circle cx="31" cy="23" r="2" fill="var(--signal)" />
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <h1>Pick a logo</h1>
+  <p>Twelve options for the mark next to "Globetrotter Games". Each one shows the big version on light and dark, how it looks in the header, and as an app icon and browser-tab favicon (32px and 16px). Just tell me the number you like, or mix two together.</p>
+</header>
+
+<main class="grid">
+  <!-- generated below -->
+</main>
+<footer>All marks are original drawings made for this site, in the site's own colours.</footer>
+
+<script>
+  const options = [
+    ['Flight Path', 'Your current mark, upgraded: a coloured globe with a flight arc landing on a destination dot.'],
+    ['Passport Stamp', 'An inked passport stamp with a globe inside. Ties to Mystery Passport and the "Fact/Fib" stamps.'],
+    ['Paper Plane Orbit', 'A paper plane circling a little planet on a dashed flight path. The most playful option.'],
+    ['Globe Pin', 'A map pin whose head is a globe. Very clear at small sizes.'],
+    ['Transit Bullet', 'A subway-map tile: two route lines and three stations. Matches the site\'s "Departures" board.'],
+    ['Desk Globe', 'A classroom globe on its stand, tilted on its axis. Friendly and nostalgic.'],
+    ['Globe Balloon', 'A hot-air balloon with globe lines on the envelope. Adventurous and fun.'],
+    ['Four Stops', 'A dark globe ringed by four stops in the four difficulty colours used across the games.'],
+    ['Globe G', 'A monogram: the globe forms the bowl of a "g" and the tail ends in a stop dot.'],
+    ['Postage Stamp', 'A perforated stamp with a globe inside, slightly tilted like it\'s stuck on a postcard.'],
+    ['Day & Night', 'A globe split between daylight and a starry night side. Bold and simple.'],
+    ['Suitcase Sticker', 'A yellow suitcase with a round travel sticker on it. Playful and warm.'],
+  ];
+  const svg = (id) => `<svg viewBox="0 0 48 48" aria-hidden="true"><use href="#l${id}"/></svg>`;
+  document.querySelector('.grid').innerHTML = options.map(([name, desc], i) => `
+    <section class="opt">
+      <div class="opt-top">
+        <div class="stage">${svg(i + 1)}</div>
+        <div class="stage dark">${svg(i + 1)}</div>
+      </div>
+      <div class="opt-body">
+        <h2 class="opt-name"><b>${String(i + 1).padStart(2, '0')}</b>${name}</h2>
+        <p>${desc}</p>
+        <div class="lockup">${svg(i + 1)}<span>Globetrotter <i>Games</i></span></div>
+        <div class="icons">
+          <div class="app">${svg(i + 1)}</div>
+          <div class="fav32">${svg(i + 1)}</div>
+          <div class="fav16">${svg(i + 1)}</div>
+          <span>app icon · 32px · 16px</span>
+        </div>
+      </div>
+    </section>`).join('');
+</script>
+</body>
+</html>

@@ -1,0 +1,685 @@
+{
+ "_note": "Each clue was checked against its source page on 7 Nov 2026. The first clue (nature) is free; the rest cost points.",
+ "costs": {
+  "nature": 0,
+  "food": 10,
+  "phrase": 10,
+  "currency": 15,
+  "landmark": 20,
+  "neighbour": 20
+ },
+ "days": [
+  {
+   "countries": [
+    {
+     "country": "pt",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Its territory includes two island groups far out in the Atlantic Ocean.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Portugal"
+      },
+      {
+       "type": "food",
+       "text": "Bacalhau, dried and salted cod, is a much-loved staple.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bacalhau"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Olá\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/ol%C3%A1"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "Belém Tower, a 16th-century fortified tower beside a river.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bel%C3%A9m_Tower"
+      },
+      {
+       "type": "neighbour",
+       "text": "It borders only one country: Spain.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "vn",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Mekong River reaches the sea here, through a huge delta.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mekong_Delta"
+      },
+      {
+       "type": "food",
+       "text": "Phở, a noodle soup with fresh herbs.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pho"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Xin chào\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/xin_ch%C3%A0o"
+      },
+      {
+       "type": "currency",
+       "text": "The đồng",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Vietnamese_%C4%91%E1%BB%93ng"
+      },
+      {
+       "type": "landmark",
+       "text": "Hạ Long Bay, dotted with around 1,600 limestone islands and islets.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/H%E1%BA%A1_Long_Bay"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Laos.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "gh",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Lake Volta, the world's largest artificial reservoir by surface area, is here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Volta"
+      },
+      {
+       "type": "food",
+       "text": "Jollof rice and fufu are much-loved dishes.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ghanaian_cuisine"
+      },
+      {
+       "type": "phrase",
+       "text": "\"Akwaaba\" means welcome in the Akan language.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/akwaaba"
+      },
+      {
+       "type": "currency",
+       "text": "The cedi",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ghanaian_cedi"
+      },
+      {
+       "type": "landmark",
+       "text": "Cape Coast Castle, a former colonial trading fort on the coast.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cape_Coast_Castle"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Togo.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "pe",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Colca Canyon, one of the deepest canyons in the world, is in its Andes.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Colca_Canyon"
+      },
+      {
+       "type": "food",
+       "text": "Ceviche: raw fish cured in lime or lemon juice.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ceviche"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Hola\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/hola"
+      },
+      {
+       "type": "currency",
+       "text": "The sol",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Peruvian_sol"
+      },
+      {
+       "type": "landmark",
+       "text": "Machu Picchu, a 15th-century Inca citadel.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Machu_Picchu"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Ecuador.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "South America"
+    },
+    {
+     "country": "gr",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "About 80% of its land is mountainous.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_Greece"
+      },
+      {
+       "type": "food",
+       "text": "Moussaka, baked layers of aubergine and minced meat.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Moussaka"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Γεια σου\" (yia sou) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%CE%B3%CE%B5%CE%B9%CE%B1_%CF%83%CE%BF%CF%85"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "The Parthenon, an ancient temple on a hilltop acropolis.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Parthenon"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Albania.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "mn",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Part of the Gobi Desert lies within its borders.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Gobi_Desert"
+      },
+      {
+       "type": "food",
+       "text": "Buuz, steamed dumplings, are traditionally eaten at Tsagaan Sar, the Lunar New Year.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Buuz"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Сайн байна уу\" (sain baina uu) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D1%81%D0%B0%D0%B9%D0%BD_%D0%B1%D0%B0%D0%B9%D0%BD%D0%B0_%D1%83%D1%83"
+      },
+      {
+       "type": "currency",
+       "text": "The tögrög",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mongolian_t%C3%B6gr%C3%B6g"
+      },
+      {
+       "type": "landmark",
+       "text": "A giant stainless-steel statue of Genghis Khan on horseback.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Equestrian_statue_of_Genghis_Khan"
+      },
+      {
+       "type": "neighbour",
+       "text": "It borders only two countries.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "ma",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Atlas Mountains run across it.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Atlas_Mountains"
+      },
+      {
+       "type": "food",
+       "text": "Tagine, slow-cooked in a clay pot with a tall cone-shaped lid.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tagine"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Marhaba\" (hello) in Arabic.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D9%85%D8%B1%D8%AD%D8%A8%D8%A7"
+      },
+      {
+       "type": "currency",
+       "text": "The dirham",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Moroccan_dirham"
+      },
+      {
+       "type": "landmark",
+       "text": "The Hassan II Mosque.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Hassan_II_Mosque"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Algeria.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    },
+    {
+     "country": "kr",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Jeju, a volcanic island, lies off its southern coast.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Jeju_Island"
+      },
+      {
+       "type": "food",
+       "text": "Kimchi, a side dish of fermented vegetables.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kimchi"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"안녕하세요\" (annyeonghaseyo) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94"
+      },
+      {
+       "type": "currency",
+       "text": "The won",
+       "sourceUrl": "https://en.wikipedia.org/wiki/South_Korean_won"
+      },
+      {
+       "type": "landmark",
+       "text": "Gyeongbokgung, a grand royal palace.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Gyeongbokgung"
+      },
+      {
+       "type": "neighbour",
+       "text": "Its only land border is with North Korea.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "hu",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Lake Balaton, the largest lake in Central Europe, is here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Balaton"
+      },
+      {
+       "type": "food",
+       "text": "Goulash, a stew seasoned with paprika.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Goulash"
+      },
+      {
+       "type": "phrase",
+       "text": "Friends say \"Szia\" to say hi.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/szia"
+      },
+      {
+       "type": "currency",
+       "text": "The forint",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Hungarian_forint"
+      },
+      {
+       "type": "landmark",
+       "text": "The Széchenyi Chain Bridge across the Danube.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sz%C3%A9chenyi_Chain_Bridge"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Austria.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "et",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Danakil Depression here is one of the hottest places on Earth.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Danakil_Depression"
+      },
+      {
+       "type": "food",
+       "text": "Injera, a spongy flatbread made from teff flour.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Injera"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"ሰላም\" (selam) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B0%E1%88%8B%E1%88%9D"
+      },
+      {
+       "type": "currency",
+       "text": "The birr",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ethiopian_birr"
+      },
+      {
+       "type": "landmark",
+       "text": "The rock-hewn churches of Lalibela.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Lalibela"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Kenya.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    },
+    {
+     "country": "cl",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Atacama, one of the driest places on Earth, is in its north.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Atacama_Desert"
+      },
+      {
+       "type": "food",
+       "text": "Pastel de choclo, a baked corn and meat pie.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pastel_de_choclo"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Hola\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/hola"
+      },
+      {
+       "type": "currency",
+       "text": "The peso",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Chilean_peso"
+      },
+      {
+       "type": "landmark",
+       "text": "The moai statues of Easter Island (Rapa Nui).",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Moai"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Bolivia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "South America"
+    },
+    {
+     "country": "np",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Eight of the world's ten highest mountains are at least partly here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Nepal"
+      },
+      {
+       "type": "food",
+       "text": "Dal bhat, lentil soup served with rice.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Dal_bhat"
+      },
+      {
+       "type": "phrase",
+       "text": "People greet each other with \"Namaste\".",
+       "sourceUrl": "https://en.wiktionary.org/wiki/namaste"
+      },
+      {
+       "type": "currency",
+       "text": "The rupee",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Nepalese_rupee"
+      },
+      {
+       "type": "landmark",
+       "text": "Boudha Stupa, a great Buddhist stupa.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Boudha_Stupa"
+      },
+      {
+       "type": "neighbour",
+       "text": "It borders only two countries.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "jm",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "It's the third-largest island in the Greater Antilles.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Jamaica"
+      },
+      {
+       "type": "food",
+       "text": "Ackee and saltfish is the national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ackee_and_saltfish"
+      },
+      {
+       "type": "phrase",
+       "text": "Many people speak a creole known locally as Patwa.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Jamaican_Patois"
+      },
+      {
+       "type": "currency",
+       "text": "The dollar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Jamaican_dollar"
+      },
+      {
+       "type": "landmark",
+       "text": "Dunn's River Falls.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Dunn%27s_River_Falls"
+      },
+      {
+       "type": "neighbour",
+       "text": "It has no land borders at all.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Jamaica"
+      }
+     ],
+     "continent": "North America (Caribbean)"
+    },
+    {
+     "country": "id",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "It's an archipelago of thousands of islands that straddles the equator.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+      },
+      {
+       "type": "food",
+       "text": "Nasi goreng, a spiced fried rice.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Nasi_goreng"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Selamat pagi\" for good morning.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/selamat_pagi"
+      },
+      {
+       "type": "currency",
+       "text": "The rupiah",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Indonesian_rupiah"
+      },
+      {
+       "type": "landmark",
+       "text": "Borobudur, the largest Buddhist temple in the world.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Borobudur"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a land border with Timor-Leste.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Indonesia%E2%80%93Timor-Leste_border"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "ch",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Both the Rhine and the Rhône begin in its Alps.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Rh%C3%B4ne"
+      },
+      {
+       "type": "food",
+       "text": "Fondue, melted cheese for dipping bread.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Fondue"
+      },
+      {
+       "type": "phrase",
+       "text": "In much of the country, people say \"Grüezi\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/gr%C3%BCezi"
+      },
+      {
+       "type": "currency",
+       "text": "The franc",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Swiss_franc"
+      },
+      {
+       "type": "landmark",
+       "text": "The Matterhorn, a pyramid-shaped Alpine peak.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Matterhorn"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Liechtenstein.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "eg",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Nile flows north through it to the Mediterranean.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Nile"
+      },
+      {
+       "type": "food",
+       "text": "Koshari: rice, pasta and lentils with a spicy tomato sauce.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Koshary"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Ahlan wa sahlan\" to say welcome.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D8%A3%D9%87%D9%84%D8%A7_%D9%88%D8%B3%D9%87%D9%84%D8%A7"
+      },
+      {
+       "type": "currency",
+       "text": "The pound",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Egyptian_pound"
+      },
+      {
+       "type": "landmark",
+       "text": "The Great Sphinx.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Sudan.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    },
+    {
+     "country": "ie",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "It's nicknamed the Emerald Isle.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Emerald_Isle"
+      },
+      {
+       "type": "food",
+       "text": "Colcannon, mashed potatoes with cabbage or kale.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Colcannon"
+      },
+      {
+       "type": "phrase",
+       "text": "In the national language, people say \"Dia dhuit\" for hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/Dia_dhuit"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "The Cliffs of Moher, on the Atlantic coast.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cliffs_of_Moher"
+      },
+      {
+       "type": "neighbour",
+       "text": "Its only land border is with the United Kingdom.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "ar",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Aconcagua, the highest mountain outside Asia, is here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Aconcagua"
+      },
+      {
+       "type": "food",
+       "text": "Asado, a big barbecue of grilled meats.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Asado"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Hola\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/hola"
+      },
+      {
+       "type": "currency",
+       "text": "The peso",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Argentine_peso"
+      },
+      {
+       "type": "landmark",
+       "text": "Perito Moreno Glacier, in Patagonia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Perito_Moreno_Glacier"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Uruguay.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "South America"
+    }
+   ]
+  }
+ ]
+}

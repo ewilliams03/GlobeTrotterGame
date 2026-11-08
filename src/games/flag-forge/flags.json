@@ -1,0 +1,422 @@
+{
+  "_note": "Simplified specs that the builder can reproduce exactly. Only flags whose design is fully captured by layout + colours + one centred symbol are used. Checked against each country's 'Flag of ...' Wikipedia article.",
+  "flags": {
+    "fr": {
+      "layout": "v3",
+      "colors": [
+        "blue",
+        "white",
+        "red"
+      ],
+      "symbol": "none"
+    },
+    "jp": {
+      "layout": "plain",
+      "colors": [
+        "white"
+      ],
+      "symbol": "disc",
+      "symbolColor": "red"
+    },
+    "gh": {
+      "layout": "h3",
+      "colors": [
+        "red",
+        "yellow",
+        "green"
+      ],
+      "symbol": "star",
+      "symbolColor": "black"
+    },
+    "de": {
+      "layout": "h3",
+      "colors": [
+        "black",
+        "red",
+        "yellow"
+      ],
+      "symbol": "none"
+    },
+    "se": {
+      "layout": "nordic",
+      "colors": [
+        "blue",
+        "yellow"
+      ],
+      "symbol": "none"
+    },
+    "mx": {
+      "layout": "v3",
+      "colors": [
+        "green",
+        "white",
+        "red"
+      ],
+      "symbol": "emblem"
+    },
+    "it": {
+      "layout": "v3",
+      "colors": [
+        "green",
+        "white",
+        "red"
+      ],
+      "symbol": "none"
+    },
+    "tr": {
+      "layout": "plain",
+      "colors": [
+        "red"
+      ],
+      "symbol": "crescent",
+      "symbolColor": "white"
+    },
+    "ar": {
+      "layout": "h3",
+      "colors": [
+        "lightblue",
+        "white",
+        "lightblue"
+      ],
+      "symbol": "sun",
+      "symbolColor": "yellow"
+    },
+    "nl": {
+      "layout": "h3",
+      "colors": [
+        "red",
+        "white",
+        "blue"
+      ],
+      "symbol": "none"
+    },
+    "bd": {
+      "layout": "plain",
+      "colors": [
+        "green"
+      ],
+      "symbol": "disc",
+      "symbolColor": "red"
+    },
+    "sn": {
+      "layout": "v3",
+      "colors": [
+        "green",
+        "yellow",
+        "red"
+      ],
+      "symbol": "star",
+      "symbolColor": "green"
+    },
+    "ie": {
+      "layout": "v3",
+      "colors": [
+        "green",
+        "white",
+        "orange"
+      ],
+      "symbol": "none"
+    },
+    "dk": {
+      "layout": "nordic",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "symbol": "none"
+    },
+    "hu": {
+      "layout": "h3",
+      "colors": [
+        "red",
+        "white",
+        "green"
+      ],
+      "symbol": "none"
+    },
+    "vn": {
+      "layout": "plain",
+      "colors": [
+        "red"
+      ],
+      "symbol": "star",
+      "symbolColor": "yellow"
+    },
+    "ru": {
+      "layout": "h3",
+      "colors": [
+        "white",
+        "blue",
+        "red"
+      ],
+      "symbol": "none"
+    },
+    "ng": {
+      "layout": "v3",
+      "colors": [
+        "green",
+        "white",
+        "green"
+      ],
+      "symbol": "none"
+    },
+    "be": {
+      "layout": "v3",
+      "colors": [
+        "black",
+        "yellow",
+        "red"
+      ],
+      "symbol": "none"
+    },
+    "ro": {
+      "layout": "v3",
+      "colors": [
+        "blue",
+        "yellow",
+        "red"
+      ],
+      "symbol": "none"
+    },
+    "ml": {
+      "layout": "v3",
+      "colors": [
+        "green",
+        "yellow",
+        "red"
+      ],
+      "symbol": "none"
+    },
+    "gn": {
+      "layout": "v3",
+      "colors": [
+        "red",
+        "yellow",
+        "green"
+      ],
+      "symbol": "none"
+    },
+    "ci": {
+      "layout": "v3",
+      "colors": [
+        "orange",
+        "white",
+        "green"
+      ],
+      "symbol": "none"
+    },
+    "pe": {
+      "layout": "v3",
+      "colors": [
+        "red",
+        "white",
+        "red"
+      ],
+      "symbol": "none"
+    },
+    "gt": {
+      "layout": "v3",
+      "colors": [
+        "lightblue",
+        "white",
+        "lightblue"
+      ],
+      "symbol": "emblem"
+    },
+    "cm": {
+      "layout": "v3",
+      "colors": [
+        "green",
+        "red",
+        "yellow"
+      ],
+      "symbol": "star",
+      "symbolColor": "yellow"
+    },
+    "at": {
+      "layout": "h3",
+      "colors": [
+        "red",
+        "white",
+        "red"
+      ],
+      "symbol": "none"
+    },
+    "lt": {
+      "layout": "h3",
+      "colors": [
+        "yellow",
+        "green",
+        "red"
+      ],
+      "symbol": "none"
+    },
+    "bg": {
+      "layout": "h3",
+      "colors": [
+        "white",
+        "green",
+        "red"
+      ],
+      "symbol": "none"
+    },
+    "lu": {
+      "layout": "h3",
+      "colors": [
+        "red",
+        "white",
+        "lightblue"
+      ],
+      "symbol": "none"
+    },
+    "am": {
+      "layout": "h3",
+      "colors": [
+        "red",
+        "blue",
+        "orange"
+      ],
+      "symbol": "none"
+    },
+    "pl": {
+      "layout": "h2",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "symbol": "none"
+    },
+    "id": {
+      "layout": "h2",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "symbol": "none"
+    },
+    "ma": {
+      "layout": "plain",
+      "colors": [
+        "red"
+      ],
+      "symbol": "star",
+      "symbolColor": "green"
+    },
+    "kg": {
+      "layout": "plain",
+      "colors": [
+        "red"
+      ],
+      "symbol": "sun",
+      "symbolColor": "yellow"
+    },
+    "fi": {
+      "layout": "nordic",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "symbol": "none"
+    }
+  },
+  "sources": {
+    "fr": "Flag_of_France",
+    "jp": "Flag_of_Japan",
+    "gh": "Flag_of_Ghana",
+    "de": "Flag_of_Germany",
+    "se": "Flag_of_Sweden",
+    "mx": "Flag_of_Mexico",
+    "it": "Flag_of_Italy",
+    "tr": "Flag_of_Turkey",
+    "ar": "Flag_of_Argentina",
+    "nl": "Flag_of_the_Netherlands",
+    "bd": "Flag_of_Bangladesh",
+    "sn": "Flag_of_Senegal",
+    "ie": "Flag_of_Ireland",
+    "dk": "Flag_of_Denmark",
+    "hu": "Flag_of_Hungary",
+    "vn": "Flag_of_Vietnam",
+    "ru": "Flag_of_Russia",
+    "ng": "Flag_of_Nigeria",
+    "be": "Flag_of_Belgium",
+    "ro": "Flag_of_Romania",
+    "ml": "Flag_of_Mali",
+    "gn": "Flag_of_Guinea",
+    "ci": "Flag_of_Ivory_Coast",
+    "pe": "Flag_of_Peru",
+    "gt": "Flag_of_Guatemala",
+    "cm": "Flag_of_Cameroon",
+    "at": "Flag_of_Austria",
+    "lt": "Flag_of_Lithuania",
+    "bg": "Flag_of_Bulgaria",
+    "lu": "Flag_of_Luxembourg",
+    "am": "Flag_of_Armenia",
+    "pl": "Flag_of_Poland",
+    "id": "Flag_of_Indonesia",
+    "ma": "Flag_of_Morocco",
+    "kg": "Flag_of_Kyrgyzstan",
+    "fi": "Flag_of_Finland"
+  },
+  "days": [
+    [
+      "fr",
+      "jp",
+      "gh"
+    ],
+    [
+      "de",
+      "se",
+      "mx"
+    ],
+    [
+      "it",
+      "tr",
+      "ar"
+    ],
+    [
+      "nl",
+      "bd",
+      "sn"
+    ],
+    [
+      "ie",
+      "dk",
+      "ng"
+    ],
+    [
+      "hu",
+      "vn",
+      "ru"
+    ],
+    [
+      "be",
+      "kg",
+      "lt"
+    ],
+    [
+      "ro",
+      "pl",
+      "gt"
+    ],
+    [
+      "ml",
+      "fi",
+      "lu"
+    ],
+    [
+      "ci",
+      "ma",
+      "bg"
+    ],
+    [
+      "pe",
+      "am",
+      "cm"
+    ],
+    [
+      "gn",
+      "id",
+      "at"
+    ]
+  ]
+}

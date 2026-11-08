@@ -1,0 +1,23 @@
+{
+  "id": "/",
+  "name": "Globetrotter Games",
+  "short_name": "Globetrotter",
+  "description": "Six free daily geography games about countries, flags and cultures.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f8f5ee",
+  "theme_color": "#f8f5ee",
+  "categories": ["games", "education", "entertainment"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Globe Links", "url": "/games/globe-links", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Fact or Fib", "url": "/games/fact-or-fib", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Rank the World", "url": "/games/rank-the-world", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

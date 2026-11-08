@@ -1,0 +1,6669 @@
+{
+  "_note": "Every value was checked against the linked Wikipedia list (7 Nov 2026). Latitudes come from src/data/countries.ts (capital cities). Denmark, Canada and the UK are left out of neighbour rounds because their land-border counts are disputed.",
+  "stats": {
+    "highest": {
+      "title": "Highest mountain",
+      "order": "Tallest first",
+      "direction": "desc",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country",
+      "values": {
+        "np": 8849,
+        "pk": 8611,
+        "in": 8586,
+        "ar": 6961,
+        "cl": 6893,
+        "pe": 6768,
+        "ec": 6263,
+        "us": 6190,
+        "ca": 5959,
+        "tz": 5895,
+        "ru": 5642,
+        "mx": 5636,
+        "ke": 5199,
+        "tr": 5137,
+        "ch": 4634,
+        "et": 4550,
+        "ma": 4167,
+        "at": 3798,
+        "jp": 3776,
+        "nz": 3724,
+        "za": 3446,
+        "de": 2962,
+        "gr": 2918,
+        "th": 2565,
+        "no": 2469,
+        "au": 2228,
+        "is": 2110,
+        "gb": 1345,
+        "fi": 1324,
+        "dk": 171,
+        "bt": 7571,
+        "tj": 7495,
+        "af": 7492,
+        "kg": 7439,
+        "bo": 6542,
+        "ir": 5609,
+        "cd": 5109,
+        "ug": 5109,
+        "id": 4884,
+        "uz": 4643,
+        "rw": 4507,
+        "az": 4466,
+        "gt": 4203,
+        "my": 4095,
+        "am": 4090,
+        "cm": 4040,
+        "es": 3715,
+        "ye": 3666,
+        "iq": 3611,
+        "ls": 3482,
+        "ss": 3187,
+        "vn": 3147,
+        "tm": 3138,
+        "do": 3101,
+        "lb": 3088,
+        "mw": 3002,
+        "br": 2995,
+        "tl": 2963,
+        "ph": 2954,
+        "dz": 2908,
+        "mg": 2876,
+        "hn": 2870,
+        "si": 2864,
+        "la": 2830,
+        "cv": 2829,
+        "gy": 2772,
+        "al": 2764,
+        "sv": 2730,
+        "sk": 2654,
+        "ao": 2620,
+        "na": 2573,
+        "ro": 2545,
+        "me": 2534,
+        "pl": 2500,
+        "ba": 2386,
+        "km": 2361,
+        "pt": 2351,
+        "zm": 2339,
+        "ly": 2267,
+        "se": 2097,
+        "ua": 2061,
+        "st": 2024,
+        "dj": 2021,
+        "ne": 2002,
+        "sl": 1945,
+        "ae": 1892,
+        "vu": 1879,
+        "ws": 1858,
+        "jo": 1854,
+        "hr": 1831,
+        "kh": 1813,
+        "cz": 1603,
+        "tn": 1544,
+        "lr": 1447,
+        "cf": 1410,
+        "fj": 1324,
+        "vc": 1235,
+        "ml": 1155,
+        "bz": 1124,
+        "ga": 1070,
+        "bd": 1063,
+        "ie": 1039,
+        "hu": 1014,
+        "tg": 991,
+        "lc": 950,
+        "sc": 905,
+        "py": 842,
+        "be": 694,
+        "uy": 514,
+        "va": 75,
+        "mv": 5.1,
+        "pg": 4509,
+        "cr": 3821,
+        "pa": 3475,
+        "td": 3447,
+        "sd": 3024,
+        "er": 3018,
+        "om": 3018,
+        "gq": 3011,
+        "ad": 2943,
+        "bg": 2925,
+        "mk": 2764,
+        "bi": 2684,
+        "ht": 2680,
+        "eg": 2629,
+        "li": 2599,
+        "zw": 2592,
+        "lk": 2524,
+        "mz": 2440,
+        "ng": 2419,
+        "sb": 2335,
+        "jm": 2256,
+        "ni": 2085,
+        "cu": 1974,
+        "kr": 1947,
+        "bn": 1875,
+        "sz": 1862,
+        "ci": 1752,
+        "gn": 1752,
+        "dm": 1447,
+        "sr": 1280,
+        "kn": 1156,
+        "cg": 1020,
+        "mr": 915,
+        "gh": 900,
+        "bf": 747,
+        "bj": 658,
+        "sn": 638,
+        "ee": 318,
+        "kw": 291
+      },
+      "labels": {
+        "np": "Mount Everest",
+        "pk": "K2",
+        "in": "Kangchenjunga",
+        "ar": "Aconcagua",
+        "cl": "Ojos del Salado",
+        "pe": "Huascarán",
+        "ec": "Chimborazo",
+        "us": "Denali",
+        "ca": "Mount Logan",
+        "tz": "Kilimanjaro",
+        "ru": "Mount Elbrus",
+        "mx": "Pico de Orizaba",
+        "ke": "Mount Kenya",
+        "tr": "Mount Ararat",
+        "ch": "Dufourspitze",
+        "et": "Ras Dashen",
+        "ma": "Toubkal",
+        "at": "Grossglockner",
+        "jp": "Mount Fuji",
+        "nz": "Aoraki / Mount Cook",
+        "za": "Mafadi",
+        "de": "Zugspitze",
+        "gr": "Mount Olympus",
+        "th": "Doi Inthanon",
+        "no": "Galdhøpiggen",
+        "au": "Mount Kosciuszko",
+        "is": "Hvannadalshnúkur",
+        "gb": "Ben Nevis",
+        "fi": "Halti",
+        "dk": "Møllehøj",
+        "tm": "Aýrybaba",
+        "dj": "Mousa Ali",
+        "tj": "Ismoil Somoni Peak",
+        "az": "Mount Bazardüzü",
+        "me": "Zla Kolata",
+        "ss": "Kinyeti",
+        "ug": "Mount Stanley",
+        "vu": "Mount Tabwemasana",
+        "pt": "Mount Pico",
+        "zm": "Mafinga Central",
+        "iq": "Cheekha Dar",
+        "cf": "Mont Ngaoui",
+        "hu": "Kékes",
+        "vn": "Fansipan",
+        "vc": "La Soufrière",
+        "mv": "Mount Villingili",
+        "ao": "Mount Moco",
+        "ba": "Maglić",
+        "cv": "Pico do Fogo",
+        "km": "Mount Karthala",
+        "mw": "Mount Mulanje",
+        "kg": "Jengish Chokusu",
+        "cz": "Sněžka",
+        "cm": "Mount Cameroon",
+        "fj": "Tomanivi",
+        "uz": "Khazret Sultan",
+        "ir": "Mount Damavand",
+        "ml": "Hombori Tondo",
+        "dz": "Mount Tahat",
+        "lc": "Mount Gimie",
+        "ly": "Bikku Bitti",
+        "ie": "Carrauntoohil",
+        "my": "Mount Kinabalu",
+        "ws": "Mauga Silisili",
+        "va": "Vatican Hill",
+        "sk": "Gerlachovský štít",
+        "kh": "Phnom Aural",
+        "be": "Signal de Botrange",
+        "bo": "Sajama",
+        "ga": "Mont Bengoué",
+        "bt": "Gangkhar Puensum",
+        "ph": "Mount Apo",
+        "ne": "Mont Idoukal-n-Taghès",
+        "cd": "Mount Stanley",
+        "bz": "Doyle's Delight",
+        "sl": "Mount Bintumani",
+        "uy": "Cerro Catedral",
+        "br": "Pico da Neblina",
+        "tl": "Mount Ramelau",
+        "st": "Pico de São Tomé",
+        "bd": "Saka Haphong",
+        "gt": "Volcán Tajumulco",
+        "na": "Königstein",
+        "es": "Teide",
+        "do": "Pico Duarte",
+        "rw": "Mount Karisimbi",
+        "tn": "Jebel ech Chambi",
+        "ls": "Thabana Ntlenyana",
+        "hn": "Cerro Las Minas",
+        "sv": "Cerro El Pital",
+        "af": "Noshaq",
+        "am": "Mount Aragats",
+        "lb": "Qurnat as Sawda'",
+        "hr": "Dinara",
+        "ua": "Hoverla",
+        "jo": "Jabal Umm ad Dami",
+        "lr": "Mount Wuteve",
+        "al": "Korab",
+        "gy": "Mount Roraima",
+        "la": "Phou Bia",
+        "se": "Kebnekaise",
+        "sc": "Morne Seychellois",
+        "ye": "Jabal An-Nabi Shu'ayb",
+        "tg": "Mont Atilakoutse",
+        "pl": "Rysy",
+        "id": "Puncak Jaya",
+        "ro": "Moldoveanu",
+        "ae": "Jabal Jais",
+        "mg": "Maromokotro",
+        "py": "Cerro Peró",
+        "si": "Triglav",
+        "pg": "Mount Wilhelm",
+        "cr": "Cerro Chirripó",
+        "pa": "Volcán Barú",
+        "td": "Emi Koussi",
+        "sd": "Jabal Marrah",
+        "er": "Emba Soira",
+        "om": "Jabal Shams",
+        "gq": "Pico Basilé",
+        "ad": "Coma Pedrosa",
+        "bg": "Musala",
+        "mk": "Golem Korab",
+        "bi": "Mount Heha",
+        "ht": "Pic la Selle",
+        "eg": "Mount Catherine",
+        "li": "Grauspitz",
+        "zw": "Mount Nyangani",
+        "lk": "Pidurutalagala",
+        "mz": "Monte Binga",
+        "ng": "Chappal Waddi",
+        "sb": "Mount Popomanaseu",
+        "jm": "Blue Mountain Peak",
+        "ni": "Mogotón",
+        "cu": "Pico Turquino",
+        "kr": "Halla-san",
+        "bn": "Bukit Pagon",
+        "sz": "Emlembe",
+        "ci": "Mount Nimba",
+        "gn": "Mount Nimba",
+        "dm": "Morne Diablotins",
+        "sr": "Juliana Top",
+        "kn": "Mount Liamuiga",
+        "cg": "Mont Nabemba",
+        "mr": "Kediet ej Jill",
+        "gh": "Leklata",
+        "bf": "Mount Tenakourou",
+        "bj": "Mont Sokbaro",
+        "sn": "Felo Barkere",
+        "ee": "Suur Munamägi",
+        "kw": "Unnamed point in western Kuwait"
+      }
+    },
+    "area": {
+      "title": "Total area",
+      "order": "Biggest first",
+      "direction": "desc",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area",
+      "values": {
+        "ru": 17098246,
+        "ca": 9984670,
+        "br": 8510346,
+        "au": 7741220,
+        "in": 3287263,
+        "ar": 2780400,
+        "kz": 2724910,
+        "dz": 2381741,
+        "sa": 2149690,
+        "mx": 1964375,
+        "id": 1904569,
+        "mn": 1564116,
+        "pe": 1285216,
+        "za": 1219090,
+        "et": 1104300,
+        "bo": 1098581,
+        "eg": 1001450,
+        "ng": 923768,
+        "tr": 783562,
+        "cl": 756102,
+        "se": 450295,
+        "jp": 377915,
+        "de": 357581,
+        "it": 302068,
+        "gb": 244376,
+        "cd": 2344858,
+        "ly": 1759540,
+        "ir": 1648195,
+        "td": 1284000,
+        "ao": 1246700,
+        "ml": 1240192,
+        "mr": 1030700,
+        "tz": 947303,
+        "na": 824292,
+        "mz": 799380,
+        "zm": 752612,
+        "mm": 676578,
+        "af": 652864,
+        "cf": 622984,
+        "mg": 587041,
+        "bw": 582000,
+        "th": 513120,
+        "es": 505370,
+        "uz": 447400,
+        "iq": 438317,
+        "py": 406752,
+        "zw": 390757,
+        "fi": 338145,
+        "vn": 331340,
+        "my": 330621,
+        "ci": 322462,
+        "pl": 312685,
+        "ec": 283561,
+        "bf": 274200,
+        "nz": 268838,
+        "ga": 267668,
+        "gn": 245857,
+        "gh": 238537,
+        "ro": 238398,
+        "la": 236800,
+        "by": 207600,
+        "kg": 199949,
+        "sn": 196712,
+        "kh": 181035,
+        "sr": 163820,
+        "tn": 163610,
+        "bd": 148460,
+        "np": 147181,
+        "gr": 131957,
+        "ni": 130373,
+        "kp": 120538,
+        "mw": 118484,
+        "er": 117600,
+        "bj": 114763,
+        "lr": 111369,
+        "bg": 110879,
+        "cu": 109884,
+        "is": 103000,
+        "kr": 100432,
+        "hu": 93025,
+        "pt": 92090,
+        "jo": 89318,
+        "at": 83878,
+        "cz": 78871,
+        "pa": 75320,
+        "sl": 72300,
+        "ie": 70273,
+        "lt": 65286,
+        "lv": 64594,
+        "tg": 56785,
+        "hr": 56594,
+        "ba": 51209,
+        "cr": 51180,
+        "sk": 49035,
+        "do": 48670,
+        "ee": 45339,
+        "ch": 41291,
+        "am": 29743,
+        "al": 28748,
+        "bi": 27834,
+        "rw": 26338,
+        "mk": 25713,
+        "sv": 21041,
+        "sz": 17363,
+        "me": 13888,
+        "jm": 10991,
+        "lb": 10452,
+        "mt": 315,
+        "li": 160,
+        "sm": 61,
+        "mc": 2,
+        "va": 0.44,
+        "ne": 1267000,
+        "co": 1138910,
+        "ke": 580367,
+        "tm": 488100,
+        "cm": 475650,
+        "pg": 462840,
+        "cg": 342000,
+        "om": 309500,
+        "ug": 241550,
+        "uy": 176215,
+        "tj": 144100,
+        "hn": 112492,
+        "gt": 108889,
+        "az": 86600,
+        "lk": 67240,
+        "gw": 36125,
+        "md": 33847,
+        "be": 30528,
+        "dj": 23200,
+        "si": 20273,
+        "fj": 18272,
+        "kw": 17818,
+        "bs": 13880,
+        "vu": 12189,
+        "qa": 11586,
+        "tt": 5127,
+        "lu": 2586,
+        "dm": 750,
+        "to": 747,
+        "ad": 468,
+        "bb": 431,
+        "tv": 26
+      }
+    },
+    "neighbours": {
+      "title": "Countries it borders by land",
+      "order": "Most neighbours first",
+      "direction": "desc",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders",
+      "values": {
+        "cn": 14,
+        "ru": 14,
+        "br": 10,
+        "de": 9,
+        "at": 8,
+        "tz": 8,
+        "zm": 8,
+        "hu": 7,
+        "pl": 7,
+        "ml": 7,
+        "it": 6,
+        "za": 6,
+        "ke": 5,
+        "ch": 5,
+        "kz": 5,
+        "bo": 5,
+        "ar": 5,
+        "th": 4,
+        "ng": 4,
+        "no": 3,
+        "vn": 3,
+        "cl": 3,
+        "mn": 2,
+        "us": 2,
+        "pt": 1,
+        "ie": 1,
+        "kr": 1,
+        "cd": 9,
+        "ir": 7,
+        "ne": 7,
+        "ua": 7,
+        "bf": 6,
+        "cm": 6,
+        "et": 6,
+        "iq": 6,
+        "ly": 6,
+        "ss": 6,
+        "td": 6,
+        "az": 5,
+        "bg": 5,
+        "by": 5,
+        "cg": 5,
+        "ci": 5,
+        "co": 5,
+        "ro": 5,
+        "ug": 5,
+        "uz": 5,
+        "am": 4,
+        "be": 4,
+        "bj": 4,
+        "bw": 4,
+        "cz": 4,
+        "lt": 4,
+        "rw": 4,
+        "si": 4,
+        "tm": 4,
+        "zw": 4,
+        "bi": 3,
+        "er": 3,
+        "fi": 3,
+        "gh": 3,
+        "gy": 3,
+        "hn": 3,
+        "id": 3,
+        "kp": 3,
+        "lu": 3,
+        "my": 3,
+        "om": 3,
+        "ve": 3,
+        "ae": 2,
+        "bd": 2,
+        "bt": 2,
+        "cr": 2,
+        "ec": 2,
+        "kw": 2,
+        "li": 2,
+        "ni": 2,
+        "np": 2,
+        "sl": 2,
+        "sv": 2,
+        "sz": 2,
+        "uy": 2,
+        "bn": 1,
+        "do": 1,
+        "gm": 1,
+        "ht": 1,
+        "ls": 1,
+        "pg": 1,
+        "qa": 1,
+        "sm": 1,
+        "tl": 1,
+        "au": 0,
+        "bb": 0,
+        "bs": 0,
+        "cv": 0,
+        "fj": 0,
+        "is": 0,
+        "km": 0,
+        "lk": 0,
+        "mt": 0,
+        "mu": 0,
+        "mv": 0,
+        "ph": 0,
+        "st": 0,
+        "to": 0,
+        "tt": 0,
+        "tr": 8,
+        "sd": 7,
+        "cf": 6,
+        "gn": 6,
+        "mz": 6,
+        "hr": 5,
+        "la": 5,
+        "mm": 5,
+        "pe": 5,
+        "sk": 5,
+        "sn": 5,
+        "ao": 4,
+        "ge": 4,
+        "gr": 4,
+        "gt": 4,
+        "kg": 4,
+        "lv": 4,
+        "na": 4,
+        "tj": 4,
+        "ba": 3,
+        "ga": 3,
+        "kh": 3,
+        "lr": 3,
+        "mw": 3,
+        "mx": 3,
+        "py": 3,
+        "ad": 2,
+        "bz": 2,
+        "gq": 2,
+        "gw": 2,
+        "md": 2,
+        "se": 2,
+        "tn": 2,
+        "ye": 2,
+        "mc": 1,
+        "va": 1,
+        "dm": 0,
+        "jm": 0,
+        "jp": 0,
+        "lc": 0,
+        "mg": 0,
+        "mh": 0,
+        "nr": 0,
+        "nz": 0,
+        "pw": 0,
+        "sb": 0,
+        "vu": 0
+      }
+    },
+    "north": {
+      "title": "Capital city",
+      "order": "Farthest north first",
+      "direction": "desc",
+      "computed": "lat",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude",
+      "labels": {
+        "ca": "Ottawa",
+        "it": "Rome",
+        "us": "Washington, D.C.",
+        "jp": "Tokyo",
+        "eg": "Cairo",
+        "is": "Reykjavík",
+        "gb": "London",
+        "mn": "Ulaanbaatar",
+        "gr": "Athens",
+        "ma": "Rabat",
+        "fi": "Helsinki",
+        "kz": "Astana",
+        "fr": "Paris",
+        "pt": "Lisbon",
+        "mx": "Mexico City",
+        "no": "Oslo",
+        "ru": "Moscow",
+        "de": "Berlin",
+        "cn": "Beijing",
+        "in": "New Delhi",
+        "kh": "Phnom Penh",
+        "jm": "Kingston",
+        "lt": "Vilnius",
+        "ph": "Manila",
+        "ec": "Quito",
+        "bt": "Thimphu",
+        "bg": "Sofia",
+        "kg": "Bishkek",
+        "sy": "Damascus",
+        "sb": "Honiara",
+        "co": "Bogotá",
+        "la": "Vientiane",
+        "dj": "Djibouti City",
+        "gd": "St. George's",
+        "kn": "Basseterre",
+        "tj": "Dushanbe",
+        "sa": "Riyadh",
+        "uz": "Tashkent",
+        "kp": "Pyongyang",
+        "ch": "Bern",
+        "lv": "Riga",
+        "np": "Kathmandu",
+        "dz": "Algiers",
+        "ag": "St. John's",
+        "lu": "Luxembourg City",
+        "sn": "Dakar",
+        "mr": "Nouakchott",
+        "by": "Minsk",
+        "lc": "Castries",
+        "ly": "Tripoli",
+        "ie": "Dublin",
+        "qa": "Doha",
+        "mc": "Monaco",
+        "ro": "Bucharest",
+        "ug": "Kampala",
+        "ni": "Managua",
+        "es": "Madrid",
+        "ee": "Tallinn",
+        "kw": "Kuwait City",
+        "bh": "Manama",
+        "ae": "Abu Dhabi",
+        "zm": "Lusaka",
+        "tn": "Tunis",
+        "mt": "Valletta",
+        "kr": "Seoul",
+        "om": "Muscat",
+        "dm": "Roseau",
+        "sv": "San Salvador",
+        "am": "Yerevan",
+        "bs": "Nassau",
+        "hu": "Budapest",
+        "vn": "Hanoi",
+        "ad": "Andorra la Vella",
+        "lb": "Beirut",
+        "si": "Ljubljana",
+        "cu": "Havana",
+        "ng": "Abuja",
+        "bf": "Ouagadougou",
+        "at": "Vienna",
+        "bn": "Bandar Seri Begawan",
+        "bz": "Belmopan",
+        "cm": "Yaoundé",
+        "cr": "San José",
+        "cv": "Praia",
+        "cy": "Nicosia",
+        "cz": "Prague",
+        "do": "Santo Domingo",
+        "er": "Asmara",
+        "et": "Addis Ababa",
+        "fm": "Palikir",
+        "gt": "Guatemala City",
+        "gy": "Georgetown",
+        "hr": "Zagreb",
+        "ht": "Port-au-Prince",
+        "ir": "Tehran",
+        "jo": "Amman",
+        "ki": "Tarawa",
+        "km": "Moroni",
+        "mg": "Antananarivo",
+        "mh": "Majuro",
+        "mm": "Naypyidaw",
+        "mu": "Port Louis",
+        "mv": "Malé",
+        "na": "Windhoek",
+        "pa": "Panama City",
+        "pe": "Lima",
+        "pg": "Port Moresby",
+        "pw": "Ngerulmud",
+        "rw": "Kigali",
+        "sg": "Singapore",
+        "so": "Mogadishu",
+        "sr": "Paramaribo",
+        "th": "Bangkok",
+        "tl": "Dili",
+        "tr": "Ankara",
+        "tt": "Port of Spain",
+        "ve": "Caracas",
+        "ws": "Apia",
+        "zw": "Harare"
+      }
+    },
+    "south": {
+      "title": "Capital city",
+      "order": "Farthest south first",
+      "direction": "asc",
+      "computed": "lat",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude",
+      "labels": {
+        "nz": "Wellington",
+        "ar": "Buenos Aires",
+        "za": "Pretoria",
+        "br": "Brasília",
+        "ke": "Nairobi",
+        "au": "Canberra",
+        "cl": "Santiago",
+        "mg": "Antananarivo",
+        "pe": "Lima",
+        "id": "Jakarta",
+        "ec": "Quito",
+        "ph": "Manila",
+        "km": "Moroni",
+        "gh": "Accra",
+        "gy": "Georgetown",
+        "cd": "Kinshasa",
+        "zw": "Harare",
+        "sb": "Honiara",
+        "pg": "Port Moresby",
+        "fj": "Suva",
+        "bw": "Gaborone",
+        "sc": "Victoria",
+        "gq": "Ciudad de la Paz",
+        "bn": "Bandar Seri Begawan",
+        "gt": "Guatemala City",
+        "cg": "Brazzaville",
+        "ug": "Kampala",
+        "na": "Windhoek",
+        "mu": "Port Louis",
+        "sg": "Singapore",
+        "rw": "Kigali",
+        "to": "Nukuʻalofa",
+        "ag": "St. John's",
+        "bd": "Dhaka",
+        "bs": "Nassau",
+        "cm": "Yaoundé",
+        "co": "Bogotá",
+        "cr": "San José",
+        "cy": "Nicosia",
+        "cz": "Prague",
+        "er": "Asmara",
+        "fm": "Palikir",
+        "fr": "Paris",
+        "gr": "Athens",
+        "hn": "Tegucigalpa",
+        "ht": "Port-au-Prince",
+        "jm": "Kingston",
+        "kg": "Bishkek",
+        "kh": "Phnom Penh",
+        "kz": "Astana",
+        "mh": "Majuro",
+        "ml": "Bamako",
+        "mt": "Valletta",
+        "mv": "Malé",
+        "mw": "Lilongwe",
+        "ng": "Abuja",
+        "pa": "Panama City",
+        "pt": "Lisbon",
+        "rs": "Belgrade",
+        "so": "Mogadishu",
+        "th": "Bangkok",
+        "tl": "Dili",
+        "tn": "Tunis",
+        "tr": "Ankara",
+        "tv": "Funafuti",
+        "uz": "Tashkent",
+        "ve": "Caracas",
+        "zm": "Lusaka"
+      }
+    },
+    "coastline": {
+      "title": "Coastline (CIA World Factbook)",
+      "order": "Longest first",
+      "direction": "desc",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline",
+      "values": {
+        "ca": 202080,
+        "no": 83281,
+        "id": 54716,
+        "ru": 37653,
+        "ph": 36289,
+        "jp": 29751,
+        "au": 25760,
+        "us": 19924,
+        "nz": 15134,
+        "cn": 14500,
+        "gr": 13676,
+        "gb": 12429,
+        "mx": 9330,
+        "it": 7600,
+        "br": 7491,
+        "tr": 7200,
+        "cl": 6435,
+        "hr": 5835,
+        "sb": 5313,
+        "pg": 5152,
+        "ar": 4989,
+        "mg": 4828,
+        "my": 4675,
+        "ee": 3794,
+        "bs": 3542,
+        "vn": 3444,
+        "th": 3219,
+        "se": 3218,
+        "co": 3208,
+        "ve": 2800,
+        "za": 2798,
+        "sa": 2640,
+        "kp": 2495,
+        "pa": 2490,
+        "mz": 2470,
+        "eg": 2450,
+        "ir": 2440,
+        "pe": 2414,
+        "er": 2234,
+        "mm": 1930,
+        "ye": 1906,
+        "ht": 1771,
+        "ly": 1770,
+        "ao": 1600,
+        "na": 1572,
+        "ie": 1448,
+        "tz": 1424,
+        "lk": 1340,
+        "ae": 1318,
+        "cr": 1290,
+        "do": 1288,
+        "fi": 1250,
+        "pk": 1046,
+        "jm": 1022,
+        "dz": 998,
+        "ni": 910,
+        "ng": 853,
+        "sd": 853,
+        "uy": 660,
+        "mv": 644,
+        "bd": 580,
+        "lr": 579,
+        "qa": 563,
+        "gh": 539,
+        "ke": 536,
+        "sn": 531,
+        "kw": 499,
+        "lv": 498,
+        "pl": 440,
+        "to": 419,
+        "ws": 403,
+        "gt": 400,
+        "bz": 386,
+        "al": 362,
+        "bg": 354,
+        "gw": 350,
+        "gn": 320,
+        "dj": 314,
+        "sv": 307,
+        "gq": 296,
+        "lb": 225,
+        "ro": 225,
+        "st": 209,
+        "sg": 193,
+        "mu": 177,
+        "cg": 169,
+        "bh": 161,
+        "lc": 158,
+        "ag": 153,
+        "bb": 97,
+        "lt": 90,
+        "vc": 84,
+        "be": 66.5,
+        "iq": 58,
+        "cd": 37,
+        "ba": 20,
+        "mc": 4.1,
+        "fm": 6112,
+        "is": 4970,
+        "es": 4964,
+        "cu": 3735,
+        "ua": 2782,
+        "vu": 2528,
+        "kr": 2413,
+        "de": 2389,
+        "ec": 2237,
+        "om": 2092,
+        "pt": 1793,
+        "pw": 1519,
+        "tn": 1148,
+        "ki": 1143,
+        "fj": 1129,
+        "cv": 965,
+        "ga": 885,
+        "hn": 832,
+        "mr": 754,
+        "tl": 706,
+        "ci": 515,
+        "sc": 491,
+        "gy": 459,
+        "kh": 443,
+        "cm": 402,
+        "sl": 402,
+        "sr": 386,
+        "mh": 370.4,
+        "tt": 362,
+        "km": 340,
+        "me": 293.5,
+        "bn": 161,
+        "kn": 135,
+        "bj": 121,
+        "gm": 80,
+        "tg": 56,
+        "si": 46.6,
+        "af": 0,
+        "at": 0,
+        "bo": 0,
+        "bt": 0,
+        "bw": 0,
+        "by": 0,
+        "cf": 0,
+        "et": 0,
+        "la": 0,
+        "ml": 0,
+        "mn": 0,
+        "ne": 0,
+        "py": 0,
+        "td": 0,
+        "zm": 0,
+        "zw": 0
+      }
+    },
+    "lowest": {
+      "title": "Lowest point",
+      "order": "Highest first",
+      "direction": "desc",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country",
+      "values": {
+        "ls": 1400,
+        "rw": 950,
+        "ad": 840,
+        "bi": 772,
+        "ug": 621,
+        "mn": 560,
+        "kg": 435,
+        "li": 430,
+        "am": 375,
+        "ss": 350,
+        "cf": 335,
+        "zm": 329,
+        "tj": 300,
+        "af": 258,
+        "ne": 200,
+        "ch": 193,
+        "zw": 162,
+        "td": 160,
+        "lu": 133,
+        "at": 115,
+        "cz": 115,
+        "bt": 97,
+        "sk": 94,
+        "by": 90,
+        "bo": 90,
+        "hu": 76,
+        "la": 70,
+        "np": 59,
+        "sm": 55,
+        "mk": 50,
+        "py": 46,
+        "mw": 37,
+        "va": 33,
+        "ml": 23,
+        "sz": 21,
+        "md": 2,
+        "pw": 0,
+        "uy": 0,
+        "bb": 0,
+        "ht": 0,
+        "km": 0,
+        "jm": 0,
+        "ph": 0,
+        "lc": 0,
+        "gm": 0,
+        "tt": 0,
+        "lb": 0,
+        "cr": 0,
+        "sd": 0,
+        "gd": 0,
+        "tr": 0,
+        "ki": 0,
+        "kp": 0,
+        "al": 0,
+        "kh": 0,
+        "sn": 0,
+        "bz": 0,
+        "co": 0,
+        "gy": 0,
+        "tv": 0,
+        "bs": 0,
+        "cl": 0,
+        "be": -4,
+        "jp": -4,
+        "mr": -5,
+        "qa": -6,
+        "gr": -6,
+        "dk": -7,
+        "au": -15,
+        "tn": -17,
+        "pe": -34,
+        "dz": -40,
+        "ly": -47,
+        "er": -75,
+        "us": -85.5,
+        "et": -125,
+        "eg": -133
+      },
+      "labels": {
+        "ls": "Orange and Makhaleng rivers",
+        "rw": "Ruzizi River",
+        "ad": "Gran Valira",
+        "bi": "Lake Tanganyika",
+        "ug": "Albert Nile",
+        "mn": "Khökh Nuur",
+        "kg": "Kara Darya",
+        "li": "Rhine",
+        "am": "Aras River",
+        "ss": "White Nile",
+        "cf": "Ubangi River",
+        "zm": "Zambezi",
+        "tj": "Syr Darya",
+        "af": "Amu Darya",
+        "ne": "Niger River",
+        "ch": "Lake Maggiore",
+        "zw": "Runde and Save rivers",
+        "td": "Djourab Depression",
+        "lu": "Moselle River",
+        "at": "Lake Neusiedl",
+        "cz": "Elbe",
+        "bt": "Drangme Chhu",
+        "sk": "Bodrog",
+        "by": "Neman",
+        "bo": "Paraguay River",
+        "hu": "Tisza",
+        "la": "Mekong",
+        "np": "Mukhiyapatti Musharniya",
+        "sm": "Ausa River",
+        "mk": "Vardar",
+        "py": "Paraguay River",
+        "mw": "Shire River",
+        "va": "Saint Peter's Square",
+        "ml": "Senegal River",
+        "sz": "Maputo River",
+        "md": "Dniester",
+        "pw": "Sea level (North Pacific Ocean)",
+        "uy": "Sea level (South Atlantic Ocean)",
+        "bb": "Sea level (North Atlantic Ocean)",
+        "ht": "Sea level (Caribbean Sea)",
+        "km": "Sea level (Indian Ocean)",
+        "jm": "Sea level (Caribbean Sea)",
+        "ph": "Sea level",
+        "lc": "Sea level (Caribbean Sea)",
+        "gm": "Sea level (North Atlantic Ocean)",
+        "tt": "Sea level (Caribbean Sea)",
+        "lb": "Sea level (Mediterranean Sea)",
+        "cr": "Sea level",
+        "sd": "Sea level (Red Sea)",
+        "gd": "Sea level (Caribbean Sea)",
+        "tr": "Sea level",
+        "ki": "Sea level (Pacific Ocean)",
+        "kp": "Sea level",
+        "al": "Sea level (Adriatic Sea)",
+        "kh": "Sea level (Gulf of Thailand)",
+        "sn": "Sea level (North Atlantic Ocean)",
+        "bz": "Sea level (Caribbean Sea)",
+        "co": "Sea level",
+        "gy": "Sea level (North Atlantic Ocean)",
+        "tv": "Sea level (South Pacific Ocean)",
+        "bs": "Sea level (North Atlantic Ocean)",
+        "cl": "Sea level (South Pacific Ocean)",
+        "be": "De Moeren",
+        "jp": "Hachiro-gata",
+        "mr": "Sebkha de Ndrhamcha",
+        "qa": "Dukhan Sabkha",
+        "gr": "Epitalio",
+        "dk": "Lammefjord",
+        "au": "Lake Eyre",
+        "tn": "Shatt al Gharsah",
+        "pe": "Bayóvar Depression",
+        "dz": "Chott Melrhir",
+        "ly": "Sabkhat Ghuzayyil",
+        "er": "Lake Kulul",
+        "us": "Badwater Basin",
+        "et": "Danakil Depression",
+        "eg": "Qattara Depression"
+      }
+    }
+  },
+  "days": [
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "np",
+            "ar",
+            "tz",
+            "jp",
+            "gb"
+          ],
+          "fact": "Nepal and China jointly measured Everest at 8,848.86 m, announced in 2020.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Everest"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "ru",
+            "br",
+            "ar",
+            "mx",
+            "eg"
+          ],
+          "fact": "Russia is about twice the size of Brazil, the next biggest country here.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "cn",
+            "de",
+            "hu",
+            "ke",
+            "pt"
+          ],
+          "fact": "China and Russia share the record for the most neighbours, with 14 each.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "ca",
+            "it",
+            "us",
+            "jp",
+            "eg"
+          ],
+          "fact": "Rome is farther north than Washington, D.C.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "pk",
+            "us",
+            "tr",
+            "ch",
+            "au"
+          ],
+          "fact": "K2, in the Karakoram range, is the second-highest mountain on Earth.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/K2"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "ca",
+            "au",
+            "kz",
+            "pe",
+            "tr"
+          ],
+          "fact": "Canada is estimated to have at least 2 million lakes.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lake"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "ru",
+            "br",
+            "pl",
+            "th",
+            "ie"
+          ],
+          "fact": "Russia's 14 neighbours stretch from Norway in the west to North Korea in the east.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "is",
+            "gb",
+            "mn",
+            "gr",
+            "ma"
+          ],
+          "fact": "Reykjavík is the world's northernmost capital of a sovereign country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Reykjav%C3%ADk"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "pe",
+            "ru",
+            "et",
+            "nz",
+            "de"
+          ],
+          "fact": "Mount Elbrus, in Russia's Caucasus Mountains, is the highest mountain in Europe.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Elbrus"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "in",
+            "dz",
+            "mn",
+            "za",
+            "jp"
+          ],
+          "fact": "Algeria is the largest country in Africa.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Algeria"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "tz",
+            "za",
+            "ch",
+            "no",
+            "mn"
+          ],
+          "fact": "Tanzania's eight neighbours run from Kenya in the north to Mozambique in the south.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "fi",
+            "kz",
+            "fr",
+            "pt",
+            "mx"
+          ],
+          "fact": "Astana, Kazakhstan's capital, is farther north than Paris.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "in",
+            "mx",
+            "ma",
+            "gr",
+            "fi"
+          ],
+          "fact": "Kangchenjunga, on the border of India and Nepal, is the third-highest mountain in the world.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Kangchenjunga"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "sa",
+            "id",
+            "et",
+            "cl",
+            "it"
+          ],
+          "fact": "Saudi Arabia is the largest country in the world without permanent rivers.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Saudi_Arabia"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "at",
+            "it",
+            "kz",
+            "vn",
+            "us"
+          ],
+          "fact": "Austria's eight neighbours include tiny Liechtenstein.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "no",
+            "ru",
+            "de",
+            "cn",
+            "in"
+          ],
+          "fact": "Moscow is farther south than Oslo, Stockholm and Helsinki.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "ec",
+            "ke",
+            "za",
+            "th",
+            "mv"
+          ],
+          "fact": "Because Earth bulges at the equator, Chimborazo's summit is the point on Earth's surface farthest from its centre.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Chimborazo"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "kz",
+            "bo",
+            "ng",
+            "se",
+            "de"
+          ],
+          "fact": "Kazakhstan is the largest landlocked country in the world.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Kazakhstan"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "zm",
+            "pl",
+            "bo",
+            "ng",
+            "kr"
+          ],
+          "fact": "South Korea's only land border is with North Korea.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "nz",
+            "ar",
+            "na",
+            "br",
+            "ke"
+          ],
+          "fact": "Wellington is the world's southernmost capital of a sovereign country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Wellington"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "cl",
+            "ca",
+            "at",
+            "no",
+            "is"
+          ],
+          "fact": "Ojos del Salado, on the Chile–Argentina border, is the highest volcano on Earth.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ojos_del_Salado"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "mx",
+            "eg",
+            "tr",
+            "de",
+            "gb"
+          ],
+          "fact": "Egypt spans two continents: the Sinai Peninsula lies in Asia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Egypt"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "br",
+            "ml",
+            "ar",
+            "cl",
+            "pt"
+          ],
+          "fact": "Brazil borders every South American country except Chile and Ecuador.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "au",
+            "cl",
+            "mg",
+            "pe",
+            "id"
+          ],
+          "fact": "Canberra is farther south than Santiago, Chile's capital.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "do",
+            "hu",
+            "kr",
+            "pl",
+            "mz"
+          ],
+          "fact": "South Korea is bigger than Hungary.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "ma",
+            "eg",
+            "dz",
+            "jm",
+            "us"
+          ],
+          "fact": "Rabat is farther north than Cairo.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "ke",
+            "lr",
+            "sg",
+            "cd",
+            "na"
+          ],
+          "fact": "DR Congo, one of the largest countries in Africa, has just 37 km of coastline.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "de",
+            "bw",
+            "cm",
+            "bo",
+            "li"
+          ],
+          "fact": "Liechtenstein sits between just two countries, Switzerland and Austria.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "south",
+          "countries": [
+            "ec",
+            "br",
+            "gt",
+            "pe",
+            "bn"
+          ],
+          "fact": "Brasília is farther south than Lima.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "my",
+            "de",
+            "mm",
+            "bj",
+            "jp"
+          ],
+          "fact": "Japan is slightly bigger than Germany.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "tr",
+            "pt",
+            "py",
+            "bz",
+            "ye"
+          ],
+          "fact": "Portugal's highest point, Mount Pico, is a volcano in the Azores.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Pico"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "lk",
+            "bs",
+            "lt",
+            "cn",
+            "gr"
+          ],
+          "fact": "China's coastline is only slightly longer than Greece's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "es",
+            "cv",
+            "gt",
+            "ne",
+            "af"
+          ],
+          "fact": "Volcán Tajumulco in Guatemala is the highest mountain in Central America.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volc%C3%A1n_Tajumulco"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "jp",
+            "ru",
+            "mx",
+            "bb",
+            "hr"
+          ],
+          "fact": "Japan's coastline is almost 80% as long as Russia's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "ml",
+            "cd",
+            "gn",
+            "sr",
+            "cl"
+          ],
+          "fact": "DR Congo is the second-largest country in Africa, after Algeria.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "kz",
+            "fi",
+            "pg",
+            "uy",
+            "tt"
+          ],
+          "fact": "Papua New Guinea has a land border with Indonesia to the west.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Papua_New_Guinea"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "sb",
+            "mg",
+            "se",
+            "nz",
+            "id"
+          ],
+          "fact": "Indonesia has 54,716 km of coastline, the third most of any country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "my",
+            "ar",
+            "rw",
+            "th",
+            "is"
+          ],
+          "fact": "Mount Kinabalu, Malaysia's highest mountain, is on the island of Borneo.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Kinabalu"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "lu",
+            "np",
+            "ly",
+            "am",
+            "sa"
+          ],
+          "fact": "Kathmandu is farther north than Riyadh.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "cd",
+            "ve",
+            "au",
+            "cr",
+            "zm"
+          ],
+          "fact": "DR Congo has nine neighbours, more than any other country in Africa.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "at",
+            "no",
+            "tl",
+            "bd",
+            "by"
+          ],
+          "fact": "Timor-Leste's only land neighbour is Indonesia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "sm",
+            "mc",
+            "mt",
+            "li",
+            "va"
+          ],
+          "fact": "Vatican City is the smallest country in the world.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "kw",
+            "ng",
+            "jp",
+            "tn",
+            "om"
+          ],
+          "fact": "Tunis is farther north than Tokyo.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "ch",
+            "pe",
+            "ba",
+            "kh",
+            "cz"
+          ],
+          "fact": "Huascarán in Peru is the highest mountain in the tropics.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Huascar%C3%A1n"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "tz",
+            "tm",
+            "ni",
+            "ht",
+            "ua"
+          ],
+          "fact": "Haiti and the Dominican Republic share the Caribbean island of Hispaniola.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Hispaniola"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "cu",
+            "tj",
+            "fr",
+            "ca",
+            "in"
+          ],
+          "fact": "Ottawa is farther south than Paris.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "ga",
+            "ao",
+            "vn",
+            "jo",
+            "jp"
+          ],
+          "fact": "Mount Fuji is a volcano that last erupted from 1707 to 1708.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Fuji"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "gb",
+            "tr",
+            "be",
+            "it",
+            "er"
+          ],
+          "fact": "Italy has slightly more coastline than Türkiye.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "gm",
+            "za",
+            "ug",
+            "gh",
+            "si"
+          ],
+          "fact": "The Gambia is bordered by Senegal on all sides except to the west, where it meets the Atlantic.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/The_Gambia"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "ae",
+            "kp",
+            "gd",
+            "kz",
+            "de"
+          ],
+          "fact": "Berlin is farther north than Astana.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "ie",
+            "is",
+            "cu",
+            "ci",
+            "mk"
+          ],
+          "fact": "Cuba is a little bigger than Iceland.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "pk",
+            "hn",
+            "sk",
+            "mv",
+            "ir"
+          ],
+          "fact": "The highest point in the Maldives is just 5.1 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "gw",
+            "jm",
+            "mc",
+            "qa",
+            "co"
+          ],
+          "fact": "Monaco has just 4.1 km of coastline.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "mn",
+            "ls",
+            "bi",
+            "ph",
+            "az"
+          ],
+          "fact": "Lesotho is completely surrounded by South Africa.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lesotho"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "cf",
+            "ro",
+            "bd",
+            "et",
+            "gr"
+          ],
+          "fact": "Bangladesh is bigger than Greece.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "dm",
+            "ca",
+            "la",
+            "sy",
+            "ch"
+          ],
+          "fact": "Bern is farther north than Ottawa.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "al",
+            "iq",
+            "mw",
+            "uz",
+            "ar"
+          ],
+          "fact": "Aconcagua is the highest point on Earth outside Asia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "qa",
+            "sd",
+            "cl",
+            "ao",
+            "gq"
+          ],
+          "fact": "Angola's coastline is about 1.9 times as long as Sudan's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "sn",
+            "mg",
+            "lb",
+            "sv",
+            "tg"
+          ],
+          "fact": "Madagascar is the fourth-largest island in the world.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Madagascar"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "bf",
+            "cn",
+            "it",
+            "kn",
+            "bt"
+          ],
+          "fact": "Rome is farther north than Beijing.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "si",
+            "me",
+            "fj",
+            "ke",
+            "au"
+          ],
+          "fact": "Triglav, Slovenia's highest mountain, appears on the country's flag.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Triglav"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "nz",
+            "gb",
+            "pa",
+            "ec",
+            "bg"
+          ],
+          "fact": "Ecuador is a little bigger than New Zealand, which is bigger than the United Kingdom.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "zw",
+            "td",
+            "pt",
+            "cg",
+            "kp"
+          ],
+          "fact": "North Korea borders China, Russia and South Korea.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "bh",
+            "se",
+            "ly",
+            "ee",
+            "lv"
+          ],
+          "fact": "Estonia has more coastline than Sweden in the CIA World Factbook figures.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "kg",
+            "ss",
+            "am",
+            "id",
+            "in"
+          ],
+          "fact": "Puncak Jaya, on New Guinea, is the highest mountain peak of any island on Earth.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Puncak_Jaya"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "hr",
+            "vc",
+            "nz",
+            "us",
+            "mz"
+          ],
+          "fact": "New Zealand's coastline is about three-quarters as long as that of the United States.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "ph",
+            "kr",
+            "ad",
+            "mx",
+            "cu"
+          ],
+          "fact": "Havana is farther north than Mexico City.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "bf",
+            "th",
+            "mr",
+            "mn",
+            "td"
+          ],
+          "fact": "Mongolia is the world's most sparsely populated sovereign state.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mongolia"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "sa",
+            "pa",
+            "pl",
+            "gn",
+            "ae"
+          ],
+          "fact": "Poland's coastline is about 1.4 times as long as Guinea's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "vn",
+            "cz",
+            "sl",
+            "is",
+            "by"
+          ],
+          "fact": "Iceland has no land borders with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "ke",
+            "vu",
+            "fi",
+            "ne",
+            "na"
+          ],
+          "fact": "Mount Kenya is the second-highest mountain in Africa.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Kenya"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "mr",
+            "jo",
+            "np",
+            "py",
+            "id"
+          ],
+          "fact": "Indonesia is the world's largest archipelagic state.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Indonesia"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "ie",
+            "gy",
+            "rw",
+            "ae",
+            "tj"
+          ],
+          "fact": "Tajikistan's Ismoil Somoni Peak was formerly known as Communism Peak.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ismoil_Somoni_Peak"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "ru",
+            "ad",
+            "ee",
+            "lv",
+            "fr"
+          ],
+          "fact": "Tallinn is farther north than Moscow.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "pk",
+            "gr",
+            "ws",
+            "br",
+            "mm"
+          ],
+          "fact": "Greece has more coastline than Brazil.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "ng",
+            "to",
+            "no",
+            "bn",
+            "co"
+          ],
+          "fact": "Brunei is the only sovereign state entirely on the island of Borneo.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Brunei"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "ir",
+            "ly",
+            "sn",
+            "la",
+            "af"
+          ],
+          "fact": "Libya is bigger than Iran.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "qa",
+            "st",
+            "bg",
+            "et",
+            "kw"
+          ],
+          "fact": "Qatar's only land neighbour is Saudi Arabia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "zw",
+            "nz",
+            "sc",
+            "au",
+            "bw"
+          ],
+          "fact": "Wellington is farther south than Canberra.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "bd",
+            "ua",
+            "lc",
+            "es",
+            "do"
+          ],
+          "fact": "Pico Duarte, in the Dominican Republic, is the highest peak in the Caribbean.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Pico_Duarte"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "er",
+            "za",
+            "uz",
+            "sk",
+            "gh"
+          ],
+          "fact": "Uzbekistan is bigger than Ghana and Eritrea combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "bi",
+            "sm",
+            "uy",
+            "ci",
+            "be"
+          ],
+          "fact": "San Marino is completely surrounded by Italy.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/San_Marino"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "ph",
+            "mx",
+            "eg",
+            "ao",
+            "au"
+          ],
+          "fact": "The Philippines has more coastline than Australia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "kr",
+            "om",
+            "jp",
+            "ma",
+            "ni"
+          ],
+          "fact": "Seoul is farther north than Tokyo.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "np",
+            "zm",
+            "tz",
+            "ga",
+            "za"
+          ],
+          "fact": "Zambia is bigger than Gabon and Nepal combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "vn",
+            "bt",
+            "mt",
+            "dj",
+            "mx"
+          ],
+          "fact": "Hanoi is farther north than Mexico City.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "km",
+            "al",
+            "tn",
+            "ua",
+            "ir"
+          ],
+          "fact": "Mount Damavand in Iran is the highest volcano in Asia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Damavand"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "tm",
+            "do",
+            "ve",
+            "uz",
+            "at"
+          ],
+          "fact": "Uzbekistan and Liechtenstein are the only doubly landlocked countries in the world.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Uzbekistan"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "gr",
+            "kh",
+            "pa",
+            "ba",
+            "it"
+          ],
+          "fact": "Panama is about 1.5 times the size of Bosnia and Herzegovina.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "bo",
+            "iq",
+            "hn",
+            "cv",
+            "pg"
+          ],
+          "fact": "Honduras borders three countries: El Salvador, Guatemala and Nicaragua.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "mn",
+            "dz",
+            "ag",
+            "co",
+            "om"
+          ],
+          "fact": "Ulaanbaatar is the coldest capital city in the world by average yearly temperature.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ulaanbaatar"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "sd",
+            "ar",
+            "lk",
+            "ht",
+            "hr"
+          ],
+          "fact": "Croatia has more coastline than Argentina.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "north",
+          "countries": [
+            "sv",
+            "ug",
+            "in",
+            "eg",
+            "sb"
+          ],
+          "fact": "Cairo is farther north than New Delhi.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "pk",
+            "cf",
+            "cm",
+            "lb",
+            "hu"
+          ],
+          "fact": "Mount Cameroon is the highest point in sub-Saharan western and central Africa.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Cameroon"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "sg",
+            "mu",
+            "cr",
+            "ba",
+            "sn"
+          ],
+          "fact": "Bosnia and Herzegovina has only 20 km of coastline.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "py",
+            "ng",
+            "sr",
+            "pe",
+            "la"
+          ],
+          "fact": "Nigeria is bigger than Paraguay and Laos combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "cl",
+            "ss",
+            "tz",
+            "et",
+            "me"
+          ],
+          "fact": "Kilimanjaro is the highest mountain in Africa.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Kilimanjaro"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "ml",
+            "bf",
+            "ch",
+            "mm",
+            "hu"
+          ],
+          "fact": "Mali is bigger than Myanmar and Burkina Faso combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "au",
+            "ve",
+            "gb",
+            "co",
+            "no"
+          ],
+          "fact": "Norway's 83,281 km of coastline, which includes its outlying islands, is second only to Canada's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "ar",
+            "sz",
+            "kp",
+            "lt",
+            "fj"
+          ],
+          "fact": "Eswatini borders two countries: Mozambique and South Africa.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "us",
+            "ws",
+            "bo",
+            "al",
+            "ug"
+          ],
+          "fact": "Mount Stanley, on the border of Uganda and DR Congo, is the highest point in both countries.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "bs",
+            "ie",
+            "gb",
+            "pt",
+            "ro"
+          ],
+          "fact": "Dublin is farther north than London.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "ng",
+            "iq",
+            "ee",
+            "kw",
+            "lc"
+          ],
+          "fact": "Nigeria's coastline is about 1.7 times as long as Kuwait's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "cz",
+            "uy",
+            "ht",
+            "lu",
+            "ne"
+          ],
+          "fact": "Uruguay borders two countries: Argentina and Brazil.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "lr",
+            "va",
+            "az",
+            "my",
+            "br"
+          ],
+          "fact": "Vatican City's highest point, Vatican Hill, is 75 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "af",
+            "pl",
+            "th",
+            "tg",
+            "tn"
+          ],
+          "fact": "Poland is bigger than Tunisia and Togo combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "bz",
+            "tr",
+            "al",
+            "ye",
+            "jm"
+          ],
+          "fact": "Belize has slightly more coastline than Albania, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "td",
+            "cn",
+            "at",
+            "gm",
+            "np"
+          ],
+          "fact": "Nepal borders two countries: China and India.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "ec",
+            "cd",
+            "ci",
+            "be",
+            "mu"
+          ],
+          "fact": "Mauritius has no land borders with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "vc",
+            "ca",
+            "id",
+            "us",
+            "pg"
+          ],
+          "fact": "Canada has the longest coastline of any country, at 202,080 km.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "hn",
+            "vu",
+            "se",
+            "ls",
+            "ru"
+          ],
+          "fact": "Lesotho is the only independent country that lies entirely above 1,000 m.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lesotho"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "dm",
+            "ie",
+            "sy",
+            "si",
+            "jm"
+          ],
+          "fact": "Kingston is farther north than Roseau.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "dj",
+            "jo",
+            "mg",
+            "ca",
+            "cm"
+          ],
+          "fact": "Mount Logan is the second-highest peak in North America, after Denali.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Logan"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "kr",
+            "bt",
+            "ug",
+            "gh",
+            "bb"
+          ],
+          "fact": "Barbados has no land borders with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "kz",
+            "iq",
+            "sl",
+            "gn",
+            "ml"
+          ],
+          "fact": "Iraq is bigger than Guinea and Sierra Leone combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "it",
+            "es",
+            "fi",
+            "hu",
+            "lt"
+          ],
+          "fact": "Rome is farther north than Madrid.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "sa",
+            "cr",
+            "sg",
+            "gn",
+            "mv"
+          ],
+          "fact": "Costa Rica's coastline is about twice as long as the Maldives'.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "mt",
+            "de",
+            "gy",
+            "ro",
+            "ly"
+          ],
+          "fact": "Malta has no land borders with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "mn",
+            "tn",
+            "bi",
+            "es",
+            "sk"
+          ],
+          "fact": "Spain is bigger than Tunisia and Slovakia combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "fj",
+            "to",
+            "ph",
+            "ec",
+            "sb"
+          ],
+          "fact": "Nukuʻalofa is farther south than Suva.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "py",
+            "jm",
+            "lv",
+            "rw",
+            "mw"
+          ],
+          "fact": "Malawi is bigger than Latvia and Rwanda combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "kg",
+            "sa",
+            "sn",
+            "cu",
+            "us"
+          ],
+          "fact": "Riyadh is farther north than Havana.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "mx",
+            "pk",
+            "lb",
+            "sv",
+            "tj"
+          ],
+          "fact": "Pico de Orizaba is the third-highest peak in North America.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Pico_de_Orizaba"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "bh",
+            "ni",
+            "uy",
+            "ro",
+            "vn"
+          ],
+          "fact": "Romania's coastline is about 1.4 times as long as Bahrain's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "sg",
+            "sd",
+            "cg",
+            "ie",
+            "mz"
+          ],
+          "fact": "Ireland's coastline is about 1.7 times as long as Sudan's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "eg",
+            "ec",
+            "kh",
+            "zm",
+            "mr"
+          ],
+          "fact": "Nouakchott is farther north than Phnom Penh.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "cz",
+            "bw",
+            "ga",
+            "pt",
+            "hr"
+          ],
+          "fact": "Gabon is bigger than Portugal and Czechia combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "tl",
+            "iq",
+            "am",
+            "ir",
+            "sv"
+          ],
+          "fact": "Armenia borders four countries: Azerbaijan, Georgia, Iran and Türkiye.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "ye",
+            "gw",
+            "th",
+            "qa",
+            "gr"
+          ],
+          "fact": "Thailand's coastline is about 1.7 times as long as Yemen's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "ru",
+            "es",
+            "az",
+            "dj",
+            "am"
+          ],
+          "fact": "Spain's highest point, Teide, is an active volcano on the island of Tenerife.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Teide"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "is",
+            "na",
+            "zw",
+            "fi",
+            "pa"
+          ],
+          "fact": "Finland is bigger than Iceland and Panama combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "ae",
+            "ie",
+            "dz",
+            "uz",
+            "kn"
+          ],
+          "fact": "Tashkent is farther north than Algiers.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "ye",
+            "er",
+            "ng",
+            "lk",
+            "kp"
+          ],
+          "fact": "North Korea has slightly more coastline than Eritrea, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "nz",
+            "kh",
+            "at",
+            "cf",
+            "cl"
+          ],
+          "fact": "Chile is a little bigger than the Central African Republic.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "cr",
+            "be",
+            "my",
+            "km",
+            "ua"
+          ],
+          "fact": "Costa Rica borders two countries: Nicaragua and Panama.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "vu",
+            "hn",
+            "tz",
+            "th",
+            "bt"
+          ],
+          "fact": "Gangkhar Puensum in Bhutan is the highest unclimbed mountain in the world.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Gangkhar_Puensum"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "bw",
+            "bg",
+            "mv",
+            "np",
+            "ve"
+          ],
+          "fact": "The Maldives has no land borders with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "ly",
+            "co",
+            "tr",
+            "ag",
+            "gt"
+          ],
+          "fact": "Colombia's coastline is about 1.8 times as long as Libya's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "lb",
+            "bh",
+            "ae",
+            "bf",
+            "in"
+          ],
+          "fact": "New Delhi is farther north than Manama.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "cd",
+            "ao",
+            "pe",
+            "cv",
+            "zm"
+          ],
+          "fact": "Cape Verde's highest point, Pico do Fogo, is 209 m higher than Angola's, Mount Moco.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "td",
+            "cz",
+            "tt",
+            "om",
+            "ch"
+          ],
+          "fact": "Trinidad and Tobago has no land borders with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "by",
+            "gb",
+            "za",
+            "sl",
+            "bw"
+          ],
+          "fact": "Botswana is bigger than the United Kingdom and Belarus combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "br",
+            "ke",
+            "cg",
+            "ug",
+            "na"
+          ],
+          "fact": "Kampala lies north of the Equator, while Nairobi lies just south of it.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "st",
+            "ly",
+            "jo",
+            "ss",
+            "no"
+          ],
+          "fact": "Norway's highest point, Galdhøpiggen, is 202 m higher than Libya's, Bikku Bitti.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "south",
+          "countries": [
+            "sc",
+            "mu",
+            "pg",
+            "mg",
+            "gh"
+          ],
+          "fact": "Port Louis is farther south than Antananarivo.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "tl",
+            "ml",
+            "pt",
+            "at",
+            "pl"
+          ],
+          "fact": "Timor-Leste's highest point, Mount Ramelau, is 463 m higher than Poland's, Rysy.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "sd",
+            "do",
+            "gw",
+            "ar",
+            "tz"
+          ],
+          "fact": "The Dominican Republic's coastline is about 1.5 times as long as Sudan's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "ss",
+            "ua",
+            "kp",
+            "bd",
+            "bj"
+          ],
+          "fact": "Bangladesh borders two countries: India and Myanmar.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "sz",
+            "ci",
+            "la",
+            "hr",
+            "cu"
+          ],
+          "fact": "Côte d'Ivoire is a little bigger than Laos.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "do",
+            "gt",
+            "cl",
+            "ls",
+            "ch"
+          ],
+          "fact": "Ojos del Salado, the highest point in Chile, rises 6,893 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "si",
+            "gm",
+            "uy",
+            "et",
+            "mt"
+          ],
+          "fact": "Ethiopia's six land neighbours include Kenya and Eritrea.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "cn",
+            "lv",
+            "by",
+            "sa",
+            "gd"
+          ],
+          "fact": "Riga is farther north than Minsk.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "south",
+          "countries": [
+            "cd",
+            "id",
+            "na",
+            "zw",
+            "bw"
+          ],
+          "fact": "Kinshasa and Brazzaville face each other across the Congo River, the closest pair of capital cities in the world.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Kinshasa"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "kz",
+            "rw",
+            "ru",
+            "cr",
+            "bb"
+          ],
+          "fact": "Russia's fourteen land neighbours include North Korea and Georgia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "ao",
+            "mg",
+            "kg",
+            "af",
+            "lt"
+          ],
+          "fact": "Afghanistan is only slightly bigger than Madagascar.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "mz",
+            "dz",
+            "mm",
+            "sn",
+            "bz"
+          ],
+          "fact": "Mozambique has slightly more coastline than Myanmar, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "cm",
+            "hr",
+            "be",
+            "gr",
+            "tg"
+          ],
+          "fact": "Mount Olympus, the highest point in Greece, rises 2,918 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "na",
+            "br",
+            "ph",
+            "pg",
+            "fj"
+          ],
+          "fact": "Brasília is farther south than Port Moresby.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "fi",
+            "za",
+            "sv",
+            "st",
+            "ba"
+          ],
+          "fact": "South Africa's coastline is about 2.2 times as long as Finland's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "tr",
+            "at",
+            "de",
+            "mw",
+            "ni"
+          ],
+          "fact": "Nicaragua is only slightly bigger than Malawi.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "it",
+            "bg",
+            "sn",
+            "ye",
+            "ag"
+          ],
+          "fact": "Bulgaria's coastline is about 2.3 times as long as Antigua and Barbuda's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "lr",
+            "al",
+            "gb",
+            "hu",
+            "np"
+          ],
+          "fact": "Liberia is a little bigger than Hungary.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "az",
+            "ec",
+            "tm",
+            "kh",
+            "py"
+          ],
+          "fact": "Ecuador's highest point, Chimborazo, is 1,797 m higher than Azerbaijan's, Mount Bazardüzü.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "lk",
+            "ne",
+            "bo",
+            "no",
+            "bn"
+          ],
+          "fact": "Sri Lanka has no land borders with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "my",
+            "pe",
+            "tz",
+            "ke",
+            "dj"
+          ],
+          "fact": "Peru's coastline is about 1.7 times as long as Tanzania's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "ro",
+            "la",
+            "se",
+            "us",
+            "sl"
+          ],
+          "fact": "Sweden's highest point, Kebnekaise, is 152 m higher than Sierra Leone's, Mount Bintumani.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "lc",
+            "qa",
+            "bg",
+            "ma",
+            "cn"
+          ],
+          "fact": "Beijing is farther north than Rabat.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "hu",
+            "is",
+            "tn",
+            "me",
+            "am"
+          ],
+          "fact": "Iceland is only slightly bigger than Hungary.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "ga",
+            "gt",
+            "is",
+            "dz",
+            "az"
+          ],
+          "fact": "Azerbaijan's highest point, Mount Bazardüzü, is 263 m higher than Guatemala's, Volcán Tajumulco.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "bd",
+            "pk",
+            "to",
+            "eg",
+            "gh"
+          ],
+          "fact": "Bangladesh has slightly more coastline than Ghana, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "nz",
+            "kr",
+            "do",
+            "mk",
+            "lv"
+          ],
+          "fact": "South Korea is about 1.6 times the size of Latvia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "ch",
+            "bs",
+            "ae",
+            "id",
+            "ht"
+          ],
+          "fact": "The Bahamas has no land borders with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "ml",
+            "sk",
+            "py",
+            "vc",
+            "uy"
+          ],
+          "fact": "Saint Vincent and the Grenadines' highest point, La Soufrière, is 80 m higher than Mali's, Hombori Tondo.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "na",
+            "ke",
+            "sg",
+            "gt",
+            "km"
+          ],
+          "fact": "Windhoek is farther south than Moroni.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "li",
+            "ve",
+            "ci",
+            "mt",
+            "za"
+          ],
+          "fact": "Venezuela borders three countries: Brazil, Colombia and Guyana.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "ws",
+            "dz",
+            "lb",
+            "ir",
+            "pl"
+          ],
+          "fact": "Samoa's coastline is about 1.8 times as long as Lebanon's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "et",
+            "se",
+            "pa",
+            "mr",
+            "by"
+          ],
+          "fact": "Sweden is bigger than Belarus and Panama combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "ht",
+            "er",
+            "bo",
+            "pl",
+            "zw"
+          ],
+          "fact": "Zimbabwe borders four countries: Botswana, Mozambique, South Africa and Zambia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "jo",
+            "sc",
+            "ph",
+            "pk",
+            "az"
+          ],
+          "fact": "The Philippines' highest point, Mount Apo, is 1,100 m higher than Jordan's, Jabal Umm ad Dami.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "ma",
+            "es",
+            "mc",
+            "ca",
+            "lv"
+          ],
+          "fact": "Ottawa is farther north than Monaco.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "south",
+          "countries": [
+            "gy",
+            "ar",
+            "rw",
+            "bw",
+            "br"
+          ],
+          "fact": "Gaborone is farther south than Brasília.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "cr",
+            "ee",
+            "vn",
+            "kp",
+            "sr"
+          ],
+          "fact": "Vietnam is bigger than Suriname and North Korea combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "kw",
+            "bs",
+            "cz",
+            "bf",
+            "kz"
+          ],
+          "fact": "Czechia borders four countries: Austria, Germany, Poland and Slovakia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "se",
+            "to",
+            "fi",
+            "gn",
+            "sg"
+          ],
+          "fact": "Guinea's coastline is about 1.7 times as long as Singapore's.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "hr",
+            "bd",
+            "uy",
+            "mr",
+            "vc"
+          ],
+          "fact": "La Soufrière in Saint Vincent and the Grenadines rises 172 m higher than Saka Haphong, the top of Bangladesh.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "va",
+            "ug",
+            "tj",
+            "ec",
+            "pt"
+          ],
+          "fact": "Ecuador is about 3 times the size of Portugal.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "co",
+            "ni",
+            "pa",
+            "er",
+            "sg"
+          ],
+          "fact": "Bogotá is farther north than Singapore.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "gh",
+            "fm",
+            "ee",
+            "ae",
+            "gy"
+          ],
+          "fact": "Micronesia has a longer coastline than Ghana, with less than a hundredth of its land area, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "qa",
+            "fj",
+            "pe",
+            "mc",
+            "bo"
+          ],
+          "fact": "Peru is only about 17% bigger than Bolivia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "la",
+            "bt",
+            "uy",
+            "sm",
+            "kg"
+          ],
+          "fact": "Kyrgyzstan's lowest point, at 435 m, is higher than Moldova's highest point, Bălănești Hill (430 m).",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "rw",
+            "zw",
+            "om",
+            "gy",
+            "ne"
+          ],
+          "fact": "Mount Karisimbi in Rwanda rises 1,489 m higher than Jabal Shams, the top of Oman.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "it",
+            "mx",
+            "ng",
+            "cg",
+            "pg"
+          ],
+          "fact": "Italy borders 6 countries, while Mexico borders only 3.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "kw",
+            "gt",
+            "si",
+            "pw",
+            "tl"
+          ],
+          "fact": "Palau has a longer coastline than Guatemala, with less than a hundredth of its land area, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "ir",
+            "bn",
+            "bz",
+            "tn",
+            "sv"
+          ],
+          "fact": "Tunis is farther north than Tehran.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "gm",
+            "py",
+            "ug",
+            "mn",
+            "li"
+          ],
+          "fact": "Uganda's lowest point, at 621 m, is higher than Luxembourg's highest point, Kneiff (560 m).",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "hn",
+            "az",
+            "ye",
+            "ph",
+            "lv"
+          ],
+          "fact": "Honduras borders 3 countries, while Yemen borders only 2.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "kp",
+            "sn",
+            "uy",
+            "tj",
+            "lt"
+          ],
+          "fact": "Senegal is only about 12% bigger than Uruguay.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "pa",
+            "fi",
+            "fm",
+            "mr",
+            "mn"
+          ],
+          "fact": "Panama's coastline is about twice as long as Finland's, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "us",
+            "mx",
+            "hr",
+            "bj",
+            "jp"
+          ],
+          "fact": "Mexico shares land borders with Belize, Guatemala and the United States.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "ao",
+            "ye",
+            "br",
+            "ug",
+            "kg"
+          ],
+          "fact": "Kyrgyzstan's highest point, Jengish Chokusu, is about 2.5 times as high as Brazil's, Pico da Neblina.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "va",
+            "cd",
+            "td",
+            "bs",
+            "lb"
+          ],
+          "fact": "The Bahamas is about 1.3 times the size of Lebanon.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "qa",
+            "sk",
+            "py",
+            "pw",
+            "ch"
+          ],
+          "fact": "Qatar's lowest point, Dukhan Sabkha, lies 6 m below sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "do",
+            "bd",
+            "sb",
+            "me",
+            "mr"
+          ],
+          "fact": "Montenegro's highest point, Zla Kolata, is about 2.4 times as high as Bangladesh's, Saka Haphong.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "cy",
+            "dz",
+            "kp",
+            "am",
+            "gr"
+          ],
+          "fact": "Pyongyang is farther north than Athens.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "py",
+            "gn",
+            "vu",
+            "gh",
+            "li"
+          ],
+          "fact": "Liechtenstein's highest point, Grauspitz, is about 3 times as high as Paraguay's, Cerro Peró.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "sd",
+            "tr",
+            "au",
+            "id",
+            "lt"
+          ],
+          "fact": "Australia has no land border with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "pl",
+            "ni",
+            "sl",
+            "jm",
+            "ki"
+          ],
+          "fact": "Jamaica has 112 km more coastline than Nicaragua, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "be",
+            "sk",
+            "br",
+            "tm",
+            "mg"
+          ],
+          "fact": "Madagascar is only about 20% bigger than Turkmenistan.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "do",
+            "ge",
+            "mw",
+            "se",
+            "mg"
+          ],
+          "fact": "The Dominican Republic's only land neighbour is Haiti.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "hn",
+            "tr",
+            "tn",
+            "pt",
+            "tl"
+          ],
+          "fact": "Lisbon is farther south than Ankara.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "md",
+            "sz",
+            "af",
+            "bo",
+            "mk"
+          ],
+          "fact": "Even Afghanistan's lowest point, the Amu Darya, is 258 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "is",
+            "sb",
+            "fm",
+            "gy",
+            "cr"
+          ],
+          "fact": "Iceland's coastline is about 4 times as long as Costa Rica's, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "cv",
+            "ci",
+            "ht",
+            "cf",
+            "lk"
+          ],
+          "fact": "Cape Verde's highest point, Pico do Fogo, is about twice as high as the Central African Republic's, Mont Ngaoui.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "ve",
+            "er",
+            "pa",
+            "bn",
+            "sg"
+          ],
+          "fact": "Panama City is farther south than Caracas.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "hn",
+            "ke",
+            "md",
+            "sr",
+            "ch"
+          ],
+          "fact": "Honduras is bigger than Moldova and Switzerland combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "gq",
+            "nz",
+            "kr",
+            "lu",
+            "lv"
+          ],
+          "fact": "South Korea's only land neighbour is North Korea.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "cd",
+            "ro",
+            "kh",
+            "al",
+            "tl"
+          ],
+          "fact": "Romania's coastline is about 6 times as long as DR Congo's, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "bi",
+            "sk",
+            "hu",
+            "pw",
+            "dk"
+          ],
+          "fact": "Burundi's lowest point, at 772 m, is higher than Belgium's highest point, Signal de Botrange (694 m).",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "co",
+            "iq",
+            "lu",
+            "bs",
+            "mg"
+          ],
+          "fact": "Colombia is bigger than Iraq and Madagascar combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "ly",
+            "pl",
+            "gy",
+            "bg",
+            "np"
+          ],
+          "fact": "Musala in Bulgaria rises 658 m higher than Bikku Bitti, the top of Libya.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "nz",
+            "tm",
+            "ad",
+            "tz",
+            "mm"
+          ],
+          "fact": "Myanmar is about 2.5 times the size of New Zealand.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "cv",
+            "iq",
+            "ml",
+            "ki",
+            "lb"
+          ],
+          "fact": "Cape Verde has a longer coastline than Iraq, with less than a hundredth of its land area, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "pa",
+            "sn",
+            "sg",
+            "sv",
+            "tl"
+          ],
+          "fact": "Dakar is farther north than San Salvador.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "ro",
+            "ph",
+            "gh",
+            "lv",
+            "ec"
+          ],
+          "fact": "Ghana shares land borders with Burkina Faso, Côte d'Ivoire and Togo.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "lowest",
+          "countries": [
+            "la",
+            "km",
+            "td",
+            "mr",
+            "dk"
+          ],
+          "fact": "Denmark's lowest point, Lammefjord, lies 7 m below sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "bi",
+            "do",
+            "nz",
+            "bg",
+            "np"
+          ],
+          "fact": "Burundi borders 3 countries, while Nepal borders only 2.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "ao",
+            "uy",
+            "tn",
+            "pg",
+            "lt"
+          ],
+          "fact": "Papua New Guinea is bigger than Uruguay and Tunisia combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "ni",
+            "bd",
+            "sn",
+            "si",
+            "am"
+          ],
+          "fact": "Triglav in Slovenia rises 779 m higher than Mogotón, the top of Nicaragua.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "lowest",
+          "countries": [
+            "py",
+            "bs",
+            "hu",
+            "zm",
+            "ad"
+          ],
+          "fact": "Even Andorra's lowest point, the Gran Valira, is 840 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "fj",
+            "ml",
+            "lb",
+            "ua",
+            "ba"
+          ],
+          "fact": "Qurnat as Sawda' in Lebanon rises 1,027 m higher than Hoverla, the top of Ukraine.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "us",
+            "sy",
+            "ir",
+            "tn",
+            "bh"
+          ],
+          "fact": "Tunis is farther north than Damascus.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "do",
+            "ie",
+            "bd",
+            "ci",
+            "ht"
+          ],
+          "fact": "Ireland has 160 km more coastline than the Dominican Republic, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "az",
+            "kr",
+            "om",
+            "cg",
+            "pt"
+          ],
+          "fact": "Oman is bigger than South Korea and Portugal combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "rw",
+            "ro",
+            "ye",
+            "ga",
+            "au"
+          ],
+          "fact": "Rwanda borders 4 countries, while Yemen borders only 2.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "bt",
+            "gq",
+            "bs",
+            "dj",
+            "vu"
+          ],
+          "fact": "Bhutan is landlocked, so it has no coastline at all.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "na",
+            "cu",
+            "sb",
+            "tl",
+            "mk"
+          ],
+          "fact": "Mount Ramelau in Timor-Leste rises 390 m higher than Königstein, the top of Namibia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "south",
+          "countries": [
+            "ve",
+            "so",
+            "fm",
+            "kz",
+            "cz"
+          ],
+          "fact": "Prague is farther south than Astana.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "ss",
+            "es",
+            "ug",
+            "tj",
+            "mz"
+          ],
+          "fact": "Tajikistan's highest point, Ismoil Somoni Peak, is about twice as high as Spain's, Teide.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "na",
+            "co",
+            "om",
+            "ee",
+            "lv"
+          ],
+          "fact": "Colombia is about 1.4 times the size of Namibia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "ga",
+            "hu",
+            "bj",
+            "mn",
+            "mm"
+          ],
+          "fact": "Mongolia shares land borders with China and Russia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "lowest",
+          "countries": [
+            "qa",
+            "co",
+            "cz",
+            "mr",
+            "af"
+          ],
+          "fact": "Even Czechia's lowest point, the Elbe, is 115 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "md",
+            "gn",
+            "si",
+            "om",
+            "jp"
+          ],
+          "fact": "Japan has no land border with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "ke",
+            "so",
+            "ec",
+            "mh",
+            "tl"
+          ],
+          "fact": "Nairobi is farther south than Quito.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "be",
+            "fj",
+            "gq",
+            "bz",
+            "bo"
+          ],
+          "fact": "Fiji's coastline is about 2.9 times as long as Belize's, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "hn",
+            "az",
+            "ug",
+            "ec",
+            "pt"
+          ],
+          "fact": "Honduras is only about 22% bigger than Portugal.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "la",
+            "is",
+            "fj",
+            "ni",
+            "sr"
+          ],
+          "fact": "Fiji has 219 km more coastline than Nicaragua, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "rw",
+            "tt",
+            "zm",
+            "mn",
+            "dk"
+          ],
+          "fact": "Rwanda's lowest point, at 950 m, is higher than Paraguay's highest point, Cerro Peró (842 m).",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "do",
+            "kh",
+            "cg",
+            "al",
+            "ad"
+          ],
+          "fact": "Andorra's highest point, Coma Pedrosa, is about 2.9 times as high as the Republic of the Congo's, Mont Nabemba.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "lr",
+            "hu",
+            "jp",
+            "ec",
+            "bf"
+          ],
+          "fact": "Hungary borders 7 countries, while Ecuador borders only 2.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "bo",
+            "cl",
+            "mz",
+            "ne",
+            "gr"
+          ],
+          "fact": "Niger is about 1.7 times the size of Chile.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "et",
+            "ve",
+            "bn",
+            "mh",
+            "mg"
+          ],
+          "fact": "Caracas is farther north than Addis Ababa.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "hn",
+            "ro",
+            "se",
+            "at",
+            "mr"
+          ],
+          "fact": "Cerro Las Minas in Honduras rises 773 m higher than Kebnekaise, the top of Sweden.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "cu",
+            "jo",
+            "vn",
+            "ne",
+            "lt"
+          ],
+          "fact": "Vietnam is bigger than Cuba and Jordan combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "be",
+            "fj",
+            "dm",
+            "dj",
+            "bj"
+          ],
+          "fact": "Dominica's highest point, Morne Diablotins, is about 2.2 times as high as Benin's, Mont Sokbaro.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "kp",
+            "md",
+            "td",
+            "ch",
+            "mk"
+          ],
+          "fact": "Even Switzerland's lowest point, Lake Maggiore, is 193 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "hn",
+            "ie",
+            "cf",
+            "vu",
+            "ae"
+          ],
+          "fact": "The United Arab Emirates' coastline is about 1.6 times as long as Honduras', according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "pa",
+            "ci",
+            "bs",
+            "uy",
+            "mn"
+          ],
+          "fact": "Mongolia is landlocked, so it has no coastline at all.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "mv",
+            "ve",
+            "ng",
+            "gh",
+            "rs"
+          ],
+          "fact": "Abuja is farther south than Caracas.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "iq",
+            "de",
+            "kg",
+            "ec",
+            "mz"
+          ],
+          "fact": "Cheekha Dar in Iraq rises 649 m higher than Zugspitze, the top of Germany.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "hr",
+            "nz",
+            "ge",
+            "ls",
+            "sv"
+          ],
+          "fact": "Lesotho's only land neighbour is South Africa.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "north",
+          "countries": [
+            "hr",
+            "mu",
+            "pe",
+            "mn",
+            "ws"
+          ],
+          "fact": "Ulaanbaatar is farther north than Zagreb.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "la",
+            "az",
+            "ie",
+            "zw",
+            "uy"
+          ],
+          "fact": "Azerbaijan is only about 23% bigger than Ireland.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "it",
+            "ye",
+            "lu",
+            "lt",
+            "mg"
+          ],
+          "fact": "Madagascar has no land border with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "rw",
+            "by",
+            "td",
+            "at",
+            "ki"
+          ],
+          "fact": "Even Rwanda's lowest point, the Ruzizi River, is 950 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "by",
+            "cu",
+            "dz",
+            "er",
+            "sb"
+          ],
+          "fact": "The Solomon Islands has a longer coastline than Algeria, with less than a tenth of its land area, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "is",
+            "ci",
+            "ml",
+            "sv",
+            "tl"
+          ],
+          "fact": "Cerro El Pital in El Salvador rises 978 m higher than Mount Nimba, the top of Côte d'Ivoire.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "co",
+            "id",
+            "pw",
+            "mz",
+            "tz"
+          ],
+          "fact": "Indonesia shares land borders with Timor-Leste, Malaysia and Papua New Guinea.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "kr",
+            "gh",
+            "me",
+            "ec",
+            "mk"
+          ],
+          "fact": "Ecuador is about 2.8 times the size of South Korea.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "st",
+            "fj",
+            "uy",
+            "sz",
+            "tg"
+          ],
+          "fact": "São Tomé and Príncipe's highest point, Pico de São Tomé, is about 4 times as high as Uruguay's, Cerro Catedral.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "la",
+            "md",
+            "bs",
+            "tj",
+            "kg"
+          ],
+          "fact": "Kyrgyzstan's lowest point, at 435 m, is higher than Belarus' highest point, Dzyarzhynskaya Hara (345 m).",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "cd",
+            "kw",
+            "cu",
+            "ad",
+            "pg"
+          ],
+          "fact": "DR Congo is about 5 times the size of Papua New Guinea.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "hn",
+            "kh",
+            "si",
+            "cf",
+            "pw"
+          ],
+          "fact": "Honduras' coastline is about 1.9 times as long as Cambodia's, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "south",
+          "countries": [
+            "uz",
+            "mt",
+            "tr",
+            "cm",
+            "pt"
+          ],
+          "fact": "Lisbon is farther south than Tashkent.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "sb",
+            "gh",
+            "sr",
+            "cr",
+            "mk"
+          ],
+          "fact": "North Macedonia's highest point, Golem Korab, is about 3 times as high as Ghana's, Leklata.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "us",
+            "sk",
+            "ie",
+            "iq",
+            "ge"
+          ],
+          "fact": "Ireland's only land neighbour is the United Kingdom.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "fj",
+            "bs",
+            "gn",
+            "cg",
+            "lb"
+          ],
+          "fact": "Fiji is about 1.3 times the size of the Bahamas.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "sk",
+            "py",
+            "tm",
+            "sm",
+            "mg"
+          ],
+          "fact": "Paraguay shares land borders with Argentina, Bolivia and Brazil.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "so",
+            "tr",
+            "fm",
+            "sr",
+            "gr"
+          ],
+          "fact": "Ankara is farther north than Athens.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "ke",
+            "om",
+            "vu",
+            "al",
+            "ne"
+          ],
+          "fact": "Oman's coastline is about 4 times as long as Kenya's, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "be",
+            "qa",
+            "ht",
+            "sz",
+            "kg"
+          ],
+          "fact": "Belgium's lowest point, De Moeren, lies 4 m below sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "vn",
+            "mu",
+            "ug",
+            "se",
+            "am"
+          ],
+          "fact": "Armenia borders 4 countries, while Vietnam borders only 3.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "kh",
+            "gt",
+            "sr",
+            "ad",
+            "bf"
+          ],
+          "fact": "Andorra's highest point, Coma Pedrosa, is about 2.3 times as high as Suriname's, Juliana Top.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "be",
+            "bd",
+            "om",
+            "cg",
+            "bg"
+          ],
+          "fact": "The Republic of the Congo is only about 11% bigger than Oman.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "cv",
+            "ng",
+            "kr",
+            "td",
+            "ki"
+          ],
+          "fact": "Cape Verde has 112 km more coastline than Nigeria, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "sb",
+            "ht",
+            "cf",
+            "sr",
+            "lk"
+          ],
+          "fact": "Pic la Selle in Haiti rises 156 m higher than Pidurutalagala, the top of Sri Lanka.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "rw",
+            "ss",
+            "zw",
+            "hu",
+            "lc"
+          ],
+          "fact": "South Sudan's lowest point, at 350 m, is higher than Belarus' highest point, Dzyarzhynskaya Hara (345 m).",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "co",
+            "sn",
+            "kh",
+            "sv",
+            "tl"
+          ],
+          "fact": "San Salvador is farther north than Phnom Penh.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "cd",
+            "by",
+            "uz",
+            "bw",
+            "ml"
+          ],
+          "fact": "Mali is bigger than Uzbekistan and Botswana combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "pl",
+            "dj",
+            "si",
+            "tn",
+            "lb"
+          ],
+          "fact": "Qurnat as Sawda' in Lebanon rises 588 m higher than Rysy, the top of Poland.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "hn",
+            "bd",
+            "ht",
+            "pw",
+            "sr"
+          ],
+          "fact": "Haiti's coastline is about 3 times as long as Bangladesh's, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "ni",
+            "md",
+            "pe",
+            "gt",
+            "mw"
+          ],
+          "fact": "Nicaragua is only about 20% bigger than Guatemala.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "hr",
+            "mx",
+            "se",
+            "tj",
+            "mh"
+          ],
+          "fact": "Croatia borders 5 countries, while Mexico borders only 3.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "st",
+            "kw",
+            "sl",
+            "py",
+            "cg"
+          ],
+          "fact": "Paraguay is landlocked, so it has no coastline at all.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "is",
+            "ie",
+            "ae",
+            "am",
+            "gy"
+          ],
+          "fact": "Iceland has no land border with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "mv",
+            "ni",
+            "pa",
+            "sn",
+            "ht"
+          ],
+          "fact": "Dakar is farther north than Managua.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "by",
+            "ug",
+            "lu",
+            "bb",
+            "mn"
+          ],
+          "fact": "Uganda's lowest point, at 621 m, is higher than Uruguay's highest point, Cerro Catedral (514 m).",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "bi",
+            "sn",
+            "kr",
+            "gn",
+            "ad"
+          ],
+          "fact": "Coma Pedrosa in Andorra rises 996 m higher than Halla-san, the top of South Korea.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "ba",
+            "kp",
+            "cm",
+            "ch",
+            "gr"
+          ],
+          "fact": "North Korea is bigger than Bosnia and Herzegovina and Switzerland combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "cv",
+            "th",
+            "bz",
+            "at",
+            "kz"
+          ],
+          "fact": "Astana is farther north than Vienna.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "ss",
+            "jm",
+            "am",
+            "au",
+            "af"
+          ],
+          "fact": "Australia's lowest point, Lake Eyre, lies 15 m below sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "co",
+            "mt",
+            "bj",
+            "lb",
+            "cr"
+          ],
+          "fact": "Costa Rica is about 5 times the size of Lebanon.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "be",
+            "iq",
+            "km",
+            "gm",
+            "bn"
+          ],
+          "fact": "Belgium has 8.5 km more coastline than Iraq, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "ao",
+            "cl",
+            "bz",
+            "gn",
+            "mm"
+          ],
+          "fact": "Angola shares land borders with DR Congo, the Republic of the Congo, Namibia and Zambia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "lr",
+            "fi",
+            "ch",
+            "ws",
+            "lk"
+          ],
+          "fact": "Mauga Silisili in Samoa rises 534 m higher than Halti, the top of Finland.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "south",
+          "countries": [
+            "mv",
+            "bd",
+            "ml",
+            "bs",
+            "cr"
+          ],
+          "fact": "Dhaka is farther south than Nassau.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "gb",
+            "pa",
+            "ci",
+            "cg",
+            "ws"
+          ],
+          "fact": "Mauga Silisili in Samoa rises 513 m higher than Ben Nevis, the top of the United Kingdom.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "ng",
+            "ni",
+            "gt",
+            "lv",
+            "pg"
+          ],
+          "fact": "Papua New Guinea is bigger than Nicaragua and Guatemala combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "cl",
+            "th",
+            "gn",
+            "mc",
+            "mm"
+          ],
+          "fact": "Monaco's only land neighbour is France.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "lowest",
+          "countries": [
+            "ug",
+            "lu",
+            "bb",
+            "am",
+            "ch"
+          ],
+          "fact": "Even Uganda's lowest point, the Albert Nile, is 621 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "ro",
+            "kr",
+            "cr",
+            "fi",
+            "bf"
+          ],
+          "fact": "Costa Rica's highest point, Cerro Chirripó, is about 2.9 times as high as Finland's, Halti.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "be",
+            "az",
+            "py",
+            "zm",
+            "ne"
+          ],
+          "fact": "Niger is bigger than Paraguay and Zambia combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "pk",
+            "td",
+            "jp",
+            "mr",
+            "pg"
+          ],
+          "fact": "Papua New Guinea's coastline is about 5 times as long as Pakistan's, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "ro",
+            "zw",
+            "kr",
+            "sc",
+            "sr"
+          ],
+          "fact": "Zimbabwe is landlocked, so it has no coastline at all.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "co",
+            "tr",
+            "jm",
+            "mc",
+            "bf"
+          ],
+          "fact": "Jamaica has no land border with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "bt",
+            "bo",
+            "ml",
+            "sm",
+            "cr"
+          ],
+          "fact": "Even Bhutan's lowest point, the Drangme Chhu, is 97 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "tv",
+            "bw",
+            "pe",
+            "mw",
+            "zm"
+          ],
+          "fact": "Lusaka is farther south than Lima.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "rw",
+            "sd",
+            "gb",
+            "ga",
+            "am"
+          ],
+          "fact": "Mount Karisimbi in Rwanda rises 1,483 m higher than Jabal Marrah, the top of Sudan.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "sk",
+            "gw",
+            "bn",
+            "kh",
+            "lk"
+          ],
+          "fact": "Cambodia shares land borders with Laos, Thailand and Vietnam.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "it",
+            "my",
+            "py",
+            "cg",
+            "mh"
+          ],
+          "fact": "Italy's coastline is about 1.6 times as long as Malaysia's, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "et",
+            "sn",
+            "th",
+            "uy",
+            "si"
+          ],
+          "fact": "Thailand is bigger than Senegal and Uruguay combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "north",
+          "countries": [
+            "mv",
+            "so",
+            "kh",
+            "gt",
+            "mr"
+          ],
+          "fact": "Guatemala City is farther north than Phnom Penh.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "ie",
+            "jo",
+            "ni",
+            "md",
+            "mw"
+          ],
+          "fact": "Jordan is only about 27% bigger than Ireland.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "ly",
+            "bt",
+            "tj",
+            "lb",
+            "bo"
+          ],
+          "fact": "Libya's lowest point, Sabkhat Ghuzayyil, lies 47 m below sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "er",
+            "ht",
+            "no",
+            "ls",
+            "ua"
+          ],
+          "fact": "Pic la Selle in Haiti rises 619 m higher than Hoverla, the top of Ukraine.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "lr",
+            "do",
+            "ke",
+            "gh",
+            "al"
+          ],
+          "fact": "Ghana is about 5 times the size of the Dominican Republic.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "ao",
+            "tm",
+            "ls",
+            "pg",
+            "mg"
+          ],
+          "fact": "Thabana Ntlenyana in Lesotho rises 862 m higher than Mount Moco, the top of Angola.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "sd",
+            "az",
+            "bd",
+            "gt",
+            "ba"
+          ],
+          "fact": "Guatemala shares land borders with Belize, El Salvador, Honduras and Mexico.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "tt",
+            "la",
+            "fj",
+            "dj",
+            "tg"
+          ],
+          "fact": "Laos is landlocked, so it has no coastline at all.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "na",
+            "tr",
+            "cm",
+            "pe",
+            "ml"
+          ],
+          "fact": "Namibia shares land borders with Angola, Botswana, South Africa and Zambia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "bw",
+            "kh",
+            "tg",
+            "me",
+            "mh"
+          ],
+          "fact": "Cambodia has 72.6 km more coastline than the Marshall Islands, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "zw",
+            "sn",
+            "sm",
+            "tj",
+            "cf"
+          ],
+          "fact": "The Central African Republic's lowest point, at 335 m, is higher than Estonia's highest point, Suur Munamägi (318 m).",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "rw",
+            "la",
+            "mx",
+            "pw",
+            "sr"
+          ],
+          "fact": "Mexico City is farther north than Vientiane.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "north",
+          "countries": [
+            "cv",
+            "th",
+            "bs",
+            "om",
+            "ee"
+          ],
+          "fact": "Nassau is farther north than Muscat.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "ss",
+            "va",
+            "gw",
+            "pe",
+            "lk"
+          ],
+          "fact": "Vatican City's only land neighbour is Italy.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "jo",
+            "ke",
+            "md",
+            "gt",
+            "gn"
+          ],
+          "fact": "Guatemala is only about 22% bigger than Jordan.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "lr",
+            "cz",
+            "gh",
+            "cg",
+            "sr"
+          ],
+          "fact": "Sněžka in Czechia rises 583 m higher than Mont Nabemba, the top of the Republic of the Congo.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "iq",
+            "tm",
+            "se",
+            "tj",
+            "ec"
+          ],
+          "fact": "Tajikistan's highest point, Ismoil Somoni Peak, is about 2.1 times as high as Iraq's, Cheekha Dar.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "bt",
+            "cd",
+            "tg",
+            "me",
+            "ws"
+          ],
+          "fact": "Montenegro has a longer coastline than DR Congo, with less than a hundredth of its land area, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "sk",
+            "er",
+            "tr",
+            "eg",
+            "np"
+          ],
+          "fact": "Egypt's lowest point, the Qattara Depression, lies 133 m below sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "qa",
+            "na",
+            "bo",
+            "lu",
+            "id"
+          ],
+          "fact": "Indonesia is about 2.3 times the size of Namibia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "rw",
+            "sn",
+            "fi",
+            "bz",
+            "ls"
+          ],
+          "fact": "Rwanda borders 4 countries, while Finland borders only 3.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "qa",
+            "ao",
+            "bs",
+            "zm",
+            "li"
+          ],
+          "fact": "The Bahamas is only about 20% bigger than Qatar.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "tt",
+            "cv",
+            "do",
+            "th",
+            "cz"
+          ],
+          "fact": "Santo Domingo is farther north than Bangkok.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "la",
+            "mv",
+            "kp",
+            "tn",
+            "gy"
+          ],
+          "fact": "North Korea's coastline is about 2.2 times as long as Tunisia's, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "gn",
+            "at",
+            "cf",
+            "lk",
+            "bg"
+          ],
+          "fact": "Austria's highest point, Grossglockner, is about 2.7 times as high as the Central African Republic's, Mont Ngaoui.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "bi",
+            "us",
+            "kh",
+            "zm",
+            "li"
+          ],
+          "fact": "The United States' lowest point, Badwater Basin, lies 85.5 m below sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "qa",
+            "do",
+            "co",
+            "ci",
+            "ee"
+          ],
+          "fact": "The Dominican Republic is only about 7% bigger than Estonia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "py",
+            "sn",
+            "md",
+            "bs",
+            "kg"
+          ],
+          "fact": "The Bahamas has no land border with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "ga",
+            "gt",
+            "bj",
+            "mn",
+            "pt"
+          ],
+          "fact": "Gabon's coastline is about 2.2 times as long as Guatemala's, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "hr",
+            "sk",
+            "uy",
+            "zm",
+            "ad"
+          ],
+          "fact": "Coma Pedrosa in Andorra rises 604 m higher than Mafinga Central, the top of Zambia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "cu",
+            "vn",
+            "ug",
+            "ki",
+            "mm"
+          ],
+          "fact": "Havana is farther north than Naypyidaw.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "zw",
+            "gd",
+            "cz",
+            "mr",
+            "ne"
+          ],
+          "fact": "Even Zimbabwe's lowest point, where the Runde and Save rivers meet, is 162 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "ly",
+            "mx",
+            "ir",
+            "am",
+            "mk"
+          ],
+          "fact": "Mexico is only about 19% bigger than Iran.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "na",
+            "is",
+            "kw",
+            "pe",
+            "mz"
+          ],
+          "fact": "Kuwait shares land borders with Iraq and Saudi Arabia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "la",
+            "ga",
+            "jm",
+            "mw",
+            "bf"
+          ],
+          "fact": "Jamaica's highest point, Blue Mountain Peak, is about 3 times as high as Burkina Faso's, Mount Tenakourou.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "gb",
+            "ao",
+            "mm",
+            "td",
+            "mg"
+          ],
+          "fact": "Myanmar has 330 km more coastline than Angola, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "uz",
+            "gt",
+            "mw",
+            "vu",
+            "tn"
+          ],
+          "fact": "Vanuatu has no land border with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "gb",
+            "bi",
+            "bn",
+            "cz",
+            "ba"
+          ],
+          "fact": "Bukit Pagon in Brunei rises 530 m higher than Ben Nevis, the top of the United Kingdom.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "hn",
+            "ag",
+            "er",
+            "kh",
+            "fr"
+          ],
+          "fact": "Phnom Penh is farther south than Tegucigalpa.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "tt",
+            "to",
+            "cr",
+            "gh",
+            "lk"
+          ],
+          "fact": "Sri Lanka is about 1.3 times the size of Costa Rica.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "ao",
+            "sb",
+            "sm",
+            "ar",
+            "mz"
+          ],
+          "fact": "San Marino's only land neighbour is Italy.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "na",
+            "vn",
+            "bs",
+            "mh",
+            "sr"
+          ],
+          "fact": "Nassau is farther north than Hanoi.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "ss",
+            "ly",
+            "uy",
+            "ls",
+            "li"
+          ],
+          "fact": "Lesotho's lowest point, at 1,400 m, is higher than Ireland's highest point, Carrauntoohil (1,039 m).",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "is",
+            "cu",
+            "tz",
+            "ec",
+            "ne"
+          ],
+          "fact": "Niger is landlocked, so it has no coastline at all.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "lowest",
+          "countries": [
+            "sd",
+            "ly",
+            "pe",
+            "jp",
+            "am"
+          ],
+          "fact": "Peru's lowest point, the Bayóvar Depression, lies 34 m below sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "pl",
+            "ci",
+            "ug",
+            "kg",
+            "np"
+          ],
+          "fact": "Nepal's highest point, Mount Everest, is about 5 times as high as Côte d'Ivoire's, Mount Nimba.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "to",
+            "km",
+            "at",
+            "bj",
+            "lb"
+          ],
+          "fact": "Tonga has a longer coastline than Benin, with less than a hundredth of its land area, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "mx",
+            "vn",
+            "om",
+            "sz",
+            "me"
+          ],
+          "fact": "Vietnam is only about 7% bigger than Oman.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "south",
+          "countries": [
+            "co",
+            "jm",
+            "ph",
+            "fm",
+            "mw"
+          ],
+          "fact": "Manila is farther south than Kingston.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "er",
+            "kh",
+            "tz",
+            "bb",
+            "pg"
+          ],
+          "fact": "Papua New Guinea is bigger than Eritrea and Cambodia combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "by",
+            "zw",
+            "py",
+            "sb",
+            "ad"
+          ],
+          "fact": "The Solomon Islands has no land border with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "cv",
+            "ht",
+            "bz",
+            "hu",
+            "mr"
+          ],
+          "fact": "Cape Verde's highest point, Pico do Fogo, is about 3 times as high as Mauritania's, Kediet ej Jill.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "ng",
+            "gw",
+            "jm",
+            "sm",
+            "id"
+          ],
+          "fact": "Indonesia is more than twice the size of Nigeria.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "be",
+            "km",
+            "bz",
+            "cz",
+            "me"
+          ],
+          "fact": "Mount Karthala in the Comoros rises 758 m higher than Sněžka, the top of Czechia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "py",
+            "kr",
+            "bj",
+            "kn",
+            "bg"
+          ],
+          "fact": "Saint Kitts and Nevis has a longer coastline than Benin, with less than a hundredth of its land area, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "dz",
+            "mw",
+            "at",
+            "ls",
+            "gy"
+          ],
+          "fact": "Even Lesotho's lowest point, where the Orange and Makhaleng rivers meet, is 1,400 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "north",
+          "countries": [
+            "hr",
+            "ro",
+            "cm",
+            "mn",
+            "mh"
+          ],
+          "fact": "Ulaanbaatar is farther north than Bucharest.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "st",
+            "et",
+            "bn",
+            "sv",
+            "lt"
+          ],
+          "fact": "Ethiopia is landlocked, so it has no coastline at all.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "vn",
+            "bd",
+            "zw",
+            "th",
+            "ee"
+          ],
+          "fact": "Thailand is bigger than Vietnam and Bangladesh combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "my",
+            "la",
+            "ao",
+            "cf",
+            "nr"
+          ],
+          "fact": "Laos borders 5 countries, while Angola borders only 4.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "lowest",
+          "countries": [
+            "be",
+            "bi",
+            "ph",
+            "ls",
+            "tn"
+          ],
+          "fact": "Burundi's lowest point, at 772 m, is higher than Benin's highest point, Mont Sokbaro (658 m).",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "tv",
+            "zw",
+            "th",
+            "ht",
+            "gy"
+          ],
+          "fact": "Bangkok is farther south than Port-au-Prince.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "gq",
+            "bz",
+            "hu",
+            "gh",
+            "ba"
+          ],
+          "fact": "Equatorial Guinea's highest point, Pico Basilé, is about 3 times as high as Hungary's, Kékes.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "ni",
+            "gt",
+            "mw",
+            "ru",
+            "nr"
+          ],
+          "fact": "Nauru has no land border with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "lr",
+            "qa",
+            "fj",
+            "sn",
+            "li"
+          ],
+          "fact": "Liechtenstein borders 2 countries, while Qatar borders only 1.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "be",
+            "kw",
+            "km",
+            "kn",
+            "ee"
+          ],
+          "fact": "Estonia's highest point, Suur Munamägi, is only 318 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "do",
+            "ci",
+            "me",
+            "af",
+            "lt"
+          ],
+          "fact": "Afghanistan is landlocked, so it has no coastline at all.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "kh",
+            "ug",
+            "vu",
+            "al",
+            "cr"
+          ],
+          "fact": "Uganda is bigger than Cambodia and Costa Rica combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "ly",
+            "sk",
+            "cl",
+            "za",
+            "tr"
+          ],
+          "fact": "Gerlachovský štít in Slovakia rises 387 m higher than Bikku Bitti, the top of Libya.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "pl",
+            "tm",
+            "tj",
+            "zm",
+            "tz"
+          ],
+          "fact": "Tanzania is about 3 times the size of Poland.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "va",
+            "mw",
+            "jp",
+            "at",
+            "al"
+          ],
+          "fact": "Japan's lowest point, Hachiro-gata, lies 4 m below sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "ve",
+            "cu",
+            "de",
+            "mr",
+            "mg"
+          ],
+          "fact": "Venezuela has 411 km more coastline than Germany, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "highest",
+          "countries": [
+            "ly",
+            "nz",
+            "vn",
+            "eg",
+            "ne"
+          ],
+          "fact": "Fansipan in Vietnam rises 880 m higher than Bikku Bitti, the top of Libya.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "la",
+            "na",
+            "ga",
+            "cf",
+            "lc"
+          ],
+          "fact": "Laos borders 5 countries, while Namibia borders only 4.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "fj",
+            "dm",
+            "dj",
+            "sv",
+            "lk"
+          ],
+          "fact": "Sri Lanka is bigger than Fiji and El Salvador combined.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "rw",
+            "is",
+            "zw",
+            "ki",
+            "pg"
+          ],
+          "fact": "Tarawa, the capital of Kiribati, is farther north than Kigali.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "coastline",
+          "countries": [
+            "ve",
+            "vn",
+            "th",
+            "ml",
+            "mc"
+          ],
+          "fact": "Vietnam has 644 km more coastline than Venezuela, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "south",
+          "countries": [
+            "cy",
+            "uz",
+            "ht",
+            "kg",
+            "gr"
+          ],
+          "fact": "Athens is farther south than Tashkent.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "cl",
+            "mw",
+            "eg",
+            "au",
+            "mk"
+          ],
+          "fact": "Even North Macedonia's lowest point, the Vardar, is 50 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "tt",
+            "cm",
+            "fi",
+            "tj",
+            "tn"
+          ],
+          "fact": "Finland shares land borders with Norway, Sweden and Russia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "lr",
+            "va",
+            "uz",
+            "bw",
+            "vu"
+          ],
+          "fact": "Botswana shares land borders with Namibia, South Africa, Zambia and Zimbabwe.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "zw",
+            "cm",
+            "lv",
+            "sv",
+            "tl"
+          ],
+          "fact": "Cameroon's coastline is about 1.3 times as long as El Salvador's, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "it",
+            "ao",
+            "sm",
+            "jp",
+            "af"
+          ],
+          "fact": "Angola is about 4 times the size of Italy.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "ph",
+            "bj",
+            "au",
+            "gy",
+            "cr"
+          ],
+          "fact": "Mount Roraima in Guyana rises 544 m higher than Mount Kosciuszko, the top of Australia.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "lowest",
+          "countries": [
+            "va",
+            "et",
+            "sn",
+            "ml",
+            "np"
+          ],
+          "fact": "Ethiopia's lowest point, the Danakil Depression, lies 125 m below sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "hr",
+            "th",
+            "si",
+            "tg",
+            "bf"
+          ],
+          "fact": "Thailand's highest point, Doi Inthanon, is about 2.6 times as high as Togo's, Mont Atilakoutse.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "pl",
+            "iq",
+            "ke",
+            "cm",
+            "kg"
+          ],
+          "fact": "Cameroon is only about 9% bigger than Iraq.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "ro",
+            "km",
+            "gy",
+            "pg",
+            "mg"
+          ],
+          "fact": "Port Moresby is farther north than Moroni, the capital of the Comoros.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "my",
+            "tv",
+            "bj",
+            "at",
+            "cz"
+          ],
+          "fact": "Malaysia is about 4 times the size of Austria.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "dm",
+            "ir",
+            "zm",
+            "gy",
+            "gr"
+          ],
+          "fact": "Dominica has no land border with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "tt",
+            "cm",
+            "sc",
+            "tn",
+            "af"
+          ],
+          "fact": "Tunisia has a longer coastline than Cameroon, with less than a third of its land area, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "gq",
+            "ni",
+            "ee",
+            "cg",
+            "pt"
+          ],
+          "fact": "Portugal's highest point, Mount Pico, is about 2.3 times as high as the Republic of the Congo's, Mont Nabemba.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "neighbours",
+          "countries": [
+            "qa",
+            "cn",
+            "km",
+            "ad",
+            "ba"
+          ],
+          "fact": "Andorra borders 2 countries, while Qatar borders only 1.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "mv",
+            "ua",
+            "es",
+            "ph",
+            "ne"
+          ],
+          "fact": "Spain's coastline is about 1.8 times as long as Ukraine's, according to the CIA World Factbook.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        },
+        {
+          "stat": "north",
+          "countries": [
+            "rw",
+            "cy",
+            "kr",
+            "sr",
+            "cr"
+          ],
+          "fact": "Seoul is farther north than Nicosia, the capital of Cyprus.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "tv",
+            "tn",
+            "eg",
+            "au",
+            "gr"
+          ],
+          "fact": "Tunisia's lowest point, Shatt al Gharsah, lies 17 m below sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "north",
+          "countries": [
+            "cv",
+            "jo",
+            "ug",
+            "pw",
+            "cr"
+          ],
+          "fact": "Praia, the capital of Cape Verde, is farther north than San José.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude"
+        },
+        {
+          "stat": "area",
+          "countries": [
+            "na",
+            "bw",
+            "kp",
+            "se",
+            "mr"
+          ],
+          "fact": "Botswana is only about 29% bigger than Sweden.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "my",
+            "nz",
+            "ng",
+            "zw",
+            "td"
+          ],
+          "fact": "Aoraki / Mount Cook in New Zealand rises 1,305 m higher than Chappal Waddi, the top of Nigeria.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "lowest",
+          "countries": [
+            "bz",
+            "jp",
+            "cf",
+            "gr",
+            "np"
+          ],
+          "fact": "Even Nepal's lowest point, Mukhiyapatti Musharniya, is 59 m above sea level.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        }
+      ]
+    },
+    {
+      "rounds": [
+        {
+          "stat": "area",
+          "countries": [
+            "br",
+            "at",
+            "tj",
+            "bg",
+            "mm"
+          ],
+          "fact": "Myanmar is about 6 times the size of Bulgaria.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+        },
+        {
+          "stat": "highest",
+          "countries": [
+            "pa",
+            "zw",
+            "sv",
+            "mz",
+            "gr"
+          ],
+          "fact": "Cerro El Pital in El Salvador rises 290 m higher than Monte Binga, the top of Mozambique.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"
+        },
+        {
+          "stat": "neighbours",
+          "countries": [
+            "la",
+            "cd",
+            "sl",
+            "lc",
+            "ba"
+          ],
+          "fact": "Saint Lucia has no land border with any other country.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+        },
+        {
+          "stat": "coastline",
+          "countries": [
+            "my",
+            "zm",
+            "nz",
+            "cm",
+            "lv"
+          ],
+          "fact": "Zambia is landlocked, so it has no coastline at all.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
+        }
+      ]
+    }
+  ]
+}

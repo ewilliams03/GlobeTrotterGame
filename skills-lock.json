@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "mobile-app-designer": {
+      "source": "aicodedecode/awesome-muse-skills",
+      "sourceType": "github",
+      "skillPath": "skills/mobile-app-designer/SKILL.md",
+      "computedHash": "9b582f5cb6124c665877d3af26e868f20e50303256ba6ca5317156c24c5a8fd2"
+    }
+  }
+}

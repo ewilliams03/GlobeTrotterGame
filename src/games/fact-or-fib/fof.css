@@ -1,0 +1,252 @@
+/* ---------- Round card ---------- */
+
+.card-flag {
+  width: clamp(56px, 12vw, 76px);
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px oklch(23% 0.035 265 / 0.12), 0 6px 16px -8px oklch(23% 0.035 265 / 0.45);
+  transform: rotate(-3deg);
+}
+
+.prompt {
+  margin: 22px 0 12px;
+  font-weight: 650;
+  color: var(--ink-2);
+}
+
+/* Statements */
+.claims {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.claim {
+  appearance: none;
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: 14px;
+  padding: 16px 18px;
+  border: 0;
+  border-radius: var(--r-md);
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1px var(--line), var(--shadow-1);
+  color: var(--ink);
+  font: 500 clamp(1rem, 2.4vw, 1.08rem) / 1.45 var(--font-body);
+  text-align: left;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 160ms var(--ease-out), background-color 160ms ease, color 160ms ease, box-shadow 160ms ease, opacity 200ms ease;
+}
+.claim:active:not(:disabled) { transform: scale(0.985); }
+.claim-letter {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--paper-3);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+.claim[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: var(--shadow-2);
+}
+.claim[aria-pressed='true'] .claim-letter {
+  background: var(--signal);
+  color: var(--on-signal);
+}
+.claim:disabled { cursor: default; }
+@media (hover: hover) and (pointer: fine) {
+  .claim:hover:not(:disabled):not([aria-pressed='true']) {
+    box-shadow: inset 0 0 0 1.5px var(--ink-3), var(--shadow-1);
+  }
+}
+
+/* Ruled out by a hint */
+.claim.is-ruled-out {
+  opacity: 0.5;
+  background: transparent;
+  box-shadow: inset 0 0 0 1.5px var(--line);
+  text-decoration: line-through;
+  text-decoration-color: var(--ink-3);
+}
+.claim-note {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-3);
+  text-decoration: none;
+}
+
+/* Revealed */
+.claim.is-fact { box-shadow: inset 0 0 0 2px var(--route-1); }
+.claim.is-fib {
+  background: color-mix(in oklch, var(--route-4) 12%, var(--paper));
+  box-shadow: inset 0 0 0 2px var(--route-4);
+}
+.claim.is-revealed { color: var(--ink); }
+.claim.is-revealed .claim-letter { background: var(--paper-3); color: var(--ink); }
+.claim.is-fib .claim-letter { background: var(--route-4); color: var(--on-route); }
+.claim.is-fact .claim-letter { background: var(--route-1); color: var(--on-route); }
+.claim-text s { text-decoration-thickness: 2px; text-decoration-color: var(--route-4); }
+.claim-truth {
+  display: block;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed color-mix(in oklch, var(--route-4) 50%, transparent);
+  font-weight: 600;
+}
+.claim-truth::before {
+  content: 'Actually: ';
+  color: var(--text-4);
+  font-weight: 750;
+}
+.claim-src {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-2);
+  text-underline-offset: 2px;
+}
+
+/* The passport-style stamp that lands on each statement */
+.stamp {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  padding: 3px 9px;
+  border: 2.5px solid currentColor;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transform: rotate(-8deg);
+  animation: stamp 420ms var(--ease-out) both;
+  pointer-events: none;
+}
+.is-fact .stamp { color: var(--text-1); }
+.is-fib .stamp { color: var(--text-4); }
+.claim.is-revealed { padding-right: 76px; }
+@keyframes stamp {
+  0% { opacity: 0; transform: rotate(-8deg) scale(1.6); }
+  60% { opacity: 1; transform: rotate(-8deg) scale(0.94); }
+  100% { opacity: 1; transform: rotate(-8deg) scale(1); }
+}
+.claims li:nth-child(2) .stamp { animation-delay: 90ms; }
+.claims li:nth-child(3) .stamp { animation-delay: 180ms; }
+
+/* Bet */
+.bet {
+  margin-top: 18px;
+  animation: rise 280ms var(--ease-out) both;
+}
+.bet-q {
+  font-weight: 650;
+  color: var(--ink-2);
+  margin-bottom: 10px;
+}
+.bet-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.bet-btn {
+  appearance: none;
+  display: grid;
+  gap: 2px;
+  justify-items: center;
+  min-height: 64px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 160ms var(--ease-out), border-color 150ms ease, background-color 150ms ease;
+}
+.bet-btn strong {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+.bet-btn span {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-3);
+}
+.bet-btn.is-sure {
+  background: var(--signal);
+  border-color: transparent;
+  color: var(--on-signal);
+}
+.bet-btn.is-sure span { color: color-mix(in oklch, var(--on-signal) 75%, transparent); }
+.bet-btn:active { transform: scale(0.97); }
+@media (hover: hover) and (pointer: fine) {
+  .bet-btn:hover { border-color: var(--ink-3); }
+  .bet-btn.is-sure:hover { background: var(--signal-press); border-color: transparent; }
+}
+
+/* After answering */
+
+.bet[hidden] { display: none; }
+
+/* ---------- Recap after finishing ---------- */
+
+.recap-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 2px;
+}
+.recap-list li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 14px;
+  padding: 16px 4px;
+  border-bottom: 1px solid var(--line);
+}
+.recap-list img {
+  width: 40px;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 3px;
+  box-shadow: 0 0 0 1px oklch(23% 0.035 265 / 0.12);
+}
+.recap-list strong { display: block; font-family: var(--font-display); font-size: 1.1rem; letter-spacing: -0.02em; }
+.recap-list p { color: var(--ink-2); margin-top: 2px; }
+.recap-list .recap-fib { text-decoration: line-through; text-decoration-color: var(--route-4); text-decoration-thickness: 2px; }
+.recap-list a { font-size: 0.85rem; font-weight: 600; color: var(--ink-2); text-underline-offset: 2px; }
+.recap-list .pts {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--level);
+  color: var(--on-route);
+}
+
+@media (max-width: 520px) {
+  .card-head { grid-template-columns: auto minmax(0, 1fr); gap: 12px; }
+  .claim { padding: 14px; gap: 12px; }
+  .claim.is-revealed { padding-right: 14px; padding-top: 40px; }
+  .stamp { top: 10px; right: 10px; }
+}

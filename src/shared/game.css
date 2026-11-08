@@ -1,0 +1,549 @@
+/* Shared game-page shell: head, how-to, board bar, hints, status toast, action bar, result card. */
+.game {
+  --tile-gap: clamp(6px, 1.2vw, 10px);
+  max-width: 760px;
+  padding-top: clamp(20px, 4vw, 44px);
+}
+
+/* ---------- Head ---------- */
+.game-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.game-sub {
+  position: relative;
+  margin-top: 14px;
+}
+.game-sub .switch {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  z-index: 1;
+}
+.game-head h1 {
+  font-size: clamp(2.6rem, 8vw, 4.4rem);
+  font-weight: 760;
+  letter-spacing: -0.045em;
+  margin-top: 8px;
+}
+
+.switch {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 0 4px;
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  font: 600 0.92rem var(--font-body);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.switch-track {
+  position: relative;
+  width: 42px;
+  height: 26px;
+  border-radius: 999px;
+  background: var(--paper-3);
+  box-shadow: inset 0 0 0 1px var(--line);
+  transition: background-color 200ms ease;
+}
+.switch-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--paper);
+  box-shadow: var(--shadow-1), 0 1px 3px oklch(23% 0.035 265 / 0.25);
+  transition: transform 220ms var(--ease-out);
+}
+.switch[aria-checked='true'] { color: var(--ink); }
+.switch[aria-checked='true'] .switch-track { background: var(--ink); }
+.switch[aria-checked='true'] .switch-thumb { transform: translateX(16px); }
+.switch:active .switch-thumb { transform: scale(0.92); }
+.switch[aria-checked='true']:active .switch-thumb { transform: translateX(16px) scale(0.92); }
+
+/* ---------- How to play ---------- */
+.howto {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.howto summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  min-height: 48px;
+  font-weight: 600;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+.howto summary::-webkit-details-marker { display: none; }
+.howto summary::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 200ms var(--ease-out);
+}
+.howto[open] summary::after { transform: translateY(2px) rotate(-135deg); }
+.howto-body {
+  display: grid;
+  gap: 10px;
+  padding-bottom: 18px;
+  color: var(--ink-2);
+  max-width: 62ch;
+  animation: rise 260ms var(--ease-out);
+}
+.chip {
+  display: inline-block;
+  padding: 1px 9px;
+  border-radius: 999px;
+  font-size: 0.85em;
+  font-weight: 650;
+  color: var(--on-route);
+}
+.chip-1 { background: var(--route-1); }
+.chip-4 { background: var(--route-4); }
+
+/* ---------- Board ---------- */
+.board {
+  margin-top: 22px;
+}
+.board-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 40px;
+  margin-bottom: 12px;
+}
+/* Hints */
+.hint-btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 0 8px 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper-2);
+  color: var(--ink);
+  font: 600 0.92rem var(--font-body);
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 160ms var(--ease-out), opacity 150ms ease, border-color 150ms ease;
+}
+.hint-btn:active:not(:disabled) { transform: scale(0.96); }
+.hint-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.hint-count {
+  display: grid;
+  place-items: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--route-3);
+  color: var(--on-route);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+@media (hover: hover) and (pointer: fine) {
+  .hint-btn:hover:not(:disabled) { border-color: var(--ink-3); }
+}
+
+/* Status toast, floating just above the action bar */
+.status {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  width: max-content;
+  max-width: min(420px, calc(100vw - 32px));
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-align: center;
+  box-shadow: var(--shadow-2);
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition: opacity 180ms ease, transform 220ms var(--ease-out);
+}
+.status:empty {
+  opacity: 0;
+  transform: translate(-50%, 6px);
+}
+.result-msg {
+  flex-basis: 100%;
+  min-height: 1.4em;
+  font-weight: 600;
+  color: var(--text-1);
+}
+.result :focus-visible { outline-color: var(--ink); }
+
+@keyframes land {
+  from { opacity: 0; transform: scale(0.96); }
+}
+
+/* Floating action bar: glass only here, because it hovers over the board while scrolling on phones */
+.actions {
+  position: sticky;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 999px;
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  backdrop-filter: blur(16px) saturate(1.4);
+  box-shadow: var(--shadow-2), inset 0 0 0 1px var(--line);
+  width: fit-content;
+  margin-inline: auto;
+}
+.actions .btn { min-width: 96px; }
+.actions .btn-ghost { border-color: transparent; }
+.actions[hidden] { display: none; }
+@media (prefers-reduced-transparency: reduce) {
+  .actions {
+    background: var(--paper);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+@media (max-width: 420px) {
+  .actions .btn { min-width: 0; padding-inline: 16px; }
+}
+
+.noscript {
+  padding: 24px;
+  border-radius: var(--r-md);
+  background: var(--paper-2);
+}
+
+/* ---------- Result ---------- */
+.result {
+  margin-top: 28px;
+  padding: clamp(22px, 4vw, 34px);
+  border-radius: var(--r-lg);
+  background: var(--paper-2);
+  background: var(--warm);
+  box-shadow: inset 0 0 0 1.5px var(--warm-line);
+  color: var(--ink);
+  animation: land 480ms var(--ease-out) both;
+}
+.result h2 {
+  font-size: clamp(2rem, 5.4vw, 2.8rem);
+  font-weight: 760;
+  letter-spacing: -0.04em;
+}
+.result-sub {
+  margin-top: 8px;
+  color: var(--ink-2);
+  max-width: 50ch;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 26px 0;
+  padding-block: 18px;
+  border-block: 1px solid var(--warm-line);
+}
+.stats div { display: grid; gap: 2px; }
+.stats dt {
+  order: 2;
+  font-size: 0.78rem;
+  color: var(--ink-2);
+}
+.stats dd {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.next {
+  color: var(--ink-2);
+  font-size: 0.92rem;
+}
+.next time {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(8px); }
+}
+
+@media (max-width: 520px) {
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .status { font-size: 0.88rem; }
+}
+
+
+/* ---------- Trip progress: five stops on a route line ---------- */
+.trip {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 300px;
+}
+.trip li {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.trip li:last-child { flex: none; }
+.trip li::after {
+  content: '';
+  flex: 1;
+  height: 3px;
+  margin-inline: 3px;
+  border-radius: 2px;
+  background: var(--line);
+}
+.trip li:last-child::after { display: none; }
+.trip li.is-done::after { background: var(--ink-3); }
+.stop {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--paper-2);
+  box-shadow: inset 0 0 0 2px var(--line);
+  overflow: hidden;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--ink-3);
+  transition: transform 260ms var(--ease-out), box-shadow 200ms ease;
+}
+.stop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.trip li.is-current .stop {
+  box-shadow: inset 0 0 0 2.5px var(--signal), 0 0 0 4px color-mix(in oklch, var(--signal) 22%, transparent);
+  transform: scale(1.12);
+}
+.trip li.is-done .stop {
+  box-shadow: 0 0 0 2.5px var(--level);
+}
+
+@media (max-width: 520px) {
+  .trip { max-width: 220px; }
+  .stop { width: 26px; height: 26px; }
+}
+
+/* ---------- Round card, score, verdict and recap (Fact or Fib, Rank the World) ---------- */
+.card {
+  padding: clamp(18px, 3.4vw, 30px);
+  border-radius: var(--r-lg);
+  background: var(--paper-2);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.card-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+}
+.card-head h2 {
+  margin-top: 4px;
+  font-size: clamp(1.8rem, 5.4vw, 2.6rem);
+  font-weight: 760;
+  letter-spacing: -0.04em;
+}
+.score {
+  display: grid;
+  justify-items: end;
+  line-height: 1.1;
+}
+.score span {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.score strong {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 1.7rem;
+}
+.score strong.is-bump { animation: bump 420ms var(--ease-out); }
+@keyframes bump {
+  30% { transform: translateY(-4px) scale(1.15); }
+}
+.after {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 16px;
+  margin-top: 20px;
+  animation: rise 300ms var(--ease-out) both;
+  animation-delay: 220ms;
+}
+.after[hidden] { display: none; }
+.verdict {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 720;
+  letter-spacing: -0.02em;
+}
+.verdict .pts {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  vertical-align: 3px;
+  background: var(--level);
+  color: var(--on-route);
+}
+.recap {
+  margin-top: clamp(32px, 6vw, 56px);
+}
+.recap h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 720;
+  letter-spacing: -0.035em;
+  margin-bottom: 14px;
+}
+.card.is-leaving { animation: card-out 170ms ease-in both; }
+.card.is-entering { animation: card-in 340ms var(--ease-out) both; }
+@keyframes card-out { to { opacity: 0; transform: translateX(-18px); } }
+@keyframes card-in { from { opacity: 0; transform: translateX(26px); } }
+@media (max-width: 520px) {
+  .card { position: relative; }
+  .score { position: absolute; top: 16px; right: 18px; }
+  .score strong { font-size: 1.35rem; }
+  /* Keep the title clear of the score that now sits in the corner. */
+  .card-head { padding-right: 72px; }
+  .card-head h2 { font-size: clamp(1.55rem, 7.4vw, 2.1rem); overflow-wrap: anywhere; }
+}
+
+/* Status line and after-answer row shared by Rank the World and Mystery Passport */
+.rtw-status {
+  min-height: 1.4em;
+  margin-top: 12px;
+  font-weight: 600;
+  color: var(--ink-2);
+  font-size: 0.92rem;
+}
+.after-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 16px;
+  width: 100%;
+}
+.after { flex-direction: column; align-items: stretch; }
+
+@media (max-width: 360px) {
+  .actions { gap: 4px; padding: 6px; }
+  .actions .btn { padding-inline: 12px; font-size: 0.92rem; }
+}
+
+/* ---------- Letter grade on the result card ---------- */
+.grade {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--warm-line);
+}
+.grade-letter {
+  display: grid;
+  place-items: center;
+  width: 84px;
+  height: 84px;
+  flex: none;
+  border-radius: 22px;
+  background: var(--band, var(--paper));
+  color: var(--on-route);
+  font-family: var(--font-display);
+  font-weight: 780;
+  font-size: 2.6rem;
+  letter-spacing: -0.04em;
+  transform: rotate(-4deg);
+  animation: grade-stamp 520ms var(--ease-out) both;
+}
+.grade[data-band='A'] { --band: var(--route-1); }
+.grade[data-band='B'] { --band: var(--route-2); }
+.grade[data-band='C'] { --band: var(--route-3); }
+.grade[data-band='D'],
+.grade[data-band='F'] { --band: var(--route-4); }
+.grade-pct { font-weight: 700; font-size: 1.1rem; }
+.grade-scale {
+  margin-top: 4px;
+  font-size: 0.82rem;
+  color: var(--ink-2);
+}
+@keyframes grade-stamp {
+  0% { opacity: 0; transform: rotate(-4deg) scale(1.5); }
+  60% { opacity: 1; transform: rotate(-4deg) scale(0.95); }
+  100% { opacity: 1; transform: rotate(-4deg) scale(1); }
+}
+
+/* ---------- Test-phase tools ---------- */
+.test-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 48px;
+  padding: 14px 16px;
+  border-radius: var(--r-md);
+  border: 2px dashed var(--line);
+  color: var(--ink-2);
+  font-size: 0.9rem;
+}
+
+/* Cards scroll into view clear of the sticky header. */
+.card, .result { scroll-margin-top: 0; }
+.result-home { border-color: var(--warm-line); }
+
+/* Keep the floating action bar above the phone tab bar. */
+@media (max-width: 640px) {
+  .actions { bottom: calc(72px + env(safe-area-inset-bottom)); }
+}

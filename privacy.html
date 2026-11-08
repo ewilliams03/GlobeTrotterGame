@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#f8f5ee" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#151824" media="(prefers-color-scheme: dark)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Privacy · Globetrotter Games</title>
+    <meta name="description" content="Globetrotter Games collects no personal data. No accounts, analytics, ads or cookies. Your game stats stay in your own browser." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Globetrotter" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script type="module" src="/src/pages.ts"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/" aria-label="Globetrotter Games home">
+          <svg class="brand-mark" width="30" height="30" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 3a15 15 0 0 0-15 15c0 7 6 12 11 16h8c5-4 11-9 11-16A15 15 0 0 0 24 3z" fill="var(--signal)"/><path d="M24 3c-5 4-7 9-7 15s3 12 5 16M24 3c5 4 7 9 7 15s-3 12-5 16M10 15h28" fill="none" stroke="var(--paper)" stroke-width="2"/><path d="M20 34l1 6M28 34l-1 6" stroke="currentColor" stroke-width="1.8"/><rect x="19" y="39" width="10" height="7" rx="2" fill="currentColor"/></svg>
+          <span class="brand-word">Globetrotter <span>Games</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="/">Games</a>
+          <a href="/about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <article class="prose">
+        <p class="eyebrow">Last updated 7 November 2026</p>
+        <h1>Privacy</h1>
+        <p class="lede">Short version: we don't collect any personal data ourselves. There is nothing to sign up for and nothing tracking you. The only personal data involved is the basic technical information any website host receives, explained below.</p>
+
+        <h2>What we don't do</h2>
+        <ul>
+          <li>No accounts, logins, email addresses or forms.</li>
+          <li>No analytics, tracking pixels, fingerprinting or advertising.</li>
+          <li>No cookies of any kind, so there's no cookie banner.</li>
+          <li>No third-party scripts, fonts or embeds. Every file the site uses is served from this site.</li>
+        </ul>
+
+        <h2>What stays on your device</h2>
+        <p>To remember today's progress, your streaks and the "Flags only" setting, the games save a small amount of data in your browser's local storage. The globe animation between pages also keeps its position in session storage, which your browser clears when you close the tab. None of this leaves your device and we can't see it. It is strictly necessary for the games to work, so no consent banner is needed. You can delete it at any time:</p>
+        <p><button type="button" class="btn" id="clear-data">Clear my game data</button> <span id="clear-msg" class="clear-msg" role="status"></span></p>
+        <p>Clearing your browser's site data does the same thing.</p>
+
+        <h2>Sharing results</h2>
+        <p>The "Share result" button only runs when you press it. It copies a short text summary (coloured dots and a link) to your clipboard or opens your device's share menu. Where it goes next is up to you.</p>
+
+        <h2>Hosting</h2>
+        <p>Like every website, this one is served by a hosting provider, Vercel Inc., based in the United States. When your browser requests a page, Vercel's servers necessarily receive standard technical information such as your IP address, browser type and the page requested, and keep short-lived logs to deliver the site and keep it secure. Vercel processes this on our behalf; we don't use it to identify, track or profile visitors, and we don't turn on any analytics. Because Vercel is in the US, this information may be processed outside your country; Vercel relies on recognised safeguards for international transfers, such as the EU Standard Contractual Clauses. See <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Vercel's privacy policy</a> for details.</p>
+
+        <h2>Who runs this site</h2>
+        <p>Globetrotter Games is run by Ethan Williams. For any privacy question or request, email <a href="mailto:ewill154@vols.utk.edu">ewill154@vols.utk.edu</a>.</p>
+
+        <h2>Legal basis and your rights</h2>
+        <p>The hosting logs described above are processed on the basis of legitimate interests: delivering the website and keeping it secure. Depending on where you live (for example under the GDPR or UK GDPR), you may have the right to access, correct or erase personal data about you, to object to or restrict its processing, and to complain to your local data protection authority. Because we hold no personal data ourselves, most requests can be answered quickly; contact us at the address above.</p>
+
+        <h2>Links to other sites</h2>
+        <p>Each fun fact links to its source, usually Wikipedia. Those sites have their own privacy policies.</p>
+
+        <h2>Children</h2>
+        <p>The games are suitable for all ages. Because we collect no personal information from anyone, we collect none from children.</p>
+
+        <h2>Changes</h2>
+        <p>If this ever changes, for example if we add an optional feature that needs data, we will update this page first and ask for your consent where the law requires it.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© <span data-year>2026</span> Globetrotter Games</p>
+        <nav aria-label="Legal">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

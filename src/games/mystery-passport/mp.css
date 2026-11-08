@@ -1,0 +1,293 @@
+/* Clue type → colour */
+[data-type='nature'] { --stamp: var(--route-1); }
+[data-type='food'] { --stamp: var(--signal); }
+[data-type='phrase'] { --stamp: var(--route-2); }
+[data-type='currency'] { --stamp: oklch(66% 0.15 75); }
+[data-type='landmark'] { --stamp: var(--route-4); }
+[data-type='neighbour'] { --stamp: var(--ink-2); }
+
+/* The passport page: a faint printed security pattern */
+.passport {
+  background-color: var(--paper-2);
+  background-image:
+    radial-gradient(circle at 1px 1px, color-mix(in oklch, var(--ink) 7%, transparent) 1px, transparent 1.5px),
+    repeating-linear-gradient(135deg, transparent 0 22px, color-mix(in oklch, var(--route-2) 6%, transparent) 22px 23px);
+  background-size: 14px 14px, auto;
+}
+.mp-head { grid-template-columns: minmax(0, 1fr) auto; }
+.mp-head h2 { letter-spacing: -0.045em; }
+
+.mp-hint {
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: var(--r-md);
+  background: color-mix(in oklch, var(--route-3) 22%, var(--paper));
+  box-shadow: inset 0 0 0 1.5px color-mix(in oklch, var(--route-3) 60%, transparent);
+  font-weight: 600;
+  animation: land 360ms var(--ease-out) both;
+}
+.mp-hint[hidden] { display: none; }
+
+/* ---------- Stamps ---------- */
+.stamps {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.stamp-slot {
+  appearance: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 128px;
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  padding: 14px 14px 12px;
+  border: 0;
+  border-radius: 14px;
+  background: color-mix(in oklch, var(--paper) 70%, transparent);
+  box-shadow: inset 0 0 0 1.5px var(--line);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 160ms var(--ease-out), box-shadow 160ms ease;
+}
+.stamp-slot:active:not(:disabled) { transform: scale(0.97); }
+.stamp-slot.is-locked {
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  border: 2px dashed color-mix(in oklch, var(--stamp) 55%, var(--line));
+  box-shadow: none;
+}
+.stamp-icon { font-size: 1.6rem; line-height: 1; }
+.stamp-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.stamp-cost {
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--stamp);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+[data-type='currency'] .stamp-cost,
+[data-type='nature'] .stamp-cost { color: var(--on-route); }
+@media (hover: hover) and (pointer: fine) {
+  .stamp-slot.is-locked:hover:not(:disabled) { border-style: solid; }
+}
+.stamp-slot:disabled { cursor: default; }
+.stamp-slot.is-locked:disabled { opacity: 0.45; }
+
+/* An opened stamp: inked frame, slight tilt, its own colour */
+.stamp-slot.is-open {
+  cursor: default;
+  background: color-mix(in oklch, var(--stamp) 9%, var(--paper));
+  box-shadow: inset 0 0 0 2.5px var(--stamp), inset 0 0 0 5px var(--paper), inset 0 0 0 6.5px color-mix(in oklch, var(--stamp) 45%, transparent);
+  transform: rotate(var(--tilt, -1.2deg));
+}
+.stamp-slot.is-open .stamp-label { color: color-mix(in oklch, var(--stamp) 55%, var(--ink)); }
+.stamp-slot.is-open.is-new { animation: ink 460ms var(--ease-out) both; }
+.stamp-text {
+  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.35;
+}
+.stamp-src {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink-3);
+  text-underline-offset: 2px;
+  justify-self: start;
+}
+.stamps li:nth-child(2) .stamp-slot { --tilt: 1.4deg; }
+.stamps li:nth-child(3) .stamp-slot { --tilt: -0.6deg; }
+.stamps li:nth-child(4) .stamp-slot { --tilt: 1deg; }
+.stamps li:nth-child(5) .stamp-slot { --tilt: -1.6deg; }
+.stamps li:nth-child(6) .stamp-slot { --tilt: 0.7deg; }
+@keyframes ink {
+  0% { opacity: 0; transform: rotate(var(--tilt, -1deg)) scale(1.35); }
+  55% { opacity: 1; transform: rotate(var(--tilt, -1deg)) scale(0.96); }
+  100% { transform: rotate(var(--tilt, -1deg)) scale(1); }
+}
+
+/* ---------- Guessing ---------- */
+.guess {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.guess[hidden] { display: none; }
+.combo {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+.combo input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1.5px var(--line), var(--shadow-1);
+  color: var(--ink);
+  font: 600 1.05rem var(--font-body);
+  transition: box-shadow 150ms ease;
+}
+.combo input::placeholder { color: var(--ink-3); font-weight: 500; }
+.combo input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--ink), var(--shadow-1); }
+.combo-list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(100% + 8px);
+  z-index: 6;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  border-radius: var(--r-md);
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1px var(--line), var(--shadow-2);
+  transform-origin: bottom center;
+  animation: pop 160ms var(--ease-out);
+}
+.combo-list[hidden] { display: none; }
+.combo-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.combo-list li[aria-selected='true'] { background: var(--paper-3); }
+.combo-list li small { color: var(--ink-3); font-weight: 500; }
+@keyframes pop {
+  from { opacity: 0; transform: translateY(4px) scale(0.98); }
+}
+
+.misses {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.misses li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: color-mix(in oklch, var(--route-4) 14%, var(--paper));
+  box-shadow: inset 0 0 0 1.5px color-mix(in oklch, var(--route-4) 50%, transparent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  text-decoration-color: var(--route-4);
+  animation: land 300ms var(--ease-out) both;
+}
+.guess.is-wrong .combo { animation: shake 360ms var(--ease-out); }
+@keyframes shake {
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(2px); }
+}
+
+/* ---------- Reveal ---------- */
+.reveal {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+  border-radius: var(--r-md);
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1px var(--line);
+  overflow: hidden;
+}
+.reveal img {
+  width: 96px;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px oklch(23% 0.035 265 / 0.12), 0 8px 18px -10px oklch(23% 0.035 265 / 0.5);
+}
+.reveal h3 {
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  font-weight: 760;
+  letter-spacing: -0.04em;
+}
+.reveal p { color: var(--ink-2); }
+.visa {
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  padding: 4px 10px;
+  border: 3px double currentColor;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-1);
+  transform: rotate(-9deg);
+  animation: visa 520ms var(--ease-out) 120ms both;
+}
+.visa.is-denied { color: var(--text-4); }
+@keyframes visa {
+  0% { opacity: 0; transform: rotate(-9deg) scale(1.8); }
+  60% { opacity: 1; transform: rotate(-9deg) scale(0.94); }
+  100% { opacity: 1; transform: rotate(-9deg) scale(1); }
+}
+.after-row { margin-top: 14px; }
+
+/* ---------- Recap ---------- */
+.recap-passports {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.recap-pass {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border-radius: var(--r-md);
+  background: var(--paper-2);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.recap-pass img { width: 64px; aspect-ratio: 4 / 3; height: auto; border-radius: 6px; }
+.recap-pass h3 { font-size: 1.25rem; letter-spacing: -0.03em; }
+.recap-pass p { color: var(--ink-2); font-size: 0.92rem; }
+.recap-pass strong { font-family: var(--font-mono); }
+
+@media (max-width: 620px) {
+  .stamps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stamp-slot { min-height: 112px; padding: 12px; }
+  .stamp-text { font-size: 0.92rem; }
+}
+@media (max-width: 420px) {
+  .guess { flex-direction: column; }
+  .reveal { grid-template-columns: 1fr; }
+  .reveal img { width: 80px; }
+}

@@ -1,0 +1,296 @@
+.tickets {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tickets-label {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.ticket-row {
+  display: inline-flex;
+  gap: 6px;
+}
+.ticket {
+  width: 26px;
+  height: 16px;
+  color: var(--signal);
+  transition: opacity 300ms ease, transform 300ms var(--ease-out);
+}
+.ticket.is-used {
+  opacity: 0.18;
+  transform: translateY(3px) rotate(-8deg);
+}
+
+.hints {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.hints:not(:empty) { margin-bottom: var(--tile-gap); }
+.hints li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  border-radius: var(--r-md);
+  background: color-mix(in oklch, var(--level) 16%, var(--paper));
+  box-shadow: inset 0 0 0 1.5px color-mix(in oklch, var(--level) 55%, transparent);
+  font-size: 0.95rem;
+  animation: land 360ms var(--ease-out) both;
+  transition: opacity 300ms ease;
+}
+.hints li i {
+  width: 10px;
+  height: 10px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--level);
+}
+.hints li strong { font-weight: 700; }
+.hints li.is-solved { opacity: 0.5; }
+.hints li.is-solved strong { text-decoration: line-through; text-decoration-thickness: 2px; }
+
+/* Solved rows */
+.solved {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--tile-gap);
+}
+.solved:not(:empty) { margin-bottom: var(--tile-gap); }
+
+.group {
+  position: relative;
+  display: grid;
+  gap: 6px;
+  padding: 16px 18px 16px;
+  border-radius: var(--r-md);
+  background: var(--level);
+  color: var(--on-route);
+  animation: land 420ms var(--ease-out) both;
+  overflow: hidden;
+}
+.group-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+.group-label {
+  font-family: var(--font-display);
+  font-weight: 720;
+  font-size: clamp(1.08rem, 2.6vw, 1.32rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.group-level {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.group-countries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-weight: 600;
+}
+.group-countries span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.group-countries img {
+  width: 20px;
+  height: 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px oklch(20% 0.03 265 / 0.15);
+}
+.group-fact {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  max-width: 62ch;
+  opacity: 0.88;
+}
+.group-fact a {
+  font-weight: 600;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+.group.is-revealed {
+  background: var(--paper-2);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 2px var(--level);
+}
+
+/* Tiles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--tile-gap);
+}
+.tile {
+  appearance: none;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: center;
+  justify-items: center;
+  gap: 10px;
+  min-height: clamp(104px, 22vw, 132px);
+  padding: 14px 6px 12px;
+  border: 0;
+  border-radius: var(--r-md);
+  background: var(--paper-2);
+  box-shadow: inset 0 0 0 1px var(--line);
+  color: var(--ink);
+  font: 600 clamp(0.8rem, 2.2vw, 0.95rem) / 1.15 var(--font-body);
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  transition: transform 160ms var(--ease-out), background-color 160ms ease, color 160ms ease, box-shadow 160ms ease;
+}
+.tile img {
+  width: clamp(44px, 10vw, 64px);
+  aspect-ratio: 4 / 3;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px oklch(23% 0.035 265 / 0.12), 0 2px 6px -2px oklch(23% 0.035 265 / 0.25);
+  pointer-events: none;
+  transition: transform 200ms var(--ease-out);
+}
+.tile-name {
+  overflow-wrap: break-word;
+  hyphens: manual;
+  padding-inline: 2px;
+  max-width: 100%;
+}
+/* Long single words (Kazakhstan, Liechtenstein) shrink instead of breaking mid-word. */
+.tile-name.is-long {
+  font-size: 0.86em;
+  letter-spacing: -0.015em;
+}
+@media (max-width: 420px) {
+  .tile { padding-inline: 3px; }
+  .tile-name.is-long { font-size: 0.78em; letter-spacing: -0.025em; }
+  .tile-name.is-xlong { font-size: 0.7em; }
+}
+.tile:active { transform: scale(0.96); }
+.tile[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: none;
+}
+.tile[aria-pressed='true'] img { transform: translateY(-2px) scale(1.04); }
+.tile[aria-pressed='true']:active { transform: scale(0.96); }
+.tile:disabled { cursor: default; }
+@media (hover: hover) and (pointer: fine) {
+  .tile:hover:not(:disabled):not([aria-pressed='true']) {
+    box-shadow: inset 0 0 0 1.5px var(--ink-3);
+  }
+}
+
+.board.is-hard .tile-name { visibility: hidden; }
+.board.is-hard .tile img { width: clamp(56px, 13vw, 84px); }
+.board.is-hard .tile { gap: 0; grid-template-rows: auto 0; }
+
+.tile.is-wrong { animation: shake 360ms var(--ease-out); }
+@keyframes shake {
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(2px); }
+}
+.tile.is-hop { animation: hop 320ms var(--ease-out) both; }
+@keyframes hop {
+  40% { transform: translateY(-7px); }
+}
+
+/* ---------- Atlas ---------- */
+.atlas {
+  margin-top: clamp(40px, 7vw, 72px);
+}
+.atlas-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 16px;
+  margin-bottom: 14px;
+}
+.atlas-head h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 720;
+  letter-spacing: -0.035em;
+}
+.atlas-head p { color: var(--ink-3); font-size: 0.95rem; }
+.atlas-frame {
+  border-radius: var(--r-lg);
+  background: var(--ocean);
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+#map { width: 100%; height: auto; }
+.map-land { fill: var(--land); stroke: var(--land-edge); stroke-width: 0.5; }
+.map-grat { fill: none; stroke: var(--ink); stroke-opacity: 0.06; stroke-width: 0.6; }
+.map-link {
+  fill: none;
+  stroke: var(--level);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.map-link-glow {
+  fill: none;
+  stroke: var(--level);
+  stroke-width: 10;
+  stroke-opacity: 0.22;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.map-stop {
+  fill: var(--level);
+  stroke: var(--paper);
+  stroke-width: 2.5;
+  animation: land 360ms var(--ease-out) both;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.legend {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  color: var(--ink-2);
+  font-size: 0.9rem;
+}
+.legend li { display: inline-flex; align-items: center; gap: 8px; }
+.legend i {
+  width: 18px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--level);
+}
+.legend li.is-empty { color: var(--ink-3); }
+
+
+/* Narrow phones: let the ticket bar wrap instead of overflowing, and keep tile names readable. */
+.board-bar { flex-wrap: wrap; row-gap: 8px; }
+@media (max-width: 360px) {
+  .tickets-label { display: none; }
+  .tile { font-size: 0.8rem; }
+}

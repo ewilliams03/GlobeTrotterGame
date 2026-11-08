@@ -1,0 +1,3122 @@
+[
+  {
+    "groups": [
+      {
+        "category": "bird-flag",
+        "difficulty": 1,
+        "countries": [
+          "dm",
+          "pg",
+          "al",
+          "md"
+        ],
+        "fact": "Dominica's flag shows a purple Sisserou parrot surrounded by ten green stars.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Dominica"
+      },
+      {
+        "category": "equator",
+        "difficulty": 2,
+        "countries": [
+          "id",
+          "cg",
+          "ga",
+          "mv"
+        ],
+        "fact": "Indonesia is crossed by the equator on several islands, including Sumatra, Borneo and Sulawesi.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+      },
+      {
+        "category": "weapon-flag",
+        "difficulty": 3,
+        "countries": [
+          "sz",
+          "ir",
+          "lk",
+          "om"
+        ],
+        "fact": "Eswatini's flag shows a black and white Nguni shield covering two spears and a staff.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Eswatini"
+      },
+      {
+        "category": "named-after-person",
+        "difficulty": 4,
+        "countries": [
+          "mu",
+          "ph",
+          "lc",
+          "sm"
+        ],
+        "fact": "Mauritius was named in 1598 after Maurice of Nassau, Prince of Orange.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "red-white-flag",
+        "difficulty": 1,
+        "countries": [
+          "ch",
+          "mc",
+          "pl",
+          "pe"
+        ],
+        "fact": "Switzerland's flag is square, instead of the rectangular shape typical for national flags.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Switzerland"
+      },
+      {
+        "category": "sun-flag",
+        "difficulty": 2,
+        "countries": [
+          "kz",
+          "ar",
+          "mk",
+          "kg"
+        ],
+        "fact": "Kazakhstan's flag shows a golden sun with 32 rays above a soaring steppe eagle.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan"
+      },
+      {
+        "category": "river-name",
+        "difficulty": 3,
+        "countries": [
+          "gm",
+          "ng",
+          "cd",
+          "py"
+        ],
+        "fact": "The Gambia is named after the Gambia River, and its territory lies on both sides of the river's lower reaches.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/The_Gambia"
+      },
+      {
+        "category": "drive-left",
+        "difficulty": 4,
+        "countries": [
+          "tl",
+          "vc",
+          "gd",
+          "nz"
+        ],
+        "fact": "Timor-Leste switched to driving on the right with Portugal in 1928, then switched back to the left in 1976.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "cur-franc",
+        "difficulty": 1,
+        "countries": [
+          "dj",
+          "gn",
+          "li",
+          "gq"
+        ],
+        "fact": "The Djiboutian franc is pegged to the US dollar, at about 178 francs to the dollar.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Djiboutian_franc"
+      },
+      {
+        "category": "bird-flag",
+        "difficulty": 2,
+        "countries": [
+          "ec",
+          "bo",
+          "rs",
+          "ug"
+        ],
+        "fact": "The condor on top of the coat of arms on Ecuador's flag spreads its wings to stand for power, greatness and strength.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Ecuador"
+      },
+      {
+        "category": "crescent-flag",
+        "difficulty": 3,
+        "countries": [
+          "sg",
+          "dz",
+          "tn",
+          "ly"
+        ],
+        "fact": "The five stars on Singapore's flag stand for democracy, peace, progress, justice and equality.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Singapore"
+      },
+      {
+        "category": "tropic-capricorn",
+        "difficulty": 4,
+        "countries": [
+          "cl",
+          "br",
+          "za",
+          "bw"
+        ],
+        "fact": "In Chile, a monument just north of the city of Antofagasta marks the Tropic of Capricorn.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "sun-flag",
+        "difficulty": 1,
+        "countries": [
+          "rw",
+          "ki",
+          "mw",
+          "uy"
+        ],
+        "fact": "Rwanda's current flag, with a golden sun in its upper corner, was adopted at the end of 2001.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Rwanda"
+      },
+      {
+        "category": "winter-olympics",
+        "difficulty": 2,
+        "countries": [
+          "ru",
+          "no",
+          "it",
+          "fr"
+        ],
+        "fact": "The 2014 Winter Olympics were centred on an Olympic Park in Sochi, on Russia's Black Sea coast.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2014_Winter_Olympics"
+      },
+      {
+        "category": "capital-not-largest",
+        "difficulty": 3,
+        "countries": [
+          "br",
+          "pk",
+          "tt",
+          "pw"
+        ],
+        "fact": "Brasília was founded on 21 April 1960 to replace Rio de Janeiro as Brazil's capital.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bras%C3%ADlia"
+      },
+      {
+        "category": "tropic-cancer",
+        "difficulty": 4,
+        "countries": [
+          "sa",
+          "mr",
+          "mx",
+          "ml"
+        ],
+        "fact": "In Saudi Arabia, the Tropic of Cancer crosses four provinces, including Mecca and Riyadh.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "former-ussr",
+        "difficulty": 1,
+        "countries": [
+          "lt",
+          "ee",
+          "az",
+          "by"
+        ],
+        "fact": "On 11 March 1990, Lithuania became the first Soviet republic to break away, proclaiming the restoration of its independence.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lithuania"
+      },
+      {
+        "category": "new7wonders",
+        "difficulty": 2,
+        "countries": [
+          "jo",
+          "in",
+          "pe",
+          "cn"
+        ],
+        "fact": "The New 7 Wonders were chosen in a public vote, and the winners were announced in Lisbon on 7 July 2007.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_7_Wonders_of_the_World"
+      },
+      {
+        "category": "equator",
+        "difficulty": 3,
+        "countries": [
+          "ec",
+          "co",
+          "ke",
+          "so"
+        ],
+        "fact": "As well as mainland Ecuador, the equator crosses Isabela Island in the Galápagos.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+      },
+      {
+        "category": "one-neighbour",
+        "difficulty": 4,
+        "countries": [
+          "bn",
+          "ls",
+          "pt",
+          "ie"
+        ],
+        "fact": "Brunei is split into two separate parts, a result of land annexed by neighbouring Sarawak.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Brunei"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "landlocked",
+        "difficulty": 1,
+        "countries": [
+          "np",
+          "hu",
+          "td",
+          "la"
+        ],
+        "fact": "Nepal is home to eight of the world's ten highest mountains, including Mount Everest.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nepal"
+      },
+      {
+        "category": "weapon-flag",
+        "difficulty": 2,
+        "countries": [
+          "sa",
+          "gt",
+          "ao",
+          "mz"
+        ],
+        "fact": "Saudi Arabia's flag shows the Shahada, the Islamic declaration of faith, above a horizontal sword.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia"
+      },
+      {
+        "category": "multiple-capitals",
+        "difficulty": 3,
+        "countries": [
+          "bj",
+          "my",
+          "nl",
+          "ci"
+        ],
+        "fact": "Porto-Novo is Benin's official capital, while Cotonou is its economic and administrative hub.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porto-Novo"
+      },
+      {
+        "category": "no-land-border",
+        "difficulty": 4,
+        "countries": [
+          "nr",
+          "km",
+          "ws",
+          "ag"
+        ],
+        "fact": "With an area of about 21 km², Nauru is the third-smallest country in the world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nauru"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "hosted-world-cup",
+        "difficulty": 1,
+        "countries": [
+          "jp",
+          "kr",
+          "de",
+          "qa"
+        ],
+        "fact": "The 2002 World Cup, held in South Korea and Japan, was the first to have more than one host.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_World_Cup_hosts"
+      },
+      {
+        "category": "name-kingdom",
+        "difficulty": 2,
+        "countries": [
+          "jo",
+          "th",
+          "to",
+          "be"
+        ],
+        "fact": "Jordan's full official name is the Hashemite Kingdom of Jordan.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_sovereign_states"
+      },
+      {
+        "category": "named-after-person",
+        "difficulty": 3,
+        "countries": [
+          "sb",
+          "st",
+          "vc",
+          "sc"
+        ],
+        "fact": "The Solomon Islands were named after the Biblical King Solomon by the Spanish explorer Álvaro de Mendaña.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "romance-name",
+        "difficulty": 4,
+        "countries": [
+          "hn",
+          "ve",
+          "cr",
+          "me"
+        ],
+        "fact": "Christopher Columbus named Honduras, Spanish for \"depths\", after the deep waters off its northern coast.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "stan",
+        "difficulty": 1,
+        "countries": [
+          "tm",
+          "tj",
+          "uz",
+          "af"
+        ],
+        "fact": "Turkmenistan's Darvaza gas crater, nicknamed the \"Door to Hell\", is a burning natural gas field that collapsed into a cavern.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Darvaza_gas_crater"
+      },
+      {
+        "category": "unsc-p5",
+        "difficulty": 2,
+        "countries": [
+          "gb",
+          "us",
+          "fr",
+          "cn"
+        ],
+        "fact": "The five permanent members were the great powers among the Allies of World War II, or their recognised successor states.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/United_Nations_Security_Council"
+      },
+      {
+        "category": "red-white-flag",
+        "difficulty": 3,
+        "countries": [
+          "bh",
+          "at",
+          "dk",
+          "tr"
+        ],
+        "fact": "Bahrain's flag separates its white band from the red with five white triangles in a zigzag.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Bahrain"
+      },
+      {
+        "category": "river-name",
+        "difficulty": 4,
+        "countries": [
+          "sn",
+          "uy",
+          "in",
+          "zm"
+        ],
+        "fact": "Senegal is named after the Senegal River.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "microstate",
+        "difficulty": 1,
+        "countries": [
+          "li",
+          "va",
+          "ad",
+          "mt"
+        ],
+        "fact": "Liechtenstein is one of the few countries in the world with no airport.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Liechtenstein"
+      },
+      {
+        "category": "crescent-flag",
+        "difficulty": 2,
+        "countries": [
+          "tm",
+          "mn",
+          "dz",
+          "ly"
+        ],
+        "fact": "Turkmenistan's flag has a vertical stripe showing five traditional carpet designs, called guls.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan"
+      },
+      {
+        "category": "french-official",
+        "difficulty": 3,
+        "countries": [
+          "vu",
+          "lu",
+          "ht",
+          "tg"
+        ],
+        "fact": "Vanuatu has three official languages: Bislama, English and French.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vanuatu"
+      },
+      {
+        "category": "sadc",
+        "difficulty": 4,
+        "countries": [
+          "bw",
+          "mu",
+          "zw",
+          "tz"
+        ],
+        "fact": "The Southern African Development Community is headquartered in Gaborone, Botswana.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Southern_African_Development_Community"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "borders-russia",
+        "difficulty": 1,
+        "countries": [
+          "fi",
+          "mn",
+          "lv",
+          "no"
+        ],
+        "fact": "Finland's border with Russia is about 1,340 km long.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Finland%E2%80%93Russia_border"
+      },
+      {
+        "category": "caricom",
+        "difficulty": 2,
+        "countries": [
+          "kn",
+          "sr",
+          "bb",
+          "bz"
+        ],
+        "fact": "CARICOM was set up by the Treaty of Chaguaramas, which took effect on 1 August 1973.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Caribbean_Community"
+      },
+      {
+        "category": "pif",
+        "difficulty": 3,
+        "countries": [
+          "nz",
+          "au",
+          "fm",
+          "tv"
+        ],
+        "fact": "Australia and New Zealand are the Pacific Islands Forum's two largest economies.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pacific_Islands_Forum"
+      },
+      {
+        "category": "name-democratic",
+        "difficulty": 4,
+        "countries": [
+          "st",
+          "et",
+          "lk",
+          "la"
+        ],
+        "fact": "São Tomé and Príncipe's official name is the Democratic Republic of São Tomé and Príncipe.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_sovereign_states"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "eu",
+        "difficulty": 1,
+        "countries": [
+          "cy",
+          "hr",
+          "se",
+          "gr"
+        ],
+        "fact": "The six founding members of what became the EU were Belgium, France, Italy, Luxembourg, the Netherlands and West Germany.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/European_Union"
+      },
+      {
+        "category": "borders-china",
+        "difficulty": 2,
+        "countries": [
+          "mn",
+          "ru",
+          "bt",
+          "kp"
+        ],
+        "fact": "China's border with Mongolia is about 4,677 km long, its longest with any country.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "cur-dinar",
+        "difficulty": 3,
+        "countries": [
+          "kw",
+          "bh",
+          "iq",
+          "tn"
+        ],
+        "fact": "As of 2026, the Kuwaiti dinar is worth more per unit than any other currency, ahead of the Bahraini dinar.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kuwaiti_dinar"
+      },
+      {
+        "category": "niger-river",
+        "difficulty": 4,
+        "countries": [
+          "ng",
+          "ne",
+          "ml",
+          "bj"
+        ],
+        "fact": "The Niger is about 4,180 km long and is the third-longest river in Africa, after the Nile and the Congo.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Niger_River"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "euro",
+        "difficulty": 1,
+        "countries": [
+          "va",
+          "es",
+          "sm",
+          "bg"
+        ],
+        "fact": "Vatican City issues its own euro coins, which are minted in Rome by Italy's state mint.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vatican_euro_coins"
+      },
+      {
+        "category": "baltic",
+        "difficulty": 2,
+        "countries": [
+          "se",
+          "dk",
+          "ru",
+          "pl"
+        ],
+        "fact": "The Baltic Sea joins the North Sea through the Danish straits.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltic_Sea"
+      },
+      {
+        "category": "asean",
+        "difficulty": 3,
+        "countries": [
+          "id",
+          "kh",
+          "mm",
+          "tl"
+        ],
+        "fact": "The ASEAN Secretariat is based in Jakarta, Indonesia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/ASEAN"
+      },
+      {
+        "category": "name-united",
+        "difficulty": 4,
+        "countries": [
+          "ae",
+          "tz",
+          "gb",
+          "mx"
+        ],
+        "fact": "The United Arab Emirates is made up of seven emirates, with Abu Dhabi as its national capital.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/United_Arab_Emirates"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "andes",
+        "difficulty": 1,
+        "countries": [
+          "cl",
+          "co",
+          "ar",
+          "ve"
+        ],
+        "fact": "Ojos del Salado, on the border between Chile and Argentina, is the highest volcano on Earth.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ojos_del_Salado"
+      },
+      {
+        "category": "borders-dr-congo",
+        "difficulty": 2,
+        "countries": [
+          "ao",
+          "rw",
+          "cg",
+          "cf"
+        ],
+        "fact": "DR Congo borders Angola twice, including about 225 km along Angola's separate Cabinda Province.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "capital-not-largest",
+        "difficulty": 3,
+        "countries": [
+          "tr",
+          "pk",
+          "ca",
+          "ma"
+        ],
+        "fact": "Ankara became the capital of Türkiye in 1923, while Istanbul remains its largest city.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ankara"
+      },
+      {
+        "category": "cur-pound",
+        "difficulty": 4,
+        "countries": [
+          "eg",
+          "sd",
+          "lb",
+          "sy"
+        ],
+        "fact": "The Egyptian Arabic word for the pound comes from the English word \"guinea\".",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Egyptian_pound"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "mediterranean",
+        "difficulty": 1,
+        "countries": [
+          "lb",
+          "mc",
+          "ba",
+          "hr"
+        ],
+        "fact": "At its narrowest, the Strait of Gibraltar, which links the Mediterranean to the Atlantic, is about 14 km wide.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Strait_of_Gibraltar"
+      },
+      {
+        "category": "borders-austria",
+        "difficulty": 2,
+        "countries": [
+          "li",
+          "cz",
+          "ch",
+          "sk"
+        ],
+        "fact": "Austria's border with Liechtenstein is only about 34 km long.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "drive-left",
+        "difficulty": 3,
+        "countries": [
+          "ws",
+          "na",
+          "gy",
+          "bs"
+        ],
+        "fact": "Samoa switched from driving on the right to driving on the left in 2009.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+      },
+      {
+        "category": "cur-rial",
+        "difficulty": 4,
+        "countries": [
+          "sa",
+          "ye",
+          "om",
+          "ir"
+        ],
+        "fact": "The riyal has been Saudi Arabia's currency since the country came into being, and was used in Hejaz before that.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Saudi_riyal"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "cur-crown",
+        "difficulty": 1,
+        "countries": [
+          "se",
+          "is",
+          "dk",
+          "cz"
+        ],
+        "fact": "The Swedish krona is the ninth-most traded currency in the world by value.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Swedish_krona"
+      },
+      {
+        "category": "tropic-cancer",
+        "difficulty": 2,
+        "countries": [
+          "mm",
+          "mr",
+          "bd",
+          "ae"
+        ],
+        "fact": "In Myanmar, the Tropic of Cancer crosses Chin State, Sagaing, Mandalay and Shan State.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
+      },
+      {
+        "category": "native-name",
+        "difficulty": 3,
+        "countries": [
+          "jp",
+          "ge",
+          "am",
+          "kr"
+        ],
+        "fact": "In Japanese, Japan is called Nippon or Nihon, which means \"origin of the sun\".",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Names_of_Japan"
+      },
+      {
+        "category": "tropic-capricorn",
+        "difficulty": 4,
+        "countries": [
+          "py",
+          "mg",
+          "za",
+          "au"
+        ],
+        "fact": "In Paraguay, the Tropic of Capricorn crosses five departments, from Boquerón in the west to Amambay in the east.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "alps",
+        "difficulty": 1,
+        "countries": [
+          "si",
+          "de",
+          "it",
+          "at"
+        ],
+        "fact": "Triglav, Slovenia's highest mountain, is in the Julian Alps and appears on the country's coat of arms.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Triglav"
+      },
+      {
+        "category": "ends-land",
+        "difficulty": 2,
+        "countries": [
+          "nz",
+          "is",
+          "ie",
+          "fi"
+        ],
+        "fact": "New Zealand is named after the Dutch province of Zeeland.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "bird-flag",
+        "difficulty": 3,
+        "countries": [
+          "ki",
+          "fj",
+          "pg",
+          "md"
+        ],
+        "fact": "Kiribati's flag shows a frigatebird flying over a rising sun and the waves of the Pacific.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Kiribati"
+      },
+      {
+        "category": "cur-franc",
+        "difficulty": 4,
+        "countries": [
+          "bf",
+          "cm",
+          "gw",
+          "bi"
+        ],
+        "fact": "The name franc may come from the Latin inscription francorum rex, \"King of the Franks\", used on early French coins.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Franc"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "cur-peso",
+        "difficulty": 1,
+        "countries": [
+          "ph",
+          "cl",
+          "cu",
+          "do"
+        ],
+        "fact": "The Philippine peso uses the ₱ sign, which was introduced during American rule in place of the original \"$\".",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Philippine_peso"
+      },
+      {
+        "category": "borders-italy",
+        "difficulty": 2,
+        "countries": [
+          "ch",
+          "fr",
+          "si",
+          "va"
+        ],
+        "fact": "The Matterhorn, one of the highest peaks in the Alps, stands on the border between Switzerland and Italy.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Matterhorn"
+      },
+      {
+        "category": "black-sea",
+        "difficulty": 3,
+        "countries": [
+          "ro",
+          "ua",
+          "ge",
+          "bg"
+        ],
+        "fact": "The Danube Delta, where the river meets the Black Sea, lies in Romania and Ukraine.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Danube_Delta"
+      },
+      {
+        "category": "weapon-flag",
+        "difficulty": 4,
+        "countries": [
+          "om",
+          "sz",
+          "bo",
+          "mz"
+        ],
+        "fact": "Oman's flag carries the national emblem: two crossed swords over a khanjar, a traditional curved dagger.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Oman"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "hosted-olympics",
+        "difficulty": 1,
+        "countries": [
+          "br",
+          "nl",
+          "be",
+          "es"
+        ],
+        "fact": "Rio de Janeiro's 2016 Games were the first Summer Olympics held in South America.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2016_Summer_Olympics"
+      },
+      {
+        "category": "cur-rupee",
+        "difficulty": 2,
+        "countries": [
+          "in",
+          "pk",
+          "sc",
+          "np"
+        ],
+        "fact": "The Indian rupee uses the ₹ sign and is divided into 100 paise.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Indian_rupee"
+      },
+      {
+        "category": "arabic-official",
+        "difficulty": 3,
+        "countries": [
+          "dj",
+          "kw",
+          "sy",
+          "ma"
+        ],
+        "fact": "Djibouti has two official languages, Arabic and French.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Djibouti"
+      },
+      {
+        "category": "borders-poland",
+        "difficulty": 4,
+        "countries": [
+          "by",
+          "lt",
+          "ua",
+          "sk"
+        ],
+        "fact": "The Białowieża Forest, which straddles the Poland–Belarus border, is home to more than 800 European bison.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bia%C5%82owie%C5%BCa_Forest"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "world-cup-winner",
+        "difficulty": 1,
+        "countries": [
+          "ar",
+          "de",
+          "es",
+          "it"
+        ],
+        "fact": "Argentina won its third World Cup in 2022, beating France in the final in Qatar.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final"
+      },
+      {
+        "category": "portuguese",
+        "difficulty": 2,
+        "countries": [
+          "cv",
+          "gw",
+          "gq",
+          "pt"
+        ],
+        "fact": "Cape Verde's islands were uninhabited until Portuguese settlers arrived in the 15th century.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cape_Verde"
+      },
+      {
+        "category": "borders-iran",
+        "difficulty": 3,
+        "countries": [
+          "az",
+          "af",
+          "tr",
+          "iq"
+        ],
+        "fact": "Iran's border with Azerbaijan comes in two separate pieces, one of them along the Azerbaijani exclave of Nakhchivan.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "named-after-person",
+        "difficulty": 4,
+        "countries": [
+          "sv",
+          "co",
+          "us",
+          "mh"
+        ],
+        "fact": "El Salvador means \"The Saviour\" in Spanish, short for a province named after Jesus Christ.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "borders-argentina",
+        "difficulty": 1,
+        "countries": [
+          "br",
+          "py",
+          "uy",
+          "bo"
+        ],
+        "fact": "The Iguazú Falls, together the largest waterfall system in the world, lie on the border between Argentina and Brazil.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Iguazu_Falls"
+      },
+      {
+        "category": "adriatic",
+        "difficulty": 2,
+        "countries": [
+          "al",
+          "ba",
+          "me",
+          "hr"
+        ],
+        "fact": "The Adriatic is the northernmost arm of the Mediterranean, separating the Italian Peninsula from the Balkans.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Adriatic_Sea"
+      },
+      {
+        "category": "zambezi",
+        "difficulty": 3,
+        "countries": [
+          "zm",
+          "zw",
+          "na",
+          "mz"
+        ],
+        "fact": "Lake Kariba, on the Zambezi, is the world's largest artificial lake and reservoir by volume.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Kariba"
+      },
+      {
+        "category": "no-land-border",
+        "difficulty": 4,
+        "countries": [
+          "is",
+          "fm",
+          "mh",
+          "tt"
+        ],
+        "fact": "Iceland lies on the Mid-Atlantic Ridge, between Europe and North America.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Iceland"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "borders-france",
+        "difficulty": 1,
+        "countries": [
+          "sr",
+          "ch",
+          "mc",
+          "ad"
+        ],
+        "fact": "France borders Suriname through French Guiana, along the Maroni River.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/French_Guiana"
+      },
+      {
+        "category": "nato",
+        "difficulty": 2,
+        "countries": [
+          "me",
+          "ca",
+          "gr",
+          "mk"
+        ],
+        "fact": "Montenegro joined NATO in 2017, and North Macedonia followed in 2020.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/NATO"
+      },
+      {
+        "category": "equator",
+        "difficulty": 3,
+        "countries": [
+          "ug",
+          "ga",
+          "mv",
+          "so"
+        ],
+        "fact": "In Uganda, the equator passes about 32 km south of central Kampala.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+      },
+      {
+        "category": "tree-flag",
+        "difficulty": 4,
+        "countries": [
+          "gq",
+          "fj",
+          "ht",
+          "bz"
+        ],
+        "fact": "The coat of arms on Equatorial Guinea's flag shows a silk-cotton tree under six stars, for the mainland and the five islands.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "spanish",
+        "difficulty": 1,
+        "countries": [
+          "ni",
+          "gt",
+          "pa",
+          "cr"
+        ],
+        "fact": "Spanish developed in the Kingdom of Castile, which is why it is also called Castilian.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Spanish_language"
+      },
+      {
+        "category": "sun-flag",
+        "difficulty": 2,
+        "countries": [
+          "ph",
+          "bd",
+          "mw",
+          "ag"
+        ],
+        "fact": "The eight rays of the sun on the Philippine flag stand for the first provinces to revolt against Spanish rule.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_the_Philippines"
+      },
+      {
+        "category": "danube",
+        "difficulty": 3,
+        "countries": [
+          "ro",
+          "rs",
+          "md",
+          "bg"
+        ],
+        "fact": "The Iron Gates, a gorge on the Danube, forms part of the border between Serbia and Romania.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Iron_Gates"
+      },
+      {
+        "category": "eac",
+        "difficulty": 4,
+        "countries": [
+          "bi",
+          "cd",
+          "ke",
+          "ss"
+        ],
+        "fact": "In 2010 the East African Community launched a common market for goods, labour and capital.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/East_African_Community"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "german-official",
+        "difficulty": 1,
+        "countries": [
+          "lu",
+          "be",
+          "li",
+          "at"
+        ],
+        "fact": "In Luxembourg, Luxembourgish, French and German are all used in administrative and judicial matters.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Luxembourg"
+      },
+      {
+        "category": "borders-turkey",
+        "difficulty": 2,
+        "countries": [
+          "az",
+          "ge",
+          "gr",
+          "am"
+        ],
+        "fact": "Türkiye borders Azerbaijan only through the exclave of Nakhchivan, along a border just a few kilometres long.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nakhchivan_Autonomous_Republic"
+      },
+      {
+        "category": "mekong",
+        "difficulty": 3,
+        "countries": [
+          "vn",
+          "la",
+          "kh",
+          "cn"
+        ],
+        "fact": "The Mekong is about 4,350 km long and reaches the South China Sea through the Mekong Delta in Vietnam.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mekong"
+      },
+      {
+        "category": "commonwealth",
+        "difficulty": 4,
+        "countries": [
+          "tg",
+          "gh",
+          "my",
+          "sl"
+        ],
+        "fact": "Togo joined the Commonwealth in June 2022, at that year's Commonwealth Heads of Government Meeting.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Togo"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "saint-name",
+        "difficulty": 1,
+        "countries": [
+          "st",
+          "sm",
+          "lc",
+          "kn"
+        ],
+        "fact": "São Tomé is named after Saint Thomas, because the Portuguese reached the island on his feast day.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "g7",
+        "difficulty": 2,
+        "countries": [
+          "ca",
+          "us",
+          "it",
+          "jp"
+        ],
+        "fact": "Canada was invited to join the original six members partly because it was the next largest advanced economy.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/G7"
+      },
+      {
+        "category": "red-sea",
+        "difficulty": 3,
+        "countries": [
+          "jo",
+          "er",
+          "sd",
+          "eg"
+        ],
+        "fact": "Aqaba, on the Red Sea's Gulf of Aqaba, is Jordan's only coastal city.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Aqaba"
+      },
+      {
+        "category": "romance-name",
+        "difficulty": 4,
+        "countries": [
+          "cr",
+          "hn",
+          "sv",
+          "ve"
+        ],
+        "fact": "Costa Rica means \"rich coast\" in Spanish.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "former-yugoslavia",
+        "difficulty": 1,
+        "countries": [
+          "rs",
+          "ba",
+          "mk",
+          "si"
+        ],
+        "fact": "Belgrade, now the capital of Serbia, was the capital of Yugoslavia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Belgrade"
+      },
+      {
+        "category": "amazon-rainforest",
+        "difficulty": 2,
+        "countries": [
+          "sr",
+          "pe",
+          "ec",
+          "gy"
+        ],
+        "fact": "The Amazon makes up over half of the world's remaining rainforest.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Amazon_rainforest"
+      },
+      {
+        "category": "borders-saudi-arabia",
+        "difficulty": 3,
+        "countries": [
+          "ye",
+          "qa",
+          "ae",
+          "kw"
+        ],
+        "fact": "Saudi Arabia's longest land border, about 1,458 km, is the one with Yemen.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "name-peoples",
+        "difficulty": 4,
+        "countries": [
+          "bd",
+          "kp",
+          "dz",
+          "cn"
+        ],
+        "fact": "Bangladesh's official name is the People's Republic of Bangladesh.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_sovereign_states"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "kingdom-europe",
+        "difficulty": 1,
+        "countries": [
+          "be",
+          "gb",
+          "nl",
+          "no"
+        ],
+        "fact": "Belgium declared independence from the Netherlands on 4 October 1830.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Belgium"
+      },
+      {
+        "category": "red-white-flag",
+        "difficulty": 2,
+        "countries": [
+          "qa",
+          "to",
+          "mt",
+          "sg"
+        ],
+        "fact": "Qatar's maroon and white flag has a serrated band with nine points.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Qatar"
+      },
+      {
+        "category": "landlocked",
+        "difficulty": 3,
+        "countries": [
+          "ls",
+          "td",
+          "uz",
+          "kg"
+        ],
+        "fact": "Lesotho is the only independent country that lies entirely above 1,000 m. Its lowest point is 1,400 m above sea level.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lesotho"
+      },
+      {
+        "category": "borders-brazil",
+        "difficulty": 4,
+        "countries": [
+          "uy",
+          "gy",
+          "ar",
+          "fr"
+        ],
+        "fact": "Uruguay borders Argentina to its west and southwest, and Brazil to its north and northeast.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Uruguay"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "former-ussr",
+        "difficulty": 1,
+        "countries": [
+          "uz",
+          "kz",
+          "ee",
+          "tj"
+        ],
+        "fact": "Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan and Uzbekistan make up the Central Asian group of post-Soviet states.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Post-Soviet_states"
+      },
+      {
+        "category": "multiple-capitals",
+        "difficulty": 2,
+        "countries": [
+          "lk",
+          "ci",
+          "za",
+          "cl"
+        ],
+        "fact": "Sri Lanka's legislative capital, Sri Jayawardenepura Kotte, lies next to Colombo, the country's economic capital.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Sri_Jayawardenepura_Kotte"
+      },
+      {
+        "category": "name-kingdom",
+        "difficulty": 3,
+        "countries": [
+          "bt",
+          "ma",
+          "to",
+          "th"
+        ],
+        "fact": "Bhutan's official name is the Kingdom of Bhutan. In its own language the country is called Druk Yul.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bhutan"
+      },
+      {
+        "category": "one-neighbour",
+        "difficulty": 4,
+        "countries": [
+          "do",
+          "ht",
+          "gm",
+          "bn"
+        ],
+        "fact": "Haiti and the Dominican Republic share the island of Hispaniola, the second-largest island in the Caribbean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hispaniola"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "north-sea",
+        "difficulty": 1,
+        "countries": [
+          "nl",
+          "gb",
+          "de",
+          "no"
+        ],
+        "fact": "The North Sea links to the Atlantic through the English Channel in the south and the Norwegian Sea in the north.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/North_Sea"
+      },
+      {
+        "category": "caspian",
+        "difficulty": 2,
+        "countries": [
+          "tm",
+          "kz",
+          "az",
+          "ru"
+        ],
+        "fact": "The Caspian Sea has no outflow to the ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Caspian_Sea"
+      },
+      {
+        "category": "borders-peru",
+        "difficulty": 3,
+        "countries": [
+          "br",
+          "ec",
+          "bo",
+          "co"
+        ],
+        "fact": "Peru's longest land border, about 2,995 km, is the one with Brazil.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "river-name",
+        "difficulty": 4,
+        "countries": [
+          "md",
+          "ng",
+          "ne",
+          "sn"
+        ],
+        "fact": "Moldova is named after the Moldova River, in present-day Romania.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "hosted-world-cup",
+        "difficulty": 1,
+        "countries": [
+          "br",
+          "mx",
+          "se",
+          "kr"
+        ],
+        "fact": "Mexico City's Estadio Azteca and Rio de Janeiro's Maracanã are the only stadiums to have hosted two World Cup finals.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_World_Cup_hosts"
+      },
+      {
+        "category": "borders-kazakhstan",
+        "difficulty": 2,
+        "countries": [
+          "uz",
+          "tm",
+          "cn",
+          "kg"
+        ],
+        "fact": "The Aral Sea, between Kazakhstan and Uzbekistan, was once the fourth-largest lake in the world, but began shrinking in the 1960s.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Aral_Sea"
+      },
+      {
+        "category": "charles-head",
+        "difficulty": 3,
+        "countries": [
+          "tv",
+          "bs",
+          "jm",
+          "sb"
+        ],
+        "fact": "Charles III became king of the United Kingdom and the other Commonwealth realms in September 2022.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Charles_III"
+      },
+      {
+        "category": "cur-shilling",
+        "difficulty": 4,
+        "countries": [
+          "ke",
+          "tz",
+          "ug",
+          "so"
+        ],
+        "fact": "Kenyan shilling prices are written with a slash: shillings before it and cents after, so 100/= means 100 shillings.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kenyan_shilling"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "largest",
+        "difficulty": 1,
+        "countries": [
+          "ca",
+          "au",
+          "ru",
+          "us"
+        ],
+        "fact": "Canada has the longest coastline of any country in the world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Canada"
+      },
+      {
+        "category": "compass-name",
+        "difficulty": 2,
+        "countries": [
+          "tl",
+          "ss",
+          "kr",
+          "mk"
+        ],
+        "fact": "\"Leste\" is Portuguese for \"east\", and \"Timor\" comes from timur, the Malay word for east.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "bird-flag",
+        "difficulty": 3,
+        "countries": [
+          "eg",
+          "pg",
+          "dm",
+          "al"
+        ],
+        "fact": "Egypt's red, white and black flag carries the Eagle of Saladin.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Egypt"
+      },
+      {
+        "category": "no-rivers",
+        "difficulty": 4,
+        "countries": [
+          "sa",
+          "mv",
+          "ye",
+          "km"
+        ],
+        "fact": "The world's largest desalination plant, which turns seawater into fresh water, is in Saudi Arabia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Desalination"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "arctic-circle",
+        "difficulty": 1,
+        "countries": [
+          "us",
+          "is",
+          "fi",
+          "dk"
+        ],
+        "fact": "Utqiagvik in Alaska, formerly called Barrow, is the largest US settlement north of the Arctic Circle.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Arctic_Circle"
+      },
+      {
+        "category": "crescent-flag",
+        "difficulty": 2,
+        "countries": [
+          "pk",
+          "ly",
+          "mr",
+          "np"
+        ],
+        "fact": "Pakistan's flag shows a white star and crescent on dark green, with a white stripe at the hoist.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Pakistan"
+      },
+      {
+        "category": "french-official",
+        "difficulty": 3,
+        "countries": [
+          "be",
+          "gn",
+          "vu",
+          "mg"
+        ],
+        "fact": "Belgium has three official languages: Dutch, French and German.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Belgium"
+      },
+      {
+        "category": "caricom",
+        "difficulty": 4,
+        "countries": [
+          "bz",
+          "kn",
+          "jm",
+          "gd"
+        ],
+        "fact": "CARICOM was founded in 1973 by Barbados, Jamaica, Guyana and Trinidad and Tobago.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Caribbean_Community"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "new7wonders",
+        "difficulty": 1,
+        "countries": [
+          "mx",
+          "it",
+          "pe",
+          "in"
+        ],
+        "fact": "Chichen Itza, in Mexico's Yucatán state, was one of the largest cities built by the Maya.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chichen_Itza"
+      },
+      {
+        "category": "borders-south-africa",
+        "difficulty": 2,
+        "countries": [
+          "na",
+          "ls",
+          "zw",
+          "mz"
+        ],
+        "fact": "The Orange River, South Africa's longest river, forms part of its borders with both Lesotho and Namibia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Orange_River"
+      },
+      {
+        "category": "prime-meridian",
+        "difficulty": 3,
+        "countries": [
+          "gh",
+          "ml",
+          "es",
+          "tg"
+        ],
+        "fact": "In Ghana, the prime meridian passes through the port city of Tema, east of Accra.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tema"
+      },
+      {
+        "category": "cur-dinar",
+        "difficulty": 4,
+        "countries": [
+          "bh",
+          "rs",
+          "tn",
+          "iq"
+        ],
+        "fact": "The word dinar comes from the denarius, a silver coin of ancient Rome.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dinar"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "cur-peso",
+        "difficulty": 1,
+        "countries": [
+          "mx",
+          "do",
+          "cu",
+          "ph"
+        ],
+        "fact": "The Mexican peso was first introduced in 1863, replacing the old Spanish colonial real.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mexican_peso"
+      },
+      {
+        "category": "alps",
+        "difficulty": 2,
+        "countries": [
+          "at",
+          "mc",
+          "si",
+          "de"
+        ],
+        "fact": "The Grossglockner, at 3,798 m, is Austria's highest mountain.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Grossglockner"
+      },
+      {
+        "category": "visegrad",
+        "difficulty": 3,
+        "countries": [
+          "pl",
+          "cz",
+          "sk",
+          "hu"
+        ],
+        "fact": "The group takes its name from the Hungarian castle town of Visegrád, where its leaders met in 1991.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Visegr%C3%A1d_Group"
+      },
+      {
+        "category": "pif",
+        "difficulty": 4,
+        "countries": [
+          "ki",
+          "nr",
+          "ws",
+          "vu"
+        ],
+        "fact": "The Pacific Islands Forum was founded in Wellington in 1971 as the South Pacific Forum.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pacific_Islands_Forum"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "eu",
+        "difficulty": 1,
+        "countries": [
+          "ro",
+          "bg",
+          "lv",
+          "lt"
+        ],
+        "fact": "Bulgaria and Romania joined the European Union together in 2007.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/European_Union"
+      },
+      {
+        "category": "borders-tanzania",
+        "difficulty": 2,
+        "countries": [
+          "ug",
+          "ke",
+          "zm",
+          "cd"
+        ],
+        "fact": "Lake Victoria, the largest lake in Africa, is divided among Tanzania (49%), Uganda (45%) and Kenya (6%).",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Victoria"
+      },
+      {
+        "category": "gcc",
+        "difficulty": 3,
+        "countries": [
+          "sa",
+          "qa",
+          "om",
+          "ae"
+        ],
+        "fact": "The Gulf Cooperation Council's headquarters are in Riyadh, Saudi Arabia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Gulf_Cooperation_Council"
+      },
+      {
+        "category": "asean",
+        "difficulty": 4,
+        "countries": [
+          "bn",
+          "vn",
+          "sg",
+          "kh"
+        ],
+        "fact": "Brunei became ASEAN's sixth member on 7 January 1984.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/ASEAN"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "microstate",
+        "difficulty": 1,
+        "countries": [
+          "ad",
+          "mt",
+          "mc",
+          "va"
+        ],
+        "fact": "Andorra has two heads of state: the President of France and the Bishop of Urgell.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Andorra"
+      },
+      {
+        "category": "baltic",
+        "difficulty": 2,
+        "countries": [
+          "ee",
+          "pl",
+          "lv",
+          "fi"
+        ],
+        "fact": "Besides its mainland, Estonia has more than 2,300 islands and islets in the Baltic Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Estonia"
+      },
+      {
+        "category": "niger-river",
+        "difficulty": 3,
+        "countries": [
+          "ng",
+          "ne",
+          "gn",
+          "bj"
+        ],
+        "fact": "The Niger's main tributary is the Benue, and the river reaches the sea through the Niger Delta in Nigeria.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Niger_River"
+      },
+      {
+        "category": "limpopo",
+        "difficulty": 4,
+        "countries": [
+          "za",
+          "mz",
+          "zw",
+          "bw"
+        ],
+        "fact": "Vasco da Gama, the first European to see the Limpopo, anchored off its mouth in 1498 and named it River of the Holy Spirit.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Limpopo_River"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "cur-crown",
+        "difficulty": 1,
+        "countries": [
+          "cz",
+          "dk",
+          "no",
+          "se"
+        ],
+        "fact": "The Czech koruna has been in use since 1993, when it replaced the Czechoslovak koruna.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Crown_(currency)"
+      },
+      {
+        "category": "union-jack-flag",
+        "difficulty": 2,
+        "countries": [
+          "tv",
+          "fj",
+          "gb",
+          "nz"
+        ],
+        "fact": "The nine stars on Tuvalu's flag represent the nine islands of Tuvalu.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Tuvalu"
+      },
+      {
+        "category": "borders-dr-congo",
+        "difficulty": 3,
+        "countries": [
+          "tz",
+          "ss",
+          "cf",
+          "cg"
+        ],
+        "fact": "Lake Tanganyika is shared by four countries, and Tanzania and DR Congo together hold most of it.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Tanganyika"
+      },
+      {
+        "category": "native-name",
+        "difficulty": 4,
+        "countries": [
+          "bt",
+          "hu",
+          "am",
+          "kp"
+        ],
+        "fact": "Bhutan calls itself Druk Yul, often translated as \"Land of the Thunder Dragon\".",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bhutan"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "sadc",
+        "difficulty": 1,
+        "countries": [
+          "km",
+          "sc",
+          "mu",
+          "mw"
+        ],
+        "fact": "The Southern African Development Community promotes cooperation among 16 countries in southern Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Southern_African_Development_Community"
+      },
+      {
+        "category": "weapon-flag",
+        "difficulty": 2,
+        "countries": [
+          "ke",
+          "gt",
+          "bb",
+          "ir"
+        ],
+        "fact": "Kenya's flag shows a traditional Maasai shield crossed by two spears.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Kenya"
+      },
+      {
+        "category": "cur-pound",
+        "difficulty": 3,
+        "countries": [
+          "eg",
+          "lb",
+          "sy",
+          "ss"
+        ],
+        "fact": "The Egyptian pound was introduced in 1834, replacing the Egyptian piastre.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Egyptian_pound"
+      },
+      {
+        "category": "name-democratic",
+        "difficulty": 4,
+        "countries": [
+          "et",
+          "kp",
+          "la",
+          "st"
+        ],
+        "fact": "Ethiopia's official name is the Federal Democratic Republic of Ethiopia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_sovereign_states"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "andes",
+        "difficulty": 1,
+        "countries": [
+          "ar",
+          "bo",
+          "co",
+          "ve"
+        ],
+        "fact": "Aconcagua, in Argentina, is the highest mountain in the Andes and the highest outside Asia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Aconcagua"
+      },
+      {
+        "category": "euro",
+        "difficulty": 2,
+        "countries": [
+          "sm",
+          "cy",
+          "ie",
+          "gr"
+        ],
+        "fact": "The euro began as an accounting currency in 1999. Euro coins and banknotes went into circulation on 1 January 2002.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+        "category": "borders-china",
+        "difficulty": 3,
+        "countries": [
+          "kz",
+          "vn",
+          "tj",
+          "mm"
+        ],
+        "fact": "China borders Kazakhstan along about 1,533 km in the far west of the country.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "cur-franc",
+        "difficulty": 4,
+        "countries": [
+          "km",
+          "bi",
+          "cm",
+          "bf"
+        ],
+        "fact": "Comoros set up its own Comorian franc in 1981, and it has been pegged to the euro since 1999.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Franc"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "stan",
+        "difficulty": 1,
+        "countries": [
+          "kg",
+          "uz",
+          "tj",
+          "af"
+        ],
+        "fact": "Kyrgyzstan's Issyk-Kul, high in the Tian Shan mountains, is the second-largest saline lake in the world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Issyk-Kul"
+      },
+      {
+        "category": "winter-olympics",
+        "difficulty": 2,
+        "countries": [
+          "it",
+          "ba",
+          "jp",
+          "ca"
+        ],
+        "fact": "Milan and Cortina d'Ampezzo co-hosted the 2026 Winter Olympics.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Winter_Olympics"
+      },
+      {
+        "category": "southern-cross-flag",
+        "difficulty": 3,
+        "countries": [
+          "pg",
+          "br",
+          "au",
+          "nz"
+        ],
+        "fact": "Papua New Guinea's flag shows the Southern Cross in white on a black half and a golden bird-of-paradise on a red half.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea"
+      },
+      {
+        "category": "borders-germany",
+        "difficulty": 4,
+        "countries": [
+          "dk",
+          "nl",
+          "pl",
+          "lu"
+        ],
+        "fact": "Germany's border with Denmark, about 68 km long, is its shortest.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "ancient-wonders",
+        "difficulty": 1,
+        "countries": [
+          "tr",
+          "gr",
+          "iq",
+          "eg"
+        ],
+        "fact": "Of the Seven Wonders of the Ancient World, only the Great Pyramid of Giza, by far the oldest, still stands.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World"
+      },
+      {
+        "category": "cur-rupee",
+        "difficulty": 2,
+        "countries": [
+          "sc",
+          "mu",
+          "lk",
+          "np"
+        ],
+        "fact": "Indonesia's rupiah and the Maldives' rufiyaa are not rupees, but their names come from the same word.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Rupee"
+      },
+      {
+        "category": "borders-austria",
+        "difficulty": 3,
+        "countries": [
+          "sk",
+          "si",
+          "li",
+          "hu"
+        ],
+        "fact": "Bratislava is the only national capital that borders two other countries, Austria and Hungary.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bratislava"
+      },
+      {
+        "category": "tropic-capricorn",
+        "difficulty": 4,
+        "countries": [
+          "na",
+          "bw",
+          "mg",
+          "py"
+        ],
+        "fact": "In Namibia, the Tropic of Capricorn crosses the Khomas region twice.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "borders-russia",
+        "difficulty": 1,
+        "countries": [
+          "az",
+          "by",
+          "lt",
+          "mn"
+        ],
+        "fact": "Azerbaijan's border with Russia is about 284 km long.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "rhine",
+        "difficulty": 2,
+        "countries": [
+          "ch",
+          "at",
+          "nl",
+          "fr"
+        ],
+        "fact": "The Rhine Falls, on the High Rhine in Switzerland, lie on the border between the cantons of Schaffhausen and Zurich.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Rhine_Falls"
+      },
+      {
+        "category": "drive-left",
+        "difficulty": 3,
+        "countries": [
+          "jp",
+          "bs",
+          "my",
+          "ag"
+        ],
+        "fact": "Okinawa drove on the right under US administration, then switched back to the left in 1978.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+      },
+      {
+        "category": "cur-rial",
+        "difficulty": 4,
+        "countries": [
+          "om",
+          "ye",
+          "qa",
+          "ir"
+        ],
+        "fact": "Until 1940, the main currencies in Oman were the Indian rupee and the Maria Theresa thaler.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Omani_rial"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "ends-land",
+        "difficulty": 1,
+        "countries": [
+          "pl",
+          "ie",
+          "th",
+          "fi"
+        ],
+        "fact": "Poland means \"land of the Polans\", after the tribe that united the country in the 10th century.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "mediterranean",
+        "difficulty": 2,
+        "countries": [
+          "cy",
+          "al",
+          "sy",
+          "mt"
+        ],
+        "fact": "Cyprus is the third-largest island in the Mediterranean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cyprus"
+      },
+      {
+        "category": "tropic-cancer",
+        "difficulty": 3,
+        "countries": [
+          "om",
+          "td",
+          "bd",
+          "bs"
+        ],
+        "fact": "In Oman, the Tropic of Cancer crosses Muscat, the capital.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
+      },
+      {
+        "category": "named-after-person",
+        "difficulty": 4,
+        "countries": [
+          "mh",
+          "vc",
+          "do",
+          "sb"
+        ],
+        "fact": "The Marshall Islands are named after British captain John Marshall, who documented the islands in 1788.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "hosted-olympics",
+        "difficulty": 1,
+        "countries": [
+          "us",
+          "kr",
+          "es",
+          "be"
+        ],
+        "fact": "Los Angeles will host the Summer Olympics for the third time in 2028, after 1932 and 1984.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2028_Summer_Olympics"
+      },
+      {
+        "category": "equator",
+        "difficulty": 2,
+        "countries": [
+          "st",
+          "id",
+          "ga",
+          "cd"
+        ],
+        "fact": "In São Tomé and Príncipe, the equator crosses the small islet of Ilhéu das Rolas.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+      },
+      {
+        "category": "borders-argentina",
+        "difficulty": 3,
+        "countries": [
+          "cl",
+          "uy",
+          "bo",
+          "py"
+        ],
+        "fact": "Argentina's border with Chile is about 5,300 km long, including a short stretch on the island of Tierra del Fuego.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "red-sea",
+        "difficulty": 4,
+        "countries": [
+          "jo",
+          "dj",
+          "er",
+          "sd"
+        ],
+        "fact": "The Red Sea's outlets are the Bab-el-Mandeb strait to the south and the Suez Canal to the north.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Red_Sea"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "world-cup-winner",
+        "difficulty": 1,
+        "countries": [
+          "uy",
+          "es",
+          "ar",
+          "fr"
+        ],
+        "fact": "Uruguay won the first World Cup in 1930 and won again in 1950.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Uruguay_national_football_team"
+      },
+      {
+        "category": "portuguese",
+        "difficulty": 2,
+        "countries": [
+          "ao",
+          "pt",
+          "gw",
+          "cv"
+        ],
+        "fact": "Portuguese is the most widely spoken language in the Southern Hemisphere.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Portuguese_language"
+      },
+      {
+        "category": "eac",
+        "difficulty": 3,
+        "countries": [
+          "rw",
+          "so",
+          "cd",
+          "ss"
+        ],
+        "fact": "The East African Community was founded in 1967, collapsed in 1977 and was revived in 2000.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/East_African_Community"
+      },
+      {
+        "category": "capital-not-largest",
+        "difficulty": 4,
+        "countries": [
+          "nz",
+          "tt",
+          "gm",
+          "fm"
+        ],
+        "fact": "Wellington is the southernmost capital of any sovereign state, and the windiest city in the world by average wind speed.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Wellington"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "black-sea",
+        "difficulty": 1,
+        "countries": [
+          "tr",
+          "ge",
+          "ua",
+          "ro"
+        ],
+        "fact": "The Black Sea's deep water never mixes with the water above, so it has almost no oxygen. This has preserved ancient shipwrecks.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Black_Sea"
+      },
+      {
+        "category": "sun-flag",
+        "difficulty": 2,
+        "countries": [
+          "na",
+          "ki",
+          "ec",
+          "ag"
+        ],
+        "fact": "Namibia's flag shows a gold sun with 12 triangular rays.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Namibia"
+      },
+      {
+        "category": "tree-flag",
+        "difficulty": 3,
+        "countries": [
+          "bz",
+          "fj",
+          "gq",
+          "lb"
+        ],
+        "fact": "The coat of arms on Belize's flag shows mahogany trees, figures and tools of the logging trade that first brought British settlers.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Belize"
+      },
+      {
+        "category": "name-united",
+        "difficulty": 4,
+        "countries": [
+          "tz",
+          "ae",
+          "mx",
+          "us"
+        ],
+        "fact": "Tanzania's official name is the United Republic of Tanzania. It was formed in 1964 when Tanganyika and Zanzibar united.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tanzania"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "former-ussr",
+        "difficulty": 1,
+        "countries": [
+          "ee",
+          "lv",
+          "kz",
+          "lt"
+        ],
+        "fact": "Estonia, Latvia and Lithuania form the Baltic group of post-Soviet states.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Post-Soviet_states"
+      },
+      {
+        "category": "borders-france",
+        "difficulty": 2,
+        "countries": [
+          "es",
+          "sr",
+          "lu",
+          "ad"
+        ],
+        "fact": "The France–Spain border, about 685 km long, dates back to the Treaty of the Pyrenees of 1659.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/France%E2%80%93Spain_border"
+      },
+      {
+        "category": "commonwealth",
+        "difficulty": 3,
+        "countries": [
+          "mz",
+          "sl",
+          "sz",
+          "mw"
+        ],
+        "fact": "When Mozambique joined the Commonwealth in 1995, it was the only member that had never been part of the British Empire.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mozambique"
+      },
+      {
+        "category": "no-land-border",
+        "difficulty": 4,
+        "countries": [
+          "mg",
+          "bh",
+          "pw",
+          "cv"
+        ],
+        "fact": "Madagascar is the world's fourth-largest island.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Madagascar"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "unsc-p5",
+        "difficulty": 1,
+        "countries": [
+          "fr",
+          "gb",
+          "cn",
+          "ru"
+        ],
+        "fact": "Each permanent member of the UN Security Council can veto substantive resolutions on its own.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/United_Nations_Security_Council"
+      },
+      {
+        "category": "spanish",
+        "difficulty": 2,
+        "countries": [
+          "py",
+          "ni",
+          "pa",
+          "hn"
+        ],
+        "fact": "Paraguay has two official languages, Spanish and Guaraní.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Paraguay"
+      },
+      {
+        "category": "danube",
+        "difficulty": 3,
+        "countries": [
+          "de",
+          "hr",
+          "ro",
+          "ua"
+        ],
+        "fact": "The Danube rises in Germany's Black Forest.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Danube"
+      },
+      {
+        "category": "arabic-official",
+        "difficulty": 4,
+        "countries": [
+          "so",
+          "dj",
+          "kw",
+          "mr"
+        ],
+        "fact": "In Somalia, Somali is the official language and Arabic is the second language.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Somalia"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "borders-turkey",
+        "difficulty": 1,
+        "countries": [
+          "sy",
+          "az",
+          "bg",
+          "am"
+        ],
+        "fact": "Türkiye's longest land border, about 822 km, is the one with Syria.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "mekong",
+        "difficulty": 2,
+        "countries": [
+          "th",
+          "la",
+          "kh",
+          "mm"
+        ],
+        "fact": "For one stretch of about 850 km, the Mekong forms the border between Laos and Thailand, flowing past Vientiane.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mekong"
+      },
+      {
+        "category": "zambezi",
+        "difficulty": 3,
+        "countries": [
+          "mz",
+          "bw",
+          "zm",
+          "ao"
+        ],
+        "fact": "Cahora Bassa, on the Zambezi in Mozambique's Tete Province, is Africa's fourth-largest artificial lake.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cahora_Bassa"
+      },
+      {
+        "category": "romance-name",
+        "difficulty": 4,
+        "countries": [
+          "me",
+          "hn",
+          "sv",
+          "cr"
+        ],
+        "fact": "Montenegro means \"black mountain\" in Venetian.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "saint-name",
+        "difficulty": 1,
+        "countries": [
+          "kn",
+          "sm",
+          "vc",
+          "lc"
+        ],
+        "fact": "St. Kitts is named after Saint Christopher; British sailors later shortened the name to Kitts.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "red-white-flag",
+        "difficulty": 2,
+        "countries": [
+          "pe",
+          "tn",
+          "sg",
+          "to"
+        ],
+        "fact": "Peru's flag is a vertical triband of red, white and red.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Peru"
+      },
+      {
+        "category": "borders-poland",
+        "difficulty": 3,
+        "countries": [
+          "de",
+          "sk",
+          "by",
+          "cz"
+        ],
+        "fact": "The modern Germany–Poland border generally follows the Oder and Lusatian Neisse rivers, and is known as the Oder–Neisse line.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Oder%E2%80%93Neisse_line"
+      },
+      {
+        "category": "multiple-capitals",
+        "difficulty": 4,
+        "countries": [
+          "my",
+          "sz",
+          "bj",
+          "ci"
+        ],
+        "fact": "Kuala Lumpur is Malaysia's capital, but much of the federal government has moved to the planned city of Putrajaya.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Putrajaya"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "german-official",
+        "difficulty": 1,
+        "countries": [
+          "be",
+          "li",
+          "lu",
+          "ch"
+        ],
+        "fact": "Belgium's German-speaking Community is also known as East Belgium.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/German-speaking_Community_of_Belgium"
+      },
+      {
+        "category": "adriatic",
+        "difficulty": 2,
+        "countries": [
+          "me",
+          "hr",
+          "al",
+          "si"
+        ],
+        "fact": "The Adriatic Sea contains more than 1,300 islands, most of them along its eastern coast.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Adriatic_Sea"
+      },
+      {
+        "category": "borders-iran",
+        "difficulty": 3,
+        "countries": [
+          "iq",
+          "pk",
+          "am",
+          "af"
+        ],
+        "fact": "Iran's longest land border, about 1,458 km, is the one with Iraq.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "one-neighbour",
+        "difficulty": 4,
+        "countries": [
+          "gm",
+          "do",
+          "ls",
+          "bn"
+        ],
+        "fact": "The Gambia is bounded by Senegal on all sides except the west, where it meets the Atlantic Ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/The_Gambia"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "former-yugoslavia",
+        "difficulty": 1,
+        "countries": [
+          "hr",
+          "mk",
+          "ba",
+          "rs"
+        ],
+        "fact": "Croatia declared its independence from Yugoslavia on 25 June 1991.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Croatia"
+      },
+      {
+        "category": "borders-kazakhstan",
+        "difficulty": 2,
+        "countries": [
+          "ru",
+          "tm",
+          "uz",
+          "kg"
+        ],
+        "fact": "The Baikonur Cosmodrome is a spaceport operated by Russia inside Kazakhstan, which leases it to Russia until 2050.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baikonur_Cosmodrome"
+      },
+      {
+        "category": "river-name",
+        "difficulty": 3,
+        "countries": [
+          "ng",
+          "sn",
+          "ne",
+          "cg"
+        ],
+        "fact": "The name Nigeria, after the Niger River, was coined in 1897 by the British journalist Flora Shaw.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nigeria"
+      },
+      {
+        "category": "name-peoples",
+        "difficulty": 4,
+        "countries": [
+          "la",
+          "bd",
+          "kp",
+          "dz"
+        ],
+        "fact": "Laos's official name is the Lao People's Democratic Republic.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_sovereign_states"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "arctic-circle",
+        "difficulty": 1,
+        "countries": [
+          "ru",
+          "fi",
+          "ca",
+          "is"
+        ],
+        "fact": "Murmansk in Russia is the largest community north of the Arctic Circle, ahead of Norilsk.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Arctic_Circle"
+      },
+      {
+        "category": "borders-italy",
+        "difficulty": 2,
+        "countries": [
+          "va",
+          "sm",
+          "ch",
+          "si"
+        ],
+        "fact": "San Marino and Vatican City are both entirely surrounded by Italy. The world's only other sovereign enclave is Lesotho.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Enclave_and_exclave"
+      },
+      {
+        "category": "name-kingdom",
+        "difficulty": 3,
+        "countries": [
+          "sz",
+          "bt",
+          "kh",
+          "ma"
+        ],
+        "fact": "In 2018, the King of Swaziland changed the country's official name to the Kingdom of Eswatini.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Eswatini"
+      },
+      {
+        "category": "caricom",
+        "difficulty": 4,
+        "countries": [
+          "gy",
+          "jm",
+          "dm",
+          "bb"
+        ],
+        "fact": "The Caribbean Community's secretariat is in Georgetown, Guyana.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Caribbean_Community"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "eu",
+        "difficulty": 1,
+        "countries": [
+          "cy",
+          "sk",
+          "mt",
+          "ie"
+        ],
+        "fact": "Cyprus joined the European Union in 2004.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cyprus"
+      },
+      {
+        "category": "hosted-world-cup",
+        "difficulty": 2,
+        "countries": [
+          "mx",
+          "za",
+          "cl",
+          "ar"
+        ],
+        "fact": "In 2026 Mexico became the first country to host the World Cup three times, after 1970 and 1986.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup"
+      },
+      {
+        "category": "borders-saudi-arabia",
+        "difficulty": 3,
+        "countries": [
+          "bh",
+          "kw",
+          "ye",
+          "jo"
+        ],
+        "fact": "Bahrain is linked to Saudi Arabia by the King Fahd Causeway, a 25 km chain of bridges and causeways.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/King_Fahd_Causeway"
+      },
+      {
+        "category": "native-name",
+        "difficulty": 4,
+        "countries": [
+          "eg",
+          "ge",
+          "bt",
+          "in"
+        ],
+        "fact": "In Arabic, Egypt is called Misr.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Names_of_Egypt"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "new7wonders",
+        "difficulty": 1,
+        "countries": [
+          "pe",
+          "in",
+          "jo",
+          "mx"
+        ],
+        "fact": "Machu Picchu is a 15th-century Inca citadel built on a mountain ridge about 2,430 metres up.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Machu_Picchu"
+      },
+      {
+        "category": "landlocked",
+        "difficulty": 2,
+        "countries": [
+          "mn",
+          "bf",
+          "cf",
+          "bi"
+        ],
+        "fact": "With about 3.5 million people, Mongolia is the most sparsely populated sovereign state in the world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mongolia"
+      },
+      {
+        "category": "winter-olympics",
+        "difficulty": 3,
+        "countries": [
+          "ba",
+          "no",
+          "kr",
+          "jp"
+        ],
+        "fact": "Sarajevo hosted the 1984 Winter Olympics, when it was part of Yugoslavia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/1984_Winter_Olympics"
+      },
+      {
+        "category": "name-democratic",
+        "difficulty": 4,
+        "countries": [
+          "lk",
+          "tl",
+          "st",
+          "dz"
+        ],
+        "fact": "Sri Lanka's official name is the Democratic Socialist Republic of Sri Lanka.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_sovereign_states"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "borders-peru",
+        "difficulty": 1,
+        "countries": [
+          "bo",
+          "cl",
+          "co",
+          "ec"
+        ],
+        "fact": "Lake Titicaca, on the Peru–Bolivia border, is often called the highest navigable lake in the world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Titicaca"
+      },
+      {
+        "category": "nato",
+        "difficulty": 2,
+        "countries": [
+          "se",
+          "fi",
+          "hu",
+          "pt"
+        ],
+        "fact": "Finland and Sweden are NATO's newest members, joining in 2023 and 2024.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/NATO"
+      },
+      {
+        "category": "mediterranean",
+        "difficulty": 3,
+        "countries": [
+          "ma",
+          "cy",
+          "lb",
+          "ly"
+        ],
+        "fact": "The Mediterranean Sea covers about 2.5 million square kilometres.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mediterranean_Sea"
+      },
+      {
+        "category": "pif",
+        "difficulty": 4,
+        "countries": [
+          "ws",
+          "tv",
+          "pw",
+          "nr"
+        ],
+        "fact": "Samoa was one of the Pacific Islands Forum's seven founding members, under its old name Western Samoa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pacific_Islands_Forum"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "stan",
+        "difficulty": 1,
+        "countries": [
+          "tj",
+          "uz",
+          "kz",
+          "af"
+        ],
+        "fact": "More than 90% of Tajikistan is covered by mountains.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tajikistan"
+      },
+      {
+        "category": "borders-brazil",
+        "difficulty": 2,
+        "countries": [
+          "fr",
+          "ve",
+          "gy",
+          "sr"
+        ],
+        "fact": "France borders Brazil through its overseas region of French Guiana.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/French_Guiana"
+      },
+      {
+        "category": "niger-river",
+        "difficulty": 3,
+        "countries": [
+          "gn",
+          "bj",
+          "ne",
+          "ml"
+        ],
+        "fact": "The Niger rises in the Guinea Highlands, in south-eastern Guinea near the Sierra Leone border.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Niger_River"
+      },
+      {
+        "category": "cur-rial",
+        "difficulty": 4,
+        "countries": [
+          "om",
+          "qa",
+          "ir",
+          "sa"
+        ],
+        "fact": "The Omani rial is divided into 1,000 baisa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Omani_rial"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "kingdom-europe",
+        "difficulty": 1,
+        "countries": [
+          "no",
+          "es",
+          "se",
+          "nl"
+        ],
+        "fact": "Haakon VII was King of Norway from 1905 to 1957.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Haakon_VII"
+      },
+      {
+        "category": "crescent-flag",
+        "difficulty": 2,
+        "countries": [
+          "my",
+          "mr",
+          "tn",
+          "mv"
+        ],
+        "fact": "Malaysia's flag, the Jalur Gemilang, has 14 red and white stripes.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Malaysia"
+      },
+      {
+        "category": "bird-flag",
+        "difficulty": 3,
+        "countries": [
+          "zw",
+          "ki",
+          "dm",
+          "gt"
+        ],
+        "fact": "The Zimbabwe Bird on Zimbabwe's flag is based on soapstone carvings found at the ruins of Great Zimbabwe.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Zimbabwe"
+      },
+      {
+        "category": "french-official",
+        "difficulty": 4,
+        "countries": [
+          "rw",
+          "ga",
+          "cf",
+          "sn"
+        ],
+        "fact": "Rwanda has four official languages: Kinyarwanda, English, French and Swahili.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Rwanda"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "asean",
+        "difficulty": 1,
+        "countries": [
+          "id",
+          "vn",
+          "bn",
+          "ph"
+        ],
+        "fact": "ASEAN's five founding members were Indonesia, Malaysia, the Philippines, Singapore and Thailand.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/ASEAN"
+      },
+      {
+        "category": "amazon-rainforest",
+        "difficulty": 2,
+        "countries": [
+          "co",
+          "br",
+          "pe",
+          "gy"
+        ],
+        "fact": "About 60% of the Amazon rainforest is in Brazil, followed by Peru with 13% and Colombia with 10%.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Amazon_rainforest"
+      },
+      {
+        "category": "sadc",
+        "difficulty": 3,
+        "countries": [
+          "zm",
+          "mg",
+          "km",
+          "ls"
+        ],
+        "fact": "The Southern African Development Community has four working languages: English, French, Portuguese and Swahili.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Southern_African_Development_Community"
+      },
+      {
+        "category": "cur-pound",
+        "difficulty": 4,
+        "countries": [
+          "gb",
+          "sd",
+          "ss",
+          "lb"
+        ],
+        "fact": "Strictly, the UK's currency is called sterling, and the pound is its main unit.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pound_(currency)"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "cur-peso",
+        "difficulty": 1,
+        "countries": [
+          "cu",
+          "ph",
+          "do",
+          "uy"
+        ],
+        "fact": "Modern peso and dollar currencies share an origin in the old Spanish dollar, and most still use its \"$\" sign.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mexican_peso"
+      },
+      {
+        "category": "borders-china",
+        "difficulty": 2,
+        "countries": [
+          "vn",
+          "mm",
+          "tj",
+          "mn"
+        ],
+        "fact": "Vietnam's border with China is about 1,281 km long.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "north-sea",
+        "difficulty": 3,
+        "countries": [
+          "dk",
+          "be",
+          "de",
+          "nl"
+        ],
+        "fact": "Storm surges are a particular threat to the North Sea coasts of the Netherlands, Belgium, Germany and Denmark.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/North_Sea"
+      },
+      {
+        "category": "drive-left",
+        "difficulty": 4,
+        "countries": [
+          "na",
+          "gd",
+          "tt",
+          "bb"
+        ],
+        "fact": "South Africa introduced driving on the left in present-day Namibia after the end of World War I.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "g7",
+        "difficulty": 1,
+        "countries": [
+          "gb",
+          "jp",
+          "it",
+          "ca"
+        ],
+        "fact": "The first summit of what became the G7 was held at Rambouillet, France, in November 1975.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/G7"
+      },
+      {
+        "category": "cur-rupee",
+        "difficulty": 2,
+        "countries": [
+          "pk",
+          "np",
+          "sc",
+          "mu"
+        ],
+        "fact": "The word rupee comes from the Sanskrit rūpya, meaning \"wrought silver\" or a silver coin.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Rupee"
+      },
+      {
+        "category": "borders-dr-congo",
+        "difficulty": 3,
+        "countries": [
+          "cg",
+          "bi",
+          "cf",
+          "ao"
+        ],
+        "fact": "Kinshasa and Brazzaville face each other across the Congo River, separated by an unbridged stretch about 4 km wide.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kinshasa"
+      },
+      {
+        "category": "tropic-cancer",
+        "difficulty": 4,
+        "countries": [
+          "bd",
+          "bs",
+          "td",
+          "dz"
+        ],
+        "fact": "In Bangladesh, the Tropic of Cancer passes through the Khulna, Dhaka and Chittagong divisions.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
+      }
+    ]
+  }
+]

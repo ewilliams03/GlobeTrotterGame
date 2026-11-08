@@ -1,0 +1,600 @@
+/* Globetrotter Games: shared tokens and chrome.
+   Direction: modern transit wayfinding. Warm paper, deep ink, one signal orange,
+   and four "route line" colours that every game reuses for difficulty/state. */
+
+:root {
+  color-scheme: light dark;
+
+  --paper: oklch(97.4% 0.012 85);
+  --paper-2: oklch(94.2% 0.017 85);
+  --paper-3: oklch(90.5% 0.02 85);
+  --ink: oklch(23% 0.035 265);
+  --ink-2: oklch(40% 0.03 265);
+  --ink-3: oklch(49% 0.022 265);
+  --line: oklch(87% 0.018 85);
+  --signal: oklch(55% 0.19 38);
+  --signal-press: oklch(50% 0.18 38);
+  --on-signal: oklch(98.5% 0.008 60);
+
+  --route-1: oklch(70% 0.15 158);
+  --route-2: oklch(63% 0.14 245);
+  --route-3: oklch(80% 0.155 82);
+  --route-4: oklch(66% 0.19 350);
+  --on-route: oklch(20% 0.03 265);
+
+  --ocean: oklch(93% 0.025 230);
+  --land: oklch(85% 0.03 140);
+  --land-edge: oklch(76% 0.035 140);
+
+  --glass: oklch(97.4% 0.012 85 / 0.72);
+  --shadow-1: 0 1px 0 oklch(23% 0.035 265 / 0.06), 0 1px 2px oklch(23% 0.035 265 / 0.06);
+  --shadow-2: 0 1px 0 oklch(23% 0.035 265 / 0.05), 0 8px 24px -10px oklch(23% 0.035 265 / 0.22);
+
+  --font-display: 'Bricolage Grotesque Variable', 'Avenir Next', 'Segoe UI', sans-serif;
+  --font-body: 'Instrument Sans Variable', 'Avenir Next', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --maxw: 1180px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: oklch(18.5% 0.022 265);
+    --paper-2: oklch(22.5% 0.026 265);
+    --paper-3: oklch(27% 0.028 265);
+    --ink: oklch(95.5% 0.012 85);
+    --ink-2: oklch(80% 0.016 85);
+    --ink-3: oklch(66% 0.018 265);
+    --line: oklch(31% 0.026 265);
+    --signal: oklch(70% 0.185 42);
+    --signal-press: oklch(64% 0.18 42);
+    --on-signal: oklch(18% 0.03 40);
+    --route-1: oklch(74% 0.14 158);
+    --route-2: oklch(70% 0.13 245);
+    --route-3: oklch(83% 0.14 82);
+    --route-4: oklch(68% 0.18 350);
+    --ocean: oklch(23% 0.03 245);
+    --land: oklch(35% 0.035 150);
+    --land-edge: oklch(44% 0.04 150);
+    --glass: oklch(18.5% 0.022 265 / 0.7);
+    --text-3: oklch(84% 0.13 82);
+    --shadow-1: 0 1px 0 oklch(0% 0 0 / 0.25);
+    --shadow-2: 0 1px 0 oklch(100% 0 0 / 0.03) inset, 0 10px 30px -12px oklch(0% 0 0 / 0.6);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  /* In-page jumps (#report, skip links) land clear of the sticky header and the notch. */
+  scroll-padding-top: calc(84px + env(safe-area-inset-top, 0px));
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.55;
+  font-feature-settings: 'ss01', 'cv11';
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  flex: 1;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--signal);
+  outline-offset: 3px;
+}
+/* Text in a route colour on paper needs a deeper shade to stay readable (WCAG AA). */
+:root {
+  --text-1: color-mix(in oklch, var(--route-1) 55%, var(--ink));
+  --text-4: color-mix(in oklch, var(--route-4) 55%, var(--ink));
+  --text-3: oklch(52% 0.12 68);
+  /* Warm, light card used for results and the report card (adapts to dark mode). */
+  --warm: color-mix(in oklch, var(--signal) 11%, var(--paper));
+  --warm-line: color-mix(in oklch, var(--signal) 30%, var(--line));
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 100;
+  padding: 10px 14px;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: var(--r-sm);
+  text-decoration: none;
+  font-weight: 600;
+}
+.skip-link:focus {
+  top: 12px;
+}
+
+/* ---------- Header (the one place glass is used: it floats over scrolling content) ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  backdrop-filter: blur(18px) saturate(1.4);
+  border-bottom: 1px solid transparent;
+  transition: border-color 200ms ease;
+}
+.site-header[data-scrolled] {
+  border-bottom-color: var(--line);
+}
+@media (prefers-reduced-transparency: reduce) {
+  .site-header {
+    background: var(--paper);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 64px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.12rem;
+  letter-spacing: -0.02em;
+}
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  flex: none;
+}
+.brand-word span {
+  color: var(--ink-3);
+  font-weight: 500;
+}
+
+.site-nav {
+  display: flex;
+  gap: 4px;
+}
+.site-nav a {
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 0.95rem;
+  color: var(--ink-2);
+  padding: 12px 12px;
+  border-radius: 999px;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+.site-nav a[aria-current='page'] {
+  color: var(--ink);
+  background: var(--paper-3);
+}
+@media (hover: hover) and (pointer: fine) {
+  .site-nav a:hover {
+    color: var(--ink);
+    background: var(--paper-2);
+  }
+}
+@media (max-width: 520px) {
+  .brand-word span {
+    display: none;
+  }
+  .site-nav a {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 380px) {
+  .brand-word {
+    font-size: 1rem;
+  }
+  .site-nav {
+    gap: 0;
+  }
+  .site-nav a {
+    padding-inline: 7px;
+  }
+}
+
+/* ---------- Footer: deliberately quiet, legal links only ---------- */
+.site-footer {
+  margin-top: clamp(64px, 10vw, 120px);
+  color: var(--ink-3);
+  font-size: 0.8rem;
+}
+.site-footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 20px;
+  padding-block: 20px max(24px, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--line);
+}
+.site-footer nav {
+  display: flex;
+  gap: 16px;
+}
+.site-footer a {
+  display: inline-block;
+  padding-block: 12px;
+  color: var(--ink-3);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+.site-footer a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  --btn-bg: var(--paper-2);
+  --btn-fg: var(--ink);
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font: 600 0.98rem/1 var(--font-body);
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  transition: transform 160ms var(--ease-out), background-color 150ms ease, opacity 150ms ease, border-color 150ms ease;
+}
+.btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.btn-primary {
+  --btn-bg: var(--signal);
+  --btn-fg: var(--on-signal);
+  border-color: transparent;
+}
+.btn-primary:active:not(:disabled) {
+  --btn-bg: var(--signal-press);
+}
+.btn-ghost {
+  --btn-bg: transparent;
+}
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover:not(:disabled) {
+    border-color: var(--ink-3);
+  }
+  .btn-primary:hover:not(:disabled) {
+    border-color: transparent;
+    --btn-bg: var(--signal-press);
+  }
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+/* Prose pages (about / privacy) */
+.prose {
+  max-width: 68ch;
+  padding-block: clamp(40px, 8vw, 88px) 0;
+}
+.prose h1 {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  margin-block: 14px 28px;
+}
+.prose h2 {
+  font-size: 1.4rem;
+  margin-block: 40px 12px;
+}
+.prose p,
+.prose li {
+  color: var(--ink-2);
+  font-size: 1.06rem;
+}
+.prose p + p {
+  margin-top: 14px;
+}
+.prose ul {
+  padding-left: 1.2em;
+}
+.prose li + li {
+  margin-top: 8px;
+}
+.prose .lede {
+  font-size: 1.25rem;
+  color: var(--ink);
+}
+.prose a {
+  text-underline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.clear-msg {
+  margin-left: 10px;
+  color: var(--ink-2);
+  font-weight: 600;
+}
+
+/* ---------- Globes (hub, travel transition, corner mini globe) ---------- */
+.globe-sphere {
+  fill: var(--ocean);
+}
+.globe-land {
+  fill: var(--land);
+  stroke: var(--land-edge);
+  stroke-width: 0.6;
+}
+.globe-grat {
+  fill: none;
+  stroke: var(--ink);
+  stroke-opacity: 0.07;
+  stroke-width: 0.7;
+}
+.globe-rim {
+  fill: none;
+  stroke: var(--ink);
+  stroke-opacity: 0.12;
+  stroke-width: 1.2;
+}
+.globe-arc {
+  fill: none;
+  stroke-width: 2.6;
+  stroke-linecap: round;
+}
+.globe-stop {
+  stroke: var(--paper);
+  stroke-width: 2;
+}
+.globe-dot {
+  fill: var(--level, var(--signal));
+  stroke: var(--paper);
+  stroke-width: 2.5;
+}
+
+/* Difficulty / state -> route line colour, shared by every game */
+[data-level='1'] { --level: var(--route-1); }
+[data-level='2'] { --level: var(--route-2); }
+[data-level='3'] { --level: var(--route-3); }
+[data-level='4'] { --level: var(--route-4); }
+[data-level='5'] { --level: var(--signal); }
+
+/* ---------- Travel transition ----------
+   The hub adds #arrive to the game URL. Before any JS runs, CSS alone paints the ocean
+   so there is no flash of the page. If JS never runs, a 2.5s failsafe reveals the page. */
+.arrival {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+}
+.arrival.is-departing { display: block; }
+.arrival-sea {
+  position: absolute;
+  inset: 0;
+  background: var(--ocean);
+}
+.arrival svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+:root:not(.arrival-done) .arrival:target,
+.arrival-run .arrival,
+.arrival-reveal .arrival {
+  display: block;
+}
+:root:not(.arrival-done) .arrival:target {
+  animation: arrival-failsafe-hide 2.5s step-end both;
+}
+:root:not(.arrival-done):has(.arrival:target) :is(.site-header, main, .site-footer) {
+  animation: arrival-failsafe-show 2.5s step-end both;
+}
+.arrival-run :is(.site-header, main, .site-footer) {
+  opacity: 0;
+}
+.arrival-run .mini-globe,
+.arrival-reveal .mini-globe {
+  visibility: hidden;
+}
+.arrival-reveal .site-header {
+  animation: arrival-fade 500ms ease-out both;
+}
+.arrival-reveal main > * {
+  animation: arrival-rise 650ms var(--ease-out) both;
+}
+.arrival-reveal main > :nth-child(2) { animation-delay: 50ms; }
+.arrival-reveal main > :nth-child(3) { animation-delay: 100ms; }
+.arrival-reveal main > :nth-child(4) { animation-delay: 150ms; }
+.arrival-reveal main > :nth-child(n + 5) { animation-delay: 200ms; }
+@keyframes arrival-failsafe-hide {
+  from { visibility: visible; }
+  to { visibility: hidden; }
+}
+@keyframes arrival-failsafe-show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes arrival-fade {
+  from { opacity: 0; }
+}
+@keyframes arrival-rise {
+  from { opacity: 0; transform: translateY(16px); }
+}
+
+/* Corner mini globe on game pages */
+.mini-globe {
+  width: clamp(72px, 15vw, 108px);
+  aspect-ratio: 1;
+  flex: none;
+}
+.mini-globe svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.mini-globe .globe-land { stroke-width: 0.5; }
+
+/* ---------- Windows High Contrast / forced colours: keep borders and selected states visible ---------- */
+@media (forced-colors: active) {
+  .tile, .claim, .rank, .stamp-slot, .chip-btn, .slot, .swatch, .bet-btn, .hint-btn, .btn, .route-link, .card, .group, .combo input {
+    border: 1px solid CanvasText;
+  }
+  [aria-pressed='true'], .is-current .stop {
+    outline: 3px solid Highlight;
+    outline-offset: 2px;
+  }
+  :focus-visible { outline-color: Highlight; }
+}
+
+/* ---------- Phone / installed-app polish ---------- */
+.brand { min-height: 44px; }
+.site-nav a,
+.site-footer a { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+/* Keep content clear of notches and rounded corners (viewport-fit=cover). */
+.wrap {
+  padding-left: max(var(--gutter), env(safe-area-inset-left));
+  padding-right: max(var(--gutter), env(safe-area-inset-right));
+}
+.site-header { padding-top: env(safe-area-inset-top); }
+/* No long-press image menus on flags and tiles while playing. */
+img, svg { -webkit-touch-callout: none; }
+
+/* ---------- Bottom tab bar (phones only) ---------- */
+.tabbar { display: none; }
+@media (max-width: 640px) {
+  .tabbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    display: flex;
+    justify-content: space-around;
+    padding: 6px max(8px, env(safe-area-inset-left)) calc(6px + env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-right));
+    background: var(--paper);
+    background: var(--glass);
+    -webkit-backdrop-filter: blur(18px) saturate(1.4);
+    backdrop-filter: blur(18px) saturate(1.4);
+    border-top: 1px solid var(--line);
+  }
+  .tabbar a {
+    flex: 1;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 2px;
+    min-height: 50px;
+    color: var(--ink-3);
+    font-size: 0.72rem;
+    font-weight: 650;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .tabbar a[aria-current='page'] { color: var(--signal); }
+  .tabbar a:active { transform: scale(0.94); }
+  /* The bar replaces the small top links on phones, and content stays clear of it. */
+  .site-nav { display: none; }
+  body { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
+}
+@media (max-width: 640px) and (prefers-reduced-transparency: reduce) {
+  .tabbar { background: var(--paper); -webkit-backdrop-filter: none; backdrop-filter: none; }
+}

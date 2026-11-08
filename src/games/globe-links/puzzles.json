@@ -1,0 +1,2966 @@
+[
+  {
+    "groups": [
+      {
+        "category": "nordic-cross",
+        "difficulty": 1,
+        "countries": [
+          "dk",
+          "no",
+          "se",
+          "fi"
+        ],
+        "fact": "Denmark's flag, the Dannebrog, is often called the oldest national flag still in use. The other Nordic crosses are modelled on it.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nordic_cross_flag"
+      },
+      {
+        "category": "drive-left",
+        "difficulty": 2,
+        "countries": [
+          "jp",
+          "au",
+          "ke",
+          "th"
+        ],
+        "fact": "Thailand drives on the left even though it was never colonised by anyone.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+      },
+      {
+        "category": "crescent-flag",
+        "difficulty": 3,
+        "countries": [
+          "tr",
+          "dz",
+          "az",
+          "mr"
+        ],
+        "fact": "The star and crescent became closely tied to the Ottoman Empire, which is why it appears on so many flags in the region today.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Star_and_crescent"
+      },
+      {
+        "category": "named-after-person",
+        "difficulty": 4,
+        "countries": [
+          "bo",
+          "co",
+          "ph",
+          "us"
+        ],
+        "fact": "Bolivia honours Simón Bolívar, Colombia honours Christopher Columbus, the Philippines honour King Philip II of Spain, and \"America\" comes from Amerigo Vespucci.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "stan",
+        "difficulty": 1,
+        "countries": [
+          "uz",
+          "tm",
+          "kg",
+          "tj"
+        ],
+        "fact": "\"-stan\" comes from Persian and means \"place of\" or \"land of\".",
+        "sourceUrl": "https://en.wikipedia.org/wiki/-stan"
+      },
+      {
+        "category": "capital-not-largest",
+        "difficulty": 2,
+        "countries": [
+          "au",
+          "ca",
+          "tr",
+          "ch"
+        ],
+        "fact": "Canberra was built from scratch as Australia's capital, partly as a compromise between rivals Sydney and Melbourne.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Canberra"
+      },
+      {
+        "category": "equator",
+        "difficulty": 3,
+        "countries": [
+          "ug",
+          "ga",
+          "so",
+          "id"
+        ],
+        "fact": "On the equator, day and night each last about 12 hours all year round.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+      },
+      {
+        "category": "river-name",
+        "difficulty": 4,
+        "countries": [
+          "py",
+          "ne",
+          "sn",
+          "jo"
+        ],
+        "fact": "Paraguay, Niger, Senegal and Jordan all share their names with rivers that flow through or along them.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "red-white-flag",
+        "difficulty": 1,
+        "countries": [
+          "pl",
+          "id",
+          "dk",
+          "tn"
+        ],
+        "fact": "Poland's flag is white over red and Indonesia's is red over white, so the two look like each other upside down.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Indonesia"
+      },
+      {
+        "category": "landlocked",
+        "difficulty": 2,
+        "countries": [
+          "mn",
+          "np",
+          "et",
+          "la"
+        ],
+        "fact": "Mongolia is the world's second-largest landlocked country, after Kazakhstan.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Landlocked_country"
+      },
+      {
+        "category": "hosted-olympics",
+        "difficulty": 3,
+        "countries": [
+          "nl",
+          "be",
+          "it",
+          "au"
+        ],
+        "fact": "The Olympic flame was lit for the first time at the 1928 Amsterdam Games.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/1928_Summer_Olympics"
+      },
+      {
+        "category": "native-name",
+        "difficulty": 4,
+        "countries": [
+          "hr",
+          "al",
+          "me",
+          "ee"
+        ],
+        "fact": "In their own languages these are Hrvatska, Shqipëria, Crna Gora and Eesti.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_and_their_capitals_in_native_languages"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "largest",
+        "difficulty": 1,
+        "countries": [
+          "ru",
+          "cn",
+          "br",
+          "au"
+        ],
+        "fact": "Russia is so wide that it spans 11 time zones.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Time_in_Russia"
+      },
+      {
+        "category": "microstate",
+        "difficulty": 2,
+        "countries": [
+          "va",
+          "mc",
+          "sm",
+          "li"
+        ],
+        "fact": "Vatican City is the smallest country in the world, at about 0.49 km² (0.19 sq mi).",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vatican_City"
+      },
+      {
+        "category": "bird-flag",
+        "difficulty": 3,
+        "countries": [
+          "eg",
+          "al",
+          "pg",
+          "zm"
+        ],
+        "fact": "Papua New Guinea's flag shows a bird-of-paradise. Most species of these birds live only on New Guinea and nearby islands.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea"
+      },
+      {
+        "category": "tree-flag",
+        "difficulty": 4,
+        "countries": [
+          "lb",
+          "ht",
+          "bz",
+          "gq"
+        ],
+        "fact": "The cedar on Lebanon's flag has been a symbol of the region for thousands of years and is mentioned many times in the Bible.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Lebanon"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "drive-left",
+        "difficulty": 1,
+        "countries": [
+          "gb",
+          "in",
+          "nz",
+          "jm"
+        ],
+        "fact": "Sweden switched from driving on the left to the right overnight on 3 September 1967, a day known as Dagen H.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dagen_H"
+      },
+      {
+        "category": "portuguese",
+        "difficulty": 2,
+        "countries": [
+          "pt",
+          "br",
+          "ao",
+          "cv"
+        ],
+        "fact": "Brazil has about 20 times as many people as Portugal, so most Portuguese speakers live in South America.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Portuguese_language"
+      },
+      {
+        "category": "crescent-flag",
+        "difficulty": 3,
+        "countries": [
+          "tr",
+          "tn",
+          "az",
+          "mr"
+        ],
+        "fact": "Türkiye's and Tunisia's flags look alike: a white crescent and star on red. Tunisia's sits inside a white circle.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Tunisia"
+      },
+      {
+        "category": "multiple-capitals",
+        "difficulty": 4,
+        "countries": [
+          "bo",
+          "nl",
+          "bj",
+          "ci"
+        ],
+        "fact": "Bolivia's government sits in La Paz, but its constitutional capital is Sucre.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Sucre"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "stan",
+        "difficulty": 1,
+        "countries": [
+          "kz",
+          "uz",
+          "pk",
+          "tm"
+        ],
+        "fact": "Kazakhstan is the largest landlocked country on Earth.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kazakhstan"
+      },
+      {
+        "category": "spanish",
+        "difficulty": 2,
+        "countries": [
+          "mx",
+          "cl",
+          "cu",
+          "pe"
+        ],
+        "fact": "Mexico has more Spanish speakers than any other country, including Spain.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Spanish_language"
+      },
+      {
+        "category": "river-name",
+        "difficulty": 3,
+        "countries": [
+          "in",
+          "gm",
+          "sn",
+          "ne"
+        ],
+        "fact": "India's name comes from the Indus River, which today flows mostly through Pakistan.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Names_for_India"
+      },
+      {
+        "category": "no-rivers",
+        "difficulty": 4,
+        "countries": [
+          "kw",
+          "qa",
+          "bh",
+          "ye"
+        ],
+        "fact": "None of these countries has a river that flows all year round. Kuwait, Qatar and Bahrain get much of their drinking water by desalinating seawater.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Desalination"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "nordic-cross",
+        "difficulty": 1,
+        "countries": [
+          "no",
+          "se",
+          "fi",
+          "is"
+        ],
+        "fact": "Iceland's flag uses Norway's colours swapped around: a red cross edged in white on blue.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Iceland"
+      },
+      {
+        "category": "sun-flag",
+        "difficulty": 2,
+        "countries": [
+          "kg",
+          "uy",
+          "rw",
+          "na"
+        ],
+        "fact": "Kyrgyzstan's flag shows a sun with 40 rays, standing for the 40 tribes of its national epic.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan"
+      },
+      {
+        "category": "capital-not-largest",
+        "difficulty": 3,
+        "countries": [
+          "us",
+          "nz",
+          "ma",
+          "mm"
+        ],
+        "fact": "Myanmar moved its government to Naypyidaw, a purpose-built capital, in 2005 and 2006.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Naypyidaw"
+      },
+      {
+        "category": "romance-name",
+        "difficulty": 4,
+        "countries": [
+          "hn",
+          "me",
+          "ve",
+          "sv"
+        ],
+        "fact": "Venezuela means \"little Venice\". Early explorers were reminded of Venice by houses built on stilts over the water.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Venezuela"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "red-white-flag",
+        "difficulty": 1,
+        "countries": [
+          "jp",
+          "ca",
+          "dk",
+          "sg"
+        ],
+        "fact": "Japan's flag is called the Hinomaru, which means \"circle of the sun\".",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Japan"
+      },
+      {
+        "category": "landlocked",
+        "difficulty": 2,
+        "countries": [
+          "bt",
+          "la",
+          "ml",
+          "py"
+        ],
+        "fact": "Laos is the only landlocked country in Southeast Asia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Laos"
+      },
+      {
+        "category": "bird-flag",
+        "difficulty": 3,
+        "countries": [
+          "mx",
+          "dm",
+          "eg",
+          "pg"
+        ],
+        "fact": "Mexico's flag shows an eagle eating a snake on a cactus, from the Aztec legend about where to found Tenochtitlan.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Mexico"
+      },
+      {
+        "category": "multiple-capitals",
+        "difficulty": 4,
+        "countries": [
+          "za",
+          "nl",
+          "lk",
+          "bj"
+        ],
+        "fact": "South Africa splits its capital three ways: Pretoria (executive), Cape Town (legislative) and Bloemfontein (judicial).",
+        "sourceUrl": "https://en.wikipedia.org/wiki/South_Africa"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "largest",
+        "difficulty": 1,
+        "countries": [
+          "ru",
+          "us",
+          "br",
+          "cn"
+        ],
+        "fact": "Brazil is the largest country in both South America and the Southern Hemisphere.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Brazil"
+      },
+      {
+        "category": "drive-left",
+        "difficulty": 2,
+        "countries": [
+          "th",
+          "jp",
+          "ke",
+          "nz"
+        ],
+        "fact": "Roughly a third of the world's people live in countries that drive on the left.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+      },
+      {
+        "category": "crescent-flag",
+        "difficulty": 3,
+        "countries": [
+          "tn",
+          "ly",
+          "uz",
+          "km"
+        ],
+        "fact": "The four stars on Comoros's flag stand for the four main islands of the Comoros archipelago.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_the_Comoros"
+      },
+      {
+        "category": "one-neighbour",
+        "difficulty": 4,
+        "countries": [
+          "pt",
+          "ht",
+          "kr",
+          "do"
+        ],
+        "fact": "Portugal's border with Spain was largely fixed by a treaty in 1297, making it one of the oldest borders in Europe.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Portugal%E2%80%93Spain_border"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "spanish",
+        "difficulty": 1,
+        "countries": [
+          "ar",
+          "cl",
+          "pe",
+          "cu"
+        ],
+        "fact": "Spanish has the second-largest number of native speakers of any language, after Mandarin Chinese.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Spanish_language"
+      },
+      {
+        "category": "hosted-olympics",
+        "difficulty": 2,
+        "countries": [
+          "fr",
+          "it",
+          "de",
+          "au"
+        ],
+        "fact": "Paris has hosted the Summer Olympics three times: in 1900, 1924 and 2024.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2024_Summer_Olympics"
+      },
+      {
+        "category": "equator",
+        "difficulty": 3,
+        "countries": [
+          "ke",
+          "so",
+          "id",
+          "ga"
+        ],
+        "fact": "The Earth's surface spins fastest at the equator, at about 1,670 km/h (1,040 mph).",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+      },
+      {
+        "category": "river-name",
+        "difficulty": 4,
+        "countries": [
+          "ne",
+          "sn",
+          "jo",
+          "zm"
+        ],
+        "fact": "Zambia is named after the Zambezi River, which plunges over Victoria Falls on its border with Zimbabwe.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Zambia"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "stan",
+        "difficulty": 1,
+        "countries": [
+          "tm",
+          "kg",
+          "tj",
+          "uz"
+        ],
+        "fact": "Five of the seven \"-stan\" countries are in Central Asia and were once part of the Soviet Union.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Central_Asia"
+      },
+      {
+        "category": "portuguese",
+        "difficulty": 2,
+        "countries": [
+          "pt",
+          "mz",
+          "ao",
+          "tl"
+        ],
+        "fact": "Timor-Leste is the only country in Asia where Portuguese is an official language.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/East_Timor"
+      },
+      {
+        "category": "capital-not-largest",
+        "difficulty": 3,
+        "countries": [
+          "au",
+          "ng",
+          "ci",
+          "vn"
+        ],
+        "fact": "Nigeria moved its capital from Lagos to Abuja, a planned city in the middle of the country, in 1991.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Abuja"
+      },
+      {
+        "category": "native-name",
+        "difficulty": 4,
+        "countries": [
+          "hu",
+          "fi",
+          "ge",
+          "hr"
+        ],
+        "fact": "Hungary is Magyarország in Hungarian, Finland is Suomi, and Georgia is Sakartvelo.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_and_their_capitals_in_native_languages"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "drive-left",
+        "difficulty": 1,
+        "countries": [
+          "au",
+          "nz",
+          "za",
+          "jm"
+        ],
+        "fact": "Many countries that drive on the left are former British colonies, which is why the habit is common in the Caribbean, southern Africa and South Asia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+      },
+      {
+        "category": "microstate",
+        "difficulty": 2,
+        "countries": [
+          "mc",
+          "va",
+          "sm",
+          "ad"
+        ],
+        "fact": "San Marino says it is the world's oldest surviving republic, traditionally founded in 301 AD.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/San_Marino"
+      },
+      {
+        "category": "weapon-flag",
+        "difficulty": 3,
+        "countries": [
+          "sa",
+          "om",
+          "gt",
+          "ao"
+        ],
+        "fact": "Angola's flag shows half a cogwheel crossed with a machete.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Angola"
+      },
+      {
+        "category": "native-name",
+        "difficulty": 4,
+        "countries": [
+          "de",
+          "gr",
+          "am",
+          "al"
+        ],
+        "fact": "Germany has an unusual number of names: Deutschland in German, Allemagne in French, Niemcy in Polish and Saksa in Finnish.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Names_of_Germany"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "guinea-name",
+        "difficulty": 1,
+        "countries": [
+          "pg",
+          "gq",
+          "gw",
+          "gn"
+        ],
+        "fact": "Papua New Guinea got its name from a Spanish explorer who thought the local people resembled those he had seen on Africa's Guinea coast.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "black-sea",
+        "difficulty": 2,
+        "countries": [
+          "ge",
+          "tr",
+          "ru",
+          "ro"
+        ],
+        "fact": "The Black Sea is fed mainly by three big rivers: the Danube, the Dnieper and the Dniester.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Black_Sea"
+      },
+      {
+        "category": "tropic-capricorn",
+        "difficulty": 3,
+        "countries": [
+          "na",
+          "mg",
+          "za",
+          "py"
+        ],
+        "fact": "The Tropic of Capricorn is the southernmost line where the Sun can be directly overhead, which happens at the December solstice.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn"
+      },
+      {
+        "category": "lake-chad",
+        "difficulty": 4,
+        "countries": [
+          "ne",
+          "ng",
+          "td",
+          "cm"
+        ],
+        "fact": "Lake Chad's open water shrank from about 25,000 square kilometres in 1960 to just 2,000 in 1980.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Chad"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "union-jack-flag",
+        "difficulty": 1,
+        "countries": [
+          "au",
+          "nz",
+          "fj",
+          "tv"
+        ],
+        "fact": "Australia, New Zealand and Tuvalu kept the British monarchy, while Fiji abolished it in 1987 but still has the Union Jack on its flag.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Union_Jack"
+      },
+      {
+        "category": "former-yugoslavia",
+        "difficulty": 2,
+        "countries": [
+          "hr",
+          "me",
+          "mk",
+          "ba"
+        ],
+        "fact": "After World War II, Yugoslavia was set up as a federation of six republics, with borders drawn along ethnic and historical lines.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Breakup_of_Yugoslavia"
+      },
+      {
+        "category": "arabic-official",
+        "difficulty": 3,
+        "countries": [
+          "sa",
+          "km",
+          "jo",
+          "so"
+        ],
+        "fact": "In Comoros, Arabic shares official status with Comorian and French.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_Arabic_is_an_official_language"
+      },
+      {
+        "category": "prime-meridian",
+        "difficulty": 4,
+        "countries": [
+          "fr",
+          "gh",
+          "bf",
+          "es"
+        ],
+        "fact": "The Greenwich meridian was the international standard prime meridian from 1884 to 1974.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Prime_meridian_(Greenwich)"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "stan",
+        "difficulty": 1,
+        "countries": [
+          "af",
+          "kz",
+          "kg",
+          "tj"
+        ],
+        "fact": "The name Afghanistan comes from \"Afghan\", a word first recorded in the 4th century AD that most likely meant \"people from a distant land\".",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "euro",
+        "difficulty": 2,
+        "countries": [
+          "ad",
+          "ie",
+          "sm",
+          "mc"
+        ],
+        "fact": "Andorra, Monaco and San Marino are not in the EU, but they use the euro under monetary agreements.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+        "category": "red-sea",
+        "difficulty": 3,
+        "countries": [
+          "ye",
+          "eg",
+          "dj",
+          "sd"
+        ],
+        "fact": "Egypt's Suez Canal connects the Red Sea to the Mediterranean, dividing Africa and Asia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Suez_Canal"
+      },
+      {
+        "category": "zambezi",
+        "difficulty": 4,
+        "countries": [
+          "zm",
+          "mz",
+          "ao",
+          "zw"
+        ],
+        "fact": "Victoria Falls, on the border of Zambia and Zimbabwe, is a waterfall on the Zambezi River.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Victoria_Falls"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "nordic-cross",
+        "difficulty": 1,
+        "countries": [
+          "is",
+          "dk",
+          "fi",
+          "se"
+        ],
+        "fact": "On a Nordic cross flag, the cross is not centred: it is shifted towards the hoist side.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nordic_cross_flag"
+      },
+      {
+        "category": "caspian",
+        "difficulty": 2,
+        "countries": [
+          "tm",
+          "az",
+          "ir",
+          "ru"
+        ],
+        "fact": "The Caspian Sea is often listed as the world's largest lake, although its water is brackish rather than fresh.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Caspian_Sea"
+      },
+      {
+        "category": "tropic-cancer",
+        "difficulty": 3,
+        "countries": [
+          "cn",
+          "mm",
+          "mr",
+          "ml"
+        ],
+        "fact": "In China, the Tropic of Cancer runs through the provinces of Yunnan, Guangxi and Guangdong.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
+      },
+      {
+        "category": "danube-capital",
+        "difficulty": 4,
+        "countries": [
+          "hu",
+          "at",
+          "rs",
+          "sk"
+        ],
+        "fact": "The Danube flows through four national capitals, Vienna, Bratislava, Budapest and Belgrade, more than any other river in the world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Danube"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "largest",
+        "difficulty": 1,
+        "countries": [
+          "br",
+          "us",
+          "au",
+          "ru"
+        ],
+        "fact": "Russia is the largest country in the world, spanning eleven time zones.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Russia"
+      },
+      {
+        "category": "french-official",
+        "difficulty": 2,
+        "countries": [
+          "ch",
+          "ci",
+          "sn",
+          "bj"
+        ],
+        "fact": "Côte d'Ivoire's official capital is Yamoussoukro, but Abidjan was the capital until 1983.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language"
+      },
+      {
+        "category": "borders-south-africa",
+        "difficulty": 3,
+        "countries": [
+          "sz",
+          "ls",
+          "bw",
+          "na"
+        ],
+        "fact": "Lesotho is completely surrounded by South Africa, and it is the largest of the world's three sovereign enclaves.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lesotho"
+      },
+      {
+        "category": "mekong",
+        "difficulty": 4,
+        "countries": [
+          "la",
+          "th",
+          "vn",
+          "kh"
+        ],
+        "fact": "Rapids and waterfalls make the Mekong hard to navigate, yet it is still a major trade route.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mekong"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "saint-name",
+        "difficulty": 1,
+        "countries": [
+          "vc",
+          "lc",
+          "st",
+          "kn"
+        ],
+        "fact": "Saint Lucia is named after Saint Lucy, reportedly because French sailors were shipwrecked there on St. Lucy's Day, 13 December 1502.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "german-official",
+        "difficulty": 2,
+        "countries": [
+          "li",
+          "be",
+          "de",
+          "lu"
+        ],
+        "fact": "German is an official language in six countries, all of them in central and western Europe.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_territorial_entities_where_German_is_an_official_language"
+      },
+      {
+        "category": "borders-russia",
+        "difficulty": 3,
+        "countries": [
+          "mn",
+          "no",
+          "pl",
+          "ee"
+        ],
+        "fact": "Mongolia is sandwiched between two giant neighbours, with Russia to the north and China to the south.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mongolia"
+      },
+      {
+        "category": "lake-tanganyika",
+        "difficulty": 4,
+        "countries": [
+          "tz",
+          "bi",
+          "cd",
+          "zm"
+        ],
+        "fact": "Lake Tanganyika is the world's longest freshwater lake, and the second deepest after Lake Baikal.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Tanganyika"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "ends-land",
+        "difficulty": 1,
+        "countries": [
+          "nz",
+          "th",
+          "ie",
+          "pl"
+        ],
+        "fact": "Thailand means \"Land of the Thai\", and the country was formerly known as Siam.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "arabic-official",
+        "difficulty": 2,
+        "countries": [
+          "tn",
+          "dz",
+          "ma",
+          "ae"
+        ],
+        "fact": "In Algeria and Morocco, Arabic shares official status with the Amazigh (Berber) language.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_Arabic_is_an_official_language"
+      },
+      {
+        "category": "arctic-circle",
+        "difficulty": 3,
+        "countries": [
+          "ca",
+          "us",
+          "no",
+          "se"
+        ],
+        "fact": "The Arctic Circle is slowly drifting towards the North Pole, by about 14.5 metres a year.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Arctic_Circle"
+      },
+      {
+        "category": "rhine",
+        "difficulty": 4,
+        "countries": [
+          "fr",
+          "de",
+          "li",
+          "at"
+        ],
+        "fact": "The Rhine forms part of the border between Switzerland and Liechtenstein, and later much of the border between France and Germany.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Rhine"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "compass-name",
+        "difficulty": 1,
+        "countries": [
+          "kr",
+          "kp",
+          "ss",
+          "za"
+        ],
+        "fact": "South Sudan became an independent country in 2011, when it separated from Sudan.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/South_Sudan"
+      },
+      {
+        "category": "alps",
+        "difficulty": 2,
+        "countries": [
+          "it",
+          "si",
+          "mc",
+          "ch"
+        ],
+        "fact": "Mont Blanc, at 4,806 metres, is the highest mountain in the Alps.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mont_Blanc"
+      },
+      {
+        "category": "no-land-border",
+        "difficulty": 3,
+        "countries": [
+          "lk",
+          "dm",
+          "jm",
+          "cv"
+        ],
+        "fact": "Cape Verde's islands were uninhabited until Portuguese explorers settled them in the 15th century.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cape_Verde"
+      },
+      {
+        "category": "river-name",
+        "difficulty": 4,
+        "countries": [
+          "in",
+          "uy",
+          "gm",
+          "cg"
+        ],
+        "fact": "India's name means \"Land of the Indus River\" in Latin, and it comes via Greek from Old Persian.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "g7",
+        "difficulty": 1,
+        "countries": [
+          "jp",
+          "it",
+          "ca",
+          "fr"
+        ],
+        "fact": "The G7 used to be the G8, until Russia's participation was suspended in 2014.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/G7"
+      },
+      {
+        "category": "kingdom-europe",
+        "difficulty": 2,
+        "countries": [
+          "nl",
+          "be",
+          "dk",
+          "es"
+        ],
+        "fact": "Seven of Europe's twelve remaining monarchies are kingdoms. The others are three principalities, a grand duchy and the Vatican.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Monarchies_in_Europe"
+      },
+      {
+        "category": "red-sea",
+        "difficulty": 3,
+        "countries": [
+          "er",
+          "sd",
+          "sa",
+          "ye"
+        ],
+        "fact": "Very little rain and no major river reach the Red Sea, so strong evaporation makes it very salty.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Red_Sea"
+      },
+      {
+        "category": "swahili-official",
+        "difficulty": 4,
+        "countries": [
+          "ug",
+          "ke",
+          "rw",
+          "tz"
+        ],
+        "fact": "In 2022 the United Nations declared 7 July to be Swahili Language Day.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Swahili_language"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "alps",
+        "difficulty": 1,
+        "countries": [
+          "si",
+          "it",
+          "at",
+          "mc"
+        ],
+        "fact": "The Alps stretch for about 1,200 km across eight countries, from Monaco in the west to Slovenia in the east.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Alps"
+      },
+      {
+        "category": "spanish",
+        "difficulty": 2,
+        "countries": [
+          "cu",
+          "gt",
+          "co",
+          "bo"
+        ],
+        "fact": "Bolivia recognises 37 official languages, with Spanish alongside Indigenous languages such as Aymara.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Languages_of_Bolivia"
+      },
+      {
+        "category": "charles-head",
+        "difficulty": 3,
+        "countries": [
+          "bz",
+          "gb",
+          "ag",
+          "gd"
+        ],
+        "fact": "In every Commonwealth realm except the United Kingdom, the monarch is represented by a governor-general.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Commonwealth_realm"
+      },
+      {
+        "category": "tropic-capricorn",
+        "difficulty": 4,
+        "countries": [
+          "mz",
+          "mg",
+          "br",
+          "bw"
+        ],
+        "fact": "In Brazil, the Tropic of Capricorn crosses the states of Mato Grosso do Sul, Paraná and São Paulo.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "andes",
+        "difficulty": 1,
+        "countries": [
+          "ar",
+          "cl",
+          "ve",
+          "ec"
+        ],
+        "fact": "The Andes are the longest continental mountain range in the world, running about 8,900 km along South America's western edge.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Andes"
+      },
+      {
+        "category": "landlocked",
+        "difficulty": 2,
+        "countries": [
+          "am",
+          "va",
+          "et",
+          "uz"
+        ],
+        "fact": "Uzbekistan is one of only two doubly landlocked countries, surrounded entirely by other landlocked countries. The other is Liechtenstein.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Landlocked_country"
+      },
+      {
+        "category": "borders-china",
+        "difficulty": 3,
+        "countries": [
+          "pk",
+          "in",
+          "vn",
+          "mm"
+        ],
+        "fact": "China shares land borders with 14 countries, with a combined length of about 22,117 km.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/China"
+      },
+      {
+        "category": "prime-meridian",
+        "difficulty": 4,
+        "countries": [
+          "tg",
+          "gb",
+          "dz",
+          "gh"
+        ],
+        "fact": "In the United Kingdom the prime meridian runs only through England, passing the Royal Observatory in Greenwich, London.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Prime_meridian_(Greenwich)"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "spanish",
+        "difficulty": 1,
+        "countries": [
+          "mx",
+          "do",
+          "cr",
+          "sv"
+        ],
+        "fact": "Mexico has the largest population of native Spanish speakers, about 130 million people.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Spanish_language"
+      },
+      {
+        "category": "baltic",
+        "difficulty": 2,
+        "countries": [
+          "lt",
+          "lv",
+          "ee",
+          "fi"
+        ],
+        "fact": "The Baltic Sea's drainage basin is roughly four times the size of the sea itself.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltic_Sea"
+      },
+      {
+        "category": "no-land-border",
+        "difficulty": 3,
+        "countries": [
+          "ph",
+          "tt",
+          "bs",
+          "mv"
+        ],
+        "fact": "The Maldives is the world's lowest-lying country, with an average ground level of about 1.5 metres above the sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Maldives"
+      },
+      {
+        "category": "mekong",
+        "difficulty": 4,
+        "countries": [
+          "la",
+          "cn",
+          "kh",
+          "mm"
+        ],
+        "fact": "In China, the Mekong is officially called the Lancang River.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mekong"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "eu",
+        "difficulty": 1,
+        "countries": [
+          "gr",
+          "pt",
+          "cz",
+          "mt"
+        ],
+        "fact": "Malta, an island nation south of Italy, is the world's tenth-smallest country by area.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Malta"
+      },
+      {
+        "category": "former-ussr",
+        "difficulty": 2,
+        "countries": [
+          "ua",
+          "by",
+          "ge",
+          "kz"
+        ],
+        "fact": "The Soviet Union was formally dissolved on 26 December 1991.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
+      },
+      {
+        "category": "tropic-cancer",
+        "difficulty": 3,
+        "countries": [
+          "ly",
+          "om",
+          "bd",
+          "ae"
+        ],
+        "fact": "In the United Arab Emirates, the Tropic of Cancer crosses only the emirate of Abu Dhabi.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
+      },
+      {
+        "category": "river-name",
+        "difficulty": 4,
+        "countries": [
+          "uy",
+          "py",
+          "gm",
+          "jo"
+        ],
+        "fact": "Jordan is named after the river Jordan, whose name may come from a root meaning \"descend\", as it flows down into the Dead Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "kingdom-europe",
+        "difficulty": 1,
+        "countries": [
+          "no",
+          "gb",
+          "dk",
+          "se"
+        ],
+        "fact": "Monarchy was common in Europe until the end of the 19th century, but after World War I most European monarchies were abolished.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Monarchies_in_Europe"
+      },
+      {
+        "category": "former-ussr",
+        "difficulty": 2,
+        "countries": [
+          "md",
+          "kg",
+          "tm",
+          "tj"
+        ],
+        "fact": "On 8 December 1991, the leaders of Russia, Belarus and Ukraine signed the Belovezha Accords, declaring that the Soviet Union no longer existed.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
+      },
+      {
+        "category": "equator",
+        "difficulty": 3,
+        "countries": [
+          "id",
+          "ga",
+          "ki",
+          "ec"
+        ],
+        "fact": "In Ecuador, the equator passes about 24 km north of central Quito, near Ciudad Mitad del Mundo.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+      },
+      {
+        "category": "borders-france",
+        "difficulty": 4,
+        "countries": [
+          "ad",
+          "lu",
+          "ch",
+          "de"
+        ],
+        "fact": "Andorra sits high in the eastern Pyrenees, between France to the north and Spain to the south.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Andorra"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "former-ussr",
+        "difficulty": 1,
+        "countries": [
+          "az",
+          "uz",
+          "am",
+          "lt"
+        ],
+        "fact": "Armenia and Azerbaijan, together with Georgia, form the South Caucasus, one of five subregions of the post-Soviet states.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Post-Soviet_states"
+      },
+      {
+        "category": "mediterranean",
+        "difficulty": 2,
+        "countries": [
+          "al",
+          "lb",
+          "sy",
+          "cy"
+        ],
+        "fact": "The Mediterranean connects to the Atlantic Ocean through the narrow Strait of Gibraltar.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Strait_of_Gibraltar"
+      },
+      {
+        "category": "borders-brazil",
+        "difficulty": 3,
+        "countries": [
+          "pe",
+          "gy",
+          "sr",
+          "co"
+        ],
+        "fact": "Brazil borders every other country in South America except Ecuador and Chile.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Brazil"
+      },
+      {
+        "category": "arctic-circle",
+        "difficulty": 4,
+        "countries": [
+          "is",
+          "fi",
+          "us",
+          "ca"
+        ],
+        "fact": "In Finland, the Arctic Circle runs right across Rovaniemi Airport in Lapland.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Arctic_Circle"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "borders-china",
+        "difficulty": 1,
+        "countries": [
+          "bt",
+          "np",
+          "mn",
+          "pk"
+        ],
+        "fact": "China borders 14 countries, tied with Russia for the most of any country.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/K2"
+      },
+      {
+        "category": "winter-olympics",
+        "difficulty": 2,
+        "countries": [
+          "kr",
+          "jp",
+          "cn",
+          "at"
+        ],
+        "fact": "Beijing became the first city to host both the Summer and Winter Olympics when it held the 2022 Winter Games.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Beijing"
+      },
+      {
+        "category": "southern-cross-flag",
+        "difficulty": 3,
+        "countries": [
+          "ws",
+          "pg",
+          "au",
+          "br"
+        ],
+        "fact": "The stars on Brazil's flag show the sky over Rio de Janeiro on 15 November 1889.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+      },
+      {
+        "category": "red-sea",
+        "difficulty": 4,
+        "countries": [
+          "eg",
+          "dj",
+          "sd",
+          "er"
+        ],
+        "fact": "The Red Sea is about 2,250 km long but only about 355 km wide.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Red_Sea"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "gcc",
+        "difficulty": 1,
+        "countries": [
+          "bh",
+          "qa",
+          "kw",
+          "om"
+        ],
+        "fact": "The Gulf Cooperation Council was established on 25 May 1981.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Gulf_Cooperation_Council"
+      },
+      {
+        "category": "danube",
+        "difficulty": 2,
+        "countries": [
+          "bg",
+          "hu",
+          "hr",
+          "ua"
+        ],
+        "fact": "The Danube is the second-longest river in Europe, after the Volga.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Danube"
+      },
+      {
+        "category": "charles-head",
+        "difficulty": 3,
+        "countries": [
+          "sb",
+          "jm",
+          "bz",
+          "gd"
+        ],
+        "fact": "The Commonwealth has 56 member countries, but only 15 of them have King Charles III as head of state.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Commonwealth_realm"
+      },
+      {
+        "category": "borders-south-africa",
+        "difficulty": 4,
+        "countries": [
+          "sz",
+          "zw",
+          "ls",
+          "mz"
+        ],
+        "fact": "Eswatini is an absolute monarchy, headed by King Mswati III.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Eswatini"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "drive-left",
+        "difficulty": 1,
+        "countries": [
+          "nz",
+          "ke",
+          "sg",
+          "my"
+        ],
+        "fact": "About a third of the world's population lives in countries that drive on the left.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+      },
+      {
+        "category": "hosted-olympics",
+        "difficulty": 2,
+        "countries": [
+          "gr",
+          "kr",
+          "fi",
+          "se"
+        ],
+        "fact": "Athens hosted the 1896 Olympics, the first international Olympic Games of modern times.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/1896_Summer_Olympics"
+      },
+      {
+        "category": "tropic-cancer",
+        "difficulty": 3,
+        "countries": [
+          "ne",
+          "ml",
+          "mr",
+          "ly"
+        ],
+        "fact": "The climate along the Tropic of Cancer is generally hot and dry, apart from cooler highlands and coastal areas.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
+      },
+      {
+        "category": "borders-france",
+        "difficulty": 4,
+        "countries": [
+          "ad",
+          "lu",
+          "ch",
+          "mc"
+        ],
+        "fact": "Monaco is the second-smallest country in the world after Vatican City, and France surrounds it on three sides.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Monaco"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "german-official",
+        "difficulty": 1,
+        "countries": [
+          "at",
+          "ch",
+          "be",
+          "de"
+        ],
+        "fact": "Since 2004, the German-speaking countries have held a meeting every year.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_territorial_entities_where_German_is_an_official_language"
+      },
+      {
+        "category": "asean",
+        "difficulty": 2,
+        "countries": [
+          "bn",
+          "my",
+          "sg",
+          "tl"
+        ],
+        "fact": "Timor-Leste joined ASEAN on 26 October 2025, becoming its 11th member.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/ASEAN"
+      },
+      {
+        "category": "equator",
+        "difficulty": 3,
+        "countries": [
+          "ga",
+          "so",
+          "ke",
+          "ug"
+        ],
+        "fact": "The equator passes through Mount Kenya, the highest mountain in Kenya.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+      },
+      {
+        "category": "prime-meridian",
+        "difficulty": 4,
+        "countries": [
+          "tg",
+          "bf",
+          "gh",
+          "dz"
+        ],
+        "fact": "The Greenwich meridian crosses eight countries, from the United Kingdom in the north to Ghana in the south.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Prime_meridian_(Greenwich)"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "world-cup-winner",
+        "difficulty": 1,
+        "countries": [
+          "ar",
+          "uy",
+          "es",
+          "br"
+        ],
+        "fact": "Spain won the 2026 World Cup, its second title, at the first tournament hosted by three countries: the United States, Mexico and Canada.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup"
+      },
+      {
+        "category": "caspian",
+        "difficulty": 2,
+        "countries": [
+          "ir",
+          "tm",
+          "kz",
+          "az"
+        ],
+        "fact": "The Volga River supplies about 80% of the water flowing into the Caspian Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Caspian_Sea"
+      },
+      {
+        "category": "commonwealth",
+        "difficulty": 3,
+        "countries": [
+          "nr",
+          "mw",
+          "to",
+          "bb"
+        ],
+        "fact": "Nauru is the smallest member of the Commonwealth of Nations, by both area and population.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nauru"
+      },
+      {
+        "category": "rhine",
+        "difficulty": 4,
+        "countries": [
+          "nl",
+          "li",
+          "ch",
+          "at"
+        ],
+        "fact": "The Rhine begins in the Swiss canton of Graubünden and reaches the North Sea in the Netherlands.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Rhine"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "microstate",
+        "difficulty": 1,
+        "countries": [
+          "va",
+          "sm",
+          "mt",
+          "ad"
+        ],
+        "fact": "Vatican City is the smallest country in the world, with an area of just 0.49 square kilometres.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vatican_City"
+      },
+      {
+        "category": "arabic-official",
+        "difficulty": 2,
+        "countries": [
+          "iq",
+          "km",
+          "ma",
+          "qa"
+        ],
+        "fact": "In Iraq, Arabic shares official status with Kurdish.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_Arabic_is_an_official_language"
+      },
+      {
+        "category": "asean",
+        "difficulty": 3,
+        "countries": [
+          "ph",
+          "id",
+          "bn",
+          "sg"
+        ],
+        "fact": "The Philippines is made up of about 7,641 islands in the western Pacific Ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Philippines"
+      },
+      {
+        "category": "tropic-capricorn",
+        "difficulty": 4,
+        "countries": [
+          "cl",
+          "mg",
+          "za",
+          "na"
+        ],
+        "fact": "In Madagascar, the Tropic of Capricorn crosses the Toliara and Fianarantsoa provinces.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "mediterranean",
+        "difficulty": 1,
+        "countries": [
+          "al",
+          "lb",
+          "tn",
+          "me"
+        ],
+        "fact": "The countries around the Mediterranean are spread across three regions: southern Europe, West Asia and North Africa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mediterranean_Sea"
+      },
+      {
+        "category": "landlocked",
+        "difficulty": 2,
+        "countries": [
+          "cf",
+          "rw",
+          "np",
+          "bt"
+        ],
+        "fact": "Kazakhstan is the world's largest landlocked country.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Landlocked_country"
+      },
+      {
+        "category": "charles-head",
+        "difficulty": 3,
+        "countries": [
+          "tv",
+          "kn",
+          "lc",
+          "ag"
+        ],
+        "fact": "Barbados used to be a Commonwealth realm too, but on 30 November 2021 it became a republic within the Commonwealth.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Barbados"
+      },
+      {
+        "category": "arctic-circle",
+        "difficulty": 4,
+        "countries": [
+          "is",
+          "ru",
+          "no",
+          "us"
+        ],
+        "fact": "In Iceland, the Arctic Circle crosses only the small island of Grímsey.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Arctic_Circle"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "french-official",
+        "difficulty": 1,
+        "countries": [
+          "ht",
+          "vu",
+          "ci",
+          "bj"
+        ],
+        "fact": "In Haiti, French is an official language alongside Haitian Creole.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language"
+      },
+      {
+        "category": "baltic",
+        "difficulty": 2,
+        "countries": [
+          "lv",
+          "pl",
+          "ee",
+          "lt"
+        ],
+        "fact": "The Baltic Sea is an arm of the Atlantic Ocean, enclosed by nine countries.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltic_Sea"
+      },
+      {
+        "category": "borders-brazil",
+        "difficulty": 3,
+        "countries": [
+          "ve",
+          "pe",
+          "bo",
+          "gy"
+        ],
+        "fact": "Bolivia shares about 3,400 km of border with Brazil.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "red-sea",
+        "difficulty": 4,
+        "countries": [
+          "er",
+          "ye",
+          "jo",
+          "eg"
+        ],
+        "fact": "Coral reefs in the Red Sea are found near several of its coastal countries, including Egypt, Eritrea, Jordan and Sudan.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Red_Sea"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "arabic-official",
+        "difficulty": 1,
+        "countries": [
+          "kw",
+          "td",
+          "iq",
+          "sy"
+        ],
+        "fact": "Chad has both Arabic and French as official languages, and it is an observer state in the Arab League.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_Arabic_is_an_official_language"
+      },
+      {
+        "category": "winter-olympics",
+        "difficulty": 2,
+        "countries": [
+          "kr",
+          "cn",
+          "fr",
+          "ca"
+        ],
+        "fact": "The first Winter Olympics were held in 1924 in Chamonix, France.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Winter_Olympic_Games"
+      },
+      {
+        "category": "no-land-border",
+        "difficulty": 3,
+        "countries": [
+          "mu",
+          "pw",
+          "fm",
+          "mh"
+        ],
+        "fact": "The Marshall Islands are made up of 29 coral atolls and five main islands, plus more than a thousand tiny ones.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Marshall_Islands"
+      },
+      {
+        "category": "zambezi",
+        "difficulty": 4,
+        "countries": [
+          "ao",
+          "zm",
+          "zw",
+          "bw"
+        ],
+        "fact": "The Zambezi is the fourth-longest river in Africa and the longest one that flows east.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Zambezi"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "black-sea",
+        "difficulty": 1,
+        "countries": [
+          "tr",
+          "bg",
+          "ro",
+          "ru"
+        ],
+        "fact": "Water leaves the Black Sea through two straits: the Bosporus and the Kerch Strait.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Black_Sea"
+      },
+      {
+        "category": "spanish",
+        "difficulty": 2,
+        "countries": [
+          "hn",
+          "ni",
+          "pa",
+          "gq"
+        ],
+        "fact": "Equatorial Guinea is the only country in sub-Saharan Africa where Spanish has national official status.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Spanish_language_in_Equatorial_Guinea"
+      },
+      {
+        "category": "borders-russia",
+        "difficulty": 3,
+        "countries": [
+          "by",
+          "kp",
+          "mn",
+          "lv"
+        ],
+        "fact": "Russia, the largest country in the world, shares land borders with fourteen countries.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Russia"
+      },
+      {
+        "category": "tropic-cancer",
+        "difficulty": 4,
+        "countries": [
+          "bd",
+          "bs",
+          "ne",
+          "ly"
+        ],
+        "fact": "In the Bahamas, the Tropic of Cancer crosses the Exuma Islands and Long Island.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "baltic",
+        "difficulty": 1,
+        "countries": [
+          "ee",
+          "lv",
+          "lt",
+          "se"
+        ],
+        "fact": "The Baltic Sea is the world's largest brackish water basin, a mix of salt and fresh water.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltic_Sea"
+      },
+      {
+        "category": "portuguese",
+        "difficulty": 2,
+        "countries": [
+          "pt",
+          "cv",
+          "st",
+          "gw"
+        ],
+        "fact": "Guinea-Bissau adopted its Portuguese name, República da Guiné-Bissau, when it became independent in 1973.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "asean",
+        "difficulty": 3,
+        "countries": [
+          "id",
+          "vn",
+          "la",
+          "ph"
+        ],
+        "fact": "ASEAN was founded on 8 August 1967 with the signing of the ASEAN Declaration.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/ASEAN"
+      },
+      {
+        "category": "borders-germany",
+        "difficulty": 4,
+        "countries": [
+          "cz",
+          "nl",
+          "be",
+          "fr"
+        ],
+        "fact": "On its western side, Germany borders France, Luxembourg, Belgium and the Netherlands.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Germany"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "nato",
+        "difficulty": 1,
+        "countries": [
+          "mk",
+          "tr",
+          "pt",
+          "al"
+        ],
+        "fact": "NATO was founded on 4 April 1949 and has its headquarters in Brussels.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/NATO"
+      },
+      {
+        "category": "french-official",
+        "difficulty": 2,
+        "countries": [
+          "sn",
+          "bi",
+          "cf",
+          "tg"
+        ],
+        "fact": "In the Central African Republic, French is an official language alongside Sango.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language"
+      },
+      {
+        "category": "equator",
+        "difficulty": 3,
+        "countries": [
+          "ki",
+          "mv",
+          "ug",
+          "co"
+        ],
+        "fact": "The equator crosses the territorial waters of the Maldives and Kiribati without touching any of their islands.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+      },
+      {
+        "category": "danube",
+        "difficulty": 4,
+        "countries": [
+          "rs",
+          "md",
+          "ua",
+          "at"
+        ],
+        "fact": "The Danube was once a long-standing frontier of the Roman Empire.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Danube"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "stan",
+        "difficulty": 1,
+        "countries": [
+          "pk",
+          "uz",
+          "tm",
+          "tj"
+        ],
+        "fact": "The name Pakistan was coined in 1933 by activist Choudhry Rahmat Ali, who built it as an acronym.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pakistan"
+      },
+      {
+        "category": "mediterranean",
+        "difficulty": 2,
+        "countries": [
+          "ba",
+          "cy",
+          "tn",
+          "ma"
+        ],
+        "fact": "Neum is the only town on the coast of Bosnia and Herzegovina, giving the country its only access to the Adriatic Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Neum"
+      },
+      {
+        "category": "southern-cross-flag",
+        "difficulty": 3,
+        "countries": [
+          "br",
+          "au",
+          "nz",
+          "ws"
+        ],
+        "fact": "In Samoa, the Southern Cross is called Sumu, meaning \"triggerfish\", because of its diamond-like shape.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Crux"
+      },
+      {
+        "category": "prime-meridian",
+        "difficulty": 4,
+        "countries": [
+          "ml",
+          "bf",
+          "tg",
+          "gh"
+        ],
+        "fact": "Beyond Africa, the prime meridian reaches Antarctica, touching Queen Maud Land, an area claimed by Norway.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Prime_meridian_(Greenwich)"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "saint-name",
+        "difficulty": 1,
+        "countries": [
+          "vc",
+          "sm",
+          "st",
+          "lc"
+        ],
+        "fact": "San Marino is named after Saint Marinus, a stonemason said to have fled to Mount Titano around AD 301.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "eu",
+        "difficulty": 2,
+        "countries": [
+          "sk",
+          "hr",
+          "ie",
+          "hu"
+        ],
+        "fact": "Croatia joined the European Union in 2013 and the eurozone a decade later, in 2023.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Croatia"
+      },
+      {
+        "category": "andes",
+        "difficulty": 3,
+        "countries": [
+          "ve",
+          "ec",
+          "pe",
+          "bo"
+        ],
+        "fact": "Several big cities sit on high Andean plateaus, including La Paz, Arequipa and Mérida.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Andes"
+      },
+      {
+        "category": "tropic-capricorn",
+        "difficulty": 4,
+        "countries": [
+          "py",
+          "mz",
+          "na",
+          "mg"
+        ],
+        "fact": "In Mozambique, the Tropic of Capricorn crosses the Gaza and Inhambane provinces.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "ends-land",
+        "difficulty": 1,
+        "countries": [
+          "th",
+          "ie",
+          "pl",
+          "is"
+        ],
+        "fact": "Iceland means \"Land of Ice\". Early settler Flóki Vilgerðarson is said to have named it after spotting a fjord full of drift ice.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "former-yugoslavia",
+        "difficulty": 2,
+        "countries": [
+          "me",
+          "si",
+          "mk",
+          "rs"
+        ],
+        "fact": "Slovenia declared independence from Yugoslavia on 25 June 1991.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Slovenia"
+      },
+      {
+        "category": "commonwealth",
+        "difficulty": 3,
+        "countries": [
+          "sl",
+          "ng",
+          "dm",
+          "lk"
+        ],
+        "fact": "The Commonwealth of Nations currently has 56 member countries.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Member_states_of_the_Commonwealth_of_Nations"
+      },
+      {
+        "category": "borders-brazil",
+        "difficulty": 4,
+        "countries": [
+          "sr",
+          "ar",
+          "co",
+          "ve"
+        ],
+        "fact": "Brazil is so big that it covers roughly half of South America's land area.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Brazil"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "compass-name",
+        "difficulty": 1,
+        "countries": [
+          "ss",
+          "za",
+          "mk",
+          "kr"
+        ],
+        "fact": "North Macedonia adopted its current name in 2019, following the Prespa Agreement.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/North_Macedonia"
+      },
+      {
+        "category": "portuguese",
+        "difficulty": 2,
+        "countries": [
+          "gq",
+          "ao",
+          "cv",
+          "gw"
+        ],
+        "fact": "Equatorial Guinea has three official languages: Spanish, French and Portuguese.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language"
+      },
+      {
+        "category": "borders-russia",
+        "difficulty": 3,
+        "countries": [
+          "ge",
+          "by",
+          "kz",
+          "az"
+        ],
+        "fact": "The Kazakhstan–Russia border, about 7,600 km long, is the second-longest land border between two countries.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "alps",
+        "difficulty": 4,
+        "countries": [
+          "it",
+          "si",
+          "de",
+          "mc"
+        ],
+        "fact": "The Alpine arc stretches from Nice on the Mediterranean to Trieste on the Adriatic and on to Vienna.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Alps"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "g7",
+        "difficulty": 1,
+        "countries": [
+          "gb",
+          "fr",
+          "ca",
+          "it"
+        ],
+        "fact": "The European Union also takes part in the G7 as a \"non-enumerated member\".",
+        "sourceUrl": "https://en.wikipedia.org/wiki/G7"
+      },
+      {
+        "category": "danube",
+        "difficulty": 2,
+        "countries": [
+          "ro",
+          "md",
+          "sk",
+          "bg"
+        ],
+        "fact": "The Danube empties into the Black Sea through the Danube Delta in Romania and Ukraine.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Danube"
+      },
+      {
+        "category": "no-land-border",
+        "difficulty": 3,
+        "countries": [
+          "fm",
+          "sc",
+          "mh",
+          "fj"
+        ],
+        "fact": "Seychelles is made up of 115 islands in the Indian Ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seychelles"
+      },
+      {
+        "category": "equator",
+        "difficulty": 4,
+        "countries": [
+          "cg",
+          "cd",
+          "so",
+          "ga"
+        ],
+        "fact": "In the Republic of the Congo, the equator passes right through the town of Makoua.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "alps",
+        "difficulty": 1,
+        "countries": [
+          "li",
+          "si",
+          "de",
+          "mc"
+        ],
+        "fact": "The Alps formed over tens of millions of years as the African and Eurasian tectonic plates collided.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Alps"
+      },
+      {
+        "category": "drive-left",
+        "difficulty": 2,
+        "countries": [
+          "mu",
+          "bb",
+          "sb",
+          "to"
+        ],
+        "fact": "Many countries that drive on the left were once part of the British Empire, but others, such as Japan, Thailand and Indonesia, were not.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+      },
+      {
+        "category": "borders-russia",
+        "difficulty": 3,
+        "countries": [
+          "kp",
+          "ge",
+          "mn",
+          "ua"
+        ],
+        "fact": "North Korea and Russia share a very short land border, only about 17 km long.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/North_Korea%E2%80%93Russia_border"
+      },
+      {
+        "category": "borders-germany",
+        "difficulty": 4,
+        "countries": [
+          "cz",
+          "nl",
+          "dk",
+          "be"
+        ],
+        "fact": "Germany's only neighbour to the north is Denmark.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Germany"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "andes",
+        "difficulty": 1,
+        "countries": [
+          "cl",
+          "bo",
+          "pe",
+          "ec"
+        ],
+        "fact": "The Andes have an average height of about 4,000 metres.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Andes"
+      },
+      {
+        "category": "french-official",
+        "difficulty": 2,
+        "countries": [
+          "gn",
+          "cm",
+          "cd",
+          "ga"
+        ],
+        "fact": "Cameroon has both French and English as official languages.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language"
+      },
+      {
+        "category": "borders-germany",
+        "difficulty": 3,
+        "countries": [
+          "pl",
+          "at",
+          "dk",
+          "cz"
+        ],
+        "fact": "On its eastern side, Germany borders Poland and the Czech Republic.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Germany"
+      },
+      {
+        "category": "no-land-border",
+        "difficulty": 4,
+        "countries": [
+          "tt",
+          "pw",
+          "jm",
+          "ws"
+        ],
+        "fact": "The Republic of Palau is made up of about 340 islands in the western Pacific.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Palau"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "spanish",
+        "difficulty": 1,
+        "countries": [
+          "do",
+          "sv",
+          "pa",
+          "uy"
+        ],
+        "fact": "Spanish is the most widely spoken Romance language in the world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Spanish_language"
+      },
+      {
+        "category": "arabic-official",
+        "difficulty": 2,
+        "countries": [
+          "bh",
+          "lb",
+          "ae",
+          "om"
+        ],
+        "fact": "Arabic is one of the six official languages of the United Nations.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Arabic"
+      },
+      {
+        "category": "borders-germany",
+        "difficulty": 3,
+        "countries": [
+          "lu",
+          "be",
+          "ch",
+          "nl"
+        ],
+        "fact": "Germany also has two coastlines, on the North Sea in the northwest and the Baltic Sea in the northeast.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Germany"
+      },
+      {
+        "category": "charles-head",
+        "difficulty": 4,
+        "countries": [
+          "bz",
+          "sb",
+          "tv",
+          "bs"
+        ],
+        "fact": "The phrase \"Commonwealth realm\" is an informal description that is not used in any law.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Commonwealth_realm"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "eu",
+        "difficulty": 1,
+        "countries": [
+          "gr",
+          "mt",
+          "cy",
+          "hu"
+        ],
+        "fact": "The European Union has 27 member states, all party to its founding treaties.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Member_state_of_the_European_Union"
+      },
+      {
+        "category": "asean",
+        "difficulty": 2,
+        "countries": [
+          "tl",
+          "my",
+          "kh",
+          "bn"
+        ],
+        "fact": "Cambodia joined ASEAN on 30 April 1999, after a 1997 coup had delayed its entry.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/ASEAN"
+      },
+      {
+        "category": "borders-south-africa",
+        "difficulty": 3,
+        "countries": [
+          "ls",
+          "sz",
+          "zw",
+          "bw"
+        ],
+        "fact": "Botswana's border with Zambia is only about 150 metres long.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "tropic-cancer",
+        "difficulty": 4,
+        "countries": [
+          "mx",
+          "in",
+          "sa",
+          "mr"
+        ],
+        "fact": "In India, the Tropic of Cancer crosses several states, including Gujarat, Rajasthan and West Bengal.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "kingdom-europe",
+        "difficulty": 1,
+        "countries": [
+          "es",
+          "gb",
+          "no",
+          "nl"
+        ],
+        "fact": "King Juan Carlos reigned over Spain from 1975 to 2014.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Monarchy_of_Spain"
+      },
+      {
+        "category": "southern-cross-flag",
+        "difficulty": 2,
+        "countries": [
+          "ws",
+          "pg",
+          "nz",
+          "au"
+        ],
+        "fact": "The brightest stars of the Southern Cross appear on the national flags of Australia, Brazil, New Zealand, Papua New Guinea and Samoa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Crux"
+      },
+      {
+        "category": "equator",
+        "difficulty": 3,
+        "countries": [
+          "ke",
+          "cg",
+          "cd",
+          "mv"
+        ],
+        "fact": "In DR Congo, the equator passes just 9 km south of the city of Butembo.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+      },
+      {
+        "category": "danube",
+        "difficulty": 4,
+        "countries": [
+          "hr",
+          "sk",
+          "rs",
+          "ro"
+        ],
+        "fact": "Today the Danube connects ten European countries, running through them or marking their borders.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Danube"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "former-ussr",
+        "difficulty": 1,
+        "countries": [
+          "am",
+          "uz",
+          "by",
+          "md"
+        ],
+        "fact": "Belarus and Moldova, along with Ukraine, make up the Eastern Europe subregion of the post-Soviet states.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Post-Soviet_states"
+      },
+      {
+        "category": "world-cup-winner",
+        "difficulty": 2,
+        "countries": [
+          "uy",
+          "es",
+          "it",
+          "fr"
+        ],
+        "fact": "Uruguay hosted the first World Cup in 1930, the year it celebrated 100 years of independence.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_World_Cup"
+      },
+      {
+        "category": "tropic-capricorn",
+        "difficulty": 3,
+        "countries": [
+          "py",
+          "cl",
+          "au",
+          "za"
+        ],
+        "fact": "In Australia, the Tropic of Capricorn crosses Western Australia, the Northern Territory and Queensland.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn"
+      },
+      {
+        "category": "borders-china",
+        "difficulty": 4,
+        "countries": [
+          "af",
+          "np",
+          "bt",
+          "in"
+        ],
+        "fact": "Mount Everest, Earth's highest mountain, sits on the border between Nepal and China.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Everest"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "borders-china",
+        "difficulty": 1,
+        "countries": [
+          "kg",
+          "af",
+          "pk",
+          "np"
+        ],
+        "fact": "Afghanistan's border with China is very short, only about 92 km long.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      },
+      {
+        "category": "euro",
+        "difficulty": 2,
+        "countries": [
+          "va",
+          "sm",
+          "pt",
+          "me"
+        ],
+        "fact": "Montenegro uses the euro even though it is not in the EU and has no formal monetary agreement with it.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Montenegro_and_the_euro"
+      },
+      {
+        "category": "charles-head",
+        "difficulty": 3,
+        "countries": [
+          "kn",
+          "gd",
+          "vc",
+          "ag"
+        ],
+        "fact": "As well as reigning over the 15 realms, King Charles III is Head of the Commonwealth, a ceremonial role.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Commonwealth_realm"
+      },
+      {
+        "category": "prime-meridian",
+        "difficulty": 4,
+        "countries": [
+          "dz",
+          "ml",
+          "bf",
+          "tg"
+        ],
+        "fact": "Today's official prime meridian, the IERS Reference Meridian, lies slightly east of the historic Greenwich line.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/IERS_Reference_Meridian"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "gcc",
+        "difficulty": 1,
+        "countries": [
+          "qa",
+          "bh",
+          "kw",
+          "sa"
+        ],
+        "fact": "Iraq is the only Gulf Arab state that is not a member of the Gulf Cooperation Council.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Gulf_Cooperation_Council"
+      },
+      {
+        "category": "french-official",
+        "difficulty": 2,
+        "countries": [
+          "km",
+          "dj",
+          "mg",
+          "tg"
+        ],
+        "fact": "In Madagascar, French is an official language alongside Malagasy.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language"
+      },
+      {
+        "category": "borders-brazil",
+        "difficulty": 3,
+        "countries": [
+          "gy",
+          "sr",
+          "ar",
+          "uy"
+        ],
+        "fact": "Brazil also has a long Atlantic coastline of about 7,491 km, among the longest in the world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Brazil"
+      },
+      {
+        "category": "zambezi",
+        "difficulty": 4,
+        "countries": [
+          "ao",
+          "zm",
+          "na",
+          "mz"
+        ],
+        "fact": "The most distant source of the Zambezi river system lies in Angola's Moxico Province, and the river reaches the Indian Ocean in Mozambique.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Zambezi"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "german-official",
+        "difficulty": 1,
+        "countries": [
+          "ch",
+          "li",
+          "lu",
+          "at"
+        ],
+        "fact": "German is the sole nationwide official language in both Austria and Liechtenstein.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_territorial_entities_where_German_is_an_official_language"
+      },
+      {
+        "category": "mediterranean",
+        "difficulty": 2,
+        "countries": [
+          "ba",
+          "sy",
+          "al",
+          "gr"
+        ],
+        "fact": "The Nile, the Rhône and the Po are the only rivers flowing into the Mediterranean with an average discharge of over 1,000 cubic metres per second.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mediterranean_Sea"
+      },
+      {
+        "category": "drive-left",
+        "difficulty": 3,
+        "countries": [
+          "mw",
+          "dm",
+          "lk",
+          "tz"
+        ],
+        "fact": "Countries that drive on the left cover about a sixth of the world's land area and a quarter of its roads.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+      },
+      {
+        "category": "arctic-circle",
+        "difficulty": 4,
+        "countries": [
+          "ru",
+          "ca",
+          "se",
+          "is"
+        ],
+        "fact": "In Canada, the Arctic Circle passes through Great Bear Lake in the Northwest Territories.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Arctic_Circle"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "world-cup-winner",
+        "difficulty": 1,
+        "countries": [
+          "de",
+          "it",
+          "ar",
+          "br"
+        ],
+        "fact": "Brazil is the most successful team in World Cup history, with five titles.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_World_Cup"
+      },
+      {
+        "category": "former-yugoslavia",
+        "difficulty": 2,
+        "countries": [
+          "ba",
+          "hr",
+          "me",
+          "rs"
+        ],
+        "fact": "Montenegro declared independence on 3 June 2006, after a referendum.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Montenegro"
+      },
+      {
+        "category": "no-land-border",
+        "difficulty": 3,
+        "countries": [
+          "jp",
+          "mh",
+          "fm",
+          "ki"
+        ],
+        "fact": "Kiribati's atolls stretch into all four hemispheres: northern, southern, eastern and western.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kiribati"
+      },
+      {
+        "category": "tropic-cancer",
+        "difficulty": 4,
+        "countries": [
+          "bd",
+          "mx",
+          "ae",
+          "eg"
+        ],
+        "fact": "In Egypt, the Tropic of Cancer passes right through Lake Nasser.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "mediterranean",
+        "difficulty": 1,
+        "countries": [
+          "ly",
+          "gr",
+          "tn",
+          "tr"
+        ],
+        "fact": "Thanks to the Nile, the Mediterranean's drainage basin reaches deep into Africa, including countries such as Uganda, Rwanda and Burundi.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mediterranean_Sea"
+      },
+      {
+        "category": "commonwealth",
+        "difficulty": 2,
+        "countries": [
+          "sl",
+          "ng",
+          "gm",
+          "ga"
+        ],
+        "fact": "Gabon joined the Commonwealth of Nations in June 2022.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Gabon"
+      },
+      {
+        "category": "andes",
+        "difficulty": 3,
+        "countries": [
+          "co",
+          "pe",
+          "ec",
+          "bo"
+        ],
+        "fact": "Famous Andean peaks include Huascarán in Peru at 6,768 metres and Illimani in Bolivia at 6,438 metres.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Andes"
+      },
+      {
+        "category": "borders-russia",
+        "difficulty": 4,
+        "countries": [
+          "lt",
+          "mn",
+          "cn",
+          "ee"
+        ],
+        "fact": "Lithuania borders Russia through Kaliningrad Oblast, a Russian exclave on the Baltic Sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kaliningrad_Oblast"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "french-official",
+        "difficulty": 1,
+        "countries": [
+          "cm",
+          "sc",
+          "vu",
+          "cf"
+        ],
+        "fact": "In Seychelles, French is an official language alongside English and Seychellois Creole.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language"
+      },
+      {
+        "category": "winter-olympics",
+        "difficulty": 2,
+        "countries": [
+          "jp",
+          "us",
+          "kr",
+          "no"
+        ],
+        "fact": "Norway has hosted the Winter Olympics twice, in 1952 and 1994.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Winter_Olympic_Games"
+      },
+      {
+        "category": "mekong",
+        "difficulty": 3,
+        "countries": [
+          "la",
+          "mm",
+          "vn",
+          "th"
+        ],
+        "fact": "From its headwaters on the Tibetan Plateau, the Mekong runs for an estimated 4,909 km.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mekong"
+      },
+      {
+        "category": "black-sea",
+        "difficulty": 4,
+        "countries": [
+          "bg",
+          "tr",
+          "ro",
+          "ua"
+        ],
+        "fact": "The Black Sea lies between Europe and Asia, east of the Balkans and north of Anatolia.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Black_Sea"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "drive-left",
+        "difficulty": 1,
+        "countries": [
+          "bb",
+          "mw",
+          "tt",
+          "nr"
+        ],
+        "fact": "Right-hand traffic is used in 165 countries and territories, while 75 drive on the left.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+      },
+      {
+        "category": "baltic",
+        "difficulty": 2,
+        "countries": [
+          "lv",
+          "lt",
+          "ru",
+          "fi"
+        ],
+        "fact": "The Baltic Sea includes the Gulf of Bothnia, the Gulf of Finland and the Gulf of Riga.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltic_Sea"
+      },
+      {
+        "category": "tropic-capricorn",
+        "difficulty": 3,
+        "countries": [
+          "cl",
+          "py",
+          "ar",
+          "br"
+        ],
+        "fact": "In Argentina, the Tropic of Capricorn crosses the provinces of Jujuy, Salta and Formosa.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn"
+      },
+      {
+        "category": "rhine",
+        "difficulty": 4,
+        "countries": [
+          "li",
+          "at",
+          "fr",
+          "nl"
+        ],
+        "fact": "On its way north, the Rhine flows through Lake Constance, which is shared by Germany, Switzerland and Austria.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Constance"
+      }
+    ]
+  }
+]

@@ -1,0 +1,3566 @@
+[
+  {
+    "rounds": [
+      {
+        "country": "br",
+        "statements": [
+          {
+            "text": "Brazil is the only country in the Americas where Portuguese is the main language.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Portuguese_language"
+          },
+          {
+            "text": "Brazil has won the men's football World Cup five times, more than any other country.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Brazil_national_football_team"
+          },
+          {
+            "text": "Brazil's capital is Rio de Janeiro.",
+            "fib": true,
+            "truth": "Brasília has been Brazil's capital since 1960. Rio de Janeiro was the capital before that.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bras%C3%ADlia"
+          }
+        ]
+      },
+      {
+        "country": "no",
+        "statements": [
+          {
+            "text": "In parts of northern Norway, the sun doesn't set for weeks in the middle of summer.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Midnight_sun"
+          },
+          {
+            "text": "Norway's coast is famous for its fjords, long narrow inlets carved out by glaciers.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Fjord"
+          },
+          {
+            "text": "Norway is a member of the European Union.",
+            "fib": true,
+            "truth": "Norwegians voted against joining in 1972 and again in 1994. Norway works closely with the EU through the European Economic Area instead.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Norway%E2%80%93European_Union_relations"
+          }
+        ]
+      },
+      {
+        "country": "ke",
+        "statements": [
+          {
+            "text": "Kenya is named after Mount Kenya, the second-highest mountain in Africa.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Kenya"
+          },
+          {
+            "text": "The equator runs through Kenya.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+          },
+          {
+            "text": "Kenya's capital is Mombasa.",
+            "fib": true,
+            "truth": "Kenya's capital is Nairobi. Mombasa is its biggest port, on the Indian Ocean coast.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Nairobi"
+          }
+        ]
+      },
+      {
+        "country": "cn",
+        "statements": [
+          {
+            "text": "All of China officially runs on a single time zone, despite the country's huge width.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Time_in_China"
+          },
+          {
+            "text": "Papermaking was invented in China around 2,000 years ago.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Paper"
+          },
+          {
+            "text": "The Great Wall of China is easy to see from the Moon with the naked eye.",
+            "fib": true,
+            "truth": "This is a popular myth. The wall is far too narrow to see from the Moon, and it's hard to spot even from low orbit.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+          }
+        ]
+      },
+      {
+        "country": "is",
+        "statements": [
+          {
+            "text": "Iceland has no standing army.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Iceland"
+          },
+          {
+            "text": "Iceland's parliament, the Althing, was founded in 930 and is one of the oldest in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Althing"
+          },
+          {
+            "text": "More than half of Iceland is covered by glaciers.",
+            "fib": true,
+            "truth": "Glaciers and lakes together cover only about 14% of Iceland. Much of the rest is highland, lava fields and tundra.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Iceland"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "jp",
+        "statements": [
+          {
+            "text": "Japan is made up of more than 14,000 islands.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_Japan"
+          },
+          {
+            "text": "Japan has more than 100 active volcanoes.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/List_of_volcanoes_in_Japan"
+          },
+          {
+            "text": "Japan's national flower is the lotus.",
+            "fib": true,
+            "truth": "Japan has no national flower set in law, but the cherry blossom and the chrysanthemum are its traditional floral symbols.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/National_symbols_of_Japan"
+          }
+        ]
+      },
+      {
+        "country": "eg",
+        "statements": [
+          {
+            "text": "The Great Pyramid of Giza is the only one of the Seven Wonders of the Ancient World still largely standing.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+          },
+          {
+            "text": "Most Egyptians live along the Nile and its delta.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Egypt"
+          },
+          {
+            "text": "The Nile flows south through Egypt toward the Red Sea.",
+            "fib": true,
+            "truth": "The Nile flows north through Egypt and empties into the Mediterranean Sea.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Nile"
+          }
+        ]
+      },
+      {
+        "country": "th",
+        "statements": [
+          {
+            "text": "Thailand is the only country in Southeast Asia that was never colonised by a Western power.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Thailand"
+          },
+          {
+            "text": "Bangkok's full ceremonial name is one of the longest place names in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bangkok"
+          },
+          {
+            "text": "Thailand used to be called Burma.",
+            "fib": true,
+            "truth": "Thailand was officially called Siam until 1939. Burma is the former name of neighbouring Myanmar.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Thailand"
+          }
+        ]
+      },
+      {
+        "country": "nl",
+        "statements": [
+          {
+            "text": "About half of the Netherlands is less than 1 m (3 ft) above sea level, and much of that is below it.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_the_Netherlands"
+          },
+          {
+            "text": "Amsterdam is the capital, but the government sits in The Hague.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/The_Hague"
+          },
+          {
+            "text": "Tulips are native to the Netherlands.",
+            "fib": true,
+            "truth": "Wild tulips come from Central Asia and the region around Türkiye. They reached the Netherlands in the 1500s.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tulip"
+          }
+        ]
+      },
+      {
+        "country": "cl",
+        "statements": [
+          {
+            "text": "Chile is more than 4,000 km (2,500 mi) long but on average less than 200 km (120 mi) wide.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_Chile"
+          },
+          {
+            "text": "Chile's Atacama Desert is one of the driest places on Earth.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Atacama_Desert"
+          },
+          {
+            "text": "Easter Island belongs to Peru.",
+            "fib": true,
+            "truth": "Easter Island, also called Rapa Nui, is part of Chile.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Easter_Island"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "ca",
+        "statements": [
+          {
+            "text": "Canada has the longest coastline of any country.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Canada"
+          },
+          {
+            "text": "English and French are both official languages of Canada's federal government.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Official_bilingualism_in_Canada"
+          },
+          {
+            "text": "Most Canadians live in the country's far north.",
+            "fib": true,
+            "truth": "Most Canadians live in the south, many of them fairly close to the border with the United States.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Demographics_of_Canada"
+          }
+        ]
+      },
+      {
+        "country": "in",
+        "statements": [
+          {
+            "text": "India has the largest population of any country.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Demographics_of_India"
+          },
+          {
+            "text": "Chess is widely believed to come from an ancient Indian game called chaturanga.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Chaturanga"
+          },
+          {
+            "text": "Hindi is India's only official language.",
+            "fib": true,
+            "truth": "Hindi and English are both official languages of the central government, and the constitution recognises 22 scheduled languages.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Languages_with_official_status_in_India"
+          }
+        ]
+      },
+      {
+        "country": "ma",
+        "statements": [
+          {
+            "text": "Morocco's al-Qarawiyyin, founded in 859, is often called the oldest place of learning still in use.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin"
+          },
+          {
+            "text": "At the Strait of Gibraltar, Morocco is only about 14 km (9 mi) from Spain.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Strait_of_Gibraltar"
+          },
+          {
+            "text": "Morocco's capital is Marrakesh.",
+            "fib": true,
+            "truth": "Morocco's capital is Rabat. Casablanca is the biggest city, and Marrakesh is a famous historic city.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Rabat"
+          }
+        ]
+      },
+      {
+        "country": "ru",
+        "statements": [
+          {
+            "text": "Lake Baikal, in Siberia, is the deepest lake in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Baikal"
+          },
+          {
+            "text": "The Trans-Siberian Railway is the longest railway line in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Trans-Siberian_Railway"
+          },
+          {
+            "text": "At their closest point, Russia and the United States are more than 1,000 km apart.",
+            "fib": true,
+            "truth": "In the Bering Strait, Russia's Big Diomede Island and the United States' Little Diomede Island are less than 4 km (2.5 mi) apart.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Diomede_Islands"
+          }
+        ]
+      },
+      {
+        "country": "mg",
+        "statements": [
+          {
+            "text": "Madagascar is the fourth-largest island in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Madagascar"
+          },
+          {
+            "text": "Wild lemurs live naturally only on Madagascar and a few small nearby islands.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lemur"
+          },
+          {
+            "text": "Madagascar broke away from South America millions of years ago.",
+            "fib": true,
+            "truth": "Madagascar separated from mainland Africa, and later from India, many millions of years ago.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Madagascar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "it",
+        "statements": [
+          {
+            "text": "Two independent countries lie entirely inside Italy: San Marino and Vatican City.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Enclave_and_exclave"
+          },
+          {
+            "text": "The Po is Italy's longest river.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Po_(river)"
+          },
+          {
+            "text": "Pizza Margherita was named after a famous opera singer.",
+            "fib": true,
+            "truth": "The usual story is that it was named after Queen Margherita of Savoy, who visited Naples in 1889.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Pizza_Margherita"
+          }
+        ]
+      },
+      {
+        "country": "id",
+        "statements": [
+          {
+            "text": "Indonesia is made up of more than 13,000 islands.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Indonesia"
+          },
+          {
+            "text": "Komodo dragons, the world's largest lizards, live in the wild only in Indonesia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Komodo_dragon"
+          },
+          {
+            "text": "Most Indonesians live on the island of Borneo.",
+            "fib": true,
+            "truth": "More than half of Indonesians live on Java, one of the most densely populated islands on Earth.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Java"
+          }
+        ]
+      },
+      {
+        "country": "et",
+        "statements": [
+          {
+            "text": "Ethiopia uses its own calendar, which runs about seven to eight years behind the Gregorian calendar.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Ethiopian_calendar"
+          },
+          {
+            "text": "The coffee plant is believed to have come originally from Ethiopia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/History_of_coffee"
+          },
+          {
+            "text": "Ethiopia has a long coastline on the Red Sea.",
+            "fib": true,
+            "truth": "Ethiopia has been landlocked since Eritrea became independent in 1993.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Ethiopia"
+          }
+        ]
+      },
+      {
+        "country": "mx",
+        "statements": [
+          {
+            "text": "Mexico City is built on the bed of a former lake, Lake Texcoco.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Texcoco"
+          },
+          {
+            "text": "Mexico officially recognises 68 Indigenous languages.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Languages_of_Mexico"
+          },
+          {
+            "text": "Mexico's official name is the Republic of Mexico.",
+            "fib": true,
+            "truth": "Mexico's official name is the United Mexican States (Estados Unidos Mexicanos).",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mexico"
+          }
+        ]
+      },
+      {
+        "country": "fi",
+        "statements": [
+          {
+            "text": "Finland has roughly 188,000 lakes.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_Finland"
+          },
+          {
+            "text": "Finnish isn't related to most European languages. One of its closest relatives is Estonian.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Finnic_languages"
+          },
+          {
+            "text": "The sauna was invented in Sweden.",
+            "fib": true,
+            "truth": "\"Sauna\" is a Finnish word, and Finnish sauna culture is on UNESCO's list of intangible cultural heritage.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Sauna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "au",
+        "statements": [
+          {
+            "text": "The Great Barrier Reef, off Australia's northeast coast, is the world's largest coral reef system.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Great_Barrier_Reef"
+          },
+          {
+            "text": "Canberra was built as Australia's capital partly as a compromise between Sydney and Melbourne.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Canberra"
+          },
+          {
+            "text": "Australia has more people than California.",
+            "fib": true,
+            "truth": "Australia has about 28 million people. California alone has about 39 million.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Demographics_of_Australia"
+          }
+        ]
+      },
+      {
+        "country": "pe",
+        "statements": [
+          {
+            "text": "Machu Picchu was built by the Inca in the 1400s.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Machu_Picchu"
+          },
+          {
+            "text": "Lake Titicaca, on Peru's border with Bolivia, is often called the highest navigable lake in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Titicaca"
+          },
+          {
+            "text": "Peru's currency is the peso.",
+            "fib": true,
+            "truth": "Peru's currency is the sol.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Peruvian_sol"
+          }
+        ]
+      },
+      {
+        "country": "tr",
+        "statements": [
+          {
+            "text": "Istanbul stretches across two continents, Europe and Asia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Istanbul"
+          },
+          {
+            "text": "Saint Nicholas, who inspired the legend of Santa Claus, was born in what is now Türkiye.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Saint_Nicholas"
+          },
+          {
+            "text": "Istanbul is the capital of Türkiye.",
+            "fib": true,
+            "truth": "The capital is Ankara. Istanbul is the largest city.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Ankara"
+          }
+        ]
+      },
+      {
+        "country": "nz",
+        "statements": [
+          {
+            "text": "In 1893, New Zealand became the first self-governing country to let women vote in national elections.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_New_Zealand"
+          },
+          {
+            "text": "New Zealand has no native land snakes.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Reptiles_of_New_Zealand"
+          },
+          {
+            "text": "The kiwi, New Zealand's national bird, can fly short distances.",
+            "fib": true,
+            "truth": "Kiwi are flightless. Their wings are tiny and hidden under their feathers.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kiwi_(bird)"
+          }
+        ]
+      },
+      {
+        "country": "mn",
+        "statements": [
+          {
+            "text": "Mongolia is the most sparsely populated independent country in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mongolia"
+          },
+          {
+            "text": "The Mongol Empire, founded by Genghis Khan, became the largest connected land empire in history.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mongol_Empire"
+          },
+          {
+            "text": "Mongolia has a coastline on the Pacific Ocean.",
+            "fib": true,
+            "truth": "Mongolia is landlocked, sitting between Russia and China.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_Mongolia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "gr",
+        "statements": [
+          {
+            "text": "Greece has around 6,000 islands and islets, but only about 227 are inhabited.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/List_of_islands_of_Greece"
+          },
+          {
+            "text": "The marathon race is named after Marathon, a town in Greece.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Marathon"
+          },
+          {
+            "text": "The ancient Olympic Games were held in Athens.",
+            "fib": true,
+            "truth": "The ancient Games were held at Olympia, in the western Peloponnese. Athens hosted the first modern Games in 1896.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"
+          }
+        ]
+      },
+      {
+        "country": "vn",
+        "statements": [
+          {
+            "text": "Vietnam is one of the world's biggest coffee exporters.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Coffee_production_in_Vietnam"
+          },
+          {
+            "text": "Hạ Long Bay is dotted with around 1,600 limestone islands and islets.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/H%E1%BA%A1_Long_Bay"
+          },
+          {
+            "text": "Ho Chi Minh City is Vietnam's capital.",
+            "fib": true,
+            "truth": "The capital is Hanoi, in the north. Ho Chi Minh City is the largest city.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Hanoi"
+          }
+        ]
+      },
+      {
+        "country": "za",
+        "statements": [
+          {
+            "text": "South Africa has 12 official languages.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Languages_of_South_Africa"
+          },
+          {
+            "text": "South Africa has three capital cities: Pretoria, Cape Town and Bloemfontein.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/South_Africa"
+          },
+          {
+            "text": "Table Mountain overlooks Johannesburg.",
+            "fib": true,
+            "truth": "Table Mountain overlooks Cape Town, more than 1,200 km (750 mi) from Johannesburg.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Table_Mountain"
+          }
+        ]
+      },
+      {
+        "country": "ar",
+        "statements": [
+          {
+            "text": "Argentina is the eighth-largest country in the world by area.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Argentina"
+          },
+          {
+            "text": "Aconcagua, in Argentina, is the highest mountain outside Asia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Aconcagua"
+          },
+          {
+            "text": "The tango was born in Brazil.",
+            "fib": true,
+            "truth": "The tango grew up in the late 1800s around the Río de la Plata, in Buenos Aires and Montevideo.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tango"
+          }
+        ]
+      },
+      {
+        "country": "ch",
+        "statements": [
+          {
+            "text": "Switzerland has four national languages: German, French, Italian and Romansh.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Languages_of_Switzerland"
+          },
+          {
+            "text": "Bern is officially called Switzerland's \"federal city\" rather than its capital.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bern"
+          },
+          {
+            "text": "The Matterhorn is Switzerland's highest mountain.",
+            "fib": true,
+            "truth": "Switzerland's highest peak is the Dufourspitze, at 4,634 m. The Matterhorn is 4,478 m.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Dufourspitze"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "lk",
+        "statements": [
+          {
+            "text": "Sri Lanka's tea is still sold as 'Ceylon tea', after the island's old name.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tea_production_in_Sri_Lanka"
+          },
+          {
+            "text": "Sigiriya in Sri Lanka is an ancient rock fortress on top of a rock about 180 m (590 ft) high.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Sigiriya"
+          },
+          {
+            "text": "True cinnamon originally comes from South America.",
+            "fib": true,
+            "truth": "True cinnamon, also called Ceylon cinnamon, is native to Sri Lanka.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Cinnamomum_verum"
+          }
+        ]
+      },
+      {
+        "country": "at",
+        "statements": [
+          {
+            "text": "Vienna's Tiergarten Schönbrunn, opened in 1752, is the oldest zoo still running in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Sch%C3%B6nbrunn_Zoo"
+          },
+          {
+            "text": "Austria's Eisriesenwelt is the largest ice cave in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Eisriesenwelt"
+          },
+          {
+            "text": "Vienna's famous Sachertorte is a lemon sponge cake.",
+            "fib": true,
+            "truth": "The Sachertorte is a chocolate sponge cake with apricot jam and a chocolate glaze, credited to Vienna's Franz Sacher.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Sachertorte"
+          }
+        ]
+      },
+      {
+        "country": "ht",
+        "statements": [
+          {
+            "text": "Haiti declared independence in 1804, becoming the first sovereign state in the Caribbean.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Haiti"
+          },
+          {
+            "text": "The Citadelle Laferrière in Haiti is one of the largest fortresses in the Americas.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Citadelle_Laferri%C3%A8re"
+          },
+          {
+            "text": "Haiti's official languages are French and Spanish.",
+            "fib": true,
+            "truth": "Haiti's official languages are French and Haitian Creole.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Haiti"
+          }
+        ]
+      },
+      {
+        "country": "tg",
+        "statements": [
+          {
+            "text": "Togo's Koutammakou landscape is famous for its traditional mud tower-houses, a national symbol of Togo.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Koutammakou"
+          },
+          {
+            "text": "Togo was once part of a German protectorate called Togoland.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Togoland"
+          },
+          {
+            "text": "Togo's capital, Lomé, is in the far north of the country, far from the coast.",
+            "fib": true,
+            "truth": "Lomé is on the Gulf of Guinea coast, right next to the border with Ghana.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lom%C3%A9"
+          }
+        ]
+      },
+      {
+        "country": "zm",
+        "statements": [
+          {
+            "text": "Victoria Falls, on Zambia's border with Zimbabwe, is known locally as Mosi-oa-Tunya, 'the smoke that thunders'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Victoria_Falls"
+          },
+          {
+            "text": "Every year millions of straw-coloured fruit bats gather in Zambia's Kasanka National Park.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kasanka_National_Park"
+          },
+          {
+            "text": "Zambia was formerly called Southern Rhodesia.",
+            "fib": true,
+            "truth": "Zambia was Northern Rhodesia. Southern Rhodesia is the former name of Zimbabwe.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Zambia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "tn",
+        "statements": [
+          {
+            "text": "The desert planet Tatooine in the first Star Wars film was filmed in Tunisia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tatooine"
+          },
+          {
+            "text": "The ancient city of Carthage stood on the shore of the Lake of Tunis, in what is now Tunisia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Carthage"
+          },
+          {
+            "text": "Tunisia's capital, Tunis, was named after the country.",
+            "fib": true,
+            "truth": "It is the other way round: Tunisia is named after its capital city, Tunis.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tunisia"
+          }
+        ]
+      },
+      {
+        "country": "se",
+        "statements": [
+          {
+            "text": "Sweden's Icehotel in Jukkasjärvi is rebuilt from ice and snow every winter.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Icehotel_(Jukkasj%C3%A4rvi)"
+          },
+          {
+            "text": "Sweden's 'allemansrätten', or everyman's right, lets people hike across and even camp for a night or two on other people's land.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Freedom_to_roam"
+          },
+          {
+            "text": "All the Nobel Prizes are awarded in Stockholm.",
+            "fib": true,
+            "truth": "The Nobel Peace Prize is awarded in Oslo, Norway.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Nobel_Peace_Prize"
+          }
+        ]
+      },
+      {
+        "country": "ve",
+        "statements": [
+          {
+            "text": "Venezuela's Angel Falls is the world's tallest uninterrupted waterfall.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Angel_Falls"
+          },
+          {
+            "text": "Near Venezuela's Lake Maracaibo, the Catatumbo lightning storms flash on 140 to 160 nights a year.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Catatumbo_lightning"
+          },
+          {
+            "text": "The name Venezuela means 'Little Spain'.",
+            "fib": true,
+            "truth": "Venezuela means 'Little Venice'. Explorers were reminded of Venice by houses built on stilts over the water.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Venezuela"
+          }
+        ]
+      },
+      {
+        "country": "kz",
+        "statements": [
+          {
+            "text": "Kazakhstan is the largest landlocked country in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kazakhstan"
+          },
+          {
+            "text": "Vostok 1, which carried Yuri Gagarin into space, was launched from the Baikonur Cosmodrome in Kazakhstan.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Baikonur_Cosmodrome"
+          },
+          {
+            "text": "The wild ancestor of the apple comes from the hills of Spain.",
+            "fib": true,
+            "truth": "The main wild ancestor of today's apple, Malus sieversii, grows in the mountains of Central Asia, including Kazakhstan.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Malus_sieversii"
+          }
+        ]
+      },
+      {
+        "country": "ls",
+        "statements": [
+          {
+            "text": "Lesotho is completely surrounded by South Africa.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lesotho"
+          },
+          {
+            "text": "Lesotho is the only independent country that lies entirely above 1,000 m (3,300 ft).",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lesotho"
+          },
+          {
+            "text": "The traditional Basotho hat, the mokorotlo, is shaped like a crescent moon.",
+            "fib": true,
+            "truth": "The mokorotlo is a conical straw hat, said to be modelled on the shape of a mountain.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mokorotlo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "ao",
+        "statements": [
+          {
+            "text": "The giant sable antelope, a national symbol of Angola, is found only in Angola.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Giant_sable_antelope"
+          },
+          {
+            "text": "Angola's Kalandula Falls are among the largest waterfalls in Africa by volume.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kalandula_Falls"
+          },
+          {
+            "text": "Angola has no coastline and is surrounded entirely by other countries.",
+            "fib": true,
+            "truth": "Angola lies on the Atlantic coast of southern Africa, and its capital, Luanda, is a port on the ocean.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Luanda"
+          }
+        ]
+      },
+      {
+        "country": "us",
+        "statements": [
+          {
+            "text": "The United States bought Alaska from Russia in 1867.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Alaska_Purchase"
+          },
+          {
+            "text": "Yellowstone, established in 1872, is considered the first national park in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Yellowstone_National_Park"
+          },
+          {
+            "text": "The Statue of Liberty was designed by an American sculptor.",
+            "fib": true,
+            "truth": "The Statue of Liberty was designed by French sculptor Frédéric Auguste Bartholdi and was a gift from France.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Statue_of_Liberty"
+          }
+        ]
+      },
+      {
+        "country": "jo",
+        "statements": [
+          {
+            "text": "The shore of the Dead Sea, on Jordan's western border, is the lowest land on Earth.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Dead_Sea"
+          },
+          {
+            "text": "Petra's famous buildings are carved directly into pinkish sandstone cliffs.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Petra"
+          },
+          {
+            "text": "Jordan has no coastline at all.",
+            "fib": true,
+            "truth": "Jordan has a short coastline on the Gulf of Aqaba, at its port city of Aqaba.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Aqaba"
+          }
+        ]
+      },
+      {
+        "country": "hr",
+        "statements": [
+          {
+            "text": "The cravat, ancestor of the necktie, became fashionable in France in the 1660s thanks to the knotted neck scarves of Croatian soldiers.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Cravat_(early)"
+          },
+          {
+            "text": "Croatia has more than 1,000 islands and islets along its Adriatic coast.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_Croatia"
+          },
+          {
+            "text": "The Dalmatian dog breed is named after a region of Hungary.",
+            "fib": true,
+            "truth": "The Dalmatian is named after Dalmatia, a region of Croatia on the Adriatic coast.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Dalmatian_dog"
+          }
+        ]
+      },
+      {
+        "country": "bf",
+        "statements": [
+          {
+            "text": "In the name Burkina Faso, 'Burkina' means 'upright' and 'Faso' means 'fatherland'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Burkina_Faso"
+          },
+          {
+            "text": "Ouagadougou hosts FESPACO, a festival of African cinema held every two years.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Panafrican_Film_and_Television_Festival_of_Ouagadougou"
+          },
+          {
+            "text": "Burkina Faso used to be called Dahomey.",
+            "fib": true,
+            "truth": "Burkina Faso was called Upper Volta until 1984. Dahomey is the former name of neighbouring Benin.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Burkina_Faso"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "es",
+        "statements": [
+          {
+            "text": "Spain's national anthem, the Marcha Real, has no official lyrics.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Marcha_Real"
+          },
+          {
+            "text": "At La Tomatina, a festival in the town of Buñol, people throw tomatoes at each other.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/La_Tomatina"
+          },
+          {
+            "text": "The Sagrada Família in Barcelona was completed in 1926.",
+            "fib": true,
+            "truth": "Construction began in 1882 and has gone on for well over a century. Gaudí died in 1926 with the church far from finished.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Sagrada_Fam%C3%ADlia"
+          }
+        ]
+      },
+      {
+        "country": "mw",
+        "statements": [
+          {
+            "text": "Lake Malawi is thought to have more species of fish than any other lake in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Malawi"
+          },
+          {
+            "text": "Malawi is nicknamed 'the Warm Heart of Africa'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Malawi"
+          },
+          {
+            "text": "Lake Malawi is shallow, nowhere deeper than about 50 m (160 ft).",
+            "fib": true,
+            "truth": "Lake Malawi is more than 700 m (2,300 ft) deep, making it one of the deepest lakes in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Malawi"
+          }
+        ]
+      },
+      {
+        "country": "co",
+        "statements": [
+          {
+            "text": "Colombia's Caño Cristales is nicknamed the 'river of five colours'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Ca%C3%B1o_Cristales"
+          },
+          {
+            "text": "Colombia has coastlines on both the Pacific Ocean and the Caribbean Sea.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Colombia"
+          },
+          {
+            "text": "Colombia is named after its first president.",
+            "fib": true,
+            "truth": "Colombia is named after Christopher Columbus.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Colombia"
+          }
+        ]
+      },
+      {
+        "country": "sz",
+        "statements": [
+          {
+            "text": "Eswatini's Umhlanga, or Reed Dance, is a yearly ceremony in which thousands of young women bring reeds to the Queen Mother.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Umhlanga_(ceremony)"
+          },
+          {
+            "text": "Eswatini was known as Swaziland until 2018.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Eswatini"
+          },
+          {
+            "text": "Mbabane is Eswatini's only capital.",
+            "fib": true,
+            "truth": "Eswatini has two capitals: Mbabane is the administrative capital, and Lobamba is the legislative capital, home to the parliament.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lobamba"
+          }
+        ]
+      },
+      {
+        "country": "om",
+        "statements": [
+          {
+            "text": "The frankincense trees and ancient incense-trade sites of Oman's Dhofar region are a UNESCO World Heritage Site.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Land_of_Frankincense"
+          },
+          {
+            "text": "Oman's Musandam Peninsula is separated from the rest of the country by the United Arab Emirates.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Musandam_Governorate"
+          },
+          {
+            "text": "Oman's monsoon season turns the north of the country green.",
+            "fib": true,
+            "truth": "The khareef monsoon greens the south of Oman, in the Dhofar region around Salalah.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Khareef"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "gm",
+        "statements": [
+          {
+            "text": "The Gambia is the smallest country on mainland Africa.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/The_Gambia"
+          },
+          {
+            "text": "The Gambia is almost completely surrounded by Senegal, apart from its short Atlantic coast.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/The_Gambia"
+          },
+          {
+            "text": "The Gambia is named after its capital city.",
+            "fib": true,
+            "truth": "The country's name comes from the Gambia River, which flows through the middle of it. The capital is Banjul.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/The_Gambia"
+          }
+        ]
+      },
+      {
+        "country": "bd",
+        "statements": [
+          {
+            "text": "The Sundarbans, shared by Bangladesh and India, is the largest mangrove forest in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Sundarbans"
+          },
+          {
+            "text": "Cox's Bazar in Bangladesh has a sea beach about 120 km (75 mi) long.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Cox's_Bazar_Beach"
+          },
+          {
+            "text": "International Mother Language Day honours a language movement in Nepal.",
+            "fib": true,
+            "truth": "The day honours the Bengali Language Movement of 1952, in what is now Bangladesh.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/International_Mother_Language_Day"
+          }
+        ]
+      },
+      {
+        "country": "py",
+        "statements": [
+          {
+            "text": "Spanish and Guaraní are both official in Paraguay, making Guaraní one of the last widely used Indigenous national languages in South America.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Paraguay"
+          },
+          {
+            "text": "The Itaipu Dam, shared by Paraguay and Brazil, is one of the largest hydroelectric plants in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Itaipu_Dam"
+          },
+          {
+            "text": "Paraguay has a coastline on the Atlantic Ocean.",
+            "fib": true,
+            "truth": "Paraguay is landlocked, bordered by Argentina, Brazil and Bolivia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Paraguay"
+          }
+        ]
+      },
+      {
+        "country": "zw",
+        "statements": [
+          {
+            "text": "Zimbabwe takes its name from Great Zimbabwe, a medieval stone city in the country's south-east.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Zimbabwe"
+          },
+          {
+            "text": "Lake Kariba, shared by Zimbabwe and Zambia, is the world's largest artificial lake by volume.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Kariba"
+          },
+          {
+            "text": "Zimbabwe has three official languages.",
+            "fib": true,
+            "truth": "Zimbabwe's constitution recognises 16 official languages.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Zimbabwe"
+          }
+        ]
+      },
+      {
+        "country": "sm",
+        "statements": [
+          {
+            "text": "San Marino claims to be the world's oldest surviving republic, traditionally founded in 301.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/San_Marino"
+          },
+          {
+            "text": "San Marino is completely surrounded by Italy.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/San_Marino"
+          },
+          {
+            "text": "San Marino's capital city sits on top of Monte Bianco.",
+            "fib": true,
+            "truth": "The City of San Marino sits on top of Monte Titano.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/San_Marino"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "ie",
+        "statements": [
+          {
+            "text": "A gold harp on a blue background is Ireland's coat of arms.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ireland"
+          },
+          {
+            "text": "Newgrange, a passage tomb in Ireland built around 3100 BC, is older than Stonehenge and the Egyptian pyramids.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Newgrange"
+          },
+          {
+            "text": "Halloween grew out of an old Irish festival called Beltane.",
+            "fib": true,
+            "truth": "Halloween's roots lie in Samhain, a Gaelic festival marking the end of the harvest. Beltane is a spring festival.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Samhain"
+          }
+        ]
+      },
+      {
+        "country": "lr",
+        "statements": [
+          {
+            "text": "Liberia was founded in the 1800s as a settlement for freed African Americans.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Liberia"
+          },
+          {
+            "text": "Liberia's flag, with 11 stripes and a single star, closely resembles the flag of the United States.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Liberia"
+          },
+          {
+            "text": "Liberia's capital, Monrovia, is named after a local river.",
+            "fib": true,
+            "truth": "Monrovia is named after James Monroe, the fifth US president, who supported the settlement.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Monrovia"
+          }
+        ]
+      },
+      {
+        "country": "dj",
+        "statements": [
+          {
+            "text": "Lake Assal in Djibouti is the lowest point in Africa, about 155 m (509 ft) below sea level.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Assal_(Djibouti)"
+          },
+          {
+            "text": "Djibouti sits on the Bab-el-Mandeb strait, which links the Red Sea to the Gulf of Aden.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bab_al-Mandab_Strait"
+          },
+          {
+            "text": "Djibouti's official languages are Arabic and English.",
+            "fib": true,
+            "truth": "Djibouti's official languages are French and Arabic.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Djibouti"
+          }
+        ]
+      },
+      {
+        "country": "am",
+        "statements": [
+          {
+            "text": "In 301, Armenia became the first country to adopt Christianity as its state religion.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Armenia"
+          },
+          {
+            "text": "The world's oldest known leather shoe, about 5,500 years old, was found in a cave in Armenia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Areni-1_shoe"
+          },
+          {
+            "text": "The Armenian alphabet was copied unchanged from the Greek alphabet.",
+            "fib": true,
+            "truth": "The Armenian alphabet was created by the scholar Mesrop Mashtots around 405 AD.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Armenian_alphabet"
+          }
+        ]
+      },
+      {
+        "country": "ag",
+        "statements": [
+          {
+            "text": "Antigua is said to have 365 beaches, one for every day of the year.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Antigua"
+          },
+          {
+            "text": "Barbuda's Codrington Lagoon is home to the largest colony of magnificent frigatebirds in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Codrington_Lagoon"
+          },
+          {
+            "text": "Antigua was named by early Dutch explorers.",
+            "fib": true,
+            "truth": "Christopher Columbus named the island Santa María de la Antigua on his 1493 voyage.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Antigua"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "be",
+        "statements": [
+          {
+            "text": "The saxophone was invented by Belgian instrument maker Adolphe Sax.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Adolphe_Sax"
+          },
+          {
+            "text": "Belgium has three official languages: Dutch, French and German.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Belgium"
+          },
+          {
+            "text": "Brussels' famous Manneken Pis statue is more than 10 m (33 ft) tall.",
+            "fib": true,
+            "truth": "The Manneken Pis is tiny, only about 55.5 cm (22 in) tall.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Manneken_Pis"
+          }
+        ]
+      },
+      {
+        "country": "hn",
+        "statements": [
+          {
+            "text": "The Maya city of Copán in Honduras is famous for its long Hieroglyphic Stairway.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Cop%C3%A1n"
+          },
+          {
+            "text": "Honduras' Bay Islands lie on the Mesoamerican Barrier Reef, the second-longest reef system in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mesoamerican_Barrier_Reef_System"
+          },
+          {
+            "text": "Honduras has no coastline on the Pacific Ocean.",
+            "fib": true,
+            "truth": "Honduras has a short Pacific coastline on the Gulf of Fonseca, as well as its long Caribbean coast.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Gulf_of_Fonseca"
+          }
+        ]
+      },
+      {
+        "country": "st",
+        "statements": [
+          {
+            "text": "São Tomé and Príncipe is the second-smallest country in Africa.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
+          },
+          {
+            "text": "The equator passes through Ilhéu das Rolas, a small island just south of São Tomé.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Ilh%C3%A9u_das_Rolas"
+          },
+          {
+            "text": "São Tomé and Príncipe was a Dutch colony.",
+            "fib": true,
+            "truth": "São Tomé and Príncipe was a Portuguese colony and became independent in 1975.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
+          }
+        ]
+      },
+      {
+        "country": "tl",
+        "statements": [
+          {
+            "text": "Timor-Leste shares the island of Timor with Indonesia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Timor-Leste"
+          },
+          {
+            "text": "Timor-Leste uses the US dollar as its currency.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Timor-Leste"
+          },
+          {
+            "text": "Timor-Leste's official languages are Malay and English.",
+            "fib": true,
+            "truth": "Timor-Leste's official languages are Portuguese and Tetum (Tetun).",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Timor-Leste"
+          }
+        ]
+      },
+      {
+        "country": "cd",
+        "statements": [
+          {
+            "text": "The Congo River is the deepest river in the world, more than 220 m (720 ft) deep in places.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Congo_River"
+          },
+          {
+            "text": "The okapi, a forest animal related to the giraffe, lives in the wild only in the DR Congo.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Okapi"
+          },
+          {
+            "text": "The DR Congo is landlocked, with no access to the ocean.",
+            "fib": true,
+            "truth": "The DR Congo has a short Atlantic coastline, about 37 km (23 mi) long, at the mouth of the Congo River.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "gh",
+        "statements": [
+          {
+            "text": "Lake Volta in Ghana is one of the largest artificial lakes in the world by surface area.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Volta"
+          },
+          {
+            "text": "On 6 March 1957, Ghana became the first colony in sub-Saharan Africa to gain independence.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Ghana"
+          },
+          {
+            "text": "Kente cloth comes originally from Kenya.",
+            "fib": true,
+            "truth": "Kente is a woven cloth from Ghana, made by the Akan and Ewe peoples.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kente_cloth"
+          }
+        ]
+      },
+      {
+        "country": "bj",
+        "statements": [
+          {
+            "text": "Benin is a heartland of Vodun, and holds a national Vodun holiday every year on 10 January.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/West_African_Vod%C3%BAn"
+          },
+          {
+            "text": "The Royal Palaces of Abomey, built by the kings of Dahomey, are a UNESCO World Heritage Site.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Royal_Palaces_of_Abomey"
+          },
+          {
+            "text": "English is the official language of Benin.",
+            "fib": true,
+            "truth": "French is Benin's official language, and dozens of local languages such as Fon and Yoruba are widely spoken.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Benin"
+          }
+        ]
+      },
+      {
+        "country": "li",
+        "statements": [
+          {
+            "text": "Liechtenstein abolished its army in 1868.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Liechtenstein"
+          },
+          {
+            "text": "Liechtenstein is doubly landlocked: it is surrounded only by countries that are themselves landlocked.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Liechtenstein"
+          },
+          {
+            "text": "Liechtenstein uses the euro as its currency.",
+            "fib": true,
+            "truth": "Liechtenstein uses the Swiss franc.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Liechtenstein"
+          }
+        ]
+      },
+      {
+        "country": "do",
+        "statements": [
+          {
+            "text": "Santo Domingo is the oldest continuously inhabited European settlement in the Americas.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Santo_Domingo"
+          },
+          {
+            "text": "Pico Duarte in the Dominican Republic is the highest mountain in the Caribbean.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Pico_Duarte"
+          },
+          {
+            "text": "Merengue music comes originally from Cuba.",
+            "fib": true,
+            "truth": "Merengue is a music genre from the Dominican Republic.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Merengue_music"
+          }
+        ]
+      },
+      {
+        "country": "ge",
+        "statements": [
+          {
+            "text": "Ushguli in Georgia is one of the highest continuously inhabited settlements in Europe.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Ushguli"
+          },
+          {
+            "text": "The Georgian language is written in its own alphabet, called Mkhedruli.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Georgian_scripts"
+          },
+          {
+            "text": "Georgian wine is traditionally aged in wooden barrels buried under the floor.",
+            "fib": true,
+            "truth": "Georgia's traditional wine vessel is the qvevri, a large clay jar buried in the ground.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kvevri"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "sc",
+        "statements": [
+          {
+            "text": "The coco de mer palm of the Seychelles produces the largest seed of any plant.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lodoicea"
+          },
+          {
+            "text": "Aldabra, an atoll in the Seychelles, is home to around 180,000 giant tortoises.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Aldabra_giant_tortoise"
+          },
+          {
+            "text": "The Seychelles is made up of just three islands.",
+            "fib": true,
+            "truth": "The Seychelles has 115 islands in the Indian Ocean.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Seychelles"
+          }
+        ]
+      },
+      {
+        "country": "ir",
+        "statements": [
+          {
+            "text": "The Lut Desert in Iran has recorded some of the hottest ground temperatures on Earth, up to 70.7 °C (159 °F).",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lut_Desert"
+          },
+          {
+            "text": "Qanats, underground channels that carry water from hills to farms, were developed in ancient Iran.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Qanat"
+          },
+          {
+            "text": "Persian, Iran's main language, is a form of Arabic.",
+            "fib": true,
+            "truth": "Persian is an Indo-European language, though it is written in a script based on Arabic.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Persian_language"
+          }
+        ]
+      },
+      {
+        "country": "bz",
+        "statements": [
+          {
+            "text": "The Great Blue Hole off Belize is a giant underwater sinkhole about 300 m (1,000 ft) across.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Great_Blue_Hole"
+          },
+          {
+            "text": "Belize is the only country in Central America where English is the official language.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Belize"
+          },
+          {
+            "text": "Belize's Cockscomb Basin was set up as a sanctuary for pandas.",
+            "fib": true,
+            "truth": "The Cockscomb Basin Wildlife Sanctuary was created to protect jaguars.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Cockscomb_Basin_Wildlife_Sanctuary"
+          }
+        ]
+      },
+      {
+        "country": "mt",
+        "statements": [
+          {
+            "text": "Malta's Ġgantija temples, on the island of Gozo, are older than the pyramids of Egypt.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/%C4%A0gantija"
+          },
+          {
+            "text": "Maltese grew out of Sicilian Arabic but is written in the Latin alphabet.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Maltese_language"
+          },
+          {
+            "text": "Malta is made up of a single island.",
+            "fib": true,
+            "truth": "Malta is an archipelago. Its three main islands are Malta, Gozo and Comino.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Malta"
+          }
+        ]
+      },
+      {
+        "country": "rw",
+        "statements": [
+          {
+            "text": "Rwanda is known as the 'land of a thousand hills'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Rwanda"
+          },
+          {
+            "text": "On the last Saturday of each month, Rwandans take part in Umuganda, a morning of community work.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Umuganda"
+          },
+          {
+            "text": "Rwanda's mountain gorillas live in the Serengeti.",
+            "fib": true,
+            "truth": "Rwanda's mountain gorillas live in Volcanoes National Park, in the Virunga Mountains.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Volcanoes_National_Park"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "bt",
+        "statements": [
+          {
+            "text": "Bhutan measures its progress with 'Gross National Happiness'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Gross_National_Happiness"
+          },
+          {
+            "text": "Bhutan's Paro Taktsang, or Tiger's Nest, monastery clings to a cliff about 900 m (3,000 ft) above the valley.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Paro_Taktsang"
+          },
+          {
+            "text": "Bhutan's national animal is the snow leopard.",
+            "fib": true,
+            "truth": "Bhutan's national animal is the takin, a sturdy mountain goat-antelope.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Takin"
+          }
+        ]
+      },
+      {
+        "country": "bw",
+        "statements": [
+          {
+            "text": "Botswana's Okavango River floods into the Kalahari and spreads out into a vast inland delta instead of reaching the sea.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Okavango_Delta"
+          },
+          {
+            "text": "Botswana's Makgadikgadi Pan is one of the largest salt flats in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Makgadikgadi_Pan"
+          },
+          {
+            "text": "Botswana's currency is called the rand.",
+            "fib": true,
+            "truth": "Botswana's currency is the pula, a Setswana word that means 'rain'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Botswana_pula"
+          }
+        ]
+      },
+      {
+        "country": "lc",
+        "statements": [
+          {
+            "text": "Saint Lucia is named after Saint Lucy of Syracuse, an early Christian saint.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Saint_Lucia"
+          },
+          {
+            "text": "The Pitons, two volcanic spires on Saint Lucia, are a UNESCO World Heritage Site.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Pitons_(Saint_Lucia)"
+          },
+          {
+            "text": "Saint Lucia was only ever ruled by Spain.",
+            "fib": true,
+            "truth": "England and France fought 14 times for control of Saint Lucia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Saint_Lucia"
+          }
+        ]
+      },
+      {
+        "country": "mz",
+        "statements": [
+          {
+            "text": "The Island of Mozambique, which gave the country its name, is a UNESCO World Heritage Site.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Island_of_Mozambique"
+          },
+          {
+            "text": "Mozambique joined the Commonwealth in 1995, even though it was never a British colony.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mozambique"
+          },
+          {
+            "text": "Swahili is Mozambique's official language.",
+            "fib": true,
+            "truth": "Portuguese is Mozambique's official language.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mozambique"
+          }
+        ]
+      },
+      {
+        "country": "mk",
+        "statements": [
+          {
+            "text": "Lake Ohrid is one of Europe's oldest and deepest lakes, with more than 200 species found nowhere else.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Ohrid"
+          },
+          {
+            "text": "Mother Teresa was born in Skopje.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mother_Teresa"
+          },
+          {
+            "text": "Lake Ohrid lies entirely within North Macedonia.",
+            "fib": true,
+            "truth": "Lake Ohrid is shared by North Macedonia and Albania.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Ohrid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "ng",
+        "statements": [
+          {
+            "text": "Zuma Rock, a huge natural monolith in Nigeria, appears on the 100-naira banknote.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Zuma_Rock"
+          },
+          {
+            "text": "More than 500 native languages are spoken in Nigeria.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Languages_of_Nigeria"
+          },
+          {
+            "text": "Lagos is Nigeria's capital.",
+            "fib": true,
+            "truth": "Abuja has been Nigeria's capital since 1991. Lagos is its biggest city.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Abuja"
+          }
+        ]
+      },
+      {
+        "country": "ph",
+        "statements": [
+          {
+            "text": "The Philippines is made up of more than 7,600 islands.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Philippines"
+          },
+          {
+            "text": "The Chocolate Hills on Bohol are more than 1,000 grassy, cone-shaped hills that turn brown in the dry season.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Chocolate_Hills"
+          },
+          {
+            "text": "The Philippines is named after a Spanish explorer.",
+            "fib": true,
+            "truth": "The Philippines is named after King Philip II of Spain.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Philippines"
+          }
+        ]
+      },
+      {
+        "country": "ug",
+        "statements": [
+          {
+            "text": "Uganda's Bwindi Impenetrable Forest is home to about half of the world's mountain gorillas.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bwindi_Impenetrable_National_Park"
+          },
+          {
+            "text": "The White Nile flows out of Lake Victoria at Jinja, Uganda.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Jinja,_Uganda"
+          },
+          {
+            "text": "Uganda's flag features a lion.",
+            "fib": true,
+            "truth": "Uganda's flag shows a crested crane in a white circle at its centre.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Uganda"
+          }
+        ]
+      },
+      {
+        "country": "vc",
+        "statements": [
+          {
+            "text": "Parts of the Pirates of the Caribbean films were shot on Saint Vincent.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
+          },
+          {
+            "text": "La Soufrière, the volcano on Saint Vincent, had an eruption lasting from December 2020 to April 2021.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/La_Soufri%C3%A8re_(Saint_Vincent)"
+          },
+          {
+            "text": "Saint Vincent and the Grenadines is a single island.",
+            "fib": true,
+            "truth": "It is an archipelago: the main island of Saint Vincent plus a chain of smaller islands, the Grenadines.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
+          }
+        ]
+      },
+      {
+        "country": "hu",
+        "statements": [
+          {
+            "text": "The Rubik's Cube was invented in 1974 by Hungarian architect Ernő Rubik.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Rubik's_Cube"
+          },
+          {
+            "text": "Hungary's Lake Hévíz is the largest thermal lake in Europe that people can swim in.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_H%C3%A9v%C3%ADz"
+          },
+          {
+            "text": "Hungarian is closely related to German.",
+            "fib": true,
+            "truth": "Hungarian is a Uralic language, distantly related to Finnish and Estonian.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Hungarian_language"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "md",
+        "statements": [
+          {
+            "text": "The Mileștii Mici wine cellars in Moldova hold the largest wine collection in the world, according to Guinness World Records.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mile%C8%99tii_Mici_(winery)"
+          },
+          {
+            "text": "Moldova's Orheiul Vechi is a historic site set among limestone cliffs on a tight bend of the Răut River.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Old_Orhei"
+          },
+          {
+            "text": "Moldova has a long coastline on the Black Sea.",
+            "fib": true,
+            "truth": "Moldova is landlocked, lying between Romania and Ukraine.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Moldova"
+          }
+        ]
+      },
+      {
+        "country": "tt",
+        "statements": [
+          {
+            "text": "Pitch Lake in Trinidad is the largest natural deposit of asphalt in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Pitch_Lake"
+          },
+          {
+            "text": "The steelpan, a drum made from oil barrels, was invented in Trinidad and Tobago.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Steelpan"
+          },
+          {
+            "text": "The limbo dance began in Jamaica.",
+            "fib": true,
+            "truth": "The limbo dance began on the island of Trinidad.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Limbo_(dance)"
+          }
+        ]
+      },
+      {
+        "country": "ga",
+        "statements": [
+          {
+            "text": "Gabon's Loango National Park is known for 'surfing hippos' that swim in the ocean.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Loango_National_Park"
+          },
+          {
+            "text": "In 2002 Gabon set aside about a tenth of its land as national parks, 13 parks in total.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Gabon"
+          },
+          {
+            "text": "Gabon was a British colony until 1960.",
+            "fib": true,
+            "truth": "Gabon was a French colony and became independent from France in 1960.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Gabon"
+          }
+        ]
+      },
+      {
+        "country": "ad",
+        "statements": [
+          {
+            "text": "Andorra has two heads of state at once: the Bishop of Urgell in Spain and the President of France.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Co-princes_of_Andorra"
+          },
+          {
+            "text": "Catalan is Andorra's only official language.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Andorra"
+          },
+          {
+            "text": "Andorra la Vella is the lowest capital city in Europe.",
+            "fib": true,
+            "truth": "At about 1,023 m (3,356 ft), Andorra la Vella is the highest capital city in Europe.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Andorra_la_Vella"
+          }
+        ]
+      },
+      {
+        "country": "qa",
+        "statements": [
+          {
+            "text": "Qatar's only land border is with Saudi Arabia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Qatar"
+          },
+          {
+            "text": "Khor Al Adaid in Qatar is an 'inland sea' where the Persian Gulf reaches deep into the desert.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Khor_Al_Adaid"
+          },
+          {
+            "text": "Qatar is an island in the Persian Gulf.",
+            "fib": true,
+            "truth": "Qatar is a peninsula that juts out from the Arabian Peninsula into the Persian Gulf.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Qatar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "kn",
+        "statements": [
+          {
+            "text": "Saint Kitts and Nevis is the smallest sovereign state in the Americas.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
+          },
+          {
+            "text": "US founding father Alexander Hamilton was born on Nevis.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Alexander_Hamilton"
+          },
+          {
+            "text": "Saint Kitts' Brimstone Hill Fortress was built by the Spanish.",
+            "fib": true,
+            "truth": "Brimstone Hill Fortress was designed and built by the British.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Brimstone_Hill_Fortress_National_Park"
+          }
+        ]
+      },
+      {
+        "country": "cg",
+        "statements": [
+          {
+            "text": "Brazzaville and Kinshasa, the capitals of two different countries, face each other across the Congo River.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Brazzaville"
+          },
+          {
+            "text": "Odzala-Kokoua National Park in the Republic of the Congo is home to many western lowland gorillas.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Odzala-Kokoua_National_Park"
+          },
+          {
+            "text": "The Republic of the Congo was once a Belgian colony.",
+            "fib": true,
+            "truth": "The Republic of the Congo was a French colony, part of French Equatorial Africa. Its neighbour, the DR Congo, was the Belgian colony.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Republic_of_the_Congo"
+          }
+        ]
+      },
+      {
+        "country": "sk",
+        "statements": [
+          {
+            "text": "The ruins of Spiš Castle form one of the largest castle sites in Slovakia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Spi%C5%A1_Castle"
+          },
+          {
+            "text": "Bratislava is the only national capital that borders two other countries: Austria and Hungary.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bratislava"
+          },
+          {
+            "text": "Slovakia and Czechia split into separate countries in 1968.",
+            "fib": true,
+            "truth": "Czechoslovakia split peacefully on 1 January 1993, in what became known as the Velvet Divorce.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Dissolution_of_Czechoslovakia"
+          }
+        ]
+      },
+      {
+        "country": "la",
+        "statements": [
+          {
+            "text": "Laos is the only landlocked country in Southeast Asia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Laos"
+          },
+          {
+            "text": "Laos's Plain of Jars is scattered with thousands of huge ancient stone jars.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Plain_of_Jars"
+          },
+          {
+            "text": "For much of its length, the Mekong forms the border between Laos and Vietnam.",
+            "fib": true,
+            "truth": "The Mekong forms much of the border between Laos and Thailand, for about 920 km (570 mi).",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mekong"
+          }
+        ]
+      },
+      {
+        "country": "pl",
+        "statements": [
+          {
+            "text": "Marie Curie, the first person to win two Nobel Prizes, was born in Warsaw.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Marie_Curie"
+          },
+          {
+            "text": "Poland's Wieliczka Salt Mine has underground chapels and statues carved by miners out of rock salt.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Wieliczka_Salt_Mine"
+          },
+          {
+            "text": "Poland's Białowieża Forest is home to Europe's last wild tigers.",
+            "fib": true,
+            "truth": "Białowieża Forest is famous for its European bison, Europe's heaviest land animal.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bia%C5%82owie%C5%BCa_Forest"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "bg",
+        "statements": [
+          {
+            "text": "Bulgaria's Rose Valley is famous for producing rose oil for perfumes.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Rose_Valley,_Bulgaria"
+          },
+          {
+            "text": "Lactobacillus bulgaricus, a bacterium used to make yogurt, was first identified in 1905 by a Bulgarian doctor.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lactobacillus_delbrueckii_subsp._bulgaricus"
+          },
+          {
+            "text": "Bulgarian is written in the Latin alphabet.",
+            "fib": true,
+            "truth": "Bulgarian is written in Cyrillic, an alphabet that was developed in the First Bulgarian Empire.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Cyrillic_script"
+          }
+        ]
+      },
+      {
+        "country": "ro",
+        "statements": [
+          {
+            "text": "Romania's Palace of the Parliament in Bucharest is described as the world's heaviest administrative building.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Palace_of_the_Parliament"
+          },
+          {
+            "text": "Romanian is a Romance language, descended from Latin.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Romanian_language"
+          },
+          {
+            "text": "Most of the Danube Delta lies in Bulgaria.",
+            "fib": true,
+            "truth": "Most of the Danube Delta lies in Romania, with a small part in Ukraine.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Danube_Delta"
+          }
+        ]
+      },
+      {
+        "country": "ec",
+        "statements": [
+          {
+            "text": "Ecuador's name is simply the Spanish word for 'equator'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Ecuador"
+          },
+          {
+            "text": "Because Earth bulges at the equator, the summit of Ecuador's Chimborazo is the farthest point from Earth's centre.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Chimborazo"
+          },
+          {
+            "text": "Panama hats were first made in Panama.",
+            "fib": true,
+            "truth": "Panama hats come from Ecuador. Many were shipped through Panama on their way to buyers abroad.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Panama_hat"
+          }
+        ]
+      },
+      {
+        "country": "mu",
+        "statements": [
+          {
+            "text": "The dodo, a flightless bird, lived only on Mauritius before it died out in the 1600s.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Dodo"
+          },
+          {
+            "text": "Mauritius is the only country in Africa where Hinduism is the most practised religion.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mauritius"
+          },
+          {
+            "text": "Mauritius uses the euro as its currency.",
+            "fib": true,
+            "truth": "Mauritius uses its own currency, the Mauritian rupee.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mauritian_rupee"
+          }
+        ]
+      },
+      {
+        "country": "sg",
+        "statements": [
+          {
+            "text": "Singapore is made up of one main island and more than 60 smaller islands and islets.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Singapore"
+          },
+          {
+            "text": "The name Singapore goes back to a Sanskrit word meaning 'Lion City'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Singapore"
+          },
+          {
+            "text": "Singapore lies more than 1,000 km (620 mi) north of the equator.",
+            "fib": true,
+            "truth": "Singapore is only about 137 km (85 mi) north of the equator.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Singapore"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "gb",
+        "statements": [
+          {
+            "text": "Big Ben is the nickname of the great bell in London's clock tower, not the tower itself.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Big_Ben"
+          },
+          {
+            "text": "The London Underground began in 1863 with the world's first underground passenger railway.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/London_Underground"
+          },
+          {
+            "text": "Stonehenge was built by the Romans.",
+            "fib": true,
+            "truth": "Stonehenge was built in prehistoric times, roughly 3000 to 2000 BC, thousands of years before the Romans arrived.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Stonehenge"
+          }
+        ]
+      },
+      {
+        "country": "uz",
+        "statements": [
+          {
+            "text": "Samarkand's Registan square is framed by three grand madrasas.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Registan"
+          },
+          {
+            "text": "Itchan Kala, the walled inner town of Khiva in Uzbekistan, is a UNESCO World Heritage Site.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Itchan_Kala"
+          },
+          {
+            "text": "Uzbekistan has a coastline on the Caspian Sea.",
+            "fib": true,
+            "truth": "Uzbekistan is doubly landlocked: it has no coast, and neither do any of its neighbours.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Uzbekistan"
+          }
+        ]
+      },
+      {
+        "country": "ml",
+        "statements": [
+          {
+            "text": "The Great Mosque of Djenné in Mali is the largest mud-brick (adobe) building in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Great_Mosque_of_Djenn%C3%A9"
+          },
+          {
+            "text": "In medieval times, Mali's city of Timbuktu was a renowned centre of learning.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mali"
+          },
+          {
+            "text": "Mali is named after a river that flows through the country.",
+            "fib": true,
+            "truth": "Mali is named after the Mali Empire, a powerful medieval West African empire.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mali"
+          }
+        ]
+      },
+      {
+        "country": "va",
+        "statements": [
+          {
+            "text": "Vatican City is the smallest country in the world by area.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Vatican_City"
+          },
+          {
+            "text": "The Pontifical Swiss Guard has protected the popes since 1506.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Swiss_Guard"
+          },
+          {
+            "text": "Vatican City has its own airport.",
+            "fib": true,
+            "truth": "Vatican City has no airport, though it does have a heliport and a short railway.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Vatican_City"
+          }
+        ]
+      },
+      {
+        "country": "ni",
+        "statements": [
+          {
+            "text": "Bull sharks can swim up rivers into Lake Nicaragua, a freshwater lake.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Nicaragua"
+          },
+          {
+            "text": "Ometepe, an island in Lake Nicaragua, is formed by two volcanoes.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Ometepe"
+          },
+          {
+            "text": "Nicaragua is the smallest country in Central America.",
+            "fib": true,
+            "truth": "Nicaragua is the largest country in Central America by area.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Nicaragua"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "ne",
+        "statements": [
+          {
+            "text": "The Tree of Ténéré in Niger was once called the most isolated tree on Earth, until a truck knocked it down in 1973.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tree_of_T%C3%A9n%C3%A9r%C3%A9"
+          },
+          {
+            "text": "The Ténéré, a vast sandy region of the Sahara in Niger, takes its name from a Tuareg word meaning 'desert'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/T%C3%A9n%C3%A9r%C3%A9"
+          },
+          {
+            "text": "Less than a quarter of Niger is covered by the Sahara.",
+            "fib": true,
+            "truth": "More than 80% of Niger lies in the Sahara Desert.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Niger"
+          }
+        ]
+      },
+      {
+        "country": "bn",
+        "statements": [
+          {
+            "text": "Brunei is split into two separate parts by the Malaysian state of Sarawak.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Brunei"
+          },
+          {
+            "text": "Kampong Ayer in Brunei's capital is a huge village built on stilts over the water.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kampong_Ayer"
+          },
+          {
+            "text": "Brunei is on the island of Sumatra.",
+            "fib": true,
+            "truth": "Brunei is on the island of Borneo, which it shares with Malaysia and Indonesia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Brunei"
+          }
+        ]
+      },
+      {
+        "country": "cz",
+        "statements": [
+          {
+            "text": "The word 'robot' comes from R.U.R., a 1920 play by Czech writer Karel Čapek.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/R.U.R."
+          },
+          {
+            "text": "Prague's astronomical clock dates back to 1410, and every hour figures of the apostles parade past its windows.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Prague_astronomical_clock"
+          },
+          {
+            "text": "Pilsner beer was first brewed in Germany.",
+            "fib": true,
+            "truth": "Pilsner was first brewed in 1842 in the Czech city of Plzeň (Pilsen).",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Pilsner"
+          }
+        ]
+      },
+      {
+        "country": "gt",
+        "statements": [
+          {
+            "text": "Tikal in Guatemala was one of the largest cities of the ancient Maya.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tikal"
+          },
+          {
+            "text": "Guatemala's currency, the quetzal, is named after its national bird, the resplendent quetzal.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Guatemalan_quetzal"
+          },
+          {
+            "text": "Guatemala's Lake Atitlán was created by a meteorite impact.",
+            "fib": true,
+            "truth": "Lake Atitlán fills a huge volcanic caldera.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Atitl%C3%A1n"
+          }
+        ]
+      },
+      {
+        "country": "ee",
+        "statements": [
+          {
+            "text": "Skype was created by a team that included four Estonian developers.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Skype"
+          },
+          {
+            "text": "In 2007 Estonia became the first country to allow online voting in a national parliamentary election.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Electronic_voting_in_Estonia"
+          },
+          {
+            "text": "Estonia has fewer than 50 islands.",
+            "fib": true,
+            "truth": "Estonia has more than 2,000 islands in the Baltic Sea.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Estonia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "dz",
+        "statements": [
+          {
+            "text": "Algeria is the largest country in Africa by area.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Algeria"
+          },
+          {
+            "text": "Algeria's Tassili n'Ajjer plateau holds more than 15,000 prehistoric rock drawings and engravings.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tassili_n'Ajjer"
+          },
+          {
+            "text": "Algeria's capital is Oran.",
+            "fib": true,
+            "truth": "Algeria's capital and largest city is Algiers. Oran is the country's second-biggest city.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Oran"
+          }
+        ]
+      },
+      {
+        "country": "pk",
+        "statements": [
+          {
+            "text": "K2, the second-highest mountain on Earth, is in the Karakoram range, which runs through northern Pakistan.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/K2"
+          },
+          {
+            "text": "Mohenjo-daro, an ancient Indus Valley city in Pakistan, was built around 2500 BC.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mohenjo-daro"
+          },
+          {
+            "text": "Himalayan pink salt is mostly mined in Nepal.",
+            "fib": true,
+            "truth": "Himalayan salt is mined mainly at the Khewra Salt Mine in Punjab, Pakistan.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Himalayan_salt"
+          }
+        ]
+      },
+      {
+        "country": "mc",
+        "statements": [
+          {
+            "text": "Monaco is the second-smallest country in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Monaco"
+          },
+          {
+            "text": "The Monaco Grand Prix is raced on the ordinary streets of the city.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Monaco_Grand_Prix"
+          },
+          {
+            "text": "Monaco's own citizens are regular players at the Monte Carlo Casino.",
+            "fib": true,
+            "truth": "Citizens of Monaco are not allowed to gamble in the casino.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Monte_Carlo_Casino"
+          }
+        ]
+      },
+      {
+        "country": "cr",
+        "statements": [
+          {
+            "text": "Costa Rica's 1949 constitution permanently abolished its army.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Costa_Rica"
+          },
+          {
+            "text": "Costa Rica's Cocos Island, about 550 km (340 mi) offshore, is a UNESCO World Heritage Site.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Cocos_Island"
+          },
+          {
+            "text": "Costa Rica means 'Rich Forest' in Spanish.",
+            "fib": true,
+            "truth": "Costa Rica means 'Rich Coast' in Spanish.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Costa_Rica"
+          }
+        ]
+      },
+      {
+        "country": "kw",
+        "statements": [
+          {
+            "text": "The Kuwaiti dinar is the highest-valued currency unit in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kuwaiti_dinar"
+          },
+          {
+            "text": "Kuwait has no permanent rivers or natural lakes.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_Kuwait"
+          },
+          {
+            "text": "Kuwait City lies on the coast of the Red Sea.",
+            "fib": true,
+            "truth": "Kuwait City lies on the Persian Gulf.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kuwait_City"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "lb",
+        "statements": [
+          {
+            "text": "A green cedar tree sits in the middle of Lebanon's flag.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Lebanon"
+          },
+          {
+            "text": "Byblos in Lebanon is thought to have been continuously inhabited since around 5000 BC.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Byblos"
+          },
+          {
+            "text": "The Phoenician alphabet, from Lebanon's coast, has no connection to the alphabet used for English.",
+            "fib": true,
+            "truth": "The Phoenician alphabet is the ancestor of the Greek alphabet, and through it of the Latin alphabet used for English.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Phoenician_alphabet"
+          }
+        ]
+      },
+      {
+        "country": "sr",
+        "statements": [
+          {
+            "text": "Suriname is the smallest country in South America.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Suriname"
+          },
+          {
+            "text": "Suriname is the only independent country outside Europe where Dutch is the main official language.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Suriname"
+          },
+          {
+            "text": "Most of Suriname is open grassland.",
+            "fib": true,
+            "truth": "More than 95% of Suriname is covered by rainforest.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Suriname"
+          }
+        ]
+      },
+      {
+        "country": "rs",
+        "statements": [
+          {
+            "text": "Belgrade's international airport is named after inventor Nikola Tesla.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport"
+          },
+          {
+            "text": "Belgrade stands where the Sava River flows into the Danube.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Belgrade"
+          },
+          {
+            "text": "The Iron Gates gorge, on Serbia's border with Romania, was carved by the Rhine.",
+            "fib": true,
+            "truth": "The Iron Gates gorge was carved by the Danube.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Iron_Gates"
+          }
+        ]
+      },
+      {
+        "country": "tz",
+        "statements": [
+          {
+            "text": "Mount Kilimanjaro in Tanzania is the highest mountain in Africa.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Kilimanjaro"
+          },
+          {
+            "text": "Olduvai Gorge in Tanzania is rich in fossils and stone tools left by early humans.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Olduvai_Gorge"
+          },
+          {
+            "text": "Zanzibar, part of Tanzania, became world-famous for growing vanilla.",
+            "fib": true,
+            "truth": "Zanzibar is famous for its cloves and other spices, which earned it the nickname 'Spice Islands'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Zanzibar"
+          }
+        ]
+      },
+      {
+        "country": "np",
+        "statements": [
+          {
+            "text": "Nepal's flag is the only national flag that is not a rectangle.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Nepal"
+          },
+          {
+            "text": "Lumbini in Nepal is revered as the birthplace of the Buddha.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lumbini"
+          },
+          {
+            "text": "Mount Everest lies completely inside Nepal.",
+            "fib": true,
+            "truth": "The summit of Mount Everest sits on the border between Nepal and China.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Everest"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "kg",
+        "statements": [
+          {
+            "text": "Issyk-Kul, a huge lake high in Kyrgyzstan's mountains, rarely freezes in winter because its water is slightly salty.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Issyk-Kul"
+          },
+          {
+            "text": "The Kyrgyz Epic of Manas is one of the longest epic poems in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Epic_of_Manas"
+          },
+          {
+            "text": "Kyrgyzstan's flag shows a blue crescent moon.",
+            "fib": true,
+            "truth": "Kyrgyzstan's flag is red with a yellow sun, which has 40 rays and the crown of a yurt at its centre.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan"
+          }
+        ]
+      },
+      {
+        "country": "bh",
+        "statements": [
+          {
+            "text": "Bahrain is an island country made up of more than 30 islands.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bahrain"
+          },
+          {
+            "text": "Bahrain's 'Tree of Life' is a mesquite tree, about 400 years old, growing alone in the desert.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tree_of_Life_(Bahrain)"
+          },
+          {
+            "text": "Bahrain is linked to Saudi Arabia by a tunnel under the sea.",
+            "fib": true,
+            "truth": "Bahrain is linked to Saudi Arabia by the King Fahd Causeway, a chain of bridges and embankments about 25 km (16 mi) long.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/King_Fahd_Causeway"
+          }
+        ]
+      },
+      {
+        "country": "mr",
+        "statements": [
+          {
+            "text": "The Richat Structure in Mauritania is a giant set of rings about 40 km (25 mi) wide in the Sahara.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Richat_Structure"
+          },
+          {
+            "text": "Mauritania's iron ore trains are among the longest and heaviest trains in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mauritania_Railway"
+          },
+          {
+            "text": "Mauritania's capital, Nouakchott, lies in the Sahara far from the sea.",
+            "fib": true,
+            "truth": "Nouakchott sits on the Atlantic coast.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Nouakchott"
+          }
+        ]
+      },
+      {
+        "country": "fj",
+        "statements": [
+          {
+            "text": "Fiji is made up of more than 300 islands.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Fiji"
+          },
+          {
+            "text": "Fiji's rugby sevens team won gold at the 2016 Olympics, the country's first Olympic medal.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Fiji_national_rugby_sevens_team"
+          },
+          {
+            "text": "Fiji's official languages are English and French.",
+            "fib": true,
+            "truth": "Fiji's official languages are English, Fijian and Hindi.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Fiji"
+          }
+        ]
+      },
+      {
+        "country": "lu",
+        "statements": [
+          {
+            "text": "Luxembourg is the world's only remaining grand duchy.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Grand_duchy"
+          },
+          {
+            "text": "In 2020 Luxembourg became the first country to make public transport free nationwide.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Luxembourg"
+          },
+          {
+            "text": "French is Luxembourg's only official language.",
+            "fib": true,
+            "truth": "Luxembourg uses three languages officially: Luxembourgish, French and German.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Luxembourg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "ws",
+        "statements": [
+          {
+            "text": "In 2011 Samoa moved to the other side of the International Date Line, skipping 30 December entirely.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Samoa"
+          },
+          {
+            "text": "The English word 'tattoo' comes from the Samoan word 'tatau', meaning 'to strike'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tattoo"
+          },
+          {
+            "text": "Robert Louis Stevenson, author of Treasure Island, is buried in Scotland.",
+            "fib": true,
+            "truth": "Stevenson died in Samoa in 1894 and is buried on Mount Vaea, on the island of Upolu.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Robert_Louis_Stevenson"
+          }
+        ]
+      },
+      {
+        "country": "mm",
+        "statements": [
+          {
+            "text": "The remains of more than 2,000 ancient temples and pagodas survive at Bagan in Myanmar.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bagan"
+          },
+          {
+            "text": "The name of Yangon's Shwedagon Pagoda means 'Golden Dagon Pagoda'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Shwedagon_Pagoda"
+          },
+          {
+            "text": "The fishermen of Myanmar's Inle Lake are famous for rowing with their arms only.",
+            "fib": true,
+            "truth": "Inle Lake's fishermen are known for rowing with one leg wrapped around the oar.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Inle_Lake"
+          }
+        ]
+      },
+      {
+        "country": "na",
+        "statements": [
+          {
+            "text": "The welwitschia, a desert plant found in Namibia and Angola, can live for more than 1,000 years.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Welwitschia"
+          },
+          {
+            "text": "The Hoba meteorite in Namibia is the largest known meteorite still in one piece.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Hoba_meteorite"
+          },
+          {
+            "text": "The Namib Desert is one of the youngest deserts in the world.",
+            "fib": true,
+            "truth": "The Namib may be the oldest desert in the world, having been dry or nearly dry for around 55 to 80 million years.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Namib"
+          }
+        ]
+      },
+      {
+        "country": "lt",
+        "statements": [
+          {
+            "text": "Lithuanian is considered one of the most archaic living Indo-European languages.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lithuanian_language"
+          },
+          {
+            "text": "By 2006, Lithuania's Hill of Crosses was estimated to hold about 100,000 crosses.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Hill_of_Crosses"
+          },
+          {
+            "text": "Ice hockey is considered Lithuania's national sport.",
+            "fib": true,
+            "truth": "Basketball is by far the most popular sport in Lithuania.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Basketball_in_Lithuania"
+          }
+        ]
+      },
+      {
+        "country": "bs",
+        "statements": [
+          {
+            "text": "On a beach in the Exuma islands of the Bahamas, wild pigs swim out to meet visiting boats.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Pig_Beach"
+          },
+          {
+            "text": "Dean's Blue Hole in the Bahamas is one of the deepest blue holes in the world, about 202 m (663 ft) deep.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Dean's_Blue_Hole"
+          },
+          {
+            "text": "The Bahamas is made up of fewer than 50 islands.",
+            "fib": true,
+            "truth": "The Bahamas has about 700 islands and more than 2,500 cays.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/The_Bahamas"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "dk",
+        "statements": [
+          {
+            "text": "LEGO comes from Denmark, and its name comes from the Danish 'leg godt', meaning 'play well'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lego"
+          },
+          {
+            "text": "Denmark's flag, the Dannebrog, is thought to be the oldest national flag still in use.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Dannebrog"
+          },
+          {
+            "text": "Copenhagen's Little Mermaid statue is based on a Viking legend.",
+            "fib": true,
+            "truth": "The statue is based on a fairy tale by Danish author Hans Christian Andersen.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/The_Little_Mermaid_(statue)"
+          }
+        ]
+      },
+      {
+        "country": "tj",
+        "statements": [
+          {
+            "text": "More than 90% of Tajikistan is covered by mountains.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tajikistan"
+          },
+          {
+            "text": "Tajikistan's Fedchenko Glacier is the longest glacier in the world outside the polar regions.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Vanch-Yakh_Glacier"
+          },
+          {
+            "text": "Tajik is a Turkic language, like Uzbek and Kazakh.",
+            "fib": true,
+            "truth": "Tajik is a form of Persian.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tajik_language"
+          }
+        ]
+      },
+      {
+        "country": "cm",
+        "statements": [
+          {
+            "text": "Cameroon is often called 'Africa in miniature' because of its varied landscapes and cultures.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Cameroon"
+          },
+          {
+            "text": "Mount Cameroon, an active volcano, is the highest point in sub-Saharan western and central Africa.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Cameroon"
+          },
+          {
+            "text": "French is Cameroon's only official language.",
+            "fib": true,
+            "truth": "Cameroon has two official languages, French and English.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Cameroon"
+          }
+        ]
+      },
+      {
+        "country": "pw",
+        "statements": [
+          {
+            "text": "Millions of golden jellyfish migrate across Palau's Jellyfish Lake every day.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Jellyfish_Lake"
+          },
+          {
+            "text": "In 2009 Palau created the world's first shark sanctuary.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Shark_sanctuary"
+          },
+          {
+            "text": "Palau uses the Japanese yen as its currency.",
+            "fib": true,
+            "truth": "Palau uses the US dollar.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Palau"
+          }
+        ]
+      },
+      {
+        "country": "dm",
+        "statements": [
+          {
+            "text": "Dominica's Boiling Lake is the second-largest hot lake in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Boiling_Lake"
+          },
+          {
+            "text": "Dominica's flag features a sisserou parrot, the national bird.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Dominica"
+          },
+          {
+            "text": "Dominica was named after a French saint called Dominic.",
+            "fib": true,
+            "truth": "Christopher Columbus named it Dominica, from the Latin for 'Sunday', because he first saw it on a Sunday in November 1493.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Dominica"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "ae",
+        "statements": [
+          {
+            "text": "Dubai's Burj Khalifa skyscraper is about 830 m (2,722 ft) tall.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Burj_Khalifa"
+          },
+          {
+            "text": "The United Arab Emirates is a federation of seven emirates.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/United_Arab_Emirates"
+          },
+          {
+            "text": "Dubai's palm-shaped Palm Jumeirah is a natural island.",
+            "fib": true,
+            "truth": "Palm Jumeirah is an artificial archipelago, built by reclaiming land from the sea.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Palm_Jumeirah"
+          }
+        ]
+      },
+      {
+        "country": "pa",
+        "statements": [
+          {
+            "text": "Ships crossing the Panama Canal are lifted by locks to Gatun Lake, 26 m (85 ft) above sea level.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Panama_Canal"
+          },
+          {
+            "text": "Panama uses the US dollar alongside its own currency, the balboa.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Panamanian_balboa"
+          },
+          {
+            "text": "The Panama Canal opened in 1950.",
+            "fib": true,
+            "truth": "The Panama Canal opened in 1914.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Panama_Canal"
+          }
+        ]
+      },
+      {
+        "country": "de",
+        "statements": [
+          {
+            "text": "Johannes Gutenberg developed the movable-type printing press in Mainz around 1440.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Printing_press"
+          },
+          {
+            "text": "Much of Germany's autobahn network has no fixed speed limit, only an advisory one.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Autobahn"
+          },
+          {
+            "text": "Neuschwanstein Castle was built in the Middle Ages.",
+            "fib": true,
+            "truth": "Neuschwanstein was built in the 19th century for King Ludwig II of Bavaria, starting in 1869.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Neuschwanstein_Castle"
+          }
+        ]
+      },
+      {
+        "country": "to",
+        "statements": [
+          {
+            "text": "Tonga never gave up its sovereignty to any foreign power.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tonga"
+          },
+          {
+            "text": "Tonga is made up of 171 islands, of which 45 are inhabited.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tonga"
+          },
+          {
+            "text": "Tonga is a republic led by an elected president.",
+            "fib": true,
+            "truth": "Tonga is a kingdom, a semi-constitutional monarchy with a king as head of state.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tonga"
+          }
+        ]
+      },
+      {
+        "country": "gn",
+        "statements": [
+          {
+            "text": "The Niger, Gambia and Senegal rivers all begin in Guinea's highlands.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Guinea"
+          },
+          {
+            "text": "Guinea is roughly the same size as the United Kingdom.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Guinea"
+          },
+          {
+            "text": "Guinea's capital is Bamako.",
+            "fib": true,
+            "truth": "Guinea's capital is Conakry, on the Atlantic coast. Bamako is the capital of neighbouring Mali.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Conakry"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "fr",
+        "statements": [
+          {
+            "text": "Thanks to its overseas territories, France uses 12 time zones, more than any other country.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Time_in_France"
+          },
+          {
+            "text": "The cave paintings at Lascaux in France are thought to be around 17,000 to 22,000 years old.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lascaux"
+          },
+          {
+            "text": "The Eiffel Tower was always meant to be a permanent monument.",
+            "fib": true,
+            "truth": "It was built as a temporary structure for the 1889 World's Fair and was due to be taken down in 1909. It was saved because it proved useful for radio.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Eiffel_Tower"
+          }
+        ]
+      },
+      {
+        "country": "gd",
+        "statements": [
+          {
+            "text": "The world's first underwater sculpture park opened off Grenada in 2006.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Molinere_Underwater_Sculpture_Park"
+          },
+          {
+            "text": "Grenada is nicknamed the 'Island of Spice' for its nutmeg and other spices.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Grenada"
+          },
+          {
+            "text": "Grenada's capital is Castries.",
+            "fib": true,
+            "truth": "Grenada's capital is St. George's. Castries is the capital of Saint Lucia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/St._George's,_Grenada"
+          }
+        ]
+      },
+      {
+        "country": "km",
+        "statements": [
+          {
+            "text": "The coelacanth, a fish once thought extinct for millions of years, lives in the waters around the Comoros.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Coelacanth"
+          },
+          {
+            "text": "Mount Karthala, on Grande Comore, is a very active volcano that has erupted more than 20 times since the 1800s.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Karthala"
+          },
+          {
+            "text": "The Comoros lies in the Atlantic Ocean, off West Africa.",
+            "fib": true,
+            "truth": "The Comoros lies in the Indian Ocean, in the Mozambique Channel between Mozambique and Madagascar.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Comoros"
+          }
+        ]
+      },
+      {
+        "country": "my",
+        "statements": [
+          {
+            "text": "Kuala Lumpur's Petronas Towers were the tallest buildings in the world from 1998 to 2004.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Petronas_Towers"
+          },
+          {
+            "text": "Sarawak Chamber, in a Malaysian cave, is the largest known cave chamber in the world by area.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Sarawak_Chamber"
+          },
+          {
+            "text": "Malaysia's capital, Kuala Lumpur, is on the island of Borneo.",
+            "fib": true,
+            "truth": "Kuala Lumpur is on the Malay Peninsula. Malaysia's states on Borneo are a separate part of the country.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kuala_Lumpur"
+          }
+        ]
+      },
+      {
+        "country": "pg",
+        "statements": [
+          {
+            "text": "About 840 living languages are spoken in Papua New Guinea, the most linguistically diverse country in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Languages_of_Papua_New_Guinea"
+          },
+          {
+            "text": "The hooded pitohui of Papua New Guinea is one of the few known poisonous birds.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Hooded_pitohui"
+          },
+          {
+            "text": "Papua New Guinea shares its main island with Australia.",
+            "fib": true,
+            "truth": "Papua New Guinea shares the island of New Guinea with Indonesia.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Papua_New_Guinea"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "bo",
+        "statements": [
+          {
+            "text": "Bolivia's Salar de Uyuni is the largest salt flat in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Salar_de_Uyuni"
+          },
+          {
+            "text": "Bolivia has two capitals: Sucre is the constitutional capital and La Paz is the seat of government.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bolivia"
+          },
+          {
+            "text": "Spanish is Bolivia's only official language.",
+            "fib": true,
+            "truth": "Spanish is the main official language, but 36 Indigenous languages also have official status.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bolivia"
+          }
+        ]
+      },
+      {
+        "country": "tm",
+        "statements": [
+          {
+            "text": "The Darvaza gas crater in Turkmenistan, nicknamed the 'Door to Hell', has been burning since around 1971.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Darvaza_gas_crater"
+          },
+          {
+            "text": "Turkmenistan's Akhal-Teke horses are famous for the metallic shine of their coats.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Akhal-Teke"
+          },
+          {
+            "text": "Most of Turkmenistan is covered by grassland.",
+            "fib": true,
+            "truth": "About 70% of Turkmenistan is covered by the Karakum Desert.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Karakum_Desert"
+          }
+        ]
+      },
+      {
+        "country": "ci",
+        "statements": [
+          {
+            "text": "Côte d'Ivoire, meaning 'Ivory Coast', was named by European traders in the 1400s and 1500s after the ivory trade along its shore.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Ivory_Coast"
+          },
+          {
+            "text": "The Basilica of Our Lady of Peace in Yamoussoukro is one of the largest churches in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Basilica_of_Our_Lady_of_Peace"
+          },
+          {
+            "text": "Abidjan, Côte d'Ivoire's largest city, is also its official capital.",
+            "fib": true,
+            "truth": "Yamoussoukro is the official capital. Abidjan is the largest city and the main economic hub.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Yamoussoukro"
+          }
+        ]
+      },
+      {
+        "country": "me",
+        "statements": [
+          {
+            "text": "Montenegro uses the euro, even though it is not part of the eurozone.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Montenegro"
+          },
+          {
+            "text": "Montenegro's winding Bay of Kotor is the drowned valley of a river that has since vanished.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bay_of_Kotor"
+          },
+          {
+            "text": "The name Montenegro means 'Green Mountain'.",
+            "fib": true,
+            "truth": "Montenegro means 'Black Mountain'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Montenegro"
+          }
+        ]
+      },
+      {
+        "country": "nr",
+        "statements": [
+          {
+            "text": "At about 21 km² (8 sq mi), Nauru is the third-smallest country in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Nauru"
+          },
+          {
+            "text": "Nauru has no official capital, though its parliament sits in Yaren.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Nauru"
+          },
+          {
+            "text": "Nauru's interior is untouched rainforest.",
+            "fib": true,
+            "truth": "Nauru is a phosphate-rock island, and most of its interior was strip-mined for phosphate for about a century from 1900.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Nauru"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "sa",
+        "statements": [
+          {
+            "text": "Saudi Arabia has no rivers that flow all year round.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_Saudi_Arabia"
+          },
+          {
+            "text": "The Rub' al Khali, or Empty Quarter, is the largest continuous sand desert in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Rub'_al_Khali"
+          },
+          {
+            "text": "Saudi Arabia's ancient tombs at Hegra were carved by the Romans.",
+            "fib": true,
+            "truth": "Hegra was built by the Nabataeans, and most of its remains date from their kingdom.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Hegra"
+          }
+        ]
+      },
+      {
+        "country": "vu",
+        "statements": [
+          {
+            "text": "In land diving, a ritual on Vanuatu's Pentecost Island, men leap from tall wooden towers with only vines tied to their ankles.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Land_diving"
+          },
+          {
+            "text": "Hideaway Island in Vanuatu has one of the world's few underwater post offices.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mele_(island)"
+          },
+          {
+            "text": "Vanuatu's official languages are English and Spanish.",
+            "fib": true,
+            "truth": "Vanuatu's official languages are Bislama, English and French.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Vanuatu"
+          }
+        ]
+      },
+      {
+        "country": "bi",
+        "statements": [
+          {
+            "text": "Burundi lies on the shore of Lake Tanganyika, one of the deepest lakes in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Tanganyika"
+          },
+          {
+            "text": "In 2019 Burundi made Gitega its political capital, in place of Bujumbura.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Gitega"
+          },
+          {
+            "text": "Burundi's flag shows a large black eagle.",
+            "fib": true,
+            "truth": "Burundi's flag has a white diagonal cross with three red stars in a white circle in the middle.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Burundi"
+          }
+        ]
+      },
+      {
+        "country": "gy",
+        "statements": [
+          {
+            "text": "Kaieteur Falls in Guyana has a single drop of about 226 m (741 ft).",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kaieteur_Falls"
+          },
+          {
+            "text": "Guyana was the British colony of British Guiana until it became independent in 1966.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Guyana"
+          },
+          {
+            "text": "Guyana's name comes from a Spanish word meaning 'gold'.",
+            "fib": true,
+            "truth": "The name Guyana is thought to come from an Indigenous word meaning 'land of many waters'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Guyana"
+          }
+        ]
+      },
+      {
+        "country": "ba",
+        "statements": [
+          {
+            "text": "Every summer, Mostar holds a traditional diving competition from its Stari Most bridge.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Stari_Most"
+          },
+          {
+            "text": "Sarajevo hosted the 1984 Winter Olympics.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/1984_Winter_Olympics"
+          },
+          {
+            "text": "Bosnia and Herzegovina is landlocked.",
+            "fib": true,
+            "truth": "Bosnia and Herzegovina has a short stretch of Adriatic coast around the town of Neum, its only access to the sea.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Neum"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "ki",
+        "statements": [
+          {
+            "text": "Kiribati's islands stretch into all four hemispheres: north, south, east and west.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kiribati"
+          },
+          {
+            "text": "Kiribati's Kiritimati, or Christmas Island, is one of the world's largest atolls by land area.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kiritimati"
+          },
+          {
+            "text": "Kiribati's capital is a single large island.",
+            "fib": true,
+            "truth": "Kiribati's capital, Tarawa, is made up of a string of islets linked by causeways.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kiribati"
+          }
+        ]
+      },
+      {
+        "country": "bb",
+        "statements": [
+          {
+            "text": "The grapefruit is believed to have first appeared in Barbados.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Grapefruit"
+          },
+          {
+            "text": "Mount Gay in Barbados, dating from 1703, is one of the oldest rum makers in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Gay_Rum"
+          },
+          {
+            "text": "Barbados is a volcanic island.",
+            "fib": true,
+            "truth": "Barbados is made mostly of coral limestone, unlike its volcanic neighbours.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_Barbados"
+          }
+        ]
+      },
+      {
+        "country": "kh",
+        "statements": [
+          {
+            "text": "Angkor Wat in Cambodia is the largest religious complex in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Angkor_Wat"
+          },
+          {
+            "text": "Cambodia's flag shows a picture of Angkor Wat.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Cambodia"
+          },
+          {
+            "text": "Cambodia's Tonlé Sap lake stays the same size all year round.",
+            "fib": true,
+            "truth": "In the rainy season the Tonlé Sap river reverses its flow, and the lake swells to several times its dry-season size.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tonle_Sap"
+          }
+        ]
+      },
+      {
+        "country": "si",
+        "statements": [
+          {
+            "text": "Slovenia's Postojna Cave is home to the olm, a blind salamander that lives in underground waters.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Olm"
+          },
+          {
+            "text": "About 60% of Slovenia is covered by forest.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Slovenia"
+          },
+          {
+            "text": "Slovenia has no coastline.",
+            "fib": true,
+            "truth": "Slovenia has a short coastline, about 47 km (29 mi) long, on the Adriatic Sea.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Slovenia"
+          }
+        ]
+      },
+      {
+        "country": "td",
+        "statements": [
+          {
+            "text": "Chad is named after Lake Chad.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Chad"
+          },
+          {
+            "text": "Emi Koussi, in Chad's Tibesti Mountains, is the highest point in the Sahara.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Emi_Koussi"
+          },
+          {
+            "text": "Lake Chad grew much larger between 1960 and 1980.",
+            "fib": true,
+            "truth": "Lake Chad shrank dramatically: its open water fell from about 25,000 km² in 1960 to about 2,000 km² in 1980.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Chad"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "az",
+        "statements": [
+          {
+            "text": "Yanar Dag, near Baku, is a hillside where a natural gas fire burns nonstop.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Yanar_Dagh"
+          },
+          {
+            "text": "Gobustan National Park in Azerbaijan holds thousands of ancient rock carvings.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Gobustan_State_Historical_and_Cultural_Reserve"
+          },
+          {
+            "text": "Azerbaijan's capital, Baku, lies on the shore of the Black Sea.",
+            "fib": true,
+            "truth": "Baku lies on the Caspian Sea.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Baku"
+          }
+        ]
+      },
+      {
+        "country": "tv",
+        "statements": [
+          {
+            "text": "By 2019, about 8% of Tuvalu's government revenue came from royalties on its internet domain, .tv.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/.tv"
+          },
+          {
+            "text": "Tuvalu covers only about 26 km² (10 sq mi) of land.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tuvalu"
+          },
+          {
+            "text": "The name Tuvalu means 'one island'.",
+            "fib": true,
+            "truth": "Tuvalu means 'eight standing together', because eight of its nine islands were inhabited.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Tuvalu"
+          }
+        ]
+      },
+      {
+        "country": "al",
+        "statements": [
+          {
+            "text": "More than 170,000 concrete bunkers were built across Albania between the 1960s and the 1980s.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bunkers_in_Albania"
+          },
+          {
+            "text": "In Albanian, the country is called Shqipëria.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Albania"
+          },
+          {
+            "text": "Albania's flag shows a white dove on a blue background.",
+            "fib": true,
+            "truth": "Albania's flag shows a black double-headed eagle on a red background.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Albania"
+          }
+        ]
+      },
+      {
+        "country": "cu",
+        "statements": [
+          {
+            "text": "Cuba's bee hummingbird is the smallest bird in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bee_hummingbird"
+          },
+          {
+            "text": "Cuba is the largest island in the Caribbean.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Cuba"
+          },
+          {
+            "text": "Havana lies on Cuba's south coast, facing the Caribbean Sea.",
+            "fib": true,
+            "truth": "Havana is on Cuba's northern side, rising from the Straits of Florida.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Havana"
+          }
+        ]
+      },
+      {
+        "country": "sn",
+        "statements": [
+          {
+            "text": "Senegal's Lake Retba, or Lac Rose, is famous for its pink water, caused by algae.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Retba"
+          },
+          {
+            "text": "The African Renaissance Monument in Dakar is the tallest statue in Africa.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/African_Renaissance_Monument"
+          },
+          {
+            "text": "Senegal's capital, Dakar, sits near the easternmost point of Africa.",
+            "fib": true,
+            "truth": "Dakar is on the Cap-Vert peninsula, the westernmost point of mainland Africa.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Cap-Vert"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "gq",
+        "statements": [
+          {
+            "text": "Equatorial Guinea is the only country in sub-Saharan Africa where Spanish is an official language.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Equatorial_Guinea"
+          },
+          {
+            "text": "Equatorial Guinea's Bioko Island used to be called Fernando Po.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Equatorial_Guinea"
+          },
+          {
+            "text": "The equator runs right through Equatorial Guinea's mainland.",
+            "fib": true,
+            "truth": "The equator does not cross its land. It passes through the country's waters, about 1.4° north of the island of Annobón.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Equatorial_Guinea"
+          }
+        ]
+      },
+      {
+        "country": "pt",
+        "statements": [
+          {
+            "text": "Livraria Bertrand in Lisbon, founded in 1732, is the oldest bookshop in the world still operating, according to Guinness World Records.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Livraria_Bertrand"
+          },
+          {
+            "text": "Portugal produces about half of the world's cork.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Cork_(material)"
+          },
+          {
+            "text": "Pastel de nata custard tarts were invented by bakers in Brazil.",
+            "fib": true,
+            "truth": "Pastéis de nata were created by monks at the Jerónimos Monastery in Belém, Lisbon.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Pastel_de_nata"
+          }
+        ]
+      },
+      {
+        "country": "mv",
+        "statements": [
+          {
+            "text": "The Maldives is the lowest country in the world, with an average height of just 1.5 m (4 ft 11 in) above sea level.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Maldives"
+          },
+          {
+            "text": "The Maldives is made up of about 1,200 coral islands grouped into 26 atolls.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Maldives"
+          },
+          {
+            "text": "The Maldives lies in the Pacific Ocean.",
+            "fib": true,
+            "truth": "The Maldives lies in the Indian Ocean, south-west of Sri Lanka and India.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Maldives"
+          }
+        ]
+      },
+      {
+        "country": "mh",
+        "statements": [
+          {
+            "text": "The bikini swimsuit is named after Bikini Atoll in the Marshall Islands.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Bikini"
+          },
+          {
+            "text": "Marshallese navigators used stick charts to map ocean swells.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Marshall_Islands_stick_chart"
+          },
+          {
+            "text": "The Marshall Islands are named after a Marshallese chief.",
+            "fib": true,
+            "truth": "The islands are named after British captain John Marshall, who explored the region in 1788.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Marshall_Islands"
+          }
+        ]
+      },
+      {
+        "country": "uy",
+        "statements": [
+          {
+            "text": "Uruguay hosted and won the first FIFA World Cup, in 1930.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup"
+          },
+          {
+            "text": "The 'Sun of May' on Uruguay's flag has 16 rays.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Sun_of_May"
+          },
+          {
+            "text": "Uruguay's capital, Montevideo, lies on the Pacific coast.",
+            "fib": true,
+            "truth": "Montevideo lies on the Río de la Plata, which opens into the Atlantic Ocean.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Montevideo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "cy",
+        "statements": [
+          {
+            "text": "In Greek mythology, the goddess Aphrodite was born from the sea off the coast of Cyprus.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Petra_tou_Romiou"
+          },
+          {
+            "text": "The flag of Cyprus shows a map of the island.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Cyprus"
+          },
+          {
+            "text": "Halloumi cheese originally comes from Italy.",
+            "fib": true,
+            "truth": "Halloumi comes from Cyprus, where it has been made for centuries.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Halloumi"
+          }
+        ]
+      },
+      {
+        "country": "sb",
+        "statements": [
+          {
+            "text": "East Rennell in the Solomon Islands is the largest raised coral atoll in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/East_Rennell"
+          },
+          {
+            "text": "More than 70 languages are spoken across the Solomon Islands archipelago.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Languages_of_the_Solomon_Islands_archipelago"
+          },
+          {
+            "text": "The Solomon Islands got their name from British sailors in the 1800s.",
+            "fib": true,
+            "truth": "The name goes back to the 1500s: after Spanish navigator Álvaro de Mendaña visited in 1568, people who heard of his voyage began calling the islands 'the Solomons'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Solomon_Islands"
+          }
+        ]
+      },
+      {
+        "country": "jm",
+        "statements": [
+          {
+            "text": "Reggae music developed in Jamaica in the late 1960s.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Reggae"
+          },
+          {
+            "text": "Ackee and saltfish is Jamaica's national dish.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Ackee_and_saltfish"
+          },
+          {
+            "text": "Jamaica's flag has red, white and blue stripes.",
+            "fib": true,
+            "truth": "Jamaica's flag has a gold diagonal cross, with green triangles at the top and bottom and black ones at the sides.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Jamaica"
+          }
+        ]
+      },
+      {
+        "country": "cv",
+        "statements": [
+          {
+            "text": "Cape Verde's islands were uninhabited when Portuguese sailors arrived in the 15th century.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Cape_Verde"
+          },
+          {
+            "text": "Pico do Fogo, the volcano on Cape Verde's island of Fogo, erupted as recently as 2014.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Pico_do_Fogo"
+          },
+          {
+            "text": "Cape Verde's most famous singer, Cesária Évora, was known as the 'Queen of Fado'.",
+            "fib": true,
+            "truth": "Cesária Évora sang morna, Cape Verde's own soulful music, and was nicknamed the 'Barefoot Diva'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora"
+          }
+        ]
+      },
+      {
+        "country": "ye",
+        "statements": [
+          {
+            "text": "About a third of the plants on Yemen's Socotra island are found nowhere else on Earth.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Socotra"
+          },
+          {
+            "text": "Shibam in Yemen is famous for its mud-brick tower houses and is nicknamed the 'Manhattan of the desert'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Shibam"
+          },
+          {
+            "text": "Mocha coffee takes its name from a city in Brazil.",
+            "fib": true,
+            "truth": "Mocha is named after the port city of Mocha in Yemen, long known for its coffee trade.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Mokha"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rounds": [
+      {
+        "country": "lv",
+        "statements": [
+          {
+            "text": "Riga's Central Market is housed in old German Zeppelin hangars.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Riga_Central_Market"
+          },
+          {
+            "text": "Latvia's carmine red and white flag is one of the oldest flags in the world.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Latvia"
+          },
+          {
+            "text": "Latvian is a Slavic language closely related to Russian.",
+            "fib": true,
+            "truth": "Latvian is a Baltic language, most closely related to Lithuanian.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Latvian_language"
+          }
+        ]
+      },
+      {
+        "country": "fm",
+        "statements": [
+          {
+            "text": "Nan Madol, an ancient ruined city off Pohnpei in Micronesia, was built on 92 artificial islets.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Nan_Madol"
+          },
+          {
+            "text": "On Yap, in Micronesia, giant stone discs called rai have long been used as money.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Rai_stones"
+          },
+          {
+            "text": "The Federated States of Micronesia is a single large island.",
+            "fib": true,
+            "truth": "Micronesia is spread over 607 islands, grouped into four states.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Federated_States_of_Micronesia"
+          }
+        ]
+      },
+      {
+        "country": "sl",
+        "statements": [
+          {
+            "text": "Sierra Leone's capital, Freetown, was founded as a home for formerly enslaved Africans.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Freetown"
+          },
+          {
+            "text": "Fourah Bay College in Freetown, founded in 1827, was the first Western-style university in sub-Saharan Africa.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Fourah_Bay_College"
+          },
+          {
+            "text": "Sierra Leone's name comes from French words meaning 'silver coast'.",
+            "fib": true,
+            "truth": "The name comes from 'Serra Leoa', Portuguese for 'Lioness Mountains', given by an explorer in 1462.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Sierra_Leone"
+          }
+        ]
+      },
+      {
+        "country": "sv",
+        "statements": [
+          {
+            "text": "El Salvador is the smallest country on the American mainland.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/El_Salvador"
+          },
+          {
+            "text": "Joya de Cerén, a Maya farming village buried by a volcanic eruption, is called the 'Pompeii of the Americas'.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Joya_de_Cer%C3%A9n"
+          },
+          {
+            "text": "El Salvador has coastlines on both the Pacific and the Caribbean.",
+            "fib": true,
+            "truth": "El Salvador is the only Central American country with no Caribbean coastline. Its coast is on the Pacific.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/El_Salvador"
+          }
+        ]
+      },
+      {
+        "country": "kr",
+        "statements": [
+          {
+            "text": "Hangul, the Korean alphabet, was created in the 15th century under King Sejong the Great.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Hangul"
+          },
+          {
+            "text": "The haenyeo of South Korea's Jeju Island are women divers who dive up to 20 m (66 ft) for seafood while holding their breath.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Haenyeo"
+          },
+          {
+            "text": "Kimchi is traditionally made mostly from fermented carrots.",
+            "fib": true,
+            "truth": "Kimchi is usually made from salted and fermented napa cabbage and Korean radish.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Kimchi"
+          }
+        ]
+      }
+    ]
+  }
+]

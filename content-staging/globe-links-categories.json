@@ -1,0 +1,807 @@
+{
+  "_note": "New Globe Links categories (staging). Each member list is complete for the 193 UN member states plus Vatican City, checked against the Wikipedia pages used as sources.",
+  "guinea-name": {
+    "label": "\"Guinea\" in the name",
+    "members": [
+      "gn",
+      "gw",
+      "gq",
+      "pg"
+    ]
+  },
+  "saint-name": {
+    "label": "A saint in the name",
+    "members": [
+      "kn",
+      "lc",
+      "vc",
+      "st",
+      "sm"
+    ]
+  },
+  "compass-name": {
+    "label": "North, South or East in the name",
+    "members": [
+      "za",
+      "ss",
+      "kp",
+      "kr",
+      "mk",
+      "tl"
+    ]
+  },
+  "ends-land": {
+    "label": "Name ends in \"-land\"",
+    "members": [
+      "fi",
+      "is",
+      "ie",
+      "pl",
+      "ch",
+      "th",
+      "nz"
+    ]
+  },
+  "union-jack-flag": {
+    "label": "Union Jack on the flag",
+    "members": [
+      "au",
+      "nz",
+      "fj",
+      "tv",
+      "gb"
+    ]
+  },
+  "southern-cross-flag": {
+    "label": "Southern Cross on the flag",
+    "members": [
+      "au",
+      "nz",
+      "br",
+      "pg",
+      "ws"
+    ]
+  },
+  "caspian": {
+    "label": "Coastline on the Caspian Sea",
+    "members": [
+      "az",
+      "ir",
+      "kz",
+      "ru",
+      "tm"
+    ]
+  },
+  "black-sea": {
+    "label": "Coastline on the Black Sea",
+    "members": [
+      "bg",
+      "ge",
+      "ro",
+      "ru",
+      "tr",
+      "ua"
+    ]
+  },
+  "baltic": {
+    "label": "Coastline on the Baltic Sea",
+    "members": [
+      "dk",
+      "ee",
+      "fi",
+      "de",
+      "lv",
+      "lt",
+      "pl",
+      "ru",
+      "se"
+    ]
+  },
+  "mediterranean": {
+    "label": "Coastline on the Mediterranean",
+    "members": [
+      "es",
+      "fr",
+      "it",
+      "mt",
+      "mc",
+      "si",
+      "hr",
+      "ba",
+      "me",
+      "al",
+      "gr",
+      "tr",
+      "cy",
+      "sy",
+      "lb",
+      "il",
+      "eg",
+      "ly",
+      "tn",
+      "dz",
+      "ma"
+    ]
+  },
+  "red-sea": {
+    "label": "Coastline on the Red Sea",
+    "members": [
+      "dj",
+      "eg",
+      "er",
+      "il",
+      "jo",
+      "sa",
+      "sd",
+      "ye"
+    ]
+  },
+  "danube": {
+    "label": "The Danube flows through or along it",
+    "members": [
+      "de",
+      "at",
+      "sk",
+      "hu",
+      "hr",
+      "rs",
+      "bg",
+      "ro",
+      "md",
+      "ua"
+    ]
+  },
+  "danube-capital": {
+    "label": "Capital city on the Danube",
+    "members": [
+      "at",
+      "sk",
+      "hu",
+      "rs"
+    ]
+  },
+  "andes": {
+    "label": "The Andes run through it",
+    "members": [
+      "ar",
+      "bo",
+      "cl",
+      "co",
+      "ec",
+      "pe",
+      "ve"
+    ]
+  },
+  "alps": {
+    "label": "The Alps reach into it",
+    "members": [
+      "at",
+      "fr",
+      "de",
+      "it",
+      "li",
+      "mc",
+      "si",
+      "ch"
+    ]
+  },
+  "borders-china": {
+    "label": "Borders China",
+    "members": [
+      "af",
+      "bt",
+      "in",
+      "kg",
+      "kp",
+      "kz",
+      "la",
+      "mm",
+      "mn",
+      "np",
+      "pk",
+      "ru",
+      "tj",
+      "vn"
+    ]
+  },
+  "borders-russia": {
+    "label": "Borders Russia",
+    "members": [
+      "az",
+      "by",
+      "cn",
+      "ee",
+      "fi",
+      "ge",
+      "kp",
+      "kz",
+      "lt",
+      "lv",
+      "mn",
+      "no",
+      "pl",
+      "ua"
+    ]
+  },
+  "borders-brazil": {
+    "label": "Borders Brazil",
+    "members": [
+      "ar",
+      "bo",
+      "co",
+      "fr",
+      "gy",
+      "pe",
+      "py",
+      "sr",
+      "uy",
+      "ve"
+    ]
+  },
+  "borders-germany": {
+    "label": "Borders Germany",
+    "members": [
+      "at",
+      "be",
+      "ch",
+      "cz",
+      "dk",
+      "fr",
+      "lu",
+      "nl",
+      "pl"
+    ]
+  },
+  "borders-france": {
+    "label": "Borders France",
+    "members": [
+      "ad",
+      "be",
+      "br",
+      "ch",
+      "de",
+      "es",
+      "it",
+      "lu",
+      "mc",
+      "nl",
+      "sr"
+    ]
+  },
+  "borders-south-africa": {
+    "label": "Borders South Africa",
+    "members": [
+      "bw",
+      "ls",
+      "mz",
+      "na",
+      "sz",
+      "zw"
+    ]
+  },
+  "former-ussr": {
+    "label": "Formerly part of the Soviet Union",
+    "members": [
+      "am",
+      "az",
+      "by",
+      "ee",
+      "ge",
+      "kz",
+      "kg",
+      "lv",
+      "lt",
+      "md",
+      "ru",
+      "tj",
+      "tm",
+      "ua",
+      "uz"
+    ]
+  },
+  "former-yugoslavia": {
+    "label": "Formerly part of Yugoslavia",
+    "members": [
+      "si",
+      "hr",
+      "ba",
+      "rs",
+      "me",
+      "mk"
+    ]
+  },
+  "prime-meridian": {
+    "label": "The prime meridian runs through it",
+    "members": [
+      "gb",
+      "fr",
+      "es",
+      "dz",
+      "ml",
+      "bf",
+      "tg",
+      "gh"
+    ]
+  },
+  "arctic-circle": {
+    "label": "The Arctic Circle runs through it",
+    "members": [
+      "no",
+      "se",
+      "fi",
+      "ru",
+      "us",
+      "ca",
+      "dk",
+      "is"
+    ]
+  },
+  "tropic-cancer": {
+    "label": "The Tropic of Cancer runs through it",
+    "members": [
+      "dz",
+      "ne",
+      "ly",
+      "td",
+      "eg",
+      "sa",
+      "ae",
+      "om",
+      "in",
+      "bd",
+      "mm",
+      "cn",
+      "mx",
+      "bs",
+      "mr",
+      "ml"
+    ]
+  },
+  "tropic-capricorn": {
+    "label": "The Tropic of Capricorn runs through it",
+    "members": [
+      "na",
+      "bw",
+      "za",
+      "mz",
+      "mg",
+      "au",
+      "cl",
+      "ar",
+      "py",
+      "br"
+    ]
+  },
+  "french-official": {
+    "label": "French is an official language",
+    "members": [
+      "bj",
+      "cd",
+      "cg",
+      "fr",
+      "ga",
+      "gn",
+      "ci",
+      "mc",
+      "sn",
+      "tg",
+      "be",
+      "bi",
+      "cm",
+      "ca",
+      "cf",
+      "td",
+      "km",
+      "dj",
+      "gq",
+      "ht",
+      "lu",
+      "mg",
+      "rw",
+      "sc",
+      "ch",
+      "vu"
+    ]
+  },
+  "arabic-official": {
+    "label": "Arabic is an official language",
+    "members": [
+      "dz",
+      "bh",
+      "td",
+      "km",
+      "dj",
+      "eg",
+      "iq",
+      "jo",
+      "kw",
+      "lb",
+      "ly",
+      "ml",
+      "mr",
+      "ma",
+      "om",
+      "qa",
+      "sa",
+      "so",
+      "sd",
+      "sy",
+      "tn",
+      "ae",
+      "ye"
+    ]
+  },
+  "german-official": {
+    "label": "German is an official language",
+    "members": [
+      "de",
+      "at",
+      "ch",
+      "lu",
+      "li",
+      "be"
+    ]
+  },
+  "swahili-official": {
+    "label": "Swahili is an official language",
+    "members": [
+      "tz",
+      "ke",
+      "ug",
+      "rw"
+    ]
+  },
+  "commonwealth": {
+    "label": "Commonwealth of Nations member",
+    "members": [
+      "ag",
+      "au",
+      "bs",
+      "bd",
+      "bb",
+      "bz",
+      "bw",
+      "bn",
+      "cm",
+      "ca",
+      "cy",
+      "dm",
+      "sz",
+      "fj",
+      "ga",
+      "gm",
+      "gh",
+      "gd",
+      "gy",
+      "in",
+      "jm",
+      "ke",
+      "ki",
+      "ls",
+      "mw",
+      "my",
+      "mv",
+      "mt",
+      "mu",
+      "mz",
+      "na",
+      "nr",
+      "nz",
+      "ng",
+      "pk",
+      "pg",
+      "rw",
+      "kn",
+      "lc",
+      "vc",
+      "ws",
+      "sc",
+      "sl",
+      "sg",
+      "sb",
+      "za",
+      "lk",
+      "tz",
+      "tg",
+      "to",
+      "tt",
+      "tv",
+      "ug",
+      "gb",
+      "vu",
+      "zm"
+    ]
+  },
+  "eu": {
+    "label": "European Union member",
+    "members": [
+      "at",
+      "be",
+      "bg",
+      "hr",
+      "cy",
+      "cz",
+      "dk",
+      "ee",
+      "fi",
+      "fr",
+      "de",
+      "gr",
+      "hu",
+      "ie",
+      "it",
+      "lv",
+      "lt",
+      "lu",
+      "mt",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "sk",
+      "si",
+      "es",
+      "se"
+    ]
+  },
+  "euro": {
+    "label": "Uses the euro",
+    "members": [
+      "at",
+      "be",
+      "bg",
+      "hr",
+      "cy",
+      "ee",
+      "fi",
+      "fr",
+      "de",
+      "gr",
+      "ie",
+      "it",
+      "lv",
+      "lt",
+      "lu",
+      "mt",
+      "nl",
+      "pt",
+      "sk",
+      "si",
+      "es",
+      "ad",
+      "mc",
+      "sm",
+      "va",
+      "me"
+    ]
+  },
+  "g7": {
+    "label": "G7 member",
+    "members": [
+      "ca",
+      "fr",
+      "de",
+      "it",
+      "jp",
+      "gb",
+      "us"
+    ]
+  },
+  "gcc": {
+    "label": "Gulf Cooperation Council member",
+    "members": [
+      "bh",
+      "kw",
+      "om",
+      "qa",
+      "sa",
+      "ae"
+    ]
+  },
+  "asean": {
+    "label": "ASEAN member",
+    "members": [
+      "bn",
+      "kh",
+      "id",
+      "la",
+      "my",
+      "mm",
+      "ph",
+      "sg",
+      "th",
+      "tl",
+      "vn"
+    ]
+  },
+  "nato": {
+    "label": "NATO member",
+    "members": [
+      "al",
+      "be",
+      "bg",
+      "ca",
+      "hr",
+      "cz",
+      "dk",
+      "ee",
+      "fi",
+      "fr",
+      "de",
+      "gr",
+      "hu",
+      "is",
+      "it",
+      "lv",
+      "lt",
+      "lu",
+      "me",
+      "nl",
+      "mk",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "sk",
+      "si",
+      "es",
+      "se",
+      "tr",
+      "gb",
+      "us"
+    ]
+  },
+  "kingdom-europe": {
+    "label": "A kingdom in Europe",
+    "members": [
+      "be",
+      "dk",
+      "nl",
+      "no",
+      "es",
+      "se",
+      "gb"
+    ]
+  },
+  "charles-head": {
+    "label": "King Charles III is head of state",
+    "members": [
+      "ag",
+      "au",
+      "bs",
+      "bz",
+      "ca",
+      "gd",
+      "jm",
+      "nz",
+      "pg",
+      "kn",
+      "lc",
+      "vc",
+      "sb",
+      "tv",
+      "gb"
+    ]
+  },
+  "world-cup-winner": {
+    "label": "Has won the men's FIFA World Cup",
+    "members": [
+      "br",
+      "de",
+      "it",
+      "ar",
+      "fr",
+      "uy",
+      "es",
+      "gb"
+    ]
+  },
+  "winter-olympics": {
+    "label": "Hosted the Winter Olympics",
+    "members": [
+      "at",
+      "ca",
+      "cn",
+      "fr",
+      "de",
+      "it",
+      "jp",
+      "no",
+      "ru",
+      "kr",
+      "ch",
+      "us"
+    ]
+  },
+  "no-land-border": {
+    "label": "No land border with any country",
+    "members": [
+      "ag",
+      "au",
+      "bb",
+      "bs",
+      "cv",
+      "dm",
+      "fj",
+      "fm",
+      "gd",
+      "is",
+      "jm",
+      "jp",
+      "ki",
+      "km",
+      "kn",
+      "lc",
+      "lk",
+      "mg",
+      "mh",
+      "mt",
+      "mu",
+      "mv",
+      "nr",
+      "nz",
+      "ph",
+      "pw",
+      "sb",
+      "sc",
+      "st",
+      "to",
+      "tt",
+      "tv",
+      "vc",
+      "vu",
+      "ws"
+    ]
+  },
+  "lake-tanganyika": {
+    "label": "Shoreline on Lake Tanganyika",
+    "members": [
+      "bi",
+      "cd",
+      "tz",
+      "zm"
+    ]
+  },
+  "lake-chad": {
+    "label": "Shoreline on Lake Chad",
+    "members": [
+      "td",
+      "cm",
+      "ng",
+      "ne"
+    ]
+  },
+  "mekong": {
+    "label": "The Mekong flows through or along it",
+    "members": [
+      "cn",
+      "mm",
+      "la",
+      "th",
+      "kh",
+      "vn"
+    ]
+  },
+  "rhine": {
+    "label": "The Rhine flows through or along it",
+    "members": [
+      "ch",
+      "li",
+      "at",
+      "de",
+      "fr",
+      "nl"
+    ]
+  },
+  "zambezi": {
+    "label": "The Zambezi flows through or along it",
+    "members": [
+      "zm",
+      "ao",
+      "na",
+      "bw",
+      "zw",
+      "mz"
+    ]
+  }
+}
