@@ -571,3 +571,9 @@
 @media (max-width: 640px) {
   .actions { bottom: calc(72px + env(safe-area-inset-bottom)); }
 }
+
+/* Plain-language description at the foot of each game page (for players and search engines). */
+.game-about { margin: clamp(40px, 7vw, 72px) auto 24px; padding-top: 28px; border-top: 1px solid var(--line); max-width: 68ch; }
+.game-about h2 { font-size: clamp(1.3rem, 3.4vw, 1.6rem); letter-spacing: -0.03em; }
+.game-about p { color: var(--ink-2); }
+.game-about-more { font-size: 0.92rem; }
