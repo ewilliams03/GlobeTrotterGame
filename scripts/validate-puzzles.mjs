@@ -51,7 +51,8 @@ fofDays.forEach((day, d) => {
     const where = `${at} round ${i + 1} (${r.country})`;
     if (!countryCodes.has(r.country)) errors.push(`${where}: country missing from src/data/countries.ts`);
     if (!existsSync(join(root, 'node_modules/flag-icons/flags/4x3', `${r.country}.svg`))) errors.push(`${where}: no flag file`);
-    if (fofCountries.has(r.country)) errors.push(`${where}: country already used on another day`);
+    // A country may return on another day with new facts, but never twice in one day.
+    if (day.rounds.slice(0, i).some((o) => o.country === r.country)) errors.push(`${where}: country appears twice in one day`);
     fofCountries.add(r.country);
     if (r.statements?.length !== 3) errors.push(`${where}: needs exactly 3 statements`);
     const fibs = r.statements.filter((s) => s.fib);
