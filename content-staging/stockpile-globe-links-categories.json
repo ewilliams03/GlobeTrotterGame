@@ -1,0 +1,479 @@
+{
+  "cur-peso": {
+    "label": "Currency is a peso",
+    "members": [
+      "ar",
+      "cl",
+      "co",
+      "cu",
+      "do",
+      "mx",
+      "ph",
+      "uy"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Peso"
+  },
+  "cur-franc": {
+    "label": "Currency is a franc",
+    "members": [
+      "bj",
+      "bf",
+      "bi",
+      "cm",
+      "cf",
+      "td",
+      "cg",
+      "cd",
+      "km",
+      "dj",
+      "gq",
+      "ga",
+      "gn",
+      "gw",
+      "ci",
+      "li",
+      "ml",
+      "ne",
+      "rw",
+      "sn",
+      "ch",
+      "tg"
+    ],
+    "nearMisses": [
+      "fr",
+      "be",
+      "lu",
+      "mc"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Franc"
+  },
+  "cur-dinar": {
+    "label": "Currency is a dinar (or denar)",
+    "members": [
+      "dz",
+      "bh",
+      "iq",
+      "jo",
+      "kw",
+      "ly",
+      "mk",
+      "rs",
+      "tn"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Dinar"
+  },
+  "cur-rupee": {
+    "label": "Currency is a rupee",
+    "members": [
+      "in",
+      "mu",
+      "np",
+      "pk",
+      "sc",
+      "lk"
+    ],
+    "nearMisses": [
+      "id",
+      "mv",
+      "bt"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Rupee"
+  },
+  "cur-crown": {
+    "label": "Currency's name means \"crown\"",
+    "members": [
+      "cz",
+      "dk",
+      "is",
+      "no",
+      "se"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Scandinavian_Monetary_Union"
+  },
+  "cur-pound": {
+    "label": "Currency is a pound",
+    "members": [
+      "eg",
+      "lb",
+      "ss",
+      "sd",
+      "sy",
+      "gb"
+    ],
+    "nearMisses": [
+      "ie",
+      "cy",
+      "mt"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Pound_(currency)"
+  },
+  "cur-shilling": {
+    "label": "Currency is a shilling",
+    "members": [
+      "ke",
+      "so",
+      "tz",
+      "ug"
+    ],
+    "nearMisses": [
+      "at",
+      "gb"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Shilling"
+  },
+  "cur-rial": {
+    "label": "Currency is a rial or riyal",
+    "members": [
+      "ir",
+      "om",
+      "qa",
+      "sa",
+      "ye"
+    ],
+    "nearMisses": [
+      "kh",
+      "br"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Rial"
+  },
+  "cur-dollar": {
+    "label": "Currency is called a dollar",
+    "members": [
+      "ag",
+      "au",
+      "bs",
+      "bb",
+      "bz",
+      "bn",
+      "ca",
+      "dm",
+      "ec",
+      "sv",
+      "fj",
+      "gd",
+      "gy",
+      "jm",
+      "ki",
+      "lr",
+      "mh",
+      "fm",
+      "na",
+      "nr",
+      "nz",
+      "pw",
+      "pa",
+      "kn",
+      "lc",
+      "vc",
+      "sg",
+      "sb",
+      "sr",
+      "tt",
+      "tv",
+      "tl",
+      "us",
+      "zw"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_circulating_currencies"
+  },
+  "cur-yuan": {
+    "label": "Currency is a yuan, yen or won",
+    "members": [
+      "cn",
+      "jp",
+      "kr",
+      "kp"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Yuan_(currency)"
+  },
+  "new7wonders": {
+    "label": "Home to one of the New 7 Wonders",
+    "members": [
+      "br",
+      "cn",
+      "pe",
+      "mx",
+      "jo",
+      "it",
+      "in"
+    ],
+    "nearMisses": [
+      "eg"
+    ],
+    "source": "https://en.wikipedia.org/wiki/New_7_Wonders_of_the_World"
+  },
+  "ancient-wonders": {
+    "label": "Site of one of the Seven Wonders of the Ancient World",
+    "members": [
+      "eg",
+      "iq",
+      "gr",
+      "tr"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World"
+  },
+  "grand-slam": {
+    "label": "Hosts a tennis Grand Slam",
+    "members": [
+      "au",
+      "fr",
+      "gb",
+      "us"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Grand_Slam_(tennis)"
+  },
+  "hosted-world-cup": {
+    "label": "Has hosted the men's FIFA World Cup",
+    "members": [
+      "uy",
+      "it",
+      "fr",
+      "br",
+      "ch",
+      "se",
+      "cl",
+      "gb",
+      "mx",
+      "de",
+      "ar",
+      "es",
+      "us",
+      "kr",
+      "jp",
+      "za",
+      "ru",
+      "qa",
+      "ca"
+    ],
+    "nearMisses": [
+      "ma",
+      "pt",
+      "sa"
+    ],
+    "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup_hosts"
+  },
+  "womens-world-cup": {
+    "label": "Has won the FIFA Women's World Cup",
+    "members": [
+      "us",
+      "no",
+      "de",
+      "jp",
+      "es"
+    ],
+    "source": "https://en.wikipedia.org/wiki/FIFA_Women%27s_World_Cup"
+  },
+  "north-sea": {
+    "label": "Coastline on the North Sea",
+    "members": [
+      "gb",
+      "no",
+      "dk",
+      "de",
+      "nl",
+      "be",
+      "fr"
+    ],
+    "nearMisses": [
+      "se"
+    ],
+    "source": "https://en.wikipedia.org/wiki/North_Sea"
+  },
+  "adriatic": {
+    "label": "Coastline on the Adriatic Sea",
+    "members": [
+      "al",
+      "ba",
+      "hr",
+      "it",
+      "me",
+      "si"
+    ],
+    "nearMisses": [
+      "gr"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Adriatic_Sea"
+  },
+  "sahara": {
+    "label": "The Sahara reaches into it",
+    "members": [
+      "dz",
+      "td",
+      "eg",
+      "ly",
+      "ml",
+      "mr",
+      "ma",
+      "ne",
+      "sd",
+      "tn"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Sahara"
+  },
+  "horn-of-africa": {
+    "label": "In the Horn of Africa",
+    "members": [
+      "dj",
+      "er",
+      "et",
+      "so"
+    ],
+    "nearMisses": [
+      "ke",
+      "sd"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Horn_of_Africa"
+  },
+  "central-america": {
+    "label": "In Central America",
+    "members": [
+      "bz",
+      "cr",
+      "sv",
+      "gt",
+      "hn",
+      "ni",
+      "pa"
+    ],
+    "nearMisses": [
+      "mx"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Central_America"
+  },
+  "polar-bear": {
+    "label": "Home to wild polar bears",
+    "members": [
+      "ca",
+      "dk",
+      "no",
+      "us",
+      "ru"
+    ],
+    "nearMisses": [
+      "is"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Agreement_on_the_Conservation_of_Polar_Bears"
+  },
+  "tiger-range": {
+    "label": "One of the 13 tiger range countries",
+    "members": [
+      "bd",
+      "bt",
+      "kh",
+      "cn",
+      "in",
+      "id",
+      "la",
+      "my",
+      "mm",
+      "np",
+      "ru",
+      "th",
+      "vn"
+    ],
+    "nearMisses": [
+      "kp"
+    ],
+    "source": "https://wwf.ca/stories/13-countries-wild-tigers/"
+  },
+  "four-letter-name": {
+    "label": "Name has just four letters",
+    "members": [
+      "cu",
+      "fj",
+      "iq",
+      "ir",
+      "la",
+      "ml",
+      "om",
+      "pe",
+      "td",
+      "tg"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_sovereign_states"
+  },
+  "and-name": {
+    "label": "Name joins two places with \"and\"",
+    "members": [
+      "ag",
+      "ba",
+      "kn",
+      "st",
+      "tt",
+      "vc"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_sovereign_states"
+  },
+  "hidden-country": {
+    "label": "Another country's name hides inside its name",
+    "members": [
+      "do",
+      "gq",
+      "gw",
+      "ng",
+      "pg",
+      "ro",
+      "so",
+      "ss"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_sovereign_states"
+  },
+  "capital-port": {
+    "label": "Capital's name starts with \"Port\"",
+    "members": [
+      "mu",
+      "pg",
+      "tt",
+      "vu",
+      "ht",
+      "bj"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_national_capitals"
+  },
+  "capital-saint": {
+    "label": "Capital named after a saint",
+    "members": [
+      "cr",
+      "sm",
+      "do",
+      "st",
+      "gd",
+      "ag",
+      "cl"
+    ],
+    "nearMisses": [
+      "sv",
+      "ye"
+    ],
+    "source": "https://en.wikipedia.org/wiki/List_of_national_capitals"
+  },
+  "russian-official": {
+    "label": "Russian is an official language",
+    "members": [
+      "ru",
+      "by",
+      "kz",
+      "kg"
+    ],
+    "nearMisses": [
+      "tj",
+      "ua"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Russian_language"
+  },
+  "amazon-rainforest": {
+    "label": "Part of the Amazon rainforest lies in it",
+    "members": [
+      "bo",
+      "br",
+      "co",
+      "ec",
+      "fr",
+      "gy",
+      "pe",
+      "sr",
+      "ve"
+    ],
+    "source": "https://en.wikipedia.org/wiki/Amazon_rainforest"
+  }
+}

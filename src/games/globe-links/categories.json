@@ -1328,5 +1328,394 @@
       "zw",
       "mz"
     ]
+  },
+  "cur-peso": {
+    "label": "Currency is a peso",
+    "members": [
+      "ar",
+      "cl",
+      "co",
+      "cu",
+      "do",
+      "mx",
+      "ph",
+      "uy"
+    ]
+  },
+  "cur-franc": {
+    "label": "Currency is a franc",
+    "members": [
+      "bj",
+      "bf",
+      "bi",
+      "cm",
+      "cf",
+      "td",
+      "cg",
+      "cd",
+      "km",
+      "dj",
+      "gq",
+      "ga",
+      "gn",
+      "gw",
+      "ci",
+      "li",
+      "ml",
+      "ne",
+      "rw",
+      "sn",
+      "ch",
+      "tg"
+    ]
+  },
+  "cur-dinar": {
+    "label": "Currency is a dinar (or denar)",
+    "members": [
+      "dz",
+      "bh",
+      "iq",
+      "jo",
+      "kw",
+      "ly",
+      "mk",
+      "rs",
+      "tn"
+    ]
+  },
+  "cur-rupee": {
+    "label": "Currency is a rupee",
+    "members": [
+      "in",
+      "mu",
+      "np",
+      "pk",
+      "sc",
+      "lk"
+    ]
+  },
+  "cur-crown": {
+    "label": "Currency's name means \"crown\"",
+    "members": [
+      "cz",
+      "dk",
+      "is",
+      "no",
+      "se"
+    ]
+  },
+  "cur-pound": {
+    "label": "Currency is a pound",
+    "members": [
+      "eg",
+      "lb",
+      "ss",
+      "sd",
+      "sy",
+      "gb"
+    ]
+  },
+  "cur-shilling": {
+    "label": "Currency is a shilling",
+    "members": [
+      "ke",
+      "so",
+      "tz",
+      "ug"
+    ]
+  },
+  "cur-rial": {
+    "label": "Currency is a rial or riyal",
+    "members": [
+      "ir",
+      "om",
+      "qa",
+      "sa",
+      "ye"
+    ]
+  },
+  "cur-dollar": {
+    "label": "Currency is called a dollar",
+    "members": [
+      "ag",
+      "au",
+      "bs",
+      "bb",
+      "bz",
+      "bn",
+      "ca",
+      "dm",
+      "ec",
+      "sv",
+      "fj",
+      "gd",
+      "gy",
+      "jm",
+      "ki",
+      "lr",
+      "mh",
+      "fm",
+      "na",
+      "nr",
+      "nz",
+      "pw",
+      "pa",
+      "kn",
+      "lc",
+      "vc",
+      "sg",
+      "sb",
+      "sr",
+      "tt",
+      "tv",
+      "tl",
+      "us",
+      "zw"
+    ]
+  },
+  "cur-yuan": {
+    "label": "Currency is a yuan, yen or won",
+    "members": [
+      "cn",
+      "jp",
+      "kr",
+      "kp"
+    ]
+  },
+  "new7wonders": {
+    "label": "Home to one of the New 7 Wonders",
+    "members": [
+      "br",
+      "cn",
+      "pe",
+      "mx",
+      "jo",
+      "it",
+      "in"
+    ]
+  },
+  "ancient-wonders": {
+    "label": "Site of one of the Seven Wonders of the Ancient World",
+    "members": [
+      "eg",
+      "iq",
+      "gr",
+      "tr"
+    ]
+  },
+  "grand-slam": {
+    "label": "Hosts a tennis Grand Slam",
+    "members": [
+      "au",
+      "fr",
+      "gb",
+      "us"
+    ]
+  },
+  "hosted-world-cup": {
+    "label": "Has hosted the men's FIFA World Cup",
+    "members": [
+      "uy",
+      "it",
+      "fr",
+      "br",
+      "ch",
+      "se",
+      "cl",
+      "gb",
+      "mx",
+      "de",
+      "ar",
+      "es",
+      "us",
+      "kr",
+      "jp",
+      "za",
+      "ru",
+      "qa",
+      "ca"
+    ]
+  },
+  "womens-world-cup": {
+    "label": "Has won the FIFA Women's World Cup",
+    "members": [
+      "us",
+      "no",
+      "de",
+      "jp",
+      "es"
+    ]
+  },
+  "north-sea": {
+    "label": "Coastline on the North Sea",
+    "members": [
+      "gb",
+      "no",
+      "dk",
+      "de",
+      "nl",
+      "be",
+      "fr"
+    ]
+  },
+  "adriatic": {
+    "label": "Coastline on the Adriatic Sea",
+    "members": [
+      "al",
+      "ba",
+      "hr",
+      "it",
+      "me",
+      "si"
+    ]
+  },
+  "sahara": {
+    "label": "The Sahara reaches into it",
+    "members": [
+      "dz",
+      "td",
+      "eg",
+      "ly",
+      "ml",
+      "mr",
+      "ma",
+      "ne",
+      "sd",
+      "tn"
+    ]
+  },
+  "horn-of-africa": {
+    "label": "In the Horn of Africa",
+    "members": [
+      "dj",
+      "er",
+      "et",
+      "so"
+    ]
+  },
+  "central-america": {
+    "label": "In Central America",
+    "members": [
+      "bz",
+      "cr",
+      "sv",
+      "gt",
+      "hn",
+      "ni",
+      "pa"
+    ]
+  },
+  "polar-bear": {
+    "label": "Home to wild polar bears",
+    "members": [
+      "ca",
+      "dk",
+      "no",
+      "us",
+      "ru"
+    ]
+  },
+  "tiger-range": {
+    "label": "One of the 13 tiger range countries",
+    "members": [
+      "bd",
+      "bt",
+      "kh",
+      "cn",
+      "in",
+      "id",
+      "la",
+      "my",
+      "mm",
+      "np",
+      "ru",
+      "th",
+      "vn"
+    ]
+  },
+  "four-letter-name": {
+    "label": "Name has just four letters",
+    "members": [
+      "cu",
+      "fj",
+      "iq",
+      "ir",
+      "la",
+      "ml",
+      "om",
+      "pe",
+      "td",
+      "tg"
+    ]
+  },
+  "and-name": {
+    "label": "Name joins two places with \"and\"",
+    "members": [
+      "ag",
+      "ba",
+      "kn",
+      "st",
+      "tt",
+      "vc"
+    ]
+  },
+  "hidden-country": {
+    "label": "Another country's name hides inside its name",
+    "members": [
+      "do",
+      "gq",
+      "gw",
+      "ng",
+      "pg",
+      "ro",
+      "so",
+      "ss"
+    ]
+  },
+  "capital-port": {
+    "label": "Capital's name starts with \"Port\"",
+    "members": [
+      "mu",
+      "pg",
+      "tt",
+      "vu",
+      "ht",
+      "bj"
+    ]
+  },
+  "capital-saint": {
+    "label": "Capital named after a saint",
+    "members": [
+      "cr",
+      "sm",
+      "do",
+      "st",
+      "gd",
+      "ag",
+      "cl"
+    ]
+  },
+  "russian-official": {
+    "label": "Russian is an official language",
+    "members": [
+      "ru",
+      "by",
+      "kz",
+      "kg"
+    ]
+  },
+  "amazon-rainforest": {
+    "label": "Part of the Amazon rainforest lies in it",
+    "members": [
+      "bo",
+      "br",
+      "co",
+      "ec",
+      "fr",
+      "gy",
+      "pe",
+      "sr",
+      "ve"
+    ]
   }
 }

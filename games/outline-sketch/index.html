@@ -80,8 +80,12 @@
           </div>
           <div class="od-place" id="step-place" hidden>
             <div class="od-frame">
-              <svg id="map" class="od-map" viewBox="0 0 640 330" tabindex="0" role="application" aria-roledescription="map" aria-label="Blank world map. Tap where the country is, or use the arrow keys to move the marker and Enter to lock it in."></svg>
+              <svg id="map" class="od-map" viewBox="0 0 640 330" tabindex="0" role="application" aria-roledescription="map" aria-label="Blank world map. Tap where the country is, drag the shape to adjust it, pinch or use plus and minus to zoom. Keyboard: arrow keys move the marker, plus and minus zoom, Enter locks it in."></svg>
               <button type="button" class="od-zoom" id="zoom-out" hidden>Whole map</button>
+              <div class="od-zoombar" role="group" aria-label="Zoom">
+                <button type="button" class="od-zbtn" id="zoom-in-btn" aria-label="Zoom in">+</button>
+                <button type="button" class="od-zbtn" id="zoom-out-btn" aria-label="Zoom out">&minus;</button>
+              </div>
             </div>
           </div>
           <p id="status" class="rtw-status" role="status" aria-live="polite"></p>

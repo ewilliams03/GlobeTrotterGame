@@ -2962,5 +2962,1565 @@
         "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Constance"
       }
     ]
+  },
+  {
+    "groups": [
+      {
+        "category": "spanish",
+        "countries": [
+          "ar",
+          "co",
+          "cu",
+          "ve"
+        ],
+        "difficulty": 1,
+        "fact": "Spanish has the second most native speakers of any language, after Mandarin Chinese, and is official in 21 countries.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Spanish_language"
+      },
+      {
+        "category": "landlocked",
+        "countries": [
+          "li",
+          "va",
+          "bw",
+          "ug"
+        ],
+        "difficulty": 2,
+        "fact": "Liechtenstein is one of only two doubly landlocked countries, surrounded entirely by other landlocked countries. The other is Uzbekistan.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Landlocked_country"
+      },
+      {
+        "category": "french-official",
+        "countries": [
+          "be",
+          "fr",
+          "ca",
+          "mg"
+        ],
+        "difficulty": 3,
+        "fact": "French is an official language in 26 countries, from Belgium and Canada to Madagascar.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/French_language"
+      },
+      {
+        "category": "tiger-range",
+        "countries": [
+          "th",
+          "mm",
+          "ru",
+          "id"
+        ],
+        "difficulty": 4,
+        "fact": "Indonesia is home to the last wild Sumatran tigers, the smallest tigers alive today.",
+        "sourceUrl": "https://wwf.ca/stories/13-countries-wild-tigers/"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "microstate",
+        "countries": [
+          "ad",
+          "mc",
+          "sm",
+          "mt"
+        ],
+        "difficulty": 1,
+        "fact": "Andorra has two co-princes as joint heads of state: the President of France and the Bishop of Urgell.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/European_microstates"
+      },
+      {
+        "category": "sahara",
+        "countries": [
+          "ml",
+          "ly",
+          "sd",
+          "dz"
+        ],
+        "difficulty": 2,
+        "fact": "The Sahara is the largest hot desert in the world, covering about 9.2 million square kilometres.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Sahara"
+      },
+      {
+        "category": "danube",
+        "countries": [
+          "sk",
+          "hu",
+          "ua",
+          "ro"
+        ],
+        "difficulty": 3,
+        "fact": "The Danube rises in Germany and flows 2,850 km to the Black Sea, connecting ten European countries on the way.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Danube"
+      },
+      {
+        "category": "tropic-capricorn",
+        "countries": [
+          "py",
+          "mz",
+          "cl",
+          "ar"
+        ],
+        "difficulty": 4,
+        "fact": "The line got its name because the Sun was in Capricorn at the December solstice when it was named. Today the Sun is in Sagittarius at that moment.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "red-white-flag",
+        "countries": [
+          "jp",
+          "ch",
+          "lv",
+          "at"
+        ],
+        "difficulty": 1,
+        "fact": "Austria's red-white-red flag was first recorded in 1230, making it one of the oldest national symbols still in use.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Austria"
+      },
+      {
+        "category": "capital-port",
+        "countries": [
+          "pg",
+          "vu",
+          "tt",
+          "ht"
+        ],
+        "difficulty": 2,
+        "fact": "Port Louis, the capital of Mauritius, is named in honour of King Louis XV of France.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Port_Louis"
+      },
+      {
+        "category": "cur-rial",
+        "countries": [
+          "ir",
+          "om",
+          "sa",
+          "ye"
+        ],
+        "difficulty": 3,
+        "fact": "The Omani rial is split into 1,000 baisa and is the third most valuable currency unit in the world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Omani_rial"
+      },
+      {
+        "category": "multiple-capitals",
+        "countries": [
+          "za",
+          "bo",
+          "nl",
+          "my"
+        ],
+        "difficulty": 4,
+        "fact": "South Africa has three capitals: Pretoria for the government, Cape Town for parliament and Bloemfontein for the top courts.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_with_multiple_capitals"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "world-cup-winner",
+        "countries": [
+          "uy",
+          "es",
+          "de",
+          "br"
+        ],
+        "difficulty": 1,
+        "fact": "Uruguay hosted and won the very first World Cup in 1930. Brazil has won the most titles, with five.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_World_Cup"
+      },
+      {
+        "category": "polar-bear",
+        "countries": [
+          "no",
+          "us",
+          "dk",
+          "ru"
+        ],
+        "difficulty": 2,
+        "fact": "In 1973 the five countries where polar bears live signed a deal in Oslo to protect them.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Agreement_on_the_Conservation_of_Polar_Bears"
+      },
+      {
+        "category": "no-land-border",
+        "countries": [
+          "jm",
+          "to",
+          "bs",
+          "lk"
+        ],
+        "difficulty": 3,
+        "fact": "The Bahamas is made up of about 700 islands and more than 2,500 small cays in the Atlantic Ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/The_Bahamas"
+      },
+      {
+        "category": "hidden-country",
+        "countries": [
+          "ro",
+          "so",
+          "ng",
+          "do"
+        ],
+        "difficulty": 4,
+        "fact": "Romania means \"Roman realm\", but spell it out and you will find Oman hiding inside. Somalia hides Mali, and Nigeria hides Niger.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "spanish",
+        "countries": [
+          "es",
+          "mx",
+          "cl",
+          "pe"
+        ],
+        "difficulty": 1,
+        "fact": "Spain gave its language to most of Latin America, and Mexico now has more native Spanish speakers than any other country, about 130 million.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Spanish_language"
+      },
+      {
+        "category": "crescent-flag",
+        "countries": [
+          "mv",
+          "uz",
+          "az",
+          "sg"
+        ],
+        "difficulty": 2,
+        "fact": "The crescent on Singapore's flag stands for a young nation on the rise, and its five stars for democracy, peace, progress, justice and equality.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Singapore"
+      },
+      {
+        "category": "cur-dinar",
+        "countries": [
+          "kw",
+          "iq",
+          "rs",
+          "jo"
+        ],
+        "difficulty": 3,
+        "fact": "The dinar takes its name from the denarius, a silver coin of ancient Rome.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dinar"
+      },
+      {
+        "category": "sun-flag",
+        "countries": [
+          "kz",
+          "na",
+          "bd",
+          "ph"
+        ],
+        "difficulty": 4,
+        "fact": "The sun on Kazakhstan's flag has 32 rays, with a golden steppe eagle soaring beneath it.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "stan",
+        "countries": [
+          "pk",
+          "af",
+          "kz",
+          "uz"
+        ],
+        "difficulty": 1,
+        "fact": "The ending \"-stan\" is a Persian and Sanskrit suffix meaning \"a place abounding in\". A gulistan, for example, is a place of flowers: a garden.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/-stan"
+      },
+      {
+        "category": "central-america",
+        "countries": [
+          "pa",
+          "hn",
+          "cr",
+          "gt"
+        ],
+        "difficulty": 2,
+        "fact": "Central America is a narrow land bridge that rose out of the sea about 3 million years ago, joining North and South America.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Central_America"
+      },
+      {
+        "category": "hosted-olympics",
+        "countries": [
+          "fi",
+          "gr",
+          "se",
+          "au"
+        ],
+        "difficulty": 3,
+        "fact": "The first modern Olympics were held in Athens, Greece, in 1896. Melbourne 1956 was the first Games in the Southern Hemisphere.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Summer_Olympic_Games"
+      },
+      {
+        "category": "one-neighbour",
+        "countries": [
+          "qa",
+          "ie",
+          "pt",
+          "sm"
+        ],
+        "difficulty": 4,
+        "fact": "Each of these has just one land neighbour. Ireland's only land border is with the United Kingdom, about 499 km long.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "nordic-cross",
+        "countries": [
+          "is",
+          "fi",
+          "se",
+          "no"
+        ],
+        "difficulty": 1,
+        "fact": "Denmark's flag was the first Nordic cross. Iceland adopted its version in 1915 and Finland in 1918.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nordic_cross_flag"
+      },
+      {
+        "category": "former-yugoslavia",
+        "countries": [
+          "ba",
+          "me",
+          "si",
+          "hr"
+        ],
+        "difficulty": 2,
+        "fact": "The name Yugoslavia joined the Slavic words for \"south\" and \"Slavs\", so it meant land of the South Slavs.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Yugoslavia"
+      },
+      {
+        "category": "cur-yuan",
+        "countries": [
+          "kp",
+          "kr",
+          "cn",
+          "jp"
+        ],
+        "difficulty": 3,
+        "fact": "The Japanese yen and the Korean won are both related to the Chinese yuan, a word meaning \"round\", as in a round coin.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Yuan_(currency)"
+      },
+      {
+        "category": "capital-saint",
+        "countries": [
+          "sm",
+          "gd",
+          "ag",
+          "cl"
+        ],
+        "difficulty": 4,
+        "fact": "Chile's capital, Santiago, honours Saint James the Great. Grenada's St. George's and Antigua's St. John's also carry a saint's name.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Santiago"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "former-ussr",
+        "countries": [
+          "ee",
+          "by",
+          "ge",
+          "lt"
+        ],
+        "difficulty": 1,
+        "fact": "From 1956 until 1991 the Soviet Union was made up of 15 republics, and each is an independent country today.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Republics_of_the_Soviet_Union"
+      },
+      {
+        "category": "amazon-rainforest",
+        "countries": [
+          "co",
+          "ec",
+          "ve",
+          "pe"
+        ],
+        "difficulty": 2,
+        "fact": "About 60 percent of the Amazon rainforest is in Brazil, but it spreads into eight more countries and territories.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Amazon_rainforest"
+      },
+      {
+        "category": "asean",
+        "countries": [
+          "la",
+          "kh",
+          "vn",
+          "my"
+        ],
+        "difficulty": 3,
+        "fact": "ASEAN was founded in Bangkok in 1967 by five countries. Timor-Leste became its 11th member in 2025.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/ASEAN"
+      },
+      {
+        "category": "cur-shilling",
+        "countries": [
+          "ke",
+          "tz",
+          "ug",
+          "so"
+        ],
+        "difficulty": 4,
+        "fact": "The East African shilling arrived in 1920, replacing the rupee in Britain's colonies in the region. Four countries still use a shilling.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Shilling"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "andes",
+        "countries": [
+          "ve",
+          "bo",
+          "ec",
+          "ar"
+        ],
+        "difficulty": 1,
+        "fact": "The Andes are the longest continental mountain range in the world. Their highest peak, Aconcagua in Argentina, is about 6,961 m tall.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Andes"
+      },
+      {
+        "category": "and-name",
+        "countries": [
+          "ba",
+          "tt",
+          "kn",
+          "ag"
+        ],
+        "difficulty": 2,
+        "fact": "Trinidad means \"Holy Trinity\" in Spanish, a name given by Columbus. Tobago probably comes from the tobacco grown there.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "womens-world-cup",
+        "countries": [
+          "es",
+          "us",
+          "de",
+          "jp"
+        ],
+        "difficulty": 3,
+        "fact": "The United States has won the Women's World Cup four times, more than any other country.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_Women%27s_World_Cup"
+      },
+      {
+        "category": "cur-pound",
+        "countries": [
+          "eg",
+          "sy",
+          "lb",
+          "gb"
+        ],
+        "difficulty": 4,
+        "fact": "The pound sign is a fancy letter L, for the Latin libra, meaning scales. A pound of silver once made 240 pennies.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pound_(currency)"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "mediterranean",
+        "countries": [
+          "cy",
+          "tr",
+          "ma",
+          "tn"
+        ],
+        "difficulty": 1,
+        "fact": "The Mediterranean is almost closed off. It meets the Atlantic only at the Strait of Gibraltar, just 14 km wide.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mediterranean_Sea"
+      },
+      {
+        "category": "four-letter-name",
+        "countries": [
+          "cu",
+          "la",
+          "iq",
+          "ml"
+        ],
+        "difficulty": 2,
+        "fact": "Mali is named after an ancient West African kingdom, and in the Malinke and Bambara languages the word means \"hippopotamus\".",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "cur-crown",
+        "countries": [
+          "cz",
+          "dk",
+          "is",
+          "se"
+        ],
+        "difficulty": 3,
+        "fact": "Krone, krona and koruna all mean \"crown\". Denmark and Sweden set up a shared crown currency in 1873, and Norway joined in 1875.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Scandinavian_Monetary_Union"
+      },
+      {
+        "category": "bird-flag",
+        "countries": [
+          "zw",
+          "zm",
+          "rs",
+          "mx"
+        ],
+        "difficulty": 4,
+        "fact": "The bird on Zimbabwe's flag is based on soapstone carvings found at the ancient ruins of Great Zimbabwe.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Zimbabwe"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "largest",
+        "countries": [
+          "au",
+          "ca",
+          "br",
+          "cn"
+        ],
+        "difficulty": 1,
+        "fact": "Russia is the largest country on Earth and spans eleven time zones.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Russia"
+      },
+      {
+        "category": "adriatic",
+        "countries": [
+          "al",
+          "it",
+          "me",
+          "si"
+        ],
+        "difficulty": 2,
+        "fact": "The Adriatic Sea holds more than 1,300 islands, most of them along its eastern shore.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Adriatic_Sea"
+      },
+      {
+        "category": "cur-peso",
+        "countries": [
+          "ph",
+          "cu",
+          "co",
+          "uy"
+        ],
+        "difficulty": 3,
+        "fact": "Peso means \"weight\" in Spanish. The old silver peso was the famous \"piece of eight\" traded around the world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peso"
+      },
+      {
+        "category": "weapon-flag",
+        "countries": [
+          "ao",
+          "mz",
+          "sa",
+          "ke"
+        ],
+        "difficulty": 4,
+        "fact": "Mozambique's flag shows a rifle crossed with a hoe on an open book. It is the only national flag with a modern firearm.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Mozambique"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "cur-dollar",
+        "countries": [
+          "fj",
+          "nz",
+          "bs",
+          "na"
+        ],
+        "difficulty": 1,
+        "fact": "\"Dollar\" comes from the thaler, a silver coin first minted in the town of Joachimsthal, in today's Czechia, in 1519.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dollar"
+      },
+      {
+        "category": "north-sea",
+        "countries": [
+          "gb",
+          "nl",
+          "be",
+          "fr"
+        ],
+        "difficulty": 2,
+        "fact": "During the ice ages the North Sea was often dry land, called Doggerland, linking Great Britain to mainland Europe.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/North_Sea"
+      },
+      {
+        "category": "portuguese",
+        "countries": [
+          "pt",
+          "mz",
+          "ao",
+          "br"
+        ],
+        "difficulty": 3,
+        "fact": "Portuguese is the fifth most spoken native language in the world, and most of its speakers live in Brazil.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Portuguese_language"
+      },
+      {
+        "category": "russian-official",
+        "countries": [
+          "by",
+          "kz",
+          "ru",
+          "kg"
+        ],
+        "difficulty": 4,
+        "fact": "Russian is one of the two official languages on the International Space Station, so NASA astronauts take Russian lessons.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Russian_language"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "g7",
+        "countries": [
+          "it",
+          "gb",
+          "us",
+          "ca"
+        ],
+        "difficulty": 1,
+        "fact": "The group began as the G6 at a 1975 summit in France. Canada joined in 1976, making it the G7.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/G7"
+      },
+      {
+        "category": "ancient-wonders",
+        "countries": [
+          "tr",
+          "gr",
+          "eg",
+          "iq"
+        ],
+        "difficulty": 2,
+        "fact": "Of the Seven Wonders of the Ancient World, only the Great Pyramid of Giza still stands.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World"
+      },
+      {
+        "category": "compass-name",
+        "countries": [
+          "kr",
+          "kp",
+          "za",
+          "ss"
+        ],
+        "difficulty": 3,
+        "fact": "South Sudan is the world's newest country. It became independent on 9 July 2011.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/South_Sudan"
+      },
+      {
+        "category": "rhine",
+        "countries": [
+          "li",
+          "ch",
+          "at",
+          "nl"
+        ],
+        "difficulty": 4,
+        "fact": "The Rhine starts in the Swiss Alps, passes through Lake Constance and flows about 1,230 km to the North Sea in the Netherlands.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Rhine"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "alps",
+        "countries": [
+          "mc",
+          "si",
+          "li",
+          "at"
+        ],
+        "difficulty": 1,
+        "fact": "The Alps stretch across eight countries. Their highest peak, Mont Blanc, is about 4,809 m tall.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Alps"
+      },
+      {
+        "category": "hosted-world-cup",
+        "countries": [
+          "qa",
+          "mx",
+          "cl",
+          "kr"
+        ],
+        "difficulty": 2,
+        "fact": "Mexico has hosted the men's World Cup three times, in 1970, 1986 and 2026, more than any other country.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_World_Cup_hosts"
+      },
+      {
+        "category": "arctic-circle",
+        "countries": [
+          "no",
+          "fi",
+          "dk",
+          "is"
+        ],
+        "difficulty": 3,
+        "fact": "Inside the Arctic Circle the Sun stays up all night at least once a year. The circle itself is drifting north by about 14.5 m a year.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Arctic_Circle"
+      },
+      {
+        "category": "named-after-person",
+        "countries": [
+          "bo",
+          "ph",
+          "co",
+          "ki"
+        ],
+        "difficulty": 4,
+        "fact": "Kiribati, said \"KIRR-i-bass\", is the local way of saying \"Gilberts\", after the British captain Thomas Gilbert.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kiribati"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "union-jack-flag",
+        "countries": [
+          "fj",
+          "nz",
+          "au",
+          "gb"
+        ],
+        "difficulty": 1,
+        "fact": "The Union Jack layers the crosses of three patron saints: George, Andrew and Patrick.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Union_Jack"
+      },
+      {
+        "category": "horn-of-africa",
+        "countries": [
+          "et",
+          "so",
+          "er",
+          "dj"
+        ],
+        "difficulty": 2,
+        "fact": "The Horn of Africa is the fourth largest peninsula in the world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Horn_of_Africa"
+      },
+      {
+        "category": "cur-rupee",
+        "countries": [
+          "in",
+          "np",
+          "pk",
+          "lk"
+        ],
+        "difficulty": 3,
+        "fact": "Rupee comes from the Sanskrit word rupya, meaning wrought silver or a silver coin.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Rupee"
+      },
+      {
+        "category": "mekong",
+        "countries": [
+          "mm",
+          "kh",
+          "vn",
+          "th"
+        ],
+        "difficulty": 4,
+        "fact": "The Mekong is the third longest river in Asia. It rises high on the Tibetan Plateau in China.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mekong"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "guinea-name",
+        "countries": [
+          "pg",
+          "gn",
+          "gw",
+          "gq"
+        ],
+        "difficulty": 1,
+        "fact": "Guinea-Bissau added the name of its capital, Bissau, to avoid being confused with its neighbour Guinea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Guinea-Bissau"
+      },
+      {
+        "category": "north-sea",
+        "countries": [
+          "be",
+          "fr",
+          "de",
+          "dk"
+        ],
+        "difficulty": 2,
+        "fact": "The North Sea holds western Europe's largest oil and natural gas reserves.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/North_Sea"
+      },
+      {
+        "category": "four-letter-name",
+        "countries": [
+          "om",
+          "fj",
+          "pe",
+          "ir"
+        ],
+        "difficulty": 3,
+        "fact": "Fiji comes from the Tongan way of saying Viti, the name of its largest island. Captain James Cook made the spelling popular.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "borders-china",
+        "countries": [
+          "mn",
+          "bt",
+          "in",
+          "np"
+        ],
+        "difficulty": 4,
+        "fact": "China has 14 land neighbours, from Mongolia and Nepal to tiny Bhutan.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "ends-land",
+        "countries": [
+          "pl",
+          "ie",
+          "th",
+          "ch"
+        ],
+        "difficulty": 1,
+        "fact": "Poland means \"land of the Polans\", a tribe whose name probably comes from the Polish word for \"field\".",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "cur-peso",
+        "countries": [
+          "cu",
+          "ar",
+          "uy",
+          "do"
+        ],
+        "difficulty": 2,
+        "fact": "The dollar sign $ was first used as a short way of writing \"pesos\". The US dollar borrowed it later.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peso"
+      },
+      {
+        "category": "amazon-rainforest",
+        "countries": [
+          "ve",
+          "ec",
+          "bo",
+          "fr"
+        ],
+        "difficulty": 3,
+        "fact": "France counts too: its region of French Guiana in South America is covered in Amazon rainforest.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Amazon_rainforest"
+      },
+      {
+        "category": "red-sea",
+        "countries": [
+          "ye",
+          "sd",
+          "jo",
+          "sa"
+        ],
+        "difficulty": 4,
+        "fact": "The Red Sea is one of the saltiest seas in the world and the most northerly tropical sea.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Red_Sea"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "new7wonders",
+        "countries": [
+          "it",
+          "br",
+          "pe",
+          "mx"
+        ],
+        "difficulty": 1,
+        "fact": "The New 7 Wonders were picked by a worldwide public vote and announced in Lisbon on 7 July 2007.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_7_Wonders_of_the_World"
+      },
+      {
+        "category": "cur-franc",
+        "countries": [
+          "rw",
+          "sn",
+          "cd",
+          "ne"
+        ],
+        "difficulty": 2,
+        "fact": "Fourteen African countries use a CFA franc, which comes in two versions, West African and Central African, both tied to the euro.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/CFA_franc"
+      },
+      {
+        "category": "arabic-official",
+        "countries": [
+          "ae",
+          "kw",
+          "lb",
+          "tn"
+        ],
+        "difficulty": 3,
+        "fact": "Arabic is official in about two dozen states, is written from right to left and is one of the six official languages of the UN.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Arabic"
+      },
+      {
+        "category": "tiger-range",
+        "countries": [
+          "bd",
+          "bt",
+          "id",
+          "my"
+        ],
+        "difficulty": 4,
+        "fact": "In Bhutan, tigers live as high as 4,200 m, sharing the mountains with snow leopards.",
+        "sourceUrl": "https://wwf.ca/stories/13-countries-wild-tigers/"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "central-america",
+        "countries": [
+          "bz",
+          "ni",
+          "sv",
+          "pa"
+        ],
+        "difficulty": 1,
+        "fact": "Belize is the only Central American country where English is the official language.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Belize"
+      },
+      {
+        "category": "polar-bear",
+        "countries": [
+          "us",
+          "no",
+          "ca",
+          "dk"
+        ],
+        "difficulty": 2,
+        "fact": "Polar bears are the largest land carnivores, yet they rely on the ocean so much that they count as marine mammals. Under the white fur their skin is black.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Polar_bear"
+      },
+      {
+        "category": "caspian",
+        "countries": [
+          "az",
+          "kz",
+          "tm",
+          "ir"
+        ],
+        "difficulty": 3,
+        "fact": "The Caspian Sea is the world's largest inland body of water. It is salty, but only about a third as salty as the ocean.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Caspian_Sea"
+      },
+      {
+        "category": "cur-dinar",
+        "countries": [
+          "kw",
+          "dz",
+          "tn",
+          "rs"
+        ],
+        "difficulty": 4,
+        "fact": "The Kuwaiti dinar is the most valuable currency unit in the world, worth over 3 US dollars.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kuwaiti_dinar"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "cur-dollar",
+        "countries": [
+          "jm",
+          "sg",
+          "nz",
+          "na"
+        ],
+        "difficulty": 1,
+        "fact": "More than 25 currencies are called dollars, from the Jamaican dollar to the Singapore dollar.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dollar"
+      },
+      {
+        "category": "hosted-world-cup",
+        "countries": [
+          "qa",
+          "es",
+          "za",
+          "ar"
+        ],
+        "difficulty": 2,
+        "fact": "South Africa 2010 was the first World Cup held in Africa, and Qatar 2022 the first in the Arab world.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_World_Cup_hosts"
+      },
+      {
+        "category": "baltic",
+        "countries": [
+          "lt",
+          "ee",
+          "lv",
+          "pl"
+        ],
+        "difficulty": 3,
+        "fact": "The Baltic is the world's largest body of brackish water, a mix of salt and fresh water. It has frozen over completely 20 times since 1720.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltic_Sea"
+      },
+      {
+        "category": "winter-olympics",
+        "countries": [
+          "ba",
+          "cn",
+          "at",
+          "no"
+        ],
+        "difficulty": 4,
+        "fact": "The first Winter Olympics were held in Chamonix, France, in 1924. Norway has won more Winter Olympic medals than any other country.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Winter_Olympic_Games"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "new7wonders",
+        "countries": [
+          "in",
+          "jo",
+          "cn",
+          "pe"
+        ],
+        "difficulty": 1,
+        "fact": "The Pyramids of Giza were left out of the New 7 Wonders vote and given honorary status instead.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_7_Wonders_of_the_World"
+      },
+      {
+        "category": "sahara",
+        "countries": [
+          "ne",
+          "tn",
+          "td",
+          "ly"
+        ],
+        "difficulty": 2,
+        "fact": "The Sahara has not always been desert. Between about 10,000 and 6,000 years ago it was much wetter, with grassland and lakes.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Sahara"
+      },
+      {
+        "category": "southern-cross-flag",
+        "countries": [
+          "ws",
+          "pg",
+          "au",
+          "nz"
+        ],
+        "difficulty": 3,
+        "fact": "The Southern Cross, or Crux, is the smallest of all 88 constellations, yet one of the easiest to spot.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Crux"
+      },
+      {
+        "category": "cur-pound",
+        "countries": [
+          "sy",
+          "lb",
+          "gb",
+          "ss"
+        ],
+        "difficulty": 4,
+        "fact": "Pound comes from the Latin libra pondo, meaning \"a pound by weight\", from the days when money was weighed in silver.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pound_(currency)"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "world-cup-winner",
+        "countries": [
+          "ar",
+          "fr",
+          "it",
+          "es"
+        ],
+        "difficulty": 1,
+        "fact": "Argentina won its first World Cup at home in 1978. Italy has won four titles.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_World_Cup"
+      },
+      {
+        "category": "cur-rupee",
+        "countries": [
+          "np",
+          "lk",
+          "pk",
+          "sc"
+        ],
+        "difficulty": 2,
+        "fact": "Rupee is the name of the money in six countries, including the island nations of Sri Lanka and Seychelles.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Rupee"
+      },
+      {
+        "category": "black-sea",
+        "countries": [
+          "bg",
+          "ge",
+          "ua",
+          "tr"
+        ],
+        "difficulty": 3,
+        "fact": "Over 90 percent of the deep Black Sea has no oxygen, which has kept ancient shipwrecks remarkably well preserved.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Black_Sea"
+      },
+      {
+        "category": "hidden-country",
+        "countries": [
+          "pg",
+          "ss",
+          "gq",
+          "so"
+        ],
+        "difficulty": 4,
+        "fact": "Papua New Guinea hides Guinea. A Spanish explorer named the island New Guinea because he thought its people looked like those of Africa's Guinea coast.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "cur-dollar",
+        "countries": [
+          "au",
+          "ca",
+          "sg",
+          "jm"
+        ],
+        "difficulty": 1,
+        "fact": "The dollar is descended from the Spanish silver peso. Even the $ sign started out as a short way of writing \"pesos\".",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peso"
+      },
+      {
+        "category": "kingdom-europe",
+        "countries": [
+          "nl",
+          "se",
+          "es",
+          "be"
+        ],
+        "difficulty": 2,
+        "fact": "Seven of Europe's twelve monarchies are kingdoms. Belgium has been one without a break since 1831.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Monarchies_in_Europe"
+      },
+      {
+        "category": "adriatic",
+        "countries": [
+          "hr",
+          "al",
+          "me",
+          "si"
+        ],
+        "difficulty": 3,
+        "fact": "Croatia alone has 1,246 of the Adriatic Sea's islands.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Adriatic_Sea"
+      },
+      {
+        "category": "capital-saint",
+        "countries": [
+          "do",
+          "cr",
+          "st",
+          "cl"
+        ],
+        "difficulty": 4,
+        "fact": "São Tomé means Saint Thomas in Portuguese. The island was found on Saint Thomas's Day, and the capital shares its name.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "former-ussr",
+        "countries": [
+          "lv",
+          "uz",
+          "by",
+          "ua"
+        ],
+        "difficulty": 1,
+        "fact": "Ukraine had the second biggest population of the 15 Soviet republics, after Russia. Uzbekistan came third.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Republics_of_the_Soviet_Union"
+      },
+      {
+        "category": "grand-slam",
+        "countries": [
+          "us",
+          "au",
+          "fr",
+          "gb"
+        ],
+        "difficulty": 2,
+        "fact": "Wimbledon, first played in 1877, is the oldest Grand Slam and the only one still played on grass.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Grand_Slam_(tennis)"
+      },
+      {
+        "category": "sun-flag",
+        "countries": [
+          "mn",
+          "rw",
+          "bd",
+          "ne"
+        ],
+        "difficulty": 3,
+        "fact": "The orange disc in the middle of Niger's flag is thought to stand for the sun.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Niger"
+      },
+      {
+        "category": "native-name",
+        "countries": [
+          "hu",
+          "gr",
+          "eg",
+          "kp"
+        ],
+        "difficulty": 4,
+        "fact": "Hungarians call their country Magyarország, from magyar (Hungarian) and ország (country).",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hungary"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "guinea-name",
+        "countries": [
+          "gw",
+          "gn",
+          "pg",
+          "gq"
+        ],
+        "difficulty": 1,
+        "fact": "The Portuguese began using the name Guiné in the 1400s for lands south of the Senegal River. Its exact origin is uncertain.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Guinea_(region)"
+      },
+      {
+        "category": "borders-brazil",
+        "countries": [
+          "ve",
+          "gy",
+          "co",
+          "ar"
+        ],
+        "difficulty": 2,
+        "fact": "Brazil borders every country in South America except Ecuador and Chile.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Brazil"
+      },
+      {
+        "category": "cur-rial",
+        "countries": [
+          "ye",
+          "om",
+          "sa",
+          "qa"
+        ],
+        "difficulty": 3,
+        "fact": "The Saudi riyal has been fixed at 3.75 riyals to one US dollar for decades.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Saudi_riyal"
+      },
+      {
+        "category": "river-name",
+        "countries": [
+          "zm",
+          "sn",
+          "cd",
+          "ng"
+        ],
+        "difficulty": 4,
+        "fact": "Nigeria and its neighbour Niger are both named after the Niger River.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "largest",
+        "countries": [
+          "ru",
+          "ca",
+          "us",
+          "au"
+        ],
+        "difficulty": 1,
+        "fact": "Canada is the second largest country by total area and has the longest coastline of any country.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Canada"
+      },
+      {
+        "category": "cur-crown",
+        "countries": [
+          "cz",
+          "is",
+          "se",
+          "no"
+        ],
+        "difficulty": 2,
+        "fact": "Koruna is simply the Czech word for \"crown\". Czechia has kept its own crown rather than switching to the euro.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Czech_koruna"
+      },
+      {
+        "category": "equator",
+        "countries": [
+          "mv",
+          "cd",
+          "ke",
+          "ug"
+        ],
+        "difficulty": 3,
+        "fact": "The equator crosses Lake Victoria, passing over some of Uganda's islands in the lake.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Equator"
+      },
+      {
+        "category": "tropic-cancer",
+        "countries": [
+          "ae",
+          "mm",
+          "ne",
+          "ml"
+        ],
+        "difficulty": 4,
+        "fact": "The Tropic of Cancer was named when the Sun sat in the sign of Cancer at the June solstice. Today it is in Taurus at that moment.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Cancer"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "spanish",
+        "countries": [
+          "py",
+          "uy",
+          "cu",
+          "sv"
+        ],
+        "difficulty": 1,
+        "fact": "Paraguay has two official languages, Spanish and Guarani, and more than 90 percent of people speak some Guarani.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Paraguay"
+      },
+      {
+        "category": "arabic-official",
+        "countries": [
+          "ma",
+          "sy",
+          "sd",
+          "ae"
+        ],
+        "difficulty": 2,
+        "fact": "Arabic is one of the six official languages of the United Nations.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Arabic"
+      },
+      {
+        "category": "cur-franc",
+        "countries": [
+          "rw",
+          "sn",
+          "li",
+          "ch"
+        ],
+        "difficulty": 3,
+        "fact": "The franc is said to get its name from the Latin words francorum rex, \"King of the Franks\", stamped on early French coins.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Franc"
+      },
+      {
+        "category": "drive-left",
+        "countries": [
+          "to",
+          "zw",
+          "ws",
+          "bw"
+        ],
+        "difficulty": 4,
+        "fact": "About a third of the world's people live in countries that drive on the left.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "ends-land",
+        "countries": [
+          "ie",
+          "th",
+          "is",
+          "nz"
+        ],
+        "difficulty": 1,
+        "fact": "New Zealand was named by Dutch mapmakers after Zeeland, a Dutch province. Captain Cook later put the name into English.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "baltic",
+        "countries": [
+          "lt",
+          "ee",
+          "lv",
+          "ru"
+        ],
+        "difficulty": 2,
+        "fact": "The Baltic is one of the largest brackish seas in the world. Each winter about 45 percent of its surface ices over on average.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltic_Sea"
+      },
+      {
+        "category": "german-official",
+        "countries": [
+          "lu",
+          "be",
+          "li",
+          "at"
+        ],
+        "difficulty": 3,
+        "fact": "German is the most widely spoken native language in the European Union.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/German_language"
+      },
+      {
+        "category": "womens-world-cup",
+        "countries": [
+          "jp",
+          "es",
+          "no",
+          "us"
+        ],
+        "difficulty": 4,
+        "fact": "Five countries have won the Women's World Cup: the United States, Germany, Norway, Japan and Spain.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_Women%27s_World_Cup"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "mediterranean",
+        "countries": [
+          "mc",
+          "al",
+          "tn",
+          "sy"
+        ],
+        "difficulty": 1,
+        "fact": "Mediterranean comes from Latin words meaning \"in the middle of the land\".",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mediterranean_Sea"
+      },
+      {
+        "category": "eu",
+        "countries": [
+          "bg",
+          "sk",
+          "lu",
+          "hu"
+        ],
+        "difficulty": 2,
+        "fact": "The EU has 27 member states. The most recent to join was Croatia, in 2013.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Member_state_of_the_European_Union"
+      },
+      {
+        "category": "and-name",
+        "countries": [
+          "ag",
+          "vc",
+          "kn",
+          "st"
+        ],
+        "difficulty": 3,
+        "fact": "Saint Kitts honours Saint Christopher. Nevis comes from Spanish for \"Our Lady of the Snows\", after the white clouds on its peak.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
+      },
+      {
+        "category": "capital-not-largest",
+        "countries": [
+          "tz",
+          "vn",
+          "pk",
+          "lk"
+        ],
+        "difficulty": 4,
+        "fact": "Dodoma became Tanzania's official capital in 1996, but Dar es Salaam is still its largest city.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dodoma"
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "category": "microstate",
+        "countries": [
+          "va",
+          "ad",
+          "sm",
+          "li"
+        ],
+        "difficulty": 1,
+        "fact": "Vatican City is the smallest country in the world, both by area (about 0.49 square km) and by population.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vatican_City"
+      },
+      {
+        "category": "red-white-flag",
+        "countries": [
+          "ge",
+          "pl",
+          "to",
+          "id"
+        ],
+        "difficulty": 2,
+        "fact": "Indonesia's flag looks almost exactly like Monaco's. Monaco and Poland use a slightly darker red.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Flag_of_Indonesia"
+      },
+      {
+        "category": "hosted-world-cup",
+        "countries": [
+          "de",
+          "kr",
+          "za",
+          "uy"
+        ],
+        "difficulty": 3,
+        "fact": "The 2002 World Cup in South Korea and Japan was the first held in Asia and the first with more than one host.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_World_Cup_hosts"
+      },
+      {
+        "category": "prime-meridian",
+        "countries": [
+          "gh",
+          "tg",
+          "bf",
+          "dz"
+        ],
+        "difficulty": 4,
+        "fact": "The Greenwich meridian was chosen as the world's prime meridian at a conference in Washington, D.C., in 1884.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Prime_meridian_(Greenwich)"
+      }
+    ]
   }
 ]

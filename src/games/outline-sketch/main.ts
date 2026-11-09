@@ -128,9 +128,12 @@ let view: View = FULL_VIEW; // zoomed in after the first tap so small countries 
 
 /** A view of `w` map units wide centred on (cx, cy), kept inside the map. */
 function viewAround(cx: number, cy: number, w: number): View {
+  w = Math.min(MAP_W, Math.max(MIN_VIEW_W, w));
   const h = (w * MAP_H) / MAP_W;
   return { x: Math.min(Math.max(0, cx - w / 2), MAP_W - w), y: Math.min(Math.max(0, cy - h / 2), MAP_H - h), w, h };
 }
+const MIN_VIEW_W = MAP_W / 30; // up to 30x zoom, enough for the smallest island countries
+let revealFramed = false; // the reveal frames itself once; after that the player can zoom and pan freely
 
 $('puzzle-meta').textContent = `No. ${puzzleNo} · ${new Intl.DateTimeFormat(undefined, {
   weekday: 'short',
@@ -253,7 +256,8 @@ function renderMap(animate = false) {
   const r = rounds[i];
   const a = state.attempts[i];
   const p = placed(r);
-  if (finished(a)) {
+  if (finished(a) && !revealFramed) {
+    revealFramed = true;
     // Frame the real country and the player's drop together.
     const [[x0, y0], [x1, y1]] = mapPath.bounds(r.target);
     const [px, py] = a.pin ? (projection(a.pin) ?? [x0, y0]) : [x0, y0];
@@ -261,9 +265,8 @@ function renderMap(animate = false) {
     const w = Math.min(MAP_W, Math.max(150, (maxX - minX) * 1.5, ((maxY - minY) * 1.5 * MAP_W) / MAP_H));
     view = viewAround((minX + maxX) / 2, (minY + maxY) / 2, w);
   }
-  mapSvg.setAttribute('viewBox', `${view.x.toFixed(1)} ${view.y.toFixed(1)} ${view.w.toFixed(1)} ${view.h.toFixed(1)}`);
-  $('zoom-out').hidden = finished(a) || view.w >= MAP_W;
   mapSvg.replaceChildren();
+  applyView();
   el('path', { class: 'od-sea', d: sphereD }, mapSvg);
   el('path', { class: 'od-land', d: landD }, mapSvg);
   if (a.hintPlace && !finished(a)) {
@@ -444,6 +447,43 @@ optionsEl.addEventListener('click', (e) => {
 });
 
 /* ---------- Step 2: drop it on the map ---------- */
+const dotR = () => ((5 * view.w) / MAP_W).toFixed(2);
+/** Update only the camera (viewBox) and things that scale with it: cheap enough for every pinch frame. */
+function applyView() {
+  mapSvg.setAttribute('viewBox', `${view.x.toFixed(1)} ${view.y.toFixed(1)} ${view.w.toFixed(1)} ${view.h.toFixed(1)}`);
+  mapSvg.querySelectorAll('.od-pin').forEach((c) => c.setAttribute('r', dotR()));
+  mapSvg.querySelectorAll('.od-truth-dot').forEach((c) => c.setAttribute('r', ((4 * view.w) / MAP_W).toFixed(2)));
+  $('zoom-out').hidden = view.w >= MAP_W;
+  $<HTMLButtonElement>('zoom-in-btn').disabled = view.w <= MIN_VIEW_W + 0.01;
+  $<HTMLButtonElement>('zoom-out-btn').disabled = view.w >= MAP_W;
+}
+/** Zoom by `factor` (>1 = in) keeping the map point (mx, my) under the same spot on screen. */
+function zoomAt(mx: number, my: number, factor: number, from: View = view) {
+  const w = Math.min(MAP_W, Math.max(MIN_VIEW_W, from.w / factor));
+  const k = w / from.w;
+  const h = (w * MAP_H) / MAP_W;
+  view = {
+    x: Math.min(Math.max(0, mx - (mx - from.x) * k), MAP_W - w),
+    y: Math.min(Math.max(0, my - (my - from.y) * k), MAP_H - h),
+    w,
+    h,
+  };
+  applyView();
+}
+/** Move the dropped shape and its pin without rebuilding the map (used while dragging). */
+function moveGuess() {
+  const r = rounds[state.cursor];
+  const a = state.attempts[state.cursor];
+  if (!a.pin) return;
+  const [px, py] = projection(a.pin) ?? [0, 0];
+  const [cx, cy] = placed(r).centre;
+  const g = mapSvg.querySelector('.od-guess:not(.is-compare)');
+  const pin = mapSvg.querySelector('.od-pin');
+  if (!g || !pin) return renderMap();
+  g.setAttribute('transform', `translate(${(px - cx).toFixed(1)} ${(py - cy).toFixed(1)})`);
+  pin.setAttribute('cx', px.toFixed(1));
+  pin.setAttribute('cy', py.toFixed(1));
+}
 /** The place on Earth under a point of the map, or null off the edge of the world. */
 function mapToLonLat(x: number, y: number): LonLat | null {
   const ll = projection.invert?.([x, y]);
@@ -478,19 +518,159 @@ function dropAt(ll: LonLat, zoom = true) {
   haptic.select();
   renderMap();
   lockBtn.disabled = false;
-  statusEl.textContent = 'Happy with that? Lock it in, or tap again to move it.';
+  statusEl.textContent = 'Drag the shape to fine-tune it, or tap somewhere else. Pinch or use + and - to zoom.';
 }
 
-mapSvg.addEventListener('pointerup', (e) => {
-  if (!canDrop() || e.button !== 0) return;
-  const ll = toLonLat(e);
-  if (ll) dropAt(ll);
+/* Gestures on the map:
+   - tap: drop the shape there
+   - press on the dropped shape and drag: slide it around
+   - drag anywhere else: pan (when zoomed in)
+   - pinch, mouse wheel or the + / - buttons: zoom */
+const pointers = new Map<number, { x: number; y: number }>();
+type Gesture =
+  | { kind: 'tap-or-pan'; id: number; sx: number; sy: number; start: View; moved: boolean }
+  | { kind: 'drag'; id: number; sx: number; sy: number; grab: [number, number]; moved: boolean }
+  | { kind: 'pinch'; dist: number; mid: [number, number]; start: View };
+let gesture: Gesture | null = null;
+
+const toMap = (clientX: number, clientY: number): [number, number] | null => {
+  const m = mapSvg.getScreenCTM();
+  if (!m) return null;
+  const p = new DOMPoint(clientX, clientY).matrixTransform(m.inverse());
+  return [p.x, p.y];
+};
+/** Map units per screen pixel at the current zoom. */
+const unitsPerPx = () => view.w / (mapSvg.getBoundingClientRect().width || MAP_W);
+
+function onShape(clientX: number, clientY: number): boolean {
+  const a = state.attempts[state.cursor];
+  if (!a.pin || finished(a)) return false;
+  const pin = mapSvg.querySelector('.od-pin')?.getBoundingClientRect();
+  if (pin && Math.hypot(clientX - (pin.left + pin.width / 2), clientY - (pin.top + pin.height / 2)) < 30) return true;
+  const g = mapSvg.querySelector('.od-guess:not(.is-compare)')?.getBoundingClientRect();
+  return !!g && clientX >= g.left - 6 && clientX <= g.right + 6 && clientY >= g.top - 6 && clientY <= g.bottom + 6;
+}
+
+function startPinch() {
+  const [p1, p2] = [...pointers.values()];
+  const mid = toMap((p1.x + p2.x) / 2, (p1.y + p2.y) / 2);
+  if (!mid) return;
+  gesture = { kind: 'pinch', dist: Math.hypot(p1.x - p2.x, p1.y - p2.y) || 1, mid, start: { ...view } };
+}
+
+mapSvg.addEventListener('pointerdown', (e) => {
+  const stepTwo = state.attempts[state.cursor].pickScore !== null;
+  if (!stepTwo || (e.pointerType === 'mouse' && e.button !== 0)) return;
+  pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  try {
+    mapSvg.setPointerCapture(e.pointerId);
+  } catch {
+    /* capture is a nicety */
+  }
+  if (pointers.size === 2) return startPinch();
+  if (pointers.size > 2) return;
+  if (canDrop() && onShape(e.clientX, e.clientY)) {
+    const a = state.attempts[state.cursor];
+    const at = toMap(e.clientX, e.clientY);
+    const pin = projection(a.pin!) ?? [0, 0];
+    gesture = { kind: 'drag', id: e.pointerId, sx: e.clientX, sy: e.clientY, grab: at ? [pin[0] - at[0], pin[1] - at[1]] : [0, 0], moved: false };
+  } else {
+    gesture = { kind: 'tap-or-pan', id: e.pointerId, sx: e.clientX, sy: e.clientY, start: { ...view }, moved: false };
+  }
 });
+
+mapSvg.addEventListener('pointermove', (e) => {
+  if (!pointers.has(e.pointerId)) return;
+  pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  if (!gesture) return;
+  if (gesture.kind === 'pinch') {
+    if (pointers.size < 2) return;
+    const [p1, p2] = [...pointers.values()];
+    const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y) || 1;
+    zoomAt(gesture.mid[0], gesture.mid[1], dist / gesture.dist, gesture.start);
+    return;
+  }
+  if (e.pointerId !== gesture.id) return;
+  const dx = e.clientX - gesture.sx;
+  const dy = e.clientY - gesture.sy;
+  if (!gesture.moved && Math.hypot(dx, dy) < 6) return;
+  gesture.moved = true;
+  if (gesture.kind === 'drag') {
+    const at = toMap(e.clientX, e.clientY);
+    if (!at) return;
+    const ll = mapToLonLat(at[0] + gesture.grab[0], at[1] + gesture.grab[1]);
+    if (!ll) return;
+    state.attempts[state.cursor].pin = [Math.round(ll[0] * 100) / 100, Math.round(ll[1] * 100) / 100];
+    moveGuess();
+  } else if (view.w < MAP_W || gesture.start.w < MAP_W) {
+    const k = unitsPerPx();
+    const s = gesture.start;
+    view = { ...s, x: Math.min(Math.max(0, s.x - dx * k), MAP_W - s.w), y: Math.min(Math.max(0, s.y - dy * k), MAP_H - s.h) };
+    applyView();
+  }
+});
+
+function endPointer(e: PointerEvent) {
+  if (!pointers.has(e.pointerId)) return;
+  pointers.delete(e.pointerId);
+  const g = gesture;
+  if (!g) return;
+  if (g.kind === 'pinch') {
+    // Lifting one finger of a pinch ends the gesture; the other finger doesn't suddenly drop or pan.
+    if (pointers.size === 0) gesture = null;
+    else gesture = { kind: 'tap-or-pan', id: [...pointers.keys()][0], sx: [...pointers.values()][0].x, sy: [...pointers.values()][0].y, start: { ...view }, moved: true };
+    return;
+  }
+  if (e.pointerId !== g.id) return;
+  gesture = null;
+  if (e.type === 'pointercancel') return;
+  if (g.kind === 'drag' && g.moved) {
+    persist();
+    haptic.select();
+    lockBtn.disabled = false;
+    statusEl.textContent = 'Nudged. Lock it in when it looks right.';
+    return;
+  }
+  if (!g.moved && canDrop()) {
+    const ll = toLonLat(e);
+    if (ll) dropAt(ll);
+  }
+}
+mapSvg.addEventListener('pointerup', endPointer);
+mapSvg.addEventListener('pointercancel', endPointer);
+
+mapSvg.addEventListener(
+  'wheel',
+  (e) => {
+    if (state.attempts[state.cursor].pickScore === null) return;
+    const at = toMap(e.clientX, e.clientY);
+    if (!at) return;
+    e.preventDefault();
+    zoomAt(at[0], at[1], Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0025)));
+  },
+  { passive: false },
+);
+
+function zoomButton(factor: number) {
+  haptic.tap();
+  const a = state.attempts[state.cursor];
+  // Zoom toward the dropped shape if there is one, otherwise the middle of the view.
+  const pin = a.pin && !finished(a) ? projection(a.pin) : null;
+  const [mx, my] = pin ?? [view.x + view.w / 2, view.y + view.h / 2];
+  zoomAt(mx, my, factor);
+  if (pin) view = viewAround(mx, my, view.w);
+  applyView();
+}
 
 // Keyboard: arrow keys move the marker (Shift for bigger steps), Enter locks it in.
 mapSvg.addEventListener('keydown', (e) => {
   if (!canDrop()) return;
   const a = state.attempts[state.cursor];
+  if (e.key === '+' || e.key === '=' || e.key === '-' || e.key === '_') {
+    e.preventDefault();
+    zoomButton(e.key === '+' || e.key === '=' ? 1.6 : 1 / 1.6);
+    return;
+  }
   if (e.key === 'Enter') {
     if (a.pin) {
       e.preventDefault();
@@ -565,6 +745,7 @@ async function next() {
   }
   state.cursor += 1;
   view = FULL_VIEW;
+  revealFramed = false;
   persist();
   busy = false;
   statusEl.textContent = '';
@@ -664,6 +845,8 @@ function render() {
 }
 
 /* ---------- Events ---------- */
+$('zoom-in-btn').addEventListener('click', () => zoomButton(1.6));
+$('zoom-out-btn').addEventListener('click', () => zoomButton(1 / 1.6));
 $('zoom-out').addEventListener('click', () => {
   haptic.tap();
   view = FULL_VIEW;
