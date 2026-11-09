@@ -3,6 +3,9 @@ import '@fontsource-variable/bricolage-grotesque';
 import '@fontsource-variable/instrument-sans';
 import '@fontsource-variable/jetbrains-mono';
 import './base.css';
+import { trackPage } from './analytics';
+
+trackPage();
 
 const header = document.querySelector<HTMLElement>('.site-header');
 if (header) {

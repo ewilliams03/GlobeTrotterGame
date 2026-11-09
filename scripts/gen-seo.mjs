@@ -16,7 +16,7 @@ const pages = {
   '/terms': 'dist/terms.html',
 };
 
-let robots = 'User-agent: *\nAllow: /\n';
+let robots = 'User-agent: *\nAllow: /\nDisallow: /admin\n';
 
 if (site) {
   robots += `\nSitemap: ${site}/sitemap.xml\n`;

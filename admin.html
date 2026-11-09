@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Dashboard · Globetrotter Games</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script type="module" src="/src/admin/main.ts"></script>
+  </head>
+  <body class="admin">
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/" aria-label="Globetrotter Games home">
+          <svg class="brand-mark" width="30" height="30" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 3a15 15 0 0 0-15 15c0 7 6 12 11 16h8c5-4 11-9 11-16A15 15 0 0 0 24 3z" fill="var(--signal)"/><path d="M24 3c-5 4-7 9-7 15s3 12 5 16M24 3c5 4 7 9 7 15s-3 12-5 16M10 15h28" fill="none" stroke="var(--paper)" stroke-width="2"/><path d="M20 34l1 6M28 34l-1 6" stroke="currentColor" stroke-width="1.8"/><rect x="19" y="39" width="10" height="7" rx="2" fill="currentColor"/></svg>
+          <span class="brand-word">Globetrotter <span>Games</span></span>
+        </a>
+        <span class="ad-badge">Owner dashboard</span>
+      </div>
+    </header>
+
+    <main id="main" class="wrap ad-main">
+      <section class="ad-login" id="login">
+        <p class="eyebrow">Private</p>
+        <h1>Dashboard</h1>
+        <p>Enter your admin key to see the site's anonymous analytics.</p>
+        <form id="login-form" class="ad-login-form">
+          <label class="ad-field"><span>Admin key</span><input type="password" id="key" autocomplete="current-password" required /></label>
+          <label class="ad-check"><input type="checkbox" id="remember" /> Remember on this device</label>
+          <button type="submit" class="btn btn-primary">Open dashboard</button>
+          <p class="ad-error" id="login-error" role="alert"></p>
+        </form>
+      </section>
+
+      <section class="ad-board" id="board" hidden>
+        <div class="ad-top">
+          <div>
+            <p class="eyebrow" id="range-label">Last 30 days</p>
+            <h1>How the trip is going</h1>
+          </div>
+          <div class="ad-controls">
+            <div class="ad-seg" role="group" aria-label="Date range">
+              <button type="button" data-days="1">Today</button>
+              <button type="button" data-days="7">7 days</button>
+              <button type="button" data-days="30" aria-pressed="true">30 days</button>
+              <button type="button" data-days="90">90 days</button>
+            </div>
+            <button type="button" class="btn btn-ghost ad-small" id="logout">Lock</button>
+          </div>
+        </div>
+        <p class="ad-live" id="updated" aria-live="polite"></p>
+
+        <div class="ad-kpis" id="kpis"></div>
+
+        <div class="ad-grid">
+          <section class="ad-card ad-wide"><h2>Visitors per day</h2><div class="ad-chart" id="chart-visitors"></div></section>
+          <section class="ad-card ad-wide"><h2>Games finished per day</h2><div class="ad-chart" id="chart-games"></div></section>
+          <section class="ad-card ad-full"><h2>Games</h2><div id="games-table"></div></section>
+          <section class="ad-card"><h2>Where visitors come from</h2><div id="refs"></div></section>
+          <section class="ad-card"><h2>Pages viewed</h2><div id="pages"></div></section>
+          <section class="ad-card"><h2>Devices</h2><div id="devices"></div></section>
+          <section class="ad-card ad-full"><h2>Hardest and easiest puzzles</h2><p class="ad-note">Average score by puzzle number, for puzzles played at least twice.</p><div id="puzzles"></div></section>
+        </div>
+        <p class="ad-note ad-foot">Everything here is anonymous: counts and averages only. Visitors are counted once per day without cookies or any stored ID, and visitors with Do Not Track or Global Privacy Control are not counted.</p>
+      </section>
+    </main>
+    <div class="ad-tip" id="tip" role="tooltip" hidden></div>
+  </body>
+</html>

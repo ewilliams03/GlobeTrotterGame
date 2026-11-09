@@ -92,6 +92,7 @@ export default defineConfig({
         flagForge: resolve(root, 'games/flag-forge/index.html'),
         privacy: resolve(root, 'privacy.html'),
         about: resolve(root, 'about.html'),
+        admin: resolve(root, 'admin.html'),
         terms: resolve(root, 'terms.html'),
         notFound: resolve(root, '404.html'),
       },

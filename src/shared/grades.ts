@@ -1,6 +1,7 @@
 // Letter grades, shared by every game and the landing page's report card.
 // Results are kept only in this browser (localStorage), like everything else on the site.
-import { dayKey } from './daily';
+import { dayKey, dayIndex } from './daily';
+import { track } from './analytics';
 import { load, save, remove } from './storage';
 
 export const GAMES = [
@@ -89,7 +90,10 @@ export function overall(results: Partial<Record<GameId, DayResult>>): DayResult 
 export function showGrade(game: GameId, pct: number, key: string) {
   const p = toPct(pct);
   const grade = gradeFor(p);
+  // Count a finished game once for the anonymous dashboard (not again when a finished game is reopened).
+  const firstTime = !readSummary(key)[game];
   recordResult(game, p, key);
+  if (firstTime) track({ t: 'finish', game, pct: p, grade, puzzle: dayIndex() + 1, secs: Math.round(performance.now() / 1000) });
   const result = document.getElementById('result');
   if (!result) return;
   let box = result.querySelector<HTMLElement>('.grade');

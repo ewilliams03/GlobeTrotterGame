@@ -1,3 +1,4 @@
+import { pipeline, dayKey, TTL } from './_lib/redis.js';
 // Vercel Function: receives a recommendation from the site's form and emails it to the owner
 // through Resend. Nothing is stored here: the message is passed straight on and forgotten.
 //
@@ -118,6 +119,9 @@ export async function POST(request) {
   }).catch(() => null);
 
   if (!res || !res.ok) return reply(502, { error: "Couldn't send right now. Please try again later." });
+  // Count it for the owner's dashboard (just a number per day, never the message).
+  const fbKey = `d:${dayKey()}:fb`;
+  await pipeline([['INCR', fbKey], ['EXPIRE', fbKey, TTL]]).catch(() => {});
   return reply(200, { ok: true });
 }
 
