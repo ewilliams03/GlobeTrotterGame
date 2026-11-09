@@ -133,6 +133,11 @@ a {
   outline: 3px solid var(--signal);
   outline-offset: 3px;
 }
+/* Headings and regions focused from script (focusQuietly) only move the reading position:
+   they aren't controls, so no focus box. Real buttons and links keep their :focus-visible ring. */
+[tabindex='-1']:focus {
+  outline: none;
+}
 /* Text in a route colour on paper needs a deeper shade to stay readable (WCAG AA). */
 :root {
   --text-1: color-mix(in oklch, var(--route-1) 55%, var(--ink));

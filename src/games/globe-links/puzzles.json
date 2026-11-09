@@ -186,7 +186,7 @@
         "difficulty": 3,
         "countries": [
           "eg",
-          "bo",
+          "ug",
           "pg",
           "ec"
         ],
@@ -1034,7 +1034,7 @@
           "gm",
           "cg"
         ],
-        "fact": "India's name means \"Land of the Indus River\" in Latin, and it comes via Greek from Old Persian.",
+        "fact": "India's name comes, through Latin and Greek, from the Indus River, which is called Sindhu in Sanskrit.",
         "sourceUrl": "https://en.wikipedia.org/wiki/List_of_country-name_etymologies"
       }
     ]
@@ -1086,8 +1086,8 @@
           "rw",
           "tz"
         ],
-        "fact": "In 2022 the United Nations declared 7 July to be Swahili Language Day.",
-        "sourceUrl": "https://en.wikipedia.org/wiki/Swahili_language"
+        "fact": "The United Nations marks 7 July each year as World Kiswahili Language Day.",
+        "sourceUrl": "https://digitallibrary.un.org/record/4054006"
       }
     ]
   },
@@ -1570,7 +1570,7 @@
           "be",
           "de"
         ],
-        "fact": "Since 2004, the German-speaking countries have held a meeting every year.",
+        "fact": "Since 2004, the six countries where German is an official language have held a meeting every year.",
         "sourceUrl": "https://en.wikipedia.org/wiki/List_of_territorial_entities_where_German_is_an_official_language"
       },
       {
@@ -1646,7 +1646,7 @@
           "ca",
           "gh"
         ],
-        "fact": "Nauru is the smallest member of the Commonwealth of Nations, by both area and population.",
+        "fact": "Nauru, at just 21 km² (8 sq mi), is the smallest member of the Commonwealth of Nations by area.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Nauru"
       },
       {
@@ -1710,7 +1710,7 @@
           "za",
           "br"
         ],
-        "fact": "In Madagascar, the Tropic of Capricorn crosses the Toliara and Fianarantsoa provinces.",
+        "fact": "In Madagascar, the Tropic of Capricorn crosses the former provinces of Toliara and Fianarantsoa.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn"
       }
     ]
@@ -1882,7 +1882,7 @@
           "ro",
           "ru"
         ],
-        "fact": "Water leaves the Black Sea through two straits: the Bosporus and the Kerch Strait.",
+        "fact": "The Black Sea reaches the open ocean only through the narrow Bosporus, which leads on to the Sea of Marmara and the Mediterranean.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Black_Sea"
       },
       {
@@ -2310,7 +2310,7 @@
           "in",
           "gb"
         ],
-        "fact": "Many countries that drive on the left were once part of the British Empire, but others, such as Japan, Thailand and Indonesia, were not.",
+        "fact": "Many countries that drive on the left were once part of the British Empire, but others, such as Japan, Thailand and Mozambique, were not.",
         "sourceUrl": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
       },
       {

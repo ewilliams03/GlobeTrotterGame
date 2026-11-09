@@ -50,7 +50,7 @@
           <summary>How to play</summary>
           <div class="howto-body">
             <p>Three countries today, two steps each. First, <strong>pick the outline</strong>: four shapes, one is the country. Right first time is worth 50, second try 25.</p>
-            <p>Then <strong>drop it on the map</strong>: tap the blank world map where the country belongs. Tap again to move it, then lock it in. Within 300 km of the real spot is worth the full 50, and closer is always better.</p>
+            <p>Then <strong>drop it on the map</strong>: tap the blank world map where the country belongs. Tap again to move it, then lock it in. Anywhere on the country, or within 300 km of it, is worth the full 50; further off scores less.</p>
             <p>You get three free <strong>hints</strong> a day: in step one a hint removes two wrong outlines; on the map it circles the right region.</p>
           </div>
         </details>
@@ -80,7 +80,7 @@
           </div>
           <div class="od-place" id="step-place" hidden>
             <div class="od-frame">
-              <svg id="map" class="od-map" viewBox="0 0 640 330" role="img" aria-label="Blank world map. Tap where the country is."></svg>
+              <svg id="map" class="od-map" viewBox="0 0 640 330" tabindex="0" role="application" aria-roledescription="map" aria-label="Blank world map. Tap where the country is, or use the arrow keys to move the marker and Enter to lock it in."></svg>
               <button type="button" class="od-zoom" id="zoom-out" hidden>Whole map</button>
             </div>
           </div>
@@ -117,7 +117,7 @@
       </section>
 
       <section class="recap" id="recap" hidden aria-labelledby="recap-title">
-        <h2 id="recap-title">Today's sketches</h2>
+        <h2 id="recap-title">Today's countries</h2>
         <div class="recap-sketches" id="recap-list"></div>
       </section>
     </main>

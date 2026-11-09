@@ -79,7 +79,7 @@
           <div class="guess" id="guess-area">
             <label class="visually-hidden" for="guess-input">Your guess</label>
             <div class="combo">
-              <input id="guess-input" type="text" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="Type a country…" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="guess-list" />
+              <input id="guess-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" enterkeyhint="go" placeholder="Type a country…" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="guess-list" />
               <ul id="guess-list" class="combo-list" role="listbox" aria-label="Matching countries" hidden></ul>
             </div>
             <button type="button" class="btn btn-primary" id="guess-btn">Guess</button>
@@ -91,7 +91,7 @@
             <div class="reveal" id="reveal"></div>
             <div class="after-row">
               <p class="verdict" id="verdict"></p>
-              <button type="button" class="btn btn-primary" id="next">Next passport</button>
+              <button type="button" class="btn btn-primary" id="next" aria-describedby="reveal verdict">Next passport</button>
             </div>
           </div>
         </article>

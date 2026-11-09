@@ -3088,7 +3088,7 @@
             "hr",
             "cu"
           ],
-          "fact": "Côte d'Ivoire is a little bigger than Laos.",
+          "fact": "Côte d'Ivoire is about a third bigger than Laos.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
         },
         {
@@ -3140,7 +3140,7 @@
             "nz",
             "za"
           ],
-          "fact": "Kinshasa and Brazzaville face each other across the Congo River, the closest pair of capital cities in the world.",
+          "fact": "Kinshasa and Brazzaville face each other across the Congo River. Apart from Rome and Vatican City, they are the closest pair of capital cities in the world.",
           "sourceUrl": "https://en.wikipedia.org/wiki/Kinshasa"
         },
         {
@@ -3176,7 +3176,7 @@
             "sn",
             "uy"
           ],
-          "fact": "Mozambique has slightly more coastline than Myanmar, according to the CIA World Factbook.",
+          "fact": "Mozambique has about 1.3 times as much coastline as Myanmar, according to the CIA World Factbook.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
         }
       ]
@@ -6492,7 +6492,7 @@
             "tn",
             "af"
           ],
-          "fact": "Tunisia has a longer coastline than Cameroon, with less than a third of its land area, according to the CIA World Factbook.",
+          "fact": "Tunisia has a longer coastline than Cameroon, with only about a third of its land area, according to the CIA World Factbook.",
           "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline"
         },
         {

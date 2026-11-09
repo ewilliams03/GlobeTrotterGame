@@ -35,6 +35,7 @@ interface GameState {
   won: boolean;
   counted: boolean;
   hints: string[]; // category ids revealed by hints, in order
+  namesSeen?: boolean; // a guess was checked while country names were showing (so not "flags only")
 }
 interface Stats {
   played: number;
@@ -92,15 +93,23 @@ let busy = false;
 function sanitize(s: GameState | null): GameState {
   // Guard against stale or hand-edited storage: rebuild if it doesn't match today's puzzle.
   const all = new Set(puzzle.groups.flatMap((g) => g.countries));
-  if (!s || !Array.isArray(s.order) || !Array.isArray(s.solved)) return fresh();
+  if (!s || typeof s !== 'object' || !Array.isArray(s.order) || !Array.isArray(s.solved)) return fresh();
   const solvedTiles = s.solved.flatMap((c) => groupOf(c)?.countries ?? []);
   const lost = s.done === true && s.won === false;
+  const won = s.done === true && s.won === true;
   const valid =
     s.solved.every((c) => groupOf(c)) &&
-    s.order.every((c) => all.has(c)) &&
+    new Set(s.solved).size === s.solved.length &&
+    new Set(s.order).size === s.order.length &&
+    s.order.every((c) => all.has(c) && !solvedTiles.includes(c)) &&
+    // A won game has all four groups; a game in progress can't have them all yet (it would be stuck with no tiles).
+    (won ? s.solved.length === 4 : s.solved.length < 4) &&
     // A lost game clears the board on purpose, so its tile count is allowed to fall short.
     (lost ? s.order.length === 0 : s.order.length + solvedTiles.length === 16);
   if (!valid) return fresh();
+  s.done = s.done === true;
+  s.won = s.won === true;
+  s.counted = s.counted === true;
   s.mistakes = Number.isInteger(s.mistakes) ? Math.max(0, Math.min(MAX_MISTAKES, s.mistakes)) : 0;
   s.guesses = Array.isArray(s.guesses)
     ? s.guesses.filter((g) => Array.isArray(g) && g.length === 4 && g.every((c) => all.has(c)))
@@ -201,6 +210,7 @@ function groupEl(g: Group, revealed = false): HTMLLIElement {
   src.target = '_blank';
   src.rel = 'noopener noreferrer';
   src.textContent = 'Source';
+  src.setAttribute('aria-label', `Source for ${g.label}`);
   fact.append(src);
 
   li.append(top, countries, fact);
@@ -273,19 +283,28 @@ function renderHints() {
       if (state.solved.includes(c)) li.className = 'is-solved';
       const dot = document.createElement('i');
       const label = document.createElement('strong');
-      label.textContent = groupOf(c).label;
-      li.append(dot, document.createTextNode('One group is '), label);
+      label.textContent = g.label;
+      // One text box, so the sentence wraps as a sentence instead of splitting into flex columns.
+      const text = document.createElement('span');
+      text.append('One group is ', label);
+      li.append(dot, text);
       return li;
     }),
   );
 }
 
-function useHint() {
-  if (busy || state.done || state.hints.length >= FREE_HINTS) return;
-  // Reveal the easiest group that isn't solved or already hinted.
-  const next = [...puzzle.groups]
+/** The group the next hint would name: the easiest one not solved or hinted yet. */
+function nextHint(): Group | undefined {
+  // With one group left the last four tiles are the answer, so a hint there would only cost grade.
+  if (state.solved.length >= puzzle.groups.length - 1) return undefined;
+  return [...puzzle.groups]
     .sort((a, b) => a.difficulty - b.difficulty)
     .find((g) => !state.solved.includes(g.category) && !state.hints.includes(g.category));
+}
+
+function useHint() {
+  if (busy || state.done || state.hints.length >= FREE_HINTS) return;
+  const next = nextHint();
   if (!next) return;
   haptic.tap();
   state.hints.push(next.category);
@@ -293,7 +312,10 @@ function useHint() {
   renderHints();
   syncSelection();
   const left = FREE_HINTS - state.hints.length;
-  say(left ? `Hint used. ${left} left today.` : 'That was your last hint for today.');
+  // Name the group in the announcement too, so screen reader users hear what the hint was.
+  say(`One group is ${next.label}. ${left ? `${left} ${left === 1 ? 'hint' : 'hints'} left today.` : 'That was your last hint.'}`);
+  // The button may now be disabled; don't strand keyboard focus on it.
+  if (hintBtn.disabled && document.activeElement === hintBtn) focusQuietly(hintList.lastElementChild as HTMLElement | null);
 }
 
 function syncMini(focusOn?: Group) {
@@ -311,7 +333,7 @@ function syncSelection() {
     t.disabled = state.done;
   });
   submitBtn.disabled = selected.size !== 4 || busy || state.done;
-  hintBtn.disabled = busy || state.done || state.hints.length >= FREE_HINTS;
+  hintBtn.disabled = busy || state.done || state.hints.length >= FREE_HINTS || !nextHint();
   clearBtn.disabled = selected.size === 0 || busy || state.done;
   shuffleBtn.disabled = busy || state.done;
 }
@@ -377,8 +399,12 @@ async function check() {
   syncSelection();
   state.guesses.push(guess);
 
+  if (!settings.hard) state.namesSeen = true;
+
   // A little hop across the chosen tiles before the verdict.
   const chosen = [...grid.querySelectorAll<HTMLElement>('.tile')].filter((t) => selected.has(t.dataset.code!));
+  // A tile that shook on an earlier miss keeps its class; drop it, or the shake replays after the hop.
+  chosen.forEach((t) => t.classList.remove('is-wrong'));
   if (!reducedMotion()) {
     chosen.forEach((t, i) => {
       t.style.animationDelay = `${i * 70}ms`;
@@ -540,7 +566,8 @@ function shareString(): string {
   const lines = state.guesses.map((guess) =>
     guess.map((c) => SHARE_DOT[puzzle.groups.find((g) => g.countries.includes(c))!.difficulty]).join(''),
   );
-  const hard = board.classList.contains('is-hard') ? ' · flags only' : '';
+  // Only claim "flags only" if names were hidden for every guess, not switched on at the end.
+  const hard = settings.hard && !state.namesSeen ? ' · flags only' : '';
   const hints = state.hints.length ? [`${state.hints.length} ${state.hints.length === 1 ? 'hint' : 'hints'} used`] : [];
   return [`Globe Links No. ${puzzleNo}${hard}`, ...lines, ...hints, `${location.origin}/games/globe-links`].join('\n');
 }
@@ -563,7 +590,8 @@ function startCountdown() {
 }
 
 /* ---------- Settings ---------- */
-const settings = load<{ hard: boolean }>(SETTINGS_KEY, { hard: false });
+const savedSettings = load<{ hard?: unknown } | null>(SETTINGS_KEY, null);
+const settings = { hard: !!savedSettings && typeof savedSettings === 'object' && savedSettings.hard === true };
 function applyHard() {
   board.classList.toggle('is-hard', settings.hard);
   hardToggle.setAttribute('aria-checked', String(settings.hard));

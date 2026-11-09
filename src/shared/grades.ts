@@ -22,9 +22,12 @@ const SCALE: [number, string][] = [
   [0, 'F'],
 ];
 
+/** Any score as a whole-number percentage, 0–100 (NaN or junk counts as 0). */
+const toPct = (pct: number) => (Number.isFinite(pct) ? Math.round(Math.max(0, Math.min(100, pct))) : 0);
+
 export function gradeFor(pct: number): string {
-  const p = Math.max(0, Math.min(100, pct));
-  return SCALE.find(([min]) => p >= min)![1];
+  const p = Number.isFinite(pct) ? Math.max(0, Math.min(100, pct)) : 0;
+  return (SCALE.find(([min]) => p >= min) ?? SCALE[SCALE.length - 1])[1];
 }
 
 /** Grade family (A–F), used for colour. */
@@ -36,26 +39,35 @@ export interface DayResult {
 }
 const summaryKey = (key = dayKey()) => `summary:${key}`;
 
+/** The stored summary for a day, or an empty one if it's missing or corrupted (never a string, array, etc.). */
+function readSummary(key: string): Record<string, DayResult> {
+  const s = load<unknown>(summaryKey(key), null);
+  return s && typeof s === 'object' && !Array.isArray(s) ? (s as Record<string, DayResult>) : {};
+}
+
 export function readToday(): Partial<Record<GameId, DayResult>> {
-  const s = load<Record<string, DayResult> | null>(summaryKey(), null);
-  if (!s || typeof s !== 'object') return {};
+  const s = readSummary(dayKey());
   const out: Partial<Record<GameId, DayResult>> = {};
   for (const g of GAMES) {
     const r = s[g.id];
-    if (r && typeof r.pct === 'number' && Number.isFinite(r.pct)) out[g.id] = { pct: r.pct, grade: gradeFor(r.pct) };
+    if (r && typeof r === 'object' && typeof r.pct === 'number' && Number.isFinite(r.pct)) {
+      const pct = toPct(r.pct);
+      out[g.id] = { pct, grade: gradeFor(pct) };
+    }
   }
   return out;
 }
 
 function recordResult(game: GameId, pct: number, key: string) {
-  const s = load<Record<string, DayResult> | null>(summaryKey(key), null) ?? {};
-  s[game] = { pct: Math.round(pct), grade: gradeFor(pct) };
+  const s = readSummary(key);
+  const p = toPct(pct);
+  s[game] = { pct: p, grade: gradeFor(p) };
   save(summaryKey(key), s);
 }
 
 export function forgetResult(game: GameId, key = dayKey()) {
-  const s = load<Record<string, DayResult> | null>(summaryKey(key), null);
-  if (!s) return;
+  const s = readSummary(key);
+  if (!(game in s)) return;
   delete s[game];
   if (Object.keys(s).length) save(summaryKey(key), s);
   else remove(summaryKey(key));
@@ -65,8 +77,9 @@ export function forgetResult(game: GameId, key = dayKey()) {
 export function overall(results: Partial<Record<GameId, DayResult>>): DayResult | null {
   const vals = Object.values(results).filter(Boolean) as DayResult[];
   if (!vals.length) return null;
-  const pct = vals.reduce((n, r) => n + r.pct, 0) / vals.length;
-  return { pct: Math.round(pct), grade: gradeFor(pct) };
+  // Grade the rounded figure that's shown, so "68% overall" never comes with a C+.
+  const pct = toPct(vals.reduce((n, r) => n + r.pct, 0) / vals.length);
+  return { pct, grade: gradeFor(pct) };
 }
 
 /**
@@ -74,7 +87,7 @@ export function overall(results: Partial<Record<GameId, DayResult>>): DayResult 
  * `pct` is the share of the best possible result (0–100).
  */
 export function showGrade(game: GameId, pct: number, key: string) {
-  const p = Math.round(Math.max(0, Math.min(100, pct)));
+  const p = toPct(pct);
   const grade = gradeFor(p);
   recordResult(game, p, key);
   const result = document.getElementById('result');
@@ -97,7 +110,14 @@ export function showGrade(game: GameId, pct: number, key: string) {
   pctLine.textContent = `${p}% of a perfect game`;
   const scale = document.createElement('p');
   scale.className = 'grade-scale';
-  scale.textContent = 'A 83%+ · B 68%+ · C 53%+ · D 38%+';
+  // One unbreakable chip per band; the dots between them are CSS, so a wrap never strands a "·".
+  scale.append(
+    ...['A 83%+', 'B 68%+', 'C 53%+', 'D 38%+'].map((t) => {
+      const span = document.createElement('span');
+      span.textContent = t;
+      return span;
+    }),
+  );
   info.append(pctLine, scale);
   box.replaceChildren(letter, info);
 }

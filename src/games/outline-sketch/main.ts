@@ -1,7 +1,7 @@
 import '../../shared/base';
 import '../../shared/game.css';
 import './os.css';
-import { geoMercator, geoNaturalEarth1, geoPath, geoCentroid, geoDistance, geoCircle, type GeoProjection } from 'd3-geo';
+import { geoMercator, geoNaturalEarth1, geoPath, geoCentroid, geoDistance, geoCircle, geoContains, type GeoProjection } from 'd3-geo';
 import type { MultiPolygon } from 'geojson';
 import { COUNTRIES } from '../../data/countries';
 import { dayIndex, dayKey, msUntilTomorrow } from '../../shared/daily';
@@ -35,6 +35,7 @@ interface Attempt {
   km: number | null;
   hintPick: boolean;
   hintPlace: boolean;
+  hidden?: string[]; // outlines the step-one hint took away
 }
 interface State {
   attempts: Attempt[];
@@ -76,15 +77,29 @@ const blank = (): Attempt => ({ picks: [], pickScore: null, pin: null, placeScor
 function sanitize(s: State | null): State {
   const fresh: State = { attempts: rounds.map(blank), cursor: 0, done: false, counted: false, fp: FP };
   if (!s || s.fp !== FP || !Array.isArray(s.attempts) || s.attempts.length !== ROUNDS) return fresh;
+  const num = (v: unknown, max: number) => v === null || (typeof v === 'number' && Number.isFinite(v) && v >= 0 && v <= max);
   const ok = s.attempts.every(
     (a, i) =>
       a &&
       Array.isArray(a.picks) &&
       a.picks.every((c) => rounds[i].options.some((o) => o.code === c)) &&
-      (a.pin === null || (Array.isArray(a.pin) && a.pin.length === 2 && a.pin.every(Number.isFinite))),
+      (a.pin === null || (Array.isArray(a.pin) && a.pin.length === 2 && a.pin.every(Number.isFinite))) &&
+      num(a.pickScore, 50) &&
+      num(a.placeScore, 50) &&
+      num(a.km, 40000) &&
+      // A locked-in drop needs both steps done.
+      (a.placeScore === null || (a.pickScore !== null && a.pin !== null && a.km !== null)),
   );
   if (!ok) return fresh;
+  s.attempts.forEach((a, i) => {
+    a.hintPick = a.hintPick === true;
+    a.hintPlace = a.hintPlace === true;
+    const wrong = (c: unknown) => typeof c === 'string' && c !== rounds[i].code && rounds[i].options.some((o) => o.code === c);
+    if (!a.hintPick || !Array.isArray(a.hidden) || !a.hidden.every(wrong)) delete a.hidden;
+  });
   s.cursor = Math.min(Math.max(0, s.cursor | 0), ROUNDS - 1);
+  s.done = s.done === true && s.attempts.every((a) => a.placeScore !== null);
+  s.counted = s.counted === true;
   return s;
 }
 const state = sanitize(load<State | null>(STATE_KEY, null));
@@ -93,7 +108,9 @@ const hintsUsed = () => state.attempts.reduce((n, a) => n + Number(a.hintPick) +
 const roundScore = (a: Attempt) => (a.pickScore ?? 0) + (a.placeScore ?? 0);
 const score = () => state.attempts.reduce((n, a) => n + roundScore(a), 0);
 const finished = (a: Attempt) => a.placeScore !== null;
-const shapeFor = (r: Round, code: string) => (code === r.code ? r.target : r.options.find((o) => o.code === code)?.shape ?? r.target);
+// Every choice is drawn at the same level of detail (the bank sends the answer's coarse shape too), so the
+// answer can't be spotted by being the most detailed outline. Older day files send null for the answer.
+const shapeFor = (r: Round, code: string) => r.options.find((o) => o.code === code)?.shape ?? r.target;
 
 /* ---------- Elements ---------- */
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -146,6 +163,41 @@ function placed(r: Round) {
 
 /* ---------- Scoring ---------- */
 const kmBetween = (a: LonLat, b: LonLat) => geoDistance(a, b) * 6371;
+
+/**
+ * How far a drop is from the country itself: 0 anywhere on it, otherwise the distance to its
+ * nearest edge. Fairer than the centre for long or curved countries (Chile, Norway, Vietnam,
+ * Croatia), whose centre can lie far from, or even outside, much of the land.
+ */
+function missFrom(target: MultiPolygon, pin: LonLat): { km: number; to: LonLat } {
+  if (geoContains(target, pin)) return { km: 0, to: pin };
+  const [lon0, lat0] = pin;
+  const k = Math.cos((lat0 * Math.PI) / 180);
+  const local = ([lon, lat]: number[]): [number, number] => [((((lon - lon0) % 360) + 540) % 360 - 180) * k, lat - lat0];
+  let best: LonLat = pin;
+  let bestD = Infinity;
+  for (const poly of target.coordinates) {
+    for (const ring of poly) {
+      for (let j = 0; j < ring.length - 1; j++) {
+        // Nearest point on each edge, worked out on a flat map centred on the pin (fine at these scales).
+        const [ax, ay] = local(ring[j]);
+        const [bx, by] = local(ring[j + 1]);
+        const dx = bx - ax;
+        const dy = by - ay;
+        const len = dx * dx + dy * dy;
+        const t = len ? Math.min(1, Math.max(0, -(ax * dx + ay * dy) / len)) : 0;
+        const x = ax + t * dx;
+        const y = ay + t * dy;
+        const d = x * x + y * y;
+        if (d < bestD) {
+          bestD = d;
+          best = [lon0 + (k ? x / k : 0), lat0 + y];
+        }
+      }
+    }
+  }
+  return { km: kmBetween(pin, best), to: best };
+}
 function placePoints(km: number) {
   if (km <= FULL_KM) return 50;
   return Math.round(50 * Math.max(0, 1 - (km - FULL_KM) / (ZERO_KM - FULL_KM)));
@@ -159,13 +211,21 @@ function thumb(shape: MultiPolygon, w = 150, h = 110): SVGSVGElement {
   return s;
 }
 
+/** Wrong outlines the player hasn't tried yet. */
+const untriedWrong = (r: Round, a: Attempt) => r.options.map((o) => o.code).filter((c) => c !== r.code && !a.picks.includes(c));
+
+function hiddenByHint(r: Round, a: Attempt): string[] {
+  // Saved when the hint is used. Progress from before that was saved always hid the first two.
+  return a.hidden ?? r.options.filter((o) => o.code !== r.code).slice(0, 2).map((o) => o.code);
+}
+
 function renderOptions() {
   const i = state.cursor;
   const r = rounds[i];
   const a = state.attempts[i];
   const over = a.pickScore !== null;
-  // A hint removes two wrong outlines (always the same two, so a reload doesn't reshuffle).
-  const hidden = a.hintPick ? r.options.filter((o) => o.code !== r.code).slice(0, 2).map((o) => o.code) : [];
+  // A hint takes away the wrong outlines not yet tried, all but one.
+  const hidden = a.hintPick ? hiddenByHint(r, a) : [];
   optionsEl.replaceChildren(
     ...r.options.map((o, k) => {
       const b = document.createElement('button');
@@ -218,7 +278,11 @@ function renderMap(animate = false) {
     el('circle', { class: 'od-truth-dot', cx: tx.toFixed(1), cy: ty.toFixed(1), r: (4 * view.w / MAP_W).toFixed(2) }, mapSvg);
     if (a.pin) {
       const [px, py] = projection(a.pin) ?? [0, 0];
-      el('line', { class: 'od-miss', x1: px.toFixed(1), y1: py.toFixed(1), x2: tx.toFixed(1), y2: ty.toFixed(1) }, mapSvg);
+      if ((a.km ?? 0) > 0) {
+        // The miss is measured to the nearest edge of the country, so that's where the line goes.
+        const [mx, my] = projection(missFrom(r.target, a.pin).to) ?? [tx, ty];
+        el('line', { class: 'od-miss', x1: px.toFixed(1), y1: py.toFixed(1), x2: mx.toFixed(1), y2: my.toFixed(1) }, mapSvg);
+      }
       el('path', { class: 'od-guess is-compare', d: p.d, transform: `translate(${(px - tx).toFixed(1)} ${(py - ty).toFixed(1)})` }, mapSvg);
     }
     return;
@@ -263,7 +327,9 @@ function renderHint() {
   hintBtn.setAttribute('aria-label', `Use a hint. ${left} of ${FREE_HINTS} left.`);
   const a = state.attempts[state.cursor];
   const stepOne = a.pickScore === null;
-  hintBtn.disabled = busy || state.done || finished(a) || left <= 0 || (stepOne ? a.hintPick : a.hintPlace);
+  // In step one a hint needs at least two untried wrong outlines to take one away and leave a choice.
+  const r = rounds[state.cursor];
+  hintBtn.disabled = busy || state.done || finished(a) || left <= 0 || (stepOne ? a.hintPick || untriedWrong(r, a).length < 2 : a.hintPlace);
 }
 
 function renderCard(animate = false) {
@@ -298,7 +364,11 @@ function renderAfter() {
   const a = state.attempts[i];
   const km = Math.round(a.km ?? 0);
   statusEl.textContent =
-    km <= FULL_KM ? `Right on target: ${r.name} is in green, your drop is dashed.` : `Your drop was ${km.toLocaleString()} km from ${r.name} (in green).`;
+    km === 0
+      ? `Right on target: ${r.name} is in green, your drop is dashed.`
+      : km <= FULL_KM
+        ? `Close enough for full marks: ${km.toLocaleString()} km from ${r.name} (in green).`
+        : `Your drop was ${km.toLocaleString()} km from ${r.name} (in green).`;
   const v = $('verdict');
   const pts = document.createElement('span');
   pts.className = 'pts';
@@ -310,15 +380,17 @@ function renderAfter() {
 }
 
 function syncMini() {
+  // Only countries already placed show up: a dot (or a turn of the globe) on the current country
+  // would give away where to drop it.
   const dots = rounds.flatMap((r, i) => {
     const a = state.attempts[i];
     const c = COUNTRIES[r.code];
-    if (!c || (!finished(a) && i !== state.cursor)) return [];
-    return [{ lon: c.lon, lat: c.lat, level: finished(a) ? (roundScore(a) >= 70 ? 1 : roundScore(a) >= 40 ? 3 : 4) : 5 }];
+    if (!c || !finished(a)) return [];
+    return [{ lon: c.lon, lat: c.lat, level: roundScore(a) >= 70 ? 1 : roundScore(a) >= 40 ? 3 : 4 }];
   });
   mini.setDots(dots);
   const c = COUNTRIES[rounds[state.cursor].code];
-  if (c && !state.done) mini.focus([c]);
+  if (c && !state.done && finished(state.attempts[state.cursor])) mini.focus([c]);
 }
 
 function bump() {
@@ -353,6 +425,7 @@ function pick(code: string) {
     renderOptions();
     bump();
     busy = true;
+    renderHint();
     // A short beat on the highlighted answer, then on to the map.
     setTimeout(() => {
       busy = false;
@@ -361,6 +434,7 @@ function pick(code: string) {
     }, reducedMotion() ? 0 : 900);
   } else {
     renderOptions();
+    renderHint();
   }
 }
 
@@ -370,22 +444,33 @@ optionsEl.addEventListener('click', (e) => {
 });
 
 /* ---------- Step 2: drop it on the map ---------- */
+/** The place on Earth under a point of the map, or null off the edge of the world. */
+function mapToLonLat(x: number, y: number): LonLat | null {
+  const ll = projection.invert?.([x, y]);
+  if (!ll || !ll.every(Number.isFinite)) return null;
+  // Outside the oval the inverse wraps round to the far side of the world: ignore those taps.
+  const back = projection(ll);
+  if (!back || Math.hypot(back[0] - x, back[1] - y) > 1) return null;
+  return ll as LonLat;
+}
+
 function toLonLat(e: PointerEvent): LonLat | null {
   const m = mapSvg.getScreenCTM();
   if (!m) return null;
   const p = new DOMPoint(e.clientX, e.clientY).matrixTransform(m.inverse());
-  const ll = projection.invert?.([p.x, p.y]);
-  return ll && ll.every(Number.isFinite) ? (ll as LonLat) : null;
+  return mapToLonLat(p.x, p.y);
 }
 
-mapSvg.addEventListener('pointerup', (e) => {
+const canDrop = () => {
   const a = state.attempts[state.cursor];
-  if (busy || state.done || a.pickScore === null || finished(a) || e.button !== 0) return;
-  const ll = toLonLat(e);
-  if (!ll) return;
+  return !busy && !state.done && a.pickScore !== null && !finished(a);
+};
+
+function dropAt(ll: LonLat, zoom = true) {
+  const a = state.attempts[state.cursor];
   a.pin = [Math.round(ll[0] * 100) / 100, Math.round(ll[1] * 100) / 100];
   persist();
-  if (view.w >= MAP_W) {
+  if (zoom && view.w >= MAP_W) {
     // First tap on the whole world: zoom in around it so the drop can be fine-tuned.
     const [x, y] = projection(a.pin) ?? [MAP_W / 2, MAP_H / 2];
     view = viewAround(x, y, MAP_W / 2.6);
@@ -394,6 +479,40 @@ mapSvg.addEventListener('pointerup', (e) => {
   renderMap();
   lockBtn.disabled = false;
   statusEl.textContent = 'Happy with that? Lock it in, or tap again to move it.';
+}
+
+mapSvg.addEventListener('pointerup', (e) => {
+  if (!canDrop() || e.button !== 0) return;
+  const ll = toLonLat(e);
+  if (ll) dropAt(ll);
+});
+
+// Keyboard: arrow keys move the marker (Shift for bigger steps), Enter locks it in.
+mapSvg.addEventListener('keydown', (e) => {
+  if (!canDrop()) return;
+  const a = state.attempts[state.cursor];
+  if (e.key === 'Enter') {
+    if (a.pin) {
+      e.preventDefault();
+      lockIn();
+    }
+    return;
+  }
+  const dir: Record<string, [number, number]> = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] };
+  const d = dir[e.key];
+  if (!d) return;
+  e.preventDefault();
+  const centre: [number, number] = [view.x + view.w / 2, view.y + view.h / 2];
+  const [x, y] = a.pin ? (projection(a.pin) ?? centre) : centre;
+  // The first key press drops the marker in the middle of the view; later ones move it.
+  const step = a.pin ? view.w / (e.shiftKey ? 8 : 40) : 0;
+  const nx = Math.min(Math.max(0, x + d[0] * step), MAP_W);
+  const ny = Math.min(Math.max(0, y + d[1] * step), MAP_H);
+  const ll = mapToLonLat(nx, ny);
+  if (!ll) return;
+  // Once zoomed in, the view follows the marker.
+  if (view.w < MAP_W && (nx < view.x || nx > view.x + view.w || ny < view.y || ny > view.y + view.h)) view = viewAround(nx, ny, view.w);
+  dropAt(ll, false);
 });
 
 function lockIn() {
@@ -401,7 +520,7 @@ function lockIn() {
   const r = rounds[i];
   const a = state.attempts[i];
   if (busy || !a.pin || finished(a)) return;
-  a.km = kmBetween(a.pin, geoCentroid(r.target) as LonLat);
+  a.km = missFrom(r.target, a.pin).km;
   a.placeScore = placePoints(a.km);
   persist();
   if (a.placeScore >= 35) haptic.success();
@@ -417,9 +536,11 @@ function useHint() {
   if (busy || state.done || finished(a) || hintsUsed() >= FREE_HINTS) return;
   haptic.tap();
   if (a.pickScore === null) {
-    if (a.hintPick) return;
+    const untried = untriedWrong(rounds[state.cursor], a);
+    if (a.hintPick || untried.length < 2) return;
     a.hintPick = true;
-    statusEl.textContent = 'Two wrong outlines removed.';
+    a.hidden = untried.slice(0, -1);
+    statusEl.textContent = a.hidden.length === 1 ? 'One wrong outline removed.' : 'Two wrong outlines removed.';
   } else {
     if (a.hintPlace) return;
     a.hintPlace = true;
@@ -509,7 +630,7 @@ function renderResult() {
       strong.textContent = `+${roundScore(a)}`;
       const detail = document.createElement('p');
       detail.className = 'od-recap-detail';
-      detail.textContent = `Outline +${a.pickScore ?? 0} · Map +${a.placeScore ?? 0}${a.km !== null ? ` (${Math.round(a.km).toLocaleString()} km off)` : ''}`;
+      detail.textContent = `Outline +${a.pickScore ?? 0} · Map +${a.placeScore ?? 0}${a.km === null ? '' : a.km === 0 ? ' (right on it)' : ` (${Math.round(a.km).toLocaleString()} km off)`}`;
       body.append(h, strong);
       sec.append(thumb(r.target, 300, 180), body, detail);
       return sec;
@@ -563,6 +684,12 @@ $('share').addEventListener('click', async () => {
 });
 
 /* ---------- Boot ---------- */
+{
+  // Back mid-drop after a reload: zoom in on the marker again, as it was.
+  const a = state.attempts[state.cursor];
+  const p = !state.done && a.pin && !finished(a) ? projection(a.pin) : null;
+  if (p) view = viewAround(p[0], p[1], MAP_W / 2.6);
+}
 render();
 void arrive(mini, $('mini-globe'));
 watchDayChange(todayKey);

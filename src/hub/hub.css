@@ -88,6 +88,21 @@
     margin-bottom: -8px;
   }
 }
+/* Phone on its side: a stacked hero would show only the globe. Keep the headline beside it. */
+@media (max-width: 860px) and (min-width: 560px) and (max-height: 520px) and (orientation: landscape) {
+  .hero {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+    padding-block: 20px 40px;
+  }
+  .hero h1 { font-size: clamp(2.4rem, 6.2vw, 3.4rem); margin-block: 12px 18px; }
+  .hero-actions { margin-top: 22px; }
+  .hero-globe {
+    order: 0;
+    max-width: min(300px, 72vh);
+    justify-self: end;
+    margin-bottom: 0;
+  }
+}
 
 /* ---------- Departures board ---------- */
 .board-head {
@@ -270,10 +285,6 @@ a.route-link:active {
   .route-pitch { font-size: 0.95rem; }
 }
 
-/* ---------- Promise strip ---------- */
-@media (max-width: 760px) {
-}
-
 /* ---------- Today's report card ---------- */
 .report { margin-bottom: clamp(36px, 6vw, 64px); }
 .report-card {
@@ -407,7 +418,7 @@ a.route-link:active {
 .ideas-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
 .ideas-status { font-weight: 600; color: var(--ink-2); }
 .ideas-status.is-ok { color: var(--text-1); }
-.ideas-status.is-error { color: var(--signal); }
+.ideas-status.is-error { color: var(--signal); color: color-mix(in oklch, var(--signal) 82%, var(--ink)); } /* a touch deeper than the button orange: AA for small text in both themes */
 .ideas-note { font-size: 0.82rem; color: var(--ink-3); max-width: 60ch; }
 .ideas-note a { color: inherit; text-underline-offset: 2px; }
 @media (max-width: 760px) {

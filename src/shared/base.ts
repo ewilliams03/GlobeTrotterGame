@@ -49,5 +49,14 @@ import { icon } from './icons';
     };
     sync();
     window.addEventListener('hashchange', sync);
+    // Already on the landing page: "Games" just glides back to the top instead of reloading it.
+    games.addEventListener('click', (e) => {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      e.preventDefault();
+      if (window.location.hash) history.pushState(null, '', '/');
+      sync();
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
   }
 })();

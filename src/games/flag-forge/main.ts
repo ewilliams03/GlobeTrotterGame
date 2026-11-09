@@ -100,11 +100,23 @@ function sanitize(s: State | null): State {
   // Progress saved for a different puzzle (e.g. after the puzzle bank changes) is discarded.
   if (s && s.fp !== FP) return fresh;
   if (!s || !Array.isArray(s.attempts) || s.attempts.length !== ROUNDS) return fresh;
+  const colour = (c: unknown) => c === null || COLOURS.includes(c as Colour);
   const ok = s.attempts.every(
-    (a) => a?.spec && LAYOUTS.some((l) => l.id === a.spec.layout) && Array.isArray(a.spec.colors) && a.spec.colors.every((c) => c === null || c in HEX) && SYMBOLS.some((x) => x.id === a.spec.symbol),
+    (a) =>
+      a?.spec &&
+      LAYOUTS.some((l) => l.id === a.spec.layout) &&
+      Array.isArray(a.spec.colors) &&
+      a.spec.colors.length === layoutOf(a.spec.layout).slots &&
+      a.spec.colors.every(colour) &&
+      SYMBOLS.some((x) => x.id === a.spec.symbol) &&
+      colour(a.spec.symbolColor ?? null) &&
+      (a.score === null || (typeof a.score === 'number' && a.score >= 0 && a.score <= 100)),
   );
   if (!ok) return fresh;
+  for (const a of s.attempts) a.hinted = a.hinted === true;
   s.cursor = Math.min(Math.max(0, s.cursor | 0), ROUNDS - 1);
+  s.done = s.done === true && s.attempts.every((a) => a.score !== null);
+  s.counted = s.counted === true;
   return s;
 }
 const state = sanitize(load<State | null>(STATE_KEY, null));
@@ -113,6 +125,8 @@ const hintsUsed = () => state.attempts.filter((a) => a.hinted).length;
 const score = () => state.attempts.reduce((n, a) => n + (a.score ?? 0), 0);
 const scored = (a: Attempt) => a.score !== null;
 let activeSlot = 0;
+/** The first colour slot still to fill (or the first slot), so a returning player carries on where they were. */
+const firstEmpty = () => Math.max(0, state.attempts[state.cursor].spec.colors.findIndex((c) => !c));
 
 /* ---------- Elements ---------- */
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -181,8 +195,14 @@ function drawFlag(svg: SVGSVGElement, spec: Spec) {
       add(svg, 'polygon', { points: starPoints(cx, cy, 42), fill: sc });
       break;
     case 'crescent': {
-      add(svg, 'circle', { cx: String(cx - 12), cy: String(cy), r: '46', fill: sc });
-      add(svg, 'circle', { cx: String(cx), cy: String(cy), r: '37', fill: fill(0) });
+      // A real crescent shape (a disc of r 46 at cx-12 minus one of r 37 at cx), not a disc covered by a
+      // second disc in the first colour, which showed up as a stray circle on striped flags.
+      // The two circles cross at (cx + 25.1, cy ± 27.2).
+      const [ix, iy] = [cx + 25.125, 27.16];
+      add(svg, 'path', {
+        d: `M${ix} ${cy - iy}A46 46 0 1 0 ${ix} ${cy + iy}A37 37 0 1 1 ${ix} ${cy - iy}Z`,
+        fill: sc,
+      });
       add(svg, 'polygon', { points: starPoints(cx + 44, cy, 20), fill: sc, transform: `rotate(-18 ${cx + 44} ${cy})` });
       break;
     }
@@ -226,9 +246,14 @@ function evaluate(target: Spec, guess: Spec): Check[] {
   const checks: Check[] = [];
   const tl = layoutOf(target.layout);
   checks.push({ label: 'Layout', ok: guess.layout === target.layout, detail: tl.label });
+  // Stripes in the right order still count when only the direction is wrong (three across for three
+  // down, say): the layout check already takes the point for that.
+  const striped = (l: Layout) => l !== 'nordic' && l !== 'plain';
+  const sameSlots =
+    guess.layout === target.layout || (striped(guess.layout) && striped(target.layout) && layoutOf(guess.layout).slots === tl.slots);
   tl.slotNames.forEach((slot, i) => {
     const want = target.colors[i] as Colour;
-    checks.push({ label: `${slot} colour`, ok: guess.layout === target.layout && guess.colors[i] === want, detail: COLOUR_NAME[want] });
+    checks.push({ label: `${slot} colour`, ok: sameSlots && guess.colors[i] === want, detail: COLOUR_NAME[want] });
   });
   checks.push({ label: 'Symbol', ok: guess.symbol === target.symbol, detail: symbolOf(target.symbol).label });
   if (symbolOf(target.symbol).coloured && target.symbolColor) {
@@ -367,8 +392,13 @@ function update() {
   void (preview as unknown as HTMLElement).getBoundingClientRect();
   if (!reducedMotion()) preview.classList.add('is-pulse');
   renderTools();
-  const missing = state.attempts[state.cursor].spec.colors.filter((c) => !c).length;
-  statusEl.textContent = missing ? `${missing} colour ${missing === 1 ? 'slot' : 'slots'} still empty.` : 'Looks ready. Forge it when you are happy.';
+  const spec = state.attempts[state.cursor].spec;
+  const missing = spec.colors.filter((c) => !c).length;
+  statusEl.textContent = missing
+    ? `${missing} colour ${missing === 1 ? 'slot' : 'slots'} still empty.`
+    : symbolOf(spec.symbol).coloured && !spec.symbolColor
+      ? 'Pick a colour for the symbol.'
+      : 'Looks ready. Forge it when you are happy.';
 }
 
 function renderTrip() {
@@ -529,7 +559,7 @@ function useHint() {
     a.spec.layout = target;
     a.spec.colors = Array.from({ length: layoutOf(target).slots }, (_, k) => a.spec.colors[k] ?? null);
   }
-  activeSlot = 0;
+  activeSlot = firstEmpty();
   update();
   renderHint();
   statusEl.textContent = `Hint: the layout is "${layoutOf(target).label}". It's locked in for you.`;
@@ -549,7 +579,7 @@ async function next() {
     card.classList.remove('is-leaving');
   }
   state.cursor += 1;
-  activeSlot = 0;
+  activeSlot = firstEmpty();
   persist();
   busy = false;
   statusEl.textContent = '';
@@ -675,6 +705,7 @@ $('share').addEventListener('click', async () => {
 });
 
 /* ---------- Boot ---------- */
+activeSlot = firstEmpty();
 render();
 void arrive(mini, $('mini-globe'));
 watchDayChange(todayKey);

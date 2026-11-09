@@ -19,11 +19,20 @@ const GAME_NAMES = {
 };
 const MIN_FILL_MS = 3000; // humans take a few seconds to type; instant posts are bots
 const MAX_MESSAGE = 2000;
+// 2000 characters can take ~12 KB once JSON-escaped (emoji, control characters), so allow some room.
+const MAX_BODY = 32_000;
+// A flood guard so a script can't empty the email quota or the inbox. Counted per warm
+// function instance, in memory only: nothing about the sender (not even an IP) is kept.
+const WINDOW_MS = 10 * 60_000;
+const MAX_PER_WINDOW = 30;
+let windowStart = 0;
+let sentInWindow = 0;
+const EMAIL = /^[^\s@<>()[\]\\,;:"]+@[^\s@<>()[\]\\,;:"]+\.[^\s@<>()[\]\\,;:"]+$/;
 
-const reply = (status, body) =>
+const reply = (status, body, extra = {}) =>
   new Response(JSON.stringify(body), {
     status,
-    headers: { 'content-type': 'application/json', 'cache-control': 'no-store' },
+    headers: { 'content-type': 'application/json', 'cache-control': 'no-store', ...extra },
   });
 
 // Strip control characters (except newlines/tabs) so nothing odd reaches the email.
@@ -37,16 +46,28 @@ export async function POST(request) {
   // Only accept posts from the site's own pages.
   const origin = request.headers.get('origin');
   const host = request.headers.get('host');
-  if (!origin || !host || new URL(origin).host !== host) return reply(403, { error: 'forbidden' });
-  if (!(request.headers.get('content-type') ?? '').includes('application/json')) return reply(415, { error: 'json only' });
-  if (Number(request.headers.get('content-length') ?? 0) > 10_000) return reply(413, { error: 'too large' });
+  let originHost = '';
+  try {
+    originHost = new URL(origin ?? '').host; // "null" or junk origins throw: treat as foreign
+  } catch {
+    /* rejected below */
+  }
+  const refused = { error: "Couldn't send from here. Please use the form on the home page." };
+  if (!originHost || !host || originHost !== host) return reply(403, refused);
+  if (!(request.headers.get('content-type') ?? '').includes('application/json')) return reply(415, refused);
+  const tooLong = { error: 'That message is too long. Please shorten it and try again.' };
+  if (Number(request.headers.get('content-length') ?? 0) > MAX_BODY) return reply(413, tooLong);
 
   let data;
   try {
-    data = await request.json();
+    // Read as text so a body with no content-length header still can't be huge.
+    const raw = await request.text();
+    if (raw.length > MAX_BODY) return reply(413, tooLong);
+    data = JSON.parse(raw);
   } catch {
-    return reply(400, { error: 'bad json' });
+    return reply(400, refused);
   }
+  if (!data || typeof data !== 'object' || Array.isArray(data)) return reply(400, refused);
 
   // Honeypot: a field real visitors never see. Pretend success so bots don't retry.
   if (clean(data.website, 200)) return reply(200, { ok: true });
@@ -58,11 +79,21 @@ export async function POST(request) {
   const email = clean(data.email, 200);
   if (message.length < 5) return reply(400, { error: 'Please write a little more.' });
   if (!GAMES.has(game)) return reply(400, { error: 'Unknown game.' });
-  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return reply(400, { error: 'That email address looks off.' });
+  if (email && !EMAIL.test(email)) return reply(400, { error: 'That email address looks off. You can also leave it blank.' });
 
   const key = process.env.RESEND_API_KEY || process.env.resendapykey;
   const to = process.env.FEEDBACK_TO;
   if (!key || !to) return reply(503, { error: 'Feedback is not set up yet.' });
+
+  const now = Date.now();
+  if (now - windowStart > WINDOW_MS) {
+    windowStart = now;
+    sentInWindow = 0;
+  }
+  if (sentInWindow >= MAX_PER_WINDOW) {
+    return reply(429, { error: 'Lots of recommendations are arriving right now. Please try again in a few minutes.' }, { 'retry-after': '600' });
+  }
+  sentInWindow += 1;
 
   const about = GAME_NAMES[game] ?? 'Not specified';
   const text = [
@@ -91,5 +122,5 @@ export async function POST(request) {
 }
 
 export function GET() {
-  return reply(405, { error: 'POST only' });
+  return reply(405, { error: 'POST only' }, { allow: 'POST' });
 }

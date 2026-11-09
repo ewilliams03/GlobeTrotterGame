@@ -2,6 +2,8 @@
   "id": "/",
   "name": "Globetrotter Games",
   "short_name": "Globetrotter",
+  "lang": "en",
+  "dir": "ltr",
   "description": "Six free daily geography games about countries, flags and cultures.",
   "start_url": "/",
   "scope": "/",

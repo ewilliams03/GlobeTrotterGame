@@ -43,7 +43,7 @@
   touch-action: manipulation;
   transition: transform 160ms var(--ease-out), background-color 160ms ease, color 160ms ease, box-shadow 160ms ease, opacity 200ms ease;
 }
-.claim:active:not(:disabled) { transform: scale(0.985); }
+.claim:active:not(:disabled):not(.is-revealed) { transform: scale(0.985); }
 .claim-letter {
   display: grid;
   place-items: center;
@@ -67,7 +67,7 @@
 }
 .claim:disabled { cursor: default; }
 @media (hover: hover) and (pointer: fine) {
-  .claim:hover:not(:disabled):not([aria-pressed='true']) {
+  .claim:hover:not(:disabled):not([aria-pressed='true']):not(.is-revealed) {
     box-shadow: inset 0 0 0 1.5px var(--ink-3), var(--shadow-1);
   }
 }
@@ -95,7 +95,18 @@
   background: color-mix(in oklch, var(--route-4) 12%, var(--paper));
   box-shadow: inset 0 0 0 2px var(--route-4);
 }
-.claim.is-revealed { color: var(--ink); }
+.claim.is-revealed { color: var(--ink); cursor: auto; }
+/* Which statement the player picked, once the answers are shown */
+.claim-mine {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
 .claim.is-revealed .claim-letter { background: var(--paper-3); color: var(--ink); }
 .claim.is-fib .claim-letter { background: var(--route-4); color: var(--on-route); }
 .claim.is-fact .claim-letter { background: var(--route-1); color: var(--on-route); }
@@ -113,7 +124,9 @@
   font-weight: 750;
 }
 .claim-src {
-  display: inline-block;
+  /* Its own line under the statement (or under the correction), without an extra blank line. */
+  display: block;
+  width: fit-content;
   margin-top: 6px;
   font-size: 0.85rem;
   font-weight: 600;

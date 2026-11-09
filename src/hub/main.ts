@@ -19,9 +19,8 @@ if (clock) {
   setInterval(tick, 15_000);
 }
 
-document.querySelectorAll('a.route-link, .hero-actions .btn').forEach((el) =>
-  el.addEventListener('pointerdown', () => haptic.tap()),
-);
+// On click, not pointerdown: a finger that lands on a card only to scroll the page shouldn't buzz.
+document.querySelectorAll('a.route-link, .hero-actions .btn').forEach((el) => el.addEventListener('click', () => haptic.tap()));
 
 /* ---------- Today's report card (read from this browser only) ---------- */
 /** Departures board: each route says whether today's game is done. */
@@ -92,13 +91,13 @@ const svg = document.getElementById('globe') as SVGSVGElement | null;
 const globe = svg ? drawGlobe(svg) : null;
 
 /* ---------- Travel into a game: the globe zooms in, the game page zooms back out ---------- */
-document.querySelectorAll<HTMLAnchorElement>('a[href^="/games/"]').forEach((link) =>
-  link.addEventListener('click', (e) => {
-    if (!svg || !globe || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-    e.preventDefault();
-    depart(link.getAttribute('href')!, svg, globe.rotation());
-  }),
-);
+// Delegated, so the report-card links (re-rendered when the page comes back from the cache) travel too.
+document.addEventListener('click', (e) => {
+  const link = (e.target as Element | null)?.closest?.<HTMLAnchorElement>('a[href^="/games/"]');
+  if (!link || !svg || !globe || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  e.preventDefault();
+  depart(link.getAttribute('href')!, svg, globe.rotation());
+});
 
 function drawGlobe(svg: SVGSVGElement) {
   const NS = 'http://www.w3.org/2000/svg';
@@ -185,6 +184,7 @@ function drawGlobe(svg: SVGSVGElement) {
   let lastY = 0;
   let lastT = 0;
   let pointerId: number | null = null;
+  let buzzed = false;
 
   svg.addEventListener('pointerdown', (e) => {
     if (pointerId !== null) return; // ignore extra fingers
@@ -195,8 +195,8 @@ function drawGlobe(svg: SVGSVGElement) {
     lastY = e.clientY;
     lastT = performance.now();
     velocity = 0;
+    buzzed = false;
     svg.closest('.hero-globe')?.setAttribute('data-touched', '');
-    haptic.select();
   });
   svg.addEventListener('pointermove', (e) => {
     if (!dragging || e.pointerId !== pointerId) return;
@@ -204,6 +204,11 @@ function drawGlobe(svg: SVGSVGElement) {
     const k = 180 / (svg.getBoundingClientRect().width || size);
     const dx = (e.clientX - lastX) * k;
     const dy = (e.clientY - lastY) * k;
+    // Buzz once the globe actually turns (a vertical swipe that scrolls the page never gets here).
+    if (!buzzed && Math.abs(dx) > 0.5) {
+      buzzed = true;
+      haptic.select();
+    }
     const [l, p] = projection.rotate();
     projection.rotate([l + dx, Math.max(-60, Math.min(60, p - dy)), 0]);
     velocity = dx / Math.max(1, now - lastT);
@@ -275,11 +280,17 @@ function angularDistance([l1, p1]: [number, number], [l2, p2]: [number, number])
   const message = document.getElementById('ideas-message') as HTMLTextAreaElement;
   const email = document.getElementById('ideas-email') as HTMLInputElement;
   const opened = performance.now();
+  let sending = false;
+  class ServerSaid extends Error {}
   const say = (text: string, kind: '' | 'ok' | 'error' = '') => {
     status.textContent = text;
     status.classList.toggle('is-ok', kind === 'ok');
     status.classList.toggle('is-error', kind === 'error');
   };
+  // Once they start fixing what the error pointed at, clear it.
+  form.addEventListener('input', () => {
+    if (status.classList.contains('is-error')) say('');
+  });
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const text = message.value.trim();
@@ -293,7 +304,9 @@ function angularDistance([l1, p1]: [number, number], [l2, p2]: [number, number])
       email.focus();
       return;
     }
+    if (sending) return; // a second tap or Enter while the first send is in flight
     const data = new FormData(form);
+    sending = true;
     send.disabled = true;
     say('Sending…');
     try {
@@ -309,16 +322,19 @@ function angularDistance([l1, p1]: [number, number], [l2, p2]: [number, number])
           elapsed: Math.round(performance.now() - opened),
         }),
       });
-      const body = (await res.json().catch(() => ({}))) as { error?: string };
-      if (!res.ok) throw new Error(body.error || 'send failed');
+      const body = (await res.json().catch(() => ({}))) as { error?: unknown };
+      if (!res.ok) throw new ServerSaid(typeof body.error === 'string' ? body.error : '');
       form.reset();
       haptic.success();
       say('Thank you! Your recommendation is on its way.', 'ok');
     } catch (err) {
       haptic.error();
-      const msg = err instanceof Error && err.message !== 'send failed' && !/fetch/i.test(err.message) ? err.message : "Couldn't send right now. Please try again in a bit.";
+      // Only the server's own sentences are shown; browser network errors ("Failed to fetch",
+      // Safari's "Load failed", Firefox's "NetworkError…") get one friendly line instead.
+      const msg = err instanceof ServerSaid && err.message ? err.message : "Couldn't send right now. Please try again in a bit.";
       say(msg, 'error');
     } finally {
+      sending = false;
       send.disabled = false;
     }
   });

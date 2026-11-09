@@ -23,6 +23,8 @@ const easeOutQuart = (t: number) => 1 - (1 - t) ** 4;
 const easeInQuad = (t: number) => t * t;
 const clamp01 = (t: number) => Math.max(0, Math.min(1, t));
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
+/** Any angle as the equivalent in [-180, 180): the short way round, even for negative or large inputs. */
+const wrap180 = (deg: number) => ((((deg + 180) % 360) + 360) % 360) - 180;
 /** Interpolate radius on a log scale so the zoom speed feels constant. */
 const zoomLerp = (a: number, b: number, t: number) => a * (b / a) ** t;
 
@@ -213,7 +215,7 @@ export function miniGlobe(container: HTMLElement) {
     const to: Rotation = [-target[0], Math.max(-55, Math.min(55, -target[1])), 0];
     const from = rot;
     // shortest way round
-    const dl = ((to[0] - from[0] + 540) % 360) - 180;
+    const dl = wrap180(to[0] - from[0]);
     const id = ++focusTween;
     if (reducedMotion()) {
       rot = to;
@@ -284,7 +286,7 @@ export async function arrive(mini: ReturnType<typeof miniGlobe>, container: HTML
   // Land exactly on whatever the mini globe is showing (it may itself be turning to a country),
   // with one extra full turn on the way out.
   const first = mini.rotation;
-  const offset = ((start[0] - first[0] + 540) % 360) - 180 - 360;
+  const offset = wrap180(start[0] - first[0]) - 360;
 
   L.svg.style.opacity = '0';
   let revealed = false;

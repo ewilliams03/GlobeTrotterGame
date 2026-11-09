@@ -72,16 +72,45 @@ const STATE_KEY = `mystery-passport:day:${todayKey}`;
 const FP = mysteries.map((m) => m.country).join();
 const STATS_KEY = 'mystery-passport:stats';
 
+const finished = (p: Passport) => p.solved || p.failed;
 const freshPassport = (): Passport => ({ opened: ['nature'], misses: [], hinted: false, solved: false, failed: false });
+/** Saved progress, checked piece by piece so a stale or tampered value can never crash the game. */
 function sanitize(s: State | null): State {
   const fresh: State = { passports: mysteries.map(freshPassport), cursor: 0, done: false, counted: false, fp: FP };
   // Progress saved for a different puzzle (e.g. after the puzzle bank changes) is discarded.
-  if (s && s.fp !== FP) return fresh;
-  if (!s || !Array.isArray(s.passports) || s.passports.length !== ROUNDS) return fresh;
-  const ok = s.passports.every((p) => Array.isArray(p.opened) && p.opened.every((t) => t in COSTS) && Array.isArray(p.misses) && p.misses.every((m) => m in WORLD));
+  if (!s || typeof s !== 'object' || s.fp !== FP) return fresh;
+  if (!Array.isArray(s.passports) || s.passports.length !== ROUNDS) return fresh;
+  const ok = s.passports.every(
+    (p) =>
+      !!p &&
+      typeof p === 'object' &&
+      Array.isArray(p.opened) &&
+      p.opened.every((t) => ORDER.includes(t)) &&
+      Array.isArray(p.misses) &&
+      p.misses.every((m) => typeof m === 'string' && m in WORLD),
+  );
   if (!ok) return fresh;
-  s.cursor = Math.min(Math.max(0, s.cursor | 0), ROUNDS - 1);
-  return s;
+  let hints = 0;
+  const passports = s.passports.map((p, i): Passport => {
+    const misses = [...new Set(p.misses)].filter((c) => c !== mysteries[i].country).slice(0, MAX_MISSES);
+    const solved = p.solved === true;
+    const hinted = p.hinted === true && hints < FREE_HINTS;
+    if (hinted) hints++;
+    return {
+      opened: [...new Set<ClueType>(['nature', ...p.opened])],
+      misses,
+      hinted,
+      solved,
+      failed: !solved && (p.failed === true || misses.length >= MAX_MISSES),
+    };
+  });
+  return {
+    passports,
+    fp: FP,
+    cursor: Math.min(Math.max(0, Number(s.cursor) | 0), ROUNDS - 1),
+    done: s.done === true && passports.every(finished),
+    counted: s.counted === true,
+  };
 }
 const state = sanitize(load<State | null>(STATE_KEY, null));
 const persist = () => save(STATE_KEY, state);
@@ -89,7 +118,6 @@ const hintsUsed = () => state.passports.filter((p) => p.hinted).length;
 const worth = (p: Passport) =>
   p.failed ? 0 : Math.max(0, START - p.opened.reduce((n, t) => n + COSTS[t], 0) - p.misses.length * MISS_COST);
 const score = () => state.passports.reduce((n, p) => n + (p.solved ? worth(p) : 0), 0);
-const finished = (p: Passport) => p.solved || p.failed;
 
 /* ---------- Elements ---------- */
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -211,7 +239,7 @@ function renderMisses() {
 }
 
 function renderHint() {
-  const left = FREE_HINTS - hintsUsed();
+  const left = Math.max(0, FREE_HINTS - hintsUsed());
   $('hint-count').textContent = String(left);
   hintBtn.setAttribute('aria-label', `Use a hint. ${left} of ${FREE_HINTS} left.`);
   const p = state.passports[state.cursor];
@@ -239,7 +267,12 @@ function renderCard(fresh?: ClueType) {
   $('guess-area').hidden = over;
   $('after').hidden = !over;
   if (over) renderReveal();
-  else if (!statusEl.textContent) statusEl.textContent = 'Unlock stamps for clues, then guess the country.';
+  else if (!statusEl.textContent) {
+    const left = MAX_MISSES - p.misses.length;
+    statusEl.textContent = p.misses.length
+      ? `${left} ${left === 1 ? 'guess' : 'guesses'} left.`
+      : 'Unlock stamps for clues, then guess the country.';
+  }
   renderTrip();
   syncMini();
 }
@@ -290,31 +323,35 @@ function syncMini() {
 }
 
 /* ---------- Autocomplete (all 194 countries, so the list never hints at the answer) ---------- */
-const ENTRIES = Object.entries(WORLD).map(([code, w]) => ({
-  code,
-  name: w.name,
-  keys: [w.name, ...(w.aka ?? [])].map(normalise),
-}));
+// "&" reads as "and" (Trinidad & Tobago); the compact form ignores spaces and dots (U.S.A., U.K.).
+const norm = (s: string) => normalise(s.replace(/&/g, ' and '));
+const compact = (s: string) => s.replace(/ /g, '');
+const ENTRIES = Object.entries(WORLD).map(([code, w]) => {
+  const keys = [w.name, ...(w.aka ?? [])].map(norm);
+  return { code, name: w.name, keys, compact: keys.map(compact) };
+});
+const isExact = (e: (typeof ENTRIES)[number], q: string) => e.keys.includes(q) || e.compact.includes(compact(q));
 let matches: typeof ENTRIES = [];
 let active = -1;
 let navigated = false; // true once the player picks a suggestion with the arrow keys
 
 function suggest() {
-  const q = normalise(input.value);
+  const q = norm(input.value);
   const p = state.passports[state.cursor];
   if (!q) {
     closeList();
     return;
   }
   matches = findMatches(q, p.misses);
-  active = matches.length ? 0 : -1;
+  // Only highlight a suggestion when Enter would actually pick it (a single match).
+  active = matches.length === 1 ? 0 : -1;
   navigated = false;
   drawList();
 }
 
 function findMatches(q: string, misses: string[]) {
   return ENTRIES.filter((e) => !misses.includes(e.code))
-    .map((e) => ({ e, rank: Math.min(...e.keys.map((k) => (k === q ? -1 : k.startsWith(q) ? 0 : k.split(' ').some((w) => w.startsWith(q)) ? 1 : k.includes(q) ? 2 : 9))) }))
+    .map((e) => ({ e, rank: isExact(e, q) ? -1 : Math.min(...e.keys.map((k) => (k.startsWith(q) ? 0 : k.split(' ').some((w) => w.startsWith(q)) ? 1 : k.includes(q) ? 2 : 9))) }))
     .filter((x) => x.rank < 9)
     .sort((a, b) => a.rank - b.rank || a.e.name.localeCompare(b.e.name))
     .slice(0, 6)
@@ -340,6 +377,7 @@ function drawList() {
   listEl.hidden = false;
   input.setAttribute('aria-expanded', 'true');
   if (active >= 0) input.setAttribute('aria-activedescendant', `opt-${matches[active].code}`);
+  else input.removeAttribute('aria-activedescendant');
 }
 
 function closeList() {
@@ -351,9 +389,9 @@ function closeList() {
 }
 
 function resolveGuess(): string | null {
-  const q = normalise(input.value);
+  const q = norm(input.value);
   // An exact name or alias always wins ("UK" is the United Kingdom, not Ukraine).
-  const exact = ENTRIES.find((e) => e.keys.includes(q));
+  const exact = q ? ENTRIES.find((e) => isExact(e, q)) : undefined;
   if (exact) return exact.code;
   // Otherwise only guess a suggestion the player chose, or the single remaining match,
   // so a half-typed name never spends a guess by accident.
@@ -368,7 +406,7 @@ function resolveGuess(): string | null {
 }
 
 /* ---------- Actions ---------- */
-function unlock(type: ClueType) {
+function unlock(type: ClueType, viaKeyboard = false) {
   const p = state.passports[state.cursor];
   if (busy || finished(p) || p.opened.includes(type)) return;
   haptic.tap();
@@ -376,7 +414,11 @@ function unlock(type: ClueType) {
   persist();
   statusEl.textContent = `${LABEL[type]} stamp unlocked: −${COSTS[type]} points.`;
   renderCard(type);
-  (stampsEl.querySelector<HTMLElement>('button.is-locked:not(:disabled)') ?? input).focus({ preventScroll: true });
+  // The pressed stamp was re-rendered, so put focus somewhere sensible. Only jump to the text box
+  // for keyboard users: on a phone that would pop the keyboard up over the clue just revealed.
+  const nextStamp = stampsEl.querySelector<HTMLElement>('button.is-locked:not(:disabled)');
+  if (nextStamp) nextStamp.focus({ preventScroll: true });
+  else if (viaKeyboard) input.focus({ preventScroll: true });
 }
 
 function guess() {
@@ -386,9 +428,19 @@ function guess() {
   const code = resolveGuess();
   if (code) closeList();
   if (!code) {
-    const typed = normalise(input.value);
+    const typed = norm(input.value);
     const some = matches.length || (typed && findMatches(typed, p.misses).length);
-    statusEl.textContent = !input.value.trim() ? 'Type a country first.' : some ? 'Pick a country from the list, or type its full name.' : "That isn't a country we know.";
+    // Typed text that only fits countries already guessed wrongly ("bol" after Bolivia).
+    const tried = !some && typed ? findMatches(typed, []) : [];
+    statusEl.textContent = !typed
+      ? 'Type a country first.'
+      : some
+        ? 'Pick a country from the list, or type its full name.'
+        : tried.length === 1
+          ? `You already tried ${nameOf(tried[0].code)}.`
+          : tried.length
+            ? 'You already tried those. Try another country.'
+            : "That isn't a country we know.";
     haptic.error();
     return;
   }
@@ -428,6 +480,12 @@ function useHint() {
   p.hinted = true;
   persist();
   renderHint();
+  const left = FREE_HINTS - hintsUsed();
+  // The hint itself is on screen above the stamps; screen readers hear it here too.
+  const spoken = document.createElement('span');
+  spoken.className = 'visually-hidden';
+  spoken.textContent = `${$('hint-line').textContent} `;
+  statusEl.replaceChildren(spoken, `Hint used. ${left ? `${left} ${left === 1 ? 'hint' : 'hints'} left today.` : 'That was your last hint today.'}`);
 }
 
 async function next() {
@@ -554,17 +612,24 @@ function render() {
 /* ---------- Events ---------- */
 stampsEl.addEventListener('click', (e) => {
   const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('button.stamp-slot');
-  if (btn && !btn.disabled) unlock(btn.dataset.type as ClueType);
+  if (btn && !btn.disabled) unlock(btn.dataset.type as ClueType, e.detail === 0);
 });
 input.addEventListener('input', suggest);
 input.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
     if (!matches.length) return;
     e.preventDefault();
-    active = (active + (e.key === 'ArrowDown' ? 1 : -1) + matches.length) % matches.length;
+    active =
+      active < 0
+        ? e.key === 'ArrowDown'
+          ? 0
+          : matches.length - 1
+        : (active + (e.key === 'ArrowDown' ? 1 : -1) + matches.length) % matches.length;
     navigated = true;
     drawList();
   } else if (e.key === 'Enter') {
+    // Enter that confirms an accent or IME composition is not a guess.
+    if (e.isComposing || e.keyCode === 229) return;
     e.preventDefault();
     guess();
   } else if (e.key === 'Escape') {
@@ -586,12 +651,15 @@ listEl.addEventListener('click', (e) => {
 guessBtn.addEventListener('click', () => guess());
 hintBtn.addEventListener('click', useHint);
 $('next').addEventListener('click', () => void next());
+let msgTimer = 0;
 $('share').addEventListener('click', async () => {
   haptic.tap();
   const res = await shareText(shareString());
   const msg = $('result-msg');
   msg.textContent = res === 'copied' ? 'Result copied. Paste it anywhere.' : res === 'failed' ? "Couldn't share from this browser." : '';
-  setTimeout(() => (msg.textContent = ''), 2600);
+  // One timer, so a second tap doesn't have its message wiped early by the first tap's timer.
+  clearTimeout(msgTimer);
+  msgTimer = window.setTimeout(() => (msg.textContent = ''), 2600);
 });
 
 /* ---------- Boot ---------- */

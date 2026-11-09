@@ -71,10 +71,25 @@ const STATS_KEY = 'fact-or-fib:stats';
 function sanitize(s: State | null): State {
   const fresh: State = { answers: [], cursor: 0, ruledOut: {}, done: false, counted: false, fp: FP };
   // Progress saved for a different puzzle (e.g. after the puzzle bank changes) is discarded.
-  if (s && s.fp !== FP) return fresh;
-  if (!s || !Array.isArray(s.answers) || s.answers.length > ROUNDS || typeof s.ruledOut !== 'object' || s.ruledOut === null) return fresh;
-  if (s.answers.some((a) => !(a.pick >= 0 && a.pick < 3) || !(a.bet in POINTS))) return fresh;
-  s.cursor = Math.min(Math.max(0, s.cursor | 0), ROUNDS - 1, s.answers.length);
+  if (!s || typeof s !== 'object' || s.fp !== FP) return fresh;
+  if (!Array.isArray(s.answers) || s.answers.length > ROUNDS || typeof s.ruledOut !== 'object' || s.ruledOut === null) return fresh;
+  if (s.answers.some((a) => !a || typeof a !== 'object' || !Number.isInteger(a.pick) || a.pick < 0 || a.pick > 2 || (a.bet !== 'sure' && a.bet !== 'hunch'))) return fresh;
+  // Never trust stored scores: work them out again from the pick and the bet.
+  s.answers = s.answers.map((a, i) => {
+    const correct = a.pick === fibIndex(i);
+    return { pick: a.pick, bet: a.bet, correct, points: POINTS[a.bet][correct ? 0 : 1] };
+  });
+  // Hints only ever rule out a true statement, at most three times a day.
+  const ruledOut: Record<number, number> = {};
+  for (const [k, v] of Object.entries(s.ruledOut)) {
+    const round = Number(k);
+    if (Object.keys(ruledOut).length >= FREE_HINTS) break;
+    if (Number.isInteger(round) && round >= 0 && round < ROUNDS && Number.isInteger(v) && v >= 0 && v < 3 && v !== fibIndex(round)) ruledOut[round] = v;
+  }
+  s.ruledOut = ruledOut;
+  s.done = s.done === true && s.answers.length === ROUNDS;
+  s.counted = s.counted === true;
+  s.cursor = Math.min(Math.max(0, Number(s.cursor) | 0), ROUNDS - 1, s.answers.length);
   return s;
 }
 const state = sanitize(load<State | null>(STATE_KEY, null));
@@ -188,16 +203,18 @@ function renderCard() {
         src.target = '_blank';
         src.rel = 'noopener noreferrer';
         src.textContent = 'Source';
-        body.append(document.createElement('br'), src);
+        src.setAttribute('aria-label', `Source for statement ${'ABC'[idx]}`);
+        body.append(src);
         const stamp = document.createElement('span');
         stamp.className = 'stamp';
         stamp.textContent = s.fib ? 'Fib' : 'Fact';
         btn.append(stamp);
         if (idx === answer.pick) {
+          btn.classList.add('is-mine');
           const mine = document.createElement('span');
-          mine.className = 'visually-hidden';
-          mine.textContent = ' (your pick)';
-          body.append(mine);
+          mine.className = 'claim-mine';
+          mine.textContent = 'Your pick';
+          body.prepend(mine);
         }
       } else if (ruled === idx) {
         btn.disabled = true;
@@ -260,7 +277,17 @@ function choose(idx: number) {
   claimsEl.querySelectorAll<HTMLButtonElement>('.claim').forEach((b) => {
     if (!b.disabled) b.setAttribute('aria-pressed', String(Number(b.dataset.idx) === pick));
   });
+  const wasHidden = betEl.hidden;
   betEl.hidden = pick === null;
+  if (wasHidden && !betEl.hidden) revealAboveTabbar(betEl);
+}
+
+/** On a phone the bet buttons can land under the bottom tab bar; nudge them into view. */
+function revealAboveTabbar(el: HTMLElement) {
+  const bar = document.querySelector<HTMLElement>('.tabbar');
+  const barTop = bar && getComputedStyle(bar).display !== 'none' ? bar.getBoundingClientRect().top : window.innerHeight;
+  const overflow = el.getBoundingClientRect().bottom - (barTop - 12);
+  if (overflow > 0) window.scrollBy({ top: overflow, behavior: reducedMotion() ? 'auto' : 'smooth' });
 }
 
 function answer(bet: Bet) {
@@ -318,8 +345,11 @@ function useHint() {
   const out = trues[Math.floor(seededRandom(today * 31 + i)() * trues.length)];
   state.ruledOut[i] = out;
   if (pick === out) pick = null;
+  const hadFocus = document.activeElement === hintBtn;
   persist();
   renderCard();
+  // The hint button is disabled now; move keyboard focus to the first statement still in play.
+  if (hadFocus) claimsEl.querySelector<HTMLButtonElement>('.claim:not(:disabled)')?.focus();
 }
 
 function finish() {
@@ -384,14 +414,15 @@ function renderResult() {
       name.textContent = nameOf(r.country);
       const lie = document.createElement('p');
       lie.className = 'recap-fib';
-      lie.textContent = fib.text;
+      lie.append(hidden('The fib: '), fib.text);
       const truth = document.createElement('p');
-      truth.textContent = fib.truth ?? '';
+      if (fib.truth) truth.append(hidden('The truth: '), fib.truth);
       const src = document.createElement('a');
       src.href = fib.sourceUrl;
       src.target = '_blank';
       src.rel = 'noopener noreferrer';
       src.textContent = 'Source';
+      src.setAttribute('aria-label', `Source for the ${nameOf(r.country)} fib`);
       body.append(name, lie, truth, src);
       const pts = document.createElement('span');
       pts.className = 'pts';
@@ -404,8 +435,17 @@ function renderResult() {
   startCountdown();
 }
 
+/** Text only screen readers hear (the strikethrough and colours carry it visually). */
+function hidden(text: string) {
+  const span = document.createElement('span');
+  span.className = 'visually-hidden';
+  span.textContent = text;
+  return span;
+}
+
 function shareString(): string {
-  const dots = state.answers.map((a) => (a.correct ? (a.bet === 'sure' ? '🟢' : '🔵') : a.bet === 'sure' ? '🔴' : '⚪')).join('');
+  // Plain text marks, not emoji: a tick or cross per country, with the points that bet earned.
+  const dots = state.answers.map((a) => `${a.correct ? '✓' : '✗'}${a.points > 0 ? '+' : a.points < 0 ? '−' : ''}${Math.abs(a.points)}`).join(' ');
   const hints = hintsUsed() ? `\n${hintsUsed()} ${hintsUsed() === 1 ? 'hint' : 'hints'} used` : '';
   return `Fact or Fib No. ${puzzleNo} · ${score()}/10\n${dots}${hints}\n${location.origin}/games/fact-or-fib`;
 }
@@ -444,18 +484,21 @@ betEl.addEventListener('click', (e) => {
 });
 nextBtn.addEventListener('click', () => void next());
 hintBtn.addEventListener('click', useHint);
+let shareMsgTimer = 0;
 $('share').addEventListener('click', async () => {
   haptic.tap();
   const res = await shareText(shareString());
   const msg = $('result-msg');
   msg.textContent = res === 'copied' ? 'Result copied. Paste it anywhere.' : res === 'failed' ? "Couldn't share from this browser." : '';
-  setTimeout(() => (msg.textContent = ''), 2600);
+  clearTimeout(shareMsgTimer);
+  shareMsgTimer = window.setTimeout(() => (msg.textContent = ''), 2600);
 });
 // Keyboard: A/B/C or 1/2/3 to pick a statement.
 card.addEventListener('keydown', (e) => {
   // Shortcuts only while focus is inside the game card (WCAG 2.1.4: no page-wide single-key shortcuts).
   if (e.metaKey || e.ctrlKey || e.altKey || (e.target as HTMLElement).closest('input, textarea, a')) return;
-  const idx = 'abc'.indexOf(e.key.toLowerCase()) >= 0 ? 'abc'.indexOf(e.key.toLowerCase()) : '123'.indexOf(e.key);
+  const key = e.key.length === 1 ? e.key.toLowerCase() : '';
+  const idx = key ? Math.max('abc'.indexOf(key), '123'.indexOf(key)) : -1;
   if (idx >= 0 && !state.done) choose(idx);
 });
 

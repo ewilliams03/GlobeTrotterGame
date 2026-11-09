@@ -144,12 +144,19 @@ function buildOutlineDays(root) {
         const c = pool[Math.floor(next() * pool.length)];
         if (!codes.includes(c) && !decoys.includes(c)) decoys.push(c);
       }
-      const options = [code, ...decoys].sort(() => next() - 0.5);
+      // Fisher-Yates: a sort() with a random comparator left the answer in slot A far too often.
+      const options = [code, ...decoys];
+      for (let i = options.length - 1; i > 0; i--) {
+        const j = Math.floor(next() * (i + 1));
+        [options[i], options[j]] = [options[j], options[i]];
+      }
       return {
         code,
         name: names[code],
         target: shapeOf(code),
-        options: options.map((c) => ({ code: c, shape: c === code ? null : shapeOf(c, 2.5) })),
+        // The answer's choice is drawn at the same (coarser) detail as the decoys, so it can't be
+        // picked out as the one finely drawn outline.
+        options: options.map((c) => ({ code: c, shape: shapeOf(c, 2.5) })),
       };
     }),
   }));

@@ -456,7 +456,15 @@
   .score strong { font-size: 1.35rem; }
   /* Keep the title clear of the score that now sits in the corner. */
   .card-head { padding-right: 72px; }
-  .card-head h2 { font-size: clamp(1.55rem, 7.4vw, 2.1rem); overflow-wrap: anywhere; }
+  /* Names wrap only between words ("Bosnia and / Herzegovina"), never mid-word ("Belgiu / m"). */
+  .card-head h2 { font-size: clamp(1.55rem, 7.4vw, 2.1rem); overflow-wrap: break-word; hyphens: manual; }
+  /* With a flag: flag and eyebrow share the top row (beside the corner score) and the name gets
+     the full card width below. Same layout Outline Drop uses; browsers without :has() keep the above. */
+  .card-head:has(> .card-flag) { grid-template-columns: auto minmax(0, 1fr); padding-right: 0; gap: 10px 14px; }
+  .card-head:has(> .card-flag) > div { display: contents; }
+  .card-head:has(> .card-flag) > .card-flag { grid-row: 1; grid-column: 1; }
+  .card-head:has(> .card-flag) .eyebrow { grid-row: 1; grid-column: 2; padding-right: 52px; }
+  .card-head:has(> .card-flag) h2 { grid-row: 2; grid-column: 1 / -1; margin-top: 0; }
 }
 
 /* Status line and after-answer row shared by Rank the World and Mystery Passport */
@@ -517,6 +525,22 @@
   margin-top: 4px;
   font-size: 0.82rem;
   color: var(--ink-2);
+  /* Items wrap as whole units. Each carries its "·" in the gap on its left; the first item of
+     every line has its dot pulled into a strip that is clipped away, so no line starts or ends with one. */
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline-start: -1.1em;
+  clip-path: inset(0 0 0 1.1em);
+}
+.grade-scale span {
+  position: relative;
+  white-space: nowrap;
+  padding-inline-start: 1.1em;
+}
+.grade-scale span::before {
+  content: '·';
+  position: absolute;
+  left: 0.4em;
 }
 @keyframes grade-stamp {
   0% { opacity: 0; transform: rotate(-4deg) scale(1.5); }

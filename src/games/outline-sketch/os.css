@@ -1,5 +1,21 @@
 .os-head { grid-template-columns: auto minmax(0, 1fr) auto; }
 .os-head h2 { letter-spacing: -0.045em; }
+.os-head .card-flag {
+  width: clamp(56px, 12vw, 72px);
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px oklch(23% 0.035 265 / 0.12);
+}
+/* Phones: the flag and "Country 1 of 3" share the top row and the name gets the full width below,
+   so names like Belgium or Turkmenistan aren't squeezed beside the flag and broken mid-word. */
+@media (max-width: 520px) {
+  .os-head { grid-template-columns: auto minmax(0, 1fr); padding-right: 0; gap: 10px 14px; }
+  .os-head > div { display: contents; }
+  .os-head .card-flag { grid-row: 1; grid-column: 1; }
+  .os-head .eyebrow { grid-row: 1; grid-column: 2; padding-right: 52px; }
+  .os-head h2 { grid-row: 2; grid-column: 1 / -1; margin-top: 0; overflow-wrap: break-word; }
+}
 
 .od-step {
   margin-top: 18px;
@@ -80,6 +96,8 @@
   user-select: none;
   -webkit-user-select: none;
 }
+.od-map:focus { outline: none; }
+.od-map:focus-visible { outline: 3px solid var(--signal); outline-offset: -3px; }
 .od-sea { fill: oklch(92% 0.03 230); }
 .od-land { fill: var(--paper-3); stroke: color-mix(in oklch, var(--ink) 18%, transparent); stroke-width: 0.5; }
 .od-guess {

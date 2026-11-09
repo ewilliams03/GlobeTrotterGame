@@ -73,6 +73,8 @@ const valueOf = (i: number, c: string) => {
 const correctOrder = (i: number) =>
   [...rounds[i].countries].sort((a, b) => (statOf(i).direction === 'desc' ? valueOf(i, b) - valueOf(i, a) : valueOf(i, a) - valueOf(i, b)));
 
+const pointsFor = (userIdx: number, trueIdx: number): number => (userIdx === trueIdx ? 2 : Math.abs(userIdx - trueIdx) === 1 ? 1 : 0);
+
 function startingOrder(i: number): string[] {
   const order = shuffle(rounds[i].countries, seededRandom(today * 389 + i * 61 + 3));
   return order.join() === correctOrder(i).join() ? order.reverse() : order;
@@ -81,16 +83,43 @@ function startingOrder(i: number): string[] {
 const STATE_KEY = `rank-the-world:day:${todayKey}`;
 const STATS_KEY = 'rank-the-world:stats';
 
+/** Saved progress, checked piece by piece so a stale or tampered value can never crash the game. */
 function sanitize(s: State | null): State {
   const fresh: State = { orders: rounds.map((_, i) => startingOrder(i)), pins: {}, answers: [], cursor: 0, done: false, counted: false };
-  if (!s || !Array.isArray(s.orders) || !Array.isArray(s.answers) || typeof s.pins !== 'object' || !s.pins) return fresh;
-  const valid = rounds.every((r, i) => {
-    const o = s.orders[i];
-    return Array.isArray(o) && o.length === SIZE && [...o].sort().join() === [...r.countries].sort().join();
+  if (!s || typeof s !== 'object' || !Array.isArray(s.orders) || !Array.isArray(s.answers) || typeof s.pins !== 'object' || !s.pins) return fresh;
+  const isRound = (o: unknown, i: number) =>
+    Array.isArray(o) && o.length === SIZE && [...o].sort().join() === [...rounds[i].countries].sort().join();
+  if (!rounds.every((_, i) => isRound(s.orders[i], i)) || s.answers.length > ROUNDS) return fresh;
+  // Answers must be a full ordering of their round; points are recomputed from it.
+  const answers: Answer[] = [];
+  for (const [i, a] of s.answers.entries()) {
+    if (!a || !isRound(a.order, i)) break;
+    const truth = correctOrder(i);
+    answers.push({ order: [...a.order], points: a.order.map((c, idx) => pointsFor(idx, truth.indexOf(c))) });
+  }
+  // Pins: real countries of that round, at most the day's free hints in total.
+  const pins: Record<number, string[]> = {};
+  let budget = FREE_HINTS;
+  rounds.forEach((r, i) => {
+    const p = (s.pins as Record<string, unknown>)[i];
+    if (!Array.isArray(p)) return;
+    const ok = [...new Set(p)].filter((c): c is string => typeof c === 'string' && r.countries.includes(c)).slice(0, budget);
+    budget -= ok.length;
+    if (ok.length) pins[i] = ok;
   });
-  if (!valid || s.answers.length > ROUNDS) return fresh;
-  s.cursor = Math.min(Math.max(0, s.cursor | 0), ROUNDS - 1, s.answers.length);
-  return s;
+  const out: State = {
+    orders: s.orders.slice(0, ROUNDS).map((o) => [...o]),
+    pins,
+    answers,
+    cursor: Math.min(Math.max(0, Number(s.cursor) | 0), ROUNDS - 1, answers.length),
+    done: s.done === true && answers.length === ROUNDS,
+    counted: s.counted === true,
+  };
+  // Keep every pinned country in its true slot, whatever the saved order says.
+  rounds.forEach((_, i) => {
+    if (!answers[i] && pins[i]) out.orders[i] = arrangeWith(pins[i], i, out.orders[i], null, 0);
+  });
+  return out;
 }
 const state = sanitize(load<State | null>(STATE_KEY, null));
 const persist = () => save(STATE_KEY, state);
@@ -99,7 +128,10 @@ const score = () => state.answers.reduce((n, a) => n + a.points.reduce((x, y) =>
 
 /* ---------- Ordering with pinned countries ---------- */
 function arrange(i: number, order: string[], moving: string | null, toIndex: number): string[] {
-  const pinned = new Set(state.pins[i] ?? []);
+  return arrangeWith(state.pins[i] ?? [], i, order, moving, toIndex);
+}
+function arrangeWith(pins: string[], i: number, order: string[], moving: string | null, toIndex: number): string[] {
+  const pinned = new Set(pins);
   const truth = correctOrder(i);
   const pinnedSlots = new Set([...pinned].map((c) => truth.indexOf(c)));
   const freeSlots = [...Array(SIZE).keys()].filter((k) => !pinnedSlots.has(k));
@@ -146,7 +178,6 @@ function formatValue(i: number, c: string): string {
   return String(v);
 }
 const ordinal = (n: number) => `${n}${['th', 'st', 'nd', 'rd'][n % 100 > 10 && n % 100 < 14 ? 0 : Math.min(n % 10, 4) % 4] ?? 'th'}`;
-const pointsFor = (userIdx: number, trueIdx: number): number => (userIdx === trueIdx ? 2 : Math.abs(userIdx - trueIdx) === 1 ? 1 : 0);
 
 /* ---------- Rendering ---------- */
 function rowEl(c: string): HTMLLIElement {
@@ -203,7 +234,14 @@ function syncRows() {
   const pins = new Set(state.pins[i] ?? []);
   const s = statOf(i);
   const rows = [...list.querySelectorAll<HTMLLIElement>('.rank')];
-  const maxAbs = Math.max(...rounds[i].countries.map((c) => Math.abs(valueOf(i, c))));
+  // Bar length: the first-ranked country gets the longest bar. Latitudes (which can be north or
+  // south) are scaled across the round's range; every other stat by its size.
+  const vals = rounds[i].countries.map((c) => valueOf(i, c));
+  const lo = Math.min(...vals);
+  const hi = Math.max(...vals);
+  const maxAbs = Math.max(...vals.map(Math.abs)) || 1;
+  const barFill = (v: number) =>
+    s.computed === 'lat' ? (hi === lo ? 1 : s.direction === 'desc' ? (v - lo) / (hi - lo) : (hi - v) / (hi - lo)) : Math.abs(v) / maxAbs;
   rows.forEach((li, idx) => {
     const c = li.dataset.code!;
     (li.querySelector('.rank-pos') as HTMLElement).textContent = String(idx + 1);
@@ -233,7 +271,7 @@ function syncRows() {
         const bar = document.createElement('span');
         bar.className = 'rank-bar';
         li.append(bar);
-        const fill = Math.max(0.04, Math.abs(valueOf(i, c)) / maxAbs);
+        const fill = Math.max(0.04, barFill(valueOf(i, c)));
         requestAnimationFrame(() => requestAnimationFrame(() => bar.style.setProperty('--fill', fill.toFixed(3))));
       }
       li.setAttribute('aria-label', `${idx + 1}. ${nameOf(c)}, ${detail.textContent}. You placed it ${ordinal(userIdx + 1)}, ${pts} points.`);
@@ -389,7 +427,11 @@ list.addEventListener('pointerdown', (e) => {
   if (e.button !== 0) return;
   e.preventDefault();
   drag = { li, code: li.dataset.code!, id: e.pointerId, grab: e.clientY - li.getBoundingClientRect().top };
-  li.setPointerCapture(e.pointerId);
+  try {
+    li.setPointerCapture(e.pointerId);
+  } catch {
+    /* the pointer is already gone; the window listeners still end the drag */
+  }
   li.classList.add('is-dragging');
   li.style.transform = 'translateY(0px) scale(1.02)';
   haptic.select();
@@ -398,20 +440,58 @@ list.addEventListener('pointerdown', (e) => {
 window.addEventListener('pointermove', (e) => {
   if (!drag || e.pointerId !== drag.id) return;
   if (busy || state.done || state.answers[state.cursor]) return cancelDrag();
+  dragY = e.clientY;
+  dragTo(dragY);
+  if (!scrollTimer) scrollTimer = window.setTimeout(autoScroll, 16);
+});
+
+let dragY = 0;
+let scrollTimer = 0;
+/** Follow the pointer: reorder around the dragged row and keep it under the finger or cursor. */
+function dragTo(clientY: number) {
+  if (!drag) return;
   const rows = [...list.querySelectorAll<HTMLLIElement>('.rank')];
   const listTop = list.getBoundingClientRect().top;
   const h = drag.li.offsetHeight;
-  const centre = e.clientY - drag.grab + h / 2 - listTop;
+  const centre = clientY - drag.grab + h / 2 - listTop;
   // Target slot = how many other rows' midpoints sit above the dragged row's centre.
   let target = 0;
   rows.forEach((r) => {
     if (r !== drag!.li && r.offsetTop + r.offsetHeight / 2 < centre) target++;
   });
   const next = arrange(state.cursor, state.orders[state.cursor], drag.code, target);
-  if (applyOrder(next, drag.li)) haptic.select();
-  const offset = e.clientY - drag.grab - (listTop + drag.li.offsetTop);
+  if (applyOrder(next, drag.li)) {
+    haptic.select();
+    // Moving the row in the DOM drops its pointer capture; take it back so the drag keeps tracking.
+    try {
+      if (!drag.li.hasPointerCapture(drag.id)) drag.li.setPointerCapture(drag.id);
+    } catch {
+      /* pointer already released */
+    }
+  }
+  const offset = clientY - drag.grab - (listTop + drag.li.offsetTop);
   drag.li.style.transform = `translateY(${offset}px) scale(1.02)`;
-});
+}
+
+/**
+ * While a row is held near the top or bottom of the screen (under the sticky header or the phone
+ * tab bar), scroll the page so the rest of the list comes into reach. Stops at the list's ends.
+ */
+function autoScroll() {
+  scrollTimer = 0;
+  if (!drag) return;
+  const edge = 110;
+  const box = list.getBoundingClientRect();
+  let dy = 0;
+  if (dragY < edge && box.top < edge) dy = -Math.min(14, Math.ceil((edge - dragY) / 6));
+  else if (dragY > innerHeight - edge && box.bottom > innerHeight - edge) dy = Math.min(14, Math.ceil((dragY - (innerHeight - edge)) / 6));
+  if (!dy) return;
+  const before = window.scrollY;
+  window.scrollBy({ top: dy, behavior: 'instant' });
+  if (window.scrollY === before) return;
+  dragTo(dragY);
+  scrollTimer = window.setTimeout(autoScroll, 16);
+}
 
 /** Stop any drag in progress without animating (used when the round locks or moves on). */
 function cancelDrag() {
@@ -540,7 +620,7 @@ function useHint() {
   persist();
   renderHint();
   const left = FREE_HINTS - hintsUsed();
-  statusEl.textContent = `${nameOf(c)} is pinned in its right spot. ${left ? `${left} hint left today.` : 'That was your last hint today.'}`;
+  statusEl.textContent = `${nameOf(c)} is pinned in its right spot. ${left ? `${left} ${left === 1 ? 'hint' : 'hints'} left today.` : 'That was your last hint today.'}`;
 }
 
 function finish() {
@@ -625,7 +705,8 @@ function renderResult() {
 function shareString(): string {
   const lines = state.answers.map((a, i) => {
     const truth = correctOrder(i);
-    const dots = a.order.map((c, idx) => ['⚪', '🟡', '🟢'][pointsFor(idx, truth.indexOf(c))]).join('');
+    // Plain marks, not emoji: ● spot on, ◐ one place off, ○ further out.
+    const dots = a.order.map((c, idx) => ['○', '◐', '●'][pointsFor(idx, truth.indexOf(c))]).join('');
     return `${STAT_SHORT[rounds[i].stat] ?? ''} ${dots}`;
   });
   const hints = hintsUsed() ? [`${hintsUsed()} ${hintsUsed() === 1 ? 'hint' : 'hints'} used`] : [];
@@ -659,12 +740,15 @@ lockBtn.addEventListener('click', () => {
 });
 nextBtn.addEventListener('click', () => void next());
 hintBtn.addEventListener('click', useHint);
+let msgTimer = 0;
 $('share').addEventListener('click', async () => {
   haptic.tap();
   const res = await shareText(shareString());
   const msg = $('result-msg');
   msg.textContent = res === 'copied' ? 'Result copied. Paste it anywhere.' : res === 'failed' ? "Couldn't share from this browser." : '';
-  setTimeout(() => (msg.textContent = ''), 2600);
+  // One timer, so a second tap doesn't have its message wiped early by the first tap's timer.
+  clearTimeout(msgTimer);
+  msgTimer = window.setTimeout(() => (msg.textContent = ''), 2600);
 });
 
 /* ---------- Boot ---------- */
