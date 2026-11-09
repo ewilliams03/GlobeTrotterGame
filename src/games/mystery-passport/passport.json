@@ -680,6 +680,3366 @@
      "continent": "South America"
     }
    ]
+  },
+  {
+   "countries": [
+    {
+     "country": "fr",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Loire, its longest river, flows about 1,000 km to the Atlantic.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Loire"
+      },
+      {
+       "type": "food",
+       "text": "Coq au vin: chicken braised with wine.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Coq_au_vin"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Bonjour\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/bonjour"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "Mont-Saint-Michel, a tidal island crowned by an abbey.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mont-Saint-Michel"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Belgium.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "jp",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "It is made up of more than 14,000 islands.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Japan"
+      },
+      {
+       "type": "food",
+       "text": "Sushi: vinegared rice served with seafood.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sushi"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"こんにちは\" (konnichiwa) to say good day.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%E4%BB%8A%E6%97%A5%E3%81%AF"
+      },
+      {
+       "type": "currency",
+       "text": "The yen",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Japanese_yen"
+      },
+      {
+       "type": "landmark",
+       "text": "Himeji Castle, a brilliant white hilltop castle.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Himeji_Castle"
+      },
+      {
+       "type": "neighbour",
+       "text": "The Korea Strait lies between it and the Korean Peninsula.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Korea_Strait"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "br",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Pantanal, the largest tropical wetland in the world, lies mostly within it.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pantanal"
+      },
+      {
+       "type": "food",
+       "text": "Feijoada, a stew of black beans with pork and beef.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Feijoada_(Brazilian_dish)"
+      },
+      {
+       "type": "phrase",
+       "text": "People often say \"Oi\" to say hi.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/oi"
+      },
+      {
+       "type": "currency",
+       "text": "The real",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Brazilian_real"
+      },
+      {
+       "type": "landmark",
+       "text": "Christ the Redeemer, an Art Deco statue above a big harbour city.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Paraguay.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "South America"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "it",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Po, its longest river, flows east to the Adriatic Sea.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Po_(river)"
+      },
+      {
+       "type": "food",
+       "text": "Risotto: rice cooked slowly in broth.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Risotto"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Buongiorno\" for good morning.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/buongiorno"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "The Colosseum, an ancient amphitheatre.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Colosseum"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with San Marino.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "ke",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Lake Turkana, the largest permanent desert lake in the world, is here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Turkana"
+      },
+      {
+       "type": "food",
+       "text": "Nyama choma, grilled meat, is a much-loved dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Nyama_choma"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Jambo\" in Swahili to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/jambo"
+      },
+      {
+       "type": "currency",
+       "text": "The shilling",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kenyan_shilling"
+      },
+      {
+       "type": "landmark",
+       "text": "Fort Jesus, a 16th-century Portuguese fort in Mombasa.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Fort_Jesus"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Uganda.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    },
+    {
+     "country": "mx",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Cenotes, natural sinkholes filled with water, dot the Yucatán Peninsula.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cenote"
+      },
+      {
+       "type": "food",
+       "text": "Mole, a rich sauce often made with chilli peppers and chocolate.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mole_(sauce)"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"¿Qué onda?\" for what's up?",
+       "sourceUrl": "https://en.wiktionary.org/wiki/qu%C3%A9_onda"
+      },
+      {
+       "type": "currency",
+       "text": "The peso",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mexican_peso"
+      },
+      {
+       "type": "landmark",
+       "text": "Chichén Itzá, a Maya city with a great stepped pyramid.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Chichen_Itza"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Guatemala.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "North America"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "es",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Teide, a volcano on one of its Atlantic islands, is its highest peak.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Teide"
+      },
+      {
+       "type": "food",
+       "text": "Paella, a rice dish cooked in a wide, shallow pan.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Paella"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Hola\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/hola"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "The Sagrada Família, a huge unfinished basilica designed by Antoni Gaudí.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sagrada_Fam%C3%ADlia"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Portugal.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "th",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Phang Nga Bay, dotted with limestone cliffs, caves and islets.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Phang_Nga_Bay"
+      },
+      {
+       "type": "food",
+       "text": "Tom yum, a hot and sour soup.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tom_yum"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"สวัสดี\" (sawatdi) to greet each other.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%E0%B8%AA%E0%B8%A7%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B5"
+      },
+      {
+       "type": "currency",
+       "text": "The baht",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Thai_baht"
+      },
+      {
+       "type": "landmark",
+       "text": "Wat Arun, a Buddhist temple on the bank of the Chao Phraya River.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Wat_Arun"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Malaysia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "au",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Kati Thanda-Lake Eyre, a salt lake that is usually dry, holds its lowest natural point.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kati_Thanda%E2%80%93Lake_Eyre"
+      },
+      {
+       "type": "food",
+       "text": "Vegemite, a dark savoury spread made from yeast extract.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Vegemite"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"G'day\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/g%27day"
+      },
+      {
+       "type": "currency",
+       "text": "The dollar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Australian_dollar"
+      },
+      {
+       "type": "landmark",
+       "text": "An opera house with sail-like shells on a harbour.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sydney_Opera_House"
+      },
+      {
+       "type": "neighbour",
+       "text": "Papua New Guinea lies just across the Torres Strait.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Torres_Strait"
+      }
+     ],
+     "continent": "Oceania"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "de",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Black Forest, a large forested mountain range, is in its south-west.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Black_Forest"
+      },
+      {
+       "type": "food",
+       "text": "Sauerbraten, a roast of heavily marinated meat.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sauerbraten"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Guten Tag\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/guten_Tag"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "Neuschwanstein Castle, a 19th-century palace on a rugged hill.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Neuschwanstein_Castle"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Denmark.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "za",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Blyde River Canyon, one of the largest canyons on Earth, is here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Blyde_River_Canyon"
+      },
+      {
+       "type": "food",
+       "text": "Bobotie, spiced minced meat baked under an egg topping.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bobotie"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Howzit\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/howzit"
+      },
+      {
+       "type": "currency",
+       "text": "The rand",
+       "sourceUrl": "https://en.wikipedia.org/wiki/South_African_rand"
+      },
+      {
+       "type": "landmark",
+       "text": "Table Mountain, a flat-topped mountain overlooking a harbour city.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Table_Mountain"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Botswana.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    },
+    {
+     "country": "ca",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "It has the longest coastline of any country in the world.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Canada"
+      },
+      {
+       "type": "food",
+       "text": "Poutine: fries topped with cheese curds and gravy.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Poutine"
+      },
+      {
+       "type": "phrase",
+       "text": "People may greet you with \"Hello\" or \"Bonjour\".",
+       "sourceUrl": "https://en.wiktionary.org/wiki/bonjour"
+      },
+      {
+       "type": "currency",
+       "text": "The dollar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Canadian_dollar"
+      },
+      {
+       "type": "landmark",
+       "text": "The CN Tower, a very tall communications and observation tower.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/CN_Tower"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with the United States.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "North America"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "gb",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Ben Nevis, its highest mountain, rises to 1,345 metres.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ben_Nevis"
+      },
+      {
+       "type": "food",
+       "text": "Fish and chips: battered fish with fried potatoes.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Fish_and_chips"
+      },
+      {
+       "type": "phrase",
+       "text": "In one of its languages, people say \"Bore da\" for good morning.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/bore_da"
+      },
+      {
+       "type": "currency",
+       "text": "The pound sterling",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pound_sterling"
+      },
+      {
+       "type": "landmark",
+       "text": "Stonehenge, a prehistoric ring of standing stones.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Stonehenge"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Ireland.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "in",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Western Ghats, a mountain range along its west coast, is a biodiversity hotspot.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Western_Ghats"
+      },
+      {
+       "type": "food",
+       "text": "Dosa, a thin pancake made from a fermented batter of rice and black gram.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Dosa_(food)"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"नमस्ते\" (namaste) to greet each other.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87"
+      },
+      {
+       "type": "currency",
+       "text": "The rupee",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Indian_rupee"
+      },
+      {
+       "type": "landmark",
+       "text": "The Taj Mahal, a white marble mausoleum.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Taj_Mahal"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Bhutan.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "us",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Death Valley, one of the hottest places on Earth, is here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Death_Valley"
+      },
+      {
+       "type": "food",
+       "text": "Clam chowder, a creamy soup with clams.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Clam_chowder"
+      },
+      {
+       "type": "phrase",
+       "text": "In some regions people say \"Howdy\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/howdy"
+      },
+      {
+       "type": "currency",
+       "text": "The dollar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/United_States_dollar"
+      },
+      {
+       "type": "landmark",
+       "text": "The Golden Gate Bridge, a red suspension bridge across a strait.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Mexico.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "North America"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "nl",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "About a quarter of its land lies below sea level.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Netherlands"
+      },
+      {
+       "type": "food",
+       "text": "Stroopwafels, thin waffles with a syrup filling.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Stroopwafel"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Goedemorgen\" for good morning.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/goedemorgen"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "Kinderdijk, a group of 19 windmills beside the water.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kinderdijk"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Belgium.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "cn",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Yangtze, the longest river in Asia, flows across it.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Yangtze"
+      },
+      {
+       "type": "food",
+       "text": "Mapo tofu: tofu in a spicy sauce of chilli and fermented beans.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mapo_tofu"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"你好\" (nǐ hǎo) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%E4%BD%A0%E5%A5%BD"
+      },
+      {
+       "type": "currency",
+       "text": "The renminbi (yuan)",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Renminbi"
+      },
+      {
+       "type": "landmark",
+       "text": "The Terracotta Army, thousands of clay soldiers buried with an emperor.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Terracotta_Army"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Mongolia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "co",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Caño Cristales is nicknamed the \"River of Five Colours\".",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ca%C3%B1o_Cristales"
+      },
+      {
+       "type": "food",
+       "text": "Bandeja paisa, a platter of beans, rice, meat, egg and plantain.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bandeja_paisa"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"¿Quiubo?\" for what's up?",
+       "sourceUrl": "https://en.wiktionary.org/wiki/quiubo"
+      },
+      {
+       "type": "currency",
+       "text": "The peso",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Colombian_peso"
+      },
+      {
+       "type": "landmark",
+       "text": "Las Lajas Sanctuary, a basilica built inside a river canyon.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Las_Lajas_Sanctuary"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Ecuador.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "South America"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "se",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Kebnekaise, its highest mountain, lies north of the Arctic Circle.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kebnekaise"
+      },
+      {
+       "type": "food",
+       "text": "Meatballs served with lingonberry jam and mashed potatoes.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Swedish_meatballs"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Hej\" to say hi.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/hej"
+      },
+      {
+       "type": "currency",
+       "text": "The krona",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Swedish_krona"
+      },
+      {
+       "type": "landmark",
+       "text": "The Vasa, a warship that sank in 1628, was raised in 1961 and is now in a museum.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Vasa_(ship)"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Finland.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "tr",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Cappadocia, famous for its \"fairy chimney\" rock formations.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cappadocia"
+      },
+      {
+       "type": "food",
+       "text": "Simit, a ring of bread crusted with sesame seeds.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Simit"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Merhaba\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/merhaba"
+      },
+      {
+       "type": "currency",
+       "text": "The lira",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Turkish_lira"
+      },
+      {
+       "type": "landmark",
+       "text": "Hagia Sophia, a vast domed building completed in AD 537.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Hagia_Sophia"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Bulgaria.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "nz",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Aoraki / Mount Cook, its highest mountain, rises to 3,724 metres.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Aoraki_/_Mount_Cook"
+      },
+      {
+       "type": "food",
+       "text": "Hāngī, food cooked in an earth oven.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/H%C4%81ng%C4%AB"
+      },
+      {
+       "type": "phrase",
+       "text": "In te reo Māori, people say \"Kia ora\" to greet each other.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/kia_ora"
+      },
+      {
+       "type": "currency",
+       "text": "The dollar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/New_Zealand_dollar"
+      },
+      {
+       "type": "landmark",
+       "text": "The Sky Tower, one of the tallest free-standing structures in the Southern Hemisphere.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sky_Tower_(Auckland)"
+      },
+      {
+       "type": "neighbour",
+       "text": "The Tasman Sea separates it from Australia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tasman_Sea"
+      }
+     ],
+     "continent": "Oceania"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "no",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Jostedalsbreen, the largest glacier in continental Europe, is here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Jostedalsbreen"
+      },
+      {
+       "type": "food",
+       "text": "Brunost, a sweet brown cheese.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Brunost"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Hei\" to say hi.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/hei"
+      },
+      {
+       "type": "currency",
+       "text": "The krone",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Norwegian_krone"
+      },
+      {
+       "type": "landmark",
+       "text": "Preikestolen (Pulpit Rock), a cliff-top plateau high above a fjord.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Preikestolen"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Sweden.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "ph",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "It is an archipelago of more than 7,000 islands.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Philippines"
+      },
+      {
+       "type": "food",
+       "text": "Adobo: meat simmered in vinegar and soy sauce.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Philippine_adobo"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Kumusta\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/kumusta"
+      },
+      {
+       "type": "currency",
+       "text": "The peso",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Philippine_peso"
+      },
+      {
+       "type": "landmark",
+       "text": "The Chocolate Hills, more than a thousand grassy mounds.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Chocolate_Hills"
+      },
+      {
+       "type": "neighbour",
+       "text": "It has no land borders at all.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "tz",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Lake Tanganyika, the second-deepest lake in the world, lies on its western edge.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Tanganyika"
+      },
+      {
+       "type": "food",
+       "text": "Pilau, seasoned rice, is often cooked with chicken.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tanzanian_cuisine"
+      },
+      {
+       "type": "phrase",
+       "text": "Younger people greet their elders with \"Shikamoo\".",
+       "sourceUrl": "https://en.wiktionary.org/wiki/shikamoo"
+      },
+      {
+       "type": "currency",
+       "text": "The shilling",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tanzanian_shilling"
+      },
+      {
+       "type": "landmark",
+       "text": "Stone Town, the old trading quarter of Zanzibar City.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Stone_Town"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Mozambique.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "at",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Grossglockner, its highest mountain, rises to 3,798 metres.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Grossglockner"
+      },
+      {
+       "type": "food",
+       "text": "Sachertorte, a chocolate cake with a layer of apricot jam.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sachertorte"
+      },
+      {
+       "type": "phrase",
+       "text": "Many people say \"Grüß Gott\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/gr%C3%BC%C3%9F_Gott"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "Schönbrunn Palace, the former summer residence of an imperial family.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sch%C3%B6nbrunn_Palace"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Slovenia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "my",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Mount Kinabalu, on the island of Borneo, is its highest peak.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Kinabalu"
+      },
+      {
+       "type": "food",
+       "text": "Nasi lemak: rice cooked in coconut milk.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Nasi_lemak"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Apa khabar?\" to ask how you are.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/apa_khabar"
+      },
+      {
+       "type": "currency",
+       "text": "The ringgit",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Malaysian_ringgit"
+      },
+      {
+       "type": "landmark",
+       "text": "The Petronas Towers, once the tallest buildings in the world.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Petronas_Towers"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Thailand.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "mg",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Tsingy de Bemaraha, a stone \"forest\" of sharp limestone needles, is listed by UNESCO.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tsingy_de_Bemaraha_National_Park"
+      },
+      {
+       "type": "food",
+       "text": "Romazava, a stew of meat and leafy greens, is the national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Romazava"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Salama\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/salama"
+      },
+      {
+       "type": "currency",
+       "text": "The ariary",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Malagasy_ariary"
+      },
+      {
+       "type": "landmark",
+       "text": "The Avenue of the Baobabs, a dirt road lined with giant baobab trees.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Avenue_of_the_Baobabs"
+      },
+      {
+       "type": "neighbour",
+       "text": "The Mozambique Channel separates it from Mozambique.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mozambique_Channel"
+      }
+     ],
+     "continent": "Africa"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "pl",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Vistula, its longest river, flows north to the Baltic Sea.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Vistula"
+      },
+      {
+       "type": "food",
+       "text": "Pierogi, filled dumplings.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pierogi"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Cześć\" to say hi.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/cze%C5%9B%C4%87"
+      },
+      {
+       "type": "currency",
+       "text": "The złoty",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Polish_z%C5%82oty"
+      },
+      {
+       "type": "landmark",
+       "text": "Wieliczka Salt Mine, with chapels carved out of rock salt.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Wieliczka_Salt_Mine"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Lithuania.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "sg",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Its highest natural point, Bukit Timah Hill, is only 163 metres high.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bukit_Timah_Hill"
+      },
+      {
+       "type": "food",
+       "text": "Chilli crab, crab stir-fried in a sweet and savoury chilli sauce.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Chilli_crab"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Selamat pagi\" in Malay, its national language, for good morning.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/selamat_pagi"
+      },
+      {
+       "type": "currency",
+       "text": "The dollar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Singapore_dollar"
+      },
+      {
+       "type": "landmark",
+       "text": "Gardens by the Bay, with huge tree-like \"Supertrees\".",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Gardens_by_the_Bay"
+      },
+      {
+       "type": "neighbour",
+       "text": "A causeway links it to Malaysia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Johor%E2%80%93Singapore_Causeway"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "ng",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Zuma Rock, a huge monolith, rises near its capital.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Zuma_Rock"
+      },
+      {
+       "type": "food",
+       "text": "Egusi soup, thickened with ground melon seeds.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Egusi"
+      },
+      {
+       "type": "phrase",
+       "text": "In the Igbo language, people say \"Nnọọ\" to say welcome.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/nn%E1%BB%8D%E1%BB%8D"
+      },
+      {
+       "type": "currency",
+       "text": "The naira",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Nigerian_naira"
+      },
+      {
+       "type": "landmark",
+       "text": "The Osun-Osogbo Sacred Grove, a forest of shrines listed by UNESCO.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Osun-Osogbo_Sacred_Grove"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Benin.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "dk",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Its highest natural point, Møllehøj, is only about 171 metres high.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/M%C3%B8lleh%C3%B8j"
+      },
+      {
+       "type": "food",
+       "text": "Smørrebrød: open sandwiches on buttered rye bread.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sm%C3%B8rrebr%C3%B8d"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Goddag\" for good day.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/goddag"
+      },
+      {
+       "type": "currency",
+       "text": "The krone",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Danish_krone"
+      },
+      {
+       "type": "landmark",
+       "text": "The Little Mermaid, a small bronze statue by the harbour in its capital.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/The_Little_Mermaid_(statue)"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Germany.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "kh",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Tonlé Sap, the largest freshwater lake in Southeast Asia, swells hugely in the rainy season.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tonl%C3%A9_Sap"
+      },
+      {
+       "type": "food",
+       "text": "Fish amok, fish steamed in a coconut curry.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Fish_amok"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"ជម្រាបសួរ\" (chumreap suor) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%E1%9E%87%E1%9E%98%E1%9F%92%E1%9E%9A%E1%9E%B6%E1%9E%94%E1%9E%9F%E1%9E%BD%E1%9E%9A"
+      },
+      {
+       "type": "currency",
+       "text": "The riel",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cambodian_riel"
+      },
+      {
+       "type": "landmark",
+       "text": "Angkor Wat, the largest religious complex in the world.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Angkor_Wat"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Laos.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "cr",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Corcovado National Park is world-famous for its wildlife, including big cats and tapirs.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Costa_Rica"
+      },
+      {
+       "type": "food",
+       "text": "Casado, a plate of rice, beans, plantain, salad and meat.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Casado"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Buenas\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/buenas"
+      },
+      {
+       "type": "currency",
+       "text": "The colón",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Costa_Rican_col%C3%B3n"
+      },
+      {
+       "type": "landmark",
+       "text": "The National Theatre in its capital, opened in 1897.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/National_Theatre_of_Costa_Rica"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Panama.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "North America"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "fi",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "It has more than 180,000 lakes.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Finland"
+      },
+      {
+       "type": "food",
+       "text": "Karelian pasties: thin rye crusts filled with rice porridge.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Karelian_pasty"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Moi\" to say hi.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/moi"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "Suomenlinna, a sea fortress built across several islands.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Suomenlinna"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Sweden.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "ae",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Liwa Oasis lies on the edge of the Empty Quarter desert.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Liwa_Oasis"
+      },
+      {
+       "type": "food",
+       "text": "Luqaimat, deep-fried dough balls soaked in syrup or honey.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Lokma"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"السلام عليكم\" (as-salamu alaykum) to greet each other.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85_%D8%B9%D9%84%D9%8A%D9%83%D9%85"
+      },
+      {
+       "type": "currency",
+       "text": "The dirham",
+       "sourceUrl": "https://en.wikipedia.org/wiki/United_Arab_Emirates_dirham"
+      },
+      {
+       "type": "landmark",
+       "text": "The Burj Khalifa, the tallest building in the world.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Burj_Khalifa"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Oman.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "tn",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Chott el Djerid, a huge salt lake on the edge of the Sahara, is here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Chott_el_Djerid"
+      },
+      {
+       "type": "food",
+       "text": "Brik, a thin fried pastry often filled with egg.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Brik"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"عسلامة\" (aslema) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D8%B9%D8%B3%D9%84%D8%A7%D9%85%D8%A9"
+      },
+      {
+       "type": "currency",
+       "text": "The dinar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tunisian_dinar"
+      },
+      {
+       "type": "landmark",
+       "text": "The amphitheatre of El Jem, an exceptionally well-preserved Roman amphitheatre.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Amphitheatre_of_El_Jem"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Algeria.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "is",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Vatnajökull, the second-largest ice cap in Europe by area, covers part of it.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Vatnaj%C3%B6kull"
+      },
+      {
+       "type": "food",
+       "text": "Skyr, a thick cultured dairy product a little like yoghurt.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Skyr"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Góðan daginn\" for good day.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/g%C3%B3%C3%B0an_daginn"
+      },
+      {
+       "type": "currency",
+       "text": "The króna",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Icelandic_kr%C3%B3na"
+      },
+      {
+       "type": "landmark",
+       "text": "Hallgrímskirkja, a tall church whose design echoes basalt columns.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Hallgr%C3%ADmskirkja"
+      },
+      {
+       "type": "neighbour",
+       "text": "The Denmark Strait separates it from Greenland.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Denmark_Strait"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "lk",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Adam's Peak, a mountain with a footprint-shaped rock at the summit.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Adam's_Peak"
+      },
+      {
+       "type": "food",
+       "text": "Kottu, chopped flatbread stir-fried with vegetables, egg or meat.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kottu"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"ආයුබෝවන්\" (āyubōvan) to greet each other.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%E0%B6%86%E0%B6%BA%E0%B7%94%E0%B6%B6%E0%B7%9D%E0%B7%80%E0%B6%B1%E0%B7%8A"
+      },
+      {
+       "type": "currency",
+       "text": "The rupee",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sri_Lankan_rupee"
+      },
+      {
+       "type": "landmark",
+       "text": "Sigiriya, an ancient fortress on top of a huge rock.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sigiriya"
+      },
+      {
+       "type": "neighbour",
+       "text": "The narrow Palk Strait separates it from India.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Palk_Strait"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "ve",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Angel Falls, the tallest single-drop waterfall in the world, is here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Angel_Falls"
+      },
+      {
+       "type": "food",
+       "text": "Pabellón criollo: rice, black beans and shredded beef.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pabell%C3%B3n_criollo"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Buenas\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/buenas"
+      },
+      {
+       "type": "currency",
+       "text": "The bolívar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Venezuelan_bol%C3%ADvar"
+      },
+      {
+       "type": "landmark",
+       "text": "The Mérida cable car, the highest cable car in the world.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/M%C3%A9rida_cable_car"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Brazil.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "South America"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "hr",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "More than a thousand islands lie along its Adriatic coast.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_Croatia"
+      },
+      {
+       "type": "food",
+       "text": "Pašticada, beef stewed slowly in a sweet wine sauce.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pa%C5%A1ticada"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Bok\" to say hi.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/bok"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "Plitvice Lakes, sixteen lakes arranged in cascades and joined by waterfalls.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Plitvice_Lakes_National_Park"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Slovenia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "jo",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Wadi Rum, a desert valley cut into sandstone and granite rock.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Wadi_Rum"
+      },
+      {
+       "type": "food",
+       "text": "Mansaf: lamb cooked in a sauce of dried yoghurt, served with rice.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mansaf"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"أهلا\" (ahlan) to say hi.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D8%A3%D9%87%D9%84%D8%A7"
+      },
+      {
+       "type": "currency",
+       "text": "The dinar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Jordanian_dinar"
+      },
+      {
+       "type": "landmark",
+       "text": "Petra, an ancient city carved into rose-coloured rock.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Petra"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Saudi Arabia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "sn",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Lake Retba, the \"Pink Lake\", gets its colour from algae.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Retba"
+      },
+      {
+       "type": "food",
+       "text": "Thieboudienne, rice cooked with fish and tomato, is the national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Thieboudienne"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Bonjour\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/bonjour"
+      },
+      {
+       "type": "currency",
+       "text": "The West African CFA franc",
+       "sourceUrl": "https://en.wikipedia.org/wiki/West_African_CFA_franc"
+      },
+      {
+       "type": "landmark",
+       "text": "The African Renaissance Monument, a 50-metre bronze statue on a hill.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/African_Renaissance_Monument"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with The Gambia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "cz",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Sněžka, its highest mountain, rises to 1,603 metres.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sn%C4%9B%C5%BEka"
+      },
+      {
+       "type": "food",
+       "text": "Svíčková: marinated beef in a creamy vegetable sauce with dumplings.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sv%C3%AD%C4%8Dkov%C3%A1"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Dobrý den\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/dobr%C3%BD_den"
+      },
+      {
+       "type": "currency",
+       "text": "The koruna",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Czech_koruna"
+      },
+      {
+       "type": "landmark",
+       "text": "Charles Bridge, a medieval stone bridge begun in 1357.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Charles_Bridge"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Austria.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "qa",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "It is a peninsula jutting into the Persian Gulf.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Qatar"
+      },
+      {
+       "type": "food",
+       "text": "Harees, a porridge of cracked wheat and meat.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Harees"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"صباح الخير\" (sabah al-khayr) for good morning.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D8%B5%D8%A8%D8%A7%D8%AD_%D8%A7%D9%84%D8%AE%D9%8A%D8%B1"
+      },
+      {
+       "type": "currency",
+       "text": "The riyal",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Qatari_riyal"
+      },
+      {
+       "type": "landmark",
+       "text": "The Museum of Islamic Art, designed by the architect I. M. Pei.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Museum_of_Islamic_Art,_Doha"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Saudi Arabia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "fj",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "It is made up of more than 330 islands.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Fiji"
+      },
+      {
+       "type": "food",
+       "text": "Lovo, food wrapped and cooked for hours on hot stones covered with earth.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Fijian_cuisine"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Bula\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/bula"
+      },
+      {
+       "type": "currency",
+       "text": "The dollar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Fijian_dollar"
+      },
+      {
+       "type": "landmark",
+       "text": "The Sri Siva Subramaniya Temple, a colourful Hindu temple in Nadi.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sri_Siva_Subramaniya_temple"
+      },
+      {
+       "type": "neighbour",
+       "text": "It has no land borders at all.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Oceania"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "be",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Ardennes, a region of forests and rolling hills, lies largely within it.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ardennes"
+      },
+      {
+       "type": "food",
+       "text": "Moules-frites: mussels served with fries.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Moules-frites"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Goedendag\" in Dutch or \"Bonjour\" in French.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/goedendag"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "The Atomium, a giant model of an iron crystal built for the 1958 World's Fair.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Atomium"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Luxembourg.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "mv",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "It has the lowest high point of any country in the world.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Maldives"
+      },
+      {
+       "type": "food",
+       "text": "Mas huni: tuna mixed with coconut, onion and chilli, eaten at breakfast.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mas_huni"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"އައްސަލާމު ޢަލައިކުމް\" (assalaamu alaikum) to greet each other.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%DE%87%DE%A6%DE%87%DE%B0%DE%90%DE%A6%DE%8D%DE%A7%DE%89%DE%AA_%DE%A2%DE%A6%DE%8D%DE%A6%DE%87%DE%A8%DE%86%DE%AA%DE%89%DE%B0"
+      },
+      {
+       "type": "currency",
+       "text": "The rufiyaa",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Maldivian_rufiyaa"
+      },
+      {
+       "type": "landmark",
+       "text": "An old Friday mosque in its capital, built from coral stone.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mal%C3%A9_Friday_Mosque"
+      },
+      {
+       "type": "neighbour",
+       "text": "It lies to the southwest of India and Sri Lanka.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Maldives"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "uy",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Its highest point, Cerro Catedral, is only about 514 metres high.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cerro_Catedral_(Uruguay)"
+      },
+      {
+       "type": "food",
+       "text": "Chivito, a big steak sandwich, is the national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Chivito_(sandwich)"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Hola\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/hola"
+      },
+      {
+       "type": "currency",
+       "text": "The peso",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Uruguayan_peso"
+      },
+      {
+       "type": "landmark",
+       "text": "The historic quarter of Colonia del Sacramento, founded by the Portuguese in 1680.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Colonia_del_Sacramento"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Brazil.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "South America"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "ro",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Most of the Danube Delta, the second-largest river delta in Europe, lies here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Danube_Delta"
+      },
+      {
+       "type": "food",
+       "text": "Sarmale, cabbage leaves rolled around minced meat.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sarma_(food)"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Bună ziua\" for good day.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/bun%C4%83_ziua"
+      },
+      {
+       "type": "currency",
+       "text": "The leu",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Romanian_leu"
+      },
+      {
+       "type": "landmark",
+       "text": "Bran Castle, often linked with the legend of Dracula.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bran_Castle"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Bulgaria.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "kz",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Lake Balkhash is fresh water in its western part and salty in its east.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Balkhash"
+      },
+      {
+       "type": "food",
+       "text": "Beshbarmak, boiled meat served with noodles.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Beshbarmak"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Сәлем\" (sälem) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D1%81%D3%99%D0%BB%D0%B5%D0%BC"
+      },
+      {
+       "type": "currency",
+       "text": "The tenge",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kazakhstani_tenge"
+      },
+      {
+       "type": "landmark",
+       "text": "Baikonur Cosmodrome, from which the first human was launched into space.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Baikonur_Cosmodrome"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Kyrgyzstan.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "rw",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Volcanoes National Park is a home of rare mountain gorillas.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Volcanoes_National_Park"
+      },
+      {
+       "type": "food",
+       "text": "Isombe, a stew of cassava leaves, often made with peanut butter.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Isombe"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Muraho\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/muraho"
+      },
+      {
+       "type": "currency",
+       "text": "The franc",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Rwandan_franc"
+      },
+      {
+       "type": "landmark",
+       "text": "Nyungwe National Park, one of the best-preserved mountain rainforests in Africa.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Nyungwe_National_Park"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Uganda.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "bg",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Musala, the highest peak in the Balkans, rises in its Rila mountains.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Musala"
+      },
+      {
+       "type": "food",
+       "text": "Banitsa, a pastry of eggs and white cheese between layers of filo.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Banitsa"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Здравей\" (zdravey) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%B5%D0%B9"
+      },
+      {
+       "type": "currency",
+       "text": "The euro, since 2026",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "Rila Monastery, set deep in the mountains.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Rila_Monastery"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Romania.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "uz",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "It is one of only two doubly landlocked countries in the world.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Landlocked_country"
+      },
+      {
+       "type": "food",
+       "text": "Plov, rice cooked with meat, carrots and onions.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pilaf"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Assalomu alaykum\" to greet each other.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/assalomu_alaykum"
+      },
+      {
+       "type": "currency",
+       "text": "The som",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Uzbekistani_sum"
+      },
+      {
+       "type": "landmark",
+       "text": "The Registan, a grand square framed by three madrasas.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Registan"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Kazakhstan.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "ug",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Rwenzori Mountains, linked with the legendary \"Mountains of the Moon\", still have glaciers.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Rwenzori_Mountains"
+      },
+      {
+       "type": "food",
+       "text": "The \"Rolex\", a chapati rolled up with an omelette, is a popular street food.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Rolex_(food)"
+      },
+      {
+       "type": "phrase",
+       "text": "People ask \"Wasuze otyanno?\" to say good morning.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/good_morning"
+      },
+      {
+       "type": "currency",
+       "text": "The shilling",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ugandan_shilling"
+      },
+      {
+       "type": "landmark",
+       "text": "The Kasubi Tombs, a royal burial ground under a great thatched dome, listed by UNESCO.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kasubi_Tombs"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Rwanda.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "mt",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Azure Window, a natural limestone arch on one of its islands, collapsed in a storm in 2017.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Azure_Window"
+      },
+      {
+       "type": "food",
+       "text": "Pastizzi, savoury pastries filled with ricotta or mushy peas.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pastizzi"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Bonġu\" for good morning.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/bon%C4%A1u"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "Ġgantija, megalithic temples more than 5,000 years old.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/%C4%A0gantija"
+      },
+      {
+       "type": "neighbour",
+       "text": "A sea channel separates it from the southern tip of Sicily.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Malta_Channel"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "bt",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Gangkhar Puensum, its highest peak, may be the highest unclimbed mountain in the world.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Gangkhar_Puensum"
+      },
+      {
+       "type": "food",
+       "text": "Ema datshi, chillies cooked in cheese, is the national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ema_datshi"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"ཀུ་ཟུ་ཟང་པོ\" (kuzu zangpo) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%E0%BD%80%E0%BD%B4%E0%BC%8B%E0%BD%9F%E0%BD%B4%E0%BC%8B%E0%BD%9F%E0%BD%84%E0%BC%8B%E0%BD%94%E0%BD%BC"
+      },
+      {
+       "type": "currency",
+       "text": "The ngultrum",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bhutanese_ngultrum"
+      },
+      {
+       "type": "landmark",
+       "text": "Paro Taktsang (Tiger's Nest), a monastery clinging to a cliff.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Paro_Taktsang"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with India.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "ec",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Cotopaxi, one of the highest active volcanoes in the world, is here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cotopaxi"
+      },
+      {
+       "type": "food",
+       "text": "Encebollado, a fish stew dressed with pickled onions, is a national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Encebollado"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Buenos días\" for good morning.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/buenos_d%C3%ADas"
+      },
+      {
+       "type": "currency",
+       "text": "The US dollar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/United_States_dollar"
+      },
+      {
+       "type": "landmark",
+       "text": "Ciudad Mitad del Mundo, a monument that marks the equator.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ciudad_Mitad_del_Mundo"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Colombia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "South America"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "ee",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "More than 2,000 islands lie off its coast in the Baltic Sea.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_Estonia"
+      },
+      {
+       "type": "food",
+       "text": "Kama, a powdery mix of roasted barley, rye, oat and pea flour.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kama_(food)"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Tere\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/tere"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "A medieval walled old town in its capital, listed by UNESCO.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tallinn_Old_Town"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Latvia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "bd",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Part of the Sundarbans, the largest mangrove forest in the world, is here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sundarbans"
+      },
+      {
+       "type": "food",
+       "text": "Hilsa, a fish often cooked in a mustard sauce, is the national fish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ilish"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"আসসালামু আলাইকুম\" (assalamu alaikum) to greet each other.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81_%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE"
+      },
+      {
+       "type": "currency",
+       "text": "The taka",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bangladeshi_taka"
+      },
+      {
+       "type": "landmark",
+       "text": "The Sixty Dome Mosque, built in the 15th century.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sixty_Dome_Mosque"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with India.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "zw",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Matobo Hills are known for their balancing granite rocks.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Matobo_National_Park"
+      },
+      {
+       "type": "food",
+       "text": "Sadza, a stiff maize porridge, is the staple food.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sadza"
+      },
+      {
+       "type": "phrase",
+       "text": "In Shona, people say \"Mhoro\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/hello"
+      },
+      {
+       "type": "currency",
+       "text": "The ZiG, a gold-backed currency",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Zimbabwe_Gold"
+      },
+      {
+       "type": "landmark",
+       "text": "The stone ruins of a great medieval city, which gave the country its name.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Great_Zimbabwe"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Zambia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "lt",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Curonian Spit, a thin strip of sand dunes, separates a lagoon from the Baltic Sea.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Curonian_Spit"
+      },
+      {
+       "type": "food",
+       "text": "Cepelinai, large potato dumplings stuffed with meat.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cepelinai"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Labas\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/labas"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "The Hill of Crosses, a pilgrimage site covered in crosses.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Hill_of_Crosses"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Poland.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "la",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "It is the only landlocked country in Southeast Asia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Laos"
+      },
+      {
+       "type": "food",
+       "text": "Larb, a minced meat salad, is often called the national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Larb"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"ສະບາຍດີ\" (sabaidi) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%E0%BA%AA%E0%BA%B0%E0%BA%9A%E0%BA%B2%E0%BA%8D%E0%BA%94%E0%BA%B5"
+      },
+      {
+       "type": "currency",
+       "text": "The kip",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Lao_kip"
+      },
+      {
+       "type": "landmark",
+       "text": "The Plain of Jars, scattered with thousands of ancient stone jars.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Plain_of_Jars"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Thailand.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "pa",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Coiba, a large island national park, lies off its Pacific coast.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Coiba"
+      },
+      {
+       "type": "food",
+       "text": "Sancocho, a hearty soup of meat and root vegetables, is a national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sancocho"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Hola\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/hola"
+      },
+      {
+       "type": "currency",
+       "text": "The balboa, used alongside the US dollar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Panamanian_balboa"
+      },
+      {
+       "type": "landmark",
+       "text": "A great canal that links the Atlantic and Pacific oceans.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Panama_Canal"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Colombia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "North America"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "si",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Triglav, its highest mountain, appears on its coat of arms.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Triglav"
+      },
+      {
+       "type": "food",
+       "text": "Potica, a rolled cake usually filled with walnuts.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Potica"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Živjo\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%C5%BEivjo"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "Lake Bled, with a small church on an island.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Bled"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Croatia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "kg",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Issyk-Kul, a huge salty lake high in the mountains, rarely freezes.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Issyk-Kul"
+      },
+      {
+       "type": "food",
+       "text": "Kymyz, fermented mare's milk, is a traditional drink.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kumis"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Саламатсызбы\" (salamatsyzby) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D1%81%D0%B0%D0%BB%D0%B0%D0%BC%D0%B0%D1%82%D1%81%D1%8B%D0%B7%D0%B1%D1%8B"
+      },
+      {
+       "type": "currency",
+       "text": "The som",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kyrgyz_som"
+      },
+      {
+       "type": "landmark",
+       "text": "Burana Tower, a minaret more than a thousand years old.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Burana_Tower"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Tajikistan.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "bw",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Okavango Delta, an inland delta that floods every year, is here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Okavango_Delta"
+      },
+      {
+       "type": "food",
+       "text": "Seswaa, pounded beef or goat meat, is a traditional dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Seswaa"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Dumela\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/dumela"
+      },
+      {
+       "type": "currency",
+       "text": "The pula",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Botswana_pula"
+      },
+      {
+       "type": "landmark",
+       "text": "Tsodilo, hills with thousands of ancient rock paintings.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tsodilo"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Namibia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "sk",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The High Tatras, whose highest peaks all lie here, rise in its north.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/High_Tatras"
+      },
+      {
+       "type": "food",
+       "text": "Bryndzové halušky: potato dumplings with sheep cheese.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Dobrý deň\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/dobr%C3%BD_de%C5%88"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "Spiš Castle, one of the largest castle sites in the country.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Spi%C5%A1_Castle"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Czechia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "om",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Each summer a monsoon called the khareef soaks its southern Dhofar mountains in rain and fog.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Dhofar_Governorate"
+      },
+      {
+       "type": "food",
+       "text": "Shuwa, marinated meat wrapped in palm leaves and slow-cooked underground, is a festive dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Quzi"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"مرحبا\" (marhaba) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D9%85%D8%B1%D8%AD%D8%A8%D8%A7"
+      },
+      {
+       "type": "currency",
+       "text": "The rial",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Omani_rial"
+      },
+      {
+       "type": "landmark",
+       "text": "The Sultan Qaboos Grand Mosque, whose hand-woven carpet was once the largest single-piece carpet in the world.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Sultan_Qaboos_Grand_Mosque"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with the United Arab Emirates.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "zm",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Kafue, its largest national park, is one of the biggest in Africa.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kafue_National_Park"
+      },
+      {
+       "type": "food",
+       "text": "Nshima, a thick maize porridge, is the staple food.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Zambian_cuisine"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Mwapoleni\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/mwapoleni"
+      },
+      {
+       "type": "currency",
+       "text": "The kwacha",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Zambian_kwacha"
+      },
+      {
+       "type": "landmark",
+       "text": "The Kariba Dam, which holds back the 280-km-long Lake Kariba.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kariba_Dam"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Botswana.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "al",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Vjosa, protected as a wild river national park, flows through it.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Vjosa"
+      },
+      {
+       "type": "food",
+       "text": "Tavë kosi: mutton and rice baked under a mixture of yoghurt and eggs.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tav%C3%AB_kosi"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Përshëndetje\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/p%C3%ABrsh%C3%ABndetje"
+      },
+      {
+       "type": "currency",
+       "text": "The lek",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Albanian_lek"
+      },
+      {
+       "type": "landmark",
+       "text": "Butrint, an ancient city that is now a UNESCO World Heritage Site.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Butrint"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Montenegro.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "bn",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Rainforest covers much of it, including Ulu Temburong National Park.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ulu_Temburong_National_Park"
+      },
+      {
+       "type": "food",
+       "text": "Ambuyat, a sticky starch from the sago palm, eaten with a bamboo fork.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ambuyat"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Selamat datang\" to say welcome.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/selamat_datang"
+      },
+      {
+       "type": "currency",
+       "text": "The dollar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Brunei_dollar"
+      },
+      {
+       "type": "landmark",
+       "text": "Omar Ali Saifuddien Mosque, crowned with a golden dome.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Omar_Ali_Saifuddien_Mosque"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Malaysia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "ws",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Alofaaga Blowholes, where waves shoot sea water up through lava tubes.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Alofaaga_Blowholes"
+      },
+      {
+       "type": "food",
+       "text": "Palusami, taro leaves cooked in coconut milk.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Samoan_cuisine"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Talofa\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/talofa"
+      },
+      {
+       "type": "currency",
+       "text": "The tālā",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Samoan_t%C4%81l%C4%81"
+      },
+      {
+       "type": "landmark",
+       "text": "Villa Vailima, the former home of the writer Robert Louis Stevenson, now a museum.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Robert_Louis_Stevenson_Museum"
+      },
+      {
+       "type": "neighbour",
+       "text": "It has no land borders at all.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Oceania"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "me",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Bay of Kotor, a winding bay of the Adriatic Sea ringed by mountains.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bay_of_Kotor"
+      },
+      {
+       "type": "food",
+       "text": "Njeguški pršut, a dry-cured ham from a mountain village.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Njegu%C5%A1ki_pr%C5%A1ut"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Dobar dan\" for good day.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/dobar_dan"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "Ostrog Monastery, set high against an almost vertical rock face.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ostrog_Monastery"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Bosnia and Herzegovina.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "sa",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Part of the Rub' al Khali (Empty Quarter), the largest continuous sand desert on Earth, lies here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Rub'_al_Khali"
+      },
+      {
+       "type": "food",
+       "text": "Kabsa, spiced rice with meat, is its national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kabsa"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"مرحبا\" (marhaba) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D9%85%D8%B1%D8%AD%D8%A8%D8%A7"
+      },
+      {
+       "type": "currency",
+       "text": "The riyal",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Saudi_riyal"
+      },
+      {
+       "type": "landmark",
+       "text": "Hegra, with ancient tombs carved into sandstone outcrops.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Hegra_(Mada'in_Salih)"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Jordan.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "mu",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "It was the only known home of the dodo.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Dodo"
+      },
+      {
+       "type": "food",
+       "text": "Dalpuri, a thin flatbread served with curry and tomato sauce.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mauritian_cuisine"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Bonzour\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/bonzour"
+      },
+      {
+       "type": "currency",
+       "text": "The rupee",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mauritian_rupee"
+      },
+      {
+       "type": "landmark",
+       "text": "Le Morne Brabant, a mountain on a peninsula, listed by UNESCO.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Le_Morne_Brabant"
+      },
+      {
+       "type": "neighbour",
+       "text": "The French island of Réunion lies about 175 km to its southwest.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/R%C3%A9union"
+      }
+     ],
+     "continent": "Africa"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "lu",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Its northern part lies on the Ardennes plateau.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_Luxembourg"
+      },
+      {
+       "type": "food",
+       "text": "Judd mat Gaardebounen: smoked pork collar with broad beans.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Judd_mat_Gaardebounen"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Moien\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/Moien"
+      },
+      {
+       "type": "currency",
+       "text": "The euro",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Euro"
+      },
+      {
+       "type": "landmark",
+       "text": "The Bock Casemates, a network of underground passages below an old castle.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bock_(Luxembourg)"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Germany.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "ge",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Shkhara, its highest peak, rises in the Greater Caucasus.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Shkhara"
+      },
+      {
+       "type": "food",
+       "text": "Khachapuri, a boat-shaped bread filled with cheese.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Khachapuri"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"გამარჯობა\" (gamarjoba) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%E1%83%92%E1%83%90%E1%83%9B%E1%83%90%E1%83%A0%E1%83%AF%E1%83%9D%E1%83%91%E1%83%90"
+      },
+      {
+       "type": "currency",
+       "text": "The lari",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Georgian_lari"
+      },
+      {
+       "type": "landmark",
+       "text": "Gergeti Trinity Church, high on a mountainside below Mount Kazbek.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Gergeti_Trinity_Church"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Armenia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "dz",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Tassili n'Ajjer, a vast sandstone plateau in the Sahara, is famous for its rock art.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tassili_n'Ajjer"
+      },
+      {
+       "type": "food",
+       "text": "Chakhchoukha, small pieces of thin flatbread mixed with a tomato stew.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Chakhchoukha"
+      },
+      {
+       "type": "phrase",
+       "text": "In the Kabyle language, people say \"Azul\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/azul"
+      },
+      {
+       "type": "currency",
+       "text": "The dinar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Algerian_dinar"
+      },
+      {
+       "type": "landmark",
+       "text": "Timgad, the ruins of a Roman town founded by the emperor Trajan.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Timgad"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Tunisia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "rs",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Uvac reserve, with its winding river gorge, is a home of griffon vultures.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Uvac_Special_Nature_Reserve"
+      },
+      {
+       "type": "food",
+       "text": "Pljeskavica, a spiced patty of minced meat.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pljeskavica"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Здраво\" (zdravo) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%BE"
+      },
+      {
+       "type": "currency",
+       "text": "The dinar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Serbian_dinar"
+      },
+      {
+       "type": "landmark",
+       "text": "An old fortress above the meeting of the Sava and Danube rivers.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Belgrade_Fortress"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Hungary.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Europe"
+    },
+    {
+     "country": "sc",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Aldabra, the second-largest coral atoll in the world, is home to giant tortoises.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Aldabra"
+      },
+      {
+       "type": "food",
+       "text": "Kari koko, a coconut curry made with fish or other proteins.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Seychellois_cuisine"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Bonzour\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/bonzour"
+      },
+      {
+       "type": "currency",
+       "text": "The rupee",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Seychellois_rupee"
+      },
+      {
+       "type": "landmark",
+       "text": "Vallée de Mai, a palm forest where the giant coco de mer grows.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Vall%C3%A9e_de_Mai"
+      },
+      {
+       "type": "neighbour",
+       "text": "It has no land borders at all.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    },
+    {
+     "country": "gt",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Lake Atitlán, a deep lake in a volcanic crater, is ringed by volcanoes.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Atitl%C3%A1n"
+      },
+      {
+       "type": "food",
+       "text": "Pepián, a thick spiced meat stew, is a national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pepi%C3%A1n"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Buenos días\" for good morning.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/buenos_d%C3%ADas"
+      },
+      {
+       "type": "currency",
+       "text": "The quetzal",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Guatemalan_quetzal"
+      },
+      {
+       "type": "landmark",
+       "text": "Tikal, an ancient Maya city in the rainforest.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tikal"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Honduras.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "North America"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "kw",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Bubiyan, the largest island in its waters, is low and marshy.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bubiyan_Island"
+      },
+      {
+       "type": "food",
+       "text": "Mutabbaq samak, fish served over rice cooked in spiced fish stock, is a national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kuwaiti_cuisine"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"السلام عليكم\" (as-salamu alaykum) to greet each other.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85_%D8%B9%D9%84%D9%8A%D9%83%D9%85"
+      },
+      {
+       "type": "currency",
+       "text": "The dinar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kuwaiti_dinar"
+      },
+      {
+       "type": "landmark",
+       "text": "Three slender towers on the coast, the tallest carrying two large spheres.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Kuwait_Towers"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Saudi Arabia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "cv",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Pico do Fogo, an active volcano, is its highest peak.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pico_do_Fogo"
+      },
+      {
+       "type": "food",
+       "text": "Cachupa, a slow-cooked stew of corn, beans and fish or meat, is the national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cachupa"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Olá\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/ol%C3%A1"
+      },
+      {
+       "type": "currency",
+       "text": "The escudo",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cape_Verdean_escudo"
+      },
+      {
+       "type": "landmark",
+       "text": "Cidade Velha, the first colonial town built by Europeans in the tropics.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cidade_Velha"
+      },
+      {
+       "type": "neighbour",
+       "text": "It lies in the Atlantic off West Africa, near Senegal.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cape_Verde"
+      }
+     ],
+     "continent": "Africa"
+    },
+    {
+     "country": "do",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Pico Duarte, the highest peak in the Caribbean, is here.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pico_Duarte"
+      },
+      {
+       "type": "food",
+       "text": "Mangú, mashed green plantains, is the national breakfast.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Dominican_Republic_cuisine"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"¿Que lo que?\" for what's up?",
+       "sourceUrl": "https://en.wiktionary.org/wiki/que_lo_que"
+      },
+      {
+       "type": "currency",
+       "text": "The peso",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Dominican_peso"
+      },
+      {
+       "type": "landmark",
+       "text": "The Colonial Zone of its capital, the oldest European settlement in the Americas.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ciudad_Colonial_(Santo_Domingo)"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Haiti.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "North America (Caribbean)"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "bh",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Tree of Life, a lone tree over 400 years old, grows on a hill in its desert.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tree_of_Life_(Bahrain)"
+      },
+      {
+       "type": "food",
+       "text": "Muhammar, sweet rice seasoned with date molasses, is often eaten with fish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Muhammar"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"صباح الخير\" (sabah al-khayr) for good morning.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D8%B5%D8%A8%D8%A7%D8%AD_%D8%A7%D9%84%D8%AE%D9%8A%D8%B1"
+      },
+      {
+       "type": "currency",
+       "text": "The dinar",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bahraini_dinar"
+      },
+      {
+       "type": "landmark",
+       "text": "An ancient fort on a mound that was once a capital of the Dilmun civilisation.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Qal'at_al-Bahrain"
+      },
+      {
+       "type": "neighbour",
+       "text": "A 25 km causeway links it to Saudi Arabia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/King_Fahd_Causeway"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "mz",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Bazaruto Archipelago, sandy islands with coral reefs, lies off its coast.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Bazaruto_Archipelago"
+      },
+      {
+       "type": "food",
+       "text": "Matapa: cassava leaves cooked with peanuts and coconut milk.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Matapa"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Bom dia\" for good morning.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/bom_dia"
+      },
+      {
+       "type": "currency",
+       "text": "The metical",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Mozambican_metical"
+      },
+      {
+       "type": "landmark",
+       "text": "Cahora Bassa, the fourth-largest artificial lake in Africa, on the Zambezi.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cahora_Bassa"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Zimbabwe.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    },
+    {
+     "country": "to",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Its Vavaʻu islands are known for whale watching.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tonga"
+      },
+      {
+       "type": "food",
+       "text": "ʻOta ʻika, raw fish in citrus juice and coconut milk, is the national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/'Ota_'ika"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Mālō e lelei\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/m%C4%81l%C5%8D_e_lelei"
+      },
+      {
+       "type": "currency",
+       "text": "The paʻanga",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tongan_pa%CA%BBanga"
+      },
+      {
+       "type": "landmark",
+       "text": "Haʻamonga ʻa Maui, a stone trilithon built around 1200.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ha%CA%BBamonga_%CA%BBa_Maui"
+      },
+      {
+       "type": "neighbour",
+       "text": "It has no land borders at all.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Oceania"
+    }
+   ]
+  },
+  {
+   "countries": [
+    {
+     "country": "tj",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Mountains cover more than 90% of it.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tajikistan"
+      },
+      {
+       "type": "food",
+       "text": "Qurutob, sometimes described as a \"bread salad\", is one of its national dishes.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Qurutob"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Салом\" (salom) to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/%D1%81%D0%B0%D0%BB%D0%BE%D0%BC"
+      },
+      {
+       "type": "currency",
+       "text": "The somoni",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Tajikistani_somoni"
+      },
+      {
+       "type": "landmark",
+       "text": "The Pamir Highway, one of the highest roads in the world.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Pamir_Highway"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Uzbekistan.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Asia"
+    },
+    {
+     "country": "cm",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "Its many landscapes have earned it the nickname \"Africa in miniature\".",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Cameroon"
+      },
+      {
+       "type": "food",
+       "text": "Ndolé, a stew of bitter leaves, nuts and fish or meat, is the national dish.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Ndol%C3%A9"
+      },
+      {
+       "type": "phrase",
+       "text": "People say \"Bonjour\" to say hello.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/bonjour"
+      },
+      {
+       "type": "currency",
+       "text": "The Central African CFA franc",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Central_African_CFA_franc"
+      },
+      {
+       "type": "landmark",
+       "text": "The Dja Faunal Reserve, a protected rainforest listed by UNESCO.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Dja_Faunal_Reserve"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Gabon.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "Africa"
+    },
+    {
+     "country": "py",
+     "clues": [
+      {
+       "type": "nature",
+       "text": "The Gran Chaco, a hot, dry lowland plain, covers much of it.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Gran_Chaco"
+      },
+      {
+       "type": "food",
+       "text": "Chipa, a small cheesy bread made with cassava starch.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Chipa"
+      },
+      {
+       "type": "phrase",
+       "text": "In Guaraní, people ask \"Mba'éichapa?\" to say how are you.",
+       "sourceUrl": "https://en.wiktionary.org/wiki/mba%27%C3%A9ichapa"
+      },
+      {
+       "type": "currency",
+       "text": "The guaraní",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Paraguayan_guaran%C3%AD"
+      },
+      {
+       "type": "landmark",
+       "text": "The ruined Jesuit mission of La Santísima Trinidad de Paraná.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/Jesuit_Missions_of_La_Sant%C3%ADsima_Trinidad_de_Paran%C3%A1_and_Jes%C3%BAs_de_Tavarangue"
+      },
+      {
+       "type": "neighbour",
+       "text": "It shares a border with Bolivia.",
+       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_number_of_land_borders"
+      }
+     ],
+     "continent": "South America"
+    }
+   ]
   }
  ]
 }

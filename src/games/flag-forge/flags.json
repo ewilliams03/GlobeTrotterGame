@@ -317,6 +317,113 @@
         "blue"
       ],
       "symbol": "none"
+    },
+    "ua": {
+      "layout": "h2",
+      "colors": [
+        "blue",
+        "yellow"
+      ],
+      "symbol": "none"
+    },
+    "so": {
+      "layout": "plain",
+      "colors": [
+        "lightblue"
+      ],
+      "symbol": "star",
+      "symbolColor": "white"
+    },
+    "ga": {
+      "layout": "h3",
+      "colors": [
+        "green",
+        "yellow",
+        "blue"
+      ],
+      "symbol": "none"
+    },
+    "ee": {
+      "layout": "h3",
+      "colors": [
+        "blue",
+        "black",
+        "white"
+      ],
+      "symbol": "none"
+    },
+    "bf": {
+      "layout": "h2",
+      "colors": [
+        "red",
+        "green"
+      ],
+      "symbol": "star",
+      "symbolColor": "yellow"
+    },
+    "ye": {
+      "layout": "h3",
+      "colors": [
+        "red",
+        "white",
+        "black"
+      ],
+      "symbol": "none"
+    },
+    "dz": {
+      "layout": "v2",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "symbol": "crescent",
+      "symbolColor": "red"
+    },
+    "mm": {
+      "layout": "h3",
+      "colors": [
+        "yellow",
+        "green",
+        "red"
+      ],
+      "symbol": "star",
+      "symbolColor": "white"
+    },
+    "sl": {
+      "layout": "h3",
+      "colors": [
+        "green",
+        "white",
+        "blue"
+      ],
+      "symbol": "none"
+    },
+    "bo": {
+      "layout": "h3",
+      "colors": [
+        "red",
+        "yellow",
+        "green"
+      ],
+      "symbol": "none"
+    },
+    "pw": {
+      "layout": "plain",
+      "colors": [
+        "lightblue"
+      ],
+      "symbol": "disc",
+      "symbolColor": "yellow"
+    },
+    "az": {
+      "layout": "h3",
+      "colors": [
+        "lightblue",
+        "red",
+        "green"
+      ],
+      "symbol": "crescent",
+      "symbolColor": "white"
     }
   },
   "sources": {
@@ -355,7 +462,19 @@
     "id": "Flag_of_Indonesia",
     "ma": "Flag_of_Morocco",
     "kg": "Flag_of_Kyrgyzstan",
-    "fi": "Flag_of_Finland"
+    "fi": "Flag_of_Finland",
+    "ua": "Flag_of_Ukraine",
+    "so": "Flag_of_Somalia",
+    "ga": "Flag_of_Gabon",
+    "ee": "Flag_of_Estonia",
+    "bf": "Flag_of_Burkina_Faso",
+    "ye": "Flag_of_Yemen",
+    "dz": "Flag_of_Algeria",
+    "mm": "Flag_of_Myanmar",
+    "sl": "Flag_of_Sierra_Leone",
+    "bo": "Flag_of_Bolivia",
+    "pw": "Flag_of_Palau",
+    "az": "Flag_of_Azerbaijan"
   },
   "days": [
     [
@@ -417,6 +536,26 @@
       "gn",
       "id",
       "at"
+    ],
+    [
+      "ua",
+      "so",
+      "ga"
+    ],
+    [
+      "ee",
+      "bf",
+      "ye"
+    ],
+    [
+      "dz",
+      "mm",
+      "sl"
+    ],
+    [
+      "bo",
+      "pw",
+      "az"
     ]
   ]
 }

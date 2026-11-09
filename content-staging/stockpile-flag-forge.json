@@ -1,0 +1,50 @@
+{
+  "flags": {
+    "ua": { "layout": "h2", "colors": ["blue", "yellow"], "symbol": "none" },
+    "so": { "layout": "plain", "colors": ["lightblue"], "symbol": "star", "symbolColor": "white" },
+    "ga": { "layout": "h3", "colors": ["green", "yellow", "blue"], "symbol": "none" },
+    "ee": { "layout": "h3", "colors": ["blue", "black", "white"], "symbol": "none" },
+    "bf": { "layout": "h2", "colors": ["red", "green"], "symbol": "star", "symbolColor": "yellow" },
+    "ye": { "layout": "h3", "colors": ["red", "white", "black"], "symbol": "none" },
+    "dz": { "layout": "v2", "colors": ["green", "white"], "symbol": "crescent", "symbolColor": "red" },
+    "mm": { "layout": "h3", "colors": ["yellow", "green", "red"], "symbol": "star", "symbolColor": "white" },
+    "sl": { "layout": "h3", "colors": ["green", "white", "blue"], "symbol": "none" },
+    "mc": { "layout": "h2", "colors": ["red", "white"], "symbol": "none" },
+    "ne": { "layout": "h3", "colors": ["orange", "white", "green"], "symbol": "disc", "symbolColor": "orange" },
+    "td": { "layout": "v3", "colors": ["blue", "yellow", "red"], "symbol": "none" },
+    "bo": { "layout": "h3", "colors": ["red", "yellow", "green"], "symbol": "none" },
+    "pw": { "layout": "plain", "colors": ["lightblue"], "symbol": "disc", "symbolColor": "yellow" },
+    "az": { "layout": "h3", "colors": ["lightblue", "red", "green"], "symbol": "crescent", "symbolColor": "white" },
+    "co": { "layout": "h3", "colors": ["yellow", "blue", "red"], "symbol": "none" },
+    "la": { "layout": "h3", "colors": ["red", "blue", "red"], "symbol": "disc", "symbolColor": "white" },
+    "ly": { "layout": "h3", "colors": ["red", "black", "green"], "symbol": "crescent", "symbolColor": "white" }
+  },
+  "sources": {
+    "ua": "Flag_of_Ukraine",
+    "so": "Flag_of_Somalia",
+    "ga": "Flag_of_Gabon",
+    "ee": "Flag_of_Estonia",
+    "bf": "Flag_of_Burkina_Faso",
+    "ye": "Flag_of_Yemen",
+    "dz": "Flag_of_Algeria",
+    "mm": "Flag_of_Myanmar",
+    "sl": "Flag_of_Sierra_Leone",
+    "mc": "Flag_of_Monaco",
+    "ne": "Flag_of_Niger",
+    "td": "Flag_of_Chad",
+    "bo": "Flag_of_Bolivia",
+    "pw": "Flag_of_Palau",
+    "az": "Flag_of_Azerbaijan",
+    "co": "Flag_of_Colombia",
+    "la": "Flag_of_Laos",
+    "ly": "Flag_of_Libya"
+  },
+  "days": [
+    ["ua", "so", "ga"],
+    ["ee", "bf", "ye"],
+    ["dz", "mm", "sl"],
+    ["mc", "ne", "td"],
+    ["bo", "pw", "az"],
+    ["co", "la", "ly"]
+  ]
+}
