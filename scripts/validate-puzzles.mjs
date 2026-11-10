@@ -43,6 +43,26 @@ puzzles.forEach((puzzle, i) => {
 
 // ---------- Fact or Fib ----------
 const fofDays = JSON.parse(read('src/games/fact-or-fib/facts.json'));
+// A fib must be a false claim about the round's own country. If it names another country or that
+// country's capital ("The tango was born in Brazil" on an Argentina round), it gives itself away.
+const countryNames = Object.fromEntries([...read('src/data/countries.ts').matchAll(/^\s+([a-z]{2}): \{ name: (['"])(.*?)\2/gm)].map((m) => [m[1], m[3]]));
+const capitals = {};
+for (const st of Object.values(JSON.parse(read('src/games/rank-the-world/rank.json')).stats)) {
+  for (const [c, label] of Object.entries(st.labels ?? {})) capitals[c] = label.split(',')[0].split(' (')[0];
+}
+const escapeRe = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+function otherPlaces(text, own) {
+  const ownName = countryNames[own] ?? '';
+  const hits = [];
+  for (const [c, name] of Object.entries(countryNames)) {
+    if (c === own) continue;
+    for (const n of [name, capitals[c]].filter(Boolean)) {
+      if (n.length < 4 || ownName.includes(n)) continue;
+      if (new RegExp(`(?<![A-Za-z])${escapeRe(n)}(?![a-z])`).test(text)) hits.push(n);
+    }
+  }
+  return hits;
+}
 const fofCountries = new Set();
 fofDays.forEach((day, d) => {
   const at = `fact-or-fib day ${d + 1}`;
@@ -58,6 +78,10 @@ fofDays.forEach((day, d) => {
     const fibs = r.statements.filter((s) => s.fib);
     if (fibs.length !== 1) errors.push(`${where}: needs exactly one fib`);
     if (fibs[0] && !fibs[0].truth) errors.push(`${where}: the fib needs a "truth" correction`);
+    if (fibs[0]) {
+      const other = otherPlaces(fibs[0].text, r.country);
+      if (other.length) errors.push(`${where}: the fib names another country or capital (${other.join(', ')}), which gives it away; make it a false claim about ${countryNames[r.country]} itself`);
+    }
     r.statements.forEach((s) => {
       if (!s.text || !/^https:\/\//.test(s.sourceUrl ?? '')) errors.push(`${where}: every statement needs text and an https sourceUrl`);
       if (`${s.text}${s.truth ?? ''}`.includes('—')) errors.push(`${where}: avoid em dashes in copy`);

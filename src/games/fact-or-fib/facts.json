@@ -188,7 +188,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Atacama_Desert"
           },
           {
-            "text": "Easter Island belongs to Peru.",
+            "text": "Easter Island is an independent country of its own.",
             "fib": true,
             "truth": "Easter Island, also called Rapa Nui, is part of Chile.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Easter_Island"
@@ -268,7 +268,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Trans-Siberian_Railway"
           },
           {
-            "text": "At their closest point, Russia and the United States are more than 1,000 km apart.",
+            "text": "Russia's easternmost islands are more than 1,000 km from the nearest neighbouring country.",
             "fib": true,
             "truth": "In the Bering Strait, Russia's Big Diomede Island and the United States' Little Diomede Island are less than 4 km (2.5 mi) apart.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Diomede_Islands"
@@ -386,7 +386,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Finnic_languages"
           },
           {
-            "text": "The sauna was invented in Sweden.",
+            "text": "The word 'sauna' was borrowed into Finnish from English.",
             "fib": true,
             "truth": "\"Sauna\" is a Finnish word, and Finnish sauna culture is on UNESCO's list of intangible cultural heritage.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Sauna"
@@ -565,7 +565,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Aconcagua"
           },
           {
-            "text": "The tango was born in Brazil.",
+            "text": "The tango was invented in the 1980s for a television dance contest.",
             "fib": true,
             "truth": "The tango grew up in the late 1800s around the Río de la Plata, in Buenos Aires and Montevideo.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Tango"
@@ -645,7 +645,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Haiti"
           },
           {
-            "text": "Haiti is in the South Pacific Ocean, not far from Fiji.",
+            "text": "Haiti is an island nation in the South Pacific Ocean.",
             "fib": true,
             "truth": "Haiti is in the Caribbean Sea, on the western side of the island of Hispaniola.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Haiti"
@@ -744,7 +744,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Catatumbo_lightning"
           },
           {
-            "text": "The name Venezuela means 'Little Spain'.",
+            "text": "The name Venezuela means 'land of mountains'.",
             "fib": true,
             "truth": "Venezuela means 'Little Venice'. Explorers were reminded of Venice by houses built on stilts over the water.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Venezuela"
@@ -763,7 +763,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Baikonur_Cosmodrome"
           },
           {
-            "text": "The wild ancestor of the apple comes from the hills of Spain.",
+            "text": "The wild ancestor of the apple has never grown in Kazakhstan.",
             "fib": true,
             "truth": "The main wild ancestor of today's apple, Malus sieversii, grows in the mountains of Central Asia, including Kazakhstan.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Malus_sieversii"
@@ -801,7 +801,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Angola"
           },
           {
-            "text": "Angola is a country in South America, right next to Brazil.",
+            "text": "Angola is a country in South America.",
             "fib": true,
             "truth": "Angola is in Southern Africa, across the Atlantic Ocean from Brazil.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Angola"
@@ -862,7 +862,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Geography_of_Croatia"
           },
           {
-            "text": "The Dalmatian dog breed is named after a region of Hungary.",
+            "text": "The Dalmatian dog breed is named after a Croatian king.",
             "fib": true,
             "truth": "The Dalmatian is named after Dalmatia, a region of Croatia on the Adriatic coast.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Dalmatian_dog"
@@ -1022,9 +1022,9 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Bangladesh"
           },
           {
-            "text": "Bangladesh is almost entirely surrounded by China.",
+            "text": "Bangladesh shares land borders with five countries.",
             "fib": true,
-            "truth": "Bangladesh is almost entirely surrounded by India, with a short border with Myanmar.",
+            "truth": "Bangladesh borders only two countries: India, which surrounds it on almost every side, and Myanmar.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Bangladesh"
           }
         ]
@@ -1041,9 +1041,9 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Paraguay"
           },
           {
-            "text": "Paraguay's capital city is Buenos Aires.",
+            "text": "Paraguay's capital city is Ciudad del Este.",
             "fib": true,
-            "truth": "Paraguay's capital is Asunción. Buenos Aires is the capital of Argentina.",
+            "truth": "Paraguay's capital is Asunción.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Paraguay"
           }
         ]
@@ -1113,7 +1113,7 @@
         "country": "lr",
         "statements": [
           {
-            "text": "Liberia is a country in South America, next to Brazil.",
+            "text": "Liberia is a country in South America.",
             "fib": true,
             "truth": "Liberia is in West Africa, on the Atlantic coast.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Liberia"
@@ -1174,7 +1174,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda"
           },
           {
-            "text": "Antigua and Barbuda is an island nation in the Pacific Ocean, near Fiji.",
+            "text": "Antigua and Barbuda is an island nation in the Pacific Ocean.",
             "fib": true,
             "truth": "Antigua and Barbuda is in the Caribbean.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda"
@@ -1300,7 +1300,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Ghana"
           },
           {
-            "text": "Kente cloth comes originally from Kenya.",
+            "text": "Kente cloth is printed by machine and never woven.",
             "fib": true,
             "truth": "Kente is a woven cloth from Ghana, made by the Akan and Ewe peoples.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Kente_cloth"
@@ -1311,7 +1311,7 @@
         "country": "bj",
         "statements": [
           {
-            "text": "Benin is in East Africa, sharing a border with Kenya.",
+            "text": "Benin is in East Africa, on the Indian Ocean coast.",
             "fib": true,
             "truth": "Benin is in West Africa, between Togo and Nigeria.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Benin"
@@ -1517,9 +1517,9 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Botswana"
           },
           {
-            "text": "Nairobi is the capital of Botswana.",
+            "text": "Botswana's capital city is Francistown.",
             "fib": true,
-            "truth": "Gaborone is the capital of Botswana; Nairobi is the capital of Kenya.",
+            "truth": "Gaborone is the capital of Botswana.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Botswana"
           }
         ]
@@ -1536,7 +1536,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Pitons_(Saint_Lucia)"
           },
           {
-            "text": "Saint Lucia is a Pacific island country located next to Fiji.",
+            "text": "Saint Lucia is an island country in the Pacific Ocean.",
             "fib": true,
             "truth": "Saint Lucia is in the eastern Caribbean Sea, part of the West Indies.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Saint_Lucia"
@@ -1570,7 +1570,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/North_Macedonia"
           },
           {
-            "text": "North Macedonia is in Scandinavia, right next to Sweden.",
+            "text": "North Macedonia has a long coastline on the Mediterranean Sea.",
             "fib": true,
             "truth": "North Macedonia is a landlocked country in southeastern Europe, in the Balkans.",
             "sourceUrl": "https://en.wikipedia.org/wiki/North_Macedonia"
@@ -1616,7 +1616,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Chocolate_Hills"
           },
           {
-            "text": "The Philippines is named after a Spanish explorer.",
+            "text": "The Philippines is named after an ancient island goddess.",
             "fib": true,
             "truth": "The Philippines is named after King Philip II of Spain.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Philippines"
@@ -1650,9 +1650,9 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
           },
           {
-            "text": "The capital of Saint Vincent and the Grenadines is Havana.",
+            "text": "The capital of Saint Vincent and the Grenadines is on the small island of Bequia.",
             "fib": true,
-            "truth": "The capital is Kingstown. Havana is the capital of Cuba.",
+            "truth": "The capital is Kingstown, on the main island of Saint Vincent.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
           },
           {
@@ -1890,9 +1890,9 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Bulgaria"
           },
           {
-            "text": "Bulgaria's capital city is Bucharest.",
+            "text": "Bulgaria's capital city is Plovdiv.",
             "fib": true,
-            "truth": "Bulgaria's capital is Sofia. Bucharest is the capital of Romania.",
+            "truth": "Bulgaria's capital is Sofia.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Bulgaria"
           },
           {
@@ -1913,9 +1913,9 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Romanian_language"
           },
           {
-            "text": "Most of the Danube Delta lies in Bulgaria.",
+            "text": "The Danube Delta lies in Romania's mountainous north.",
             "fib": true,
-            "truth": "Most of the Danube Delta lies in Romania, with a small part in Ukraine.",
+            "truth": "The Danube Delta lies where the Danube meets the Black Sea, mostly in Romania, with a small part in Ukraine.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Danube_Delta"
           }
         ]
@@ -1932,9 +1932,9 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Chimborazo"
           },
           {
-            "text": "Panama hats were first made in Panama.",
+            "text": "Ecuador's famous toquilla straw hats are woven from sheep's wool.",
             "fib": true,
-            "truth": "Panama hats come from Ecuador. Many were shipped through Panama on their way to buyers abroad.",
+            "truth": "They're woven by hand from the leaves of the toquilla palm. They're better known abroad as Panama hats.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Panama_hat"
           }
         ]
@@ -2103,7 +2103,7 @@
         "country": "bn",
         "statements": [
           {
-            "text": "Brunei is located on the island of Madagascar.",
+            "text": "Brunei is a landlocked country.",
             "fib": true,
             "truth": "Brunei is on the northern coast of the island of Borneo in Southeast Asia.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Brunei"
@@ -2130,7 +2130,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Prague_astronomical_clock"
           },
           {
-            "text": "Pilsner beer was first brewed in Germany.",
+            "text": "Pilsner beer was invented in the 1990s.",
             "fib": true,
             "truth": "Pilsner was first brewed in 1842 in the Czech city of Plzeň (Pilsen).",
             "sourceUrl": "https://en.wikipedia.org/wiki/Pilsner"
@@ -2210,7 +2210,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Mohenjo-daro"
           },
           {
-            "text": "Himalayan pink salt is mostly mined in Nepal.",
+            "text": "Himalayan pink salt is made by drying seawater along Pakistan's coast.",
             "fib": true,
             "truth": "Himalayan salt is mined mainly at the Khewra Salt Mine in Punjab, Pakistan.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Himalayan_salt"
@@ -2541,9 +2541,9 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Lithuania"
           },
           {
-            "text": "Lithuania's capital city is Riga.",
+            "text": "Lithuania's capital city is Kaunas.",
             "fib": true,
-            "truth": "Lithuania's capital is Vilnius. Riga is the capital of Latvia.",
+            "truth": "Lithuania's capital is Vilnius.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Lithuania"
           },
           {
@@ -2663,9 +2663,9 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Boiling_Lake"
           },
           {
-            "text": "Dominica and the Dominican Republic are two names for the same country.",
+            "text": "Dominica is the largest island in the Caribbean.",
             "fib": true,
-            "truth": "Dominica and the Dominican Republic are separate countries with similar names.",
+            "truth": "Dominica is a small island country in the Caribbean, separate from the Dominican Republic.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Dominica"
           }
         ]
@@ -2796,9 +2796,9 @@
         "country": "gd",
         "statements": [
           {
-            "text": "Grenada is a region in southern Spain, famous for the Alhambra palace.",
+            "text": "Grenada is a landlocked country.",
             "fib": true,
-            "truth": "Grenada is a Caribbean island country; Granada is the city in Spain.",
+            "truth": "Grenada is an island country in the Caribbean.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Grenada"
           },
           {
@@ -3036,7 +3036,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Guyana"
           },
           {
-            "text": "Guyana is in West Africa, right next to Guinea.",
+            "text": "Guyana is a country in West Africa.",
             "fib": true,
             "truth": "Guyana is on the northern coast of South America.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Guyana"
@@ -3219,7 +3219,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Albania"
           },
           {
-            "text": "Albania is in South Asia, next to India.",
+            "text": "Albania is a country in South Asia.",
             "fib": true,
             "truth": "Albania is in southeastern Europe, in the Balkans.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Albania"
@@ -3272,7 +3272,7 @@
         "country": "gq",
         "statements": [
           {
-            "text": "Equatorial Guinea is at the southern tip of Africa, next to South Africa.",
+            "text": "Equatorial Guinea is at the southern tip of Africa.",
             "fib": true,
             "truth": "Equatorial Guinea is in Central Africa, near the equator on the Gulf of Guinea.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Equatorial_Guinea"
@@ -3299,7 +3299,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Cork_(material)"
           },
           {
-            "text": "Pastel de nata custard tarts were invented by bakers in Brazil.",
+            "text": "Pastel de nata custard tarts were invented by a fast-food chain in the 1990s.",
             "fib": true,
             "truth": "Pastéis de nata were created by monks at the Jerónimos Monastery in Belém, Lisbon.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Pastel_de_nata"
@@ -3512,7 +3512,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Sierra_Leone"
           },
           {
-            "text": "Sierra Leone is a country in Central America, next to Mexico.",
+            "text": "Sierra Leone is a country in Central America.",
             "fib": true,
             "truth": "Sierra Leone is a country in West Africa.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Sierra_Leone"
@@ -3611,9 +3611,9 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Mining_in_Chile"
           },
           {
-            "text": "Chile shares a long border with Brazil.",
+            "text": "Chile is a landlocked country.",
             "fib": true,
-            "truth": "Chile borders only Peru, Bolivia and Argentina. Brazil and Chile never touch.",
+            "truth": "Chile has a long Pacific coastline and borders Peru, Bolivia and Argentina.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Chile"
           },
           {
@@ -3714,9 +3714,9 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Skadar"
           },
           {
-            "text": "Belgrade is the capital of Montenegro.",
+            "text": "Montenegro's capital city is Kotor.",
             "fib": true,
-            "truth": "Podgorica is Montenegro's capital. Belgrade is the capital of neighbouring Serbia.",
+            "truth": "Podgorica is Montenegro's capital.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Podgorica"
           }
         ]
@@ -3805,7 +3805,7 @@
         "country": "pg",
         "statements": [
           {
-            "text": "Papua New Guinea uses the Australian dollar.",
+            "text": "Papua New Guinea has no currency of its own.",
             "fib": true,
             "truth": "Papua New Guinea uses its own currency, the kina.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Papua_New_Guinean_kina"
@@ -3923,9 +3923,9 @@
         "country": "hn",
         "statements": [
           {
-            "text": "Honduras borders Mexico.",
+            "text": "Honduras is a landlocked country.",
             "fib": true,
-            "truth": "Honduras borders Guatemala, El Salvador and Nicaragua. Mexico is further north.",
+            "truth": "Honduras has a coastline on the Caribbean Sea and borders Guatemala, El Salvador and Nicaragua.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Honduras"
           },
           {
@@ -4205,7 +4205,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Yank_tank"
           },
           {
-            "text": "The cha-cha-chá dance and music style was invented in Brazil.",
+            "text": "The cha-cha-chá was created in the 1990s by a pop band.",
             "fib": true,
             "truth": "The cha-cha-chá comes from Cuba, where violinist Enrique Jorrín created it in the early 1950s.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Cha-cha-ch%C3%A1_(music)"
@@ -4544,7 +4544,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Monaco"
           },
           {
-            "text": "Monaco shares a land border with Italy.",
+            "text": "Monaco shares land borders with three countries.",
             "fib": true,
             "truth": "Monaco's only land neighbour is France. Italy is just a few kilometres further along the coast.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Monaco"
@@ -4563,9 +4563,9 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/M41_highway"
           },
           {
-            "text": "Tashkent is the capital of Tajikistan.",
+            "text": "Tajikistan's capital city is Khujand.",
             "fib": true,
-            "truth": "Dushanbe is Tajikistan's capital. Tashkent is the capital of Uzbekistan.",
+            "truth": "Dushanbe is Tajikistan's capital.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Dushanbe"
           },
           {
@@ -4818,7 +4818,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Khone_Phapheng_Falls"
           },
           {
-            "text": "Laos uses the Thai baht as its official currency.",
+            "text": "Laos has never had a currency of its own.",
             "fib": true,
             "truth": "Laos has its own currency, the kip, used since 1953.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Lao_kip"
@@ -5275,7 +5275,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Popeye_Village"
           },
           {
-            "text": "Malta lies north of Sicily, between Italy and France.",
+            "text": "Malta is a landlocked country.",
             "fib": true,
             "truth": "Malta lies south of Sicily, about 80 km (50 mi) from Italy, in the middle of the Mediterranean.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Malta"
@@ -5393,9 +5393,9 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/Victoria_amazonica"
           },
           {
-            "text": "Paramaribo is the capital of Guyana.",
+            "text": "Guyana's capital city is Linden.",
             "fib": true,
-            "truth": "Georgetown is Guyana's capital. Paramaribo is the capital of neighbouring Suriname.",
+            "truth": "Georgetown is Guyana's capital.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Georgetown,_Guyana"
           },
           {
@@ -5705,7 +5705,7 @@
         "country": "es",
         "statements": [
           {
-            "text": "Spain shares a land border with Italy.",
+            "text": "Spain is an island country.",
             "fib": true,
             "truth": "Spain's land neighbours include France, Portugal and Andorra. Italy is across the Mediterranean.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Spain"
@@ -5751,7 +5751,7 @@
             "sourceUrl": "https://en.wikipedia.org/wiki/IKEA"
           },
           {
-            "text": "The pop group ABBA came from Denmark.",
+            "text": "The pop group ABBA formed in the 1990s.",
             "fib": true,
             "truth": "ABBA formed in Stockholm, Sweden, and won Eurovision for Sweden in 1974 with 'Waterloo'.",
             "sourceUrl": "https://en.wikipedia.org/wiki/ABBA"
@@ -5945,7 +5945,7 @@
         "country": "dk",
         "statements": [
           {
-            "text": "Fairy tale writer Hans Christian Andersen was Swedish.",
+            "text": "Fairy tale writer Hans Christian Andersen was born in Copenhagen.",
             "fib": true,
             "truth": "Hans Christian Andersen was Danish, born in the city of Odense in 1805.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Hans_Christian_Andersen"
@@ -6063,7 +6063,7 @@
         "country": "kz",
         "statements": [
           {
-            "text": "Kazakhstan shares a border with India.",
+            "text": "Kazakhstan shares a border with only one country.",
             "fib": true,
             "truth": "Kazakhstan borders Russia, China, Kyrgyzstan, Uzbekistan and Turkmenistan. India is much further south.",
             "sourceUrl": "https://en.wikipedia.org/wiki/Kazakhstan"
