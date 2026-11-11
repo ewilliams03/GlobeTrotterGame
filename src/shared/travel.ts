@@ -5,6 +5,7 @@
 // and is skipped entirely for reduced-motion users.
 import { geoOrthographic, geoPath, geoGraticule10 } from 'd3-geo';
 import { getLand, reducedMotion } from './geo';
+import { todayDataUrl } from './bank';
 
 export type Rotation = [number, number, number];
 export interface Dot {
@@ -19,8 +20,6 @@ const DEFAULT_ROT: Rotation = [-20, -18, 0];
 
 /* ---------- easing ---------- */
 const easeInOutCubic = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
-const easeOutQuart = (t: number) => 1 - (1 - t) ** 4;
-const easeInQuad = (t: number) => t * t;
 const clamp01 = (t: number) => Math.max(0, Math.min(1, t));
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 /** Any angle as the equivalent in [-180, 180): the short way round, even for negative or large inputs. */
@@ -144,8 +143,40 @@ function layer(existing?: HTMLElement | null) {
   return { root, sea, svg, W, H, globe: drawableGlobe(svg) };
 }
 
-/* ---------- hub → game ---------- */
+/* ---------- hub → game ----------
+   One continuous dive. The hub globe accelerates toward you (log-radius ease-in) and dissolves into
+   open ocean; the game page opens on that same ocean and the globe pulls back out at the speed the
+   dive ended with (log-radius ease-out), settling into the corner mini globe. The two durations are
+   chosen so the zoom speed at the hand-off matches, which is what makes it read as one motion. */
 let departing = false;
+const DIVE_MS = 640;
+const SURFACE_MS = 1000;
+const DIVE_SPIN = 40; // degrees the globe turns while diving in
+
+/** Quietly fetch a game page, its code and today's puzzle so the trip doesn't wait on the network. */
+const warmed = new Set<string>();
+export function warm(href: string) {
+  if (warmed.has(href)) return;
+  warmed.add(href);
+  const hint = (rel: string, url: string, as?: string) => {
+    if (warmed.has(url)) return;
+    warmed.add(url);
+    const l = document.createElement('link');
+    l.rel = rel;
+    l.href = url;
+    if (as) l.as = as;
+    document.head.append(l);
+  };
+  void fetch(href, { credentials: 'same-origin' })
+    .then((r) => (r.ok ? r.text() : ''))
+    .then((html) => {
+      for (const m of html.matchAll(/(?:src|href)="(\/assets\/[^"]+\.(js|css))"/g)) hint(m[2] === 'js' ? 'modulepreload' : 'preload', m[1], m[2] === 'css' ? 'style' : undefined);
+    })
+    .catch(() => {});
+  const game = href.split('/').filter(Boolean).pop() ?? '';
+  const data = todayDataUrl(game);
+  if (data) void fetch(data, { credentials: 'same-origin' }).catch(() => {});
+}
 
 export function depart(href: string, from: SVGSVGElement, rotate: Rotation, radiusRatio = 292 / 600) {
   if (departing) return;
@@ -154,31 +185,38 @@ export function depart(href: string, from: SVGSVGElement, rotate: Rotation, radi
     return;
   }
   departing = true;
+  warm(href);
   const L = layer();
   L.root.classList.add('is-departing');
   const box = from.getBoundingClientRect();
   const r0 = (box.width / 2) * (radiusRatio * 2);
   const c0 = [box.left + box.width / 2, box.top + box.height / 2];
   const c1 = [L.W / 2, L.H / 2];
-  const r1 = Math.hypot(L.W, L.H) * 0.62;
+  const rCover = Math.hypot(L.W, L.H) * 3;
   const page = [...document.querySelectorAll<HTMLElement>('.site-header, main, .site-footer')];
+
+  // The game page picks up exactly where the dive leaves off.
+  const finalRot: Rotation = [rotate[0] + DIVE_SPIN, rotate[1], 0];
+  saveRotation(finalRot);
 
   L.sea.style.opacity = '0';
   L.globe.draw(c0[0], c0[1], r0, rotate);
   from.style.visibility = 'hidden';
-  const fades = page.map((el) =>
-    el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 380, easing: 'ease-out', fill: 'forwards' }),
-  );
+  const fades = page.map((el) => el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 300, easing: 'ease-out', fill: 'forwards' }));
 
-  let finalRot = rotate;
-  void tween(820, (t) => {
-    const p = easeInOutCubic(t);
-    finalRot = [rotate[0] + 70 * easeInQuad(t), rotate[1], 0];
-    L.globe.draw(lerp(c0[0], c1[0], p), lerp(c0[1], c1[1], p), zoomLerp(r0, r1 * 2.4, easeInQuad(t) * 0.55 + p * 0.45), finalRot);
-    L.sea.style.opacity = String(clamp01((t - 0.62) / 0.3));
-  }).then(() => {
-    saveRotation(finalRot);
-    window.location.href = `${href}#arrive`;
+  let navigated = false;
+  void tween(DIVE_MS, (t) => {
+    const zoom = t * t * t; // ease-in: always speeding up, so there's no stop before the cut
+    const move = 1 - (1 - clamp01(t / 0.75)) ** 3; // reaches the centre early, then just dives
+    L.globe.draw(lerp(c0[0], c1[0], move), lerp(c0[1], c1[1], move), zoomLerp(r0, rCover, zoom), [rotate[0] + DIVE_SPIN * t * t, rotate[1], 0]);
+    // Behind the globe the page becomes ocean; then the globe dissolves into it.
+    L.sea.style.opacity = String(clamp01((t - 0.25) / 0.35));
+    L.svg.style.opacity = String(1 - clamp01((t - 0.62) / 0.28));
+    // Leave as soon as the screen is ocean: the next page opens on the same colour.
+    if (!navigated && t >= 0.88) {
+      navigated = true;
+      window.location.href = `${href}#arrive`;
+    }
   });
 
   // Coming back with the browser's back button restores the page from cache: undo everything.
@@ -265,46 +303,73 @@ function centroid(points: { lon: number; lat: number }[]): [number, number] {
   return [lon, lat];
 }
 
-/* ---------- game page: arrive from the hub ---------- */
-export async function arrive(mini: ReturnType<typeof miniGlobe>, container: HTMLElement): Promise<void> {
+/* ---------- game page: arrive from the hub ----------
+   Starts the moment this module runs, before the game has fetched today's puzzle, so the pull-back
+   follows the dive with no pause. The game's own mini globe takes over once it exists. */
+const easeOutCubic = (t: number) => 1 - (1 - t) ** 3;
+type Handoff = { mini: ReturnType<typeof miniGlobe>; container: HTMLElement };
+let handoff: Handoff | null = null;
+let surfacing: { done: boolean; finish: () => void } | null = null;
+
+function surface() {
   const html = document.documentElement;
-  const arriving = window.location.hash === '#arrive';
-  if (arriving) history.replaceState(null, '', window.location.pathname + window.location.search);
+  if (window.location.hash !== '#arrive') return;
+  history.replaceState(null, '', window.location.pathname + window.location.search);
   // From here on the JS controls the arrival, not the CSS :target failsafe.
   html.classList.add('arrival-done');
-  // If today's puzzle took a while to load, the CSS failsafe has already shown the page: don't replay.
-  if (!arriving || reducedMotion() || performance.now() > 2200) return;
+  const container = document.getElementById('mini-globe');
+  // If the page's code arrived late, the CSS failsafe has already shown the page: don't replay over it.
+  if (!container || reducedMotion() || performance.now() > 2200) return;
 
   html.classList.add('arrival-run');
   const L = layer(document.getElementById('arrive'));
   const start = loadRotation();
-  const box = container.getBoundingClientRect();
-  const c1 = [box.left + box.width / 2, box.top + box.height / 2];
-  const r1 = (box.width / 2) * 0.94;
+  const rStart = Math.hypot(L.W, L.H) * 3; // the same radius the dive ended at
   const c0 = [L.W / 2, L.H / 2];
-  const r0 = Math.hypot(L.W, L.H) * 1.5;
-  // Land exactly on whatever the mini globe is showing (it may itself be turning to a country),
-  // with one extra full turn on the way out.
-  const first = mini.rotation;
-  const offset = wrap180(start[0] - first[0]) - 360;
+  const state = {
+    done: false,
+    finish() {
+      // Hold the last frame until the game's mini globe exists, then swap without a seam.
+      if (!state.done || !handoff) return;
+      L.root.style.display = 'none';
+      html.classList.remove('arrival-reveal', 'arrival-run');
+    },
+  };
+  surfacing = state;
 
+  L.sea.style.opacity = '1';
   L.svg.style.opacity = '0';
   let revealed = false;
-  await tween(1150, (t) => {
-    const p = easeOutQuart(t);
-    const target = mini.rotation;
-    const rot: Rotation = [target[0] + offset * (1 - p), lerp(start[1], target[1], p), 0];
-    const move = easeInOutCubic(clamp01((t - 0.05) / 0.95));
-    L.globe.draw(lerp(c0[0], c1[0], move), lerp(c0[1], c1[1], move), zoomLerp(r0, r1, p), rot);
-    L.svg.style.opacity = String(clamp01(t / 0.12));
-    L.sea.style.opacity = String(1 - clamp01((t - 0.12) / 0.32));
-    if (!revealed && t > 0.3) {
+  void tween(SURFACE_MS, (t) => {
+    const p = easeOutCubic(t); // starts at full speed, glides to a stop
+    const box = container.getBoundingClientRect(); // live: the page may shift as the game loads
+    const r1 = (box.width / 2) * 0.94;
+    const c1 = [box.left + box.width / 2, box.top + box.height / 2];
+    // Land on whatever the mini globe shows (it may already be turning to today's country),
+    // unwinding one full turn on the way out in the same direction the dive was spinning.
+    const target = handoff ? handoff.mini.rotation : start;
+    const turn = wrap180(start[0] - target[0]) - 360;
+    const rot: Rotation = [target[0] + turn * (1 - p), lerp(start[1], target[1], p), 0];
+    const move = easeOutCubic(clamp01((t - 0.06) / 0.94));
+    L.globe.draw(lerp(c0[0], c1[0], move), lerp(c0[1], c1[1], move), zoomLerp(rStart, r1, p), rot);
+    // Mirror of the dive: the globe condenses out of the ocean, then the ocean clears.
+    L.svg.style.opacity = String(clamp01(t / 0.1));
+    L.sea.style.opacity = String(1 - clamp01((t - 0.12) / 0.3));
+    if (!revealed && t > 0.22) {
       revealed = true;
       html.classList.add('arrival-reveal');
       html.classList.remove('arrival-run');
     }
+  }).then(() => {
+    state.done = true;
+    state.finish();
   });
-  L.root.style.display = 'none';
-  html.classList.remove('arrival-reveal');
 }
+surface();
 
+/** Called by each game once its mini globe exists: lets the arrival hand over to it. */
+export async function arrive(mini: ReturnType<typeof miniGlobe>, container: HTMLElement): Promise<void> {
+  handoff = { mini, container };
+  document.documentElement.classList.add('arrival-done');
+  surfacing?.finish();
+}

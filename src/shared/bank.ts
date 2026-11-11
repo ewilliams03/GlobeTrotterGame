@@ -5,6 +5,12 @@ declare const __BANK_SIZES__: Record<string, number>;
 
 export class DayLoadError extends Error {}
 
+/** Where today's puzzle for a game lives (null if the game has no bank). */
+export function todayDataUrl(game: string): string | null {
+  const size = __BANK_SIZES__[game] ?? 0;
+  return size ? `/data/${game}/${dayIndex() % size}.json` : null;
+}
+
 export async function loadToday<T>(game: string): Promise<T> {
   const size = __BANK_SIZES__[game] ?? 0;
   if (!size) throw new DayLoadError(`No puzzles for ${game}`);

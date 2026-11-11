@@ -5,7 +5,7 @@ import type { LineString } from 'geojson';
 import { getLand, reducedMotion } from '../shared/geo';
 import { COUNTRIES } from '../data/countries';
 import { haptic } from '../shared/haptics';
-import { depart, type Rotation } from '../shared/travel';
+import { depart, warm, type Rotation } from '../shared/travel';
 import { GAMES, readToday, overall, bandOf } from '../shared/grades';
 import { dayKey } from '../shared/daily';
 import { watchDayChange } from '../shared/session';
@@ -339,3 +339,12 @@ function angularDistance([l1, p1]: [number, number], [l2, p2]: [number, number])
     }
   });
 })();
+
+/* ---------- Warm a game up the moment someone shows interest, so the dive never waits ---------- */
+const warmFrom = (e: Event) => {
+  const link = (e.target as Element | null)?.closest?.<HTMLAnchorElement>('a[href^="/games/"]');
+  if (link) warm(link.getAttribute('href')!);
+};
+document.addEventListener('pointerover', warmFrom, { passive: true });
+document.addEventListener('pointerdown', warmFrom, { passive: true });
+document.addEventListener('focusin', warmFrom);
